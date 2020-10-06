@@ -1,3 +1,4 @@
+// pwa background sync
 /*$(document).on('click', '#settings-background', async function (e) {
     console.log("click");
     Notification.requestPermission(permission => {

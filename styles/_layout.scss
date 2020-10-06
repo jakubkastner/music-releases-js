@@ -1,11 +1,11 @@
-@use 'init' as var;
+@use 'init' as *;
 
 // HLAVNÍ
 * {
     margin: 0;
     text-decoration: none;
     font-family: "Pontano Sans", sans-serif;
-    color: var.$color_text;
+    color: $color_text;
 }
 
 h1 {
@@ -137,7 +137,7 @@ main {
 
     &>.m-date {
         overflow: hidden;
-        width: 120px;
+        //width: 120px;
         height: 80vh;
         display: inline-block;
 
@@ -146,13 +146,13 @@ main {
         }
 
         &>a {
-            width: calc(120px - 5px - 0.2vw);
+            //width: calc(120px - 5px - 0.2vw);
         }
 
         &>.m-months {
             &>a {
                 text-align: left;
-                padding-left: calc(50px);
+                //padding-left: calc(50px);
                 width: calc(90% - 50px);
             }
         }
