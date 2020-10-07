@@ -1,3 +1,13 @@
+// dark / light mode
+var elDarkButton = $('.b-dark');
+var elBody = $('body');
+
+elDarkButton.click(function (e) {
+    elBody.toggleClass('light');    
+});
+
+
+
 // pwa background sync
 /*$(document).on('click', '#settings-background', async function (e) {
     console.log("click");

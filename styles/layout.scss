@@ -1,11 +1,8 @@
-@use 'init' as *;
-
 // HLAVNÍ
 * {
     margin: 0;
     text-decoration: none;
     font-family: "Pontano Sans", sans-serif;
-    color: $color_text;
 }
 
 h1 {
@@ -22,14 +19,14 @@ p {
 }
 
 /* skryté */
-.hidden {
-    /*display: none;*/
-}
+/*.hidden {
+    display: none;
+}*/
 
 // MAIN MENU
 
 header {
-    background-color: $color_dark_2;
+    /*background-color: $color_dark_2;*/
 
     // butons
     .button,
@@ -49,7 +46,7 @@ header {
             // title text
             & * {
                 font-weight: 700;
-                color: $color_text_button;
+                /*color: $color_text_button;*/
             }
         }
 
@@ -95,11 +92,11 @@ header {
                 &>* {
                     display: block;
 
-                    background-color: $color_dark_3;
+                    /*background-color: $color_dark_3;
 
                     _3 &:hover {
                         background-color: $color_dark_4;
-                    }
+                    }*/
                 }
             }
 
@@ -107,14 +104,14 @@ header {
                 display: inline-flex;
                 min-width: 70px;
 
-                &:hover,
+                /*&:hover,
                 &.hover {
                     background-color: $color_dark_3;
 
                     * {
                         background-color: $color_dark_3;
                     }
-                }
+                }*/
             }
 
             &:hover {
@@ -133,11 +130,11 @@ header {
 // LEFT MENU
 
 main {
-    background-color: $color_dark_1;
+    /*background-color: $color_dark_1;*/
 
     &>.m-date {
         overflow: hidden;
-        //width: 120px;
+        width: 120px;
         height: 80vh;
         display: inline-block;
 
@@ -146,13 +143,13 @@ main {
         }
 
         &>a {
-            //width: calc(120px - 5px - 0.2vw);
+            width: calc(120px - 5px - 0.2vw);
         }
 
         &>.m-months {
             &>a {
                 text-align: left;
-                //padding-left: calc(50px);
+                padding-left: calc(50px);
                 width: calc(90% - 50px);
             }
         }
@@ -171,9 +168,9 @@ main {
     }
 }
 
-footer {
+/*footer {
     background-color: $color_dark_2;
-}
+}*/
 
 // ANIMACE
 

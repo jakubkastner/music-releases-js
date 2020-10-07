@@ -20,8 +20,8 @@
 .button:hover *,
 .buttons > *:hover,
 .buttons > *:hover * {
-  color: #1ab26b;
-  background-color: #2e2e2e;
+  /*color: $color_text_button;
+		background-color: $color_dark_4;*/
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }

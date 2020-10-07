@@ -1,0 +1,18 @@
+body {
+  background-color: #060606;
+  color: white;
+}
+
+body header {
+  background-color: #1a1a1a;
+}
+
+body.light {
+  background-color: whitesmoke;
+  color: black;
+}
+
+body.light header {
+  background-color: #e1e1e1;
+}
+/*# sourceMappingURL=colors.css.map */
