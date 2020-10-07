@@ -1,6 +1,12 @@
 // colors
 $color_text_button: #1ab26b;
 
+// 0 čistá
+// 1 body
+// 2 header footer
+// 3,4 hover
+
+
 @mixin theme-colors($theme_light: false) {
     // -> init colors
     // dark colors
@@ -10,6 +16,7 @@ $color_text_button: #1ab26b;
     $color_3: rgb(36, 36, 36);
     $color_4: rgb(46, 46, 46);
     $color_text: rgb(255, 255, 255);
+
     // light colors
     @if $theme_light {
         $color_0: rgb(245, 245, 245);
@@ -21,13 +28,67 @@ $color_text_button: #1ab26b;
     }
 
     // -> set colors
-    background-color: $color_0;
-    color: $color_text;
 
+    // buttons
+    .button,
+    .buttons>* {
+        color: $color_text_button;
+        background-color: $color_2;
+
+        &:hover {
+            background-color: $color_3;
+        }
+    }
+
+    // header
     header {
         background-color: $color_2;
+        color: $color_text_button;
+
+        // left hover menu (login, user)
+        .m-hover {
+
+            // submenu
+            a {
+                background-color: $color_3;
+
+                * {
+                    background-color: $color_3;
+                }
+
+                &:hover {
+                    background-color: $color_4;
+
+                    * {
+                        background-color: $color_4;
+                    }
+                }
+            }
+        }
+
+        .b-login.hover {
+            background-color: $color_3;
+        }
+    }
+
+    // content
+    main {
+        background-color: $color_1;
+        color: $color_text;
+    }
+
+    // footer
+    footer {
+        background-color: $color_2;
+        color: $color_text;
     }
 }
+
+
+
+
+
+
 
 // DARK MODE
 body {

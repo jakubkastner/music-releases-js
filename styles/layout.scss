@@ -26,8 +26,6 @@ p {
 // MAIN MENU
 
 header {
-    /*background-color: $color_dark_2;*/
-
     // butons
     .button,
     .buttons>* {
@@ -46,7 +44,6 @@ header {
             // title text
             & * {
                 font-weight: 700;
-                /*color: $color_text_button;*/
             }
         }
 
@@ -91,27 +88,12 @@ header {
 
                 &>* {
                     display: block;
-
-                    /*background-color: $color_dark_3;
-
-                    _3 &:hover {
-                        background-color: $color_dark_4;
-                    }*/
                 }
             }
 
             .b-login {
                 display: inline-flex;
                 min-width: 70px;
-
-                /*&:hover,
-                &.hover {
-                    background-color: $color_dark_3;
-
-                    * {
-                        background-color: $color_dark_3;
-                    }
-                }*/
             }
 
             &:hover {
@@ -130,8 +112,6 @@ header {
 // LEFT MENU
 
 main {
-    /*background-color: $color_dark_1;*/
-
     &>.m-date {
         overflow: hidden;
         width: 120px;
@@ -168,9 +148,6 @@ main {
     }
 }
 
-/*footer {
-    background-color: $color_dark_2;
-}*/
 
 // ANIMACE
 

@@ -3,7 +3,6 @@
   margin: 0;
   text-decoration: none;
   font-family: "Pontano Sans", sans-serif;
-  /*color: $color_text;*/
 }
 
 h1 {
@@ -25,10 +24,6 @@ p {
 /*.hidden {
     display: none;
 }*/
-header {
-  /*background-color: $color_dark_2;*/
-}
-
 header .button,
 header .buttons > * {
   margin-top: 0;
@@ -50,7 +45,6 @@ header div > .in-header {
 
 header div > .in-header * {
   font-weight: 700;
-  /*color: $color_text_button;*/
 }
 
 header div > .page-name {
@@ -93,11 +87,6 @@ header div > .div-user > .m-hover.show {
 
 header div > .div-user > .m-hover > * {
   display: block;
-  /*background-color: $color_dark_3;
-
-                    _3 &:hover {
-                        background-color: $color_dark_4;
-                    }*/
 }
 
 header div > .div-user .b-login {
@@ -105,14 +94,6 @@ header div > .div-user .b-login {
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 70px;
-  /*&:hover,
-                &.hover {
-                    background-color: $color_dark_3;
-
-                    * {
-                        background-color: $color_dark_3;
-                    }
-                }*/
 }
 
 header div > .div-user:hover .m-hover {
@@ -121,10 +102,6 @@ header div > .div-user:hover .m-hover {
 
 header div > .div-user:hover .m-hover.hidden {
   display: none;
-}
-
-main {
-  /*background-color: $color_dark_1;*/
 }
 
 main > .m-date {
@@ -160,9 +137,6 @@ main > .content > .c-releases {
   width: 100%;
 }
 
-/*footer {
-    background-color: $color_dark_2;
-}*/
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -173,6 +147,7 @@ main > .content > .c-releases {
             transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);

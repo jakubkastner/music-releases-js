@@ -1,18 +1,92 @@
-body {
-  background-color: #060606;
-  color: white;
+body .button,
+body .buttons > * {
+  color: #1ab26b;
+  background-color: #1a1a1a;
+}
+
+body .button:hover,
+body .buttons > *:hover {
+  background-color: #242424;
 }
 
 body header {
   background-color: #1a1a1a;
+  color: #1ab26b;
 }
 
-body.light {
-  background-color: whitesmoke;
-  color: black;
+body header .m-hover a {
+  background-color: #242424;
+}
+
+body header .m-hover a * {
+  background-color: #242424;
+}
+
+body header .m-hover a:hover {
+  background-color: #2e2e2e;
+}
+
+body header .m-hover a:hover * {
+  background-color: #2e2e2e;
+}
+
+body header .b-login.hover {
+  background-color: #242424;
+}
+
+body main {
+  background-color: #101010;
+  color: white;
+}
+
+body footer {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+body.light .button,
+body.light .buttons > * {
+  color: #1ab26b;
+  background-color: #e1e1e1;
+}
+
+body.light .button:hover,
+body.light .buttons > *:hover {
+  background-color: #d7d7d7;
 }
 
 body.light header {
   background-color: #e1e1e1;
+  color: #1ab26b;
+}
+
+body.light header .m-hover a {
+  background-color: #d7d7d7;
+}
+
+body.light header .m-hover a * {
+  background-color: #d7d7d7;
+}
+
+body.light header .m-hover a:hover {
+  background-color: #cdcdcd;
+}
+
+body.light header .m-hover a:hover * {
+  background-color: #cdcdcd;
+}
+
+body.light header .b-login.hover {
+  background-color: #d7d7d7;
+}
+
+body.light main {
+  background-color: #ebebeb;
+  color: black;
+}
+
+body.light footer {
+  background-color: #e1e1e1;
+  color: black;
 }
 /*# sourceMappingURL=colors.css.map */
