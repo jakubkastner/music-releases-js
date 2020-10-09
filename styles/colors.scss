@@ -1,4 +1,7 @@
-// colors
+/** COLORS
+ *  Colors for dark/light theme.
+ */
+
 $color_text_button: #1ab26b;
 
 // 0 čistá
@@ -38,6 +41,10 @@ $color_text_button: #1ab26b;
         &:hover {
             background-color: $color_3;
         }
+
+        &.active {
+            background-color: $color_1;
+        }
     }
 
     // header
@@ -75,6 +82,19 @@ $color_text_button: #1ab26b;
     main {
         background-color: $color_1;
         color: $color_text;
+
+        // date menu
+        .m-date {
+            background-color: $color_2;
+
+            a {
+                color: $color_text;
+
+                &:hover {
+                    color: $color_text_button;
+                }
+            }
+        }
     }
 
     // footer
@@ -98,4 +118,8 @@ body {
     &.light {
         @include theme-colors($theme_light: true);
     }
+}
+
+.loader {
+    background: linear-gradient(to right, $color_text_button, $color_text_button);
 }

@@ -1,3 +1,6 @@
+/** COLORS
+ *  Colors for dark/light theme.
+ */
 body .button,
 body .buttons > * {
   color: #1ab26b;
@@ -7,6 +10,11 @@ body .buttons > * {
 body .button:hover,
 body .buttons > *:hover {
   background-color: #242424;
+}
+
+body .button.active,
+body .buttons > *.active {
+  background-color: #101010;
 }
 
 body header {
@@ -39,6 +47,18 @@ body main {
   color: white;
 }
 
+body main .m-date {
+  background-color: #1a1a1a;
+}
+
+body main .m-date a {
+  color: white;
+}
+
+body main .m-date a:hover {
+  color: #1ab26b;
+}
+
 body footer {
   background-color: #1a1a1a;
   color: white;
@@ -53,6 +73,11 @@ body.light .buttons > * {
 body.light .button:hover,
 body.light .buttons > *:hover {
   background-color: #d7d7d7;
+}
+
+body.light .button.active,
+body.light .buttons > *.active {
+  background-color: #ebebeb;
 }
 
 body.light header {
@@ -85,8 +110,25 @@ body.light main {
   color: black;
 }
 
+body.light main .m-date {
+  background-color: #e1e1e1;
+}
+
+body.light main .m-date a {
+  color: black;
+}
+
+body.light main .m-date a:hover {
+  color: #1ab26b;
+}
+
 body.light footer {
   background-color: #e1e1e1;
   color: black;
+}
+
+.loader {
+  background: -webkit-gradient(linear, left top, right top, from(#1ab26b), to(#1ab26b));
+  background: linear-gradient(to right, #1ab26b, #1ab26b);
 }
 /*# sourceMappingURL=colors.css.map */

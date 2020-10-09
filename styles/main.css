@@ -1,0 +1,32 @@
+/** MAIN
+ *  Main styles - fonts, margin, ...
+ */
+* {
+  margin: 0;
+  text-decoration: none;
+  font-family: "Pontano Sans", sans-serif;
+}
+
+* :hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h1 {
+  font-family: "Kufam", sans-serif;
+}
+
+p {
+  font-size: calc(12px + 0.3vw);
+}
+
+/*.hidden {
+    display: none;
+}*/
+/*# sourceMappingURL=main.css.map */

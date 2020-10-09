@@ -1,3 +1,7 @@
+/** TESTING
+ *  Only for development testing.
+ */
+
 // dark / light mode
 var elDarkButton = $('.b-dark');
 var elBody = $('body');

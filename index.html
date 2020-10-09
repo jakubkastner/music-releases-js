@@ -10,8 +10,12 @@
     <title>Music Releases</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="styles/colors.css" />
-    <link rel="stylesheet" type="text/css" href="styles/layout.css" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="styles/body.css" />
+    <link rel="stylesheet" type="text/css" href="styles/footer.css" />
     <link rel="stylesheet" type="text/css" href="styles/actions.css" />
+    <link rel="stylesheet" type="text/css" href="styles/menu.css" />
     <link rel="stylesheet" type="text/css" href="styles/mobile.css" />
     <link rel="stylesheet" type="text/css" href="styles/testing.css" />
     <link rel="icon" type="image/ico" href="images/favicon.png" />
@@ -24,20 +28,21 @@
     <header>
         <div class="loader"></div>
         <div>
+            <a class="m-date-mobile in-header hidden button" title="Hide date menu."><i class="fas fa-bars"></i></a>
             <div class="page-name in-header">
                 <h1 class="mobile-hide">Music</h1>
                 <img class="favicon" src="images/favicon.png" alt="R" />
                 <h1 class="mobile-hide">eleases</h1>
             </div>
-            <nav class="m-releases buttons in-header hidden">
+            <nav class="m-releases m-clickable buttons in-header hidden">
                 <a class="b-albums" title="View released albums">Albums</a>
-                <a class="b-eps" title="View released EPs">EPs</a>
+                <a class="b-eps active" title="View released EPs">EPs</a>
                 <a class="b-tracks" title="View released tracks">Tracks</a>
                 <a class="b-appears" title="View released appears">Appears</a>
                 <a class="b-compilations" title="View released compilations">Compilations</a>
                 <a class="b-podcasts" title="View newest podcasts">Podcasts</a>
                 <a class="b-my-albums" title="View your saved albums">My Saved Albums</a>
-                <a class="b-dark" >Dark</a>
+                <a class="b-dark">Dark</a>
             </nav>
             <div class="div-user in-header">
                 <a class="b-login button" id="user">
@@ -58,7 +63,6 @@
     </header>
     <main>
         <nav class="m-date">
-            <a class="m-date-mobile hidden button"><i class="fas fa-bars"></i></a>
             <a class="m-year button" id="m-year-2020">2020</a>
             <span class="m-months buttons" id="m-months-2020">
                 <a class="m-month" id="m-month-2020-13">undefined</a>
@@ -84,8 +88,8 @@
         <div class="content">
             <div class="c-head">
                 <h2 class="title">Title</h2>
-                <h2 class="message">View all albums by years and months of your followed artists</h2>
-                <p class="error">To see all albums releases, you must login with your music account.</p>
+                <h2 class="message">Message</h2>
+                <p class="error">Error</p>
             </div>
             <div class="c-releases">
                 <p>
