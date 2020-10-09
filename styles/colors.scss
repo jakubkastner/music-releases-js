@@ -44,6 +44,7 @@ $color_text_button: #1ab26b;
 
         &.active {
             background-color: $color_1;
+            color: $color_text_button;
         }
     }
 

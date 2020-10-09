@@ -15,6 +15,7 @@ body .buttons > *:hover {
 body .button.active,
 body .buttons > *.active {
   background-color: #101010;
+  color: #1ab26b;
 }
 
 body header {
@@ -78,6 +79,7 @@ body.light .buttons > *:hover {
 body.light .button.active,
 body.light .buttons > *.active {
   background-color: #ebebeb;
+  color: #1ab26b;
 }
 
 body.light header {

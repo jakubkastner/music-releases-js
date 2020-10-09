@@ -48,10 +48,41 @@ elClickableButtons.click(function () {
 elDateMenuMobile.click(function () {
     if (elDateMenu.is(':visible')) {
         elDateMenu.hide();
-        elDateMenuMobile.attr({'title' : 'Show date menu.'});
+        elDateMenuMobile.attr({ 'title': 'Show date menu.' });
     }
     else {
         elDateMenu.show();
-        elDateMenuMobile.attr({'title' : 'Hide date menu.'});
+        elDateMenuMobile.attr({ 'title': 'Hide date menu.' });
     }
+});
+
+/**
+ * Click to year in date menu. Show/hide months. Add/remove "active" class.
+ */
+
+elDateMenuYear.click(function () {
+    // remove all "active" class
+    elDateMenuYear.removeClass('active');
+    elDateMenuMonth.removeClass('active');
+    // add "active" class to clicked button
+    var elClicked = $(this);
+    elClicked.addClass('active');
+    // hide months
+    elDateMenuMonths.addClass('hidden');
+    // show current year months
+    var selectedYear = $(this).attr('id');
+    selectedYear = selectedYear.split('-')[2];
+    var selectedMonth = $('#m-months-' + selectedYear);
+    selectedMonth.removeClass('hidden');
+});
+
+/**
+ * Click to month in date menu. Add/remove "active" class.
+ */
+elDateMenuMonth.click(function () {
+    // remove all "active" class
+    elDateMenuMonth.removeClass('active');
+    // add "active" class to clicked button
+    var elClicked = $(this);
+    elClicked.addClass('active');
 });

@@ -3,9 +3,10 @@
  */
 main .m-date {
   overflow: hidden;
-  width: 120px;
+  min-width: 160px;
   height: 80vh;
   display: inline-block;
+  resize: horizontal;
 }
 
 main .m-date:hover {
@@ -13,19 +14,11 @@ main .m-date:hover {
 }
 
 main .m-date a {
-  width: calc(120px - 5px - 0.2vw);
   margin-top: 0px;
+  display: block;
 }
 
-main .content {
-  height: 80vh;
-  width: calc(100% - 4px - 1vw);
-}
-
-main .content .c-releases {
-  width: calc(100% - 150px);
-  overflow: auto;
-  height: 70vh;
-  width: 100%;
+main .m-date .m-year {
+  padding-left: 80px;
 }
 /*# sourceMappingURL=menu.css.map */

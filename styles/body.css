@@ -1,4 +1,15 @@
 /** BODY
  *  Main page content
  */
+main .content {
+  height: 80vh;
+  width: calc(100% - 4px - 1vw);
+}
+
+main .content .c-releases {
+  width: calc(100% - 150px);
+  overflow: auto;
+  height: 70vh;
+  width: 100%;
+}
 /*# sourceMappingURL=body.css.map */

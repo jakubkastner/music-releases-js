@@ -11,3 +11,6 @@ var elLoginMenu = $('.m-login');
 
 var elDateMenuMobile = $('.m-date-mobile');
 var elDateMenu = $('.m-date');
+var elDateMenuYear = $('.m-year');
+var elDateMenuMonth = $('.m-month');
+var elDateMenuMonths = $('.m-months');
