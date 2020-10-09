@@ -1,9 +1,17 @@
 /** BODY
  *  Main page content
  */
-main .content {
+main {
   height: 80vh;
+}
+
+main > * {
+  height: 100%;
+}
+
+main .content {
   width: calc(100% - 4px - 1vw);
+  padding: calc(30px);
 }
 
 main .content .c-releases {

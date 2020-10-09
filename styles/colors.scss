@@ -96,6 +96,19 @@ $color_text_button: #1ab26b;
                 }
             }
         }
+
+        // content buttons
+        .content {
+
+            .button,
+            .buttons>* {
+                background-color: $color_1;
+
+                &:hover {
+                    background-color: $color_3;
+                }
+            }
+        }
     }
 
     // footer

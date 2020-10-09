@@ -4,7 +4,6 @@
 main .m-date {
   overflow: hidden;
   min-width: 160px;
-  height: 80vh;
   display: inline-block;
   resize: horizontal;
 }

@@ -60,6 +60,16 @@ body main .m-date a:hover {
   color: #1ab26b;
 }
 
+body main .content .button,
+body main .content .buttons > * {
+  background-color: #101010;
+}
+
+body main .content .button:hover,
+body main .content .buttons > *:hover {
+  background-color: #242424;
+}
+
 body footer {
   background-color: #1a1a1a;
   color: white;
@@ -122,6 +132,16 @@ body.light main .m-date a {
 
 body.light main .m-date a:hover {
   color: #1ab26b;
+}
+
+body.light main .content .button,
+body.light main .content .buttons > * {
+  background-color: #ebebeb;
+}
+
+body.light main .content .button:hover,
+body.light main .content .buttons > *:hover {
+  background-color: #d7d7d7;
 }
 
 body.light footer {

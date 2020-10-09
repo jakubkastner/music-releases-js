@@ -3,9 +3,16 @@
  */
 
 main {
+
+    height: 80vh;
+
+    &>* {
+        height: 100%;
+    }
+
     .content {
-        height: 80vh;
         width: calc(100% - 4px - 1vw);
+        padding: calc(30px);
 
         .c-releases {
             width: calc(100% - 150px);
