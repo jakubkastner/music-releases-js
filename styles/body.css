@@ -22,4 +22,38 @@ main .content > div {
 main .content > div > div {
   padding: calc(30px);
 }
+
+main .content .c-releases .c-release {
+  padding: calc(30px);
+}
+
+main .content .c-releases .c-release > * {
+  width: 100%;
+  padding: 0;
+}
+
+main .content .c-releases .c-release .c-r-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .content .c-releases .c-release .c-r-flex .c-r-img {
+  margin-right: calc(5px + 1vw);
+  min-height: 85px;
+  min-width: 85px;
+  height: calc(85px + 3.5vw);
+}
+
+main .content .c-releases .c-release .c-r-flex .c-r-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+main .content .c-releases .c-release .c-r-flex .c-r-info .c-r-name,
+main .content .c-releases .c-release .c-r-flex .c-r-info .c-r-artist,
+main .content .c-releases .c-release .c-r-flex .c-r-info .c-r-date {
+  width: 100%;
+  display: inline-block;
+}
 /*# sourceMappingURL=body.css.map */

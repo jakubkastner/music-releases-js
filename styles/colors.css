@@ -1,6 +1,14 @@
 /** COLORS
  *  Colors for dark/light theme.
  */
+body a {
+  color: white;
+}
+
+body a:hover {
+  color: #1ab26b;
+}
+
 body .button,
 body .buttons > * {
   color: #1ab26b;
@@ -82,9 +90,21 @@ body main .content .buttons > *:hover {
   background-color: #2e2e2e;
 }
 
+body main .content .c-releases .c-release {
+  background-color: #060606;
+}
+
 body footer {
-  background-color: #242424;
+  background-color: #060606;
   color: white;
+}
+
+body.light a {
+  color: black;
+}
+
+body.light a:hover {
+  color: #1ab26b;
 }
 
 body.light .button,
@@ -168,8 +188,12 @@ body.light main .content .buttons > *:hover {
   background-color: #d7d7d7;
 }
 
+body.light main .content .c-releases .c-release {
+  background-color: whitesmoke;
+}
+
 body.light footer {
-  background-color: #e1e1e1;
+  background-color: whitesmoke;
   color: black;
 }
 

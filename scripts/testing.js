@@ -10,7 +10,7 @@ elDarkButton.click(function (e) {
     elBody.toggleClass('light');    
 });
 
-
+// TODO jak zjistit idaktuálního  albumu? https://api.jquery.com/parent/
 
 // pwa background sync
 /*$(document).on('click', '#settings-background', async function (e) {

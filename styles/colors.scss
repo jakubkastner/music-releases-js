@@ -13,6 +13,7 @@ $color_text_button: #1ab26b;
 @mixin theme-colors($theme_light: false) {
     // -> init colors
     // dark colors
+    $color_0: rgb(6, 6, 6);
     $color_1: rgb(16, 16, 16);
     $color_2: rgb(26, 26, 26);
     $color_3: rgb(36, 36, 36);
@@ -22,12 +23,22 @@ $color_text_button: #1ab26b;
 
     // light colors
     @if $theme_light {
+        // TODO light colors
+        $color_0: rgb(245, 245, 245);
         $color_1: rgb(235, 235, 235);
         $color_2: rgb(230, 230, 230);
         $color_3: rgb(225, 225, 225);
         $color_4: rgb(215, 215, 215);
         $color_5: rgb(205, 205, 205);
         $color_text: rgb(0, 0, 0);
+    }
+
+    a {
+        color: $color_text;
+
+        &:hover {
+            color: $color_text_button;
+        }
     }
 
     // -> set colors
@@ -84,6 +95,7 @@ $color_text_button: #1ab26b;
             * {
                 background-color: $color_2;
             }
+
             .title {
                 color: $color_text;
             }
@@ -119,21 +131,21 @@ $color_text_button: #1ab26b;
                     background-color: $color_4;
                 }
             }
+
+            .c-releases {
+                .c-release {
+                    background-color: $color_0;
+                }
+            }
         }
     }
 
     // footer
     footer {
-        background-color: $color_3;
+        background-color: $color_0;
         color: $color_text;
     }
 }
-
-
-
-
-
-
 
 // DARK MODE
 body {

@@ -46,7 +46,7 @@
             <div class="div-user in-header">
                 <a class="b-login button" id="user">
                     <i class="fas fa-user-plus"></i>
-                    <p>Login<span class="mobile-hide"> via music account<span></p>
+                    <p>Login<span class="mobile-hide"> via music account</span></p>
                 </a>
                 <nav class="m-login m-hover buttons in-header">
                     <a class="b-login-spotify" title="Login via Spotify"><i class="fab fa-spotify"></i>Spotify</a>
@@ -62,6 +62,8 @@
         <div class="under-header">
             <a class="m-date-mobile hidden button" title="Hide date menu."><i class="fas fa-bars"></i>Date menu</a>
             <h2 class="title">Title</h2>
+            <i class="button fas fa-plus-circle"><span>Add to playlist</span></i>
+            <i class="button fas fa-play"><span>Play</span></i>
         </div>
     </header>
     <main>
@@ -89,7 +91,7 @@
             <a class="m-year button" id="m-year-2015">2015</a>
         </nav>
         <div class="content">
-            <div class="c-logout hidden">
+            <div class="c-logout hidden skrejto">
                 <div>
                     <p>
                         <a class="b-login-spotify button"><i class="fab fa-spotify"></i>Login via Spotify</a>
@@ -102,90 +104,103 @@
                     </p>
                 </div>
             </div>
-            <div class="c-releases skrejto">
-                <div class="albums hidden">
-                    <div class="album" id="2qaaaIfB5TuEAh5cqI1ksz">
-                        <div class="album-flex">
-                            <div class="album-img">
+            <div class="c-releases">
+                <div class="c-albums hidden">
+                    <div class="c-release" id="r-album-2qaaaIfB5TuEAh5cqI1ksz">
+                        <div class="c-r-flex">
+                            <div class="c-r-img">
                                 <img src="images/no-cover.png" />
                             </div>
-                            <div class="album-info">
-                                <a href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">
-                                    <h2>1984</h2>
-                                </a>
-                                <a href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">
-                                    <h3>GASHI</h3>
-                                </a>
-                                <p>2020-08-07</p>
-                                <i class="fas fa-bars album-tracklist" title="View tracklist" id="2qaaaIfB5TuEAh5cqI1ksz_t"><span>16</span></i><i class="far fa-heart album-like" title="Add album to library" id="2qaaaIfB5TuEAh5cqI1ksz_l"></i><i class="fas fa-plus album-playlist" title="Add to playlist" id="2qaaaIfB5TuEAh5cqI1ksz_p"></i><i class="fas fa-plus-square album-playlist-add-new" title="Add to new playlist" id="pd_2qaaaIfB5TuEAh5cqI1ksz"></i><a href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify" title="Open in Spotify"></i></a><a href="https://music.youtube.com/search?q=GASHI 1984" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube" title="Search on Youtube Music"></i></a>
+                            <div class="c-r-info">
+                                <a class="c-r-name" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">Album name</a>
+                                <a class="c-r-artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist</a>
+                                <p class="c-r-date">release date</p>
+                                <i class="c-r-tracklist fas fa-bars" title="View tracklist"><span>number of tracks</span></i>
+                                <i class="c-r-play fas fa-play" title="Play release"></i>
+                                <i class="c-r-library far fa-heart" title="Add release to library"></i>
+                                <i class="c-r-playlist fas fa-plus" title="Add release to playlist"></i>
+                                <a href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify" title="Open in Spotify"></i></a>
+                                <a href="https://music.youtube.com/search?q=GASHI 1984" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube" title="Search on YouTube Music"></i></a>
                             </div>
                         </div>
+                        <iframe class="album-player" src="https://open.spotify.com/embed/album/2IDghQpp8fFp4uZZKp5j62" allowtransparency="true" allow="encrypted-media" frameborder="0"></iframe>
                         <ul class="playlists">
                             <li class="playlist-add" id="p_2UKqPRsvnx7sQjt5EmHxpm_2Kjyuu269jWMmxoBHyKkbf" title="Add release to playlist 'Kewu/Addict'">
-                                <span><i class="fas fa-plus"></i></span>Kewu/Addict
+                                <i class="fas fa-plus"></i>Kewu/Addict
                             </li>
                             <li class="playlist-add" id="p_5H2MrosNRCVB8iJ6s4R10w_2Kjyuu269jWMmxoBHyKkbf" title="Add release to playlist 'Trance'">
-                                <span><i class="fas fa-plus"></i></span>Trance
+                                <i class="fas fa-plus"></i>Trance
                             </li>
                             <li class="playlist-add" id="p_48Vty4cAB0edfGm9ohVDH1_2Kjyuu269jWMmxoBHyKkbf" title="Add release to playlist 'Ambirap'">
-                                <span><i class="fas fa-plus"></i></span>Ambirap
+                                <i class="fas fa-plus"></i>Ambirap
                             </li>
                             <li class="playlist-add" id="p_1FXGtB1FRuEQ8qhB1EmT7n_2Kjyuu269jWMmxoBHyKkbf" title="Add release to playlist 'Underrated.1'">
-                                <span><i class="fas fa-plus"></i></span>Underrated.1
+                                <i class="fas fa-plus"></i>Underrated.1
                             </li>
                             <li class="playlist-add" id="p_75lG1ujOorZwweiCQVoHA6_2Kjyuu269jWMmxoBHyKkbf" title="Add release to playlist '90s?'">
-                                <span><i class="fas fa-plus"></i></span>90s?
+                                <i class="fas fa-plus"></i>90s?
                             </li>
                             <li class="playlist-add" id="p_72g3Ti1hox3lOFy7rhKeHM_2Kjyuu269jWMmxoBHyKkbf" title="Add release to playlist 'PROUD'">
-                                <span><i class="fas fa-plus"></i></span>PROUD
+                                <i class="fas fa-plus"></i>PROUD
                             </li>
                             <li class="playlist-add" id="p_5V2ZawTFMIaTofTzdu90pR_2Kjyuu269jWMmxoBHyKkbf" title="Add release to playlist 'DREAM'">
-                                <span><i class="fas fa-plus"></i></span>DREAM
+                                <i class="fas fa-plus"></i>DREAM
                             </li>
                             <li class="playlist-add" id="p_77vYWfoObKlQEcEBHhwy9j_2Kjyuu269jWMmxoBHyKkbf" title="Add release to playlist 'AFTER DREAM'">
-                                <span><i class="fas fa-plus"></i></span>AFTER DREAM
+                                <i class="fas fa-plus"></i>AFTER DREAM
                             </li>
                         </ul>
                     </div>
-                    <div class="album" id="2qaaaIfB5TuEAh5cqI1ksz">
-                        <div class="album-flex">
-                            <div class="album-img">
+                    <div class="c-release" id="r-album-2qaaaIfB5TuEAh5cqI1ksz">
+                        <div class="c-r-flex">
+                            <div class="c-r-img">
                                 <img src="images/no-cover.png" />
                             </div>
-                            <div class="album-info">
-                                <a href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">
-                                    <h2>1984</h2>
-                                </a>
-                                <a href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">
-                                    <h3>GASHI</h3>
-                                </a>
-                                <p>2020-08-07</p>
-                                <i class="fas fa-bars album-tracklist" title="View tracklist" id="2qaaaIfB5TuEAh5cqI1ksz_t"><span>16</span></i><i class="far fa-heart album-like" title="Add album to library" id="2qaaaIfB5TuEAh5cqI1ksz_l"></i><i class="fas fa-plus album-playlist" title="Add to playlist" id="2qaaaIfB5TuEAh5cqI1ksz_p"></i><i class="fas fa-plus-square album-playlist-add-new" title="Add to new playlist" id="pd_2qaaaIfB5TuEAh5cqI1ksz"></i><a href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify" title="Open in Spotify"></i></a><a href="https://music.youtube.com/search?q=GASHI 1984" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube" title="Search on Youtube Music"></i></a>
+                            <div class="c-r-info">
+                                <a class="c-r-name" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">Album name</a>
+                                <a class="c-r-artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist</a>
+                                <p class="c-r-date">release date</p>
+                                <i class="c-r-tracklist fas fa-bars" title="View tracklist"><span>number of tracks</span></i>
+                                <i class="c-r-play fas fa-play" title="Play release"></i>
+                                <i class="c-r-library far fa-heart" title="Add release to library"></i>
+                                <i class="c-r-playlist fas fa-plus" title="Add release to playlist"></i>
+                                <a href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify" title="Open in Spotify"></i></a>
+                                <a href="https://music.youtube.com/search?q=GASHI 1984" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube" title="Search on YouTube Music"></i></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="album" id="2qaaaIfB5TuEAh5cqI1ksz">
-                        <div class="album-flex">
-                            <div class="album-img">
-                                <img src="images/no-cover.png" />
-                            </div>
-                            <div class="album-info">
-                                <a href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">
-                                    <h2>1984</h2>
-                                </a>
-                                <a href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">
-                                    <h3>GASHI</h3>
-                                </a>
-                                <p>2020-08-07</p>
-                                <i class="fas fa-bars album-tracklist" title="View tracklist" id="2qaaaIfB5TuEAh5cqI1ksz_t"><span>16</span></i><i class="far fa-heart album-like" title="Add album to library" id="2qaaaIfB5TuEAh5cqI1ksz_l"></i><i class="fas fa-plus album-playlist" title="Add to playlist" id="2qaaaIfB5TuEAh5cqI1ksz_p"></i><i class="fas fa-plus-square album-playlist-add-new" title="Add to new playlist" id="pd_2qaaaIfB5TuEAh5cqI1ksz"></i><a href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify" title="Open in Spotify"></i></a><a href="https://music.youtube.com/search?q=GASHI 1984" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube" title="Search on Youtube Music"></i></a>
-                            </div>
-                        </div>
+                        <iframe class="album-player" src="https://open.spotify.com/embed/album/2IDghQpp8fFp4uZZKp5j62" allowtransparency="true" allow="encrypted-media" frameborder="0"></iframe>
+                        <ul class="playlists">
+                            <li class="playlist-add" id="p_2UKqPRsvnx7sQjt5EmHxpm_2Kjyuu269jWMmxoBHyKkbf" title="Add release to playlist 'Kewu/Addict'">
+                                <i class="fas fa-plus"></i>Kewu/Addict
+                            </li>
+                            <li class="playlist-add" id="p_5H2MrosNRCVB8iJ6s4R10w_2Kjyuu269jWMmxoBHyKkbf" title="Add release to playlist 'Trance'">
+                                <i class="fas fa-plus"></i>Trance
+                            </li>
+                            <li class="playlist-add" id="p_48Vty4cAB0edfGm9ohVDH1_2Kjyuu269jWMmxoBHyKkbf" title="Add release to playlist 'Ambirap'">
+                                <i class="fas fa-plus"></i>Ambirap
+                            </li>
+                            <li class="playlist-add" id="p_1FXGtB1FRuEQ8qhB1EmT7n_2Kjyuu269jWMmxoBHyKkbf" title="Add release to playlist 'Underrated.1'">
+                                <i class="fas fa-plus"></i>Underrated.1
+                            </li>
+                            <li class="playlist-add" id="p_75lG1ujOorZwweiCQVoHA6_2Kjyuu269jWMmxoBHyKkbf" title="Add release to playlist '90s?'">
+                                <i class="fas fa-plus"></i>90s?
+                            </li>
+                            <li class="playlist-add" id="p_72g3Ti1hox3lOFy7rhKeHM_2Kjyuu269jWMmxoBHyKkbf" title="Add release to playlist 'PROUD'">
+                                <i class="fas fa-plus"></i>PROUD
+                            </li>
+                            <li class="playlist-add" id="p_5V2ZawTFMIaTofTzdu90pR_2Kjyuu269jWMmxoBHyKkbf" title="Add release to playlist 'DREAM'">
+                                <i class="fas fa-plus"></i>DREAM
+                            </li>
+                            <li class="playlist-add" id="p_77vYWfoObKlQEcEBHhwy9j_2Kjyuu269jWMmxoBHyKkbf" title="Add release to playlist 'AFTER DREAM'">
+                                <i class="fas fa-plus"></i>AFTER DREAM
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="tracks hidden"></div>
-                <div class="appears hidden"></div>
-                <div class="compilations hidden"></div>
-                <div class="settings hidden"></div>
+                <div class="tracks hidden skrejto"></div>
+                <div class="appears hidden skrejto"></div>
+                <div class="compilations hidden skrejto"></div>
+                <div class="settings hidden skrejto"></div>
             </div>
         </div>
     </main>
@@ -193,6 +208,8 @@
         <div class="in-body">
             <button class="top" id="top" title="Top"><i class="fas fa-angle-double-up"></i></button>
             <p>&copy; 2018 - 2020 Jakub Kastner</p>
+            <p>něco</p>
+            <p>něco2</p>
         </div>
     </footer>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
