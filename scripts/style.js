@@ -32,11 +32,11 @@ $(document).click(function () {
 });
 
 /**
- * Click to clickable buttons. Add/remove "active" class.
+ * Click to release menu. Add/remove "active" class.
  */
-elClickableButtons.click(function () {
+elReleasesMenu.click(function () {
     // remove all "active" class
-    elClickableButtons.removeClass('active');
+    elReleasesMenu.removeClass('active');
     // add "active" class to clicked button
     var elClicked = $(this);
     elClicked.addClass('active');

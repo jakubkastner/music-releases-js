@@ -1,3 +1,8 @@
 /** INIT
  *  Init sass varibles, ...
  */
+
+$date_menu_width: 160px;
+$button_padding_1: 2px;
+$button_padding_2: 0.5vw;
+$button_padding: calc(#{$button_padding_1} + #{$button_padding_2});

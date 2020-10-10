@@ -1,13 +1,14 @@
 /** DATE MENU
  *  Left date menu.
  */
+@import 'init';
 
 main {
 
     // date menu
     .m-date {
         overflow: hidden;
-        min-width: 160px;
+        min-width: $date_menu_width;
         display: inline-block;
         resize: horizontal;
 

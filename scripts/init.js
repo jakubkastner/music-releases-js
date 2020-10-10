@@ -3,11 +3,14 @@
  */
 
 // all buttons, which can be active
-var elClickableButtons = $('.m-clickable a');
+var elReleasesMenu = $('.m-releases a');
 // login buttons
 var elLoginButton = $('.b-login');
 // left login menu
 var elLoginMenu = $('.m-login');
+
+// page title
+var elTitle = $('.title');
 
 var elDateMenuMobile = $('.m-date-mobile');
 var elDateMenu = $('.m-date');

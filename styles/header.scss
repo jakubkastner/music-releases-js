@@ -2,6 +2,7 @@
  *  Header menu
  *  Page name
  */
+@import 'init';
 
 header {
 
@@ -41,12 +42,6 @@ header {
             & * {
                 font-weight: 700;
             }
-        }
-
-
-        // mobile date (hide/show) icon
-        .m-date-mobile {
-            width: 25px;
         }
 
         // page name
@@ -110,6 +105,16 @@ header {
                     display: none;
                 }
             }
+        }
+    }
+
+    .under-header {        
+        // mobile date (hide/show) icon
+        .m-date-mobile {
+            width: calc(#{$date_menu_width} - 2 * #{$button_padding_1} - 2 * #{$button_padding_2});
+        }
+        .title {
+            padding: $button_padding 50px;
         }
     }
 }

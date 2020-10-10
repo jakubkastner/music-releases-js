@@ -1,6 +1,9 @@
 /** DATE MENU
  *  Left date menu.
  */
+/** INIT
+ *  Init sass varibles, ...
+ */
 main .m-date {
   overflow: hidden;
   min-width: 160px;

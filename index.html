@@ -28,7 +28,6 @@
     <header>
         <div class="loader"></div>
         <div>
-            <a class="m-date-mobile in-header hidden button" title="Hide date menu."><i class="fas fa-bars"></i></a>
             <div class="page-name in-header">
                 <h1 class="mobile-hide">Music</h1>
                 <img class="favicon" src="images/favicon.png" alt="R" />
@@ -60,6 +59,10 @@
                 </nav>
             </div>
         </div>
+        <div class="under-header">
+            <a class="m-date-mobile hidden button" title="Hide date menu."><i class="fas fa-bars"></i>Date menu</a>
+            <h2 class="title">Title</h2>
+        </div>
     </header>
     <main>
         <nav class="m-date">
@@ -86,13 +89,8 @@
             <a class="m-year button" id="m-year-2015">2015</a>
         </nav>
         <div class="content">
-            <div class="c-head">
-                <h2 class="title">Title</h2>
-                <h2 class="message">Message</h2>
-                <p class="error">Error</p>
-            </div>
-            <div class="c-releases">
-                <div class="c-logout hidden skrejto">
+            <div class="c-logout hidden">
+                <div>
                     <p>
                         <a class="b-login-spotify button"><i class="fab fa-spotify"></i>Login via Spotify</a>
                     </p>
@@ -103,6 +101,8 @@
                         <a class="b-login-apple button"><i class="fab fa-apple"></i>Login via Apple Music</a>
                     </p>
                 </div>
+            </div>
+            <div class="c-releases skrejto">
                 <div class="albums hidden">
                     <div class="album" id="2qaaaIfB5TuEAh5cqI1ksz">
                         <div class="album-flex">
@@ -198,6 +198,7 @@
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="scripts/init.js"></script>
     <script src="scripts/style.js"></script>
+    <script src="scripts/function.js"></script>
     <script src="scripts/testing.js"></script>
 </body>
 
