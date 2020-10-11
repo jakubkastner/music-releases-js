@@ -77,3 +77,16 @@ async function getIcon(elCurrent) {
     var elIcon = elCurrent.children('i');
     return elIcon;
 }
+
+
+/**
+ * 
+ */
+elReleasePlaylistAdd.click(async function () {
+
+});
+
+
+elReleasePlaylistRemove.click(async function () {
+
+});

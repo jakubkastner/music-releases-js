@@ -1,248 +1,390 @@
 /** COLORS
  *  Colors for dark/light theme.
  */
-body a {
-  color: white;
+@media (prefers-color-scheme: light) {
+  body a {
+    color: black;
+  }
+  body a:hover {
+    color: #1ab26b;
+  }
+  body .button,
+  body .buttons > * {
+    color: #1ab26b;
+    background-color: #e1e1e1;
+  }
+  body .button:hover,
+  body .buttons > *:hover {
+    background-color: #d7d7d7;
+  }
+  body .button:hover *,
+  body .buttons > *:hover * {
+    background-color: #d7d7d7;
+  }
+  body .button.active,
+  body .buttons > *.active {
+    background-color: #e6e6e6;
+    color: #1ab26b;
+  }
+  body .list a:hover {
+    background-color: #e6e6e6;
+    color: black;
+  }
+  body .list a.active {
+    background-color: black;
+    color: #1ab26b;
+  }
+  body .list a.c-r-update:hover {
+    background-color: whitesmoke;
+    color: #1ab26b;
+  }
+  body header {
+    background-color: #e1e1e1;
+    color: #1ab26b;
+  }
+  body header .m-hover a {
+    background-color: #d7d7d7;
+  }
+  body header .m-hover a * {
+    background-color: #d7d7d7;
+  }
+  body header .m-hover a:hover {
+    background-color: #cdcdcd;
+  }
+  body header .m-hover a:hover * {
+    background-color: #cdcdcd;
+  }
+  body header .b-login.hover {
+    background-color: #d7d7d7;
+  }
+  body header .under-header {
+    background-color: #e6e6e6;
+  }
+  body header .under-header * {
+    background-color: #e6e6e6;
+  }
+  body header .under-header .title {
+    color: black;
+  }
+  body main {
+    background-color: #ebebeb;
+    color: black;
+  }
+  body main .m-date {
+    background-color: #e1e1e1;
+  }
+  body main .m-date a {
+    color: black;
+  }
+  body main .m-date a:hover {
+    color: #1ab26b;
+  }
+  body main .content .button,
+  body main .content .buttons > * {
+    background-color: #ebebeb;
+  }
+  body main .content .button:hover,
+  body main .content .buttons > *:hover {
+    background-color: #d7d7d7;
+  }
+  body main .content .c-releases .c-release {
+    background-color: whitesmoke;
+  }
+  body main .content .c-releases .c-release .c-r-buttons.active {
+    color: #1ab26b;
+  }
+  body footer {
+    background-color: whitesmoke;
+    color: black;
+  }
+  body.dark a {
+    color: white;
+  }
+  body.dark a:hover {
+    color: #1ab26b;
+  }
+  body.dark .button,
+  body.dark .buttons > * {
+    color: #1ab26b;
+    background-color: #242424;
+  }
+  body.dark .button:hover,
+  body.dark .buttons > *:hover {
+    background-color: #2e2e2e;
+  }
+  body.dark .button:hover *,
+  body.dark .buttons > *:hover * {
+    background-color: #2e2e2e;
+  }
+  body.dark .button.active,
+  body.dark .buttons > *.active {
+    background-color: #1a1a1a;
+    color: #1ab26b;
+  }
+  body.dark .list a:hover {
+    background-color: #1a1a1a;
+    color: white;
+  }
+  body.dark .list a.active {
+    background-color: black;
+    color: #1ab26b;
+  }
+  body.dark .list a.c-r-update:hover {
+    background-color: #060606;
+    color: #1ab26b;
+  }
+  body.dark header {
+    background-color: #242424;
+    color: #1ab26b;
+  }
+  body.dark header .m-hover a {
+    background-color: #2e2e2e;
+  }
+  body.dark header .m-hover a * {
+    background-color: #2e2e2e;
+  }
+  body.dark header .m-hover a:hover {
+    background-color: #383838;
+  }
+  body.dark header .m-hover a:hover * {
+    background-color: #383838;
+  }
+  body.dark header .b-login.hover {
+    background-color: #2e2e2e;
+  }
+  body.dark header .under-header {
+    background-color: #1a1a1a;
+  }
+  body.dark header .under-header * {
+    background-color: #1a1a1a;
+  }
+  body.dark header .under-header .title {
+    color: white;
+  }
+  body.dark main {
+    background-color: #101010;
+    color: white;
+  }
+  body.dark main .m-date {
+    background-color: #242424;
+  }
+  body.dark main .m-date a {
+    color: white;
+  }
+  body.dark main .m-date a:hover {
+    color: #1ab26b;
+  }
+  body.dark main .content .button,
+  body.dark main .content .buttons > * {
+    background-color: #101010;
+  }
+  body.dark main .content .button:hover,
+  body.dark main .content .buttons > *:hover {
+    background-color: #2e2e2e;
+  }
+  body.dark main .content .c-releases .c-release {
+    background-color: #060606;
+  }
+  body.dark main .content .c-releases .c-release .c-r-buttons.active {
+    color: #1ab26b;
+  }
+  body.dark footer {
+    background-color: #060606;
+    color: white;
+  }
 }
 
-body a:hover {
-  color: #1ab26b;
-}
-
-body .button,
-body .buttons > * {
-  color: #1ab26b;
-  background-color: #242424;
-}
-
-body .button:hover,
-body .buttons > *:hover {
-  background-color: #2e2e2e;
-}
-
-body .button:hover *,
-body .buttons > *:hover * {
-  background-color: #2e2e2e;
-}
-
-body .button.active,
-body .buttons > *.active {
-  background-color: #1a1a1a;
-  color: #1ab26b;
-}
-
-body .list a:hover {
-  background-color: #1a1a1a;
-  color: white;
-}
-
-body .list a.active {
-  background-color: black;
-  color: #1ab26b;
-}
-
-body .list a.c-r-update:hover {
-  background-color: #060606;
-  color: #1ab26b;
-}
-
-body header {
-  background-color: #242424;
-  color: #1ab26b;
-}
-
-body header .m-hover a {
-  background-color: #2e2e2e;
-}
-
-body header .m-hover a * {
-  background-color: #2e2e2e;
-}
-
-body header .m-hover a:hover {
-  background-color: #383838;
-}
-
-body header .m-hover a:hover * {
-  background-color: #383838;
-}
-
-body header .b-login.hover {
-  background-color: #2e2e2e;
-}
-
-body header .under-header {
-  background-color: #1a1a1a;
-}
-
-body header .under-header * {
-  background-color: #1a1a1a;
-}
-
-body header .under-header .title {
-  color: white;
-}
-
-body main {
-  background-color: #101010;
-  color: white;
-}
-
-body main .m-date {
-  background-color: #242424;
-}
-
-body main .m-date a {
-  color: white;
-}
-
-body main .m-date a:hover {
-  color: #1ab26b;
-}
-
-body main .content .button,
-body main .content .buttons > * {
-  background-color: #101010;
-}
-
-body main .content .button:hover,
-body main .content .buttons > *:hover {
-  background-color: #2e2e2e;
-}
-
-body main .content .c-releases .c-release {
-  background-color: #060606;
-}
-
-body main .content .c-releases .c-release .c-r-buttons.active {
-  color: #1ab26b;
-}
-
-body footer {
-  background-color: #060606;
-  color: white;
-}
-
-body.light a {
-  color: black;
-}
-
-body.light a:hover {
-  color: #1ab26b;
-}
-
-body.light .button,
-body.light .buttons > * {
-  color: #1ab26b;
-  background-color: #e1e1e1;
-}
-
-body.light .button:hover,
-body.light .buttons > *:hover {
-  background-color: #d7d7d7;
-}
-
-body.light .button:hover *,
-body.light .buttons > *:hover * {
-  background-color: #d7d7d7;
-}
-
-body.light .button.active,
-body.light .buttons > *.active {
-  background-color: #e6e6e6;
-  color: #1ab26b;
-}
-
-body.light .list a:hover {
-  background-color: #e6e6e6;
-  color: black;
-}
-
-body.light .list a.active {
-  background-color: black;
-  color: #1ab26b;
-}
-
-body.light .list a.c-r-update:hover {
-  background-color: whitesmoke;
-  color: #1ab26b;
-}
-
-body.light header {
-  background-color: #e1e1e1;
-  color: #1ab26b;
-}
-
-body.light header .m-hover a {
-  background-color: #d7d7d7;
-}
-
-body.light header .m-hover a * {
-  background-color: #d7d7d7;
-}
-
-body.light header .m-hover a:hover {
-  background-color: #cdcdcd;
-}
-
-body.light header .m-hover a:hover * {
-  background-color: #cdcdcd;
-}
-
-body.light header .b-login.hover {
-  background-color: #d7d7d7;
-}
-
-body.light header .under-header {
-  background-color: #e6e6e6;
-}
-
-body.light header .under-header * {
-  background-color: #e6e6e6;
-}
-
-body.light header .under-header .title {
-  color: black;
-}
-
-body.light main {
-  background-color: #ebebeb;
-  color: black;
-}
-
-body.light main .m-date {
-  background-color: #e1e1e1;
-}
-
-body.light main .m-date a {
-  color: black;
-}
-
-body.light main .m-date a:hover {
-  color: #1ab26b;
-}
-
-body.light main .content .button,
-body.light main .content .buttons > * {
-  background-color: #ebebeb;
-}
-
-body.light main .content .button:hover,
-body.light main .content .buttons > *:hover {
-  background-color: #d7d7d7;
-}
-
-body.light main .content .c-releases .c-release {
-  background-color: whitesmoke;
-}
-
-body.light main .content .c-releases .c-release .c-r-buttons.active {
-  color: #1ab26b;
-}
-
-body.light footer {
-  background-color: whitesmoke;
-  color: black;
+@media (prefers-color-scheme: dark) {
+  body a {
+    color: white;
+  }
+  body a:hover {
+    color: #1ab26b;
+  }
+  body .button,
+  body .buttons > * {
+    color: #1ab26b;
+    background-color: #242424;
+  }
+  body .button:hover,
+  body .buttons > *:hover {
+    background-color: #2e2e2e;
+  }
+  body .button:hover *,
+  body .buttons > *:hover * {
+    background-color: #2e2e2e;
+  }
+  body .button.active,
+  body .buttons > *.active {
+    background-color: #1a1a1a;
+    color: #1ab26b;
+  }
+  body .list a:hover {
+    background-color: #1a1a1a;
+    color: white;
+  }
+  body .list a.active {
+    background-color: black;
+    color: #1ab26b;
+  }
+  body .list a.c-r-update:hover {
+    background-color: #060606;
+    color: #1ab26b;
+  }
+  body header {
+    background-color: #242424;
+    color: #1ab26b;
+  }
+  body header .m-hover a {
+    background-color: #2e2e2e;
+  }
+  body header .m-hover a * {
+    background-color: #2e2e2e;
+  }
+  body header .m-hover a:hover {
+    background-color: #383838;
+  }
+  body header .m-hover a:hover * {
+    background-color: #383838;
+  }
+  body header .b-login.hover {
+    background-color: #2e2e2e;
+  }
+  body header .under-header {
+    background-color: #1a1a1a;
+  }
+  body header .under-header * {
+    background-color: #1a1a1a;
+  }
+  body header .under-header .title {
+    color: white;
+  }
+  body main {
+    background-color: #101010;
+    color: white;
+  }
+  body main .m-date {
+    background-color: #242424;
+  }
+  body main .m-date a {
+    color: white;
+  }
+  body main .m-date a:hover {
+    color: #1ab26b;
+  }
+  body main .content .button,
+  body main .content .buttons > * {
+    background-color: #101010;
+  }
+  body main .content .button:hover,
+  body main .content .buttons > *:hover {
+    background-color: #2e2e2e;
+  }
+  body main .content .c-releases .c-release {
+    background-color: #060606;
+  }
+  body main .content .c-releases .c-release .c-r-buttons.active {
+    color: #1ab26b;
+  }
+  body footer {
+    background-color: #060606;
+    color: white;
+  }
+  body.light a {
+    color: black;
+  }
+  body.light a:hover {
+    color: #1ab26b;
+  }
+  body.light .button,
+  body.light .buttons > * {
+    color: #1ab26b;
+    background-color: #e1e1e1;
+  }
+  body.light .button:hover,
+  body.light .buttons > *:hover {
+    background-color: #d7d7d7;
+  }
+  body.light .button:hover *,
+  body.light .buttons > *:hover * {
+    background-color: #d7d7d7;
+  }
+  body.light .button.active,
+  body.light .buttons > *.active {
+    background-color: #e6e6e6;
+    color: #1ab26b;
+  }
+  body.light .list a:hover {
+    background-color: #e6e6e6;
+    color: black;
+  }
+  body.light .list a.active {
+    background-color: black;
+    color: #1ab26b;
+  }
+  body.light .list a.c-r-update:hover {
+    background-color: whitesmoke;
+    color: #1ab26b;
+  }
+  body.light header {
+    background-color: #e1e1e1;
+    color: #1ab26b;
+  }
+  body.light header .m-hover a {
+    background-color: #d7d7d7;
+  }
+  body.light header .m-hover a * {
+    background-color: #d7d7d7;
+  }
+  body.light header .m-hover a:hover {
+    background-color: #cdcdcd;
+  }
+  body.light header .m-hover a:hover * {
+    background-color: #cdcdcd;
+  }
+  body.light header .b-login.hover {
+    background-color: #d7d7d7;
+  }
+  body.light header .under-header {
+    background-color: #e6e6e6;
+  }
+  body.light header .under-header * {
+    background-color: #e6e6e6;
+  }
+  body.light header .under-header .title {
+    color: black;
+  }
+  body.light main {
+    background-color: #ebebeb;
+    color: black;
+  }
+  body.light main .m-date {
+    background-color: #e1e1e1;
+  }
+  body.light main .m-date a {
+    color: black;
+  }
+  body.light main .m-date a:hover {
+    color: #1ab26b;
+  }
+  body.light main .content .button,
+  body.light main .content .buttons > * {
+    background-color: #ebebeb;
+  }
+  body.light main .content .button:hover,
+  body.light main .content .buttons > *:hover {
+    background-color: #d7d7d7;
+  }
+  body.light main .content .c-releases .c-release {
+    background-color: whitesmoke;
+  }
+  body.light main .content .c-releases .c-release .c-r-buttons.active {
+    color: #1ab26b;
+  }
+  body.light footer {
+    background-color: whitesmoke;
+    color: black;
+  }
 }
 
 .loader {

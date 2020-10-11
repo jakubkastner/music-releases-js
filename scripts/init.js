@@ -2,6 +2,9 @@
  *  Init some variables - jquery elements, ...
  */
 
+// page body (for light/dark mode)
+var elBody = $('body');
+
 // all buttons, which can be active
 var elReleasesMenu = $('.m-releases a');
 // login buttons
@@ -25,3 +28,6 @@ var elReleaseTracklist = $('.c-r-tracklist');
 // releases playlists
 var elReleasePlaylistButton = $('.c-r-b-playlist');
 var elReleasePlaylists = $('.c-r-playlists');
+
+var elReleasePlaylistAdd = $('.c-r-p-add');
+var elReleasePlaylistRemove = $('.c-r-p-remove');

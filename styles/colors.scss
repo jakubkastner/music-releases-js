@@ -77,6 +77,7 @@ $color_text_button: #1ab26b;
                 background-color: $color_0;
                 color: $color_text_button;
             }
+
             &.c-r-update:hover {
                 background-color: $color_1;
                 color: $color_text_button;
@@ -176,13 +177,27 @@ $color_text_button: #1ab26b;
     }
 }
 
-// DARK MODE
-body {
-    @include theme-colors($theme_light: false);
+// DARK/LIGHT MODE
 
-    // LIGHT MODE
-    &.light {
+// light mode
+@media (prefers-color-scheme: light) {
+    body {
         @include theme-colors($theme_light: true);
+
+        &.dark {
+            @include theme-colors($theme_light: false);
+        }
+    }
+}
+
+// dark mode
+@media (prefers-color-scheme: dark) {
+    body {
+        @include theme-colors($theme_light: false);
+
+        &.light {
+            @include theme-colors($theme_light: true);
+        }
     }
 }
 

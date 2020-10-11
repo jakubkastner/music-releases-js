@@ -4,13 +4,10 @@
 
 // dark / light mode
 var elDarkButton = $('.b-dark');
-var elBody = $('body');
 
 elDarkButton.click(function (e) {
-    elBody.toggleClass('light');    
+    elBody.toggleClass('light', 'dark');    
 });
-
-// TODO jak zjistit idaktuálního  albumu? https://api.jquery.com/parent/
 
 // pwa background sync
 /*$(document).on('click', '#settings-background', async function (e) {
