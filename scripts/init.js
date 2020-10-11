@@ -29,5 +29,4 @@ var elReleaseTracklist = $('.c-r-tracklist');
 var elReleasePlaylistButton = $('.c-r-b-playlist');
 var elReleasePlaylists = $('.c-r-playlists');
 
-var elReleasePlaylistAdd = $('.c-r-p-add');
-var elReleasePlaylistRemove = $('.c-r-p-remove');
+var elReleasePlaylistAddRemove = $('.c-r-p-add, .c-r-p-remove');

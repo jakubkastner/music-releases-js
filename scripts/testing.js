@@ -9,6 +9,19 @@ elDarkButton.click(function (e) {
     elBody.toggleClass('light', 'dark');    
 });
 
+
+// s ikonou pak nejde pracovat dál (měnit třídu atd...)
+/**
+ * Get child icon of current clicked element.
+ * @param {*} elCurrent current clicked element
+ */
+/*async function getIcon(elCurrent) {
+    var elIcon = elCurrent.children('i');
+    elIcon.removeClass('fa-plus');    
+    return elIcon;
+}*/
+
+
 // pwa background sync
 /*$(document).on('click', '#settings-background', async function (e) {
     console.log("click");

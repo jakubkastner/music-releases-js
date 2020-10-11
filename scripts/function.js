@@ -19,7 +19,7 @@ elReleaseTracklistButton.click(async function () {
     // get release
     var release = await getReleaseID(elCurrentButton);
 
-    // change title
+    // TODO change title
     elCurrentButton.prop('title', '');
 
     // change button
@@ -69,24 +69,44 @@ async function getReleaseID(elChild) {
     return release;
 }
 
+
 /**
- * Get child icon of current clicked element.
- * @param {*} elCurrent current clicked element
+ * Click to add release to playlist.
  */
-async function getIcon(elCurrent) {
-    var elIcon = elCurrent.children('i');
-    return elIcon;
+elReleasePlaylistAddRemove.click(async function () {
+    // get current button
+    var elCurrentButton = $(this);
+    if (elCurrentButton.hasClass('c-r-p-remove')) {
+        playlistRemove(elCurrentButton);
+    }
+    else {
+        playlistAdd(elCurrentButton);
+    }
+});
+function playlistAdd(elCurrentButton) {
+    // change add/remove class and remove "active" class to current element
+    elCurrentButton.removeClass('c-r-p-add');
+    elCurrentButton.addClass('c-r-p-remove');
+    elCurrentButton.addClass('active');
+
+    // chage title
+    var playlistName = elCurrentButton.text();
+    elCurrentButton.prop('title', 'Remove release from playlist \'' + playlistName + '\'');
+
+    // change icon
+    elCurrentButton.children('i').removeClass('fa-plus').addClass('fa-minus');
 }
+function playlistRemove(elCurrentButton) {
+    // change add/remove class and add "active" class to current element
+    elCurrentButton.removeClass('c-r-p-remove');
+    elCurrentButton.addClass('c-r-p-add');
+    elCurrentButton.removeClass('active');
 
+    // chage title
+    var playlistName = elCurrentButton.text();
+    elCurrentButton.prop('title', 'Add release to playlist \'' + playlistName + '\'');
 
-/**
- * 
- */
-elReleasePlaylistAdd.click(async function () {
-
-});
-
-
-elReleasePlaylistRemove.click(async function () {
-
-});
+    // change icon
+    elCurrentButton.children('i').removeClass('fa-minus').addClass('fa-plus');
+}
+// TODO custom playlist
