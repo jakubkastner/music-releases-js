@@ -26,4 +26,15 @@
 .buttons > * i {
   margin-right: calc(4px + 0.2vw);
 }
+
+.list a {
+  cursor: pointer;
+  display: block;
+  font-size: calc(10px + 0.4vw);
+  padding: calc(2px + 0.5vw);
+}
+
+.list a i {
+  margin-right: calc(4px + 0.2vw);
+}
 /*# sourceMappingURL=actions.css.map */

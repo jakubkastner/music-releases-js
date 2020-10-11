@@ -42,7 +42,7 @@ main .content .c-releases .c-release .c-r-flex .c-r-img {
   margin-right: calc(5px + 1vw);
   min-height: 85px;
   min-width: 85px;
-  height: calc(85px + 3.5vw);
+  width: calc(85px + 3.5vw);
 }
 
 main .content .c-releases .c-release .c-r-flex .c-r-img img {
@@ -50,10 +50,48 @@ main .content .c-releases .c-release .c-r-flex .c-r-img img {
   max-height: 100%;
 }
 
+main .content .c-releases .c-release .c-r-flex .c-r-info {
+  width: 100%;
+}
+
 main .content .c-releases .c-release .c-r-flex .c-r-info .c-r-name,
 main .content .c-releases .c-release .c-r-flex .c-r-info .c-r-artist,
 main .content .c-releases .c-release .c-r-flex .c-r-info .c-r-date {
   width: 100%;
   display: inline-block;
+}
+
+main .content .c-releases .c-release .c-r-flex .c-r-info .c-r-name {
+  font-size: calc(10px + 0.8vw);
+}
+
+main .content .c-releases .c-release .c-r-flex .c-r-info .c-r-artist {
+  font-size: calc(9px + 0.7vw);
+}
+
+main .content .c-releases .c-release .c-r-flex .c-r-info .c-r-date {
+  font-size: calc(8px + 0.6vw);
+}
+
+main .content .c-releases .c-release .c-r-flex .c-r-info .c-r-buttons {
+  font-size: calc(10px + 1vw);
+  cursor: pointer;
+  margin-right: calc(4px + 0.1vw);
+}
+
+main .content .c-releases .c-release .c-r-flex .c-r-info .c-r-buttons i {
+  margin-right: calc(2px + 0.1vw);
+}
+
+main .content .c-releases .c-release .c-r-content {
+  margin-top: 1vw;
+}
+
+main .content .c-releases .c-release .c-r-content.c-r-tracklist {
+  height: calc(100px + 15vw);
+}
+
+main .content .c-releases .c-release .c-r-content.c-r-playlists .c-r-update {
+  text-align: right;
 }
 /*# sourceMappingURL=body.css.map */

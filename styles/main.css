@@ -5,11 +5,9 @@
   margin: 0;
   text-decoration: none;
   font-family: "Pontano Sans", sans-serif;
-}
-
-* :hover {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  /*:hover {
+        transition: 0.5s;
+    }*/
 }
 
 main {

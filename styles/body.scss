@@ -41,7 +41,7 @@ main {
                         margin-right: calc(5px + 1vw);
                         min-height: 85px;
                         min-width: 85px;
-                        height: calc(85px + 3.5vw);
+                        width: calc(85px + 3.5vw);
 
                         img {
                             max-width: 100%;
@@ -50,12 +50,52 @@ main {
                     }
 
                     .c-r-info {
+                        width: 100%;
 
                         .c-r-name,
                         .c-r-artist,
                         .c-r-date {
                             width: 100%;
                             display: inline-block;
+                        }
+
+                        .c-r-name {
+                            font-size: calc(10px + 0.8vw);
+                        }
+
+                        .c-r-artist {
+                            font-size: calc(9px + 0.7vw);
+                        }
+
+                        .c-r-date {
+                            font-size: calc(8px + 0.6vw);
+                        }
+
+                        .c-r-buttons {
+                            font-size: calc(10px + 1vw);
+                            cursor: pointer;
+                            margin-right: calc(4px + 0.1vw);
+
+                            i {
+                                margin-right: calc(2px + 0.1vw);
+                            }
+                        }
+                    }
+                }
+
+                // release content
+                .c-r-content {
+                    margin-top: 1vw;
+
+                    // tracklist
+                    &.c-r-tracklist {
+                        height: calc(100px + 15vw);
+                    }
+
+                    // playlists
+                    &.c-r-playlists {
+                        .c-r-update {
+                            text-align: right;
                         }
                     }
                 }

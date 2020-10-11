@@ -47,11 +47,11 @@ elReleasesMenu.click(function () {
  */
 elDateMenuMobile.click(function () {
     if (elDateMenu.is(':visible')) {
-        elDateMenu.hide();
+        elDateMenu.hide('slow');
         elDateMenuMobile.attr({ 'title': 'Show date menu.' });
     }
     else {
-        elDateMenu.show();
+        elDateMenu.show('slow');
         elDateMenuMobile.attr({ 'title': 'Hide date menu.' });
     }
 });

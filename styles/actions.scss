@@ -27,3 +27,16 @@
         margin-right: calc(4px + 0.2vw);
     }
 }
+
+.list {
+    a {
+        cursor: pointer;
+        display: block;
+        font-size: calc(10px + 0.4vw);
+        padding: $button_padding;
+
+        i {
+            margin-right: calc(4px + 0.2vw);
+        }
+    }
+}

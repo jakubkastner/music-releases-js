@@ -20,9 +20,29 @@ body .buttons > *:hover {
   background-color: #2e2e2e;
 }
 
+body .button:hover *,
+body .buttons > *:hover * {
+  background-color: #2e2e2e;
+}
+
 body .button.active,
 body .buttons > *.active {
   background-color: #1a1a1a;
+  color: #1ab26b;
+}
+
+body .list a:hover {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+body .list a.active {
+  background-color: black;
+  color: #1ab26b;
+}
+
+body .list a.c-r-update:hover {
+  background-color: #060606;
   color: #1ab26b;
 }
 
@@ -94,6 +114,10 @@ body main .content .c-releases .c-release {
   background-color: #060606;
 }
 
+body main .content .c-releases .c-release .c-r-buttons.active {
+  color: #1ab26b;
+}
+
 body footer {
   background-color: #060606;
   color: white;
@@ -118,9 +142,29 @@ body.light .buttons > *:hover {
   background-color: #d7d7d7;
 }
 
+body.light .button:hover *,
+body.light .buttons > *:hover * {
+  background-color: #d7d7d7;
+}
+
 body.light .button.active,
 body.light .buttons > *.active {
   background-color: #e6e6e6;
+  color: #1ab26b;
+}
+
+body.light .list a:hover {
+  background-color: #e6e6e6;
+  color: black;
+}
+
+body.light .list a.active {
+  background-color: black;
+  color: #1ab26b;
+}
+
+body.light .list a.c-r-update:hover {
+  background-color: whitesmoke;
   color: #1ab26b;
 }
 
@@ -190,6 +234,10 @@ body.light main .content .buttons > *:hover {
 
 body.light main .content .c-releases .c-release {
   background-color: whitesmoke;
+}
+
+body.light main .content .c-releases .c-release .c-r-buttons.active {
+  color: #1ab26b;
 }
 
 body.light footer {

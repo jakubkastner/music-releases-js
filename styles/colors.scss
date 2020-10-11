@@ -13,23 +13,25 @@ $color_text_button: #1ab26b;
 @mixin theme-colors($theme_light: false) {
     // -> init colors
     // dark colors
-    $color_0: rgb(6, 6, 6);
-    $color_1: rgb(16, 16, 16);
-    $color_2: rgb(26, 26, 26);
-    $color_3: rgb(36, 36, 36);
-    $color_4: rgb(46, 46, 46);
-    $color_5: rgb(56, 56, 56);
+    $color_0: rgb(0, 0, 0);
+    $color_1: rgb(6, 6, 6);
+    $color_2: rgb(16, 16, 16);
+    $color_3: rgb(26, 26, 26);
+    $color_4: rgb(36, 36, 36);
+    $color_5: rgb(46, 46, 46);
+    $color_6: rgb(56, 56, 56);
     $color_text: rgb(255, 255, 255);
 
     // light colors
     @if $theme_light {
         // TODO light colors
-        $color_0: rgb(245, 245, 245);
-        $color_1: rgb(235, 235, 235);
-        $color_2: rgb(230, 230, 230);
-        $color_3: rgb(225, 225, 225);
-        $color_4: rgb(215, 215, 215);
-        $color_5: rgb(205, 205, 205);
+        $color_1: rgb(255, 255, 255);
+        $color_1: rgb(245, 245, 245);
+        $color_2: rgb(235, 235, 235);
+        $color_3: rgb(230, 230, 230);
+        $color_4: rgb(225, 225, 225);
+        $color_5: rgb(215, 215, 215);
+        $color_6: rgb(205, 205, 205);
         $color_text: rgb(0, 0, 0);
     }
 
@@ -47,21 +49,44 @@ $color_text_button: #1ab26b;
     .button,
     .buttons>* {
         color: $color_text_button;
-        background-color: $color_3;
+        background-color: $color_4;
 
         &:hover {
-            background-color: $color_4;
+            background-color: $color_5;
+
+            * {
+                background-color: $color_5;
+            }
         }
 
         &.active {
-            background-color: $color_2;
+            background-color: $color_3;
             color: $color_text_button;
+        }
+    }
+
+    // lists
+    .list {
+        a {
+            &:hover {
+                background-color: $color_3;
+                color: $color_text;
+            }
+
+            &.active {
+                background-color: $color_0;
+                color: $color_text_button;
+            }
+            &.c-r-update:hover {
+                background-color: $color_1;
+                color: $color_text_button;
+            }
         }
     }
 
     // header
     header {
-        background-color: $color_3;
+        background-color: $color_4;
         color: $color_text_button;
 
         // left hover menu (login, user)
@@ -69,31 +94,31 @@ $color_text_button: #1ab26b;
 
             // submenu
             a {
-                background-color: $color_4;
+                background-color: $color_5;
 
                 * {
-                    background-color: $color_4;
+                    background-color: $color_5;
                 }
 
                 &:hover {
-                    background-color: $color_5;
+                    background-color: $color_6;
 
                     * {
-                        background-color: $color_5;
+                        background-color: $color_6;
                     }
                 }
             }
         }
 
         .b-login.hover {
-            background-color: $color_4;
+            background-color: $color_5;
         }
 
         .under-header {
-            background-color: $color_2;
+            background-color: $color_3;
 
             * {
-                background-color: $color_2;
+                background-color: $color_3;
             }
 
             .title {
@@ -104,12 +129,12 @@ $color_text_button: #1ab26b;
 
     // content
     main {
-        background-color: $color_1;
+        background-color: $color_2;
         color: $color_text;
 
         // date menu
         .m-date {
-            background-color: $color_3;
+            background-color: $color_4;
 
             a {
                 color: $color_text;
@@ -125,16 +150,20 @@ $color_text_button: #1ab26b;
 
             .button,
             .buttons>* {
-                background-color: $color_1;
+                background-color: $color_2;
 
                 &:hover {
-                    background-color: $color_4;
+                    background-color: $color_5;
                 }
             }
 
             .c-releases {
                 .c-release {
-                    background-color: $color_0;
+                    background-color: $color_1;
+
+                    .c-r-buttons.active {
+                        color: $color_text_button;
+                    }
                 }
             }
         }
@@ -142,7 +171,7 @@ $color_text_button: #1ab26b;
 
     // footer
     footer {
-        background-color: $color_0;
+        background-color: $color_1;
         color: $color_text;
     }
 }
