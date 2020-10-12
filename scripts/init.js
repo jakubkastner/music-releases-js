@@ -6,7 +6,7 @@
 var elBody = $('body');
 
 // all buttons, which can be active
-var elReleasesMenu = $('.m-releases a');
+var elReleasesMenu = $('.m-releases a, .b-settings');
 // login buttons
 var elLoginButton = $('.b-login');
 // left login menu
@@ -30,3 +30,9 @@ var elReleasePlaylistButton = $('.c-r-b-playlist');
 var elReleasePlaylists = $('.c-r-playlists');
 
 var elReleasePlaylistAddRemove = $('.c-r-p-add, .c-r-p-remove');
+
+
+// settings theme
+var elSettingsTheme = $('.c-s-theme a');
+// settings notifications
+var elSettingsNotifications = $('.c-s-n');

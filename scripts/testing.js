@@ -2,14 +2,6 @@
  *  Only for development testing.
  */
 
-// dark / light mode
-var elDarkButton = $('.b-dark');
-
-elDarkButton.click(function (e) {
-    elBody.toggleClass('light', 'dark');    
-});
-
-
 // s ikonou pak nejde pracovat dál (měnit třídu atd...)
 /**
  * Get child icon of current clicked element.

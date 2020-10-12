@@ -110,3 +110,62 @@ function playlistRemove(elCurrentButton) {
     elCurrentButton.children('i').removeClass('fa-minus').addClass('fa-plus');
 }
 // TODO custom playlist
+
+
+/**
+ * Click to settings - theme button.
+ */
+elSettingsTheme.click(async function () {
+    // get current button
+    var elCurrentButton = $(this);
+
+    // change active class
+    elSettingsTheme.removeClass('active');
+    elCurrentButton.addClass('active');
+
+    // change icon
+    elSettingsTheme.children('i').removeClass('fa-check').addClass('fa-plus');
+    elCurrentButton.children('i').removeClass('fa-plus').addClass('fa-check');
+
+
+    // auto dark mode
+    if (elCurrentButton.hasClass('c-s-t-system')) {
+        // change theme
+        elBody.removeClass('light').removeClass('dark');
+    }
+    // light mode
+    else if (elCurrentButton.hasClass('c-s-t-light')) {
+        // change theme
+        elBody.removeClass('dark').addClass('light');
+    }
+    // dark mode
+    else {
+        // change theme
+        elBody.removeClass('light').addClass('dark');
+    }
+});
+
+/**
+ * Click to settings - notifications button.
+ */
+elSettingsNotifications.click(async function () {
+    // get current button
+    var elCurrentButton = $(this);
+
+    if (elCurrentButton.hasClass('active')) {
+        //elCurrentButton.text('Notifications enabled');
+        await elCurrentButton.prop('title', 'Click to enable notifications');
+        await elCurrentButton.children('span').text('Notifications disabled');
+    }
+    else {
+        //elCurrentButton.text('Notifications disabled');
+        await elCurrentButton.prop('title', 'Click to disable notifications');
+        await elCurrentButton.children('span').text('Notifications enabled');
+    }
+
+    // change active class
+    await elCurrentButton.toggleClass('active');
+
+    // change icon
+    elCurrentButton.children('i').toggleClass('fa-plus', 'fa-check');
+});
