@@ -2,7 +2,7 @@
  *  Main page content
  */
 main {
-  height: 80vh;
+  height: 73vh;
 }
 
 main > * {
@@ -25,6 +25,7 @@ main .content > div > div {
 
 main .content .c-releases .c-release {
   padding: calc(30px);
+  margin-bottom: 30px;
 }
 
 main .content .c-releases .c-release > * {

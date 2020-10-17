@@ -31,7 +31,7 @@
     color: black;
   }
   body .list a.active {
-    background-color: black;
+    background-color: white;
     color: #1ab26b;
   }
   body .list a.c-r-update:hover {
@@ -96,6 +96,13 @@
   body footer {
     background-color: whitesmoke;
     color: black;
+  }
+  body footer .player .p-time {
+    background-color: #1ab26b;
+  }
+  body footer .p-a-tracklist .p-a-tracklist-button {
+    color: #1ab26b;
+    background-color: #d7d7d7;
   }
   body.dark a {
     color: white;
@@ -191,6 +198,13 @@
   body.dark footer {
     background-color: #060606;
     color: white;
+  }
+  body.dark footer .player .p-time {
+    background-color: #1ab26b;
+  }
+  body.dark footer .p-a-tracklist .p-a-tracklist-button {
+    color: #1ab26b;
+    background-color: #2e2e2e;
   }
 }
 
@@ -290,6 +304,13 @@
     background-color: #060606;
     color: white;
   }
+  body footer .player .p-time {
+    background-color: #1ab26b;
+  }
+  body footer .p-a-tracklist .p-a-tracklist-button {
+    color: #1ab26b;
+    background-color: #2e2e2e;
+  }
   body.light a {
     color: black;
   }
@@ -319,7 +340,7 @@
     color: black;
   }
   body.light .list a.active {
-    background-color: black;
+    background-color: white;
     color: #1ab26b;
   }
   body.light .list a.c-r-update:hover {
@@ -384,6 +405,13 @@
   body.light footer {
     background-color: whitesmoke;
     color: black;
+  }
+  body.light footer .player .p-time {
+    background-color: #1ab26b;
+  }
+  body.light footer .p-a-tracklist .p-a-tracklist-button {
+    color: #1ab26b;
+    background-color: #d7d7d7;
   }
 }
 

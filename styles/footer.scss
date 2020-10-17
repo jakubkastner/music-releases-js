@@ -1,8 +1,68 @@
 /** FOOTER
  *  Page footer
  */
+@import 'init';
 
 footer {
-    width: 100%;
-    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: calc(100% - 20px);
+    display: flex;
+
+    .p-image {
+        width: $date_menu_width - 10px;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            position: relative;
+            top: -20px;
+        }
+    }
+
+    .player {
+        width: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+
+        .p-time {
+            width: 100%;
+            height: 8px;
+            border-radius: 8px;
+            position: relative;
+            top: -4px;
+        }
+
+
+        .p-content {
+            display: flex;
+
+            &>div {
+                width: 33%;
+            }
+
+            .p-c-info {
+                a {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .p-a-tracklist {
+        width: 80px;
+
+        .p-a-tracklist-button {
+            font-size: calc(20px + 0.8vw);
+            border-radius: 100%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            position: relative;
+            top: -25px;
+            i {
+                margin: auto;
+            }
+        }
+    }
 }

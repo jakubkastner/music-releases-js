@@ -4,7 +4,7 @@
 
 main {
 
-    height: 80vh;
+    height: 73vh;
 
     &>* {
         height: 100%;
@@ -28,6 +28,7 @@ main {
             // release div
             .c-release {
                 padding: calc(30px);
+                margin-bottom: 30px;
 
                 &>* {
                     width: 100%;

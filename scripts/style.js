@@ -86,3 +86,7 @@ elDateMenuMonth.click(function () {
     var elClicked = $(this);
     elClicked.addClass('active');
 });
+
+elTitle.click(function () {
+    // TODO navigate to top page
+});
