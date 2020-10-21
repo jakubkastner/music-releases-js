@@ -2,17 +2,17 @@
 /**
  * Click to release menu. Change title.
  */
-elReleasesMenu.click(function () {
+el.menu.releases.click(function () {
     // TODO přidat změnu title i pro měsíce, případně přidat celé do nějaké funkce
     // add "active" class to clicked button
     var elClickedText = $(this).text();
-    elTitle.text(elClickedText);
+    el.main.title.text(elClickedText);
 });
 
 /**
  * Click to release tracklist. Show tracklist, hide other.
  */
-elReleaseTracklistButton.click(async function () {
+el.release.buttons.tracklist.click(async function () {
     // TODO před spuštěním = skrejto nahradit hidden
     // get current button
     var elCurrentButton = $(this);
@@ -37,7 +37,7 @@ elReleaseTracklistButton.click(async function () {
 /**
  * Click to release playlist. Show playlists, hide other.
  */
-elReleasePlaylistButton.click(async function () {
+el.release.buttons.playlist.click(async function () {
     // TODO před spuštěním = skrejto nahradit hidden
     // get current button
     var elCurrentButton = $(this);
@@ -73,7 +73,7 @@ async function getReleaseID(elChild) {
 /**
  * Click to add release to playlist.
  */
-elReleasePlaylistAddRemove.click(async function () {
+el.release.playlistAddRemove.click(async function () {
     // get current button
     var elCurrentButton = $(this);
     if (elCurrentButton.hasClass('c-r-p-remove')) {
@@ -115,16 +115,16 @@ function playlistRemove(elCurrentButton) {
 /**
  * Click to settings - theme button.
  */
-elSettingsTheme.click(async function () {
+el.settings.theme.click(async function () {
     // get current button
     var elCurrentButton = $(this);
 
     // change active class
-    elSettingsTheme.removeClass('active');
+    el.settings.theme.removeClass('active');
     elCurrentButton.addClass('active');
 
     // change icon
-    elSettingsTheme.children('i').removeClass('fa-check').addClass('fa-plus');
+    el.settings.theme.children('i').removeClass('fa-check').addClass('fa-plus');
     elCurrentButton.children('i').removeClass('fa-plus').addClass('fa-check');
 
 
@@ -148,7 +148,7 @@ elSettingsTheme.click(async function () {
 /**
  * Click to settings - notifications button.
  */
-elSettingsNotifications.click(async function () {
+el.settings.notifications.click(async function () {
     // get current button
     var elCurrentButton = $(this);
 

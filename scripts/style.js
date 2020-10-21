@@ -5,38 +5,38 @@
 /**
  * Hover login button. Change background color.
  */
-elLoginMenu
+el.menu.login
     .mouseover(function () {
-        elLoginButton.addClass('hover');
+        el.main.loginButton.addClass('hover');
     })
     .mouseout(function () {
-        if (!elLoginMenu.hasClass('show')) {
-            elLoginButton.removeClass('hover');
+        if (!el.menu.login.hasClass('show')) {
+            el.main.loginButton.removeClass('hover');
         }
     });
 
 /**
  * Click to login button. Show/hide login options.
  */
-elLoginButton.click(function () {
+el.main.loginButton.click(function () {
     event.stopPropagation();
-    elLoginMenu.toggleClass('show');
-    elLoginButton.toggleClass('hover');
+    el.menu.login.toggleClass('show');
+    el.main.loginButton.toggleClass('hover');
 });
 /**
  * Click everywhere. Hide login options.
  */
 $(document).click(function () {
-    elLoginMenu.removeClass('show');
-    elLoginButton.removeClass('hover');
+    el.menu.login.removeClass('show');
+    el.main.loginButton.removeClass('hover');
 });
 
 /**
  * Click to release menu. Add/remove "active" class.
  */
-elReleasesMenu.click(function () {
+el.menu.releases.click(function () {
     // remove all "active" class
-    elReleasesMenu.removeClass('active');
+    el.menu.releases.removeClass('active');
     // add "active" class to clicked button
     var elClicked = $(this);
     elClicked.addClass('active');
@@ -45,14 +45,14 @@ elReleasesMenu.click(function () {
 /**
  * Click to date mobile menu. Show/hide date menu.
  */
-elDateMenuMobile.click(function () {
-    if (elDateMenu.is(':visible')) {
-        elDateMenu.hide('slow');
-        elDateMenuMobile.attr({ 'title': 'Show date menu.' });
+el.menu.date.mobile.click(function () {
+    if (el.menu.date.menu.is(':visible')) {
+        el.menu.date.menu.hide('slow');
+        el.menu.date.mobile.attr({ 'title': 'Show date menu.' });
     }
     else {
-        elDateMenu.show('slow');
-        elDateMenuMobile.attr({ 'title': 'Hide date menu.' });
+        el.menu.date.menu.show('slow');
+        el.menu.date.mobile.attr({ 'title': 'Hide date menu.' });
     }
 });
 
@@ -60,15 +60,15 @@ elDateMenuMobile.click(function () {
  * Click to year in date menu. Show/hide months. Add/remove "active" class.
  */
 
-elDateMenuYear.click(function () {
+el.menu.date.year.click(function () {
     // remove all "active" class
-    elDateMenuYear.removeClass('active');
-    elDateMenuMonth.removeClass('active');
+    el.menu.date.year.removeClass('active');
+    el.menu.date.month.removeClass('active');
     // add "active" class to clicked button
     var elClicked = $(this);
     elClicked.addClass('active');
     // hide months
-    elDateMenuMonths.addClass('hidden');
+    el.menu.date.months.addClass('hidden');
     // show current year months
     var selectedYear = $(this).attr('id');
     selectedYear = selectedYear.split('-')[2];
@@ -79,14 +79,14 @@ elDateMenuYear.click(function () {
 /**
  * Click to month in date menu. Add/remove "active" class.
  */
-elDateMenuMonth.click(function () {
+el.menu.date.month.click(function () {
     // remove all "active" class
-    elDateMenuMonth.removeClass('active');
+    el.menu.date.month.removeClass('active');
     // add "active" class to clicked button
     var elClicked = $(this);
     elClicked.addClass('active');
 });
 
-elTitle.click(function () {
+el.main.title.click(function () {
     // TODO navigate to top page
 });

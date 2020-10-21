@@ -2,37 +2,53 @@
  *  Init some variables - jquery elements, ...
  */
 
+var el = {};
+el.main = {};
+el.settings = {};
+el.menu = {};
+el.menu.date = {};
+el.release = {};
+el.release.buttons = {};
+el.settings = {};
+el.user = {};
+el.user.login = {};
+
 // page body (for light/dark mode)
-var elBody = $('body');
+el.main.body = $('body');
 
 // all buttons, which can be active
-var elReleasesMenu = $('.m-releases a, .b-settings');
+el.menu.releases = $('.m-releases a, .b-settings');
 // login buttons
-var elLoginButton = $('.b-login');
+el.main.loginButton = $('.b-login');
 // left login menu
-var elLoginMenu = $('.m-login');
+el.menu.login = $('.m-login');
 
 // page title
-var elTitle = $('.title');
+el.main.title = $('.title');
 
-var elDateMenuMobile = $('.m-date-mobile');
-var elDateMenu = $('.m-date');
-var elDateMenuYear = $('.m-year');
-var elDateMenuMonth = $('.m-month');
-var elDateMenuMonths = $('.m-months');
+el.menu.date.mobile = $('.m-date-mobile');
+el.menu.date.menu = $('.m-date');
+el.menu.date.year = $('.m-year');
+el.menu.date.month = $('.m-month');
+el.menu.date.months = $('.m-months');
 
 
 // releases tracklist
-var elReleaseTracklistButton = $('.c-r-b-tracklist');
-var elReleaseTracklist = $('.c-r-tracklist');
+el.release.buttons.tracklist = $('.c-r-b-tracklist');
+el.release.tracklist = $('.c-r-tracklist');
 // releases playlists
-var elReleasePlaylistButton = $('.c-r-b-playlist');
-var elReleasePlaylists = $('.c-r-playlists');
+el.release.buttons.playlist = $('.c-r-b-playlist');
+el.release.playlists = $('.c-r-playlists');
 
-var elReleasePlaylistAddRemove = $('.c-r-p-add, .c-r-p-remove');
+el.release.playlistAddRemove = $('.c-r-p-add, .c-r-p-remove');
 
 
 // settings theme
-var elSettingsTheme = $('.c-s-theme a');
+el.settings.theme = $('.c-s-theme a');
 // settings notifications
-var elSettingsNotifications = $('.c-s-n');
+el.settings.notifications = $('.c-s-n');
+
+
+
+// user
+el.user.login.spotify = $('.b-login-spotify');
