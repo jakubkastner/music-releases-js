@@ -52,3 +52,18 @@ el.settings.notifications = $('.c-s-n');
 
 // user
 el.user.login.spotify = $('.b-login-spotify');
+
+
+var user = {};
+user.spotify = {};
+user.spotify.accessToken = null;
+
+
+// api
+var api = {};
+api.spotify = {};
+
+
+// program
+var program = {};
+program.spotify = {};
