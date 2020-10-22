@@ -9,7 +9,9 @@ api.spotify = {
 
 // my program
 program.spotify = {
-    stateKey: 'user_spotify_statekey',
-    accessToken: 'user_spotify_useraccess',
-    accessTokenExpires: 'user_spotify_useraccess_expires'
+    const: {
+        stateKey: 'user_spotify_statekey',
+        accessToken: 'user_spotify_useraccess',
+        accessTokenExpires: 'user_spotify_useraccess_expires'
+    }
 };

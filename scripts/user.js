@@ -19,13 +19,13 @@ user.spotify.getLoginUrl = async function () {
 
     // zapíše do lokálního úložiště náhodnou hodnotu
     var stateValue = await generateRandomString(16);
-    localStorage.setItem(program.spotify.stateKey, stateValue);
+    localStorage.setItem(program.spotify.const.stateKey, stateValue);
 
     // otevře přihlašovací okno do spotify a získá access token
     var url = 'https://accounts.spotify.com/authorize';
     url += '?response_type=token';
     url += '&client_id=' + encodeURIComponent(api.spotify.id);
-    url += '&scope=' + encodeURIComponent(api.spotify.scope);
+    //url += '&scope=' + encodeURIComponent(api.spotify.scope);
     url += '&redirect_uri=' + encodeURIComponent(api.spotify.redirect);
     url += '&state=' + encodeURIComponent(stateValue);
     return url;
@@ -34,19 +34,33 @@ user.spotify.getLoginUrl = async function () {
 
 // kliknutí na tlačítko
 el.user.login.spotify.click(async function () {
+    // získám z úložiště prohlížeče userAccess
+    user.spotify.accessToken = localStorage.getItem(program.spotify.const.accessToken);
+    user.spotify.accessTokenExpires = localStorage.getItem(program.spotify.const.accessTokenExpires);
     // PŘIHLÁŠENÍ -> krok 1
-    /*if (userId) {
-        console.log(user);
-        window.open(user.external_urls.spotify, '_blank');
+    if (user.spotify.accessToken) {
+        // uživatel je přihlášen
+        // -> získám informace o uživateli
+        // PŘIHLÁŠENÍ -> krok 5
+
+        if (Date.now() >= (user.spotify.accessTokenExpires + 5)) {
+            // eccessToken expiroval nebo již za 5 sekund expiruje, získej nový
+            console.log("expirace");
+            await user.spotify.parseUrl();
+        }
+        else {
+            console.log("OK -> získám info z api");
+            await api.spotify.getUser();
+        }
         return;
-    }*/
+    }
     // získá stránku pro přihlášení do spotify
     var loginUrl = await user.spotify.getLoginUrl();
     if (loginUrl) {
         // naviguje na přihlašovací stránku Spotify
 
         // TODO uložit aktuálníparametry url a po úspěšném načtení na ně navigovat
-         
+
         // TODO otevřít jako okno viz https://medium.com/@leemartin/creating-a-simple-spotify-authorization-popup-in-javascript-7202ce86a02f
         // -> nebo možná nechat tak jak mám? uvidím
         /*popup = window.open(
@@ -69,21 +83,29 @@ el.user.login.spotify.click(async function () {
  */
 $(document).ready(async function () {
     // získám z úložiště prohlížeče userAccess
-    user.spotify.accessToken = localStorage.getItem(program.spotify.accessToken);
-    user.spotify.accessTokenExpires = localStorage.getItem(program.spotify.accessTokenExpires);
+    user.spotify.accessToken = localStorage.getItem(program.spotify.const.accessToken);
+    user.spotify.accessTokenExpires = localStorage.getItem(program.spotify.const.accessTokenExpires);
     if (user.spotify.accessToken) {
         // uživatel je přihlášen
         // -> získám informace o uživateli
         // PŘIHLÁŠENÍ -> krok 5
 
-        //await loginGetUserInfo();
-        console.log("OK -> získám info z api");
+        if (Date.now() >= (user.spotify.accessTokenExpires + 5)) {
+            // eccessToken expiroval nebo již za 5 sekund expiruje, získej nový
+            console.log("expirace");
+            await user.spotify.parseUrl();
+        }
+        else {
+            console.log("OK -> získám info z api");
+            await api.spotify.getUser();
+        }
     }
     else {
         // uživatel není přihlášen
         // -> zkontoluji, zdali nepřišla odpověď z přihlašovací stránky Spotify
         // PŘIHLÁŠENÍ -> krok 3
 
+        console.log("novy login");
         await user.spotify.parseUrl();
     }
 });
@@ -93,10 +115,20 @@ $(document).ready(async function () {
  */
 user.spotify.parseUrl = async function () {
     // PŘIHLÁŠENÍ -> krok 4
+    var timeNow = Date.now();
     // zobrazí příslušné informace po přihlášení
 
     // získá aktuální url adresu
     var currentUrl = window.location.href;
+
+    // získá hodnotu úloženou v úložišti
+    // odstraní z úložiště kontrolní string
+    var stateKey = localStorage.getItem(program.spotify.const.stateKey);
+    localStorage.removeItem(program.spotify.const.stateKey);
+    localStorage.removeItem(program.spotify.const.accessToken);
+    localStorage.removeItem(program.spotify.const.accessTokenExpires);
+
+    user.spotify.accessToken = null;
 
     if (currentUrl.includes('access_denied')) {
         // nesouhlas s podmínkami
@@ -111,25 +143,24 @@ user.spotify.parseUrl = async function () {
         // -> získá userAccess
 
         // rozdělí získanou adresu a získá z ní parametry
-        var params = getHashParams();
+        var params = await getHashParams();
         var accessToken = params.access_token;
-        var accessTokenExpires = params.expires_in;
+        //var accessTokenExpires = params.expires_in;
+        var accessTokenExpires = timeNow + params.expires_in * 1000;
 
         // clear url
-        window.location.replace('');
+        //window.location.replace('');
 
-        // získá hodnotu úloženou v úložišti
-        var storedState = localStorage.getItem(program.spotify.stateKey);
-        user.spotify.accessToken = null;
 
         if (accessToken) {
             // existuje userAccess
-            if (params.state !== null && params.state === storedState) {
+            if (params.state !== null && params.state === stateKey) {
                 // získal jsem hodnotu ze spotify loginu
                 // a shoduje s náhodným stringem v místním úložišti
                 // -> uloží do úložiště
-                localStorage.setItem(program.spotify.accessToken, accessToken);
-                localStorage.setItem(program.spotify.accessTokenExpires, accessTokenExpires);
+                console.log("TEď");
+                localStorage.setItem(program.spotify.const.accessToken, accessToken);
+                localStorage.setItem(program.spotify.const.accessTokenExpires, accessTokenExpires);
             }
             else {
                 // nezískal jsem nebo se neschoduje
@@ -141,9 +172,7 @@ user.spotify.parseUrl = async function () {
             // neexistující userAccess
             //elementError.text('Failed to login, please try it again.');
         }
-        // odstraní z úložiště kontrolní string
         //console.log("odstranění loginPAreseUrl");
-        localStorage.removeItem(program.spotify.stateKey);
     }
 }
 
@@ -151,30 +180,29 @@ user.spotify.parseUrl = async function () {
  * Získá informace ze Spotify API o aktuálním uživateli (pomocí userAccess)
  */
 // TODO změnit funkci
- async function loginGetUserInfo() {
+api.spotify.getUser = async function () {
     // PŘIHLÁŠENÍ -> krok 6
 
-    // uloží hlavičku pro dotazy api
-    options = {
+    // získá informace o uživateli
+    api.spotify.options = {
         method: 'GET',
         headers: {
-            'Authorization': 'Bearer ' + userAccess
+            'Authorization': 'Bearer ' + api.spotify.accessToken
         }
     };
-
-    // získá informace o uživateli
-    var json = await fetchJson(API_URL + '/me', 'Failed to login, please try it again.');
+    var json = await fetchJson(api.spotify.url + '/me', api.spotify.options, 'Failed to login, please try it again.');
 
     if (json == null) {
         // chyba získání informací
-        localStorage.removeItem(USER_ACCESS);
-        userAccess = null;
+        /*localStorage.removeItem(USER_ACCESS);
+        userAccess = null;*/
         return;
     }
     // úspěšně získané informace
+    console.log(json);
 
     // zobrazí informace a skryje/zobrazí příslušné prvky
-    $('#login-button').remove();
+    /*$('#login-button').remove();
     elementError.text('');
 
     var elementUser = $('#user');
@@ -222,5 +250,5 @@ user.spotify.parseUrl = async function () {
     await libraryGetPlaylists();
     // získá výstupní zařízení uživatele
     await getDevices();
-    hideLoading('Select which releases you want to display.');
+    hideLoading('Select which releases you want to display.');*/
 }
