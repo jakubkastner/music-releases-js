@@ -4,7 +4,7 @@
  * @param {*} length délka vygenerovaného stringu
  * @returns vygenerovaný náhodný string
  */
-async function generateRandomString(length) {
+program.generateRandomString = async function (length) {
     var text = '';
     var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
@@ -18,7 +18,7 @@ async function generateRandomString(length) {
  * Získá parametry z aktuální url adresy.
  * @returns objekt získaných parametrů aktuální url adresy
  */
-async function getHashParams() {
+program.getHashParams = async function () {
     var hashParams = {};
     var e,
         r = /([^&;=]+)=?([^&;]*)/g, q = window.location.hash.substring(1);
@@ -60,11 +60,11 @@ async function fetchJson(url, options, errorText) {
             return await fetchJson(url, errorText);
             // TODO UPOZORNĚNÍ -> HROZÍ NEKONEČNÁ SMYČKA
         }
-        else if (json.error.status === 401) {
-            console.log('Spotify login error');
-            return null;
+        if (json.error.status === 401) {
             // vypršela platnost access tokenu
             // TODO získat nový access token a uložit prozatím získan data
+            console.log('access token expires');
+            return null;
             localStorage.removeItem(USER_ACCESS);
             userAccess = null;
             // získá stránku pro přihlášení do spotify
