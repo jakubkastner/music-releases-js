@@ -41,70 +41,66 @@ user.spotify.getLoginUrl = async function (update = false) {
     return url;
 };
 
-
-async function spotifyLogin() {
+/**
+ * Update access token.
+ * Get info about user from spotify api.
+ */
+user.spotify.login = async function () {
     // get access token from browser storage
     user.spotify.accessToken = localStorage.getItem(program.spotify.const.accessToken);
     user.spotify.accessTokenExpires = localStorage.getItem(program.spotify.const.accessTokenExpires);
+
+    // user is logged in
     if (user.spotify.accessToken) {
-        // access token 
-        // user is logged in
+        // access token exists
         if (Date.now() >= (user.spotify.accessTokenExpires + 5)) {
             // access token expires
-            console.log("expirace");
             // get new access token and save informations from spotify
             await user.spotify.getLoginUrl(true);
+            return;
         }
-        else {
-            // access token is ok
-            if (user.spotify.api) {
-                // info about user from spotify api is ok
-                console.log("user is ok");
-            }
-            else {
-                // no info about user from api
-                console.log("get info about user from api");
-                // get info about user from spotify api 
-                await api.spotify.getUser();
-            }
+
+        // access token is ok
+        if (!user.spotify.api) {
+            // no info about user from api
+            console.log("get info about user from api");
+            // get info about user from spotify api 
+            await api.spotify.getUser();
+            return;
         }
+
+        // info about user from spotify api is ok
         return;
     }
-    else {
-        // user is not logged in
 
-        // get cerrent url
-        var currentUrl = window.location.href;
+    // user is not logged in
+    // get current url
+    var currentUrl = window.location.href;
 
-        // check if spotify login page returns access token or login errors
-        if (currentUrl.includes('access_denied')) {
-            // user doesnt accept permissions
-            console.log("access denied");
-            //elementError.text('Failed to login, you must accept the premissions.');
-            return;
-        }
-        if (currentUrl.includes('?error')) {
-            // error from spotify login
-            console.log("error");
-            //elementError.text('Failed to login, please try it again.');
-            return;
-        }
-        if (currentUrl.includes('#access_token=') && currentUrl.includes('&token_type=') && currentUrl.includes('&expires_in=') && currentUrl.includes('&state=')) {
-            // successfully get new access token
-            console.log("get access token from url");
-            await user.spotify.parseUrl2();
-            await spotifyLogin();
-            // parse new access token from url
-            return;
-        }
-
-        // nothing
-        // user is logged out
-        console.log("nothing");
+    // check if spotify login page returns access token or login errors
+    if (currentUrl.includes('access_denied')) {
+        // user doesnt accept permissions
+        console.log("access denied");
+        //elementError.text('Failed to login, you must accept the premissions.');
+        return;
+    }
+    if (currentUrl.includes('?error')) {
+        // error from spotify login
+        console.log("error");
+        //elementError.text('Failed to login, please try it again.');
+        return;
+    }
+    if (currentUrl.includes('#access_token=') && currentUrl.includes('&token_type=') && currentUrl.includes('&expires_in=') && currentUrl.includes('&state=')) {
+        // successfully get new access token
+        console.log("get access token from url");
+        await user.spotify.parseUrl2();
+        await spotifyLogin();
+        // parse new access token from url
+        return;
     }
 
-
-
+    // user is logged out
+    // nothing
 }
 
 // kliknutí na tlačítko
@@ -160,10 +156,12 @@ el.user.login.spotify.click(async function () {
 
 
 /**
- * Načtení stránky.
+ * Page loads.
+ * Check Spotify login.
  */
 $(document).ready(async function () {
-    spotifyLogin();
+    // check spotify login (update access token, get info about user from api)
+    user.spotify.login();
     // získám z úložiště prohlížeče userAccess
     /*user.spotify.accessToken = localStorage.getItem(program.spotify.const.accessToken);
     user.spotify.accessTokenExpires = localStorage.getItem(program.spotify.const.accessTokenExpires);
