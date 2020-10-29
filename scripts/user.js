@@ -32,12 +32,12 @@ user.spotify.login = async function (newLogin = false) {
 
     if (user.spotify.accessToken) {
         // access token exists
-        if (Date.now() > user.spotify.accessTokenExpires) {
+        /*if (Date.now() > user.spotify.accessTokenExpires) {
             // access token expires
             // get new access token and save informations from spotify
             await user.spotify.newLogin(true);
             return;
-        }
+        }*/
 
         // access token is ok
         if (!user.spotify.api) {
@@ -107,6 +107,12 @@ user.spotify.newLogin = async function (update = false) {
     localStorage.removeItem(program.spotify.const.stateKey);
     localStorage.removeItem(program.spotify.const.accessToken);
     localStorage.removeItem(program.spotify.const.accessTokenExpires);
+
+    // clear spotify user variables
+    user.spotify.accessToken = null;
+    user.spotify.accessTokenExpires = null;
+    user.spotify.api = null;
+
     // generate new state value (random string) and save to browser storage
     var stateValue = await program.generateRandomString(16);
     localStorage.setItem(program.spotify.const.stateKey, stateValue);
@@ -182,6 +188,16 @@ user.spotify.parseUrl = async function () {
     user.spotify.accessToken = params.access_token;
     user.spotify.accessTokenExpires = accessTokenExpires;
     return true;
+}
+user.spotify.logout = async function () {
+    localStorage.removeItem(program.spotify.const.stateKey);
+    localStorage.removeItem(program.spotify.const.accessToken);
+    localStorage.removeItem(program.spotify.const.accessTokenExpires);
+
+    // clear spotify user variables
+    user.spotify.accessToken = null;
+    user.spotify.accessTokenExpires = null;
+    user.spotify.api = null;
 }
 
 /**
@@ -265,3 +281,8 @@ api.spotify.getUser = async function () {
     await getDevices();
     hideLoading('Select which releases you want to display.');*/
 }
+
+el.user.logout.click(async function () {
+    // logout spotify user
+    await user.spotify.logout();
+}); 

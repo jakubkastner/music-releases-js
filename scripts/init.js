@@ -52,6 +52,7 @@ el.settings.notifications = $('.c-s-n');
 
 // user
 el.user.login.spotify = $('.b-login-spotify');
+el.user.logout = $('.b-logout');
 
 
 var user = {};

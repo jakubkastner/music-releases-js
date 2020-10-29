@@ -63,7 +63,9 @@ async function fetchJson(url, options, errorText) {
         if (json.error.status === 401) {
             // vypršela platnost access tokenu
             // TODO získat nový access token a uložit prozatím získan data
-            console.log('access token expires');
+            
+            await user.spotify.newLogin(true);
+            console.log("expires access token")
             return null;
             localStorage.removeItem(USER_ACCESS);
             userAccess = null;
