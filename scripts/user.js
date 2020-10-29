@@ -59,11 +59,13 @@ user.spotify.login = async function (newLogin = false) {
     if (currentUrl.includes('access_denied')) {
         // user doesnt accept permissions
         //elementError.text('Failed to login, you must accept the premissions.');
+        history.replaceState(null, null, window.location.pathname);
         return;
     }
     if (currentUrl.includes('?error')) {
         // error in url from spotify login
         //elementError.text('Failed to login, please try it again.');
+        history.replaceState(null, null, window.location.pathname);
         return;
     }
 
@@ -71,7 +73,7 @@ user.spotify.login = async function (newLogin = false) {
     if (currentUrl.includes('#access_token=') && currentUrl.includes('&token_type=') && currentUrl.includes('&expires_in=') && currentUrl.includes('&state=')) {
         // parse new access token from url
         if (await user.spotify.parseUrl() === false) {
-            // login failed 
+            // login failed
             return;
         }
         // successfully get new access token
