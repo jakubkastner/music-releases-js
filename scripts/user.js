@@ -32,7 +32,7 @@ user.spotify.login = async function (newLogin = false) {
 
     if (user.spotify.accessToken) {
         // access token exists
-        if (Date.now() >= (user.spotify.accessTokenExpires + 5)) {
+        if (Date.now() > user.spotify.accessTokenExpires) {
             // access token expires
             // get new access token and save informations from spotify
             await user.spotify.newLogin(true);
@@ -104,6 +104,9 @@ user.spotify.newLogin = async function (update = false) {
 
     // TODO parametry url: uložit aktuální parametry url a po úspěšném načtení na ně navigovat
 
+    localStorage.removeItem(program.spotify.const.stateKey);
+    localStorage.removeItem(program.spotify.const.accessToken);
+    localStorage.removeItem(program.spotify.const.accessTokenExpires);
     // generate new state value (random string) and save to browser storage
     var stateValue = await program.generateRandomString(16);
     localStorage.setItem(program.spotify.const.stateKey, stateValue);
@@ -153,7 +156,6 @@ user.spotify.parseUrl = async function () {
 
     // clear url
     //window.location.replace('');
-    //history.pushState(null, null, '');
     history.replaceState(null, null, window.location.pathname);
     // TODO parametry url: getLoginUrl -> navázat na uložení parametrů, zde obnovit uložené parametry
 

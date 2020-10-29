@@ -7,6 +7,12 @@ el.menu.releases.click(function () {
     // add "active" class to clicked button
     var elClickedText = $(this).text();
     el.main.title.text(elClickedText);
+
+    // TODO change url
+    //window.location.replace('#release=' + elClickedText);
+    history.pushState(null, null, elClickedText);
+    // location.hash
+    //history.replaceState(null, null, elClickedText);
 });
 
 /**
