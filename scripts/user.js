@@ -61,42 +61,34 @@ user.spotify.login = async function (newLogin = false) {
         // get current url
         var currentUrl = window.location.href;
 
-        // check if spotify login page returns access token or login errors
-        if (currentUrl.includes('access_denied')) {
-            // user doesnt accept permissions
-            //elementError.text('Failed to login, you must accept the premissions.');
-            localStorage.removeItem(program.spotify.const.stateKey);
-            history.replaceState(null, null, window.location.pathname);
-            return;
-        }
-        if (currentUrl.includes('?error')) {
-            // error in url from spotify login
-            //elementError.text('Failed to login, please try it again.');
-            localStorage.removeItem(program.spotify.const.stateKey);
-            history.replaceState(null, null, window.location.pathname);
-            return;
-        }
         // new access token is in url
         if (currentUrl.includes('#access_token=') && currentUrl.includes('&token_type=') && currentUrl.includes('&expires_in=') && currentUrl.includes('&state=')) {
             // parse new access token from url
-            if (await user.spotify.parseUrl() === false) {
-                // login failed
-                //elementError.text('Failed to login, please try it again.');
-                localStorage.removeItem(program.spotify.const.stateKey);
-                history.replaceState(null, null, window.location.pathname);
+            if (await user.spotify.parseUrl() === true) {
+                // successfully get new access token
+                await user.spotify.login();
                 return;
             }
-            // successfully get new access token
-            await user.spotify.login();
-            return;
+            // login failed
+            //elementError.text('Failed to login, please try it again.');
+        }
+        // check if spotify login page returns access token or login errors
+        else if (currentUrl.includes('access_denied')) {
+            // user doesnt accept permissions
+            //elementError.text('Failed to login, you must accept the premissions.');
+        }
+        else if (currentUrl.includes('?error')) {
+            // error in url from spotify login
+            //elementError.text('Failed to login, please try it again.');
         }
         else {
             // login failed
             //elementError.text('Failed to login, please try it again.');
-            localStorage.removeItem(program.spotify.const.stateKey);
-            history.replaceState(null, null, window.location.pathname);
-            return;
         }
+
+        localStorage.removeItem(program.spotify.const.stateKey);
+        history.replaceState(null, null, window.location.pathname);
+        return;
     }
 
 
