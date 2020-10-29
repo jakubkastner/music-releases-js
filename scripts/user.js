@@ -59,12 +59,14 @@ user.spotify.login = async function (newLogin = false) {
     if (currentUrl.includes('access_denied')) {
         // user doesnt accept permissions
         //elementError.text('Failed to login, you must accept the premissions.');
+        localStorage.removeItem(program.spotify.const.stateKey);
         history.replaceState(null, null, window.location.pathname);
         return;
     }
     if (currentUrl.includes('?error')) {
         // error in url from spotify login
         //elementError.text('Failed to login, please try it again.');
+        localStorage.removeItem(program.spotify.const.stateKey);
         history.replaceState(null, null, window.location.pathname);
         return;
     }
