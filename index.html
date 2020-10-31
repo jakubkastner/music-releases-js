@@ -90,7 +90,7 @@
             <a class="m-year button" id="m-year-2015">2015</a>
         </nav>
         <div class="content">
-            <div class="c-logout hidden">
+            <div class="c-logout hidden skrejto">
                 <div>
                     <p>
                         <a class="b-login-spotify button"><i class="fab fa-spotify"></i>Login via Spotify</a>
@@ -103,7 +103,7 @@
                     </p>
                 </div>
             </div>
-            <div class="c-releases skrejto">
+            <div class="c-releases">
                 <div class="c-albums hidden">
                     <div class="c-release" id="r-album-2qaaaIfB5TuEAh5cqI1ksz">
                         <div class="c-r-flex">
@@ -137,8 +137,15 @@
                             </div>
                             <div class="c-r-info">
                                 <a class="c-r-name" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">Album name</a>
-                                <a class="c-r-artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist</a>
-                                <p class="c-r-date">release date</p>
+                                <p class="c-r-artists">
+                                    <a class="c-r-artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 1</a>,
+                                    <a class="c-r-artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 2</a> &
+                                    <a class="c-r-artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 3</a>
+                                </p>
+                                <p class="c-r-date">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <a class="c-r-d-year">2020</a>-<a class="c-r-d-month">10</a>-<a class="c-r-d-day">01</a>
+                                </p>
                                 <a class="c-r-b-tracklist c-r-buttons" title="View tracklist"><i class="fas fa-bars"></i>10</a>
                                 <a class="c-r-b-play c-r-buttons" title="Play release"><i class="fas fa-play"></i></a>
                                 <a class="c-r-b-library c-r-buttons" title="Add release to library"><i class="far fa-heart"></i></a>
@@ -147,12 +154,51 @@
                                 <a class="c-r-b-youtube c-r-buttons" href="https://music.youtube.com/search?q=GASHI 1984" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube" title="Search on YouTube Music"></i></a>
                             </div>
                         </div>
-                        <iframe class="c-r-content c-r-tracklist skrejto" src="https://open.spotify.com/embed/album/3y4AaloFccKNLQcZNS9L8c" allowtransparency="true" allow="encrypted-media" frameborder="0"></iframe>
+                        <div class="c-r-content c-r-tracklist list skrejto">
+                            <div class="c-r-track" id="r-a-track-2qaaa6554456EAh5cqI1ksz">
+                                <div class="c-r-t-info">
+                                    <a class="c-r-t-number">1</a>
+                                    <a class="c-r-t-play" title="Play track"><i class="fas fa-play"></i></a>
+                                    <a class="c-r-t-library" title="Add track to library"><i class="far fa-heart"></i></a>
+                                    <a class="c-r-t-name">Track 1 name</a>
+                                    <p class="c-r-t-artists">
+                                        <a class="c-r-t-artist">Artist 1</a>,
+                                        <a class="c-r-t-artist">Artist 2</a> &
+                                        <a class="c-r-t-artist">Artist 3</a>
+                                    </p>
+                                    <a class="c-r-t-time"><i class="far fa-clock"></i>03:05</a>
+                                    <a class="c-r-t-explicit" title="Explicit content">explicit</a>
+                                    <a class="c-r-t-playlist" title="Add track to playlist"><i class="fas fa-plus"></i></a>
+                                </div>
+                                <div class="c-r-content c-r-playlists list">
+                                    <a class="c-r-update" title="Update list of playlists"><i class="fas fa-sync-alt"></i></a>
+                                    <a class="c-r-p-add-custom" title="Add release to new playlist"><i class="fas fa-plus-circle"></i>Create new playlist</a>
+                                    <a class="c-r-p-add" id="c-r-p-new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name</a>
+                                    <a class="c-r-p-add" id="c-r-p-2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1</a>
+                                    <a class="c-r-p-add" id="c-r-p-2UKqPRsvn456sQjt5EmHxpm" title="Add release to playlist 'Playlist 2'"><i class="fas fa-plus"></i>Playlist 2</a>
+                                </div>
+                            </div>
+                            <div class="c-r-track" id="r-a-track-2qaaa6554455cqI1ksz">
+                                <div class="c-r-t-info">
+                                    <a class="c-r-t-number">2</a>
+                                    <a class="c-r-t-play" title="Play track"><i class="fas fa-play"></i></a>
+                                    <a class="c-r-t-library" title="Add track to library"><i class="far fa-heart"></i></a>
+                                    <a class="c-r-t-name">Track 2 name</a>
+                                    <p class="c-r-t-artists">
+                                        <a class="c-r-t-artist">Artist 1</a>
+                                    </p>
+                                    <a class="c-r-t-time"><i class="far fa-clock"></i>01:10:02</a>
+                                    <a class="c-r-t-explicit" title="Explicit content"></a>
+                                    <a class="c-r-t-playlist" title="Add track to playlist"><i class="fas fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="c-r-content c-r-playlists list skrejto">
                             <a class="c-r-update" title="Update list of playlists"><i class="fas fa-sync-alt"></i></a>
                             <a class="c-r-p-add-custom" title="Add release to new playlist"><i class="fas fa-plus-circle"></i>Create new playlist</a>
                             <a class="c-r-p-add" id="c-r-p-new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name</a>
-                            <a class="c-r-p-add" id="c-r-p-2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'PLAYLIST_NAME'"><i class="fas fa-plus"></i>PLAYLIST_NAME</a>
+                            <a class="c-r-p-add" id="c-r-p-2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1</a>
+                            <a class="c-r-p-add" id="c-r-p-2UKqPRsvn456sQjt5EmHxpm" title="Add release to playlist 'Playlist 2'"><i class="fas fa-plus"></i>Playlist 2</a>
                         </div>
                     </div>
                     <div class="c-release" id="r-album-2qaIfB5TuEAh5cqI1ksz">
@@ -255,6 +301,52 @@
         </div>
     </main>
     <footer>
+        <div class="c-r-content c-r-playlists list skrejto">
+            <a class="c-r-update" title="Update list of playlists"><i class="fas fa-sync-alt"></i></a>
+            <a class="c-r-p-add-custom" title="Add release to new playlist"><i class="fas fa-plus-circle"></i>Create new playlist</a>
+            <a class="c-r-p-add" id="c-r-p-new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name</a>
+            <a class="c-r-p-add" id="c-r-p-2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1</a>
+            <a class="c-r-p-add" id="c-r-p-2UKqPRsvn456sQjt5EmHxpm" title="Add release to playlist 'Playlist 2'"><i class="fas fa-plus"></i>Playlist 2</a>
+        </div>
+        <div class="c-r-content c-r-tracklist list skrejto">
+            <div class="c-r-track" id="r-a-track-2qaaa6554456EAh5cqI1ksz">
+                <div class="c-r-t-info">
+                    <a class="c-r-t-number">1</a>
+                    <a class="c-r-t-play" title="Play track"><i class="fas fa-play"></i></a>
+                    <a class="c-r-t-library" title="Add track to library"><i class="far fa-heart"></i></a>
+                    <a class="c-r-t-name">Track 1 name</a>
+                    <p class="c-r-t-artists">
+                        <a class="c-r-t-artist">Artist 1</a>,
+                        <a class="c-r-t-artist">Artist 2</a> &
+                        <a class="c-r-t-artist">Artist 3</a>
+                    </p>
+                    <a class="c-r-t-time"><i class="far fa-clock"></i>03:05</a>
+                    <a class="c-r-t-explicit" title="Explicit content">explicit</a>
+                    <a class="c-r-t-playlist" title="Add track to playlist"><i class="fas fa-plus"></i></a>
+                </div>
+                <div class="c-r-content c-r-playlists list">
+                    <a class="c-r-update" title="Update list of playlists"><i class="fas fa-sync-alt"></i></a>
+                    <a class="c-r-p-add-custom" title="Add release to new playlist"><i class="fas fa-plus-circle"></i>Create new playlist</a>
+                    <a class="c-r-p-add" id="c-r-p-new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name</a>
+                    <a class="c-r-p-add" id="c-r-p-2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1</a>
+                    <a class="c-r-p-add" id="c-r-p-2UKqPRsvn456sQjt5EmHxpm" title="Add release to playlist 'Playlist 2'"><i class="fas fa-plus"></i>Playlist 2</a>
+                </div>
+            </div>
+            <div class="c-r-track" id="r-a-track-2qaaa6554455cqI1ksz">
+                <div class="c-r-t-info">
+                    <a class="c-r-t-number">2</a>
+                    <a class="c-r-t-play" title="Play track"><i class="fas fa-play"></i></a>
+                    <a class="c-r-t-library" title="Add track to library"><i class="far fa-heart"></i></a>
+                    <a class="c-r-t-name">Track 2 name</a>
+                    <p class="c-r-t-artists">
+                        <a class="c-r-t-artist">Artist 1</a>
+                    </p>
+                    <a class="c-r-t-time"><i class="far fa-clock"></i>01:10:02</a>
+                    <a class="c-r-t-explicit" title="Explicit content"></a>
+                    <a class="c-r-t-playlist" title="Add track to playlist"><i class="fas fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
         <div class="p-image">
             <img src="images/no-cover.png" />
         </div>
@@ -270,6 +362,7 @@
                         <a class="p-a-playlist" title="Add release to playlist"><i class="fas fa-plus"></i></a>
                     </div>
                     <div>
+                        <i class="far fa-clock"></i>
                         <a class="p-i-time-actual">01:00</a>
                         <span>/</span>
                         <a class="p-i-time-full">03:50</a>
@@ -277,9 +370,16 @@
                 </div>
                 <div class="p-c-info">
                     <a class="p-i-track" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">Track name</a>
-                    <a class="p-i-artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist name</a>
+                    <p class="p-i-artists">
+                        <a class="p-i-artist">Artist 1</a>,
+                        <a class="p-i-artist">Artist 2</a> &
+                        <a class="p-i-artist">Artist 3</a>
+                    </p>
                     <a class="p-i-album" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">Album name</a>
-                    <p class="p-i-date">release date</p>
+                    <p class="p-i-date">
+                        <i class="fas fa-calendar-alt"></i>
+                        <a class="p-i-d-year">2020</a>-<a class="p-i-d-month">10</a>-<a class="p-i-d-day">01</a>
+                    </p>
                 </div>
                 <div class="p-actions-right">
                     <a class="p-a-spotify" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify" title="Open in Spotify"></i></a>

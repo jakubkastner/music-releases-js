@@ -52,6 +52,12 @@ footer .player .p-content .p-c-info a {
   display: block;
 }
 
+footer .player .p-content .p-c-info .p-i-artists, footer .player .p-content .p-c-info .p-i-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 footer .p-a-tracklist {
   width: 80px;
 }

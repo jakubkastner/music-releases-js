@@ -56,7 +56,7 @@ main .content .c-releases .c-release .c-r-flex .c-r-info {
 }
 
 main .content .c-releases .c-release .c-r-flex .c-r-info .c-r-name,
-main .content .c-releases .c-release .c-r-flex .c-r-info .c-r-artist,
+main .content .c-releases .c-release .c-r-flex .c-r-info .c-r-artists,
 main .content .c-releases .c-release .c-r-flex .c-r-info .c-r-date {
   width: 100%;
   display: inline-block;
@@ -76,7 +76,6 @@ main .content .c-releases .c-release .c-r-flex .c-r-info .c-r-date {
 
 main .content .c-releases .c-release .c-r-flex .c-r-info .c-r-buttons {
   font-size: calc(10px + 1vw);
-  cursor: pointer;
   margin-right: calc(4px + 0.1vw);
 }
 
@@ -90,6 +89,18 @@ main .content .c-releases .c-release .c-r-content {
 
 main .content .c-releases .c-release .c-r-content.c-r-tracklist {
   height: calc(100px + 15vw);
+}
+
+main .content .c-releases .c-release .c-r-content.c-r-tracklist .c-r-track .c-r-t-info {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+main .content .c-releases .c-release .c-r-content.c-r-tracklist .c-r-track .c-r-t-info .c-r-t-artists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 main .content .c-releases .c-release .c-r-content.c-r-playlists .c-r-update {
