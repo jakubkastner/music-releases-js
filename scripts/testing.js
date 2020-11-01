@@ -2,6 +2,16 @@
  *  Only for development testing.
  */
 
+
+
+$(document).ready(async function () {
+    var storageReleaseType = localStorage.getItem('release_type');
+    localStorage.removeItem('release_type');
+    history.pushState(null, null, storageReleaseType);
+    // TODO show release type
+});
+
+
 // s ikonou pak nejde pracovat dál (měnit třídu atd...)
 /**
  * Get child icon of current clicked element.
