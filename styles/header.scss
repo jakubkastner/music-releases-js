@@ -5,6 +5,10 @@
 @import 'init';
 
 header {
+    div {
+        display: flex;
+        text-align: right;
+    }
 
     // menu butons
     .button,
@@ -28,20 +32,14 @@ header {
     }
 
     // main header (without loader)
-    div {
-        display: flex;
-        text-align: right;
+    .primary {
+        // title text
+        font-weight: 700;
 
         // div in header
-        .in-header {
+        &>* {
             margin: calc(10px + 0.5vw);
             margin-bottom: 0;
-            display: flex;
-
-            // title text
-            & * {
-                font-weight: 700;
-            }
         }
 
         // page name
@@ -108,11 +106,13 @@ header {
         }
     }
 
-    .under-header {        
+    .secondary {
+
         // mobile date (hide/show) icon
         .m-date-mobile {
             width: calc(#{$date_menu_width} - 2 * #{$button_padding_1} - 2 * #{$button_padding_2});
         }
+
         .title {
             padding: $button_padding 50px;
         }

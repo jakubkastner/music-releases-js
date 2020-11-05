@@ -5,6 +5,13 @@
 /** INIT
  *  Init sass varibles, ...
  */
+header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+}
+
 header .button,
 header .buttons > * {
   margin-top: 0;
@@ -25,52 +32,42 @@ header .loader.active {
           animation: loader 3s ease-in-out infinite;
 }
 
-header div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: right;
-}
-
-header div .in-header {
-  margin: calc(10px + 0.5vw);
-  margin-bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header div .in-header * {
+header .primary {
   font-weight: 700;
 }
 
-header div .page-name {
+header .primary > * {
+  margin: calc(10px + 0.5vw);
+  margin-bottom: 0;
+}
+
+header .primary .page-name {
   cursor: context-menu;
 }
 
-header div .page-name .favicon {
+header .primary .page-name .favicon {
   background: transparent;
   height: calc(22px + 1vw);
   font-size: calc(20px + 0.8vw);
   margin-left: 5px;
 }
 
-header div .page-name:hover > .favicon {
+header .primary .page-name:hover > .favicon {
   -webkit-animation: spin 2s linear infinite;
           animation: spin 2s linear infinite;
 }
 
-header div .page-name h1 {
+header .primary .page-name h1 {
   font-size: calc(13px + 0.8vw);
 }
 
-header div .div-user {
+header .primary .div-user {
   margin-left: auto;
   position: relative;
   display: inline;
 }
 
-header div .div-user .m-hover {
+header .primary .div-user .m-hover {
   display: none;
   position: absolute;
   width: 100%;
@@ -78,34 +75,34 @@ header div .div-user .m-hover {
   margin: 0;
 }
 
-header div .div-user .m-hover.show {
+header .primary .div-user .m-hover.show {
   display: block;
 }
 
-header div .div-user .m-hover > * {
+header .primary .div-user .m-hover > * {
   display: block;
 }
 
-header div .div-user .b-login {
+header .primary .div-user .b-login {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 70px;
 }
 
-header div .div-user:hover .m-hover {
+header .primary .div-user:hover .m-hover {
   display: block;
 }
 
-header div .div-user:hover .m-hover.hidden {
+header .primary .div-user:hover .m-hover.hidden {
   display: none;
 }
 
-header .under-header .m-date-mobile {
+header .secondary .m-date-mobile {
   width: calc(160px - 2 * 2px - 2 * 0.5vw);
 }
 
-header .under-header .title {
+header .secondary .title {
   padding: calc(2px + 0.5vw) 50px;
 }
 
