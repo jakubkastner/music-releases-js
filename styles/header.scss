@@ -108,11 +108,14 @@ header {
     }
 
     .secondary {
-
-        // mobile date (hide/show) icon
-        .b-m-date {
-            width: calc(#{$date_menu_width} - 2 * #{$button_padding_1} - 2 * #{$button_padding_2});
+        padding: 0 calc(10px + 0.5vw) 0 calc(10px + 0.5vw);
+        nav {
+            text-align: left;
         }
+        // mobile date (hide/show) icon
+        /*.b-m-date {
+            width: calc(#{$date_menu_width} - 2 * #{$button_padding_1} - 2 * #{$button_padding_2});
+        }*/
 
         .title {
             padding: $button_padding 50px;

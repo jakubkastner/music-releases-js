@@ -5,10 +5,12 @@
  *  Init sass varibles, ...
  */
 footer {
+  display: block;
+}
+
+footer * {
   padding-left: 10px;
   padding-right: 10px;
-  width: calc(100% - 20px);
-  display: block;
 }
 
 footer .player {

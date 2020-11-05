@@ -115,6 +115,9 @@
     color: #1ab26b;
     background-color: #d7d7d7;
   }
+  body footer .m-releases {
+    background-color: #ebebeb;
+  }
   body.dark a {
     color: white;
   }
@@ -227,6 +230,9 @@
   body.dark footer .p-a-tracklist .p-a-tracklist-button {
     color: #1ab26b;
     background-color: #2e2e2e;
+  }
+  body.dark footer .m-releases {
+    background-color: #101010;
   }
 }
 
@@ -344,6 +350,9 @@
     color: #1ab26b;
     background-color: #2e2e2e;
   }
+  body footer .m-releases {
+    background-color: #101010;
+  }
   body.light a {
     color: black;
   }
@@ -456,6 +465,9 @@
   body.light footer .p-a-tracklist .p-a-tracklist-button {
     color: #1ab26b;
     background-color: #d7d7d7;
+  }
+  body.light footer .m-releases {
+    background-color: #ebebeb;
   }
 }
 

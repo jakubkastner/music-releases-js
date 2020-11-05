@@ -98,8 +98,15 @@ header .primary {
         }*/
 }
 
-header .secondary .b-m-date {
-  width: calc(160px - 2 * 2px - 2 * 0.5vw);
+header .secondary {
+  padding: 0 calc(10px + 0.5vw) 0 calc(10px + 0.5vw);
+  /*.b-m-date {
+            width: calc(160px - 2 * 2px - 2 * 0.5vw);
+        }*/
+}
+
+header .secondary nav {
+  text-align: left;
 }
 
 header .secondary .title {
