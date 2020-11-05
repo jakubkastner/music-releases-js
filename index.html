@@ -27,22 +27,21 @@
 <body>
     <header>
         <div class="loader"></div>
-        <div class="primary">
+        <div class="primary mobile-hide">
             <div class="page-name">
-                <a class="date-menu-button button pc-hide" title="Hide date menu."><i class="fas fa-bars"></i></a>
-                <h1 class="mobile-hide">Music</h1>
+                <h1>Music</h1>
                 <img class="favicon" src="images/favicon.png" alt="R" />
-                <h1 class="mobile-hide">eleases</h1>
+                <h1>eleases</h1>
             </div>
-            <nav class="releases-menu buttons mobile-hide">
+            <nav class="m-releases buttons mobile-hide">
                 <a class="b-albums" title="View released albums"><i class="fas fa-compact-disc"></i>Albums</a>
                 <a class="b-tracks-eps active" title="View released Tracks & EPs"><i class="fas fa-music"></i>Tracks & EPs</a>
                 <a class="b-podcasts" title="View newest podcasts"><i class="fas fa-podcast"></i>Podcasts</a>
                 <a class="b-appears" title="View released appears"><i class="fas fa-user-friends"></i>Appears</a>
                 <a class="b-compilations" title="View released compilations"><i class="fas fa-th-large"></i>Compilations</a>
             </nav>
-            <div class="div-user">
-                <a class="b-login button" id="user">
+            <div class="user">
+                <a class="b-login button">
                     <i class="fas fa-user-plus"></i>
                     <p>Login<span class="mobile-hide"> via music account</span></p>
                 </a>
@@ -57,13 +56,51 @@
                 </nav>
             </div>
         </div>
-        <div class="secondary">
-            <a class="date-menu-button button" title="Hide date menu."><i class="fas fa-bars"></i>Date menu</a>
-            <a class="b-f-eps button" title="Show only EPs">EPs</a>
-            <a class="b-f-tracks button" title="Show only Tracks">Tracks</a>
-            <a class="b-f-remixes button" title="Show only Remixes">Remixes</a>
-            <a class="button"><i class="fas fa-plus-circle"></i>Add to playlist</a>
-            <a class="button"><i class="fas fa-play"></i>Play all</a>
+        <div class="secondary">            
+            <a class="b-m-date button" title="Hide date menu."><i class="fas fa-bars"></i><span class="mobile-hide">Date menu</span></a>
+            <div class="page-name pc-hide">
+                <img class="favicon" src="images/favicon.png" alt="R" />
+            </div>
+            <nav class="m-albums buttons skrejto">
+                <a class="b-albums" title="Show all Albums">New albums</a>
+                <a class="b-my-albums" title="Show my saved Albums">Albums in library</a>
+            </nav>
+            <nav class="m-track-eps buttons">
+                <a class="b-tracks-eps" title="Show all Tracks, EPs & Remixes">Track, EPs & Remixes</a>
+                <a class="b-eps" title="Show only EPs">EPs</a>
+                <a class="b-tracks" title="Show only Tracks">Tracks</a>
+                <a class="b-remixes" title="Show only Remixes">Remixes</a>
+                <a class="b-my-tracks-eps" title="Show my saved Track, EPs & Remixes">Track, EPs & Remixes in library</a>
+                <a class="b-my-eps" title="Show my saved EPs">EPs in library</a>
+                <a class="b-my-tracks" title="Show my saved Tracks">Tracks in library</a>
+            </nav>
+            <nav class="m-podcasts buttons skrejto">
+                <a class="b-podcasts" title="Show all Podcasts">New podcasts</a>
+                <a class="b-my-podcasts" title="Show my saved Podcasts">Podcasts in library</a>
+            </nav>
+            <nav class="m-appears buttons skrejto">
+                <a class="b-appears" title="Show all Appears">New Appears</a>
+                <a class="b-my-appears" title="Show my saved Appears">Appears in library</a>
+            </nav>
+            <nav class="m-compilations buttons skrejto">
+                <a class="b-compilations" title="Show all Compilations">New Compilations</a>
+                <a class="b-my-compilations" title="Show my saved Compilations">Compilations in library</a>
+            </nav>
+            <div class="user pc-hide">
+                <a class="b-login button">
+                    <i class="fas fa-user-plus"></i>
+                    <p>Login<span class="mobile-hide"> via music account</span></p>
+                </a>
+                <nav class="m-login m-hover buttons">
+                    <a class="b-login-spotify" title="Login via Spotify"><i class="fab fa-spotify"></i>Spotify</a>
+                    <a class="b-login-deezer" title="Login via Deezer"><i class="fab fa-deezer"></i>Deezer</a>
+                    <a class="b-login-apple" title="Login via Apple Music"><i class="fab fa-apple"></i>Apple Music</a>
+                </nav>
+                <nav class="m-user m-hover buttons">
+                    <a class="b-settings"><i class="fas fa-wrench"></i>Settings</a>
+                    <a class="b-logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -91,7 +128,7 @@
             <a class="m-year button" id="m-year-2015">2015</a>
         </nav>
         <div class="content">
-            <div class="c-logout">
+            <div class="c-logout skrejto">
                 <div>
                     <p>
                         <a class="b-login-spotify button"><i class="fab fa-spotify"></i>Login via Spotify</a>
@@ -104,7 +141,11 @@
                     </p>
                 </div>
             </div>
-            <div class="c-releases skrejto">
+            <div class="c-releases">
+                <div>
+                    <a class="button"><i class="fas fa-plus-circle"></i>Add to playlist</a>
+                    <a class="button"><i class="fas fa-play"></i>Play all</a>
+                </div>
                 <div class="c-albums">
                     <div class="c-release" id="r-album-2qaaaIfB5TuEAh5cqI1ksz">
                         <div class="c-r-flex">
@@ -395,7 +436,7 @@
                 <a class="p-a-tracklist-button" title="Tracklist"><i class="fas fa-angle-double-up"></i></a>
             </div>
         </div>
-        <nav class="releases-menu buttons mobile skrejto">
+        <nav class="m-releases buttons pc-hide">
             <a class="b-albums" title="View released albums"><i class="fas fa-compact-disc"></i>Albums</a>
             <a class="b-tracks-eps active" title="View released Tracks & EPs"><i class="fas fa-music"></i>Tracks & EPs</a>
             <a class="b-podcasts" title="View newest podcasts"><i class="fas fa-podcast"></i>Podcasts</a>

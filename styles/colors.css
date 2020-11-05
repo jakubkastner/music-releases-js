@@ -44,7 +44,7 @@
   }
   body header .m-hover {
     /*&:hover {
-                & ~ header .div-user .b-login {
+                & ~ header .user .b-login {
                     background-color: $color_5;
         
                     * {
@@ -157,7 +157,7 @@
   }
   body.dark header .m-hover {
     /*&:hover {
-                & ~ header .div-user .b-login {
+                & ~ header .user .b-login {
                     background-color: $color_5;
         
                     * {
@@ -273,7 +273,7 @@
   }
   body header .m-hover {
     /*&:hover {
-                & ~ header .div-user .b-login {
+                & ~ header .user .b-login {
                     background-color: $color_5;
         
                     * {
@@ -386,7 +386,7 @@
   }
   body.light header .m-hover {
     /*&:hover {
-                & ~ header .div-user .b-login {
+                & ~ header .user .b-login {
                     background-color: $color_5;
         
                     * {

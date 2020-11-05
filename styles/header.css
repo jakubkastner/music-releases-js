@@ -32,42 +32,33 @@ header .loader.active {
           animation: loader 3s ease-in-out infinite;
 }
 
-header .primary {
-  font-weight: 700;
-}
-
-header .primary > * {
-  margin: calc(10px + 0.5vw);
-  margin-bottom: 0;
-}
-
-header .primary .page-name {
+header .page-name {
   cursor: context-menu;
 }
 
-header .primary .page-name .favicon {
+header .page-name .favicon {
   background: transparent;
   height: calc(22px + 1vw);
   font-size: calc(20px + 0.8vw);
   margin-left: 5px;
 }
 
-header .primary .page-name:hover > .favicon {
+header .page-name:hover > .favicon {
   -webkit-animation: spin 2s linear infinite;
           animation: spin 2s linear infinite;
 }
 
-header .primary .page-name h1 {
+header .page-name h1 {
   font-size: calc(13px + 0.8vw);
 }
 
-header .primary .div-user {
+header .user {
   margin-left: auto;
   position: relative;
   display: inline;
 }
 
-header .primary .div-user .m-hover {
+header .user .m-hover {
   display: none;
   position: absolute;
   width: 100%;
@@ -75,30 +66,39 @@ header .primary .div-user .m-hover {
   margin: 0;
 }
 
-header .primary .div-user .m-hover.show {
+header .user .m-hover.show {
   display: block;
 }
 
-header .primary .div-user .m-hover > * {
+header .user .m-hover > * {
   display: block;
 }
 
-header .primary .div-user .b-login {
+header .user .b-login {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 70px;
 }
 
-header .primary .div-user:hover .m-hover {
+header .user:hover .m-hover {
   display: block;
 }
 
-header .primary .div-user:hover .m-hover.hidden {
+header .user:hover .m-hover.hidden {
   display: none;
 }
 
-header .secondary .date-menu-button {
+header .primary {
+  font-weight: 700;
+  margin: calc(5px + 0.2vw) calc(10px + 0.5vw) 0 calc(10px + 0.5vw);
+  /*&>* {
+            margin: calc(10px + 0.5vw);
+            margin-bottom: 0;
+        }*/
+}
+
+header .secondary .b-m-date {
   width: calc(160px - 2 * 2px - 2 * 0.5vw);
 }
 

@@ -1,15 +1,18 @@
 /** MOBILE
  *  Responsible styles.
- */ 
+ */
 
 @media screen and (min-width: 1000px) {
     .pc-hide {
-        display: none;
+        display: none !important;
     }
 }
 
 @media screen and (max-width: 1000px) {
     .mobile-hide {
-        display: none;
+        display: none !important;
+    }
+    header .secondary .b-m-date {
+        width: auto;
     }
 }

@@ -17,7 +17,7 @@ el.user.login = {};
 el.main.body = $('body');
 
 // all buttons, which can be active
-el.menu.releases = $('.releases-menu a, .b-settings');
+el.menu.releases = $('.m-releases a, .b-settings');
 // login buttons
 el.main.loginButton = $('.b-login');
 // left login menu
@@ -26,7 +26,7 @@ el.menu.login = $('.m-login');
 // page title
 el.main.title = $('.title');
 
-el.menu.date.mobile = $('.date-menu-button');
+el.menu.date.mobile = $('.b-m-date');
 el.menu.date.menu = $('.m-date');
 el.menu.date.year = $('.m-year');
 el.menu.date.month = $('.m-month');

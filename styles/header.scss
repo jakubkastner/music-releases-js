@@ -31,85 +31,86 @@ header {
         }
     }
 
+    // page name
+    .page-name {
+        cursor: context-menu;
+
+        // icon
+        .favicon {
+            background: transparent;
+            height: calc(22px + 1vw);
+            font-size: calc(20px + 0.8vw);
+            margin-left: 5px;
+        }
+
+        &:hover>.favicon {
+            animation: spin 2s linear infinite;
+        }
+
+        // page name
+        h1 {
+            font-size: calc(13px + 0.8vw);
+        }
+    }
+
+    // user menu
+    .user {
+        margin-left: auto;
+        position: relative;
+        display: inline;
+
+        // hoverable menu
+        .m-hover {
+            display: none;
+            position: absolute;
+            width: 100%;
+            text-align: left;
+            margin: 0;
+
+            &.show {
+                display: block;
+            }
+
+            &>* {
+                display: block;
+            }
+        }
+
+        // login button
+        .b-login {
+            display: inline-flex;
+            min-width: 70px;
+        }
+
+        // hover user menu
+        &:hover {
+            .m-hover {
+                display: block;
+            }
+
+            .m-hover.hidden {
+                display: none;
+            }
+        }
+    }
+
     // main header (without loader)
     .primary {
         // title text
         font-weight: 700;
+        margin: calc(5px + 0.2vw) calc(10px + 0.5vw) 0 calc(10px + 0.5vw);
 
         // div in header
-        &>* {
+        /*&>* {
             margin: calc(10px + 0.5vw);
             margin-bottom: 0;
-        }
-
-        // page name
-        .page-name {
-            cursor: context-menu;
-
-            // icon
-            .favicon {
-                background: transparent;
-                height: calc(22px + 1vw);
-                font-size: calc(20px + 0.8vw);
-                margin-left: 5px;
-            }
-
-            &:hover>.favicon {
-                animation: spin 2s linear infinite;
-            }
-
-            // page name
-            h1 {
-                font-size: calc(13px + 0.8vw);
-            }
-        }
-
-        // user menu
-        .div-user {
-            margin-left: auto;
-            position: relative;
-            display: inline;
-
-            // hoverable menu
-            .m-hover {
-                display: none;
-                position: absolute;
-                width: 100%;
-                text-align: left;
-                margin: 0;
-
-                &.show {
-                    display: block;
-                }
-
-                &>* {
-                    display: block;
-                }
-            }
-
-            // login button
-            .b-login {
-                display: inline-flex;
-                min-width: 70px;
-            }
-
-            // hover user menu
-            &:hover {
-                .m-hover {
-                    display: block;
-                }
-
-                .m-hover.hidden {
-                    display: none;
-                }
-            }
-        }
+        }*/
     }
 
     .secondary {
 
         // mobile date (hide/show) icon
-        .date-menu-button {
+        .b-m-date {
             width: calc(#{$date_menu_width} - 2 * #{$button_padding_1} - 2 * #{$button_padding_2});
         }
 
