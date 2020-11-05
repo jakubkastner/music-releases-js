@@ -1,6 +1,8 @@
 /** MOBILE
  *  Responsible styles.
  */
+
+ /*
 @media screen and (min-width: 1000px) {
   .pc-hide {
     display: none;
@@ -11,5 +13,6 @@
   .mobile-hide {
     display: none;
   }
-}
+}*/
+
 /*# sourceMappingURL=mobile.css.map */

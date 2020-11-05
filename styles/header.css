@@ -98,7 +98,7 @@ header .primary .div-user:hover .m-hover.hidden {
   display: none;
 }
 
-header .secondary .m-date-mobile {
+header .secondary .date-menu-button {
   width: calc(160px - 2 * 2px - 2 * 0.5vw);
 }
 

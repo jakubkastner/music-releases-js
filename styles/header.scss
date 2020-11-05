@@ -109,7 +109,7 @@ header {
     .secondary {
 
         // mobile date (hide/show) icon
-        .m-date-mobile {
+        .date-menu-button {
             width: calc(#{$date_menu_width} - 2 * #{$button_padding_1} - 2 * #{$button_padding_2});
         }
 
