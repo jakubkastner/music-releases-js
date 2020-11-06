@@ -2,14 +2,70 @@
  *  Responsible styles.
  */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1025px) {
     .pc-hide {
         display: none !important;
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     .mobile-hide {
         display: none !important;
     }
+    // 5 icons (0 in more = hidden)
+    footer .m-releases .b-more {
+        display: none;
+    }
+    footer .m-releases a {
+        width: 20vw;
+    }
 }
+@media screen and (max-width: 359px) {
+    // 4 icons (2 in more)
+    footer .m-releases .b-compilations {
+        display: none;
+    }
+    footer .m-releases .b-appears {
+        display: none;
+    }
+    footer .m-releases .b-more {
+        display: block;
+    }
+    footer .m-releases a {
+        width: 25vw;
+    }
+}
+@media screen and (max-width: 287px) {
+    // 3 icons (3 in more)
+    footer .m-releases .b-podcasts {
+        display: none;
+    }
+    footer .m-releases a {
+        width: 33.333vw;
+    }
+}
+@media screen and (max-width: 215px) {
+    // 2 icons (4 in more)
+    footer .m-releases .b-tracks-eps {
+        display: none;
+    }
+    footer .m-releases a {
+        width: 50vw;
+    }
+}
+@media screen and (max-width: 143px) {
+    // 1 icon (5 = all in more)
+    footer .m-releases .b-albums {
+        display: none;
+    }
+    footer .m-releases a {
+        width: 100vw;
+    }
+}
+// 5 ikon
+// 72 px
+// 144 px
+// 216 px
+// 288 px
+// 360 px
+// + 72px

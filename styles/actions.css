@@ -47,6 +47,7 @@
 .mobile-buttons a {
   display: block;
   width: 25vw;
+  min-width: 72px;
   margin: 10px 0;
 }
 
