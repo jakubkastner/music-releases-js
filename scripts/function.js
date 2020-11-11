@@ -10,10 +10,9 @@ el.menu.releases.click(function () {
 
     // TODO change url
     //window.location.replace('#release=' + elClickedText);
-    history.pushState(null, null, elClickedText);
+    //history.pushState(null, null, elClickedText);
     // location.hash
     //history.replaceState(null, null, elClickedText);
-    el.menu.secondary.toggleClass('hidden');
 });
 
 /**
@@ -136,19 +135,19 @@ el.settings.theme.click(async function () {
 
 
     // auto dark mode
-    if (elCurrentButton.hasClass('c-s-t-system')) {
+    if (elCurrentButton.hasClass('system')) {
         // change theme
-        elBody.removeClass('light').removeClass('dark');
+        el.main.body.removeClass('light').removeClass('dark');
     }
     // light mode
-    else if (elCurrentButton.hasClass('c-s-t-light')) {
+    else if (elCurrentButton.hasClass('light')) {
         // change theme
-        elBody.removeClass('dark').addClass('light');
+        el.main.body.removeClass('dark').addClass('light');
     }
     // dark mode
     else {
         // change theme
-        elBody.removeClass('light').addClass('dark');
+        el.main.body.removeClass('light').addClass('dark');
     }
 });
 

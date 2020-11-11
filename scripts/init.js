@@ -17,7 +17,7 @@ el.user.login = {};
 el.main.body = $('body');
 
 // all buttons, which can be active
-el.menu.releases = $('.buttons.releases a, .settings');
+el.menu.releases = $('.buttons.releases a, .buttons-user .settings');
 
 // login buttons
 el.main.loginButton = $('.login.button');
@@ -47,9 +47,9 @@ el.release.playlistAddRemove = $('.add, .c-r-p-remove');
 
 
 // settings theme
-el.settings.theme = $('.c-s-theme a');
+el.settings.theme = $('.settings .theme a');
 // settings notifications
-el.settings.notifications = $('.c-s-n');
+el.settings.notifications = $('.settings .notifications');
 
 
 
