@@ -28,64 +28,74 @@
     <header>
         <div class="loader"></div>
         <div class="primary">
-            <a class="b-m-date button" title="Hide date menu."><!--<i class="fas fa-bars"></i>--><i class="fas fa-calendar-alt"></i></a>
-            <a class="b-m-filter button pc-hide" title="Show filter."><i class="fas fa-filter"></i></a>
+            <div class="menu buttons">
+                <a class="date" title="Hide date menu."><i class="fas fa-calendar-alt"></i></a>
+                <a class="actions" title="Hide actions menu"><i class="fas fa-tools"></i></a>
+                <a class="filter pc-hide" title="Hide filter."><i class="fas fa-filter"></i></a>
+            </div>
             <div class="page-name">
                 <h1 class="mobile-hide">Music</h1>
                 <img class="favicon" src="images/favicon.png" alt="R" />
                 <h1 class="mobile-hide">eleases</h1>
-                <h2 class="title pc-hide"></h2>
+                <h2 class="title pc-hide">EPs</h2>
             </div>
-            <nav class="m-releases buttons mobile-hide">
-                <a class="b-albums" title="View released albums"><i class="fas fa-compact-disc"></i>Albums</a>
-                <a class="b-tracks-eps active" title="View released Tracks & EPs"><i class="fas fa-music"></i>Tracks & EPs</a>
-                <a class="b-podcasts" title="View newest podcasts"><i class="fas fa-podcast"></i>Podcasts</a>
-                <a class="b-appears" title="View released appears"><i class="fas fa-user-friends"></i>Appears</a>
-                <a class="b-compilations" title="View released compilations"><i class="fas fa-th-large"></i>Compilations</a>
+            <nav class="releases buttons mobile-hide">
+                <a class="albums" title="View released albums"><i class="fas fa-compact-disc"></i>Albums</a>
+                <a class="tracks-eps active" title="View released Tracks & EPs"><i class="fas fa-music"></i>Tracks & EPs</a>
+                <a class="podcasts" title="View newest podcasts"><i class="fas fa-podcast"></i>Podcasts</a>
+                <a class="appears" title="View released appears"><i class="fas fa-user-friends"></i>Appears</a>
+                <a class="compilations" title="View released compilations"><i class="fas fa-th-large"></i>Compilations</a>
             </nav>
             <div class="user">
-                <a class="b-login button">
+                <a class="login button" title="Show login menu">
                     <i class="fas fa-user-plus"></i>
                     <p>Login<span class="mobile-hide"> via music account</span></p>
                 </a>
-                <nav class="m-login m-hover buttons">
-                    <a class="b-login-spotify" title="Login via Spotify"><i class="fab fa-spotify"></i>Spotify</a>
-                    <a class="b-login-deezer" title="Login via Deezer"><i class="fab fa-deezer"></i>Deezer</a>
-                    <a class="b-login-apple" title="Login via Apple Music"><i class="fab fa-apple"></i>Apple Music</a>
+                <nav class="login menu-hover buttons">
+                    <a class="spotify" title="Login via Spotify"><i class="fab fa-spotify"></i>Spotify</a>
+                    <a class="deezer" title="Login via Deezer"><i class="fab fa-deezer"></i>Deezer</a>
+                    <a class="apple" title="Login via Apple Music"><i class="fab fa-apple"></i>Apple Music</a>
                 </nav>
-                <nav class="m-user m-hover buttons">
-                    <a class="b-settings"><i class="fas fa-wrench"></i>Settings</a>
-                    <a class="b-logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                <nav class="buttons-user menu-hover buttons">
+                    <a class="settings" title="Show settings"><i class="fas fa-wrench"></i>Settings</a>
+                    <a class="logout" title="Logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
                 </nav>
             </div>
         </div>
         <div class="secondary hidden">
-            <a><i class="fas fa-filter"></i></a>
-            <nav class="m-albums buttons skrejto">
-                <a class="b-albums" title="Show all Albums">New albums</a>
-                <a class="b-my-albums" title="Show my saved Albums">Albums in library</a>
+            <p><i class="fas fa-filter"></i>Filter</p>
+            <nav class="albums releases buttons skrejto">
+                <a class="albums" title="Show all Albums">New albums</a>
+                <a class="albums-saved" title="Show my saved Albums">Albums in library</a>
             </nav>
-            <nav class="m-track-eps buttons">
-                <a class="b-tracks-eps" title="Show all Tracks, EPs & Remixes">Track, EPs & Remixes</a>
-                <a class="b-eps" title="Show only EPs">EPs</a>
-                <a class="b-tracks" title="Show only Tracks">Tracks</a>
-                <a class="b-remixes" title="Show only Remixes">Remixes</a>
-                <a class="b-my-tracks-eps" title="Show my saved Track, EPs & Remixes">Track, EPs & Remixes in library</a>
-                <a class="b-my-eps" title="Show my saved EPs">EPs in library</a>
-                <a class="b-my-tracks" title="Show my saved Tracks">Tracks in library</a>
+            <nav class="track-eps releases buttons">
+                <a class="tracks-eps" title="Show all Tracks, EPs & Remixes">Track, EPs & Remixes</a>
+                <a class="eps" title="Show only EPs">EPs</a>
+                <a class="tracks" title="Show only Tracks">Tracks</a>
+                <a class="remixes" title="Show only Remixes">Remixes</a>
+                <a class="tracks-eps-saved" title="Show my saved Track, EPs & Remixes">Track, EPs & Remixes in library</a>
+                <a class="eps-saved" title="Show my saved EPs">EPs in library</a>
+                <a class="tracks-saved" title="Show my saved Tracks">Tracks in library</a>
             </nav>
-            <nav class="m-podcasts buttons skrejto">
-                <a class="b-podcasts" title="Show all Podcasts">New podcasts</a>
-                <a class="b-my-podcasts" title="Show my saved Podcasts">Podcasts in library</a>
+            <nav class="podcasts releases buttons skrejto">
+                <a class="podcasts" title="Show all Podcasts">New podcasts</a>
+                <a class="podcasts-saved" title="Show my saved Podcasts">Podcasts in library</a>
             </nav>
-            <nav class="m-appears buttons skrejto">
-                <a class="b-appears" title="Show all Appears">New Appears</a>
-                <a class="b-my-appears" title="Show my saved Appears">Appears in library</a>
+            <nav class="appears releases buttons skrejto">
+                <a class="appears" title="Show all Appears">New Appears</a>
+                <a class="appears-saved" title="Show my saved Appears">Appears in library</a>
             </nav>
-            <nav class="m-compilations buttons skrejto">
-                <a class="b-compilations" title="Show all Compilations">New Compilations</a>
-                <a class="b-my-compilations" title="Show my saved Compilations">Compilations in library</a>
+            <nav class="compilations releases buttons skrejto">
+                <a class="compilations" title="Show all Compilations">New Compilations</a>
+                <a class="compilations-saved" title="Show my saved Compilations">Compilations in library</a>
             </nav>
+        </div>
+        <div class="actions">
+            <p><i class="fas fa-tools"></i>Actions</p>
+            <div class="all-releases buttons">
+                <a class="playlist"><i class="fas fa-plus-circle"></i>Add to playlist</a>
+                <a class="play"><i class="fas fa-play"></i>Play all</a>
+            </div>
         </div>
     </header>
     <main>
@@ -116,21 +126,17 @@
             <div class="c-logout skrejto">
                 <div>
                     <p>
-                        <a class="b-login-spotify button"><i class="fab fa-spotify"></i>Login via Spotify</a>
+                        <a class="spotify button"><i class="fab fa-spotify"></i>Login via Spotify</a>
                     </p>
                     <p>
-                        <a class="b-login-deezer button"><i class="fab fa-deezer"></i>Login via Deezer</a>
+                        <a class="deezer button"><i class="fab fa-deezer"></i>Login via Deezer</a>
                     </p>
                     <p>
-                        <a class="b-login-apple button"><i class="fab fa-apple"></i>Login via Apple Music</a>
+                        <a class="apple button"><i class="fab fa-apple"></i>Login via Apple Music</a>
                     </p>
                 </div>
             </div>
             <div class="c-releases">
-                <div>
-                    <a class="button"><i class="fas fa-plus-circle"></i>Add to playlist</a>
-                    <a class="button"><i class="fas fa-play"></i>Play all</a>
-                </div>
                 <div class="c-albums">
                     <div class="c-release" id="r-album-2qaaaIfB5TuEAh5cqI1ksz">
                         <div class="c-r-flex">
@@ -423,20 +429,20 @@
                 <a class="p-a-tracklist-button skrejto"><span>1</span><i class="fas fa-filter"></i></a>
             </div>
         </div>
-        <nav class="m-releases mobile-buttons pc-hide">
-            <a class="b-albums" title="View released albums"><i class="fas fa-compact-disc"></i>
+        <nav class="buttons releases mobile-buttons pc-hide">
+            <a class="albums" title="View released albums"><i class="fas fa-compact-disc"></i>
                 <p>Albums</p>
             </a>
-            <a class="b-tracks-eps active" title="View released Tracks & EPs"><i class="fas fa-music"></i>
+            <a class="tracks-eps active" title="View released Tracks & EPs"><i class="fas fa-music"></i>
                 <p>Tracks & EPs</p>
             </a>
-            <a class="b-podcasts" title="View newest podcasts"><i class="fas fa-podcast"></i>
+            <a class="podcasts" title="View newest podcasts"><i class="fas fa-podcast"></i>
                 <p>Podcasts</p>
             </a>
-            <a class="b-appears" title="View released appears"><i class="fas fa-user-friends"></i>
+            <a class="appears" title="View released appears"><i class="fas fa-user-friends"></i>
                 <p>Appears</p>
             </a>
-            <a class="b-compilations" title="View released compilations"><i class="fas fa-th-large"></i>
+            <a class="compilations" title="View released compilations"><i class="fas fa-th-large"></i>
                 <p>Compilations</p>
             </a>
             <a class="b-more" title="Show more"><i class="fas fa-ellipsis-h"></i>

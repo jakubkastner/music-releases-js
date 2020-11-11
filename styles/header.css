@@ -58,7 +58,7 @@ header .user {
   display: inline;
 }
 
-header .user .m-hover {
+header .user .menu-hover {
   display: none;
   position: absolute;
   width: 100%;
@@ -66,26 +66,26 @@ header .user .m-hover {
   margin: 0;
 }
 
-header .user .m-hover.show {
+header .user .menu-hover.show {
   display: block;
 }
 
-header .user .m-hover > * {
+header .user .menu-hover > * {
   display: block;
 }
 
-header .user .b-login {
+header .user .login.button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 70px;
 }
 
-header .user:hover .m-hover {
+header .user:hover .menu-hover {
   display: block;
 }
 
-header .user:hover .m-hover.hidden {
+header .user:hover .menu-hover.hidden {
   display: none;
 }
 

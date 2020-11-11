@@ -42,9 +42,9 @@
     background-color: #e1e1e1;
     color: #1ab26b;
   }
-  body header .m-hover {
+  body header .menu-hover {
     /*&:hover {
-                & ~ header .user .b-login {
+                & ~ header .user .login {
                     background-color: $color_5;
         
                     * {
@@ -53,19 +53,19 @@
                 }
             }*/
   }
-  body header .m-hover a {
+  body header .menu-hover a {
     background-color: #d7d7d7;
   }
-  body header .m-hover a * {
+  body header .menu-hover a * {
     background-color: #d7d7d7;
   }
-  body header .m-hover a:hover {
+  body header .menu-hover a:hover {
     background-color: #cdcdcd;
   }
-  body header .m-hover a:hover * {
+  body header .menu-hover a:hover * {
     background-color: #cdcdcd;
   }
-  body header .b-login.hover {
+  body header .login.hover {
     background-color: #d7d7d7;
   }
   body header .secondary {
@@ -115,7 +115,7 @@
     color: #1ab26b;
     background-color: #d7d7d7;
   }
-  body footer .m-releases {
+  body footer .buttons.releases {
     background-color: #ebebeb;
   }
   body.dark a {
@@ -158,9 +158,9 @@
     background-color: #242424;
     color: #1ab26b;
   }
-  body.dark header .m-hover {
+  body.dark header .menu-hover {
     /*&:hover {
-                & ~ header .user .b-login {
+                & ~ header .user .login {
                     background-color: $color_5;
         
                     * {
@@ -169,19 +169,19 @@
                 }
             }*/
   }
-  body.dark header .m-hover a {
+  body.dark header .menu-hover a {
     background-color: #2e2e2e;
   }
-  body.dark header .m-hover a * {
+  body.dark header .menu-hover a * {
     background-color: #2e2e2e;
   }
-  body.dark header .m-hover a:hover {
+  body.dark header .menu-hover a:hover {
     background-color: #383838;
   }
-  body.dark header .m-hover a:hover * {
+  body.dark header .menu-hover a:hover * {
     background-color: #383838;
   }
-  body.dark header .b-login.hover {
+  body.dark header .login.hover {
     background-color: #2e2e2e;
   }
   body.dark header .secondary {
@@ -231,7 +231,7 @@
     color: #1ab26b;
     background-color: #2e2e2e;
   }
-  body.dark footer .m-releases {
+  body.dark footer .buttons.releases {
     background-color: #101010;
   }
 }
@@ -277,9 +277,9 @@
     background-color: #242424;
     color: #1ab26b;
   }
-  body header .m-hover {
+  body header .menu-hover {
     /*&:hover {
-                & ~ header .user .b-login {
+                & ~ header .user .login {
                     background-color: $color_5;
         
                     * {
@@ -288,19 +288,19 @@
                 }
             }*/
   }
-  body header .m-hover a {
+  body header .menu-hover a {
     background-color: #2e2e2e;
   }
-  body header .m-hover a * {
+  body header .menu-hover a * {
     background-color: #2e2e2e;
   }
-  body header .m-hover a:hover {
+  body header .menu-hover a:hover {
     background-color: #383838;
   }
-  body header .m-hover a:hover * {
+  body header .menu-hover a:hover * {
     background-color: #383838;
   }
-  body header .b-login.hover {
+  body header .login.hover {
     background-color: #2e2e2e;
   }
   body header .secondary {
@@ -350,7 +350,7 @@
     color: #1ab26b;
     background-color: #2e2e2e;
   }
-  body footer .m-releases {
+  body footer .buttons.releases {
     background-color: #101010;
   }
   body.light a {
@@ -393,9 +393,9 @@
     background-color: #e1e1e1;
     color: #1ab26b;
   }
-  body.light header .m-hover {
+  body.light header .menu-hover {
     /*&:hover {
-                & ~ header .user .b-login {
+                & ~ header .user .login {
                     background-color: $color_5;
         
                     * {
@@ -404,19 +404,19 @@
                 }
             }*/
   }
-  body.light header .m-hover a {
+  body.light header .menu-hover a {
     background-color: #d7d7d7;
   }
-  body.light header .m-hover a * {
+  body.light header .menu-hover a * {
     background-color: #d7d7d7;
   }
-  body.light header .m-hover a:hover {
+  body.light header .menu-hover a:hover {
     background-color: #cdcdcd;
   }
-  body.light header .m-hover a:hover * {
+  body.light header .menu-hover a:hover * {
     background-color: #cdcdcd;
   }
-  body.light header .b-login.hover {
+  body.light header .login.hover {
     background-color: #d7d7d7;
   }
   body.light header .secondary {
@@ -466,7 +466,7 @@
     color: #1ab26b;
     background-color: #d7d7d7;
   }
-  body.light footer .m-releases {
+  body.light footer .buttons.releases {
     background-color: #ebebeb;
   }
 }

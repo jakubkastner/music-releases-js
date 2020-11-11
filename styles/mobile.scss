@@ -13,52 +13,52 @@
         display: none !important;
     }
     // 5 icons (0 in more = hidden)
-    footer .m-releases .b-more {
+    footer .buttons.releases .b-more {
         display: none;
     }
-    footer .m-releases a {
+    footer .buttons.releases a {
         width: 20vw;
     }
 }
 @media screen and (max-width: 359px) {
     // 4 icons (2 in more)
-    footer .m-releases .b-compilations {
+    footer .buttons.releases .compilations {
         display: none;
     }
-    footer .m-releases .b-appears {
+    footer .buttons.releases .appears {
         display: none;
     }
-    footer .m-releases .b-more {
+    footer .buttons.releases .b-more {
         display: block;
     }
-    footer .m-releases a {
+    footer .buttons.releases a {
         width: 25vw;
     }
 }
 @media screen and (max-width: 287px) {
     // 3 icons (3 in more)
-    footer .m-releases .b-podcasts {
+    footer .buttons.releases .podcasts {
         display: none;
     }
-    footer .m-releases a {
+    footer .buttons.releases a {
         width: 33.333vw;
     }
 }
 @media screen and (max-width: 215px) {
     // 2 icons (4 in more)
-    footer .m-releases .b-tracks-eps {
+    footer .buttons.releases .tracks-eps {
         display: none;
     }
-    footer .m-releases a {
+    footer .buttons.releases a {
         width: 50vw;
     }
 }
 @media screen and (max-width: 143px) {
     // 1 icon (5 = all in more)
-    footer .m-releases .b-albums {
+    footer .buttons.releases .albums {
         display: none;
     }
-    footer .m-releases a {
+    footer .buttons.releases a {
         width: 100vw;
     }
 }

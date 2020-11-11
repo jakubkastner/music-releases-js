@@ -91,9 +91,9 @@ $color_text_button: #1ab26b;
         color: $color_text_button;
 
         // left hover menu (login, user)
-        .m-hover {
+        .menu-hover {
             /*&:hover {
-                & ~ header .user .b-login {
+                & ~ header .user .login {
                     background-color: $color_5;
         
                     * {
@@ -120,7 +120,7 @@ $color_text_button: #1ab26b;
             }
         }
 
-        .b-login.hover {
+        .login.hover {
             background-color: $color_5;
         }
 
@@ -196,7 +196,7 @@ $color_text_button: #1ab26b;
                 background-color: $color_5;
             }
         }
-        .m-releases {
+        .buttons.releases {
             background-color: $color_2;
         }
     }

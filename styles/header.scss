@@ -60,7 +60,7 @@ header {
         display: inline;
 
         // hoverable menu
-        .m-hover {
+        .menu-hover {
             display: none;
             position: absolute;
             width: 100%;
@@ -77,18 +77,18 @@ header {
         }
 
         // login button
-        .b-login {
+        .login.button {
             display: inline-flex;
             min-width: 70px;
         }
 
         // hover user menu
         &:hover {
-            .m-hover {
+            .menu-hover {
                 display: block;
             }
 
-            .m-hover.hidden {
+            .menu-hover.hidden {
                 display: none;
             }
         }

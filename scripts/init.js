@@ -17,22 +17,23 @@ el.user.login = {};
 el.main.body = $('body');
 
 // all buttons, which can be active
-el.menu.releases = $('.m-releases a, .b-settings');
+el.menu.releases = $('.buttons.releases a, .settings');
+
 // login buttons
-el.main.loginButton = $('.b-login');
+el.main.loginButton = $('.login.button');
 // left login menu
-el.menu.login = $('.m-login');
+el.menu.login = $('.buttons.login');
 
 // page title
 el.main.title = $('.title');
 
-el.menu.date.mobile = $('.b-m-date');
+el.menu.date.button = $('.buttons.menu .date');
 el.menu.date.menu = $('.m-date');
 el.menu.date.year = $('.m-year');
 el.menu.date.month = $('.m-month');
 el.menu.date.months = $('.m-months');
 
-el.menu.filter = $('.b-m-filter');
+el.menu.filter = $('.buttons.menu .filter');
 el.menu.secondary = $('header .secondary');
 
 // releases tracklist
@@ -53,8 +54,8 @@ el.settings.notifications = $('.c-s-n');
 
 
 // user
-el.user.login.spotify = $('.b-login-spotify');
-el.user.logout = $('.b-logout');
+el.user.login.spotify = $('.buttons.login .spotify');
+el.user.logout = $('.buttons-user .logout');
 
 
 var user = {};
