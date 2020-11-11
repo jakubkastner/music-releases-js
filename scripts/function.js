@@ -32,12 +32,12 @@ el.release.buttons.tracklist.click(async function () {
     // change button
     elCurrentButton.toggleClass('active');
     // change other buttons
-    $('#' + release.elID + ' .c-r-b-playlist').removeClass('active');
+    $('#' + release.elID + ' .button.playlist').removeClass('active');
 
     // hide playlists
-    $('#' + release.elID + ' .c-r-playlists').hide('slow');
+    $('#' + release.elID + ' .content.playlists').addClass('hidden');
     // show/hide tracklist
-    $('#' + release.elID + ' .c-r-tracklist').toggle('slow');
+    $('#' + release.elID + ' .content.tracklist').toggleClass('hidden');
 });
 
 
@@ -54,12 +54,12 @@ el.release.buttons.playlist.click(async function () {
     // change button
     elCurrentButton.toggleClass('active');
     // change other buttons
-    $('#' + release.elID + ' .c-r-b-tracklist').removeClass('active');
+    $('#' + release.elID + ' .button.tracklist').removeClass('active');
 
     // hide playlists
-    $('#' + release.elID + ' .c-r-tracklist').hide('slow');
+    $('#' + release.elID + ' .content.tracklist').addClass('hidden');
     // show/hide tracklist
-    $('#' + release.elID + ' .c-r-playlists').toggle('slow');
+    $('#' + release.elID + ' .content.playlists').toggleClass('hidden');
 });
 
 /**
@@ -67,12 +67,12 @@ el.release.buttons.playlist.click(async function () {
  * @param {*} elChild child clicked element of release
  */
 async function getReleaseID(elChild) {
-    var elRelease = elChild.parents('.c-release');
+    var elRelease = elChild.parents('.content .release');
     var release = {};
     release.elID = elRelease.attr('id');
     var elReleaseIDsplit = release.elID.split('-');
-    release.type = elReleaseIDsplit[1];
-    release.id = elReleaseIDsplit[2];
+    release.type = elReleaseIDsplit[0];
+    release.id = elReleaseIDsplit[1];
     return release;
 }
 
@@ -92,7 +92,7 @@ el.release.playlistAddRemove.click(async function () {
 });
 function playlistAdd(elCurrentButton) {
     // change add/remove class and remove "active" class to current element
-    elCurrentButton.removeClass('c-r-p-add');
+    elCurrentButton.removeClass('add');
     elCurrentButton.addClass('c-r-p-remove');
     elCurrentButton.addClass('active');
 
@@ -106,7 +106,7 @@ function playlistAdd(elCurrentButton) {
 function playlistRemove(elCurrentButton) {
     // change add/remove class and add "active" class to current element
     elCurrentButton.removeClass('c-r-p-remove');
-    elCurrentButton.addClass('c-r-p-add');
+    elCurrentButton.addClass('add');
     elCurrentButton.removeClass('active');
 
     // chage title

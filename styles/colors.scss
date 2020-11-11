@@ -78,7 +78,7 @@ $color_text_button: #1ab26b;
                 color: $color_text_button;
             }
 
-            &.c-r-update:hover {
+            &.update:hover {
                 background-color: $color_1;
                 color: $color_text_button;
             }
@@ -167,11 +167,11 @@ $color_text_button: #1ab26b;
                 }
             }
 
-            .c-releases {
-                .c-release {
+            .releases {
+                .release {
                     background-color: $color_1;
 
-                    .c-r-buttons.active {
+                    .buttons.active {
                         color: $color_text_button;
                     }
                 }

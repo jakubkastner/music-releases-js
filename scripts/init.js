@@ -37,13 +37,13 @@ el.menu.filter = $('.buttons.menu .filter');
 el.menu.secondary = $('header .secondary');
 
 // releases tracklist
-el.release.buttons.tracklist = $('.c-r-b-tracklist');
-el.release.tracklist = $('.c-r-tracklist');
+el.release.buttons.tracklist = $('.release .button.tracklist');
+el.release.tracklist = $('.release .content.tracklist');
 // releases playlists
-el.release.buttons.playlist = $('.c-r-b-playlist');
-el.release.playlists = $('.c-r-playlists');
+el.release.buttons.playlist = $('.release .button.playlist');
+el.release.playlists = $('.release .content.playlists');
 
-el.release.playlistAddRemove = $('.c-r-p-add, .c-r-p-remove');
+el.release.playlistAddRemove = $('.add, .c-r-p-remove');
 
 
 // settings theme
