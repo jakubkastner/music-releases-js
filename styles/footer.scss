@@ -17,7 +17,7 @@ footer {
     .player {
         display: flex;
 
-        .p-image {
+        .image {
             width: $date_menu_width - 10px;
 
             img {
@@ -28,12 +28,12 @@ footer {
             }
         }
 
-        .player-info {
+        .info {
             width: 100%;
             margin-left: 50px;
             margin-right: 50px;
 
-            .p-time {
+            &>.time {
                 width: 100%;
                 height: 8px;
                 border-radius: 8px;
@@ -42,20 +42,20 @@ footer {
             }
 
 
-            .p-content {
+            .content {
                 display: flex;
 
                 &>div {
                     width: 33%;
                 }
 
-                .p-c-info {
+                .details {
                     a {
                         display: block;
                     }
 
-                    .p-i-artists,
-                    .p-i-date {
+                    .artists,
+                    .date {
                         display: flex;
                     }
                 }
@@ -63,10 +63,24 @@ footer {
         }
     }
 
-    .p-a-tracklist {
-        width: 80px;
+    .menu.round {
+        //width: 80px;
+        display: block;
 
-        .p-a-tracklist-button {
+        &.pc-hide {
+            display: flex;
+            height: 0;
+
+            a:first-of-type {
+                margin-left: auto;
+            }
+
+            &.buttons>* {
+                top: -65px;
+            }
+        }
+
+        &.buttons>* {
             font-size: calc(20px + 0.8vw);
             border-radius: 100%;
             width: 50px;
@@ -79,6 +93,7 @@ footer {
                 margin: auto;
             }
         }
+
     }
 
 
@@ -98,4 +113,3 @@ footer {
         }
     }
 }
-

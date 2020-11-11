@@ -216,53 +216,56 @@
         <!-- TODO playlists -->
         <!-- TODO tracklist -->
         <div class="player">
-            <div class="p-image">
+            <div class="image">
                 <img src="images/no-cover.png" />
             </div>
-            <div class="player-info">
-                <div class="p-time"></div>
-                <div class="p-content">
-                    <div class="p-actions-left">
+            <div class="info">
+                <div class="time"></div>
+                <div class="content">
+                    <div class="actions-left">
                         <div>
-                            <a class="p-a-prev"><i class="fas fa-step-backward"></i></a>
-                            <a class="p-a-play"><i class="fas fa-play"></i></a>
-                            <a class="p-a-next"><i class="fas fa-step-forward"></i></i></a>
-                            <a class="p-a-library"><i class="far fa-heart"></i></a>
-                            <a class="p-a-playlist" title="Add release to playlist"><i class="fas fa-plus"></i></a>
+                            <a class="prev"><i class="fas fa-step-backward"></i></a>
+                            <a class="play"><i class="fas fa-play"></i></a>
+                            <a class="next"><i class="fas fa-step-forward"></i></i></a>
+                            <a class="library"><i class="far fa-heart"></i></a>
+                            <a class="playlist" title="Add release to playlist"><i class="fas fa-plus"></i></a>
                         </div>
-                        <div>
+                        <div class="time">
                             <i class="far fa-clock"></i>
-                            <a class="p-i-time-actual">01:00</a>
+                            <a class="actual">01:00</a>
                             <span>/</span>
-                            <a class="p-i-time-full">03:50</a>
+                            <a class="full">03:50</a>
                         </div>
                     </div>
-                    <div class="p-c-info">
-                        <a class="p-i-track" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">Track name</a>
-                        <p class="p-i-artists">
-                            <a class="p-i-artist">Artist 1</a>,
-                            <a class="p-i-artist">Artist 2</a> &
-                            <a class="p-i-artist">Artist 3</a>
+                    <div class="details">
+                        <a class="track" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">Track name</a>
+                        <p class="artists">
+                            <a class="artist">Artist 1</a>,
+                            <a class="artist">Artist 2</a> &
+                            <a class="artist">Artist 3</a>
                         </p>
-                        <a class="p-i-album" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">Album name</a>
-                        <p class="p-i-date">
+                        <a class="album" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">Album name</a>
+                        <p class="date">
                             <i class="fas fa-calendar-alt"></i>
-                            <a class="p-i-d-year">2020</a>-<a class="p-i-d-month">10</a>-<a class="p-i-d-day">01</a>
+                            <a class="year">2020</a>-<a class="month">10</a>-<a class="day">01</a>
                         </p>
                     </div>
-                    <div class="p-actions-right">
-                        <a class="p-a-spotify" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify" title="Open in Spotify"></i></a>
-                        <a class="p-a-youtube" href="https://music.youtube.com/search?q=GASHI 1984" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube" title="Search on YouTube Music"></i></a>
-                        <a class="p-a-volume"><i class="fas fa-volume-up"></i></a>
-                        <a class="p-a-devices"><i class="fas fa-laptop"></i></a>
+                    <div class="actions-right">
+                        <a class="spotify" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify" title="Open in Spotify"></i></a>
+                        <a class="youtube" href="https://music.youtube.com/search?q=GASHI 1984" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube" title="Search on YouTube Music"></i></a>
+                        <a class="volume"><i class="fas fa-volume-up"></i></a>
+                        <a class="devices"><i class="fas fa-laptop"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="p-a-tracklist">
-                <a class="p-a-tracklist-button" title="Tracklist"><i class="fas fa-angle-double-up"></i></a>
-                <a class="p-a-tracklist-button skrejto"><i class="fas fa-bars"></i></a>
-                <a class="p-a-tracklist-button skrejto"><span>1</span><i class="fas fa-filter"></i></a>
+            <div class="menu round buttons">
+                <a class="tracklist" title="Tracklist"><i class="fas fa-angle-double-up"></i></a>
             </div>
+        </div>
+        <div class="menu round buttons pc-hide">
+            <a class="date" title="Hide date menu."><i class="fas fa-calendar-alt"></i></a>
+            <a class="filter"><span>1</span><i class="fas fa-filter"></i></a>
+            <a class="menu"><i class="fas fa-bars"></i></a>
         </div>
         <nav class="buttons releases mobile-buttons pc-hide">
             <a class="albums" title="View released albums"><i class="fas fa-compact-disc"></i>

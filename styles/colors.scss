@@ -185,13 +185,13 @@ $color_text_button: #1ab26b;
         color: $color_text;
 
         .player {
-            .p-time {
+            .info > .time {
                 background-color: $color_text_button;
             }
         }
 
-        .p-a-tracklist {
-            .p-a-tracklist-button {
+        .tracklist {
+            .tracklist-button {
                 color: $color_text_button;
                 background-color: $color_5;
             }

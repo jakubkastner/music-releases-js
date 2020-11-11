@@ -108,10 +108,10 @@
     background-color: whitesmoke;
     color: black;
   }
-  body footer .player .p-time {
+  body footer .player .info > .time {
     background-color: #1ab26b;
   }
-  body footer .p-a-tracklist .p-a-tracklist-button {
+  body footer .tracklist .tracklist-button {
     color: #1ab26b;
     background-color: #d7d7d7;
   }
@@ -224,10 +224,10 @@
     background-color: #060606;
     color: white;
   }
-  body.dark footer .player .p-time {
+  body.dark footer .player .info > .time {
     background-color: #1ab26b;
   }
-  body.dark footer .p-a-tracklist .p-a-tracklist-button {
+  body.dark footer .tracklist .tracklist-button {
     color: #1ab26b;
     background-color: #2e2e2e;
   }
@@ -343,10 +343,10 @@
     background-color: #060606;
     color: white;
   }
-  body footer .player .p-time {
+  body footer .player .info > .time {
     background-color: #1ab26b;
   }
-  body footer .p-a-tracklist .p-a-tracklist-button {
+  body footer .tracklist .tracklist-button {
     color: #1ab26b;
     background-color: #2e2e2e;
   }
@@ -459,10 +459,10 @@
     background-color: whitesmoke;
     color: black;
   }
-  body.light footer .player .p-time {
+  body.light footer .player .info > .time {
     background-color: #1ab26b;
   }
-  body.light footer .p-a-tracklist .p-a-tracklist-button {
+  body.light footer .tracklist .tracklist-button {
     color: #1ab26b;
     background-color: #d7d7d7;
   }
