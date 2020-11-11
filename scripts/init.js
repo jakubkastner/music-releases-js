@@ -28,10 +28,10 @@ el.menu.login = $('.buttons.login');
 el.main.title = $('.title');
 
 el.menu.date.button = $('.buttons.menu .date');
-el.menu.date.menu = $('.m-date');
-el.menu.date.year = $('.m-year');
-el.menu.date.month = $('.m-month');
-el.menu.date.months = $('.m-months');
+el.menu.date.menu = $('.menu-date');
+el.menu.date.year = $('.menu-date .year');
+el.menu.date.month = $('.menu-date .month');
+el.menu.date.months = $('.menu-date .months');
 
 el.menu.filter = $('.buttons.menu .filter');
 el.menu.secondary = $('header .secondary');

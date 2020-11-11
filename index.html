@@ -19,9 +19,8 @@
     <link rel="stylesheet" type="text/css" href="styles/mobile.css" />
     <link rel="stylesheet" type="text/css" href="styles/testing.css" />
     <link rel="icon" type="image/ico" href="images/favicon.png" />
-    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
-    <script src="https://kit.fontawesome.com/ebe995aabe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Pontano+Sans" />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -99,41 +98,35 @@
         </div>
     </header>
     <main>
-        <nav class="m-date">
-            <a class="m-year button active" id="m-year-2020">2020</a>
-            <span class="m-months buttons" id="m-months-2020">
-                <a class="m-month" id="m-month-2020-13">undefined</a>
-                <a class="m-month" id="m-month-2020-12">12</a>
-                <a class="m-month" id="m-month-2020-11">11</a>
-                <a class="m-month" id="m-month-2020-10">10</a>
-                <a class="m-month" id="m-month-2020-09">09</a>
-                <a class="m-month" id="m-month-2020-08">08</a>
-                <a class="m-month" id="m-month-2020-07">07</a>
-                <a class="m-month" id="m-month-2020-06">06</a>
-                <a class="m-month active" id="m-month-2020-05">05</a>
-                <a class="m-month" id="m-month-2020-04">04</a>
-                <a class="m-month" id="m-month-2020-03">03</a>
-                <a class="m-month" id="m-month-2020-02">02</a>
-                <a class="m-month" id="m-month-2020-01">01</a>
+        <nav class="menu-date">
+            <a class="year button active" id="year-2020">2020</a>
+            <span class="months buttons" id="months-2020">
+                <a class="month" id="month-2020-13">undefined</a>
+                <a class="month" id="month-2020-12">12</a>
+                <a class="month" id="month-2020-11">11</a>
+                <a class="month" id="month-2020-10">10</a>
+                <a class="month" id="month-2020-09">09</a>
+                <a class="month" id="month-2020-08">08</a>
+                <a class="month" id="month-2020-07">07</a>
+                <a class="month" id="month-2020-06">06</a>
+                <a class="month active" id="month-2020-05">05</a>
+                <a class="month" id="month-2020-04">04</a>
+                <a class="month" id="month-2020-03">03</a>
+                <a class="month" id="month-2020-02">02</a>
+                <a class="month" id="month-2020-01">01</a>
             </span>
-            <a class="m-year button" id="m-year-2019">2019</a>
-            <a class="m-year button" id="m-year-2018">2018</a>
-            <a class="m-year button" id="m-year-2017">2017</a>
-            <a class="m-year button" id="m-year-2016">2016</a>
-            <a class="m-year button" id="m-year-2015">2015</a>
+            <a class="year button" id="year-2019">2019</a>
+            <a class="year button" id="year-2018">2018</a>
+            <a class="year button" id="year-2017">2017</a>
+            <a class="year button" id="year-2016">2016</a>
+            <a class="year button" id="year-2015">2015</a>
         </nav>
         <div class="content">
-            <div class="c-logout skrejto">
-                <div>
-                    <p>
-                        <a class="spotify button"><i class="fab fa-spotify"></i>Login via Spotify</a>
-                    </p>
-                    <p>
-                        <a class="deezer button"><i class="fab fa-deezer"></i>Login via Deezer</a>
-                    </p>
-                    <p>
-                        <a class="apple button"><i class="fab fa-apple"></i>Login via Apple Music</a>
-                    </p>
+            <div class="login skrejto">
+                <div class="login buttons">
+                    <a class="spotify"><i class="fab fa-spotify"></i>Login via Spotify</a>
+                    <a class="deezer"><i class="fab fa-deezer"></i>Login via Deezer</a>
+                    <a class="apple"><i class="fab fa-apple"></i>Login via Apple Music</a>
                 </div>
             </div>
             <div class="c-releases">
@@ -451,6 +444,7 @@
         </nav>
     </footer>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/kit.fontawesome.com/ebe995aabe.js" crossorigin="anonymous"></script>
     <script src="scripts/init.js"></script>
     <script src="scripts/variables.js"></script>
     <script src="scripts/functions.js"></script>

@@ -6,7 +6,7 @@
 main {
 
     // date menu
-    .m-date {
+    .menu-date {
         overflow: hidden;
         min-width: $date_menu_width;
         display: inline-block;
@@ -22,7 +22,7 @@ main {
         }
 
         // year menu
-        .m-year {
+        .year {
             padding-left: 80px;
         }
     }

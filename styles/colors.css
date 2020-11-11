@@ -81,13 +81,13 @@
     background-color: #ebebeb;
     color: black;
   }
-  body main .m-date {
+  body main .menu-date {
     background-color: #e1e1e1;
   }
-  body main .m-date a {
+  body main .menu-date a {
     color: black;
   }
-  body main .m-date a:hover {
+  body main .menu-date a:hover {
     color: #1ab26b;
   }
   body main .content .button,
@@ -197,13 +197,13 @@
     background-color: #101010;
     color: white;
   }
-  body.dark main .m-date {
+  body.dark main .menu-date {
     background-color: #242424;
   }
-  body.dark main .m-date a {
+  body.dark main .menu-date a {
     color: white;
   }
-  body.dark main .m-date a:hover {
+  body.dark main .menu-date a:hover {
     color: #1ab26b;
   }
   body.dark main .content .button,
@@ -316,13 +316,13 @@
     background-color: #101010;
     color: white;
   }
-  body main .m-date {
+  body main .menu-date {
     background-color: #242424;
   }
-  body main .m-date a {
+  body main .menu-date a {
     color: white;
   }
-  body main .m-date a:hover {
+  body main .menu-date a:hover {
     color: #1ab26b;
   }
   body main .content .button,
@@ -432,13 +432,13 @@
     background-color: #ebebeb;
     color: black;
   }
-  body.light main .m-date {
+  body.light main .menu-date {
     background-color: #e1e1e1;
   }
-  body.light main .m-date a {
+  body.light main .menu-date a {
     color: black;
   }
-  body.light main .m-date a:hover {
+  body.light main .menu-date a:hover {
     color: #1ab26b;
   }
   body.light main .content .button,
