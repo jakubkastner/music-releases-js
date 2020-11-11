@@ -13,6 +13,7 @@ el.menu.releases.click(function () {
     history.pushState(null, null, elClickedText);
     // location.hash
     //history.replaceState(null, null, elClickedText);
+    el.menu.secondary.toggleClass('hidden');
 });
 
 /**
@@ -174,4 +175,9 @@ el.settings.notifications.click(async function () {
 
     // change icon
     elCurrentButton.children('i').toggleClass('fa-plus', 'fa-check');
+});
+
+
+el.menu.filter.click(async function () {
+    el.menu.secondary.toggleClass('hidden');
 });

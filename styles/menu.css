@@ -8,7 +8,6 @@ main .m-date {
   overflow: hidden;
   min-width: 160px;
   display: inline-block;
-  resize: horizontal;
 }
 
 main .m-date:hover {

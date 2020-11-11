@@ -10,7 +10,7 @@ main {
         overflow: hidden;
         min-width: $date_menu_width;
         display: inline-block;
-        resize: horizontal;
+        //resize: horizontal;
 
         &:hover {
             overflow: auto;

@@ -83,4 +83,22 @@ footer .p-a-tracklist .p-a-tracklist-button {
 footer .p-a-tracklist .p-a-tracklist-button i {
   margin: auto;
 }
+
+footer .mobile-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .mobile-buttons a {
+  display: block;
+  width: 25vw;
+  min-width: 72px;
+  padding: 10px 0;
+}
+
+footer .mobile-buttons a * {
+  width: 100%;
+  text-align: center;
+}
 /*# sourceMappingURL=footer.css.map */

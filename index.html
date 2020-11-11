@@ -27,11 +27,14 @@
 <body>
     <header>
         <div class="loader"></div>
-        <div class="primary mobile-hide">
+        <div class="primary">
+            <a class="b-m-date button" title="Hide date menu."><!--<i class="fas fa-bars"></i>--><i class="fas fa-calendar-alt"></i></a>
+            <a class="b-m-filter button pc-hide" title="Show filter."><i class="fas fa-filter"></i></a>
             <div class="page-name">
-                <h1>Music</h1>
+                <h1 class="mobile-hide">Music</h1>
                 <img class="favicon" src="images/favicon.png" alt="R" />
-                <h1>eleases</h1>
+                <h1 class="mobile-hide">eleases</h1>
+                <h2 class="title pc-hide"></h2>
             </div>
             <nav class="m-releases buttons mobile-hide">
                 <a class="b-albums" title="View released albums"><i class="fas fa-compact-disc"></i>Albums</a>
@@ -56,11 +59,8 @@
                 </nav>
             </div>
         </div>
-        <div class="secondary">            
-            <a class="b-m-date button" title="Hide date menu."><i class="fas fa-bars"></i><span class="mobile-hide">Date menu</span></a>
-            <div class="page-name pc-hide">
-                <img class="favicon" src="images/favicon.png" alt="R" />
-            </div>
+        <div class="secondary hidden">
+            <a><i class="fas fa-filter"></i></a>
             <nav class="m-albums buttons skrejto">
                 <a class="b-albums" title="Show all Albums">New albums</a>
                 <a class="b-my-albums" title="Show my saved Albums">Albums in library</a>
@@ -86,21 +86,6 @@
                 <a class="b-compilations" title="Show all Compilations">New Compilations</a>
                 <a class="b-my-compilations" title="Show my saved Compilations">Compilations in library</a>
             </nav>
-            <div class="user pc-hide">
-                <a class="b-login button">
-                    <i class="fas fa-user-plus"></i>
-                    <p>Login<span class="mobile-hide"> via music account</span></p>
-                </a>
-                <nav class="m-login m-hover buttons">
-                    <a class="b-login-spotify" title="Login via Spotify"><i class="fab fa-spotify"></i>Spotify</a>
-                    <a class="b-login-deezer" title="Login via Deezer"><i class="fab fa-deezer"></i>Deezer</a>
-                    <a class="b-login-apple" title="Login via Apple Music"><i class="fab fa-apple"></i>Apple Music</a>
-                </nav>
-                <nav class="m-user m-hover buttons">
-                    <a class="b-settings"><i class="fas fa-wrench"></i>Settings</a>
-                    <a class="b-logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
-                </nav>
-            </div>
         </div>
     </header>
     <main>
@@ -434,15 +419,29 @@
             </div>
             <div class="p-a-tracklist">
                 <a class="p-a-tracklist-button" title="Tracklist"><i class="fas fa-angle-double-up"></i></a>
+                <a class="p-a-tracklist-button skrejto"><i class="fas fa-bars"></i></a>
+                <a class="p-a-tracklist-button skrejto"><span>1</span><i class="fas fa-filter"></i></a>
             </div>
         </div>
         <nav class="m-releases mobile-buttons pc-hide">
-            <a class="b-albums" title="View released albums"><i class="fas fa-compact-disc"></i><p>Albums</p></a>
-            <a class="b-tracks-eps active" title="View released Tracks & EPs"><i class="fas fa-music"></i><p>Tracks & EPs</p></a>
-            <a class="b-podcasts" title="View newest podcasts"><i class="fas fa-podcast"></i><p>Podcasts</p></a>
-            <a class="b-appears" title="View released appears"><i class="fas fa-user-friends"></i><p>Appears</p></a>
-            <a class="b-compilations" title="View released compilations"><i class="fas fa-th-large"></i><p>Compilations</p></a>
-            <a class="b-more" title="Show more"><i class="fas fa-ellipsis-h"></i><p>More</p></a>
+            <a class="b-albums" title="View released albums"><i class="fas fa-compact-disc"></i>
+                <p>Albums</p>
+            </a>
+            <a class="b-tracks-eps active" title="View released Tracks & EPs"><i class="fas fa-music"></i>
+                <p>Tracks & EPs</p>
+            </a>
+            <a class="b-podcasts" title="View newest podcasts"><i class="fas fa-podcast"></i>
+                <p>Podcasts</p>
+            </a>
+            <a class="b-appears" title="View released appears"><i class="fas fa-user-friends"></i>
+                <p>Appears</p>
+            </a>
+            <a class="b-compilations" title="View released compilations"><i class="fas fa-th-large"></i>
+                <p>Compilations</p>
+            </a>
+            <a class="b-more" title="Show more"><i class="fas fa-ellipsis-h"></i>
+                <p>More</p>
+            </a>
         </nav>
     </footer>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>

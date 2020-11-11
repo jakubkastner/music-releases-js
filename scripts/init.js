@@ -32,6 +32,8 @@ el.menu.date.year = $('.m-year');
 el.menu.date.month = $('.m-month');
 el.menu.date.months = $('.m-months');
 
+el.menu.filter = $('.b-m-filter');
+el.menu.secondary = $('header .secondary');
 
 // releases tracklist
 el.release.buttons.tracklist = $('.c-r-b-tracklist');

@@ -28,7 +28,7 @@ a {
   cursor: pointer;
 }
 
-/*.hidden {
-    display: none;
-}*/
+.hidden {
+  display: none !important;
+}
 /*# sourceMappingURL=main.css.map */

@@ -33,6 +33,6 @@ a {
 
 // hidden items
 // TODO před spuštěním: odkomentovat
-/*.hidden {
-    display: none;
-}*/
+.hidden {
+    display: none !important;
+}

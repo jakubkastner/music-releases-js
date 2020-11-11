@@ -3,6 +3,8 @@
  */
 @import 'init';
 
+$mobile_buttons_width_min: 72px;
+
 footer {
     //width: calc(100% - 20px);
     display: block;
@@ -78,4 +80,22 @@ footer {
             }
         }
     }
+
+
+    .mobile-buttons {
+        display: flex;
+
+        a {
+            display: block;
+            width: 25vw;
+            min-width: $mobile_buttons_width_min;
+            padding: 10px 0;
+
+            * {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
 }
+

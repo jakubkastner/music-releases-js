@@ -37,22 +37,4 @@
 .list a i {
   margin-right: calc(4px + 0.2vw);
 }
-
-.mobile-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.mobile-buttons a {
-  display: block;
-  width: 25vw;
-  min-width: 72px;
-  margin: 10px 0;
-}
-
-.mobile-buttons a * {
-  width: 100%;
-  text-align: center;
-}
 /*# sourceMappingURL=actions.css.map */

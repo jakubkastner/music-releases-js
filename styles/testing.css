@@ -2,7 +2,7 @@
  *  Testing styles, only for development
  */
 .skrejto {
-  display: none;
+  display: none !important;
 }
 
 /* width */

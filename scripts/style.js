@@ -46,13 +46,13 @@ el.menu.releases.click(function () {
  * Click to date mobile menu. Show/hide date menu.
  */
 el.menu.date.mobile.click(function () {
-    if (el.menu.date.menu.is(':visible')) {
-        el.menu.date.menu.hide('slow');
-        el.menu.date.mobile.attr({ 'title': 'Show date menu.' });
+    if (el.menu.date.menu.hasClass('hidden')) {
+        el.menu.date.menu.removeClass('hidden');
+        el.menu.date.mobile.attr({ 'title': 'Hide date menu.' });
     }
     else {
-        el.menu.date.menu.show('slow');
-        el.menu.date.mobile.attr({ 'title': 'Hide date menu.' });
+        el.menu.date.menu.addClass('hidden');
+        el.menu.date.mobile.attr({ 'title': 'Show date menu.' });
     }
 });
 
