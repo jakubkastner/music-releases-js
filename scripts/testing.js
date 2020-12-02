@@ -1,7 +1,23 @@
 /** TESTING
  *  Only for development testing.
  */
+$('.menu .tracklist').click(function () {
+    openFullscreen();
+});
 
+
+function openFullscreen() {
+    var elem = document.documentElement;
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    }
+    else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+    }
+    else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+    }
+}
 
 
 $(document).ready(async function () {
@@ -19,7 +35,7 @@ $(document).ready(async function () {
  */
 /*async function getIcon(elCurrent) {
     var elIcon = elCurrent.children('i');
-    elIcon.removeClass('fa-plus');    
+    elIcon.removeClass('fa-plus');
     return elIcon;
 }*/
 

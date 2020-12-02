@@ -1,7 +1,7 @@
 
 /**
  * Click to release menu. Change title.
- */
+ *//*
 el.menu.releases.click(function () {
     // TODO přidat změnu title i pro měsíce, případně přidat celé do nějaké funkce
     // add "active" class to clicked button
@@ -13,7 +13,7 @@ el.menu.releases.click(function () {
     //history.pushState(null, null, elClickedText);
     // location.hash
     //history.replaceState(null, null, elClickedText);
-});
+});*/
 
 /**
  * Click to release tracklist. Show tracklist, hide other.

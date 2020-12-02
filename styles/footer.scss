@@ -3,7 +3,7 @@
  */
 @import 'init';
 
-$mobile_buttons_width_min: 72px;
+$mobile_buttons_width_min: 80px;
 
 footer {
     //width: calc(100% - 20px);
@@ -16,9 +16,10 @@ footer {
 
     .player {
         display: flex;
+        height: $height_footer_player;
 
         .image {
-            width: $date_menu_width - 10px;
+            width: $width_left;
 
             img {
                 max-width: 100%;
@@ -97,18 +98,112 @@ footer {
     }
 
 
-    .mobile-buttons {
+    .mobile-buttons.releases {
         display: flex;
 
+        p {
+            font-size: 13px;
+        }
+
+        // total 8 icons
         a {
             display: block;
-            width: 25vw;
+            width: calc(100% / 7);
             min-width: $mobile_buttons_width_min;
             padding: 10px 0;
+            margin: 0;
 
             * {
                 width: 100%;
                 text-align: center;
+            }
+        }
+
+        @media screen and (max-width: $width_pc - 1) {
+
+            // 7 icons (0 in more = hidden)
+            .more {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: $mobile_buttons_width_min * 7 - 1) {
+
+            // 5 icons (2 in more = hidden) + 1 more icon
+            .more {
+                display: block;
+            }
+
+            .appears {
+                display: none;
+            }
+
+            .compilations {
+                display: none;
+            }
+
+            a {
+                width: calc(100% / 6);
+            }
+        }
+
+        @media screen and (max-width: $mobile_buttons_width_min * 6 - 1) {
+
+            // 4 icons (3 in more = hidden) + 1 more icon
+            .remixes {
+                display: none;
+            }
+
+            a {
+                width: calc(100% / 5);
+            }
+        }
+
+        @media screen and (max-width: $mobile_buttons_width_min * 5 - 1) {
+
+            // 3 icons (4 in more = hidden) + 1 more icon
+            .podcasts {
+                display: none;
+            }
+
+            a {
+                width: calc(100% / 4);
+            }
+        }
+
+        @media screen and (max-width: $mobile_buttons_width_min * 4 - 1) {
+
+            // 2 icons (5 in more = hidden) + 1 more icon
+            .eps {
+                display: none;
+            }
+
+            a {
+                width: calc(100% / 3);
+            }
+        }
+
+        @media screen and (max-width: $mobile_buttons_width_min * 3 - 1) {
+
+            // 1 icons (6 in more = hidden) + 1 more icon
+            .tracks {
+                display: none;
+            }
+
+            a {
+                width: calc(100% / 2);
+            }
+        }
+
+        @media screen and (max-width: $mobile_buttons_width_min * 2 - 1) {
+
+            // 0 icons (7 in more = hidden) + 1 more icon
+            .albums {
+                display: none;
+            }
+
+            a {
+                width: 100%;
             }
         }
     }

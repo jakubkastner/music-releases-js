@@ -1,10 +1,16 @@
 /** BODY
  *  Main page content
  */
+@import 'init';
 
 main {
 
-    height: 73vh;
+    //height: 73vh;
+    height: $height_body;
+
+    @media screen and (max-width: $width_pc - 1) {
+        height: $height_body_mobile;
+    }
 
     &>* {
         height: 100%;
@@ -94,6 +100,7 @@ main {
                         .track {
                             .info {
                                 display: inline-flex;
+
                                 .c-r-t-artists {
                                     display: flex;
                                 }

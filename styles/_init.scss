@@ -2,7 +2,25 @@
  *  Init sass varibles, ...
  */
 
-$date_menu_width: 160px;
-$button_padding_1: 2px;
-$button_padding_2: 0.5vw;
-$button_padding: calc(#{$button_padding_1} + #{$button_padding_2});
+// width for responsive styles
+$width_pc_menu_main: 1399px;
+$width_pc: 1025px;
+
+// left content width (date menu, title menu, menu buttons, currently playing image)
+$width_left: 130px;
+
+// header heights
+$height_header_loader: 4px;
+$height_header_primary: 44px;
+$height_header_secondary: 44px;
+
+$height_footer_player: 100px;
+$height_footer_menu: 60px;
+
+$height_body: calc(100vh - #{$height_header_loader} - #{$height_header_primary} - #{$height_header_secondary} - #{$height_footer_player});
+$height_body_mobile: calc(100vh - #{$height_header_loader} - #{$height_footer_player} - #{$height_footer_menu});
+
+$padding_left_right: 15px;
+
+// right margin icon
+$margin_right_icon: 5px;

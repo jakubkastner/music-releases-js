@@ -1,8 +1,14 @@
 /** TESTING
  *  Testing styles, only for development
  */
-//@use 'sass:map';
 
+// hidden items
+// TODO před spuštěním: odkomentovat
+.hidden {
+    display: none !important;
+}
+
+//@use 'sass:map';
 .skrejto {
     display: none !important;
 }

@@ -18,6 +18,7 @@ el.main.body = $('body');
 
 // all buttons, which can be active
 el.menu.releases = $('.buttons.releases a, .buttons-user .settings');
+el.menu.hover = $('.menu-hover');
 
 // login buttons
 el.main.loginButton = $('.login.button');
@@ -25,7 +26,7 @@ el.main.loginButton = $('.login.button');
 el.menu.login = $('.buttons.login');
 
 // page title
-el.main.title = $('.title');
+el.main.title = $('.primary .title');
 
 el.menu.date.button = $('.buttons.menu .date');
 el.menu.date.menu = $('.menu-date');

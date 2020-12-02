@@ -1,6 +1,10 @@
 /** TESTING
  *  Testing styles, only for development
  */
+.hidden {
+  display: none !important;
+}
+
 .skrejto {
   display: none !important;
 }

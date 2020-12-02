@@ -2,6 +2,15 @@
  *  Colors for dark/light theme.
  */
 @media (prefers-color-scheme: light) {
+  body {
+    /*$color_0: #ffe7aa;
+    $color_1: #0d2f81;
+    $color_2: #ffafa2;
+
+    font-family: SharpGroteskWide,Open Sans,sans-serif;
+    https://fonts.google.com/specimen/Poppins
+    */
+  }
   body a {
     color: black;
   }
@@ -65,7 +74,7 @@
   body header .menu-hover a:hover * {
     background-color: #cdcdcd;
   }
-  body header .login.hover {
+  body header .menu-hover.hover {
     background-color: #d7d7d7;
   }
   body header .secondary {
@@ -117,6 +126,15 @@
   }
   body footer .buttons.releases {
     background-color: #ebebeb;
+  }
+  body.dark {
+    /*$color_0: #ffe7aa;
+    $color_1: #0d2f81;
+    $color_2: #ffafa2;
+
+    font-family: SharpGroteskWide,Open Sans,sans-serif;
+    https://fonts.google.com/specimen/Poppins
+    */
   }
   body.dark a {
     color: white;
@@ -181,7 +199,7 @@
   body.dark header .menu-hover a:hover * {
     background-color: #383838;
   }
-  body.dark header .login.hover {
+  body.dark header .menu-hover.hover {
     background-color: #2e2e2e;
   }
   body.dark header .secondary {
@@ -237,6 +255,15 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  body {
+    /*$color_0: #ffe7aa;
+    $color_1: #0d2f81;
+    $color_2: #ffafa2;
+
+    font-family: SharpGroteskWide,Open Sans,sans-serif;
+    https://fonts.google.com/specimen/Poppins
+    */
+  }
   body a {
     color: white;
   }
@@ -300,7 +327,7 @@
   body header .menu-hover a:hover * {
     background-color: #383838;
   }
-  body header .login.hover {
+  body header .menu-hover.hover {
     background-color: #2e2e2e;
   }
   body header .secondary {
@@ -352,6 +379,15 @@
   }
   body footer .buttons.releases {
     background-color: #101010;
+  }
+  body.light {
+    /*$color_0: #ffe7aa;
+    $color_1: #0d2f81;
+    $color_2: #ffafa2;
+
+    font-family: SharpGroteskWide,Open Sans,sans-serif;
+    https://fonts.google.com/specimen/Poppins
+    */
   }
   body.light a {
     color: black;
@@ -416,7 +452,7 @@
   body.light header .menu-hover a:hover * {
     background-color: #cdcdcd;
   }
-  body.light header .login.hover {
+  body.light header .menu-hover.hover {
     background-color: #d7d7d7;
   }
   body.light header .secondary {

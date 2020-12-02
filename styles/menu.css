@@ -6,7 +6,7 @@
  */
 main .menu-date {
   overflow: hidden;
-  min-width: 160px;
+  min-width: 130px;
   display: inline-block;
 }
 
@@ -19,7 +19,12 @@ main .menu-date a {
   display: block;
 }
 
+main .menu-date .button,
+main .menu-date .buttons > * {
+  padding: 10px 10px 10px 15px;
+}
+
 main .menu-date .year {
-  padding-left: 80px;
+  padding-left: 60px;
 }
 /*# sourceMappingURL=menu.css.map */

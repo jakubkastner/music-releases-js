@@ -35,6 +35,15 @@ $color_text_button: #1ab26b;
         $color_text: rgb(0, 0, 0);
     }
 
+    // color theme
+    /*$color_0: #ffe7aa;
+    $color_1: #0d2f81;
+    $color_2: #ffafa2;
+
+    font-family: SharpGroteskWide,Open Sans,sans-serif;
+    https://fonts.google.com/specimen/Poppins
+    */
+
     a {
         color: $color_text;
 
@@ -120,7 +129,7 @@ $color_text_button: #1ab26b;
             }
         }
 
-        .login.hover {
+        .menu-hover.hover {
             background-color: $color_5;
         }
 
@@ -185,7 +194,7 @@ $color_text_button: #1ab26b;
         color: $color_text;
 
         .player {
-            .info > .time {
+            .info>.time {
                 background-color: $color_text_button;
             }
         }
@@ -196,6 +205,7 @@ $color_text_button: #1ab26b;
                 background-color: $color_5;
             }
         }
+
         .buttons.releases {
             background-color: $color_2;
         }

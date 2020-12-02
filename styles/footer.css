@@ -16,10 +16,11 @@ footer .player {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100px;
 }
 
 footer .player .image {
-  width: 150px;
+  width: 130px;
 }
 
 footer .player .image img {
@@ -99,21 +100,92 @@ footer .menu.round.buttons > * i {
   margin: auto;
 }
 
-footer .mobile-buttons {
+footer .mobile-buttons.releases {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-footer .mobile-buttons a {
-  display: block;
-  width: 25vw;
-  min-width: 72px;
-  padding: 10px 0;
+footer .mobile-buttons.releases p {
+  font-size: 13px;
 }
 
-footer .mobile-buttons a * {
+footer .mobile-buttons.releases a {
+  display: block;
+  width: calc(100% / 7);
+  min-width: 80px;
+  padding: 10px 0;
+  margin: 0;
+}
+
+footer .mobile-buttons.releases a * {
   width: 100%;
   text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .mobile-buttons.releases .more {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 559px) {
+  footer .mobile-buttons.releases .more {
+    display: block;
+  }
+  footer .mobile-buttons.releases .appears {
+    display: none;
+  }
+  footer .mobile-buttons.releases .compilations {
+    display: none;
+  }
+  footer .mobile-buttons.releases a {
+    width: calc(100% / 6);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  footer .mobile-buttons.releases .remixes {
+    display: none;
+  }
+  footer .mobile-buttons.releases a {
+    width: calc(100% / 5);
+  }
+}
+
+@media screen and (max-width: 399px) {
+  footer .mobile-buttons.releases .podcasts {
+    display: none;
+  }
+  footer .mobile-buttons.releases a {
+    width: calc(100% / 4);
+  }
+}
+
+@media screen and (max-width: 319px) {
+  footer .mobile-buttons.releases .eps {
+    display: none;
+  }
+  footer .mobile-buttons.releases a {
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (max-width: 239px) {
+  footer .mobile-buttons.releases .tracks {
+    display: none;
+  }
+  footer .mobile-buttons.releases a {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 159px) {
+  footer .mobile-buttons.releases .albums {
+    display: none;
+  }
+  footer .mobile-buttons.releases a {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

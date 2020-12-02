@@ -1,13 +1,20 @@
 /** MAIN
  *  Main styles - fonts, margin, ...
  */
+/** INIT
+ *  Init sass varibles, ...
+ */
 * {
   margin: 0;
   text-decoration: none;
-  font-family: "Pontano Sans", sans-serif;
+  font-family: "DM Sans", "Pontano Sans", sans-serif;
   /*:hover {
         transition: 0.5s;
     }*/
+}
+
+body {
+  overflow: hidden;
 }
 
 main {
@@ -16,19 +23,80 @@ main {
   display: flex;
 }
 
-h1 {
-  font-family: "Kufam", sans-serif;
-}
-
 p {
-  font-size: calc(12px + 0.3vw);
+  font-size: 18px;
 }
 
 a {
   cursor: pointer;
 }
 
-.hidden {
-  display: none !important;
+@media screen and (min-width: 1025px) {
+  .pc-hide {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mobile-hide {
+    display: none !important;
+  }
+}
+
+.left {
+  margin-left: 15px;
+  padding-left: 0;
+}
+
+.right {
+  margin-right: 15px;
+  padding-right: 0;
+}
+
+.buttons {
+  padding-bottom: 0;
+  /*&>* {
+        padding: $button_padding;
+        margin: auto 0 0 0;
+    }*/
+}
+
+.button,
+.buttons > * {
+  cursor: pointer;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.list a {
+  cursor: pointer;
+  display: block;
+  font-size: 15px;
+}
+
+.menu-hover {
+  display: none;
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  right: 0;
+}
+
+.menu-hover.show {
+  display: block;
+}
+
+.menu-hover.buttons > * {
+  display: block;
+  margin-top: 0;
+}
+
+.menu-hover > * {
+  display: block;
+}
+
+.icon-text i {
+  margin-right: 5px;
 }
 /*# sourceMappingURL=main.css.map */

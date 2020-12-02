@@ -40,7 +40,7 @@ el.menu.releases.click(function () {
     // add "active" class to clicked button
     var elClicked = $(this);
     elClicked.addClass('active');
-    el.menu.secondary.toggleClass('hidden');
+    //el.menu.secondary.toggleClass('hidden');
 });
 
 /**

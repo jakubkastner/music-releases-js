@@ -1,8 +1,17 @@
 /** BODY
  *  Main page content
  */
+/** INIT
+ *  Init sass varibles, ...
+ */
 main {
-  height: 73vh;
+  height: calc(100vh - 4px - 44px - 44px - 100px);
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    height: calc(100vh - 4px - 100px - 60px);
+  }
 }
 
 main > * {

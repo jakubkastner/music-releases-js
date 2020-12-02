@@ -8,7 +8,7 @@ main {
     // date menu
     .menu-date {
         overflow: hidden;
-        min-width: $date_menu_width;
+        min-width: $width_left;
         display: inline-block;
         //resize: horizontal;
 
@@ -21,9 +21,15 @@ main {
             display: block;
         }
 
+        .button,
+        .buttons>* {
+            padding: 10px 10px 10px 15px;
+        }
+
         // year menu
         .year {
-            padding-left: 80px;
+            padding-left: 60px;
         }
+
     }
 }
