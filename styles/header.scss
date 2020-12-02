@@ -67,39 +67,6 @@ header {
         width: calc(#{$width_left} - #{$padding_left_right});
     }
 
-    // page name
-    .page-name {
-        cursor: context-menu;
-        padding: 10px 10px 5px 10px;
-
-        /* {
-            margin: auto 0 $height_header_primary/5 0;
-        }*/
-
-        // icon
-        .favicon {
-            background: transparent;
-            height: $height_header_primary - 10px;
-            margin-left: $margin_right_icon;
-        }
-
-        &:hover>.favicon {
-            animation: spin 2s linear infinite;
-        }
-
-        // page name
-        h1 {
-            font-size: 30px;
-        }
-
-        // responsive styles (hide / show content on pc / mobile)
-        @media screen and (max-width: $width_pc_menu_main) {
-            .mobile-hide {
-                display: none;
-            }
-        }
-    }
-
     // user menu
     .user {
         margin-left: auto;

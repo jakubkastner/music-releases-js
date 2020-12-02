@@ -60,35 +60,6 @@ header .menu.buttons {
   width: calc(130px - 15px);
 }
 
-header .page-name {
-  cursor: context-menu;
-  padding: 10px 10px 5px 10px;
-  /* {
-            margin: auto 0 $height_header_primary/5 0;
-        }*/
-}
-
-header .page-name .favicon {
-  background: transparent;
-  height: 34px;
-  margin-left: 5px;
-}
-
-header .page-name:hover > .favicon {
-  -webkit-animation: spin 2s linear infinite;
-          animation: spin 2s linear infinite;
-}
-
-header .page-name h1 {
-  font-size: 30px;
-}
-
-@media screen and (max-width: 1399px) {
-  header .page-name .mobile-hide {
-    display: none;
-  }
-}
-
 header .user {
   margin-left: auto;
   display: inline;

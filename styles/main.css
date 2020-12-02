@@ -99,4 +99,33 @@ a {
 .icon-text i {
   margin-right: 5px;
 }
+
+.page-name {
+  cursor: context-menu;
+  padding: 10px 10px 5px 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.page-name .favicon {
+  background: transparent;
+  height: 34px;
+  margin-left: 5px;
+}
+
+.page-name:hover > .favicon {
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+.page-name h1 {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1399px) {
+  .page-name .mobile-hide {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
