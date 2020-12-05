@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /** MAIN
  *  Main styles - fonts, margin, ...
  */
@@ -13,10 +14,10 @@
     }*/
 }
 
-body {
-  overflow: hidden;
-}
-
+/*body {
+    // TODO spuštění: odkomentovat
+    overflow: hidden;
+}*/
 main {
   display: -webkit-box;
   display: -ms-flexbox;
