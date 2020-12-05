@@ -28,6 +28,13 @@ $(document).ready(async function () {
 });
 
 
+el.user.settings.click(function () {
+    // TODO show settings (make class)
+    $('.content .releases').toggleClass('skrejto');
+    $('.content .settings').toggleClass('skrejto');
+    
+});
+
 // s ikonou pak nejde pracovat dál (měnit třídu atd...)
 /**
  * Get child icon of current clicked element.

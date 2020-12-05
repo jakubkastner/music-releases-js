@@ -57,7 +57,10 @@ el.settings.notifications = $('.settings .notifications');
 // user
 el.user.login.spotify = $('.buttons.login .spotify');
 el.user.logout = $('.buttons-user .logout');
+el.user.settings = $('.buttons-user .settings');
 
+
+el.content = $('main .content');
 
 var user = {};
 user.spotify = {};

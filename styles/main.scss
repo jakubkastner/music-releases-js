@@ -76,16 +76,6 @@ a {
     display: inline-block;
 }
 
-.list {
-    a {
-        cursor: pointer;
-        display: block;
-        font-size: 15px;
-        //padding: $button_padding;
-
-    }
-}
-
 // hoverable menu
 .menu-hover {
     display: none;
@@ -144,6 +134,58 @@ a {
     @media screen and (max-width: $width_pc_menu_main) {
         .mobile-hide {
             display: none;
+        }
+    }
+}
+
+.list {
+    a {
+        cursor: pointer;
+        display: block;
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+.content {
+
+    // tracklist
+    &.tracklist {
+        .track {
+            .info {
+                display: inline-flex;
+
+                &>* {
+                    margin-right: 5px;
+                }
+
+                .artists {
+                    display: flex;
+                }
+
+                .time {
+                    margin-left: auto;
+                }
+
+                .explicit {
+                    span {
+                        // TODO změna barvy
+                        border: .1px solid gray;
+                        font-size: 15px;
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    // playlists
+    &.playlists {
+        .update {
+            width: auto;
+            margin-left: auto;
+            margin-right: 0;
+            text-align: right;
         }
     }
 }

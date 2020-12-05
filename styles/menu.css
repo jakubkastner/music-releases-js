@@ -6,6 +6,7 @@
  */
 main .menu-date {
   overflow: hidden;
+  width: 130px;
   min-width: 130px;
   display: inline-block;
 }

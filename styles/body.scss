@@ -3,116 +3,114 @@
  */
 @import 'init';
 
-main {
+body {
 
-    //height: 73vh;
-    height: $height_body;
+    main {
 
-    @media screen and (max-width: $width_pc - 1) {
-        height: $height_body_mobile;
-    }
+        //height: 73vh;
+        height: $height_body;
 
-    &>* {
-        height: 100%;
-    }
-
-    .content {
-        width: calc(100% - 4px - 1vw);
-
-        &>div {
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-
-            &>div {
-                padding: calc(30px);
-            }
+        @media screen and (max-width: $width_pc - 1) {
+            height: $height_body_mobile;
         }
 
-        .releases {
+        &>* {
+            height: 100%;
+        }
 
-            // release div
-            .release {
-                padding: calc(30px);
-                margin-bottom: 30px;
+        .content {
+            width: calc(100vw - #{$width_left});
 
-                &>* {
-                    width: 100%;
-                    padding: 0;
+            &.menu-hidden {
+                width: 100vw;
+            }
+        }
+    }
+
+    // classic style
+    &.classic {
+        main {
+            $spaces: 30px;
+
+            &>div {
+                //width: 100%;
+                height: 100%;
+                overflow: auto;
+
+                &>div {
+                    padding: $spaces;
                 }
+            }
 
-                .info {
-                    display: flex;
+            .releases {
 
-                    .image {
-                        margin-right: calc(5px + 1vw);
-                        min-height: 85px;
-                        min-width: 85px;
-                        width: calc(85px + 3.5vw);
+                // release div
+                .release {
+                    padding: $spaces;
+                    margin-bottom: $spaces;
 
-                        img {
-                            max-width: 100%;
-                            max-height: 100%;
-                        }
+                    &>* {
+                        width: 100%;
+                        padding: 0;
                     }
 
-                    .details {
-                        width: 100%;
+                    .info {
+                        display: flex;
 
-                        .name,
-                        .artists,
-                        .date {
-                            width: 100%;
-                            display: inline-block;
-                        }
+                        $image_width: 150px;
 
-                        .name {
-                            font-size: calc(10px + 0.8vw);
-                        }
+                        .image {
+                            margin-right: $spaces;
+                            width: $image_width;
+                            height: $image_width;
 
-                        .artist {
-                            font-size: calc(9px + 0.7vw);
-                        }
-
-                        .date {
-                            font-size: calc(8px + 0.6vw);
-                        }
-
-                        .button {
-                            font-size: calc(10px + 1vw);
-                            margin-right: calc(4px + 0.1vw);
-
-                            i {
-                                margin-right: calc(2px + 0.1vw);
+                            img {
+                                max-width: 100%;
+                                max-height: 100%;
                             }
                         }
-                    }
-                }
 
-                // release content
-                .content {
-                    margin-top: 1vw;
+                        .details {
+                            width: calc(100% - #{$image_width} - #{$spaces});
 
-                    // tracklist
-                    &.tracklist {
-                        height: calc(100px + 15vw);
+                            .name,
+                            .artists,
+                            .date {
+                                width: 100%;
+                                display: inline-block;
+                                margin-bottom: 5px;
+                            }
 
-                        .track {
-                            .info {
-                                display: inline-flex;
+                            .name {
+                                font-size: 24px;
+                            }
 
-                                .c-r-t-artists {
-                                    display: flex;
+                            .artists {
+                                font-size: 20px;
+                            }
+
+                            .date {
+                                font-size: 18px;
+                                margin-bottom: 8px;
+                            }
+
+                            .button {
+                                font-size: 24px;
+                                margin-right: 5px;
+                                margin-bottom: 0;
+                                padding: 10px;
+
+                                &.tracklist i {
+                                    margin-right: 5px;
                                 }
                             }
                         }
                     }
 
-                    // playlists
-                    &.playlists {
-                        .update {
-                            text-align: right;
-                        }
+                    // release content
+                    .content {
+                        margin-top: $spaces;
+                        max-height: 40vh;
                     }
                 }
             }

@@ -22,11 +22,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
 </head>
 
-<body>
+<body class="classic">
     <header>
         <div class="loader"></div>
         <div class="primary mobile-hide left">
-            <div class="page-name">
+            <div class="page-name" title="Music Releases">
                 <h1 class="mobile-hide">Music</h1>
                 <img class="favicon" src="images/favicon.png" alt="R" />
                 <h1 class="mobile-hide">eleases</h1>
@@ -139,27 +139,28 @@
                                 </p>
                                 <a class="tracklist button" title="View tracklist"><i class="fas fa-bars"></i>10</a>
                                 <a class="play button" title="Play release"><i class="fas fa-play"></i></a>
+                                <a class="queue button" title="Add release to queue"><i class="fas fa-arrow-right"></i></a>
                                 <a class="save button" title="Add release to library"><i class="far fa-heart"></i></a>
                                 <a class="playlist button" title="Add release to playlist"><i class="fas fa-plus"></i></a>
-                                <a class="spotify button" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify" title="Open in Spotify"></i></a>
-                                <a class="youtube button" href="https://music.youtube.com/search?q=GASHI 1984" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube" title="Search on YouTube Music"></i></a>
+                                <!--<a class="youtube button" href="https://music.youtube.com/search?q=GASHI 1984" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube" title="Search on YouTube Music"></i></a>-->
                             </div>
                         </div>
                         <div class="tracklist content list hidden">
                             <div class="track" id="track-2qaaa6554456EAh5cqI1ksz">
                                 <div class="info">
                                     <a class="number">1</a>
-                                    <a class="play" title="Play track"><i class="fas fa-play"></i></a>
-                                    <a class="library" title="Add track to library"><i class="far fa-heart"></i></a>
+                                    <a class="play button" title="Play track"><i class="fas fa-play"></i></a>
+                                    <a class="queue button" title="Add release to queue"><i class="fas fa-arrow-right"></i></a>
+                                    <a class="library button" title="Add track to library"><i class="far fa-heart"></i></a>
+                                    <a class="playlist button" title="Add track to playlist"><i class="fas fa-plus"></i></a>
                                     <a class="name">Track 1 name</a>
                                     <p class="artists">
-                                        <a class="artist">Artist 1</a>,
+                                        <a class="artist">Artist 1</a><span>, </span>
                                         <a class="artist">Artist 2</a> &
                                         <a class="artist">Artist 3</a>
                                     </p>
-                                    <a class="time"><i class="far fa-clock"></i>03:05</a>
-                                    <a class="explicit" title="Explicit content">explicit</a>
-                                    <a class="playlist" title="Add track to playlist"><i class="fas fa-plus"></i></a>
+                                    <a class="time icon-text"><i class="far fa-clock"></i>03:05</a>
+                                    <a class="explicit" title="Explicit lyrics"><span>E</span></a>
                                 </div>
                                 <div class="playlists list hidden">
                                     <a class="update" title="Update list of playlists"><i class="fas fa-sync-alt"></i></a>
@@ -170,7 +171,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="playlists content list hidden">
+                        <div class="playlists icon-text content list hidden">
                             <a class="update" title="Update list of playlists"><i class="fas fa-sync-alt"></i></a>
                             <a class="new" title="Add release to new playlist"><i class="fas fa-plus-circle"></i>Create new playlist</a>
                             <a class="add" id="playlist-new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name</a>
@@ -528,7 +529,7 @@
                 <div class="podcasts skrejto"></div>
                 <div class="albums-saved skrejto"></div>
             </div>
-            <div class="settings skrejto">
+            <div class="settings skrejto icon-text">
                 <div class="theme list">
                     <h3>Theme</h3>
                     <a class="system active" title=""><i class="fas fa-check"></i>System</a>
@@ -539,7 +540,10 @@
                     <h3>Notifications</h3>
                     <a class="notifications active" title=""><i class="fas fa-check"></i><span>Notifications enabled</span></a>
                 </div>
-                <p>&copy; 2018 - 2020 Jakub Kastner</p>
+                <div class="about list">
+                    <h3>About application</h3>
+                    <a href="https://jakubkastner.github.io/" target="_blank" rel="noopener noreferrer"><i class="fas fa-copyright"></i>Jakub Kastner 2018-2020</a>
+                </div>
                 <!-- TODO default playlist -->
             </div>
         </div>

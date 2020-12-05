@@ -8,6 +8,7 @@ main {
     // date menu
     .menu-date {
         overflow: hidden;
+        width: $width_left;
         min-width: $width_left;
         display: inline-block;
         //resize: horizontal;

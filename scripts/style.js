@@ -48,12 +48,16 @@ el.menu.releases.click(function () {
  */
 el.menu.date.button.click(function () {
     if (el.menu.date.menu.hasClass('hidden')) {
+        // show the menu
         el.menu.date.menu.removeClass('hidden');
         el.menu.date.button.attr({ 'title': 'Hide date menu.' });
+        el.content.removeClass('menu-hidden');
     }
     else {
+        // hide the menu
         el.menu.date.menu.addClass('hidden');
         el.menu.date.button.attr({ 'title': 'Show date menu.' });
+        el.content.addClass('menu-hidden');
     }
 });
 
