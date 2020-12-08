@@ -23,7 +23,7 @@ el.menu.hover = $('.menu-hover');
 // login buttons
 el.main.loginButton = $('.login.button');
 // left login menu
-el.menu.login = $('.buttons.login');
+el.menu.login = $('header .menu-hover');
 
 // page title
 el.main.title = $('.primary .title');

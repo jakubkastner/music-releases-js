@@ -32,6 +32,11 @@ body {
         main {
             $spaces: 30px;
 
+            .box {
+                padding: $spaces;
+                margin-bottom: $spaces;
+            }
+
             &>div {
                 //width: 100%;
                 height: 100%;
@@ -46,8 +51,6 @@ body {
 
                 // release div
                 .release {
-                    padding: $spaces;
-                    margin-bottom: $spaces;
 
                     &>* {
                         width: 100%;
@@ -111,6 +114,16 @@ body {
                     .content {
                         margin-top: $spaces;
                         max-height: 40vh;
+                    }
+                }
+            }
+
+            .settings {
+                .list {
+
+                    h3 {
+                        font-size: 22px;
+                        margin-bottom: 10px;
                     }
                 }
             }

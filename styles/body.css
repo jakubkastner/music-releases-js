@@ -26,6 +26,11 @@ body main .content.menu-hidden {
   width: 100vw;
 }
 
+body.classic main .box {
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
 body.classic main > div {
   height: 100%;
   overflow: auto;
@@ -33,11 +38,6 @@ body.classic main > div {
 
 body.classic main > div > div {
   padding: 30px;
-}
-
-body.classic main .releases .release {
-  padding: 30px;
-  margin-bottom: 30px;
 }
 
 body.classic main .releases .release > * {
@@ -101,5 +101,10 @@ body.classic main .releases .release .info .details .button.tracklist i {
 body.classic main .releases .release .content {
   margin-top: 30px;
   max-height: 40vh;
+}
+
+body.classic main .settings .list h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=body.css.map */

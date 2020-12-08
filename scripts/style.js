@@ -36,12 +36,20 @@ $(document).click(function () {
  */
 el.menu.releases.click(function () {
     // remove all "active" class
+    //el.menu.releases.removeClass('active');
+    // add "active" class to clicked button
+    var elClicked = $(this);
+    elClicked.toggleClass('active');
+    //el.menu.secondary.toggleClass('hidden');
+});
+/*el.menu.releases.click(function () {
+    // remove all "active" class
     el.menu.releases.removeClass('active');
     // add "active" class to clicked button
     var elClicked = $(this);
     elClicked.addClass('active');
     //el.menu.secondary.toggleClass('hidden');
-});
+});*/
 
 /**
  * Click to date mobile menu. Show/hide date menu.

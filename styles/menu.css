@@ -28,4 +28,9 @@ main .menu-date .buttons > * {
 main .menu-date .year {
   padding-left: 60px;
 }
+
+main .menu-date .last {
+  height: 50px;
+  display: block;
+}
 /*# sourceMappingURL=menu.css.map */

@@ -137,17 +137,22 @@ el.settings.theme.click(async function () {
     // auto dark mode
     if (elCurrentButton.hasClass('system')) {
         // change theme
-        el.main.body.removeClass('light').removeClass('dark');
+        el.main.body.removeClass('light').removeClass('color').removeClass('dark');
     }
     // light mode
     else if (elCurrentButton.hasClass('light')) {
         // change theme
-        el.main.body.removeClass('dark').addClass('light');
+        el.main.body.removeClass('dark').removeClass('color').addClass('light');
+    }
+    // color mode
+    else if (elCurrentButton.hasClass('color')) {
+        // change theme
+        el.main.body.removeClass('dark').removeClass('light').addClass('color');
     }
     // dark mode
     else {
         // change theme
-        el.main.body.removeClass('light').addClass('dark');
+        el.main.body.removeClass('light').removeClass('color').addClass('dark');
     }
 });
 

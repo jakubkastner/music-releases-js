@@ -131,36 +131,39 @@ a {
   padding: 10px;
 }
 
-.content.tracklist .track .info {
+.list.tracklist .track .info {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.content.tracklist .track .info > * {
+.list.tracklist .track .info > * {
   margin-right: 5px;
 }
 
-.content.tracklist .track .info .artists {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.list.tracklist .track .info .artists {
+  display: inline-block;
+  margin: auto 0;
+  padding: 0 10px;
 }
 
-.content.tracklist .track .info .time {
+.list.tracklist .track .info .artists .artist {
+  display: inline;
+  padding: 10px 0;
+}
+
+.list.tracklist .track .info .time {
   margin-left: auto;
 }
 
-.content.tracklist .track .info .explicit span {
+.list.tracklist .track .info .explicit span {
   border: .1px solid gray;
   font-size: 15px;
   padding: 5px;
 }
 
-.content.playlists .update {
-  width: auto;
+.list.playlists .update {
+  width: 20px;
   margin-left: auto;
-  margin-right: 0;
-  text-align: right;
 }
 /*# sourceMappingURL=main.css.map */

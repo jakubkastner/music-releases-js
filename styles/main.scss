@@ -147,7 +147,7 @@ a {
     }
 }
 
-.content {
+.list {
 
     // tracklist
     &.tracklist {
@@ -160,7 +160,14 @@ a {
                 }
 
                 .artists {
-                    display: flex;
+                    display: inline-block;
+                    margin: auto 0;
+                    padding: 0 10px;
+
+                    .artist {
+                        display: inline;
+                        padding: 10px 0;
+                    }
                 }
 
                 .time {
@@ -182,10 +189,8 @@ a {
     // playlists
     &.playlists {
         .update {
-            width: auto;
+            width: 20px;
             margin-left: auto;
-            margin-right: 0;
-            text-align: right;
         }
     }
 }
