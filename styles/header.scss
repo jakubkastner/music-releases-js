@@ -62,9 +62,9 @@ header {
         }
     }
 
-    // menu buttons
-    .menu.buttons {
-        width: calc(#{$width_left} - #{$padding_left_right});
+    // show hide menu buttons
+    .menu.show-hide {
+        width: calc(#{$width_left} + #{$width_left} - #{$padding_left_right});
     }
 
     // user menu
@@ -81,12 +81,11 @@ header {
 
         // hover user menu
         &:hover {
-            .menu-hover {
+            .menu.hover {
                 display: block;
-            }
-
-            .menu-hover.hidden {
-                display: none;
+                &.hidden {
+                    display: none;
+                }
             }
         }
 
@@ -96,7 +95,7 @@ header {
                 display: none;
             }
 
-            .menu-hover {
+            .menu.hover {
                 width: 150px;
             }
         }

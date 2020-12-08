@@ -56,8 +56,8 @@ header .primary .releases.buttons > * {
   border-radius: 300px;
 }
 
-header .menu.buttons {
-  width: calc(130px - 15px);
+header .menu.show-hide {
+  width: calc(130px + 130px - 15px);
 }
 
 header .user {
@@ -73,11 +73,11 @@ header .user .login.button {
   min-width: 70px;
 }
 
-header .user:hover .menu-hover {
+header .user:hover .menu.hover {
   display: block;
 }
 
-header .user:hover .menu-hover.hidden {
+header .user:hover .menu.hover.hidden {
   display: none;
 }
 
@@ -85,7 +85,7 @@ header .user:hover .menu-hover.hidden {
   header .user .mobile-hide {
     display: none;
   }
-  header .user .menu-hover {
+  header .user .menu.hover {
     width: 150px;
   }
 }

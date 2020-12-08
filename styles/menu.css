@@ -4,32 +4,32 @@
 /** INIT
  *  Init sass varibles, ...
  */
-main .menu-date {
-  overflow: hidden;
+main .menu.date {
+  overflow: auto;
+  /*overflow: hidden;*/
   width: 130px;
   min-width: 130px;
   display: inline-block;
+  /*.year {
+            padding-left: 60px;
+        }*/
 }
 
-main .menu-date:hover {
+main .menu.date:hover {
   overflow: auto;
 }
 
-main .menu-date a {
+main .menu.date a {
   margin-top: 0px;
   display: block;
 }
 
-main .menu-date .button,
-main .menu-date .buttons > * {
+main .menu.date .button,
+main .menu.date.buttons > * {
   padding: 10px 10px 10px 15px;
 }
 
-main .menu-date .year {
-  padding-left: 60px;
-}
-
-main .menu-date .last {
+main .menu.date .last {
   height: 50px;
   display: block;
 }

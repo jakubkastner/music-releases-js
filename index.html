@@ -45,7 +45,7 @@
                     <i class="fas fa-user-plus"></i>
                     <p>Login<span class="mobile-hide"> via music account</span></p>
                 </a>
-                <nav class="login menu-hover buttons right">
+                <nav class="login menu hover buttons right">
                     <a class="spotify" title="Login via Spotify"><i class="fab fa-spotify"></i>Spotify</a>
                     <a class="deezer" title="Login via Deezer"><i class="fab fa-deezer"></i>Deezer</a>
                     <a class="apple" title="Login via Apple Music"><i class="fab fa-apple"></i>Apple Music</a>
@@ -54,14 +54,14 @@
                     <i class="fas fa-user-cog"></i>
                     <p>Username</span></p>
                 </a>
-                <nav class="buttons-user menu-hover buttons right">
+                <nav class="buttons-user menu hover buttons right">
                     <a class="settings" title="Show settings"><i class="fas fa-wrench"></i>Settings</a>
                     <a class="logout" title="Logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
-                </nav><!---->
+                </nav>
             </div>
         </div>
         <div class="secondary mobile-hide">
-            <div class="menu buttons left">
+            <div class="menu show-hide buttons left">
                 <a class="date" title="Hide date menu."><i class="fas fa-calendar-alt"></i></a>
                 <a class="filter" title="Hide actions and filter."><i class="fas fa-tools"></i></a>
             </div>
@@ -83,29 +83,32 @@
         </div>
     </header>
     <main>
-        <nav class="menu-date">
-            <a class="year button active" id="year-2020">2020</a>
-            <span class="months buttons" id="months-2020">
-                <a class="month" id="month-2020-13">undefined</a>
-                <a class="month" id="month-2020-12">12</a>
-                <a class="month" id="month-2020-11">11</a>
-                <a class="month" id="month-2020-10">10</a>
-                <a class="month" id="month-2020-09">09</a>
-                <a class="month" id="month-2020-08">08</a>
-                <a class="month" id="month-2020-07">07</a>
-                <a class="month" id="month-2020-06">06</a>
-                <a class="month active" id="month-2020-05">05</a>
-                <a class="month" id="month-2020-04">04</a>
-                <a class="month" id="month-2020-03">03</a>
-                <a class="month" id="month-2020-02">02</a>
-                <a class="month" id="month-2020-01">01</a>
-            </span>
-            <a class="year button" id="year-2019">2019</a>
-            <a class="year button" id="year-2018">2018</a>
-            <a class="year button" id="year-2017">2017</a>
-            <a class="year button" id="year-2016">2016</a>
-            <a class="year button" id="year-2015">2015</a>
+        <nav class="menu date year buttons">
+            <h3>Year</h3>
+            <a class="year active" id="year-2020">2020</a>
+            <a class="year" id="year-2019">2019</a>
+            <a class="year" id="year-2018">2018</a>
+            <a class="year" id="year-2017">2017</a>
+            <a class="year" id="year-2016">2016</a>
+            <a class="year" id="year-2015">2015</a>
+            <a class="year" id="year-undefined">undefined</a>
             <span class="last"></span>
+        </nav>
+        <nav class="menu date month buttons" id="months-2020">
+            <h3>Month</h3>
+            <a class="month" id="month-2020-12">12</a>
+            <a class="month" id="month-2020-11">11</a>
+            <a class="month" id="month-2020-10">10</a>
+            <a class="month" id="month-2020-09">09</a>
+            <a class="month" id="month-2020-08">08</a>
+            <a class="month" id="month-2020-07">07</a>
+            <a class="month" id="month-2020-06">06</a>
+            <a class="month active" id="month-2020-05">05</a>
+            <a class="month" id="month-2020-04">04</a>
+            <a class="month" id="month-2020-03">03</a>
+            <a class="month" id="month-2020-02">02</a>
+            <a class="month" id="month-2020-01">01</a>
+            <a class="month" id="month-2020-undefined">undefined</a>
         </nav>
         <div class="content">
             <div class="login skrejto">
@@ -254,39 +257,72 @@
             <a class="filter"><span>1</span><i class="fas fa-filter"></i></a>
             <a class="menu"><i class="fas fa-bars"></i></a>
         </div>
-        <div>
-            <nav class="releases menu-hover buttons pc-hide hidden">
-                <a class="albums hidden" title="View released albums"><i class="fas fa-compact-disc"></i>Albums</a>
-                <a class="eps hidden" title="View released EPs"><i class="fas fa-record-vinyl"></i>EPs</a>
-                <a class="tracks hidden" title="View released Tracks"><i class="fas fa-music"></i>Tracks</a>
-                <a class="remixes hidden" title="View released Remixes"><i class="fas fa-headphones-alt"></i>Remixes</a>
-                <a class="appears hidden" title="View released appears"><i class="fas fa-user-friends"></i>Appears</a>
-                <a class="compilations hidden" title="View released compilations"><i class="fas fa-th-large"></i>Compilations</a>
-                <a class="podcasts hidden" title="View newest podcasts"><i class="fas fa-podcast"></i>Podcasts</a>
+        <div class="pc-hide">
+            <nav class="releases menu hover buttons icon-text">
+                <a class="albums" title="View released albums">
+                    <i class="fas fa-compact-disc"></i>
+                    <span>Albums</span>
+                </a>
+                <a class="eps" title="View released EPs">
+                    <i class="fas fa-record-vinyl"></i>
+                    <span>EPs</span>
+                </a>
+                <a class="tracks" title="View released Tracks">
+                    <i class="fas fa-music"></i>
+                    <span>Tracks</span>
+                </a>
+                <a class="remixes" title="View released Remixes">
+                    <i class="fas fa-headphones-alt"></i>
+                    <span>Remixes</span>
+                </a>
+                <a class="appears" title="View released appears">
+                    <i class="fas fa-user-friends"></i>
+                    <span>Appears</span>
+                </a>
+                <a class="compilations" title="View released compilations">
+                    <i class="fas fa-th-large"></i>
+                    <span>Compilations</span>
+                </a>
+                <a class="podcasts" title="View newest podcasts">
+                    <i class="fas fa-podcast"></i>
+                    <span>Podcasts</span>
+                </a>
+                <a class="more" title="Show more">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <span>More</span>
+                </a>
             </nav>
-            <nav class="releases buttons mobile-buttons pc-hide">
-                <a class="albums" title="View released albums"><i class="fas fa-compact-disc"></i>
+            <nav class="releases buttons mobile-buttons">
+                <a class="albums" title="View released albums">
+                    <i class="fas fa-compact-disc"></i>
                     <p>Albums</p>
                 </a>
-                <a class="eps" title="View released EPs"><i class="fas fa-record-vinyl"></i>
+                <a class="eps" title="View released EPs">
+                    <i class="fas fa-record-vinyl"></i>
                     <p>EPs</p>
                 </a>
-                <a class="tracks" title="View released Tracks"><i class="fas fa-music"></i>
+                <a class="tracks" title="View released Tracks">
+                    <i class="fas fa-music"></i>
                     <p>Tracks</p>
                 </a>
-                <a class="remixes" title="View released Remixes"><i class="fas fa-headphones-alt"></i>
+                <a class="remixes" title="View released Remixes">
+                    <i class="fas fa-headphones-alt"></i>
                     <p>Remixes</p>
                 </a>
-                <a class="appears" title="View released appears"><i class="fas fa-user-friends"></i>
+                <a class="appears" title="View released appears">
+                    <i class="fas fa-user-friends"></i>
                     <p>Appears</p>
                 </a>
-                <a class="compilations" title="View released compilations"><i class="fas fa-th-large"></i>
+                <a class="compilations" title="View released compilations">
+                    <i class="fas fa-th-large"></i>
                     <p>Compilations</p>
                 </a>
-                <a class="podcasts" title="View newest podcasts"><i class="fas fa-podcast"></i>
+                <a class="podcasts" title="View newest podcasts">
+                    <i class="fas fa-podcast"></i>
                     <p>Podcasts</p>
                 </a>
-                <a class="more" title="Show more"><i class="fas fa-ellipsis-h"></i>
+                <a class="more" title="Show more">
+                    <i class="fas fa-ellipsis-h"></i>
                     <p>More</p>
                 </a>
             </nav>

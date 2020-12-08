@@ -18,21 +18,21 @@ el.main.body = $('body');
 
 // all buttons, which can be active
 el.menu.releases = $('.buttons.releases a, .buttons-user .settings');
-el.menu.hover = $('.menu-hover');
+el.menu.hover = $('.menu.hover');
 
 // login buttons
 el.main.loginButton = $('.login.button');
 // left login menu
-el.menu.login = $('header .menu-hover');
+el.menu.login = $('header .menu.hover');
 
 // page title
 el.main.title = $('.primary .title');
 
 el.menu.date.button = $('.buttons.menu .date');
-el.menu.date.menu = $('.menu-date');
-el.menu.date.year = $('.menu-date .year');
-el.menu.date.month = $('.menu-date .month');
-el.menu.date.months = $('.menu-date .months');
+el.menu.date.menu = $('.menu.date');
+el.menu.date.year = $('.menu.date .year');
+el.menu.date.month = $('.menu.date .month');
+el.menu.date.months = $('.menu.date .months');
 
 el.menu.filter = $('.buttons.menu .filter');
 el.menu.secondary = $('header .secondary');
@@ -75,3 +75,9 @@ api.spotify = {};
 // program
 var program = {};
 program.spotify = {};
+
+
+el.menu.mobile = {
+    moreButton: $('footer .releases.mobile-buttons .more'),
+    hoverMenu: $('footer .releases.menu.hover')
+};

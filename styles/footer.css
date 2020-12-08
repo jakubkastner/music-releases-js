@@ -27,6 +27,7 @@ footer .player .image {
 footer .player .image img {
   max-width: 100%;
   max-height: 100%;
+  display: block;
   /*position: relative;
                 top: -20px;*/
 }
@@ -101,10 +102,38 @@ footer .menu.round.buttons > * i {
   margin: auto;
 }
 
+footer .releases.menu.hover {
+  min-width: 160px;
+  width: 160px;
+  bottom: 60px;
+  overflow: auto;
+  max-height: calc(100vh - 60px);
+}
+
+@media screen and (max-width: 160px) {
+  footer .releases.menu.hover {
+    width: 100%;
+    min-width: 100%;
+    word-wrap: anywhere;
+  }
+}
+
+@media screen and (max-width: 60px) {
+  footer .releases.menu.hover span {
+    display: none;
+  }
+}
+
+footer .releases.menu.hover .button,
+footer .releases.menu.hover.buttons > * {
+  padding: 10px;
+}
+
 footer .mobile-buttons.releases {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 60px;
 }
 
 footer .mobile-buttons.releases p {
@@ -119,74 +148,106 @@ footer .mobile-buttons.releases a {
   margin: 0;
 }
 
+@media screen and (max-width: 80px) {
+  footer .mobile-buttons.releases a {
+    width: 100%;
+    min-width: 100%;
+    word-wrap: anywhere;
+  }
+}
+
 footer .mobile-buttons.releases a * {
   width: 100%;
   text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
-  footer .mobile-buttons.releases .more {
+  footer .releases.mobile-buttons .more {
+    display: none;
+  }
+  footer .releases.menu.hover a {
     display: none;
   }
 }
 
 @media screen and (max-width: 559px) {
-  footer .mobile-buttons.releases .more {
+  footer .releases.mobile-buttons .more {
     display: block;
   }
-  footer .mobile-buttons.releases .appears {
+  footer .releases.mobile-buttons .appears {
     display: none;
   }
-  footer .mobile-buttons.releases .compilations {
+  footer .releases.mobile-buttons .compilations {
     display: none;
   }
-  footer .mobile-buttons.releases a {
+  footer .releases.mobile-buttons a {
     width: calc(100% / 6);
+  }
+  footer .releases.menu.hover .appears {
+    display: block;
+  }
+  footer .releases.menu.hover .compilations {
+    display: block;
   }
 }
 
 @media screen and (max-width: 479px) {
-  footer .mobile-buttons.releases .remixes {
+  footer .releases.mobile-buttons .remixes {
     display: none;
   }
-  footer .mobile-buttons.releases a {
+  footer .releases.mobile-buttons.mobile-buttons a {
     width: calc(100% / 5);
+  }
+  footer .releases.menu.hover .remixes {
+    display: block;
   }
 }
 
 @media screen and (max-width: 399px) {
-  footer .mobile-buttons.releases .podcasts {
+  footer .releases.mobile-buttons .podcasts {
     display: none;
   }
-  footer .mobile-buttons.releases a {
+  footer .releases.mobile-buttons.mobile-buttons a {
     width: calc(100% / 4);
+  }
+  footer .releases.menu.hover .podcasts {
+    display: block;
   }
 }
 
 @media screen and (max-width: 319px) {
-  footer .mobile-buttons.releases .eps {
+  footer .releases.mobile-buttons .eps {
     display: none;
   }
-  footer .mobile-buttons.releases a {
+  footer .releases.mobile-buttons.mobile-buttons a {
     width: calc(100% / 3);
+  }
+  footer .releases.menu.hover .eps {
+    display: block;
   }
 }
 
 @media screen and (max-width: 239px) {
-  footer .mobile-buttons.releases .tracks {
+  footer .releases.mobile-buttons .tracks {
     display: none;
   }
-  footer .mobile-buttons.releases a {
+  footer .releases.mobile-buttons.mobile-buttons a {
     width: calc(100% / 2);
+  }
+  footer .releases.menu.hover .tracks {
+    display: block;
   }
 }
 
 @media screen and (max-width: 159px) {
-  footer .mobile-buttons.releases .albums {
+  footer .releases.mobile-buttons .albums {
     display: none;
   }
-  footer .mobile-buttons.releases a {
+  footer .releases.mobile-buttons.mobile-buttons a {
     width: 100%;
+  }
+  footer .releases.menu.hover .albums {
+    display: block;
   }
 }
 /*# sourceMappingURL=footer.css.map */

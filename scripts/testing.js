@@ -1,6 +1,12 @@
 /** TESTING
  *  Only for development testing.
  */
+
+el.menu.mobile.moreButton.click(function () {
+    el.menu.mobile.hoverMenu.toggleClass('show');
+});
+
+
 $('.menu .tracklist').click(function () {
     openFullscreen();
 });

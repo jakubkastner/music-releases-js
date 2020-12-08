@@ -85,7 +85,7 @@ el.menu.date.year.click(function () {
     // show current year months
     var selectedYear = $(this).attr('id');
     selectedYear = selectedYear.split('-')[2];
-    var selectedMonth = $('.menu-date #months-' + selectedYear);
+    var selectedMonth = $('.menu.date #months-' + selectedYear);
     selectedMonth.removeClass('hidden');
 });
 

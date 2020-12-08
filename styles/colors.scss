@@ -160,7 +160,7 @@ $color_text_button: rgb(26, 178, 107);
             background-color: $color_4;
         }
 
-        .menu-hover {
+        .menu.hover {
             background-color: $color_4;
 
             a:hover {
@@ -178,15 +178,28 @@ $color_text_button: rgb(26, 178, 107);
             color: $color_text;
         }
 
-        .menu-date {
-            background-color: $color_1;
+        .menu.date {
+            &.year {
+                background-color: $color_1;
 
-            a:hover {
-                background-color: $color_3;
+                a:hover,
+                a.active {
+                    background-color: $color_2;
+                }
+
+            }
+
+            &.month {
+                background-color: $color_2;
+
+                a:hover,
+                a.active {
+                    background-color: $color_3;
+                }
+
             }
 
             a.active {
-                background-color: $color_3;
                 color: $color_text_button;
             }
         }
@@ -198,8 +211,25 @@ $color_text_button: rgb(26, 178, 107);
 
     // footer
     footer {
-        background-color: $color_3;
-        color: $color_text_button;
+        background-color: $color_1;
+        color: $color_text;
+
+        a {
+            color: $color_text;
+        }
+
+        .releases {
+            a {
+                background-color: $color_0;
+                color: $color_text;
+
+                &:hover,
+                &.active {
+                    background-color: $color_3;
+                    color: $color_text_button;
+                }
+            }
+        }
     }
 
     /*header {
@@ -207,7 +237,7 @@ $color_text_button: rgb(26, 178, 107);
         color: $color_text_button;
 
         // left hover menu (login, user)
-        .menu-hover {
+        .menu.hover {
             /*&:hover {
                 & ~ header .user .login {
                     background-color: $color_5;
@@ -236,7 +266,7 @@ $color_text_button: rgb(26, 178, 107);
             }
         }
 
-        .menu-hover.hover {
+        .menu.hover.hover {
             background-color: $color_5;
         }
 
@@ -259,7 +289,7 @@ $color_text_button: rgb(26, 178, 107);
         color: $color_text;
 
         // date menu
-        .menu-date {
+        .menu.date {
             background-color: $color_4;
 
             a {

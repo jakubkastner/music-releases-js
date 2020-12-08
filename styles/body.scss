@@ -19,7 +19,7 @@ body {
         }
 
         .content {
-            width: calc(100vw - #{$width_left});
+            width: calc(100vw - #{$width_left} - #{$width_left});
 
             &.menu-hidden {
                 width: 100vw;

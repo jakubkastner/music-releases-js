@@ -68,7 +68,7 @@
         color: $color_text_button;
 
         // left hover menu (login, user)
-        .menu-hover {
+        .menu.hover {
             /*&:hover {
                 & ~ header .user .login {
                     background-color: $color_5;
@@ -95,7 +95,7 @@
             }
         }
 
-        .menu-hover.hover {
+        .menu.hover.hover {
             background-color: $color_5;
         }
 
@@ -116,7 +116,7 @@
         color: $color_text;
 
         // date menu
-        .menu-date {
+        .menu.date {
             background-color: $color_4;
 
             a {
@@ -196,10 +196,10 @@
   body header .login.button.hover {
     background-color: #fff5f5;
   }
-  body header .menu-hover {
+  body header .menu.hover {
     background-color: #fff5f5;
   }
-  body header .menu-hover a:hover {
+  body header .menu.hover a:hover {
     background-color: #cdcdcd;
   }
   body main {
@@ -209,20 +209,38 @@
   body main a {
     color: black;
   }
-  body main .menu-date {
+  body main .menu.date.year {
     background-color: whitesmoke;
   }
-  body main .menu-date a:hover {
+  body main .menu.date.year a:hover,
+  body main .menu.date.year a.active {
+    background-color: whitesmoke;
+  }
+  body main .menu.date.month {
+    background-color: whitesmoke;
+  }
+  body main .menu.date.month a:hover,
+  body main .menu.date.month a.active {
     background-color: white;
   }
-  body main .menu-date a.active {
-    background-color: white;
+  body main .menu.date a.active {
     color: #1ab26b;
   }
   body main .box {
     background-color: whitesmoke;
   }
   body footer {
+    background-color: whitesmoke;
+    color: black;
+  }
+  body footer a {
+    color: black;
+  }
+  body footer .releases a {
+    background-color: white;
+    color: black;
+  }
+  body footer .releases a:hover, body footer .releases a.active {
     background-color: white;
     color: #1ab26b;
   }
@@ -284,7 +302,7 @@
         color: $color_text_button;
 
         // left hover menu (login, user)
-        .menu-hover {
+        .menu.hover {
             /*&:hover {
                 & ~ header .user .login {
                     background-color: $color_5;
@@ -311,7 +329,7 @@
             }
         }
 
-        .menu-hover.hover {
+        .menu.hover.hover {
             background-color: $color_5;
         }
 
@@ -332,7 +350,7 @@
         color: $color_text;
 
         // date menu
-        .menu-date {
+        .menu.date {
             background-color: $color_4;
 
             a {
@@ -412,10 +430,10 @@
   body.dark header .login.button.hover {
     background-color: #242424;
   }
-  body.dark header .menu-hover {
+  body.dark header .menu.hover {
     background-color: #242424;
   }
-  body.dark header .menu-hover a:hover {
+  body.dark header .menu.hover a:hover {
     background-color: #383838;
   }
   body.dark main {
@@ -425,20 +443,38 @@
   body.dark main a {
     color: white;
   }
-  body.dark main .menu-date {
+  body.dark main .menu.date.year {
     background-color: #0c0c0c;
   }
-  body.dark main .menu-date a:hover {
+  body.dark main .menu.date.year a:hover,
+  body.dark main .menu.date.year a.active {
+    background-color: #101010;
+  }
+  body.dark main .menu.date.month {
+    background-color: #101010;
+  }
+  body.dark main .menu.date.month a:hover,
+  body.dark main .menu.date.month a.active {
     background-color: #1a1a1a;
   }
-  body.dark main .menu-date a.active {
-    background-color: #1a1a1a;
+  body.dark main .menu.date a.active {
     color: #1ab26b;
   }
   body.dark main .box {
     background-color: #0c0c0c;
   }
   body.dark footer {
+    background-color: #0c0c0c;
+    color: white;
+  }
+  body.dark footer a {
+    color: white;
+  }
+  body.dark footer .releases a {
+    background-color: #060606;
+    color: white;
+  }
+  body.dark footer .releases a:hover, body.dark footer .releases a.active {
     background-color: #1a1a1a;
     color: #1ab26b;
   }
@@ -505,7 +541,7 @@
         color: $color_text_button;
 
         // left hover menu (login, user)
-        .menu-hover {
+        .menu.hover {
             /*&:hover {
                 & ~ header .user .login {
                     background-color: $color_5;
@@ -532,7 +568,7 @@
             }
         }
 
-        .menu-hover.hover {
+        .menu.hover.hover {
             background-color: $color_5;
         }
 
@@ -553,7 +589,7 @@
         color: $color_text;
 
         // date menu
-        .menu-date {
+        .menu.date {
             background-color: $color_4;
 
             a {
@@ -633,10 +669,10 @@
   body.color header .login.button.hover {
     background-color: #38a700;
   }
-  body.color header .menu-hover {
+  body.color header .menu.hover {
     background-color: #38a700;
   }
-  body.color header .menu-hover a:hover {
+  body.color header .menu.hover a:hover {
     background-color: #3eff8b;
   }
   body.color main {
@@ -646,20 +682,38 @@
   body.color main a {
     color: white;
   }
-  body.color main .menu-date {
+  body.color main .menu.date.year {
     background-color: #0c0c0c;
   }
-  body.color main .menu-date a:hover {
+  body.color main .menu.date.year a:hover,
+  body.color main .menu.date.year a.active {
+    background-color: #293f14;
+  }
+  body.color main .menu.date.month {
+    background-color: #293f14;
+  }
+  body.color main .menu.date.month a:hover,
+  body.color main .menu.date.month a.active {
     background-color: #386c0b;
   }
-  body.color main .menu-date a.active {
-    background-color: #386c0b;
+  body.color main .menu.date a.active {
     color: #1ab26b;
   }
   body.color main .box {
     background-color: #0c0c0c;
   }
   body.color footer {
+    background-color: #0c0c0c;
+    color: white;
+  }
+  body.color footer a {
+    color: white;
+  }
+  body.color footer .releases a {
+    background-color: #060606;
+    color: white;
+  }
+  body.color footer .releases a:hover, body.color footer .releases a.active {
     background-color: #386c0b;
     color: #1ab26b;
   }
@@ -724,7 +778,7 @@
         color: $color_text_button;
 
         // left hover menu (login, user)
-        .menu-hover {
+        .menu.hover {
             /*&:hover {
                 & ~ header .user .login {
                     background-color: $color_5;
@@ -751,7 +805,7 @@
             }
         }
 
-        .menu-hover.hover {
+        .menu.hover.hover {
             background-color: $color_5;
         }
 
@@ -772,7 +826,7 @@
         color: $color_text;
 
         // date menu
-        .menu-date {
+        .menu.date {
             background-color: $color_4;
 
             a {
@@ -852,10 +906,10 @@
   body header .login.button.hover {
     background-color: #242424;
   }
-  body header .menu-hover {
+  body header .menu.hover {
     background-color: #242424;
   }
-  body header .menu-hover a:hover {
+  body header .menu.hover a:hover {
     background-color: #383838;
   }
   body main {
@@ -865,20 +919,38 @@
   body main a {
     color: white;
   }
-  body main .menu-date {
+  body main .menu.date.year {
     background-color: #0c0c0c;
   }
-  body main .menu-date a:hover {
+  body main .menu.date.year a:hover,
+  body main .menu.date.year a.active {
+    background-color: #101010;
+  }
+  body main .menu.date.month {
+    background-color: #101010;
+  }
+  body main .menu.date.month a:hover,
+  body main .menu.date.month a.active {
     background-color: #1a1a1a;
   }
-  body main .menu-date a.active {
-    background-color: #1a1a1a;
+  body main .menu.date a.active {
     color: #1ab26b;
   }
   body main .box {
     background-color: #0c0c0c;
   }
   body footer {
+    background-color: #0c0c0c;
+    color: white;
+  }
+  body footer a {
+    color: white;
+  }
+  body footer .releases a {
+    background-color: #060606;
+    color: white;
+  }
+  body footer .releases a:hover, body footer .releases a.active {
     background-color: #1a1a1a;
     color: #1ab26b;
   }
@@ -948,7 +1020,7 @@
         color: $color_text_button;
 
         // left hover menu (login, user)
-        .menu-hover {
+        .menu.hover {
             /*&:hover {
                 & ~ header .user .login {
                     background-color: $color_5;
@@ -975,7 +1047,7 @@
             }
         }
 
-        .menu-hover.hover {
+        .menu.hover.hover {
             background-color: $color_5;
         }
 
@@ -996,7 +1068,7 @@
         color: $color_text;
 
         // date menu
-        .menu-date {
+        .menu.date {
             background-color: $color_4;
 
             a {
@@ -1076,10 +1148,10 @@
   body.light header .login.button.hover {
     background-color: #fff5f5;
   }
-  body.light header .menu-hover {
+  body.light header .menu.hover {
     background-color: #fff5f5;
   }
-  body.light header .menu-hover a:hover {
+  body.light header .menu.hover a:hover {
     background-color: #cdcdcd;
   }
   body.light main {
@@ -1089,20 +1161,38 @@
   body.light main a {
     color: black;
   }
-  body.light main .menu-date {
+  body.light main .menu.date.year {
     background-color: whitesmoke;
   }
-  body.light main .menu-date a:hover {
+  body.light main .menu.date.year a:hover,
+  body.light main .menu.date.year a.active {
+    background-color: whitesmoke;
+  }
+  body.light main .menu.date.month {
+    background-color: whitesmoke;
+  }
+  body.light main .menu.date.month a:hover,
+  body.light main .menu.date.month a.active {
     background-color: white;
   }
-  body.light main .menu-date a.active {
-    background-color: white;
+  body.light main .menu.date a.active {
     color: #1ab26b;
   }
   body.light main .box {
     background-color: whitesmoke;
   }
   body.light footer {
+    background-color: whitesmoke;
+    color: black;
+  }
+  body.light footer a {
+    color: black;
+  }
+  body.light footer .releases a {
+    background-color: white;
+    color: black;
+  }
+  body.light footer .releases a:hover, body.light footer .releases a.active {
     background-color: white;
     color: #1ab26b;
   }
@@ -1169,7 +1259,7 @@
         color: $color_text_button;
 
         // left hover menu (login, user)
-        .menu-hover {
+        .menu.hover {
             /*&:hover {
                 & ~ header .user .login {
                     background-color: $color_5;
@@ -1196,7 +1286,7 @@
             }
         }
 
-        .menu-hover.hover {
+        .menu.hover.hover {
             background-color: $color_5;
         }
 
@@ -1217,7 +1307,7 @@
         color: $color_text;
 
         // date menu
-        .menu-date {
+        .menu.date {
             background-color: $color_4;
 
             a {
@@ -1297,10 +1387,10 @@
   body.color header .login.button.hover {
     background-color: #38a700;
   }
-  body.color header .menu-hover {
+  body.color header .menu.hover {
     background-color: #38a700;
   }
-  body.color header .menu-hover a:hover {
+  body.color header .menu.hover a:hover {
     background-color: #3eff8b;
   }
   body.color main {
@@ -1310,20 +1400,38 @@
   body.color main a {
     color: white;
   }
-  body.color main .menu-date {
+  body.color main .menu.date.year {
     background-color: #0c0c0c;
   }
-  body.color main .menu-date a:hover {
+  body.color main .menu.date.year a:hover,
+  body.color main .menu.date.year a.active {
+    background-color: #293f14;
+  }
+  body.color main .menu.date.month {
+    background-color: #293f14;
+  }
+  body.color main .menu.date.month a:hover,
+  body.color main .menu.date.month a.active {
     background-color: #386c0b;
   }
-  body.color main .menu-date a.active {
-    background-color: #386c0b;
+  body.color main .menu.date a.active {
     color: #1ab26b;
   }
   body.color main .box {
     background-color: #0c0c0c;
   }
   body.color footer {
+    background-color: #0c0c0c;
+    color: white;
+  }
+  body.color footer a {
+    color: white;
+  }
+  body.color footer .releases a {
+    background-color: #060606;
+    color: white;
+  }
+  body.color footer .releases a:hover, body.color footer .releases a.active {
     background-color: #386c0b;
     color: #1ab26b;
   }

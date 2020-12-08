@@ -15,10 +15,10 @@
     }*/
 }
 
-/*body {
+body {
     // TODO spuštění: odkomentovat
     overflow: hidden;
-}*/
+}
 
 main {
     display: flex;
@@ -77,7 +77,7 @@ a {
 }
 
 // hoverable menu
-.menu-hover {
+.menu.hover {
     display: none;
     position: absolute;
     width: 100%;
