@@ -19,7 +19,7 @@ body main > * {
 }
 
 body main .content {
-  width: calc(100vw - 130px - 130px);
+  width: calc(100vw - 130px - 130px - 200px - 70px);
 }
 
 body main .content.menu-hidden {

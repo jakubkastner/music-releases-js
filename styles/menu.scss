@@ -5,14 +5,34 @@
 
 main {
 
-    // date menu
-    .menu.date {
+    .menu {
         overflow: auto;
-        /*overflow: hidden;*/
-        width: $width_left;
-        min-width: $width_left;
         display: inline-block;
         //resize: horizontal;
+        //overflow: hidden;
+
+        // date menu
+        &.date {
+            width: $width_left;
+            min-width: $width_left;
+        }
+
+        &.artists {
+            &.names {
+                width: $width_right;
+                min-width: $width_right;
+            }
+
+            &.first-letter {
+                width: $width_artists_letters;
+                min-width: $width_artists_letters;
+                padding-right: 15px;
+
+                a {
+                    margin: auto;
+                }
+            }
+        }
 
         &:hover {
             overflow: auto;

@@ -178,8 +178,10 @@ $color_text_button: rgb(26, 178, 107);
             color: $color_text;
         }
 
-        .menu.date {
-            &.year {
+        .menu {
+
+            &.date.year,
+            &.artists.first-letter {
                 background-color: $color_1;
 
                 a:hover,
@@ -189,7 +191,8 @@ $color_text_button: rgb(26, 178, 107);
 
             }
 
-            &.month {
+            &.date.month,
+            &.artists.names {
                 background-color: $color_2;
 
                 a:hover,
