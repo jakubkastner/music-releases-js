@@ -8,8 +8,12 @@ main {
     .menu {
         overflow: auto;
         display: inline-block;
+
         //resize: horizontal;
         //overflow: hidden;
+        @media screen and (max-width: $width_pc - 1) {
+            display: none;
+        }
 
         // date menu
         &.date {
@@ -26,7 +30,6 @@ main {
             &.first-letter {
                 width: $width_artists_letters;
                 min-width: $width_artists_letters;
-                padding-right: 15px;
 
                 a {
                     margin: auto;

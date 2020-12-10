@@ -207,6 +207,18 @@ $color_text_button: rgb(26, 178, 107);
             }
         }
 
+        .content {
+            .releases {
+                .release {
+                    a {
+                        &:hover {
+                            color: $color_text_button;
+                        }
+                    }
+                }
+            }
+        }
+
         .box {
             background-color: $color_1;
         }
@@ -219,6 +231,31 @@ $color_text_button: rgb(26, 178, 107);
 
         a {
             color: $color_text;
+        }
+
+        .player {
+            a:hover {
+                color: $color_text_button;
+            }
+        }
+
+        .user.menu {
+            background-color: $color_1;
+        }
+
+        .round.buttons {
+            a {
+                background-color: $color_1;
+
+                &.active {
+                    background-color: $color_0;
+                    color: $color_text_button;
+                }
+
+                &:hover {
+                    background-color: $color_0;
+                }
+            }
         }
 
         .releases {

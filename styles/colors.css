@@ -228,6 +228,9 @@
   body main .menu a.active {
     color: #1ab26b;
   }
+  body main .content .releases .release a:hover {
+    color: #1ab26b;
+  }
   body main .box {
     background-color: whitesmoke;
   }
@@ -237,6 +240,22 @@
   }
   body footer a {
     color: black;
+  }
+  body footer .player a:hover {
+    color: #1ab26b;
+  }
+  body footer .user.menu {
+    background-color: whitesmoke;
+  }
+  body footer .round.buttons a {
+    background-color: whitesmoke;
+  }
+  body footer .round.buttons a.active {
+    background-color: white;
+    color: #1ab26b;
+  }
+  body footer .round.buttons a:hover {
+    background-color: white;
   }
   body footer .releases a {
     background-color: white;
@@ -464,6 +483,9 @@
   body.dark main .menu a.active {
     color: #1ab26b;
   }
+  body.dark main .content .releases .release a:hover {
+    color: #1ab26b;
+  }
   body.dark main .box {
     background-color: #0c0c0c;
   }
@@ -473,6 +495,22 @@
   }
   body.dark footer a {
     color: white;
+  }
+  body.dark footer .player a:hover {
+    color: #1ab26b;
+  }
+  body.dark footer .user.menu {
+    background-color: #0c0c0c;
+  }
+  body.dark footer .round.buttons a {
+    background-color: #0c0c0c;
+  }
+  body.dark footer .round.buttons a.active {
+    background-color: #060606;
+    color: #1ab26b;
+  }
+  body.dark footer .round.buttons a:hover {
+    background-color: #060606;
   }
   body.dark footer .releases a {
     background-color: #060606;
@@ -705,6 +743,9 @@
   body.color main .menu a.active {
     color: #1ab26b;
   }
+  body.color main .content .releases .release a:hover {
+    color: #1ab26b;
+  }
   body.color main .box {
     background-color: #0c0c0c;
   }
@@ -714,6 +755,22 @@
   }
   body.color footer a {
     color: white;
+  }
+  body.color footer .player a:hover {
+    color: #1ab26b;
+  }
+  body.color footer .user.menu {
+    background-color: #0c0c0c;
+  }
+  body.color footer .round.buttons a {
+    background-color: #0c0c0c;
+  }
+  body.color footer .round.buttons a.active {
+    background-color: #060606;
+    color: #1ab26b;
+  }
+  body.color footer .round.buttons a:hover {
+    background-color: #060606;
   }
   body.color footer .releases a {
     background-color: #060606;
@@ -944,6 +1001,9 @@
   body main .menu a.active {
     color: #1ab26b;
   }
+  body main .content .releases .release a:hover {
+    color: #1ab26b;
+  }
   body main .box {
     background-color: #0c0c0c;
   }
@@ -953,6 +1013,22 @@
   }
   body footer a {
     color: white;
+  }
+  body footer .player a:hover {
+    color: #1ab26b;
+  }
+  body footer .user.menu {
+    background-color: #0c0c0c;
+  }
+  body footer .round.buttons a {
+    background-color: #0c0c0c;
+  }
+  body footer .round.buttons a.active {
+    background-color: #060606;
+    color: #1ab26b;
+  }
+  body footer .round.buttons a:hover {
+    background-color: #060606;
   }
   body footer .releases a {
     background-color: #060606;
@@ -1188,6 +1264,9 @@
   body.light main .menu a.active {
     color: #1ab26b;
   }
+  body.light main .content .releases .release a:hover {
+    color: #1ab26b;
+  }
   body.light main .box {
     background-color: whitesmoke;
   }
@@ -1197,6 +1276,22 @@
   }
   body.light footer a {
     color: black;
+  }
+  body.light footer .player a:hover {
+    color: #1ab26b;
+  }
+  body.light footer .user.menu {
+    background-color: whitesmoke;
+  }
+  body.light footer .round.buttons a {
+    background-color: whitesmoke;
+  }
+  body.light footer .round.buttons a.active {
+    background-color: white;
+    color: #1ab26b;
+  }
+  body.light footer .round.buttons a:hover {
+    background-color: white;
   }
   body.light footer .releases a {
     background-color: white;
@@ -1429,6 +1524,9 @@
   body.color main .menu a.active {
     color: #1ab26b;
   }
+  body.color main .content .releases .release a:hover {
+    color: #1ab26b;
+  }
   body.color main .box {
     background-color: #0c0c0c;
   }
@@ -1438,6 +1536,22 @@
   }
   body.color footer a {
     color: white;
+  }
+  body.color footer .player a:hover {
+    color: #1ab26b;
+  }
+  body.color footer .user.menu {
+    background-color: #0c0c0c;
+  }
+  body.color footer .round.buttons a {
+    background-color: #0c0c0c;
+  }
+  body.color footer .round.buttons a.active {
+    background-color: #060606;
+    color: #1ab26b;
+  }
+  body.color footer .round.buttons a:hover {
+    background-color: #060606;
   }
   body.color footer .releases a {
     background-color: #060606;

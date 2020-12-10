@@ -21,8 +21,21 @@ body {
         .content {
             width: calc(100vw - #{$width_left} - #{$width_left} - #{$width_right} - #{$width_artists_letters});
 
-            &.menu-hidden {
+            &.menu-date-hidden {
+                width: calc(100vw - #{$width_right} - #{$width_artists_letters});
+            }
+
+            &.menu-artists-hidden {
+                width: calc(100vw - #{$width_left} - #{$width_left});
+            }
+
+            &.menu-date-hidden.menu-artists-hidden {
                 width: 100vw;
+            }
+
+            @media screen and (max-width: $width_pc - 1) {
+                width: 100vw;
+                // TODO responzivní styl: změnit rozložení když v mobilu skrejuzobrazím menu
             }
         }
     }
@@ -84,6 +97,16 @@ body {
                                 margin-bottom: 5px;
                             }
 
+                            .tracklist {
+                                &.button {
+                                    padding-left: 0;
+                                }
+
+                                span {
+                                    font-size: 70%;
+                                }
+                            }
+
                             .name {
                                 font-size: 24px;
                             }
@@ -98,14 +121,10 @@ body {
                             }
 
                             .button {
-                                font-size: 24px;
+                                font-size: 30px;
                                 margin-right: 5px;
                                 margin-bottom: 0;
-                                padding: 10px;
-
-                                &.tracklist i {
-                                    margin-right: 5px;
-                                }
+                                padding: 6px;
                             }
                         }
                     }

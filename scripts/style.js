@@ -59,13 +59,27 @@ el.menu.date.button.click(function () {
         // show the menu
         el.menu.date.menu.removeClass('hidden');
         el.menu.date.button.attr({ 'title': 'Hide date menu.' });
-        el.content.removeClass('menu-hidden');
+        el.content.removeClass('menu-date-hidden');
     }
     else {
         // hide the menu
         el.menu.date.menu.addClass('hidden');
         el.menu.date.button.attr({ 'title': 'Show date menu.' });
-        el.content.addClass('menu-hidden');
+        el.content.addClass('menu-date-hidden');
+    }
+});
+el.menu.artists.button.click(function () {
+    if (el.menu.artists.menu.hasClass('hidden')) {
+        // show the menu
+        el.menu.artists.menu.removeClass('hidden');
+        el.menu.artists.button.attr({ 'title': 'Hide artists menu.' });
+        el.content.removeClass('menu-artists-hidden');
+    }
+    else {
+        // hide the menu
+        el.menu.artists.menu.addClass('hidden');
+        el.menu.artists.button.attr({ 'title': 'Show artists menu.' });
+        el.content.addClass('menu-artists-hidden');
     }
 });
 

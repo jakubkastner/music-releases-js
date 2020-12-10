@@ -6,6 +6,7 @@ var el = {};
 el.main = {};
 el.settings = {};
 el.menu = {};
+el.menu.artists = {};
 el.menu.date = {};
 el.release = {};
 el.release.buttons = {};
@@ -17,7 +18,7 @@ el.user.login = {};
 el.main.body = $('body');
 
 // all buttons, which can be active
-el.menu.releases = $('.buttons.releases a, .buttons-user .settings');
+el.menu.releases = $('.buttons.releases a, .buttons.user .settings');
 el.menu.hover = $('.menu.hover');
 
 // login buttons
@@ -27,6 +28,9 @@ el.menu.login = $('header .menu.hover');
 
 // page title
 el.main.title = $('.primary .title');
+
+el.menu.artists.button = $('.buttons.menu .artists');
+el.menu.artists.menu = $('.menu.artists');
 
 el.menu.date.button = $('.buttons.menu .date');
 el.menu.date.menu = $('.menu.date');
@@ -56,8 +60,8 @@ el.settings.notifications = $('.settings .notifications');
 
 // user
 el.user.login.spotify = $('.buttons.login .spotify');
-el.user.logout = $('.buttons-user .logout');
-el.user.settings = $('.buttons-user .settings');
+el.user.logout = $('.buttons.user .logout');
+el.user.settings = $('.buttons.user .settings');
 
 
 el.content = $('main .content');
@@ -79,5 +83,7 @@ program.spotify = {};
 
 el.menu.mobile = {
     moreButton: $('footer .releases.mobile-buttons .more'),
-    hoverMenu: $('footer .releases.menu.hover')
+    hoverMenu: $('footer .releases.menu.hover'),
+    settinsButton: $('footer .player .menu.round .menu'),
+    settingsMenu: $('footer .user.menu.hover')
 };

@@ -6,6 +6,11 @@ el.menu.mobile.moreButton.click(function () {
     el.menu.mobile.hoverMenu.toggleClass('show');
 });
 
+el.menu.mobile.settinsButton.click(function () {
+    el.menu.mobile.settingsMenu.toggleClass('show');
+    el.menu.mobile.settinsButton.toggleClass('active');
+});
+
 
 $('.menu .tracklist').click(function () {
     openFullscreen();

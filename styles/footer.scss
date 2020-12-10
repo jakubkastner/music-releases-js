@@ -36,6 +36,14 @@ footer {
             margin-left: 50px;
             margin-right: 50px;
 
+            .button,
+            .buttons a {
+                font-size: 24px;
+                margin-right: 5px;
+                margin-bottom: 0;
+                padding: 6px;
+            }
+
             &>.time {
                 width: 100%;
                 height: 8px;
@@ -49,7 +57,56 @@ footer {
                 display: flex;
 
                 &>div {
-                    width: 33%;
+                    margin-right: 30px;
+
+                    /*width: 25%;*/
+                    &.actions.buttons {
+                        margin-right: 0;
+                        margin-left: auto;
+                        width: 96px;
+                    }
+
+                    &.actions {
+                        width: 210px;
+                    }
+
+                    &.details {
+                        width: calc((100% - 210px - 96px - 30px - 30px - 30px)/2);
+                    }
+
+                    // TODO responzivní patička: zatím udělánou pouze jako testovací
+                    @media screen and (max-width: 770px) {
+                        margin-right: 5px;
+
+                        &.actions.buttons {
+                            display: none;
+                        }
+
+                        &.details {
+                            width: calc((100% - 210px - 5px - 5px - 5px)/2);
+                        }
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        margin-right: 5px;
+
+                        &.actions {
+                            display: none;
+                        }
+
+                        &.details {
+                            width: calc((100% - 5px - 5px)/2);
+                        }
+                    }
+
+                    // todo konec
+                }
+
+                .time,
+                .album,
+                .date {
+                    font-size: 20px;
+                    margin-top: 10px;
                 }
 
                 .details {
@@ -57,9 +114,23 @@ footer {
                         display: block;
                     }
 
+                    .track,
+                    .artists {
+                        font-size: 24px;
+                        padding: 6px 0;
+                    }
+
                     .artists,
                     .date {
                         display: flex;
+                    }
+
+                    .artists {
+                        display: inline-block;
+
+                        a {
+                            display: inline;
+                        }
                     }
                 }
             }
@@ -84,13 +155,13 @@ footer {
         }
 
         &.buttons>* {
-            font-size: calc(20px + 0.8vw);
+            font-size: 24px;
             border-radius: 100%;
-            width: 50px;
-            height: 50px;
+            width: 56px;
+            height: 56px;
             display: flex;
             position: relative;
-            top: -25px;
+            top: -28px;
 
             i {
                 margin: auto;
@@ -98,19 +169,38 @@ footer {
         }
     }
 
-    .releases.menu.hover {
-        $width: 160px;
-        min-width: $width;
-        width: $width;
-        bottom: $height_footer_menu;
-        overflow: auto;
-        max-height: calc(100vh - #{$height_footer_menu});
+    .menu.hover {
+        &.releases {
+            $width: 160px;
+            min-width: $width;
+            width: $width;
+            bottom: $height_footer_menu;
+            max-height: calc(100vh - #{$height_footer_menu});
 
-        @media screen and (max-width: $width) {
-            width: 100%;
-            min-width: 100%;
-            word-wrap: anywhere;
+            @media screen and (max-width: $width) {
+                width: 100%;
+                min-width: 100%;
+                word-wrap: anywhere;
+            }
         }
+
+        &.user {
+            $width: 200px;
+            min-width: $width;
+            width: $width;
+            bottom: calc(#{$height_footer_player} + #{$height_footer_menu});
+            max-height: calc(100vh - #{$height_footer_player} - #{$height_footer_menu});
+
+            @media screen and (max-width: $width) {
+                width: 100%;
+                min-width: 100%;
+                word-wrap: anywhere;
+            }
+        }
+
+        overflow: auto;
+
+
         @media screen and (max-width: 60px) {
             span {
                 display: none;

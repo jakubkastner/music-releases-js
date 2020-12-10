@@ -52,9 +52,9 @@
                 </nav>
                 <a class="login button skrejto" title="Show settings menu">
                     <i class="fas fa-user-cog"></i>
-                    <p>Username</span></p>
+                    <p>Username</p>
                 </a>
-                <nav class="buttons-user menu hover buttons right">
+                <nav class="user menu hover buttons right">
                     <a class="settings" title="Show settings"><i class="fas fa-wrench"></i>Settings</a>
                     <a class="logout" title="Logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
                 </nav>
@@ -63,6 +63,7 @@
         <div class="secondary mobile-hide">
             <div class="menu show-hide buttons left">
                 <a class="date" title="Hide date menu."><i class="fas fa-calendar-alt"></i></a>
+                <a class="artists" title="Hide artists menu."><i class="fas fa-users"></i></a>
                 <a class="filter" title="Hide actions and filter."><i class="fas fa-tools"></i></a>
             </div>
             <div class="filter icon-text">
@@ -79,7 +80,6 @@
                     <a class="play"><i class="fas fa-play"></i>Play all</a>
                 </div>
             </div>
-        </div>
         </div>
     </header>
     <main>
@@ -111,6 +111,10 @@
             <a class="month" id="month-2020-undefined">undefined</a>
         </nav>
         <div class="content">
+            <div class="page-name">
+                <img class="favicon" src="images/favicon.png" alt="R" />
+                <h2>eleases in 2020-02 from artist Artist 1</h2>
+            </div>
             <div class="login skrejto">
                 <div class="login buttons">
                     <a class="spotify"><i class="fab fa-spotify"></i>Login via Spotify</a>
@@ -119,28 +123,23 @@
                 </div>
             </div>
             <div class="releases">
-                <div class="page-name pc-hide">
-                    <h1>Music</h1>
-                    <img class="favicon" src="images/favicon.png" alt="R" />
-                    <h1>eleases</h1>
-                </div>
                 <div class="release album box" id="album-2qaaaIfTuEAh5cqI1ksz">
                     <div class="info">
                         <div class="image">
                             <img src="images/no-cover.png" />
                         </div>
                         <div class="details">
-                            <a class="name" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">Album name</a>
-                            <p class="artists">
+                            <a class="name icon-text" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">Album name</a>
+                            <p class="artists icon-text">
                                 <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 1</a>,
                                 <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 2</a> &
                                 <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 3</a>
                             </p>
-                            <p class="date">
+                            <p class="date icon-text">
                                 <i class="fas fa-calendar-alt"></i>
                                 <a class="year">2020</a>-<a class="month">10</a>-<a class="day">01</a>
                             </p>
-                            <a class="tracklist button" title="View tracklist"><i class="fas fa-bars"></i>10</a>
+                            <a class="tracklist button icon-text" title="View tracklist"><i class="fas fa-bars"></i><span>10</span></a>
                             <a class="play button" title="Play release"><i class="fas fa-play"></i></a>
                             <a class="queue button" title="Add release to queue"><i class="fas fa-arrow-right"></i></a>
                             <a class="save button" title="Add release to library"><i class="far fa-heart"></i></a>
@@ -204,8 +203,8 @@
         <nav class="menu artists names buttons">
             <h3>Artists</h3>
             <a class="artist active" id="artist-all">All</a>
-            <a class="artist" id="artist-yunglean">Yung Lean</a>
-            <a class="artist" id="artist-taomi">Taomi</a>
+            <a class="artist" id="artist-artist1">Artist 1</a>
+            <a class="artist" id="artist-artist2">Artist 2</a>
             <span class="last"></span>
         </nav>
         <nav class="menu artists first-letter buttons">
@@ -224,11 +223,11 @@
             <div class="info">
                 <div class="time"></div>
                 <div class="content">
-                    <div class="actions-left">
-                        <div>
+                    <div class="actions">
+                        <div class="buttons">
                             <a class="prev"><i class="fas fa-step-backward"></i></a>
                             <a class="play"><i class="fas fa-play"></i></a>
-                            <a class="next"><i class="fas fa-step-forward"></i></i></a>
+                            <a class="next"><i class="fas fa-step-forward"></i></a>
                             <a class="library"><i class="far fa-heart"></i></a>
                             <a class="playlist" title="Add release to playlist"><i class="fas fa-plus"></i></a>
                         </div>
@@ -241,34 +240,51 @@
                     </div>
                     <div class="details">
                         <a class="track" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">Track name</a>
+                        <a class="album" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">Album name</a>
+                    </div>
+                    <div class="details">
                         <p class="artists">
                             <a class="artist">Artist 1</a>,
                             <a class="artist">Artist 2</a> &
                             <a class="artist">Artist 3</a>
                         </p>
-                        <a class="album" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">Album name</a>
-                        <p class="date">
+                        <p class="date icon-text">
                             <i class="fas fa-calendar-alt"></i>
                             <a class="year">2020</a>-<a class="month">10</a>-<a class="day">01</a>
                         </p>
                     </div>
-                    <div class="actions-right">
-                        <a class="spotify" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify" title="Open in Spotify"></i></a>
-                        <a class="youtube" href="https://music.youtube.com/search?q=GASHI 1984" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube" title="Search on YouTube Music"></i></a>
+                    <div class="actions buttons">
                         <a class="volume"><i class="fas fa-volume-up"></i></a>
                         <a class="devices"><i class="fas fa-laptop"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="menu round buttons">
-                <a class="tracklist" title="Tracklist"><i class="fas fa-angle-double-up"></i></a>
+            <div>
+                <nav class="menu user hover buttons icon-text">
+                    <p>User</p>
+                    <a class="settings" title="Show settings"><i class="fas fa-wrench"></i>Settings</a>
+                    <a class="logout" title="Logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                    <p>Menu</p>
+                    <a class="date" title="Hide date menu."><i class="fas fa-calendar-alt"></i>Date menu</a>
+                    <a class="artists" title="Hide artists menu."><i class="fas fa-users"></i>Artists menu</a>
+                    <p>Filter</p>
+                    <a class="artists active" title="Show releases from the artist I am following"><i class="fas fa-users"></i>Followed artists</a>
+                    <a class="saved" title="Show saved releases in my library"><i class="fas fa-heart"></i>In library</a>
+                    <p>Actions</p>
+                    <a class="playlist"><i class="fas fa-plus-circle"></i>Add to playlist</a>
+                    <a class="play"><i class="fas fa-play"></i>Play all</a>
+                </nav>
+                <div class="menu round buttons right">
+                    <a class="tracklist" title="Tracklist"><i class="fas fa-angle-double-up"></i></a>
+                    <a class="menu pc-hide" title="Show menu"><i class="fas fa-bars"></i></a>
+                </div>
             </div>
         </div>
-        <div class="menu round buttons pc-hide">
+        <!--<div class="menu round buttons pc-hide">
             <a class="date" title="Hide date menu."><i class="fas fa-calendar-alt"></i></a>
-            <a class="filter"><span>1</span><i class="fas fa-filter"></i></a>
+            <a class="filter"><i class="fas fa-filter"></i></a>
             <a class="menu"><i class="fas fa-bars"></i></a>
-        </div>
+        </div>-->
         <div class="pc-hide">
             <nav class="releases menu hover buttons icon-text">
                 <a class="albums" title="View released albums">

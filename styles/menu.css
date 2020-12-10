@@ -12,6 +12,12 @@ main .menu {
         }*/
 }
 
+@media screen and (max-width: 1024px) {
+  main .menu {
+    display: none;
+  }
+}
+
 main .menu.date {
   width: 130px;
   min-width: 130px;
@@ -23,9 +29,8 @@ main .menu.artists.names {
 }
 
 main .menu.artists.first-letter {
-  width: 70px;
-  min-width: 70px;
-  padding-right: 15px;
+  width: 75px;
+  min-width: 75px;
 }
 
 main .menu.artists.first-letter a {
