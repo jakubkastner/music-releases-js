@@ -2,6 +2,8 @@
  *  Init some variables - jquery elements, ...
  */
 
+var pcWidth = 1025;
+
 var el = {};
 el.main = {};
 el.settings = {};
@@ -29,9 +31,11 @@ el.menu.login = $('header .menu.hover');
 // page title
 el.main.title = $('.primary .title');
 
+el.menu.artists.text = 'artists',
 el.menu.artists.button = $('.buttons.menu .artists');
 el.menu.artists.menu = $('.menu.artists');
 
+el.menu.date.text = 'date';
 el.menu.date.button = $('.buttons.menu .date');
 el.menu.date.menu = $('.menu.date');
 el.menu.date.year = $('.menu.date .year');

@@ -11,6 +11,8 @@
   /*:hover {
         transition: 0.5s;
     }*/
+  word-wrap: everywhere;
+  overflow-wrap: anywhere;
 }
 
 body {

@@ -237,6 +237,17 @@ $color_text_button: rgb(26, 178, 107);
             a:hover {
                 color: $color_text_button;
             }
+
+            .info>.time {
+                background-color: $color_text_button;
+
+                @for $i from 0 through 100 {
+                    &.width-#{$i} {
+                        $sirka: $i + '%';
+                        background: linear-gradient(to right, $color_text_button #{$sirka}, $color_text 0%);
+                    }
+                }
+            }
         }
 
         .user.menu {

@@ -30,7 +30,6 @@ function openFullscreen() {
     }
 }
 
-
 $(document).ready(async function () {
     var storageReleaseType = localStorage.getItem('release_type');
     localStorage.removeItem('release_type');
@@ -43,7 +42,13 @@ el.user.settings.click(function () {
     // TODO show settings (make class)
     $('.content .releases').toggleClass('skrejto');
     $('.content .settings').toggleClass('skrejto');
-    
+
+});
+
+
+// mobile browsers fix
+$(document).ready(function () {
+    $("html, body").animate({ scrollTop: $(document).height()-$(window).height() });
 });
 
 // s ikonou pak nejde pracovat dál (měnit třídu atd...)

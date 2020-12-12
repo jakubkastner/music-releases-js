@@ -24,6 +24,12 @@ footer .player .image {
   margin-right: 15px;
 }
 
+@media screen and (max-width: 770px) {
+  footer .player .image {
+    display: none;
+  }
+}
+
 footer .player .image img {
   max-width: 100%;
   max-height: 100%;
@@ -33,9 +39,17 @@ footer .player .image img {
 }
 
 footer .player .info {
-  width: 100%;
+  width: calc(100% - 56px - 100px - 15px);
   margin-left: 50px;
   margin-right: 50px;
+}
+
+@media screen and (max-width: 770px) {
+  footer .player .info {
+    width: calc(100% - 56px - 40px - 15px);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 footer .player .info .button,
@@ -58,6 +72,8 @@ footer .player .info .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: auto;
+  max-height: 100%;
 }
 
 footer .player .info .content > div {
@@ -83,21 +99,12 @@ footer .player .info .content > div.details {
   footer .player .info .content > div {
     margin-right: 5px;
   }
-  footer .player .info .content > div.actions.buttons {
-    display: none;
-  }
   footer .player .info .content > div.details {
     width: calc((100% - 210px - 5px - 5px - 5px)/2);
   }
 }
 
 @media screen and (max-width: 600px) {
-  footer .player .info .content > div {
-    margin-right: 5px;
-  }
-  footer .player .info .content > div.actions {
-    display: none;
-  }
   footer .player .info .content > div.details {
     width: calc((100% - 5px - 5px)/2);
   }

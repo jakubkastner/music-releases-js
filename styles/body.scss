@@ -6,8 +6,6 @@
 body {
 
     main {
-
-        //height: 73vh;
         height: $height_body;
 
         @media screen and (max-width: $width_pc - 1) {
@@ -19,23 +17,10 @@ body {
         }
 
         .content {
-            width: calc(100vw - #{$width_left} - #{$width_left} - #{$width_right} - #{$width_artists_letters});
+            flex-basis: 100%;
 
-            &.menu-date-hidden {
-                width: calc(100vw - #{$width_right} - #{$width_artists_letters});
-            }
-
-            &.menu-artists-hidden {
-                width: calc(100vw - #{$width_left} - #{$width_left});
-            }
-
-            &.menu-date-hidden.menu-artists-hidden {
-                width: 100vw;
-            }
-
-            @media screen and (max-width: $width_pc - 1) {
-                width: 100vw;
-                // TODO responzivní styl: změnit rozložení když v mobilu skrejuzobrazím menu
+            .page-name {
+                margin-top: 40px;
             }
         }
     }

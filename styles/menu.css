@@ -4,6 +4,15 @@
 /** INIT
  *  Init sass varibles, ...
  */
+@media screen and (max-width: 260px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 main .menu {
   overflow: auto;
   display: inline-block;
@@ -12,9 +21,10 @@ main .menu {
         }*/
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 260px) {
   main .menu {
-    display: none;
+    display: block;
+    height: 50%;
   }
 }
 
@@ -23,14 +33,67 @@ main .menu.date {
   min-width: 130px;
 }
 
+@media screen and (max-width: 1024px) {
+  main .menu.date {
+    width: 50%;
+    min-width: 50%;
+  }
+  main .menu.date.year {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media screen and (max-width: 260px) {
+  main .menu.date {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main .menu.artists {
+    width: 100%;
+  }
+}
+
 main .menu.artists.names {
   width: 200px;
   min-width: 200px;
 }
 
+@media screen and (max-width: 1024px) {
+  main .menu.artists.names {
+    width: 70%;
+    min-width: 70%;
+  }
+}
+
+@media screen and (max-width: 260px) {
+  main .menu.artists.names {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
 main .menu.artists.first-letter {
   width: 75px;
   min-width: 75px;
+}
+
+@media screen and (max-width: 1024px) {
+  main .menu.artists.first-letter {
+    width: 30%;
+    min-width: 30%;
+  }
+}
+
+@media screen and (max-width: 260px) {
+  main .menu.artists.first-letter {
+    width: 100%;
+    min-width: 100%;
+  }
 }
 
 main .menu.artists.first-letter a {

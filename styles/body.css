@@ -19,25 +19,12 @@ body main > * {
 }
 
 body main .content {
-  width: calc(100vw - 130px - 130px - 200px - 75px);
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
-body main .content.menu-date-hidden {
-  width: calc(100vw - 200px - 75px);
-}
-
-body main .content.menu-artists-hidden {
-  width: calc(100vw - 130px - 130px);
-}
-
-body main .content.menu-date-hidden.menu-artists-hidden {
-  width: 100vw;
-}
-
-@media screen and (max-width: 1024px) {
-  body main .content {
-    width: 100vw;
-  }
+body main .content .page-name {
+  margin-top: 40px;
 }
 
 body.classic main .box {

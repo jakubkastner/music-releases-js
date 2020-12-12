@@ -57,29 +57,23 @@ el.menu.releases.click(function () {
 el.menu.date.button.click(function () {
     if (el.menu.date.menu.hasClass('hidden')) {
         // show the menu
-        el.menu.date.menu.removeClass('hidden');
-        el.menu.date.button.attr({ 'title': 'Hide date menu.' });
-        el.content.removeClass('menu-date-hidden');
+        el.menu.show(el.menu.date);
     }
     else {
         // hide the menu
-        el.menu.date.menu.addClass('hidden');
-        el.menu.date.button.attr({ 'title': 'Show date menu.' });
-        el.content.addClass('menu-date-hidden');
+        el.menu.hide(el.menu.date);
     }
 });
+
+
 el.menu.artists.button.click(function () {
     if (el.menu.artists.menu.hasClass('hidden')) {
         // show the menu
-        el.menu.artists.menu.removeClass('hidden');
-        el.menu.artists.button.attr({ 'title': 'Hide artists menu.' });
-        el.content.removeClass('menu-artists-hidden');
+        el.menu.show(el.menu.artists);
     }
     else {
         // hide the menu
-        el.menu.artists.menu.addClass('hidden');
-        el.menu.artists.button.attr({ 'title': 'Show artists menu.' });
-        el.content.addClass('menu-artists-hidden');
+        el.menu.hide(el.menu.artists);
     }
 });
 
@@ -117,3 +111,42 @@ el.menu.date.month.click(function () {
 el.main.title.click(function () {
     // TODO navigate to top page
 });
+
+$(window).resize(function () {
+    if (window.innerHeight < pcWidth) {
+        el.menu.hide(el.menu.date);
+        el.menu.hide(el.menu.artists);
+    }
+    else {
+        el.menu.show(el.menu.date);
+        el.menu.show(el.menu.artists);
+    }
+});
+
+
+$(document).ready(async function () {
+    if (window.innerHeight < pcWidth) {
+        el.menu.hide(el.menu.date);
+        el.menu.hide(el.menu.artists);
+    }
+});
+
+// only right and left (date and artists) menu
+el.menu.show = function (menu) {
+    if (window.innerHeight < pcWidth) {
+        el.content.addClass('hidden');
+        el.menu.date.menu.addClass('hidden');
+        el.menu.artists.menu.addClass('hidden');
+    }
+    menu.menu.removeClass('hidden');
+    menu.button.attr({ 'title': 'Hide ' + menu.text + ' menu.' });
+}
+el.menu.hide = function (menu) {
+    if (window.innerHeight < pcWidth) {
+        el.content.removeClass('hidden');
+        el.menu.date.menu.addClass('hidden');
+        el.menu.artists.menu.addClass('hidden');
+    }
+    menu.menu.addClass('hidden');
+    menu.button.attr({ 'title': 'Show ' + menu.text + ' menu.' });
+}

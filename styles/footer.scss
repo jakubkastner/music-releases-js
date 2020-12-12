@@ -22,6 +22,10 @@ footer {
             width: $width_left;
             margin-right: 15px;
 
+            @media screen and (max-width: 770px) {
+                display: none;
+            }
+
             img {
                 max-width: 100%;
                 max-height: 100%;
@@ -32,9 +36,16 @@ footer {
         }
 
         .info {
-            width: 100%;
+            // 56 = icon size + 100 = margin + 15 = padding vedlejších ikon vpravo
+            width: calc(100% - 56px - 100px - 15px);
             margin-left: 50px;
             margin-right: 50px;
+
+            @media screen and (max-width: 770px) {
+                width: calc(100% - 56px - 40px - 15px);
+                margin-left: 20px;
+                margin-right: 20px;
+            }
 
             .button,
             .buttons a {
@@ -55,6 +66,10 @@ footer {
 
             .content {
                 display: flex;
+
+                // TODO responzibilita: dočasné, vyřešit lépe
+                overflow: auto;
+                max-height: 100%;
 
                 &>div {
                     margin-right: 30px;
@@ -78,22 +93,12 @@ footer {
                     @media screen and (max-width: 770px) {
                         margin-right: 5px;
 
-                        &.actions.buttons {
-                            display: none;
-                        }
-
                         &.details {
                             width: calc((100% - 210px - 5px - 5px - 5px)/2);
                         }
                     }
 
                     @media screen and (max-width: 600px) {
-                        margin-right: 5px;
-
-                        &.actions {
-                            display: none;
-                        }
-
                         &.details {
                             width: calc((100% - 5px - 5px)/2);
                         }

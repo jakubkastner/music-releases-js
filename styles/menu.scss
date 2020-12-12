@@ -4,30 +4,70 @@
 @import 'init';
 
 main {
+    @media screen and (max-width: 2*$width_left) {
+        flex-direction: column;
+    }
 
     .menu {
         overflow: auto;
         display: inline-block;
 
-        //resize: horizontal;
-        //overflow: hidden;
-        @media screen and (max-width: $width_pc - 1) {
-            display: none;
+        @media screen and (max-width: 2*$width_left) {
+            display: block;
+            height: 50%;
         }
 
         // date menu
         &.date {
+            @media screen and (max-width: $width_pc - 1) {
+                width: 50%;
+                min-width: 50%;
+
+                &.year {
+                    order: 2;
+                }
+            }
+
+            @media screen and (max-width: 2*$width_left) {
+                width: 100%;
+                min-width: 100%;
+            }
+
             width: $width_left;
             min-width: $width_left;
         }
 
         &.artists {
+            @media screen and (max-width: $width_pc - 1) {
+                width: 100%;
+            }
+
             &.names {
+                @media screen and (max-width: $width_pc - 1) {
+                    width: 70%;
+                    min-width: 70%;
+                }
+
+                @media screen and (max-width: 2*$width_left) {
+                    width: 100%;
+                    min-width: 100%;
+                }
+
                 width: $width_right;
                 min-width: $width_right;
             }
 
             &.first-letter {
+                @media screen and (max-width: $width_pc - 1) {
+                    width: 30%;
+                    min-width: 30%;
+                }
+
+                @media screen and (max-width: 2*$width_left) {
+                    width: 100%;
+                    min-width: 100%;
+                }
+
                 width: $width_artists_letters;
                 min-width: $width_artists_letters;
 
