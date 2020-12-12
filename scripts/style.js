@@ -113,7 +113,7 @@ el.main.title.click(function () {
 });
 
 $(window).resize(function () {
-    if (window.innerHeight < pcWidth) {
+    if (window.innerWidth < pcWidth) {
         el.menu.hide(el.menu.date);
         el.menu.hide(el.menu.artists);
     }
@@ -125,7 +125,7 @@ $(window).resize(function () {
 
 
 $(document).ready(async function () {
-    if (window.innerHeight < pcWidth) {
+    if (window.innerWidth < pcWidth) {
         el.menu.hide(el.menu.date);
         el.menu.hide(el.menu.artists);
     }
@@ -133,7 +133,7 @@ $(document).ready(async function () {
 
 // only right and left (date and artists) menu
 el.menu.show = function (menu) {
-    if (window.innerHeight < pcWidth) {
+    if (window.innerWidth < pcWidth) {
         el.content.addClass('hidden');
         el.menu.date.menu.addClass('hidden');
         el.menu.artists.menu.addClass('hidden');
@@ -142,7 +142,7 @@ el.menu.show = function (menu) {
     menu.button.attr({ 'title': 'Hide ' + menu.text + ' menu.' });
 }
 el.menu.hide = function (menu) {
-    if (window.innerHeight < pcWidth) {
+    if (window.innerWidth < pcWidth) {
         el.content.removeClass('hidden');
         el.menu.date.menu.addClass('hidden');
         el.menu.artists.menu.addClass('hidden');
