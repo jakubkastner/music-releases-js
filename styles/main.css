@@ -158,14 +158,14 @@ a {
   margin-left: auto;
 }
 
-.list.tracklist .track .info .explicit span {
-  border: .1px solid gray;
-  font-size: 15px;
-  padding: 5px;
-}
-
 .list.playlists .update {
   width: 20px;
   margin-left: auto;
+}
+
+.explicit span {
+  border: .1px solid gray;
+  font-size: 15px;
+  padding: 5px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -136,17 +136,23 @@ el.menu.show = function (menu) {
     if (window.innerWidth < pcWidth) {
         el.content.addClass('hidden');
         el.menu.date.menu.addClass('hidden');
+        el.menu.date.button.removeClass('active');
         el.menu.artists.menu.addClass('hidden');
+        el.menu.artists.button.removeClass('active');
     }
     menu.menu.removeClass('hidden');
+    menu.button.addClass('active');
     menu.button.attr({ 'title': 'Hide ' + menu.text + ' menu.' });
 }
 el.menu.hide = function (menu) {
     if (window.innerWidth < pcWidth) {
         el.content.removeClass('hidden');
         el.menu.date.menu.addClass('hidden');
+        el.menu.date.button.removeClass('active');
         el.menu.artists.menu.addClass('hidden');
+        el.menu.artists.button.removeClass('active');
     }
     menu.menu.addClass('hidden');
+    menu.button.removeClass('active');
     menu.button.attr({ 'title': 'Show ' + menu.text + ' menu.' });
 }

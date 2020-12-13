@@ -178,7 +178,7 @@ el.settings.notifications.click(async function () {
     await elCurrentButton.toggleClass('active');
 
     // change icon
-    elCurrentButton.children('i').toggleClass('fa-plus', 'fa-check');
+    elCurrentButton.children('i').toggleClass('fa-times', 'fa-check');
 });
 
 

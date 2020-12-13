@@ -177,15 +177,6 @@ a {
                 .time {
                     margin-left: auto;
                 }
-
-                .explicit {
-                    span {
-                        // TODO změna barvy
-                        border: .1px solid gray;
-                        font-size: 15px;
-                        padding: 5px;
-                    }
-                }
             }
         }
     }
@@ -196,5 +187,14 @@ a {
             width: 20px;
             margin-left: auto;
         }
+    }
+}
+
+.explicit {
+    span {
+        // TODO změna barvy
+        border: .1px solid gray;
+        font-size: 15px;
+        padding: 5px;
     }
 }
