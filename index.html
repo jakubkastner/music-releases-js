@@ -71,6 +71,7 @@
                 <nav class="buttons">
                     <a class="artists active" title="Show releases from the artist I am following"><i class="fas fa-users"></i>Followed artists</a>
                     <a class="saved" title="Show saved releases in my library"><i class="fas fa-heart"></i>In library</a>
+                    <a class="new" title="Show only new releases"><i class="fas fa-bolt"></i>Only new</a>
                 </nav>
             </div>
             <div class="actions icon-text right">
@@ -130,7 +131,7 @@
                             <img src="images/no-cover.png" />
                         </div>
                         <div class="details">
-                            <a class="name icon-text" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer"><i class="fas fa-compact-disc"></i><i class="explicit" title="Explicit lyrics"><span>E</span></i>Release name</a>
+                            <a class="name icon-text" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer"><i class="explicit fas fa-compact-disc" title="Album release"><span  title="Explicit lyrics">E</span></i>Release name</a>
                             <p class="artists icon-text">
                                 <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 1</a>,
                                 <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 2</a> &
@@ -162,24 +163,24 @@
                                     <a class="artist">Artist 2</a> &
                                     <a class="artist">Artist 3</a>
                                 </p>
-                                <a class="time icon-text"><i class="far fa-clock"></i>03:05</a>
+                                <a class="time icon-text right"><i class="far fa-clock"></i>03:05</a>
                                 <a class="explicit" title="Explicit lyrics"><span>E</span></a>
                             </div>
                             <div class="playlists icon-text list hidden">
                                 <a class="update button" title="Update list of playlists"><i class="fas fa-sync-alt"></i></a>
                                 <a class="new" title="Add release to new playlist"><i class="fas fa-plus-circle"></i>Create new playlist</a>
-                                <a class="add new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name</a>
-                                <a class="add" id="playlist-2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1</a>
-                                <a class="add" id="playlist-2UKqPRsvn456sQjt5EmHxpm" title="Add release to playlist 'Playlist 2'"><i class="fas fa-plus"></i>Playlist 2</a>
+                                <a class="add new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                                <a class="add" id="playlist-2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                                <a class="add" id="playlist-2UKqPRsvn456sQjt5EmHxpm" title="Add release to playlist 'Playlist 2'"><i class="fas fa-plus"></i>Playlist 2<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
                             </div>
                         </div>
                     </div>
                     <div class="playlists icon-text content list hidden">
                         <a class="update button" title="Update list of playlists"><i class="fas fa-sync-alt"></i></a>
                         <a class="new" title="Add release to new playlist"><i class="fas fa-plus-circle"></i>Create new playlist</a>
-                        <a class="add new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name</a>
-                        <a class="add" id="playlist-2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1</a>
-                        <a class="add" id="playlist-2UKqPRsvn456sQjt5EmHxpm" title="Add release to playlist 'Playlist 2'"><i class="fas fa-plus"></i>Playlist 2</a>
+                        <a class="add new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                        <a class="add" id="playlist-2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                        <a class="add" id="playlist-2UKqPRsvn456sQjt5EmHxpm" title="Add release to playlist 'Playlist 2'"><i class="fas fa-plus"></i>Playlist 2<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
                     </div>
                 </div>
             </div>
@@ -202,8 +203,8 @@
                 <div class="list box">
                     <h4>Position of added tracks to playlist</h4>
                     <p>Set the position (first or last) of added tracks from release to the playlist.</p>
-                    <a class="playlist-position first" title=""><i class="fas fa-angle-up"></i><span>First position</span></a>
-                    <!--<a class="playlist-position last" title=""><i class="fas fa-angle-down"></i><span>Last position</span></a>-->
+                    <a class="playlist-position first" title=""><i class="fas fa-chevron-up"></i><span>First position</span></a>
+                    <!--<a class="playlist-position last" title=""><i class="fas fa-chevron-down"></i><span>Last position</span></a>-->
                 </div>
                 <div class="playlist-visibility list box">
                     <h4>New playlist visibility</h4>
@@ -221,7 +222,7 @@
                 <h2>About</h2>
                 <div class="about list box">
                     <h4>About application</h4>
-                    <a href="https://jakubkastner.github.io/" target="_blank" rel="noopener noreferrer"><i class="fas fa-copyright"></i>Jakub Kastner 2018-2020</a>
+                    <a href="https://jakubkastner.github.io/" target="_blank" rel="noopener noreferrer"><i class="fas fa-copyright"></i>Jakub Kastner 2018-2021<span class="right"><i class="fab fa-github"></i></span></a>
                 </div>
                 <!-- TODO default playlist -->
             </div>

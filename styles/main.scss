@@ -142,16 +142,18 @@ a {
     }
 }
 
+
 .list {
     a {
         cursor: pointer;
-        display: block;
+        display: flex;
         font-size: 18px;
         padding: 10px;
     }
-}
 
-.list {
+    .right {
+        margin-left: auto;
+    }
 
     // tracklist
     &.tracklist {
@@ -173,10 +175,6 @@ a {
                         padding: 10px 0;
                     }
                 }
-
-                .time {
-                    margin-left: auto;
-                }
             }
         }
     }
@@ -193,8 +191,10 @@ a {
 .explicit {
     span {
         // TODO změna barvy
-        border: .1px solid gray;
-        font-size: 15px;
-        padding: 5px;
+        font-size: 13px;
+        padding-left: 2.5px;
+        font-style: italic;
+        /*border: .1px solid gray;
+        padding: 5px;*/
     }
 }

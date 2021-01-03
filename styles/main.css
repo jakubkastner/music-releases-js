@@ -128,9 +128,15 @@ a {
 
 .list a {
   cursor: pointer;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 18px;
   padding: 10px;
+}
+
+.list .right {
+  margin-left: auto;
 }
 
 .list.tracklist .track .info {
@@ -154,18 +160,16 @@ a {
   padding: 10px 0;
 }
 
-.list.tracklist .track .info .time {
-  margin-left: auto;
-}
-
 .list.playlists .update {
   width: 20px;
   margin-left: auto;
 }
 
 .explicit span {
-  border: .1px solid gray;
-  font-size: 15px;
-  padding: 5px;
+  font-size: 13px;
+  padding-left: 2.5px;
+  font-style: italic;
+  /*border: .1px solid gray;
+        padding: 5px;*/
 }
 /*# sourceMappingURL=main.css.map */
