@@ -1,93 +1,88 @@
 /** INIT
- *  Init some variables - jquery elements, ...
+ *  Init some variables - element selectors, ...
  */
 
+ // TODO remove or delete
 var pcWidth = 1025;
 
-var el = {};
-el.main = {};
-el.settings = {};
-el.menu = {};
-el.menu.artists = {};
-el.menu.date = {};
-el.release = {};
-el.release.buttons = {};
-el.settings = {};
-el.user = {};
-el.user.login = {};
-
-// page body (for light/dark mode)
-el.main.body = $('body');
-
-// all buttons, which can be active
-el.menu.releases = $('.buttons.releases a, .buttons.user .settings');
-el.menu.hover = $('.menu.hover');
-
-// login buttons
-el.main.loginButton = $('.login.button');
-// left login menu
-el.menu.login = $('header .menu.hover');
-
-// page title
-el.main.title = $('.primary .title');
-
-el.menu.artists.text = 'artists',
-el.menu.artists.button = $('.buttons.menu .artists');
-el.menu.artists.menu = $('.menu.artists');
-
-el.menu.date.text = 'date';
-el.menu.date.button = $('.buttons.menu .date');
-el.menu.date.menu = $('.menu.date');
-el.menu.date.year = $('.menu.date .year');
-el.menu.date.month = $('.menu.date .month');
-el.menu.date.months = $('.menu.date .months');
-
-el.menu.filter = $('.buttons.menu .filter');
-el.menu.secondary = $('header .secondary');
-
-// releases tracklist
-el.release.buttons.tracklist = $('.release .button.tracklist');
-el.release.tracklist = $('.release .content.tracklist');
-// releases playlists
-el.release.buttons.playlist = $('.release .button.playlist');
-el.release.playlists = $('.release .content.playlists');
-
-el.release.playlistAddRemove = $('.add, .c-r-p-remove');
-
-
-// settings theme
-el.settings.theme = $('.settings .theme a');
-// settings notifications
-el.settings.notifications = $('.settings .notifications');
-
+var el = {
+    // TODO move to main
+    content: document.querySelectorAll('main .content'),
+    // TODO rename to page
+    main: {
+        // page body (for light/dark mode)
+        body: document.querySelectorAll('body'),
+        // page title
+        title: document.querySelectorAll('.primary .title')
+    },
+    settings: {
+        theme: document.querySelectorAll('.settings .theme a'),
+        notifications: document.querySelectorAll('.settings .notifications')
+    },
+    menu: {
+        hover: document.querySelectorAll('.menu.hover'),
+        filter: document.querySelectorAll('.buttons.menu .filter'),
+        secondary: document.querySelectorAll('header .secondary'),
+        releases: document.querySelectorAll('.buttons.releases a, .buttons.user .settings'),
+        login: {
+            menu: document.querySelectorAll('header .menu.hover'),
+            button: document.querySelectorAll('.login.button')
+        },
+        artists: {
+            text: 'artists',
+            button: document.querySelectorAll('.buttons.menu .artists'),
+            menu: document.querySelectorAll('.menu.artists')
+        },
+        date: {
+            text: 'date',
+            button: document.querySelectorAll('.buttons.menu .date'),
+            menu: document.querySelectorAll('.menu.date'),
+            year: document.querySelectorAll('.menu.date .year'),
+            month: document.querySelectorAll('.menu.date .month'),
+            months: document.querySelectorAll('.menu.date .months')
+        },
+        mobile: {
+            moreButton: document.querySelectorAll('footer .releases.mobile-buttons .more'),
+            hoverMenu: document.querySelectorAll('footer .releases.menu.hover'),
+            settinsButton: document.querySelectorAll('footer .player .menu.round .menu'),
+            settingsMenu: document.querySelectorAll('footer .user.menu.hover')
+        },
+    },
+    release: {
+        // TODO rename to button
+        buttons: {
+            tracklist: document.querySelectorAll('.release .button.tracklist'),
+            playlist: document.querySelectorAll('.release .button.playlist')
+        },
+        tracklist: document.querySelectorAll('.release .content.tracklist'),
+        playlists: document.querySelectorAll('.release .content.playlists'),
+        playlistAddRemove: document.querySelectorAll('.add, .c-r-p-remove')
+    },
+    user: {
+        login: {
+            spotify: document.querySelectorAll('.buttons.login .spotify')
+        },
+        logout: document.querySelectorAll('.buttons.user .logout'),
+        settings: document.querySelectorAll('.buttons.user .settings')
+    }
+};
 
 
 // user
-el.user.login.spotify = $('.buttons.login .spotify');
-el.user.logout = $('.buttons.user .logout');
-el.user.settings = $('.buttons.user .settings');
-
-
-el.content = $('main .content');
-
-var user = {};
-user.spotify = {};
-user.spotify.accessToken = null;
+var user = {
+    spotify: {
+        accessToken: null
+    }
+};
 
 
 // api
-var api = {};
-api.spotify = {};
+var api = {
+    spotify: {}
+};
 
 
 // program
-var program = {};
-program.spotify = {};
-
-
-el.menu.mobile = {
-    moreButton: $('footer .releases.mobile-buttons .more'),
-    hoverMenu: $('footer .releases.menu.hover'),
-    settinsButton: $('footer .player .menu.round .menu'),
-    settingsMenu: $('footer .user.menu.hover')
+var program = {
+    spotify: {}
 };

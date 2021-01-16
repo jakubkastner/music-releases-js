@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
     <link rel="stylesheet" type="text/css" href="styles/colors.css" />
+    <link rel="stylesheet" type="text/css" href="styles/icons.css" />
     <link rel="stylesheet" type="text/css" href="styles/header.css" />
     <link rel="stylesheet" type="text/css" href="styles/menu.css" />
     <link rel="stylesheet" type="text/css" href="styles/body.css" />
@@ -32,9 +33,9 @@
                 <h1 class="mobile-hide">eleases</h1>
             </div>
             <nav class="releases icon-text buttons">
-                <a class="albums active" title="View released albums"><i class="fas fa-compact-disc"></i>Albums</a>
-                <a class="eps" title="View released EPs"><i class="fas fa-record-vinyl"></i>EPs</a>
-                <a class="tracks" title="View released Tracks"><i class="fas fa-music"></i>Tracks</a>
+                <a class="albums active" title="View released albums"><i class="compact-disc"></i>Albums</a>
+                <a class="eps" title="View released EPs"><i class="fas fa-record-vinyl"></i><!--<svg class="ikona"><use xlink:href="#i-compact-disc"></use></svg>-->EPs</a>
+                <a class="tracks" title="View released Tracks"><i class="fas fa-music"></i><!--<img src="icons/compact-disc.svg"/>-->Tracks</a>
                 <a class="remixes" title="View released Remixes"><i class="fas fa-headphones-alt"></i>Remixes</a>
                 <a class="appears" title="View released appears"><i class="fas fa-user-friends"></i>Appears</a>
                 <a class="compilations" title="View released compilations"><i class="fas fa-th-large"></i>Compilations</a>
@@ -131,7 +132,7 @@
                             <img src="images/no-cover.png" />
                         </div>
                         <div class="details">
-                            <a class="name icon-text" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer"><i class="explicit fas fa-compact-disc" title="Album release"><span  title="Explicit lyrics">E</span></i>Release name</a>
+                            <a class="name icon-text" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer"><i class="explicit fas fa-compact-disc" title="Album release"><span title="Explicit lyrics">E</span></i>Release name</a>
                             <p class="artists icon-text">
                                 <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 1</a>,
                                 <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 2</a> &
@@ -215,9 +216,9 @@
                 </div>
                 <div class="playlist-default list box">
                     <h4>Default playlist</h43>
-                    <p>Set your default playlist. It will be at the top of the playlists list for quick addition.</p>
-                    <a class="select" id="playlist-2UKqPRsvnx7sQjt5EmHxpm" title="Select 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1</a>
-                    <a class="select" id="playlist-2UKqPRsvn456sQjt5EmHxpm" title="Select 'Playlist 2'"><i class="fas fa-plus"></i>Playlist 2</a>
+                        <p>Set your default playlist. It will be at the top of the playlists list for quick addition.</p>
+                        <a class="select" id="playlist-2UKqPRsvnx7sQjt5EmHxpm" title="Select 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1</a>
+                        <a class="select" id="playlist-2UKqPRsvn456sQjt5EmHxpm" title="Select 'Playlist 2'"><i class="fas fa-plus"></i>Playlist 2</a>
                 </div>
                 <h2>About</h2>
                 <div class="about list box">
@@ -380,15 +381,22 @@
             </nav>
         </div>
     </footer>
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <svg style="display:none;">
+        <symbol id="i-compact-disc" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-6 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0zM4 8a4 4 0 0 1 4-4 .5.5 0 0 0 0-1 5 5 0 0 0-5 5 .5.5 0 0 0 1 0zm9 0a.5.5 0 1 0-1 0 4 4 0 0 1-4 4 .5.5 0 0 0 0 1 5 5 0 0 0 5-5z" />
+        </symbol>
+        <symbol id="i-compact-disc-2" viewBox="0 0 496 512">
+            <path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zM88 256H56c0-105.9 86.1-192 192-192v32c-88.2 0-160 71.8-160 160zm160 96c-53 0-96-43-96-96s43-96 96-96 96 43 96 96-43 96-96 96zm0-128c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32z"></path>
+        </symbol>
+    </svg>
     <script src="//kit.fontawesome.com/ebe995aabe.js" crossorigin="anonymous"></script>
     <script src="scripts/init.js"></script>
-    <script src="scripts/variables.js"></script>
+    <!--<script src="scripts/variables.js"></script>
     <script src="scripts/functions.js"></script>
     <script src="scripts/style.js"></script>
     <script src="scripts/function.js"></script>
     <script src="scripts/user.js"></script>
-    <script src="scripts/testing.js"></script>
+    <script src="scripts/testing.js"></script>-->
 </body>
 
 </html>

@@ -1,0 +1,15 @@
+$icons: ('compact-disc');
+
+@each $icon in $icons {
+    i.#{$icon} {
+        background-image: url('../icons/'+$icon+'.svg');
+    }
+}
+/*
+i {
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+}*/
