@@ -2,17 +2,15 @@
  * Click to login button.
  * Login or update information about user.
  */
-el.user.login.spotify.click(async function () {
-    // login user (show spotify login page or update information about user)
+el.user.login.spotify.forEach(el => el.addEventListener('click', async function () {
     await user.spotify.login(true);
-});
-
+}));
 
 /**
  * Page loads.
  * Check Spotify login.
  */
-$(document).ready(async function () {
+document.addEventListener('DOMContentLoaded', async function (event) {
     // check spotify login (update access token, get info about user from api, ...)
     await user.spotify.login();
 });
@@ -42,7 +40,7 @@ user.spotify.login = async function (newLogin = false) {
         // access token is ok
         if (!user.spotify.api) {
             // no info about user from api
-            // get info about user from spotify api 
+            // get info about user from spotify api
             await api.spotify.getUser();
             return;
         }
@@ -96,7 +94,7 @@ user.spotify.login = async function (newLogin = false) {
 
     // new login is required
     if (newLogin === true) {
-        // navigate to login page      
+        // navigate to login page
         await user.spotify.newLogin();
         return;
     }
@@ -148,6 +146,7 @@ user.spotify.newLogin = async function (update = false) {
     // navigate to spotify login page
     window.location = url;
 };
+
 
 /**
  * Parse url from spotify login.
@@ -202,6 +201,18 @@ user.spotify.parseUrl = async function () {
     user.spotify.accessTokenExpires = accessTokenExpires;
     return true;
 }
+
+/**
+ * User clicked to logout from Spotify button.
+ */
+el.user.logout.forEach(el => el.addEventListener('click', async function () {
+    // logout spotify user
+    await user.spotify.logout();
+}));
+
+/**
+ * Logout the user from Spotify
+ */
 user.spotify.logout = async function () {
     localStorage.removeItem(program.spotify.const.stateKey);
     localStorage.removeItem(program.spotify.const.accessToken);
@@ -213,35 +224,54 @@ user.spotify.logout = async function () {
     user.spotify.api = null;
 }
 
+
+
 /**
- * Získá informace ze Spotify API o aktuálním uživateli (pomocí userAccess)
+ * Get informations about logged in user from API
  */
 // TODO změnit funkci
 api.spotify.getUser = async function () {
-    // PŘIHLÁŠENÍ -> krok 6
-    console.log("info z api");
-    // získá informace o uživateli
+    // api headers
     api.spotify.options = {
         method: 'GET',
         headers: {
             'Authorization': 'Bearer ' + user.spotify.accessToken
         }
     };
-    var json = await fetchJson(api.spotify.url + '/me', api.spotify.options, 'Failed to login, please try it again.');
+    // get json with user info from api
+    var json = await api.fetchJson(api.spotify.url + '/me', api.spotify.options, 'Failed to login, please try it again.');
 
     if (json == null) {
-        // chyba získání informací
+        // api error
         /*localStorage.removeItem(USER_ACCESS);
         userAccess = null;*/
         console.log("json api null");
         return;
     }
-    // úspěšně získané informace
+    // succesfully get user info
     //console.log(json);
     //user.spotify = json;
     //user.spotify = { ...user.spotify, ...json };
     user.spotify.api = json;
-    console.log(user.spotify);
+
+    // save user info to local database
+    // save user info to local database
+    if (!window.indexedDB) {
+        console.log("Your browser does not support IndexedDB");
+        return;
+    }
+    json = JSON.stringify(json);
+    json = JSON.parse(json);
+    const dbName = "users2";
+    var request = indexedDB.open(dbName, 3);
+
+    request.onupgradeneeded = async function (event) {
+        var db = event.target.result;
+        var objStore = db.createObjectStore("users", { autoIncrement: true });
+        await asyncForEach(json, async user => {
+            objStore.add(user.id);
+        });
+    };
 
     // zobrazí informace a skryje/zobrazí příslušné prvky
     /*$('#login-button').remove();
@@ -261,7 +291,7 @@ api.spotify.getUser = async function () {
     }
     else {
         // <i class="fab fa-spotify"></i>
-        // <i class="fas fa-user"></i>    
+        // <i class="fas fa-user"></i>
         elementUserIcon.removeClass('fab');
         elementUserIcon.addClass('fas');
         elementUserIcon.removeClass('fa-spotify');
@@ -295,7 +325,44 @@ api.spotify.getUser = async function () {
     hideLoading('Select which releases you want to display.');*/
 }
 
-el.user.logout.click(async function () {
-    // logout spotify user
-    await user.spotify.logout();
-}); 
+
+//Checking for IndexedDB support
+/*
+if (!window.indexedDB) {
+    console.log("Your browser does not support IndexedDB");
+}
+else {
+    const dbName = "users";
+
+    var request = indexedDB.open(dbName, 2);
+
+    request.onerror = function (event) {
+        // Handle errors.
+    };
+    request.onupgradeneeded = function (event) {
+        var db = event.target.result;
+
+        // Create an objectStore to hold information about our customers. We're
+        // going to use "ssn" as our key path because it's guaranteed to be
+        // unique - or at least that's what I was told during the kickoff meeting.
+        var objectStore = db.createObjectStore("user", { keyPath: "id" });
+
+        // Create an index to search customers by name. We may have duplicates
+        // so we can't use a unique index.
+        objectStore.createIndex("id", "id", { unique: true });
+
+        // Create an index to search customers by email. We want to ensure that
+        // no two customers have the same email, so use a unique index.
+        objectStore.createIndex("email", "email", { unique: true });
+
+        // Use transaction oncomplete to make sure the objectStore creation is
+        // finished before adding data into it.
+        objectStore.transaction.oncomplete = function (event) {
+            // Store values in the newly created objectStore.
+            var customerObjectStore = db.transaction("users", "readwrite").objectStore("user");
+            customerData.forEach(function (customer) {
+                customerObjectStore.add(customer);
+            });
+        };
+    };
+}*/

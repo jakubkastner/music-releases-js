@@ -1,71 +1,39 @@
-
 /**
- * Vygeneruje náhodný string o zadané délce.
- * @param {*} length délka vygenerovaného stringu
- * @returns vygenerovaný náhodný string
- */
-program.generateRandomString = async function (length) {
-    var text = '';
-    var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-
-    for (var i = 0; i < length; i++) {
-        text += possible.charAt(Math.floor(Math.random() * possible.length));
-    }
-    return text;
-};
-
-/**
- * Získá parametry z aktuální url adresy.
- * @returns objekt získaných parametrů aktuální url adresy
- */
-program.getHashParams = async function () {
-    var hashParams = {};
-    var e,
-        r = /([^&;=]+)=?([^&;]*)/g, q = window.location.hash.substring(1);
-    while (e = r.exec(q)) {
-        hashParams[e[1]] = decodeURIComponent(e[2]);
-    }
-    return hashParams;
-}
-
-
-/**
- * Načte JSON pomocí Spotify api.
- * @param {*} url url dotazu api
- * @param {*} errorText text, pokud se nezdaří získání json
+ * Load JSON from api.
+ * @param {*} url api url request
+ * @param {*} errorText error text
  * @returns
- *  json = úspěšně se podařilo získat data za api /
- *  null = chyba dotazu
+ *  json = successfully get data from api
+ *  null = request error
  */
-async function fetchJson(url, options, errorText) {
-    // odpověď požadavku
-    // uloží hlavičku pro dotazy api
+api.fetchJson = async function (url, options, errorText) {
+    // fetch the api request
     let response = await fetch(url, options);
 
-    // získaný json
+    // obtained json from api result
     let json = await response.json();
 
     console.log(json);
     if (!json) {
-        // nepodařilo se získat json
+        // failed to get json
         /*hideLoading(elementError.text() + '\n' + errorText + '\nCan not get JSON from Spotify API');*/
         console.log('fetch error - from url: ' + url);
         return null;
     }
 
     if (json.error) {
-        // chyba získávání dat
+        // failed to get data from json
         if (json.error.status === 429) {
-            // api - moc dotazů
+            // api - too many queries
             return await fetchJson(url, errorText);
             // TODO UPOZORNĚNÍ -> HROZÍ NEKONEČNÁ SMYČKA
         }
         if (json.error.status === 401) {
-            // vypršela platnost access tokenu
-            // TODO získat nový access token a uložit prozatím získan data
-            
+            // the access token has expired
+            // TODO získat nový access token a uložit prozatím získaná data
+
             await user.spotify.newLogin(true);
-            console.log("expires access token")
+            console.log("access token expires")
             return null;
             localStorage.removeItem(USER_ACCESS);
             userAccess = null;
@@ -85,7 +53,7 @@ async function fetchJson(url, options, errorText) {
             return await fetchJson(url, errorText);
             // UPOZORNĚNÍ -> HROZÍ NEKONEČNÁ SMYČKA
         }
-        // jiná chyba
+        // another error
         //hideLoading(elementError.text() + '\n' + errorText + '\n' + json.error.message);
         console.log('fetch error - from spotify: ' + json.error.message);
         console.log(json.error);
