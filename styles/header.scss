@@ -74,7 +74,8 @@ header {
         position: relative;
 
         // login button
-        .login.button {
+        .login.button,
+        .user.button {
             display: inline-flex;
             min-width: 70px;
         }

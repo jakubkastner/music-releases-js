@@ -156,7 +156,8 @@ $color_text_button: rgb(26, 178, 107);
             }
         }
 
-        .login.button.hover {
+        .login.button.hover,
+        .user.button.hover {
             background-color: $color_4;
         }
 
@@ -171,7 +172,8 @@ $color_text_button: rgb(26, 178, 107);
 
     // main
     main {
-        background-color: $color_3;
+        background-color: $color_1;
+        //background-color: $color_3;
         color: $color_text;
 
         a {
@@ -182,7 +184,7 @@ $color_text_button: rgb(26, 178, 107);
 
             &.date.year,
             &.artists.first-letter {
-                background-color: $color_1;
+                //background-color: $color_1;
 
                 a:hover,
                 a.active {
@@ -193,7 +195,7 @@ $color_text_button: rgb(26, 178, 107);
 
             &.date.month,
             &.artists.names {
-                background-color: $color_2;
+                //background-color: $color_2;
 
                 a:hover,
                 a.active {
@@ -220,7 +222,7 @@ $color_text_button: rgb(26, 178, 107);
         }
 
         .box {
-            background-color: $color_1;
+            background-color: $color_2;
         }
     }
 
@@ -292,7 +294,7 @@ $color_text_button: rgb(26, 178, 107);
             /*&:hover {
                 & ~ header .user .login {
                     background-color: $color_5;
-        
+
                     * {
                         background-color: $color_5;
                     }

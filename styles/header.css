@@ -65,7 +65,8 @@ header .user {
   position: relative;
 }
 
-header .user .login.button {
+header .user .login.button,
+header .user .user.button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;

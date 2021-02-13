@@ -25,8 +25,12 @@ var el = {
         secondary: document.querySelectorAll('header .secondary'),
         releases: document.querySelectorAll('.buttons.releases a, .buttons.user .settings'),
         login: {
-            menu: document.querySelectorAll('header .menu.hover'),
+            menu: document.querySelectorAll('.login.menu.hover'),
             button: document.querySelectorAll('.login.button')
+        },
+        user: {
+            menu: document.querySelectorAll('.user.menu.hover'),
+            button: document.querySelectorAll('.user.button')
         },
         artists: {
             text: 'artists',

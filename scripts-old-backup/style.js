@@ -3,17 +3,34 @@
  */
 
 /**
- * Hover login button. Change background color.
+ * Hover item in hover menu. Add class actiove to main menu
  */
-el.menu.login
-    .mouseover(function () {
-        el.main.loginButton.addClass('hover');
-    })
-    .mouseout(function () {
-        if (!el.menu.login.hasClass('show')) {
-            el.main.loginButton.removeClass('hover');
-        }
+// TODO možná není potřeba, zkusit udělat přes javascript
+/*
+nový pokus:
+el.menu.hover.forEach(function (elem) {
+    elem.addEventListener('mouseover', async function () {
+        elem.classList.add('active');
     });
+    elem.addEventListener('mouseout', async function (ee) {
+        console.log(ee);
+        elem.classList.remove('active');
+    });
+});
+
+původní verze
+/**
+ * Hover login button. Change background color.
+ *//*
+el.menu.login
+.mouseover(function () {
+    el.main.loginButton.addClass('hover');
+})
+.mouseout(function () {
+    if (!el.menu.login.hasClass('show')) {
+        el.main.loginButton.removeClass('hover');
+    }
+});*/
 
 /**
  * Click to login button. Show/hide login options.
