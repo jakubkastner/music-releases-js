@@ -1,8 +1,8 @@
 /** INIT
- *  Init sass varibles, ...
+ *  Init sass varibles
  */
 /** COLORS
- *  Colors for dark/light theme.
+ *  Colors for themes (light, dark, color).
  */
 @media (prefers-color-scheme: light) {
   body {
@@ -3986,9 +3986,6 @@
 /** MAIN
  *  Main styles - fonts, margin, ...
  */
-/** INIT
- *  Init sass varibles, ...
- */
 * {
   margin: 0;
   text-decoration: none;
@@ -3998,10 +3995,6 @@
     }*/
   word-wrap: everywhere;
   overflow-wrap: anywhere;
-}
-
-body {
-  overflow: hidden;
 }
 
 main {
@@ -4161,9 +4154,6 @@ a {
 /** BODY
  *  Main page content
  */
-/** INIT
- *  Init sass varibles, ...
- */
 body main {
   height: calc(100vh - 4px - 44px - 44px - 100px);
 }
@@ -4271,9 +4261,6 @@ body.classic main .settings .list h4 {
 
 /** FOOTER
  *  Page footer
- */
-/** INIT
- *  Init sass varibles, ...
  */
 footer {
   display: block;
@@ -4619,9 +4606,6 @@ footer .mobile-buttons.releases a * {
  *  Header menu
  *  Page name
  */
-/** INIT
- *  Init sass varibles, ...
- */
 header div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4767,9 +4751,6 @@ header .secondary .actions {
 /** DATE MENU
  *  Left date menu.
  */
-/** INIT
- *  Init sass varibles, ...
- */
 @media screen and (max-width: 260px) {
   main {
     -webkit-box-orient: vertical;
@@ -4885,9 +4866,10 @@ main .menu .last {
   display: block;
 }
 
-/** TESTING
- *  Testing styles, only for development
- */
+body {
+  overflow: hidden;
+}
+
 .hidden {
   display: none !important;
 }
@@ -4896,6 +4878,9 @@ main .menu .last {
   display: none !important;
 }
 
+/** TESTING
+ *  Testing styles, only for development
+ */
 /* width */
 ::-webkit-scrollbar {
   width: 10px;

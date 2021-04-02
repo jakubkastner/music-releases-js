@@ -1,7 +1,6 @@
 /** FOOTER
  *  Page footer
  */
-@import '../main/init';
 
 $mobile_buttons_width_min: 80px;
 
@@ -14,10 +13,12 @@ footer {
         padding-right: 10px;
     }*/
 
+    // player
     .player {
         display: flex;
         height: $height_footer_player;
 
+        // cover of the current track
         .image {
             width: $width_left;
             margin-right: 15px;
@@ -35,6 +36,7 @@ footer {
             }
         }
 
+        // information about current track
         .info {
             // 56 = icon size + 100 = margin + 15 = padding vedlejších ikon vpravo
             width: calc(100% - 56px - 100px - 15px);

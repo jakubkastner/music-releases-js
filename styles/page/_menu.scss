@@ -1,8 +1,6 @@
 /** DATE MENU
  *  Left date menu.
  */
-@import '../main/init';
-
 main {
     @media screen and (max-width: 2*$width_left) {
         flex-direction: column;

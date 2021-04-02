@@ -1,7 +1,6 @@
 /** MAIN
  *  Main styles - fonts, margin, ...
  */
-@import 'init';
 
 * {
     margin: 0;
@@ -13,11 +12,6 @@
 
     word-wrap: everywhere;
     overflow-wrap: anywhere;
-}
-
-body {
-    // TODO spuštění: odkomentovat
-    overflow: hidden;
 }
 
 main {

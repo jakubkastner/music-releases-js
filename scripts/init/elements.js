@@ -1,11 +1,14 @@
 /** INIT
- *  Init some variables - element selectors, ...
+ *  Init elements selectors.
  */
 
- // TODO remove or delete
+// TODO remove or delete
 var pcWidth = 1025;
 
-/*export const elements */ var el = {
+/*export const elements */
+
+// TODO rename to elements
+const el = {
     // TODO move to main
     content: document.querySelectorAll('main .content'),
     // TODO rename to page
@@ -69,24 +72,4 @@ var pcWidth = 1025;
         logout: document.querySelectorAll('.buttons.user .logout'),
         settings: document.querySelectorAll('.buttons.user .settings')
     }
-};
-
-
-// user
-var user = {
-    spotify: {
-        accessToken: null
-    }
-};
-
-
-// api
-var api = {
-    spotify: {}
-};
-
-
-// program
-var program = {
-    spotify: {}
 };

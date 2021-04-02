@@ -1,5 +1,5 @@
 /**
- * Click to login button.
+ * Click to Spotify login button.
  * Login or update information about user.
  */
 el.user.login.spotify.forEach(el => el.addEventListener('click', async function () {
