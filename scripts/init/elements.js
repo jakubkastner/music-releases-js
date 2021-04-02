@@ -5,7 +5,9 @@
 // TODO remove or delete
 var pcWidth = 1025;
 
+// TODO načítání javascriptových souborů
 /*export const elements */
+/*a pak jinde import {elements} from '../init/elements'  */
 
 // TODO rename to elements
 const el = {

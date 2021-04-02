@@ -5,7 +5,6 @@ var user = {
     }
 };
 
-// api
 var api = {};
 
 // my program
