@@ -5,7 +5,7 @@
  // TODO remove or delete
 var pcWidth = 1025;
 
-var el = {
+/*export const elements */ var el = {
     // TODO move to main
     content: document.querySelectorAll('main .content'),
     // TODO rename to page
