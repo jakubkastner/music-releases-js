@@ -1,3 +1,6 @@
+/** INIT
+ *  Init sass varibles, ...
+ */
 /** COLORS
  *  Colors for dark/light theme.
  */
@@ -3979,4 +3982,1014 @@
   background: -webkit-gradient(linear, left top, right top, from(#1ab26b), to(#1ab26b));
   background: linear-gradient(to right, #1ab26b, #1ab26b);
 }
-/*# sourceMappingURL=colors.css.map */
+
+/** MAIN
+ *  Main styles - fonts, margin, ...
+ */
+/** INIT
+ *  Init sass varibles, ...
+ */
+* {
+  margin: 0;
+  text-decoration: none;
+  font-family: "DM Sans", "Pontano Sans", sans-serif;
+  /*:hover {
+        transition: 0.5s;
+    }*/
+  word-wrap: everywhere;
+  overflow-wrap: anywhere;
+}
+
+body {
+  overflow: hidden;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1025px) {
+  .pc-hide {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mobile-hide {
+    display: none !important;
+  }
+}
+
+.left {
+  margin-left: 15px;
+  padding-left: 0;
+}
+
+.right {
+  margin-right: 15px;
+  padding-right: 0;
+}
+
+.buttons {
+  padding-bottom: 0;
+  /*&>* {
+        padding: $button_padding;
+        margin: auto 0 0 0;
+    }*/
+}
+
+.button,
+.buttons > * {
+  cursor: pointer;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.menu.hover {
+  display: none;
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  right: 0;
+}
+
+.menu.hover.show {
+  display: block;
+}
+
+.menu.hover.buttons > * {
+  display: block;
+  margin-top: 0;
+}
+
+.menu.hover > * {
+  display: block;
+}
+
+.icon-text i {
+  margin-right: 5px;
+}
+
+.page-name {
+  cursor: context-menu;
+  padding: 10px 10px 5px 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-weight: 800;
+}
+
+.page-name .favicon {
+  background: transparent;
+  height: 34px;
+  margin-left: 5px;
+}
+
+.page-name:hover > .favicon {
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+.page-name h1 {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1399px) {
+  .page-name .mobile-hide {
+    display: none;
+  }
+}
+
+.list a {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.list .right {
+  margin-left: auto;
+}
+
+.list.tracklist .track .info {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.list.tracklist .track .info > * {
+  margin-right: 5px;
+}
+
+.list.tracklist .track .info .artists {
+  display: inline-block;
+  margin: auto 0;
+  padding: 0 10px;
+}
+
+.list.tracklist .track .info .artists .artist {
+  display: inline;
+  padding: 10px 0;
+}
+
+.list.playlists .update {
+  width: 20px;
+  margin-left: auto;
+}
+
+.explicit span {
+  font-size: 13px;
+  padding-left: 2.5px;
+  font-style: italic;
+  /*border: .1px solid gray;
+        padding: 5px;*/
+}
+
+/** BODY
+ *  Main page content
+ */
+/** INIT
+ *  Init sass varibles, ...
+ */
+body main {
+  height: calc(100vh - 4px - 44px - 44px - 100px);
+}
+
+@media screen and (max-width: 1024px) {
+  body main {
+    height: calc(100vh - 4px - 100px - 60px);
+  }
+}
+
+body main > * {
+  height: 100%;
+}
+
+body main .content {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+body.classic main .box {
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+body.classic main > div {
+  height: 100%;
+  overflow: auto;
+}
+
+body.classic main > div > div {
+  padding: 30px;
+}
+
+body.classic main .releases .release > * {
+  width: 100%;
+  padding: 0;
+}
+
+body.classic main .releases .release .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body.classic main .releases .release .info .image {
+  margin-right: 30px;
+  width: 150px;
+  height: 150px;
+}
+
+body.classic main .releases .release .info .image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body.classic main .releases .release .info .details {
+  width: calc(100% - 150px - 30px);
+}
+
+body.classic main .releases .release .info .details .name,
+body.classic main .releases .release .info .details .artists,
+body.classic main .releases .release .info .details .date {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+body.classic main .releases .release .info .details .tracklist.button {
+  padding-left: 0;
+}
+
+body.classic main .releases .release .info .details .tracklist span {
+  font-size: 70%;
+}
+
+body.classic main .releases .release .info .details .name {
+  font-size: 24px;
+}
+
+body.classic main .releases .release .info .details .artists {
+  font-size: 20px;
+}
+
+body.classic main .releases .release .info .details .date {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+body.classic main .releases .release .info .details .button {
+  font-size: 30px;
+  margin-right: 5px;
+  margin-bottom: 0;
+  padding: 6px;
+}
+
+body.classic main .releases .release .content {
+  margin-top: 30px;
+  max-height: 40vh;
+}
+
+body.classic main .settings .list h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/** FOOTER
+ *  Page footer
+ */
+/** INIT
+ *  Init sass varibles, ...
+ */
+footer {
+  display: block;
+  /** {
+        padding-left: 10px;
+        padding-right: 10px;
+    }*/
+}
+
+footer .player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+}
+
+footer .player .image {
+  width: 130px;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 770px) {
+  footer .player .image {
+    display: none;
+  }
+}
+
+footer .player .image img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  /*position: relative;
+                top: -20px;*/
+}
+
+footer .player .info {
+  width: calc(100% - 56px - 100px - 15px);
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+@media screen and (max-width: 770px) {
+  footer .player .info {
+    width: calc(100% - 56px - 40px - 15px);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+footer .player .info .button,
+footer .player .info .buttons a {
+  font-size: 24px;
+  margin-right: 5px;
+  margin-bottom: 0;
+  padding: 6px;
+}
+
+footer .player .info > .time {
+  width: 100%;
+  height: 8px;
+  border-radius: 8px;
+  position: relative;
+  top: -4px;
+}
+
+footer .player .info .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+  max-height: 100%;
+}
+
+footer .player .info .content > div {
+  margin-right: 30px;
+  /*width: 25%;*/
+}
+
+footer .player .info .content > div.actions.buttons {
+  margin-right: 0;
+  margin-left: auto;
+  width: 96px;
+}
+
+footer .player .info .content > div.actions {
+  width: 210px;
+}
+
+footer .player .info .content > div.details {
+  width: calc((100% - 210px - 96px - 30px - 30px - 30px)/2);
+}
+
+@media screen and (max-width: 770px) {
+  footer .player .info .content > div {
+    margin-right: 5px;
+  }
+  footer .player .info .content > div.details {
+    width: calc((100% - 210px - 5px - 5px - 5px)/2);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer .player .info .content > div.details {
+    width: calc((100% - 5px - 5px)/2);
+  }
+}
+
+footer .player .info .content .time,
+footer .player .info .content .release,
+footer .player .info .content .date {
+  font-size: 19x;
+  margin-top: 10px;
+}
+
+footer .player .info .content .details a {
+  display: block;
+}
+
+footer .player .info .content .details .track,
+footer .player .info .content .details .artists {
+  font-size: 20px;
+  padding: 6px 0;
+}
+
+footer .player .info .content .details .artists,
+footer .player .info .content .details .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .player .info .content .details .artists {
+  display: inline-block;
+}
+
+footer .player .info .content .details .artists a {
+  display: inline;
+}
+
+footer .menu.round {
+  display: block;
+}
+
+footer .menu.round.pc-hide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0;
+}
+
+footer .menu.round.pc-hide a:first-of-type {
+  margin-left: auto;
+}
+
+footer .menu.round.pc-hide.buttons > * {
+  top: -65px;
+}
+
+footer .menu.round.buttons > * {
+  font-size: 24px;
+  border-radius: 100%;
+  width: 56px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: -28px;
+}
+
+footer .menu.round.buttons > * i {
+  margin: auto;
+}
+
+footer .menu.hover {
+  overflow: auto;
+}
+
+footer .menu.hover.releases {
+  min-width: 160px;
+  width: 160px;
+  bottom: 60px;
+  max-height: calc(100vh - 60px);
+}
+
+@media screen and (max-width: 160px) {
+  footer .menu.hover.releases {
+    width: 100%;
+    min-width: 100%;
+    word-wrap: anywhere;
+  }
+}
+
+footer .menu.hover.user {
+  min-width: 200px;
+  width: 200px;
+  bottom: calc(100px + 60px);
+  max-height: calc(100vh - 100px - 60px);
+}
+
+@media screen and (max-width: 200px) {
+  footer .menu.hover.user {
+    width: 100%;
+    min-width: 100%;
+    word-wrap: anywhere;
+  }
+}
+
+@media screen and (max-width: 60px) {
+  footer .menu.hover span {
+    display: none;
+  }
+}
+
+footer .menu.hover .button,
+footer .menu.hover.buttons > * {
+  padding: 10px;
+}
+
+footer .mobile-buttons.releases {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+}
+
+footer .mobile-buttons.releases p {
+  font-size: 13px;
+}
+
+footer .mobile-buttons.releases a {
+  display: block;
+  width: calc(100% / 7);
+  min-width: 80px;
+  padding: 10px 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 80px) {
+  footer .mobile-buttons.releases a {
+    width: 100%;
+    min-width: 100%;
+    word-wrap: anywhere;
+  }
+}
+
+footer .mobile-buttons.releases a * {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .releases.mobile-buttons .more {
+    display: none;
+  }
+  footer .releases.menu.hover a {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 559px) {
+  footer .releases.mobile-buttons .more {
+    display: block;
+  }
+  footer .releases.mobile-buttons .appears {
+    display: none;
+  }
+  footer .releases.mobile-buttons .compilations {
+    display: none;
+  }
+  footer .releases.mobile-buttons a {
+    width: calc(100% / 6);
+  }
+  footer .releases.menu.hover .appears {
+    display: block;
+  }
+  footer .releases.menu.hover .compilations {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  footer .releases.mobile-buttons .remixes {
+    display: none;
+  }
+  footer .releases.mobile-buttons.mobile-buttons a {
+    width: calc(100% / 5);
+  }
+  footer .releases.menu.hover .remixes {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  footer .releases.mobile-buttons .podcasts {
+    display: none;
+  }
+  footer .releases.mobile-buttons.mobile-buttons a {
+    width: calc(100% / 4);
+  }
+  footer .releases.menu.hover .podcasts {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  footer .releases.mobile-buttons .eps {
+    display: none;
+  }
+  footer .releases.mobile-buttons.mobile-buttons a {
+    width: calc(100% / 3);
+  }
+  footer .releases.menu.hover .eps {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 239px) {
+  footer .releases.mobile-buttons .tracks {
+    display: none;
+  }
+  footer .releases.mobile-buttons.mobile-buttons a {
+    width: calc(100% / 2);
+  }
+  footer .releases.menu.hover .tracks {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 159px) {
+  footer .releases.mobile-buttons .albums {
+    display: none;
+  }
+  footer .releases.mobile-buttons.mobile-buttons a {
+    width: 100%;
+  }
+  footer .releases.menu.hover .albums {
+    display: block;
+  }
+}
+
+/** HEADER
+ *  Header menu
+ *  Page name
+ */
+/** INIT
+ *  Init sass varibles, ...
+ */
+header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+}
+
+header .loader {
+  width: 100%;
+  height: 4px;
+  margin: auto;
+  border-radius: 4px;
+  background-size: 20%;
+  background-repeat: repeat-y;
+  background-position: -25% 0;
+}
+
+header .loader.active {
+  -webkit-animation: loader 3s ease-in-out infinite;
+          animation: loader 3s ease-in-out infinite;
+}
+
+header .title {
+  text-align: left;
+  padding: 10px;
+}
+
+header .left {
+  padding-left: 0;
+}
+
+header .button,
+header .buttons > * {
+  padding: 10px;
+}
+
+header .primary {
+  height: 44px;
+}
+
+header .primary > * {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+header .primary .releases .button,
+header .primary .releases.buttons > * {
+  border-radius: 300px;
+}
+
+header .menu.show-hide {
+  width: calc(130px + 130px - 15px);
+}
+
+header .user {
+  margin-left: auto;
+  display: inline;
+  position: relative;
+}
+
+header .user .login.button,
+header .user .user.button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 70px;
+}
+
+header .user:hover .menu.hover {
+  display: block;
+}
+
+header .user:hover .menu.hover.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1399px) {
+  header .user .mobile-hide {
+    display: none;
+  }
+  header .user .menu.hover {
+    width: 150px;
+  }
+}
+
+header .secondary {
+  height: 44px;
+}
+
+header .secondary > * {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+header .secondary nav {
+  text-align: left;
+}
+
+header .secondary .actions {
+  margin-left: auto;
+}
+
+@-webkit-keyframes loader {
+  50% {
+    background-size: 80%;
+  }
+  100% {
+    background-position: 125% 0;
+  }
+}
+
+@keyframes loader {
+  50% {
+    background-size: 80%;
+  }
+  100% {
+    background-position: 125% 0;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/** DATE MENU
+ *  Left date menu.
+ */
+/** INIT
+ *  Init sass varibles, ...
+ */
+@media screen and (max-width: 260px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main .menu {
+  overflow: auto;
+  display: inline-block;
+  /*.year {
+            padding-left: 60px;
+        }*/
+}
+
+@media screen and (max-width: 260px) {
+  main .menu {
+    display: block;
+    height: 50%;
+  }
+}
+
+main .menu.date {
+  width: 130px;
+  min-width: 130px;
+}
+
+@media screen and (max-width: 1024px) {
+  main .menu.date {
+    width: 50%;
+    min-width: 50%;
+  }
+  main .menu.date.year {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media screen and (max-width: 260px) {
+  main .menu.date {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main .menu.artists {
+    width: 100%;
+  }
+}
+
+main .menu.artists.names {
+  width: 200px;
+  min-width: 200px;
+}
+
+@media screen and (max-width: 1024px) {
+  main .menu.artists.names {
+    width: 70%;
+    min-width: 70%;
+  }
+}
+
+@media screen and (max-width: 260px) {
+  main .menu.artists.names {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+main .menu.artists.first-letter {
+  width: 75px;
+  min-width: 75px;
+}
+
+@media screen and (max-width: 1024px) {
+  main .menu.artists.first-letter {
+    width: 30%;
+    min-width: 30%;
+  }
+}
+
+@media screen and (max-width: 260px) {
+  main .menu.artists.first-letter {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+main .menu.artists.first-letter a {
+  margin: auto;
+}
+
+main .menu:hover {
+  overflow: auto;
+}
+
+main .menu a {
+  margin-top: 0px;
+  display: block;
+}
+
+main .menu .button,
+main .menu.buttons > * {
+  padding: 10px 10px 10px 15px;
+}
+
+main .menu .last {
+  height: 50px;
+  display: block;
+}
+
+/** TESTING
+ *  Testing styles, only for development
+ */
+.hidden {
+  display: none !important;
+}
+
+.skrejto {
+  display: none !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #242424;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #565656;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6a6a6a;
+}
+
+/*$loader: (
+    "size": (
+        "width": 100%,
+        "height": 4px),
+    "margin": (
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0),
+    "padding": (
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0)
+    );
+
+// page name
+$in-header: (
+    "size": (
+        "width": 100%,
+        "height": 0),
+    "margin": (
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0),
+    "padding": (
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0)
+    );
+
+$test: (
+    "size": (
+        "width": 100%,
+        "height": 0),
+    "margin": (
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0),
+    "padding": (
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0)
+    );
+
+@mixin getValuesFromMap($map) {
+    // size
+    width: mapGet($map, "size", "width");
+    height: mapGet($map, "size", "height");
+    // margin
+    margin-top: mapGet($map, "margin", "top");
+    margin-right: mapGet($map, "margin", "right");
+    margin-bottom: mapGet($map, "margin", "bottom");
+    margin-left: mapGet($map, "margin", "left");
+    // padding
+    padding-top: mapGet($map, "padding", "top");
+    padding-right: mapGet($map, "padding", "right");
+    padding-bottom: mapGet($map, "padding", "bottom");
+    padding-left: mapGet($map, "padding", "left");
+}
+
+@function mapGet($map, $list...) {
+    @each $key in $list {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+}
+
+@function getFullHeight($element) {
+    $size: mapGet($element, "size", "height") + mapGet($element, "margin", "top") + mapGet($element, "margin", "bottom") + mapGet($element, "padding", "top") + mapGet($element, "padding", "bottom");
+    @return $size;
+}*/
+/*# sourceMappingURL=style.css.map */
