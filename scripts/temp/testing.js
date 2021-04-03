@@ -9,7 +9,7 @@
 
 /*
 el.menu.add = function (newMenu) {
-    const toogleActiveMenu = function() {
+    const toggleActiveMenu = function() {
         newMenu.menu.forEach(menu => menu.classList.toggle('active'));
     }
 

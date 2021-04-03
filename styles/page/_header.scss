@@ -81,7 +81,7 @@ header {
 
         // hover user menu
         &:hover {
-            .menu.hover {
+            .menu.hover.items {
                 display: block;
                 &.hidden {
                     display: none;
@@ -95,7 +95,7 @@ header {
                 display: none;
             }
 
-            .menu.hover {
+            .menu.hover.items {
                 width: 150px;
             }
         }

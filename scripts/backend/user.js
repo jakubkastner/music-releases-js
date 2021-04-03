@@ -136,13 +136,6 @@ user.spotify.newLogin = async function (update = false) {
     url += '&redirect_uri=' + encodeURIComponent(api.spotify.redirect);
     url += '&state=' + encodeURIComponent(stateValue);
 
-    // TODO přihlašovací okno: ??? možná otevřít jako okno viz https://medium.com/@leemartin/creating-a-simple-spotify-authorization-popup-in-javascript-7202ce86a02f
-    /*popup = window.open(
-        loginUrl,
-        'Login with Spotify',
-        'width=800,height=600'
-      )*/
-
     // navigate to spotify login page
     window.location = url;
 };
@@ -324,45 +317,3 @@ api.spotify.getUser = async function () {
     await getDevices();
     hideLoading('Select which releases you want to display.');*/
 }
-
-
-//Checking for IndexedDB support
-/*
-if (!window.indexedDB) {
-    console.log("Your browser does not support IndexedDB");
-}
-else {
-    const dbName = "users";
-
-    var request = indexedDB.open(dbName, 2);
-
-    request.onerror = function (event) {
-        // Handle errors.
-    };
-    request.onupgradeneeded = function (event) {
-        var db = event.target.result;
-
-        // Create an objectStore to hold information about our customers. We're
-        // going to use "ssn" as our key path because it's guaranteed to be
-        // unique - or at least that's what I was told during the kickoff meeting.
-        var objectStore = db.createObjectStore("user", { keyPath: "id" });
-
-        // Create an index to search customers by name. We may have duplicates
-        // so we can't use a unique index.
-        objectStore.createIndex("id", "id", { unique: true });
-
-        // Create an index to search customers by email. We want to ensure that
-        // no two customers have the same email, so use a unique index.
-        objectStore.createIndex("email", "email", { unique: true });
-
-        // Use transaction oncomplete to make sure the objectStore creation is
-        // finished before adding data into it.
-        objectStore.transaction.oncomplete = function (event) {
-            // Store values in the newly created objectStore.
-            var customerObjectStore = db.transaction("users", "readwrite").objectStore("user");
-            customerData.forEach(function (customer) {
-                customerObjectStore.add(customer);
-            });
-        };
-    };
-}*/

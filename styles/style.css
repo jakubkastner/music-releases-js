@@ -196,14 +196,14 @@
   body header .primary .buttons > *.active {
     background-color: white;
   }
-  body header .login.button.hover,
-  body header .user.button.hover {
+  body header .login.button.hover.items,
+  body header .user.button.hover.items {
     background-color: #fff5f5;
   }
-  body header .menu.hover {
+  body header .menu.hover.items {
     background-color: #fff5f5;
   }
-  body header .menu.hover a:hover {
+  body header .menu.hover.items a:hover {
     background-color: #cdcdcd;
   }
   body main {
@@ -853,14 +853,14 @@
   body.dark header .primary .buttons > *.active {
     background-color: #1a1a1a;
   }
-  body.dark header .login.button.hover,
-  body.dark header .user.button.hover {
+  body.dark header .login.button.hover.items,
+  body.dark header .user.button.hover.items {
     background-color: #242424;
   }
-  body.dark header .menu.hover {
+  body.dark header .menu.hover.items {
     background-color: #242424;
   }
-  body.dark header .menu.hover a:hover {
+  body.dark header .menu.hover.items a:hover {
     background-color: #383838;
   }
   body.dark main {
@@ -1515,14 +1515,14 @@
   body.color header .primary .buttons > *.active {
     background-color: #386c0b;
   }
-  body.color header .login.button.hover,
-  body.color header .user.button.hover {
+  body.color header .login.button.hover.items,
+  body.color header .user.button.hover.items {
     background-color: #38a700;
   }
-  body.color header .menu.hover {
+  body.color header .menu.hover.items {
     background-color: #38a700;
   }
-  body.color header .menu.hover a:hover {
+  body.color header .menu.hover.items a:hover {
     background-color: #3eff8b;
   }
   body.color main {
@@ -2175,14 +2175,14 @@
   body header .primary .buttons > *.active {
     background-color: #1a1a1a;
   }
-  body header .login.button.hover,
-  body header .user.button.hover {
+  body header .login.button.hover.items,
+  body header .user.button.hover.items {
     background-color: #242424;
   }
-  body header .menu.hover {
+  body header .menu.hover.items {
     background-color: #242424;
   }
-  body header .menu.hover a:hover {
+  body header .menu.hover.items a:hover {
     background-color: #383838;
   }
   body main {
@@ -2840,14 +2840,14 @@
   body.light header .primary .buttons > *.active {
     background-color: white;
   }
-  body.light header .login.button.hover,
-  body.light header .user.button.hover {
+  body.light header .login.button.hover.items,
+  body.light header .user.button.hover.items {
     background-color: #fff5f5;
   }
-  body.light header .menu.hover {
+  body.light header .menu.hover.items {
     background-color: #fff5f5;
   }
-  body.light header .menu.hover a:hover {
+  body.light header .menu.hover.items a:hover {
     background-color: #cdcdcd;
   }
   body.light main {
@@ -3502,14 +3502,14 @@
   body.color header .primary .buttons > *.active {
     background-color: #386c0b;
   }
-  body.color header .login.button.hover,
-  body.color header .user.button.hover {
+  body.color header .login.button.hover.items,
+  body.color header .user.button.hover.items {
     background-color: #38a700;
   }
-  body.color header .menu.hover {
+  body.color header .menu.hover.items {
     background-color: #38a700;
   }
-  body.color header .menu.hover a:hover {
+  body.color header .menu.hover.items a:hover {
     background-color: #3eff8b;
   }
   body.color main {
@@ -4048,7 +4048,7 @@ a {
   display: inline-block;
 }
 
-.menu.hover {
+.menu.hover.items {
   display: none;
   position: absolute;
   width: 100%;
@@ -4057,16 +4057,16 @@ a {
   right: 0;
 }
 
-.menu.hover.show {
+.menu.hover.items.active {
   display: block;
 }
 
-.menu.hover.buttons > * {
+.menu.hover.items.buttons > * {
   display: block;
   margin-top: 0;
 }
 
-.menu.hover > * {
+.menu.hover.items > * {
   display: block;
 }
 
@@ -4674,11 +4674,11 @@ header .user .user.button {
   min-width: 70px;
 }
 
-header .user:hover .menu.hover {
+header .user:hover .menu.hover.items {
   display: block;
 }
 
-header .user:hover .menu.hover.hidden {
+header .user:hover .menu.hover.items.hidden {
   display: none;
 }
 
@@ -4686,7 +4686,7 @@ header .user:hover .menu.hover.hidden {
   header .user .mobile-hide {
     display: none;
   }
-  header .user .menu.hover {
+  header .user .menu.hover.items {
     width: 150px;
   }
 }

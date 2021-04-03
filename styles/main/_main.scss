@@ -71,7 +71,7 @@ a {
 }
 
 // hoverable menu
-.menu.hover {
+.menu.hover.items {
     display: none;
     position: absolute;
     width: 100%;
@@ -79,7 +79,7 @@ a {
     margin: 0;
     right: 0;
 
-    &.show {
+    &.active {
         display: block;
     }
 

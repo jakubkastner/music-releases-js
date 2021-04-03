@@ -25,16 +25,19 @@ const el = {
         notifications: document.querySelectorAll('.settings .notifications')
     },
     menu: {
-        hover: document.querySelectorAll('.menu.hover'),
+        hover: {
+            menu: document.querySelectorAll('.menu.hover.items'),
+            button: document.querySelectorAll('.menu.hover.button'),
+        },
         filter: document.querySelectorAll('.buttons.menu .filter'),
         secondary: document.querySelectorAll('header .secondary'),
         releases: document.querySelectorAll('.buttons.releases a, .buttons.user .settings'),
         login: {
-            menu: document.querySelectorAll('.login.menu.hover'),
+            menu: document.querySelectorAll('.login.items.menu.hover'),
             button: document.querySelectorAll('.login.button')
         },
         user: {
-            menu: document.querySelectorAll('.user.menu.hover'),
+            menu: document.querySelectorAll('.user.items.menu.hover'),
             button: document.querySelectorAll('.user.button')
         },
         artists: {

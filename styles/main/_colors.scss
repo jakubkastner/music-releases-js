@@ -156,12 +156,12 @@ $color_text_button: rgb(26, 178, 107);
             }
         }
 
-        .login.button.hover,
-        .user.button.hover {
+        .login.button.hover.items,
+        .user.button.hover.items {
             background-color: $color_4;
         }
 
-        .menu.hover {
+        .menu.hover.items {
             background-color: $color_4;
 
             a:hover {
