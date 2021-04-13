@@ -25,13 +25,12 @@ const el = {
         notifications: document.querySelectorAll('.settings .notifications')
     },
     menu: {
+        // hover menu
         hover: {
             items: document.querySelectorAll('.menu.hover.items'),
             button: document.querySelectorAll('.menu.hover.button'),
         },
-        filter: document.querySelectorAll('.buttons.menu .filter'),
-        secondary: document.querySelectorAll('header .secondary'),
-        releases: document.querySelectorAll('.buttons.releases a, .buttons.user .settings'),
+        // login and user menu (hover menu)
         login: {
             items: document.querySelectorAll('.login.items.menu.hover'),
             button: document.querySelectorAll('.login.button')
@@ -40,6 +39,7 @@ const el = {
             items: document.querySelectorAll('.user.items.menu.hover'),
             button: document.querySelectorAll('.user.button')
         },
+        // show / hide menu
         artists: {
             text: 'artists',
             button: document.querySelectorAll('.buttons.menu .artists'),
@@ -53,6 +53,20 @@ const el = {
             month: document.querySelectorAll('.menu.date .month'),
             months: document.querySelectorAll('.menu.date .months')
         },
+        filter: {
+            text: 'filter',
+            button: document.querySelectorAll('.buttons.menu .filter'),
+            menu: document.querySelectorAll('.secondary>.filter')
+        },
+        actions: {
+            text: 'actions',
+            button: document.querySelectorAll('.buttons.menu .actions'),
+            menu: document.querySelectorAll('.secondary>.actions')
+        },
+        // ____
+        secondary: document.querySelectorAll('header .secondary'),
+        releases: document.querySelectorAll('.buttons.releases a, .buttons.user .settings'),
+        // footer mobile menu
         mobile: {
             moreButton: document.querySelectorAll('footer .releases.mobile-buttons .more'),
             hoverMenu: document.querySelectorAll('footer .releases.menu.hover'),

@@ -4682,7 +4682,7 @@ header .secondary nav {
   text-align: left;
 }
 
-header .secondary .actions {
+header .secondary .actions.right {
   margin-left: auto;
 }
 
@@ -4881,6 +4881,26 @@ body {
 /** TESTING
  *  Testing styles, only for development
  */
+.menu.date, .menu.artists {
+  display: none;
+}
+
+.menu.date.active, .menu.artists.active {
+  display: inline-block;
+}
+
+.secondary > .filter,
+.secondary > .actions {
+  display: none;
+}
+
+.secondary > .filter.active,
+.secondary > .actions.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -4901,82 +4921,6 @@ body {
   background-color: #6a6a6a;
 }
 
-/*$loader: (
-    "size": (
-        "width": 100%,
-        "height": 4px),
-    "margin": (
-        "top": 0,
-        "right": 0,
-        "bottom": 0,
-        "left": 0),
-    "padding": (
-        "top": 0,
-        "right": 0,
-        "bottom": 0,
-        "left": 0)
-    );
-
-// page name
-$in-header: (
-    "size": (
-        "width": 100%,
-        "height": 0),
-    "margin": (
-        "top": 0,
-        "right": 0,
-        "bottom": 0,
-        "left": 0),
-    "padding": (
-        "top": 0,
-        "right": 0,
-        "bottom": 0,
-        "left": 0)
-    );
-
-$test: (
-    "size": (
-        "width": 100%,
-        "height": 0),
-    "margin": (
-        "top": 0,
-        "right": 0,
-        "bottom": 0,
-        "left": 0),
-    "padding": (
-        "top": 0,
-        "right": 0,
-        "bottom": 0,
-        "left": 0)
-    );
-
-@mixin getValuesFromMap($map) {
-    // size
-    width: mapGet($map, "size", "width");
-    height: mapGet($map, "size", "height");
-    // margin
-    margin-top: mapGet($map, "margin", "top");
-    margin-right: mapGet($map, "margin", "right");
-    margin-bottom: mapGet($map, "margin", "bottom");
-    margin-left: mapGet($map, "margin", "left");
-    // padding
-    padding-top: mapGet($map, "padding", "top");
-    padding-right: mapGet($map, "padding", "right");
-    padding-bottom: mapGet($map, "padding", "bottom");
-    padding-left: mapGet($map, "padding", "left");
-}
-
-@function mapGet($map, $list...) {
-    @each $key in $list {
-        $map: map-get($map, $key);
-    }
-    @return $map;
-}
-
-@function getFullHeight($element) {
-    $size: mapGet($element, "size", "height") + mapGet($element, "margin", "top") + mapGet($element, "margin", "bottom") + mapGet($element, "padding", "top") + mapGet($element, "padding", "bottom");
-    @return $size;
-}*/
 .menu.hover .button.active ~ .menu.hover.items {
   display: block;
 }

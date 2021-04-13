@@ -3,35 +3,6 @@
  */
 
 /**
- * Hover login button. Change background color.
- */
-el.menu.login
-    .mouseover(function () {
-        el.main.loginButton.addClass('hover');
-    })
-    .mouseout(function () {
-        if (!el.menu.login.hasClass('show')) {
-            el.main.loginButton.removeClass('hover');
-        }
-    });
-
-/**
- * Click to login button. Show/hide login options.
- */
-el.main.loginButton.click(function () {
-    event.stopPropagation();
-    el.menu.login.toggleClass('show');
-    el.main.loginButton.toggleClass('hover');
-});
-/**
- * Click everywhere. Hide login options.
- */
-$(document).click(function () {
-    el.menu.login.removeClass('show');
-    el.main.loginButton.removeClass('hover');
-});
-
-/**
  * Click to release menu. Add/remove "active" class.
  */
 el.menu.releases.click(function () {

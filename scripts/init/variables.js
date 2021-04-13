@@ -8,7 +8,7 @@ var user = {
 var api = {};
 
 // my program
-var program = {
+const program = {
     spotify: {
         const: {
             stateKey: 'user_spotify_statekey',
