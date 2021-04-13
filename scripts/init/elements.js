@@ -26,18 +26,18 @@ const el = {
     },
     menu: {
         hover: {
-            menu: document.querySelectorAll('.menu.hover.items'),
+            items: document.querySelectorAll('.menu.hover.items'),
             button: document.querySelectorAll('.menu.hover.button'),
         },
         filter: document.querySelectorAll('.buttons.menu .filter'),
         secondary: document.querySelectorAll('header .secondary'),
         releases: document.querySelectorAll('.buttons.releases a, .buttons.user .settings'),
         login: {
-            menu: document.querySelectorAll('.login.items.menu.hover'),
+            items: document.querySelectorAll('.login.items.menu.hover'),
             button: document.querySelectorAll('.login.button')
         },
         user: {
-            menu: document.querySelectorAll('.user.items.menu.hover'),
+            items: document.querySelectorAll('.user.items.menu.hover'),
             button: document.querySelectorAll('.user.button')
         },
         artists: {

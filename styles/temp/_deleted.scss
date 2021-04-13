@@ -1,0 +1,14 @@
+// deleted styles
+
+// active menu
+.menu.hover .button.active {
+    & ~ .menu.hover.items {
+        display: block;
+    }
+    &.user + .menu.hover.user.items {
+        display: block;
+    }
+    &.login ~ .menu.hover.login.items {
+        display: block;
+    }
+}

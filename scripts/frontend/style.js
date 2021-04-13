@@ -12,12 +12,12 @@ el.menu.hoverClick = function (hoverMenu) {
     hoverMenu.button.forEach(function (button) {
         button.addEventListener('click', function () {
             // click on menu button
-            hoverMenu.menu.forEach(function (menu) {
+            hoverMenu.items.forEach(function (item) {
                 // show menu items
-                menu.classList.toggle('active');
+                item.classList.toggle('active');
             });
             hoverMenu.button.forEach(function (button) {
-                // show menu items
+                // show menu button
                 button.classList.toggle('active');
             });
             event.stopPropagation();
@@ -35,10 +35,13 @@ el.menu.hoverClick(el.menu.user);
  * Click everywhere. Hide hover menu.
  */
 document.body.addEventListener('click', function () {
-    el.menu.hover.menu.forEach(function (elem) {
-        elem.classList.remove('active');
+    console.log(el.menu.hover);
+    el.menu.hover.items.forEach(function (item) {
+        // hide menu items
+        item.classList.remove('active');
     });
-    el.menu.hover.button.forEach(function (elem) {
-        elem.classList.remove('active');
+    el.menu.hover.button.forEach(function (button) {
+        // hide menu buttons
+        button.classList.remove('active');
     });
 });

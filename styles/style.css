@@ -4048,28 +4048,6 @@ a {
   display: inline-block;
 }
 
-.menu.hover.items {
-  display: none;
-  position: absolute;
-  width: 100%;
-  text-align: left;
-  margin: 0;
-  right: 0;
-}
-
-.menu.hover.items.active {
-  display: block;
-}
-
-.menu.hover.items.buttons > * {
-  display: block;
-  margin-top: 0;
-}
-
-.menu.hover.items > * {
-  display: block;
-}
-
 .icon-text i {
   margin-right: 5px;
 }
@@ -4454,7 +4432,7 @@ footer .menu.hover.releases {
   }
 }
 
-footer .menu.hover.user {
+footer .menu.hover.items.user {
   min-width: 200px;
   width: 200px;
   bottom: calc(100px + 60px);
@@ -4462,7 +4440,7 @@ footer .menu.hover.user {
 }
 
 @media screen and (max-width: 200px) {
-  footer .menu.hover.user {
+  footer .menu.hover.items.user {
     width: 100%;
     min-width: 100%;
     word-wrap: anywhere;
@@ -4751,6 +4729,28 @@ header .secondary .actions {
 /** DATE MENU
  *  Left date menu.
  */
+.menu.hover.items {
+  display: none;
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  right: 0;
+}
+
+.menu.hover.items.active {
+  display: block;
+}
+
+.menu.hover.items.buttons > * {
+  display: block;
+  margin-top: 0;
+}
+
+.menu.hover.items > * {
+  display: block;
+}
+
 @media screen and (max-width: 260px) {
   main {
     -webkit-box-orient: vertical;
@@ -4977,4 +4977,15 @@ $test: (
     $size: mapGet($element, "size", "height") + mapGet($element, "margin", "top") + mapGet($element, "margin", "bottom") + mapGet($element, "padding", "top") + mapGet($element, "padding", "bottom");
     @return $size;
 }*/
+.menu.hover .button.active ~ .menu.hover.items {
+  display: block;
+}
+
+.menu.hover .button.active.user + .menu.hover.user.items {
+  display: block;
+}
+
+.menu.hover .button.active.login ~ .menu.hover.login.items {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */

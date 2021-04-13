@@ -70,29 +70,6 @@ a {
     display: inline-block;
 }
 
-// hoverable menu
-.menu.hover.items {
-    display: none;
-    position: absolute;
-    width: 100%;
-    text-align: left;
-    margin: 0;
-    right: 0;
-
-    &.active {
-        display: block;
-    }
-
-    &.buttons>* {
-        display: block;
-        margin-top: 0;
-    }
-
-    &>* {
-        display: block;
-    }
-}
-
 // icon right margin
 .icon-text {
     i {
