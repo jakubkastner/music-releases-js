@@ -41,12 +41,12 @@ const el = {
         },
         // show / hide menu
         artists: {
-            text: 'artists',
+            text: 'artists menu',
             button: document.querySelectorAll('.buttons.menu .artists'),
             menu: document.querySelectorAll('.menu.artists')
         },
         date: {
-            text: 'date',
+            text: 'date menu',
             button: document.querySelectorAll('.buttons.menu .date'),
             menu: document.querySelectorAll('.menu.date'),
             year: document.querySelectorAll('.menu.date .year'),
@@ -62,6 +62,11 @@ const el = {
             text: 'actions',
             button: document.querySelectorAll('.buttons.menu .actions'),
             menu: document.querySelectorAll('.secondary>.actions')
+        },
+        player: {
+            text: 'player',
+            button: document.querySelectorAll('.buttons.menu .player'),
+            menu: document.querySelectorAll('footer > .player')
         },
         // ____
         secondary: document.querySelectorAll('header .secondary'),

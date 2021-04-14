@@ -27,6 +27,33 @@
     }
 }
 
+footer>.player {
+
+    .image.left,
+    .info {
+        display: none;
+    }
+    .menu.round {
+        position: absolute;
+        right: 0;
+    }
+
+    &.active {
+
+        .image.left,
+        .info {
+            display: block;
+        }
+
+    }
+}
+
+/*
+footer>.menu.hover.user {
+    position: absolute;
+    bottom: 80px;
+    right: 25px;
+}*/
 
 
 

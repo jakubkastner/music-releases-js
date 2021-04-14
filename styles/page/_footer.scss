@@ -14,9 +14,11 @@ footer {
     }*/
 
     // player
-    .player {
+    &>.player {
         display: flex;
         height: $height_footer_player;
+        position: relative;
+        bottom: $height_footer_player;
 
         // cover of the current track
         .image {
@@ -223,6 +225,9 @@ footer {
     .mobile-buttons.releases {
         display: flex;
         height: $height_footer_menu;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
 
         p {
             font-size: 13px;

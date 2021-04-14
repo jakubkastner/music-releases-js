@@ -4133,12 +4133,12 @@ a {
  *  Main page content
  */
 body main {
-  height: calc(100vh - 4px - 44px - 44px - 100px);
+  height: calc(100vh - 4px - 44px - 44px);
 }
 
 @media screen and (max-width: 1024px) {
   body main {
-    height: calc(100vh - 4px - 100px - 60px);
+    height: calc(100vh - 4px - 60px);
   }
 }
 
@@ -4248,25 +4248,27 @@ footer {
     }*/
 }
 
-footer .player {
+footer > .player {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100px;
+  position: relative;
+  bottom: 100px;
 }
 
-footer .player .image {
+footer > .player .image {
   width: 130px;
   margin-right: 15px;
 }
 
 @media screen and (max-width: 770px) {
-  footer .player .image {
+  footer > .player .image {
     display: none;
   }
 }
 
-footer .player .image img {
+footer > .player .image img {
   max-width: 100%;
   max-height: 100%;
   display: block;
@@ -4274,29 +4276,29 @@ footer .player .image img {
                 top: -20px;*/
 }
 
-footer .player .info {
+footer > .player .info {
   width: calc(100% - 56px - 100px - 15px);
   margin-left: 50px;
   margin-right: 50px;
 }
 
 @media screen and (max-width: 770px) {
-  footer .player .info {
+  footer > .player .info {
     width: calc(100% - 56px - 40px - 15px);
     margin-left: 20px;
     margin-right: 20px;
   }
 }
 
-footer .player .info .button,
-footer .player .info .buttons a {
+footer > .player .info .button,
+footer > .player .info .buttons a {
   font-size: 24px;
   margin-right: 5px;
   margin-bottom: 0;
   padding: 6px;
 }
 
-footer .player .info > .time {
+footer > .player .info > .time {
   width: 100%;
   height: 8px;
   border-radius: 8px;
@@ -4304,7 +4306,7 @@ footer .player .info > .time {
   top: -4px;
 }
 
-footer .player .info .content {
+footer > .player .info .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4312,69 +4314,69 @@ footer .player .info .content {
   max-height: 100%;
 }
 
-footer .player .info .content > div {
+footer > .player .info .content > div {
   margin-right: 30px;
   /*width: 25%;*/
 }
 
-footer .player .info .content > div.actions.buttons {
+footer > .player .info .content > div.actions.buttons {
   margin-right: 0;
   margin-left: auto;
   width: 96px;
 }
 
-footer .player .info .content > div.actions {
+footer > .player .info .content > div.actions {
   width: 210px;
 }
 
-footer .player .info .content > div.details {
+footer > .player .info .content > div.details {
   width: calc((100% - 210px - 96px - 30px - 30px - 30px)/2);
 }
 
 @media screen and (max-width: 770px) {
-  footer .player .info .content > div {
+  footer > .player .info .content > div {
     margin-right: 5px;
   }
-  footer .player .info .content > div.details {
+  footer > .player .info .content > div.details {
     width: calc((100% - 210px - 5px - 5px - 5px)/2);
   }
 }
 
 @media screen and (max-width: 600px) {
-  footer .player .info .content > div.details {
+  footer > .player .info .content > div.details {
     width: calc((100% - 5px - 5px)/2);
   }
 }
 
-footer .player .info .content .time,
-footer .player .info .content .release,
-footer .player .info .content .date {
+footer > .player .info .content .time,
+footer > .player .info .content .release,
+footer > .player .info .content .date {
   font-size: 19x;
   margin-top: 10px;
 }
 
-footer .player .info .content .details a {
+footer > .player .info .content .details a {
   display: block;
 }
 
-footer .player .info .content .details .track,
-footer .player .info .content .details .artists {
+footer > .player .info .content .details .track,
+footer > .player .info .content .details .artists {
   font-size: 20px;
   padding: 6px 0;
 }
 
-footer .player .info .content .details .artists,
-footer .player .info .content .details .date {
+footer > .player .info .content .details .artists,
+footer > .player .info .content .details .date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-footer .player .info .content .details .artists {
+footer > .player .info .content .details .artists {
   display: inline-block;
 }
 
-footer .player .info .content .details .artists a {
+footer > .player .info .content .details .artists a {
   display: inline;
 }
 
@@ -4463,6 +4465,9 @@ footer .mobile-buttons.releases {
   display: -ms-flexbox;
   display: flex;
   height: 60px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer .mobile-buttons.releases p {
@@ -4901,6 +4906,27 @@ body {
   display: flex;
 }
 
+footer > .player .image.left,
+footer > .player .info {
+  display: none;
+}
+
+footer > .player .menu.round {
+  position: absolute;
+  right: 0;
+}
+
+footer > .player.active .image.left,
+footer > .player.active .info {
+  display: block;
+}
+
+/*
+footer>.menu.hover.user {
+    position: absolute;
+    bottom: 80px;
+    right: 25px;
+}*/
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
