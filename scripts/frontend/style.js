@@ -81,6 +81,7 @@ document.body.addEventListener('click', function () {
 // add hoverable menu click function
 el.menu.hover.clicked(el.menu.login);
 el.menu.hover.clicked(el.menu.user);
+el.menu.hover.clicked(el.menu.releases);
 
 
 el.menu.showHide(el.menu.artists);
@@ -88,3 +89,24 @@ el.menu.showHide(el.menu.date);
 el.menu.showHide(el.menu.filter);
 el.menu.showHide(el.menu.actions);
 el.menu.showHide(el.menu.player);
+
+
+el.menu.player.button.forEach(function (playerButton) {
+    playerButton.addEventListener('click', function () {
+        // active -> hide menu
+        if (playerButton.classList.contains('active')) {
+            el.main.main.forEach(function (item) {
+                // hide menu items
+                item.classList.add('player-active');
+            });
+        }
+        // inactive -> show menu
+        else {
+            el.main.main.forEach(function (item) {
+                // hide menu items
+                item.classList.remove('player-active');
+            });
+        }
+    });
+
+});

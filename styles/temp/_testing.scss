@@ -33,9 +33,18 @@ footer>.player {
     .info {
         display: none;
     }
+
     .menu.round {
         position: absolute;
         right: 0;
+
+        .tracklist {
+            display: none;
+        }
+
+        .user.button {
+            top: 28px;
+        }
     }
 
     &.active {
@@ -45,6 +54,15 @@ footer>.player {
             display: block;
         }
 
+        .menu.round {
+            .tracklist {
+                display: flex;
+            }
+
+            .user.button {
+                top: -28px;
+            }
+        }
     }
 }
 
@@ -56,25 +74,25 @@ footer>.menu.hover.user {
 }*/
 
 
-
+/*
 // scrollbars
 
-/* width */
+//width
 ::-webkit-scrollbar {
     width: 10px;
 }
 
-/* Track */
+// Track
 ::-webkit-scrollbar-track {
     background-color: rgb(36, 36, 36);
 }
 
-/* Handle */
+// Handle
 ::-webkit-scrollbar-thumb {
     background-color: rgb(86, 86, 86);
 }
 
-/* Handle on hover */
+// Handle on hover
 ::-webkit-scrollbar-thumb:hover {
     background-color: rgb(106, 106, 106);
-}
+}*/

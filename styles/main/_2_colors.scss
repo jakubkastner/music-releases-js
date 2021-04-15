@@ -236,6 +236,10 @@ $color_text_button: rgb(26, 178, 107);
         }
 
         .player {
+            &.active {
+                background-color: $color_1;
+            }
+
             a:hover {
                 color: $color_text_button;
             }

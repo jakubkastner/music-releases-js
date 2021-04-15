@@ -1,11 +1,11 @@
-@import 'main/init';
-@import 'main/colors';
-@import 'main/main';
+@import 'main/1_init';
+@import 'main/2_colors';
+@import 'main/3_main';
 
-@import 'page/body';
-@import 'page/footer';
-@import 'page/header';
-@import 'page/menu';
+@import 'page/1_header';
+@import 'page/2_body';
+@import 'page/3_menu';
+@import 'page/4_footer';
 
 @import 'temp/dev';
 @import 'temp/testing';

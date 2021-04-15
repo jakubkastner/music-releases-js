@@ -17,6 +17,7 @@ const el = {
     main: {
         // page body (for light/dark mode)
         body: document.querySelectorAll('body'),
+        main: document.querySelectorAll('main'),
         // page title
         title: document.querySelectorAll('.primary .title')
     },
@@ -68,16 +69,21 @@ const el = {
             button: document.querySelectorAll('.buttons.menu .player'),
             menu: document.querySelectorAll('footer > .player')
         },
+        releases: {
+            text: 'releases',
+            button: document.querySelectorAll('footer .releases.mobile-buttons .more'),
+            items: document.querySelectorAll('footer .releases.menu.hover.items')
+        },
         // ____
         secondary: document.querySelectorAll('header .secondary'),
-        releases: document.querySelectorAll('.buttons.releases a, .buttons.user .settings'),
+        //releases: document.querySelectorAll('.buttons.releases a, .buttons.user .settings'),
         // footer mobile menu
-        mobile: {
+        /*mobile: {
             moreButton: document.querySelectorAll('footer .releases.mobile-buttons .more'),
             hoverMenu: document.querySelectorAll('footer .releases.menu.hover'),
             settinsButton: document.querySelectorAll('footer .player .menu.round .menu'),
             settingsMenu: document.querySelectorAll('footer .user.menu.hover')
-        },
+        },*/
     },
     release: {
         // TODO rename to button

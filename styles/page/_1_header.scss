@@ -79,6 +79,10 @@ header {
             min-width: 70px;
         }
 
+        &.menu.items a {
+            display: block;
+        }
+
         // hover user menu
         &:hover {
             .menu.hover.items {

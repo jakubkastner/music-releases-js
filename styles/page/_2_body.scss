@@ -3,12 +3,21 @@
  */
 
 body {
+    height: 100vh;
+
     // main page
     main {
         height: $height_body;
 
+        &.player-active {
+            height: $height_body_player;
+        }
+
         @media screen and (max-width: $width_pc - 1) {
             height: $height_body_mobile;
+            &.player-active {
+                height: $height_body_mobile_player;
+            }
         }
 
         &>* {
