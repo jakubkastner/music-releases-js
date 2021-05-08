@@ -7,7 +7,7 @@ $mobile_buttons_width_min: 80px;
 footer {
     //width: calc(100% - 20px);
     display: block;
-    height: 0;
+    height: auto;
     /** {
         padding-left: 10px;
         padding-right: 10px;
@@ -17,14 +17,13 @@ footer {
     &>.player {
         display: flex;
         height: $height_footer_player;
-        //position: relative;
-        position: absolute;
-        bottom: 0px;
+        position: relative;
+        bottom: 100px;
         width: 100%;
 
-        @media screen and (max-width: $width_pc - 1) {
+        /*@media screen and (max-width: $width_pc - 1) {
             bottom: $height_footer_menu;
-        }
+        }*/
 
         // cover of the current track
         .image {
@@ -247,9 +246,8 @@ footer {
     .mobile-buttons.releases {
         display: flex;
         height: $height_footer_menu;
-        //position: relative;
-        position: absolute;
-        bottom: 0;
+        position: relative;
+        bottom: 100px;
         width: 100%;
 
         p {

@@ -4316,7 +4316,7 @@ body main.player-active {
     height: calc(100vh - 4px - 60px);
   }
   body main.player-active {
-    height: calc(100vh - 4px - 60px - 100px);
+    height: calc(100vh - 4px - 60px);
   }
 }
 
@@ -4558,7 +4558,7 @@ main .menu .last {
  */
 footer {
   display: block;
-  height: 0;
+  height: auto;
   /** {
         padding-left: 10px;
         padding-right: 10px;
@@ -4570,15 +4570,12 @@ footer > .player {
   display: -ms-flexbox;
   display: flex;
   height: 100px;
-  position: absolute;
-  bottom: 0px;
+  position: relative;
+  bottom: 100px;
   width: 100%;
-}
-
-@media screen and (max-width: 1024px) {
-  footer > .player {
-    bottom: 60px;
-  }
+  /*@media screen and (max-width: $width_pc - 1) {
+            bottom: $height_footer_menu;
+        }*/
 }
 
 footer > .player .image {
@@ -4802,8 +4799,8 @@ footer .mobile-buttons.releases {
   display: -ms-flexbox;
   display: flex;
   height: 60px;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  bottom: 100px;
   width: 100%;
 }
 

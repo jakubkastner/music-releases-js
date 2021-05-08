@@ -24,7 +24,7 @@ $height_body: calc(100vh - #{$height_header_loader} - #{$height_header_primary} 
 $height_body_player: calc(100vh - #{$height_header_loader} - #{$height_header_primary} - #{$height_header_secondary} - #{$height_footer_player});
 //$height_body_mobile: calc(100vh - #{$height_header_loader} - #{$height_footer_player} - #{$height_footer_menu});
 $height_body_mobile: calc(100vh - #{$height_header_loader} - #{$height_footer_menu});
-$height_body_mobile_player: calc(100vh - #{$height_header_loader} - #{$height_footer_menu} - #{$height_footer_player});
+$height_body_mobile_player: calc(100vh - #{$height_header_loader} - #{$height_footer_menu});
 
 $padding_left_right: 15px;
 
