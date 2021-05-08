@@ -16,14 +16,20 @@ footer {
     // player
     &>.player {
         display: flex;
-        height: $height_footer_player;
+        height: 0;
         position: relative;
-        bottom: 100px;
+        bottom: 0;
         width: 100%;
 
-        /*@media screen and (max-width: $width_pc - 1) {
+        &.active {
+            height: $height_footer_player;
+        }
+
+        @media screen and (max-width: $width_pc - 1) {
+            height: $height_footer_player;
+            position: fixed;
             bottom: $height_footer_menu;
-        }*/
+        }
 
         // cover of the current track
         .image {
@@ -193,6 +199,8 @@ footer {
             width: $width;
             bottom: $height_footer_menu;
             max-height: calc(100vh - #{$height_footer_menu});
+            position: fixed;
+            bottom: $height_footer_menu;
 
             @media screen and (max-width: $width) {
                 width: 100%;
@@ -246,8 +254,10 @@ footer {
     .mobile-buttons.releases {
         display: flex;
         height: $height_footer_menu;
-        position: relative;
-        bottom: 100px;
+        /*position: relative;
+        bottom: 100px;*/
+        position: fixed;
+        bottom: 0;
         width: 100%;
 
         p {

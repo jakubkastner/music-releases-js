@@ -44,7 +44,8 @@ const el = {
         artists: {
             text: 'artists menu',
             button: document.querySelectorAll('.buttons.menu .artists'),
-            menu: document.querySelectorAll('.menu.artists')
+            menu: document.querySelectorAll('.menu.artists'),
+            mobile: document.querySelectorAll('.menu.user.hover.pc-hide .date')
         },
         date: {
             text: 'date menu',
@@ -52,7 +53,8 @@ const el = {
             menu: document.querySelectorAll('.menu.date'),
             year: document.querySelectorAll('.menu.date .year'),
             month: document.querySelectorAll('.menu.date .month'),
-            months: document.querySelectorAll('.menu.date .months')
+            months: document.querySelectorAll('.menu.date .months'),
+            mobile: document.querySelectorAll('.menu.user.hover.pc-hide .artists')
         },
         filter: {
             text: 'filter',
@@ -74,6 +76,7 @@ const el = {
             button: document.querySelectorAll('footer .releases.mobile-buttons .more'),
             items: document.querySelectorAll('footer .releases.menu.hover.items')
         },
+        mobile: document.querySelectorAll('footer .player>.menu'),
         // ____
         secondary: document.querySelectorAll('header .secondary'),
         //releases: document.querySelectorAll('.buttons.releases a, .buttons.user .settings'),

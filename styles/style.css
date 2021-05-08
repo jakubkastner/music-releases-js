@@ -4301,6 +4301,13 @@ header .secondary .actions.right {
  */
 body {
   height: 100vh;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    overflow: auto;
+  }
 }
 
 body main {
@@ -4308,14 +4315,11 @@ body main {
 }
 
 body main.player-active {
-  height: calc(100vh - 4px - 44px - 44px - 100px);
+  height: auto;
 }
 
 @media screen and (max-width: 1024px) {
   body main {
-    height: calc(100vh - 4px - 60px);
-  }
-  body main.player-active {
     height: calc(100vh - 4px - 60px);
   }
 }
@@ -4327,6 +4331,15 @@ body main > * {
 body main .content {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  body main {
+    height: auto;
+  }
+  body main .content {
+    margin-bottom: 100px;
+  }
 }
 
 body.classic main .box {
@@ -4569,13 +4582,22 @@ footer > .player {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100px;
+  height: 0;
   position: relative;
-  bottom: 100px;
+  bottom: 0;
   width: 100%;
-  /*@media screen and (max-width: $width_pc - 1) {
-            bottom: $height_footer_menu;
-        }*/
+}
+
+footer > .player.active {
+  height: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  footer > .player {
+    height: 100px;
+    position: fixed;
+    bottom: 60px;
+  }
 }
 
 footer > .player .image {
@@ -4745,6 +4767,8 @@ footer .menu.hover.releases {
   width: 160px;
   bottom: 60px;
   max-height: calc(100vh - 60px);
+  position: fixed;
+  bottom: 60px;
 }
 
 @media screen and (max-width: 160px) {
@@ -4799,8 +4823,10 @@ footer .mobile-buttons.releases {
   display: -ms-flexbox;
   display: flex;
   height: 60px;
-  position: relative;
-  bottom: 100px;
+  /*position: relative;
+        bottom: 100px;*/
+  position: fixed;
+  bottom: 0;
   width: 100%;
 }
 
@@ -4919,10 +4945,10 @@ footer .mobile-buttons.releases a * {
   }
 }
 
+/*
 body {
-  overflow: hidden;
-}
-
+    overflow: hidden;
+}*/
 .hidden {
   display: none !important;
 }
