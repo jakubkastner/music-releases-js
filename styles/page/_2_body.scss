@@ -16,10 +16,14 @@ body {
         height: $height_body;
 
         &.player-active {
-            height: auto;
+            //height: auto;
+            height: $height_body_player;
         }
 
         @media screen and (max-width: $width_pc - 1) {
+            &.player-active {
+                height: auto;
+            }
             height: $height_body_mobile;
         }
 

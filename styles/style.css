@@ -4315,12 +4315,15 @@ body main {
 }
 
 body main.player-active {
-  height: auto;
+  height: calc(100vh - 4px - 44px - 44px - 100px);
 }
 
 @media screen and (max-width: 1024px) {
   body main {
     height: calc(100vh - 4px - 60px);
+  }
+  body main.player-active {
+    height: auto;
   }
 }
 
@@ -4515,6 +4518,9 @@ main .menu.artists.names {
     width: 70%;
     min-width: 70%;
   }
+  main .menu.artists.names.active ~ main {
+    height: 100vh;
+  }
 }
 
 @media screen and (max-width: 260px) {
@@ -4583,7 +4589,7 @@ footer > .player {
   display: -ms-flexbox;
   display: flex;
   height: 0;
-  position: relative;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
@@ -4595,7 +4601,6 @@ footer > .player.active {
 @media screen and (max-width: 1024px) {
   footer > .player {
     height: 100px;
-    position: fixed;
     bottom: 60px;
   }
 }

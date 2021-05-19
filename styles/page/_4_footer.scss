@@ -17,7 +17,7 @@ footer {
     &>.player {
         display: flex;
         height: 0;
-        position: relative;
+        position: fixed;
         bottom: 0;
         width: 100%;
 
@@ -27,7 +27,6 @@ footer {
 
         @media screen and (max-width: $width_pc - 1) {
             height: $height_footer_player;
-            position: fixed;
             bottom: $height_footer_menu;
         }
 
