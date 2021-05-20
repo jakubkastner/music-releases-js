@@ -110,6 +110,18 @@ main {
             }
         }
 
+        @media screen and (max-width: $width_pc - 1) {
+
+            &.date,
+            &.artists {
+                &.active {
+                    &~.content {
+                        display: none;
+                    }
+                }
+            }
+        }
+
         // hoverable menu
         &:hover {
             overflow: auto;

@@ -4583,6 +4583,12 @@ main .menu.artists.first-letter a {
   margin: auto;
 }
 
+@media screen and (max-width: 1024px) {
+  main .menu.date.active ~ .content, main .menu.artists.active ~ .content {
+    display: none;
+  }
+}
+
 main .menu:hover {
   overflow: auto;
 }
