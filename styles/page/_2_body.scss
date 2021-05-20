@@ -15,6 +15,32 @@ body {
     main {
         height: $height_body;
 
+        .menu {
+            &.date {
+                &.year {
+                    order: 1;
+                }
+
+                &.month {
+                    order: 2;
+                }
+            }
+
+            &.artists {
+                &.names {
+                    order: 4;
+                }
+
+                &.first-letter {
+                    order: 5;
+                }
+            }
+        }
+
+        .content {
+            order: 3;
+        }
+
         &.player-active {
             //height: auto;
             height: $height_body_player;
@@ -24,6 +50,7 @@ body {
             &.player-active {
                 height: auto;
             }
+
             height: $height_body_mobile;
         }
 

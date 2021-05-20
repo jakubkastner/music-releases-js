@@ -4314,6 +4314,36 @@ body main {
   height: calc(100vh - 4px - 44px - 44px);
 }
 
+body main .menu.date.year {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+body main .menu.date.month {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+body main .menu.artists.names {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+body main .menu.artists.first-letter {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+}
+
+body main .content {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
 body main.player-active {
   height: calc(100vh - 4px - 44px - 44px - 100px);
 }

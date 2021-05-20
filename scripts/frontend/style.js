@@ -110,29 +110,3 @@ el.menu.player.button.forEach(function (playerButton) {
     });
 
 });
-
-
-// TODO change this !!! doesnt work ok
-/**
- * Hide content on mobile when date or artists menu is displayed.
- */
-el.menu.hideContent = function (mobileMenu) {
-    mobileMenu.forEach(function (menu) {
-        menu.addEventListener('click', function () {
-            el.menu.mobile.forEach(function (menuMobil) {
-                // active -> hide menu
-                if (menuMobil.classList.contains('active')) {
-                    // hide all buttons
-                    menuMobil.classList.remove('active');
-                }
-                // inactive -> show menu
-                else {
-                    menuMobil.classList.add('active');
-                }
-            });
-        });
-    });
-};
-
-el.menu.hideContent(el.menu.date.mobile);
-el.menu.hideContent(el.menu.artists.mobile);
