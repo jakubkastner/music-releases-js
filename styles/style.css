@@ -4437,6 +4437,10 @@ header div {
   text-align: right;
 }
 
+header div.secondary.pc-hide {
+  display: block;
+}
+
 header .loader {
   width: 100%;
   height: 4px;
@@ -4445,6 +4449,7 @@ header .loader {
   background-size: 20%;
   background-repeat: repeat-y;
   background-position: -25% 0;
+  position: fixed;
 }
 
 header .loader.active {
@@ -4467,7 +4472,7 @@ header .buttons > * {
 }
 
 header .primary {
-  height: 44px;
+  height: 48px;
 }
 
 header .primary > * {
@@ -4528,12 +4533,31 @@ header .secondary > * {
       align-self: flex-end;
 }
 
+header .secondary > .menu {
+  display: block;
+}
+
 header .secondary nav {
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+  overflow: auto;
+  width: 100vw;
 }
 
 header .secondary .actions.right {
   margin-left: auto;
+}
+
+header .secondary.pc-hide a {
+  font-size: 14px;
+  border: solid 1px white;
+  padding: 5px 10px;
+  margin: 0 3px;
+  border-radius: 16px;
+  background-color: black;
 }
 
 @-webkit-keyframes loader {

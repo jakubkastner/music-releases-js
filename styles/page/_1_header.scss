@@ -9,6 +9,10 @@ header {
     div {
         display: flex;
         text-align: right;
+
+        &.secondary.pc-hide {
+            display: block;
+        }
     }
 
     // loader
@@ -20,6 +24,7 @@ header {
         background-size: 20%;
         background-repeat: repeat-y;
         background-position: -25% 0;
+        position: fixed;
 
         &.active {
             animation: loader 3s ease-in-out infinite;
@@ -45,7 +50,7 @@ header {
     .primary {
         // text
         //font-weight: 700;
-        height: $height_header_primary;
+        height: $height_header_primary + $height_header_loader;
 
         //margin: calc(5px + 0.2vw) calc(10px + 0.5vw) 0 calc(10px + 0.5vw);
         &>* {
@@ -87,6 +92,7 @@ header {
         &:hover {
             .menu.hover.items {
                 display: block;
+
                 &.hidden {
                     display: none;
                 }
@@ -113,12 +119,29 @@ header {
             align-self: flex-end;
         }
 
+        &>.menu {
+            display: block;
+        }
+
         nav {
             text-align: left;
+            display: flex;
+            white-space: nowrap;
+            overflow: auto;
+            width: 100vw;
         }
 
         .actions.right {
             margin-left: auto;
+        }
+
+        &.pc-hide a {
+            font-size: 14px;
+            border: solid 1px white;
+            padding: 5px 10px;
+            margin: 0 3px;
+            border-radius: 16px;
+            background-color: black;
         }
     }
 }
