@@ -935,6 +935,9 @@
   body footer .user.menu {
     background-color: whitesmoke;
   }
+  body footer .user.menu p {
+    color: #1ab26b;
+  }
   body footer .round.buttons a {
     background-color: whitesmoke;
   }
@@ -1594,6 +1597,9 @@
   }
   body.dark footer .user.menu {
     background-color: #0c0c0c;
+  }
+  body.dark footer .user.menu p {
+    color: #1ab26b;
   }
   body.dark footer .round.buttons a {
     background-color: #0c0c0c;
@@ -2260,6 +2266,9 @@
   body.color footer .user.menu {
     background-color: #0c0c0c;
   }
+  body.color footer .user.menu p {
+    color: #1ab26b;
+  }
   body.color footer .round.buttons a {
     background-color: #0c0c0c;
   }
@@ -2922,6 +2931,9 @@
   }
   body footer .user.menu {
     background-color: #0c0c0c;
+  }
+  body footer .user.menu p {
+    color: #1ab26b;
   }
   body footer .round.buttons a {
     background-color: #0c0c0c;
@@ -3591,6 +3603,9 @@
   body.light footer .user.menu {
     background-color: whitesmoke;
   }
+  body.light footer .user.menu p {
+    color: #1ab26b;
+  }
   body.light footer .round.buttons a {
     background-color: whitesmoke;
   }
@@ -4256,6 +4271,9 @@
   body.color footer .user.menu {
     background-color: #0c0c0c;
   }
+  body.color footer .user.menu p {
+    color: #1ab26b;
+  }
   body.color footer .round.buttons a {
     background-color: #0c0c0c;
   }
@@ -4544,7 +4562,8 @@ header .secondary nav {
   display: flex;
   white-space: nowrap;
   overflow: auto;
-  width: 100vw;
+  width: calc(100vw - 20px);
+  padding: 10px;
 }
 
 header .secondary .actions.right {

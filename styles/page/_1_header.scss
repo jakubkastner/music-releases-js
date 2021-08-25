@@ -128,7 +128,8 @@ header {
             display: flex;
             white-space: nowrap;
             overflow: auto;
-            width: 100vw;
+            width: calc(100vw - 20px);
+            padding: 10px;
         }
 
         .actions.right {

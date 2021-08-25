@@ -258,6 +258,9 @@ $color_text_button: rgb(26, 178, 107);
 
         .user.menu {
             background-color: $color_1;
+            p {
+                color: $color_text_button;
+            }
         }
 
         .round.buttons {
