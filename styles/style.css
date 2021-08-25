@@ -4555,7 +4555,11 @@ header .secondary > .menu {
   display: block;
 }
 
-header .secondary nav {
+header .secondary .actions.right {
+  margin-left: auto;
+}
+
+header .secondary.pc-hide .buttons {
   text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4566,10 +4570,6 @@ header .secondary nav {
   padding: 10px;
 }
 
-header .secondary .actions.right {
-  margin-left: auto;
-}
-
 header .secondary.pc-hide a {
   font-size: 14px;
   border: solid 1px white;
@@ -4577,6 +4577,12 @@ header .secondary.pc-hide a {
   margin: 0 3px;
   border-radius: 16px;
   background-color: black;
+}
+
+@media screen and (max-width: 1120px) {
+  header .secondary .actions.right span {
+    display: none;
+  }
 }
 
 @-webkit-keyframes loader {

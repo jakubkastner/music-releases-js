@@ -123,26 +123,37 @@ header {
             display: block;
         }
 
-        nav {
-            text-align: left;
-            display: flex;
-            white-space: nowrap;
-            overflow: auto;
-            width: calc(100vw - 20px);
-            padding: 10px;
-        }
-
         .actions.right {
             margin-left: auto;
         }
 
-        &.pc-hide a {
-            font-size: 14px;
-            border: solid 1px white;
-            padding: 5px 10px;
-            margin: 0 3px;
-            border-radius: 16px;
-            background-color: black;
+        &.pc-hide {
+            .buttons {
+                text-align: left;
+                display: flex;
+                white-space: nowrap;
+                overflow: auto;
+                width: calc(100vw - 20px);
+                padding: 10px;
+            }
+
+            a {
+                font-size: 14px;
+                border: solid 1px white;
+                padding: 5px 10px;
+                margin: 0 3px;
+                border-radius: 16px;
+                background-color: black;
+            }
+        }
+
+        // responsive styles (hide / show content on pc / mobile)
+        @media screen and (max-width: 1120px) {
+            .actions.right {
+                span {
+                    display: none;
+                }
+            }
         }
     }
 }
