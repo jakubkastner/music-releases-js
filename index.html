@@ -24,9 +24,9 @@
             </div>
             <nav class="releases icon-text buttons">
                 <a class="albums active" title="View released albums"><i class="fas fa-compact-disc"></i>Albums</a>
-                <a class="eps" title="View released EPs"><i class="fas fa-record-vinyl"></i>EPs</a>
+                <!--<a class="eps" title="View released EPs"><i class="fas fa-record-vinyl"></i>EPs</a>-->
                 <a class="tracks" title="View released Tracks"><i class="fas fa-music"></i>Tracks</a>
-                <a class="remixes" title="View released Remixes"><i class="fas fa-headphones-alt"></i>Remixes</a>
+                <!--<a class="remixes" title="View released Remixes"><i class="fas fa-headphones-alt"></i>Remixes</a>-->
                 <a class="appears" title="View released appears"><i class="fas fa-user-friends"></i>Appears</a>
                 <a class="compilations" title="View released compilations"><i class="fas fa-th-large"></i>Compilations</a>
                 <a class="podcasts" title="View newest podcasts"><i class="fas fa-podcast"></i>Podcasts</a>
@@ -68,6 +68,9 @@
             <div class="filter icon-text">
                 <!--<p class="title"><i class="fas fa-filter"></i>Filter</p>-->
                 <nav class="buttons">
+                    <a class="tracks" title="Show released Tracks"><i class="fas fa-headphones-alt"></i>Tracks</a>
+                    <a class="eps" title="Show released EPs"><i class="fas fa-music"></i>EPs</a>
+                    <a class="remixes" title="Show released Remixes"><i class="fas fa-headphones-alt"></i>Remixes</a>
                     <a class="artists active" title="Show releases from the artist I am following"><i class="fas fa-users"></i>Followed artists</a>
                     <a class="various-artists" title="Hide releases from Various artists"><i class="fas fa-user-friends"></i>Various artists</a>
                     <a class="saved" title="Show saved releases in my library"><i class="fas fa-heart"></i>In library</a>
@@ -85,8 +88,11 @@
         <div class="secondary pc-hide">
             <div class="menu">
                 <nav class="buttons">
-                    <a class="artists active" title="Show releases from the artist I am following">Followed artists</a>
-                    <a class="various-artists" title="Hide releases from Various artists">Various artists</a>
+                    <a class="tracks" title="Show released Tracks">Tracks</a>
+                    <!--<a class="eps" title="Show released EPs">EPs</a>
+                    <a class="remixes" title="Show released Remixes">Remixes</a>-->
+                    <a class="artists active" title="Hide releases from the artist I am following">Followed artists</a>
+                    <a class="various-artists" title="Show releases from Various artists">Various artists</a>
                     <a class="saved" title="Show saved releases in my library">In library</a>
                     <a class="new" title="Show only new releases">Only new</a>
                 </nav>
@@ -500,18 +506,18 @@
                     <i class="fas fa-compact-disc"></i>
                     <span>Albums</span>
                 </a>
-                <a class="eps" title="View released EPs">
+                <!--<a class="eps" title="View released EPs">
                     <i class="fas fa-record-vinyl"></i>
                     <span>EPs</span>
-                </a>
+                </a>-->
                 <a class="tracks" title="View released Tracks">
                     <i class="fas fa-music"></i>
                     <span>Tracks</span>
                 </a>
-                <a class="remixes" title="View released Remixes">
+                <!--<a class="remixes" title="View released Remixes">
                     <i class="fas fa-headphones-alt"></i>
                     <span>Remixes</span>
-                </a>
+                </a>-->
                 <a class="appears" title="View released appears">
                     <i class="fas fa-user-friends"></i>
                     <span>Appears</span>
@@ -534,18 +540,18 @@
                     <i class="fas fa-compact-disc"></i>
                     <p>Albums</p>
                 </a>
-                <a class="eps" title="View released EPs">
+                <!--<a class="eps" title="View released EPs">
                     <i class="fas fa-record-vinyl"></i>
                     <p>EPs</p>
-                </a>
+                </a>-->
                 <a class="tracks" title="View released Tracks">
                     <i class="fas fa-music"></i>
                     <p>Tracks</p>
                 </a>
-                <a class="remixes" title="View released Remixes">
+                <!--<a class="remixes" title="View released Remixes">
                     <i class="fas fa-headphones-alt"></i>
                     <p>Remixes</p>
-                </a>
+                </a>-->
                 <a class="appears" title="View released appears">
                     <i class="fas fa-user-friends"></i>
                     <p>Appears</p>
@@ -567,17 +573,17 @@
         <!--<a class="menu hover user button" title="Show menu"><i class="fas fa-bars"></i></a>-->
     </footer>
     <script src="https://kit.fontawesome.com/ebe995aabe.js" crossorigin="anonymous"></script>
-    <script src="scripts/init/elements.js"></script>
-    <script src="scripts/init/variables.js"></script>
-    <script src="scripts/init/functions.js"></script>
-    <script src="scripts/api/spotify/init.js"></script>
-    <script src="scripts/backend/database.js"></script>
-    <script src="scripts/backend/user.js"></script>
-    <script src="scripts/frontend/style.js"></script>
-    <script src="scripts/frontend/functions.js"></script>
-    <script src="scripts/api/functions.js"></script>
-    <script src="scripts/frontend/functions.js"></script>
-    <script src="scripts/temp/testing.js"></script>
+    <script src="scripts_js/init/elements.js"></script>
+    <script src="scripts_js/init/variables.js"></script>
+    <script src="scripts_js/init/functions.js"></script>
+    <script src="scripts_js/init/api_spotify.js"></script>
+    <script src="scripts_js/backend/database.js"></script>
+    <script src="scripts_js/backend/user.js"></script>
+    <script src="scripts_js/frontend/style.js"></script>
+    <script src="scripts_js/frontend/functions.js"></script>
+    <script src="scripts_js/api/functions.js"></script>
+    <script src="scripts_js/frontend/functions.js"></script>
+    <script src="scripts_js/temp/testing.js"></script>
 </body>
 
 </html>
