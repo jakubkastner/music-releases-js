@@ -1,0 +1,44 @@
+.list {
+    a {
+        //cursor: pointer;
+        display: flex;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .right {
+        margin-left: auto;
+    }
+
+    // tracklist
+    &.tracklist {
+        .track {
+            .info {
+                display: inline-flex;
+
+                &>* {
+                    margin-right: 5px;
+                }
+
+                .artists {
+                    display: inline-block;
+                    margin: auto 0;
+                    padding: 0 10px;
+
+                    .artist {
+                        display: inline;
+                        padding: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    // playlists
+    &.playlists {
+        .update {
+            width: 20px;
+            margin-left: auto;
+        }
+    }
+}

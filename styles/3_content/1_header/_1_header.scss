@@ -1,0 +1,37 @@
+/** HEADER
+ *  Header menu
+ *  Page name
+ */
+
+.header {
+
+    .left {
+        margin-left: $padding_left_right;
+        padding-left: 0;
+    }
+
+    .right {
+        margin-right: $padding_left_right;
+        padding-right: 0;
+    }
+
+    .button,
+    .buttons>* {
+        padding: 10px;
+    }
+
+    // every div in header
+    /*div {
+        display: flex;
+        text-align: right;
+
+        &.secondary.pc-hide {
+            display: block;
+        }
+    }*/
+
+    // show hide menu buttons
+    /*.menu.show-hide {
+        width: calc(#{$width_left} + #{$width_left} - #{$padding_left_right});
+    }*/
+}

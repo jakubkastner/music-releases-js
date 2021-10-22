@@ -1,0 +1,103 @@
+// main header (without loader)
+.header.header-primary {
+    display: inline-flex;
+    // text
+    //height: $height_header_primary + $height_header_loader;
+
+    //margin: calc(5px + 0.2vw) calc(10px + 0.5vw) 0 calc(10px + 0.5vw);
+    /*&>* {
+        align-self: flex-end;
+    }*/
+
+    // page name
+    .page-name {
+        cursor: context-menu;
+        padding: 4px 10px 16px 10px;
+        display: inline-flex;
+        font-weight: 800;
+
+        // icon
+        .favicon {
+            background: transparent;
+            height: $height_header_primary - 10px;
+            margin-left: $margin_right_icon;
+        }
+
+        &:hover>.favicon {
+            animation: spin 2s linear infinite;
+        }
+
+        // page name
+        p, .favicon {
+            font-size: 28px;
+        }
+
+        // responsive styles (hide / show content on pc / mobile)
+        /*@include respond(mobile) {
+            .mobile-hide {
+                display: none;
+            }
+        }*/
+    }
+
+    .releases {
+
+        .button,
+        &.buttons>* {
+            border-radius: 300px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+    }
+
+    // user menu
+    .user {
+        margin-left: auto;
+        display: inline;
+        position: relative;
+
+        // login button
+        .login.button,
+        .user.button {
+            display: inline-flex;
+            min-width: 70px;
+        }
+
+        &.menu.items a {
+            display: block;
+        }
+
+        // hover user menu
+        &:hover {
+            .menu.hover.items {
+                display: block;
+
+                &.hidden {
+                    display: none;
+                }
+            }
+        }
+
+        // responsive styles (hide / show content on pc / mobile)
+        @include respond(mobile-menu) {
+            .mobile-hide {
+                display: none;
+            }
+
+            .menu.hover.items {
+                width: 150px;
+            }
+        }
+    }
+}
+
+// favicon spin
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

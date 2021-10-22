@@ -1,0 +1,76 @@
+/** MAIN
+ *  Main styles - fonts, margin, ...
+ */
+
+* {
+    margin: 0;
+    text-decoration: none;
+    font-family: "DM Sans", "Pontano Sans", sans-serif;
+    word-wrap: everywhere;
+    overflow-wrap: anywhere;
+}
+
+main {
+    display: flex;
+}
+
+// text
+p {
+    font-size: 18px;
+}
+
+// link
+a {
+    cursor: pointer;
+}
+
+// responsive styles (hide / show content on pc / mobile)
+@media screen and (min-width: $width_pc) {
+    .pc-hide {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: $width_pc - 1) {
+    .mobile-hide {
+        display: none !important;
+    }
+}
+
+.left {
+    margin-left: $padding_left_right;
+    padding-left: 0;
+}
+
+.right {
+    margin-right: $padding_left_right;
+    padding-right: 0;
+}
+
+// button
+.button,
+.buttons>* {
+    cursor: pointer;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.buttons {
+    padding-bottom: 0;
+}
+
+// icon right margin
+.icon-text {
+    i {
+        margin-right: $margin_right_icon;
+    }
+}
+
+.explicit {
+    span {
+        // TODO změna barvy
+        font-size: 13px;
+        padding-left: 2.5px;
+        font-style: italic;
+    }
+}

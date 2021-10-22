@@ -1,0 +1,118 @@
+// template width
+$playlist_width: 250px;
+$menu_artists_alphabet_width: 75px;
+$menu_artists_names_width: 200px;
+$menu_date_year_width: 130px;
+$menu_date_month_width: $menu_date_year_width;
+//$content_width: calc(100vw - #{$playlist_width} - #{$menu_artists_alphabet_width} - #{$menu_artists_names_width} - #{$menu_date_year_width} - #{$menu_date_month_width});
+
+body.classic {
+    display: grid;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+
+    // playlist, content, artists menu, date menu
+    grid-template-columns: $playlist_width auto $menu_artists_alphabet_width $menu_artists_names_width $menu_date_year_width $menu_date_month_width;
+    grid-template-rows: 4px 48px 44px calc(100vh - 4px - 48px - 44px - 100px) 100px;
+
+    // hide menu
+    &.menu-hide {
+        &-artists {
+            .main {
+                &.menu.artists {
+                    visibility: hidden;
+                }
+
+                &.content {
+                    grid-area: 4 / 2 / 5 / 5;
+                }
+            }
+        }
+        &-date {
+            .main {
+                &.menu {
+                    &.date {
+                        visibility: hidden;
+                    }
+
+                    &.artists {
+                        &.alphabet {
+                            grid-area: 4 / 5 / 5 / 6;
+                        }
+
+                        &.names {
+                            grid-area: 4 / 6 / 5 / 7;
+                        }
+                    }
+                }
+
+                &.content {
+                    grid-area: 4 / 2 / 5 / 5;
+                }
+            }
+        }
+        &-playlists {
+            .main {
+                &.menu.playlists {
+                    visibility: hidden;
+                }
+
+                &.content {
+                    grid-area: 4 / 1 / 6 / 3;
+                }
+            }
+        }
+    }
+
+    .header {
+        &.loader {
+            grid-area: 1 / 1 / 2 / 7;
+        }
+
+        &.header-primary {
+            grid-area: 2 / 1 / 3 / 7;
+        }
+
+        &.header-secondary {
+            grid-area: 3 / 1 / 4 / 7;
+        }
+    }
+
+    .main {
+        &.menu {
+            &.playlists {
+                grid-area: 4 / 1 / 5 / 2;
+            }
+
+            &.artists {
+                &.alphabet {
+                    grid-area: 4 / 3 / 5 / 4;
+                }
+
+                &.names {
+                    grid-area: 4 / 4 / 5 / 5;
+                }
+            }
+
+            &.date {
+                &.year {
+                    grid-area: 4 / 5 / 5 / 6;
+                }
+
+                &.month {
+                    grid-area: 4 / 6 / 5 / 7;
+                }
+            }
+        }
+
+        &.content {
+            grid-area: 4 / 2 / 5 / 3;
+        }
+    }
+
+    .footer {
+        &.player {
+            grid-area: 5 / 1 / 6 / 7;
+        }
+    }
+}

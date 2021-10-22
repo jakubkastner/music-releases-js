@@ -1,15 +1,32 @@
-@import 'fonts/dm_sans';
-@import 'fonts/pt_sans';
+@import '1_fonts/dm_sans';
+@import '1_fonts/pt_sans';
 
-@import 'main/1_init';
-@import 'main/2_colors';
-@import 'main/3_main';
+@import '2_init/1_variables';
+@import '2_init/2_colors';
+@import '2_init/3_layout';
+@import '2_init/4_main';
 
-@import 'page/1_header';
-@import 'page/2_body';
-@import 'page/3_menu';
-@import 'page/4_footer';
+@import '3_content/1_header/1_header';
+@import '3_content/1_header/2_primary';
+@import '3_content/1_header/3_secondary';
 
-@import 'temp/dev';
-@import 'temp/testing';
-@import 'temp/deleted';
+@import '3_content/2_main/x2_body';
+
+@import '3_content/2_main/1_content';
+
+@import '3_content/2_main/2_menu/x3_menu';
+@import '3_content/2_main/2_menu/1_menu';
+@import '3_content/2_main/2_menu/2_date';
+@import '3_content/2_main/2_menu/3_artists';
+@import '3_content/2_main/2_menu/4_playlists';
+
+@import '3_content/3_footer/x4_footer';
+@import '3_content/3_footer/1_footer';
+@import '3_content/3_footer/2_player';
+
+
+@import '4_components/1_loader';
+@import '4_components/2_lists';
+
+@import 'x_temp/1_dev';
+//@import 'x_temp/2_testing';
