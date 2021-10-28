@@ -1,5 +1,5 @@
 // main header (without loader)
-.header.header-primary {
+.header.primary {
     display: inline-flex;
     // text
     //height: $height_header_primary + $height_header_loader;
@@ -28,7 +28,8 @@
         }
 
         // page name
-        p, .favicon {
+        p,
+        .favicon {
             font-size: 28px;
         }
 
@@ -38,6 +39,11 @@
                 display: none;
             }
         }*/
+    }
+
+    .show-hide {
+        margin-left: auto;
+        display: inline;
     }
 
     .releases {
@@ -52,8 +58,6 @@
 
     // user menu
     .user {
-        margin-left: auto;
-        display: inline;
         position: relative;
 
         // login button

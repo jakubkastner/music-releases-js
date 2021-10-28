@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="View all releases of your followed artists on Spotify, Deezer or Apple Music." />
+    <meta name="keywords" content="music releases, new music releases, releases, music, spotify, spotify releases, apple music, apple music releases, deezer, deezer releases, album, albums, spotify albums, tracks, tracks, spotify tracks, spotify appears, appear, appears, spotify compilations, album, release, compilation, compilations, podcasts, my music, music, stream music" />
+    <meta name="author" content="Jakub Kastner" />
+    <title>Music Releases</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--<link rel="stylesheet" type="text/css" href="styles-old/style.css" />-->
+    <link rel="stylesheet" type="text/css" href="styles-old/style.css" />
+    <link rel="icon" type="image/ico" href="images/favicon.png" />
+</head>
+
+<body class="classic">
+    <header>
+        <div class="loader"></div>
+        <div class="primary mobile-hide left">
+            <div class="page-name" title="Music Releases">
+                <p class="mobile-hide">Music</p>
+                <img class="favicon" src="images/favicon.png" alt="R" />
+                <p class="mobile-hide">eleases</p>
+            </div>
+            <nav class="releases icon-text buttons">
+                <a class="albums active" title="View released albums"><i class="fas fa-compact-disc"></i>Albums</a>
+                <a class="tracks" title="View released Tracks"><i class="fas fa-music"></i>Tracks</a>
+                <a class="appears" title="View released appears"><i class="fas fa-user-friends"></i>Appears</a>
+                <a class="compilations" title="View released compilations"><i class="fas fa-th-large"></i>Compilations</a>
+                <a class="podcasts" title="View newest podcasts"><i class="fas fa-podcast"></i>Podcasts</a>
+            </nav>
+            <nav class="settings buttons skrejto">
+                <a class="application active" title="Go to applications settings">Application</a>
+                <a class="releases" title="Go to releases settings">Releases</a>
+                <a class="playlists" title="Go to playlists settings">Playlists</a>
+                <a class="about" title="Go to about the application">About</a>
+            </nav>
+            <div class="user icon-text right">
+                <a class="login menu hover button skrejto" title="Show login menu">
+                    <i class="fas fa-user-plus"></i>
+                    <p>Login<span class="mobile-hide"> via music account</span></p>
+                </a>
+                <nav class="login menu hover items buttons right skrejto">
+                    <a class="spotify" title="Login via Spotify"><i class="fab fa-spotify"></i>Spotify</a>
+                    <a class="deezer" title="Login via Deezer"><i class="fab fa-deezer"></i>Deezer</a>
+                    <a class="apple" title="Login via Apple Music"><i class="fab fa-apple"></i>Apple Music</a>
+                </nav>
+                <a class="user menu hover button" title="Show user menu">
+                    <i class="fas fa-user-cog"></i>
+                    <p>Username</p>
+                </a>
+                <nav class="user menu hover items buttons right">
+                    <a class="settings" title="Show settings"><i class="fas fa-wrench"></i>Settings</a>
+                    <a class="logout" title="Logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                </nav>
+            </div>
+        </div>
+        <div class="secondary mobile-hide">
+            <div class="menu show-hide buttons left">
+                <a class="date" title="Show date menu"><i class="fas fa-calendar-alt"></i><span>1</span></a>
+                <a class="artists" title="Show artists menu"><i class="fas fa-users"></i><span>4</span></a>
+                <a class="filter" title="Show filter"><i class="fas fa-filter"></i><span>2</span></a>
+                <a class="actions" title="Show actions"><i class="fas fa-tools"></i></a>
+                <a class="player" title="Show player"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="filter icon-text">
+                <nav class="buttons">
+                    <a class="tracks" title="Show released Tracks"><i class="fas fa-headphones-alt"></i>Tracks</a>
+                    <a class="eps" title="Show released EPs"><i class="fas fa-music"></i>EPs</a>
+                    <a class="remixes" title="Show released Remixes"><i class="fas fa-headphones-alt"></i>Remixes</a>
+                    <a class="artists active" title="Show releases from the artist I am following"><i class="fas fa-users"></i>Followed artists</a>
+                    <a class="various-artists" title="Hide releases from Various artists"><i class="fas fa-user-friends"></i>Various artists</a>
+                    <a class="saved" title="Show saved releases in my library"><i class="fas fa-heart"></i>In library</a>
+                    <a class="new" title="Show only new releases"><i class="fas fa-bolt"></i>Only new</a>
+                </nav>
+            </div>
+            <div class="actions icon-text right">
+                <div class="buttons">
+                    <a class="playlist" title="Add all filtered releases to the playlist"><i class="fas fa-plus-circle"></i><span>Add to playlist</span></a>
+                    <a class="play" title="Play all filtered releases"><i class="fas fa-play"></i><span>Play all</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="secondary pc-hide">
+            <div class="menu">
+                <nav class="buttons">
+                    <a class="tracks" title="Show released Tracks">Tracks</a>
+                    <!--<a class="eps" title="Show released EPs">EPs</a>
+                    <a class="remixes" title="Show released Remixes">Remixes</a>-->
+                    <a class="artists active" title="Hide releases from the artist I am following">Followed artists</a>
+                    <a class="various-artists" title="Show releases from Various artists">Various artists</a>
+                    <a class="saved" title="Show saved releases in my library">In library</a>
+                    <a class="new" title="Show only new releases">Only new</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <nav class="menu date year buttons">
+            <h3>Year</h3>
+            <a class="year" data-menu_type="year" data-menu_year="2021">2021</a>
+            <a class="year active" data-menu_type="year" data-menu_year="2020">2020</a>
+            <a class="year" data-menu_type="year" data-menu_year="2019">2019</a>
+            <a class="year" data-menu_type="year" data-menu_year="2018">2018</a>
+            <a class="year" data-menu_type="year" data-menu_year="2017">2017</a>
+            <a class="year" data-menu_type="year" data-menu_year="2016">2016</a>
+            <a class="year" data-menu_type="year" data-menu_year="2015">2015</a>
+            <a class="year" data-menu_type="year" data-menu_year="2014">2014</a>
+            <a class="year" data-menu_type="year" data-menu_year="2013">2013</a>
+            <a class="year" data-menu_type="year" data-menu_year="2012">2012</a>
+            <a class="year" data-menu_type="year" data-menu_year="2011">2011</a>
+            <a class="year" data-menu_type="year" data-menu_year="2010">2010</a>
+            <a class="year" data-menu_type="year" data-menu_year="2009">2009</a>
+            <a class="year" data-menu_type="year" data-menu_year="2008">2008</a>
+            <a class="year" data-menu_type="year" data-menu_year="2007">2007</a>
+            <a class="year" data-menu_type="year" data-menu_year="2006">2006</a>
+            <a class="year" data-menu_type="year" data-menu_year="2005">2005</a>
+            <a class="year" data-menu_type="year" data-menu_year="2004">2004</a>
+            <a class="year" data-menu_type="year" data-menu_year="2003">2003</a>
+            <a class="year" data-menu_type="year" data-menu_year="2002">2002</a>
+            <a class="year" data-menu_type="year" data-menu_year="2001">2001</a>
+            <a class="year" data-menu_type="year" data-menu_year="2000">2000</a>
+            <a class="year" data-menu_type="year" data-menu_year="undefined">undefined</a>
+            <span class="last"></span>
+        </nav>
+        <nav class="menu date month buttons">
+            <h3>Month</h3>
+            <a class="month" data-menu_type="month" data-menu_month="12">12</a>
+            <a class="month" data-menu_type="month" data-menu_month="11">11</a>
+            <a class="month" data-menu_type="month" data-menu_month="10">10</a>
+            <a class="month" data-menu_type="month" data-menu_month="09">09</a>
+            <a class="month" data-menu_type="month" data-menu_month="08">08</a>
+            <a class="month" data-menu_type="month" data-menu_month="07">07</a>
+            <a class="month active" data-menu_type="month" data-menu_month="06">06</a>
+            <a class="month" data-menu_type="month" data-menu_month="05">05</a>
+            <a class="month" data-menu_type="month" data-menu_month="04">04</a>
+            <a class="month" data-menu_type="month" data-menu_month="03">03</a>
+            <a class="month" data-menu_type="month" data-menu_month="02">02</a>
+            <a class="month" data-menu_type="month" data-menu_month="01">01</a>
+            <a class="month" data-menu_type="month" data-menu_month="undefined">undefined</a>
+        </nav>
+        <nav class="menu artists names buttons">
+            <h3>Artists</h3>
+            <a class="artist active" data-menu_type="artist" data-menu_artist="all">All</a>
+            <a class="artist" data-menu_type="artist" data-menu_artist="Artist 1">Artist 1</a>
+            <a class="artist" data-menu_type="artist" data-menu_artist="Artist 2">Artist 2</a>
+            <span class="last"></span>
+        </nav>
+        <nav class="menu artists first-letter buttons">
+            <h3>A-9</h3>
+            <a class="artist-letter active" data-menu_type="letter" data-menu_letter="A">A</a>
+            <a class="artist-letter active" data-menu_type="letter" data-menu_letter="B">B</a>
+            <span class="last"></span>
+        </nav>
+        <div class="content">
+            <div class="login skrejto">
+                <div class="login buttons">
+                    <a class="spotify"><i class="fab fa-spotify"></i>Login via Spotify</a>
+                    <a class="deezer"><i class="fab fa-deezer"></i>Login via Deezer</a>
+                    <a class="apple"><i class="fab fa-apple"></i>Login via Apple Music</a>
+                </div>
+            </div>
+            <div class="releases">
+                <div class="release album box" data-release_type="album" data-release_id="2qaaaIfTuEAh5cqI1ksz">
+                    <div class="info">
+                        <div class="image">
+                            <img src="images/no-cover.png" alt="No cover" />
+                        </div>
+                        <div class="details">
+                            <a class="name icon-text" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">Release name</a>
+                            <p class="artists icon-text">
+                                <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 1</a> •
+                                <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 2</a> •
+                                <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 3</a>
+                            </p>
+                            <p class="date icon-text">
+                                <i class="fas fa-calendar-alt"></i>
+                                <a class="year">2020</a>-<a class="month">10</a>-<a class="day">01</a>
+                            </p>
+                            <p class="duration icon-text">
+                                <i class="explicit fas fa-compact-disc" title="Album release"><span title="Explicit lyrics">E</span></i>
+                                <i class="fas fa-bolt" title="New release"></i>
+                                <i class="far fa-clock"></i>00:02:03
+                            </p>
+                            <a class="tracklist button icon-text" title="View tracklist"><i class="fas fa-bars"></i><span>10</span></a>
+                            <a class="play button" title="Play release"><i class="fas fa-play"></i></a>
+                            <a class="queue button" title="Add release to queue"><i class="fas fa-arrow-right"></i></a>
+                            <a class="save button" title="Add release to library"><i class="far fa-heart"></i></a>
+                            <a class="playlist button" title="Add release to playlist"><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="tracklist content list hidden">
+                        <div class="track" data-release_type="track" data-release_id="2qaaa6554456EAh5cqI1ksz">
+                            <div class="info">
+                                <a class="number">1</a>
+                                <a class="play button" title="Play track"><i class="fas fa-play"></i></a>
+                                <a class="queue button" title="Add release to queue"><i class="fas fa-arrow-right"></i></a>
+                                <a class="library button" title="Add track to library"><i class="far fa-heart"></i></a>
+                                <a class="playlist button" title="Add track to playlist"><i class="fas fa-plus"></i></a>
+                                <a class="name">Track 1 name</a>
+                                <p class="artists">
+                                    <a class="artist">Artist 1</a>,
+                                    <a class="artist">Artist 2</a> &
+                                    <a class="artist">Artist 3</a>
+                                </p>
+                                <a class="time icon-text right"><i class="far fa-clock"></i>03:05</a>
+                                <a class="explicit" title="Explicit lyrics"><span>E</span></a>
+                            </div>
+                            <div class="playlists icon-text list hidden">
+                                <a class="update button" title="Update list of playlists"><i class="fas fa-sync-alt"></i></a>
+                                <a class="new" title="Add release to new playlist"><i class="fas fa-plus-circle"></i>Create new playlist</a>
+                                <a class="add new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                                <a class="add" data-release_type="playlist" data-release_id="2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                                <a class="add" data-release_type="playlist" data-release_id="2UKqPRsvn456sQjt5EmHxpm" title="Add release to playlist 'Playlist 2'"><i class="fas fa-plus"></i>Playlist 2<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlists icon-text content list hidden">
+                        <a class="update button" title="Update list of playlists"><i class="fas fa-sync-alt"></i></a>
+                        <a class="new" title="Add release to new playlist"><i class="fas fa-plus-circle"></i>Create new playlist</a>
+                        <a class="add new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                        <a class="add" data-release_type="playlist" data-release_id="2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                        <a class="add" data-release_type="playlist" data-release_id="2UKqPRsvn456sQjt5EmHxpm" title="Add release to playlist 'Playlist 2'"><i class="fas fa-plus"></i>Playlist 2<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                    </div>
+                </div>
+                <div class="release album box" data-release_type="album" data-release_id="2qaaaIfTuEAh5cqI1ksz">
+                    <div class="info">
+                        <div class="image">
+                            <img src="images/no-cover.png" alt="No cover" />
+                        </div>
+                        <div class="details">
+                            <a class="name icon-text" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">Long release name Long release name Long release name Long release name Long release name</a>
+                            <p class="artists icon-text">
+                                <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Long Artist Name Testing 1</a> •
+                                <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 2</a> •
+                                <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 3</a> •
+                                <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 4</a> •
+                                <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 5</a> •
+                                <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 6</a> •
+                                <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 7</a> •
+                                <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 8</a> •
+                                <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 9</a> •
+                                <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 10</a>
+                            </p>
+                            <p class="date icon-text">
+                                <i class="fas fa-calendar-alt"></i>
+                                <a class="year">2020</a>-<a class="month">10</a>-<a class="day">01</a>
+                            </p>
+                            <p class="duration icon-text">
+                                <i class="explicit fas fa-compact-disc" title="Album release"><span title="Explicit lyrics">E</span></i>
+                                <i class="fas fa-bolt" title="New release"></i>
+                                <i class="far fa-clock"></i>00:02:03
+                            </p>
+                            <a class="tracklist button icon-text" title="View tracklist"><i class="fas fa-bars"></i><span>10</span></a>
+                            <a class="play button" title="Play release"><i class="fas fa-play"></i></a>
+                            <a class="queue button" title="Add release to queue"><i class="fas fa-arrow-right"></i></a>
+                            <a class="save button" title="Add release to library"><i class="far fa-heart"></i></a>
+                            <a class="playlist button" title="Add release to playlist"><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="tracklist content list hidden">
+                        <div class="track" data-release_type="track" data-release_id="2qaaa6554456EAh5cqI1ksz">
+                            <div class="info">
+                                <a class="number">1</a>
+                                <a class="play button" title="Play track"><i class="fas fa-play"></i></a>
+                                <a class="queue button" title="Add release to queue"><i class="fas fa-arrow-right"></i></a>
+                                <a class="library button" title="Add track to library"><i class="far fa-heart"></i></a>
+                                <a class="playlist button" title="Add track to playlist"><i class="fas fa-plus"></i></a>
+                                <a class="name">Track 1 name</a>
+                                <p class="artists">
+                                    <a class="artist">Artist 1</a>,
+                                    <a class="artist">Artist 2</a> &
+                                    <a class="artist">Artist 3</a>
+                                </p>
+                                <a class="time icon-text right"><i class="far fa-clock"></i>03:05</a>
+                                <a class="explicit" title="Explicit lyrics"><span>E</span></a>
+                            </div>
+                            <div class="playlists icon-text list hidden">
+                                <a class="update button" title="Update list of playlists"><i class="fas fa-sync-alt"></i></a>
+                                <a class="new" title="Add release to new playlist"><i class="fas fa-plus-circle"></i>Create new playlist</a>
+                                <a class="add new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                                <a class="add" data-release_type="playlist" data-release_id="2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                                <a class="add" data-release_type="playlist" data-release_id="2UKqPRsvn456sQjt5EmHxpm" title="Add release to playlist 'Playlist 2'"><i class="fas fa-plus"></i>Playlist 2<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlists icon-text content list hidden">
+                        <a class="update button" title="Update list of playlists"><i class="fas fa-sync-alt"></i></a>
+                        <a class="new" title="Add release to new playlist"><i class="fas fa-plus-circle"></i>Create new playlist</a>
+                        <a class="add new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                        <a class="add" data-release_type="playlist" data-release_id="2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                        <a class="add" data-release_type="playlist" data-release_id="2UKqPRsvn456sQjt5EmHxpm" title="Add release to playlist 'Playlist 2'"><i class="fas fa-plus"></i>Playlist 2<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                    </div>
+                </div>
+                <div class="release album box" data-release_type="album" data-release_id="2qaaaIfTuEAh5cqI1ksz">
+                    <div class="info">
+                        <div class="image">
+                            <img src="images/no-cover.png" alt="No cover" />
+                        </div>
+                        <div class="details">
+                            <a class="name icon-text" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">Release name</a>
+                            <p class="artists icon-text">
+                                <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 1</a> •
+                                <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 2</a> •
+                                <a class="artist" href="https://open.spotify.com/artist/0JOxt5QOwq0czoJxvSc5hS" target="_blank" rel="noopener noreferrer">Artist 3</a>
+                            </p>
+                            <p class="date icon-text">
+                                <i class="fas fa-calendar-alt"></i>
+                                <a class="year">2020</a>-<a class="month">10</a>-<a class="day">01</a>
+                            </p>
+                            <p class="duration icon-text">
+                                <i class="explicit fas fa-compact-disc" title="Album release"><span title="Explicit lyrics">E</span></i>
+                                <i class="fas fa-bolt" title="New release"></i>
+                                <i class="far fa-clock"></i>00:02:03
+                            </p>
+                            <a class="tracklist button icon-text" title="View tracklist"><i class="fas fa-bars"></i><span>10</span></a>
+                            <a class="play button" title="Play release"><i class="fas fa-play"></i></a>
+                            <a class="queue button" title="Add release to queue"><i class="fas fa-arrow-right"></i></a>
+                            <a class="save button" title="Add release to library"><i class="far fa-heart"></i></a>
+                            <a class="playlist button" title="Add release to playlist"><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="tracklist content list hidden">
+                        <div class="track" data-release_type="track" data-release_id="2qaaa6554456EAh5cqI1ksz">
+                            <div class="info">
+                                <a class="number">1</a>
+                                <a class="play button" title="Play track"><i class="fas fa-play"></i></a>
+                                <a class="queue button" title="Add release to queue"><i class="fas fa-arrow-right"></i></a>
+                                <a class="library button" title="Add track to library"><i class="far fa-heart"></i></a>
+                                <a class="playlist button" title="Add track to playlist"><i class="fas fa-plus"></i></a>
+                                <a class="name">Track 1 name</a>
+                                <p class="artists">
+                                    <a class="artist">Artist 1</a>,
+                                    <a class="artist">Artist 2</a> &
+                                    <a class="artist">Artist 3</a>
+                                </p>
+                                <a class="time icon-text right"><i class="far fa-clock"></i>03:05</a>
+                                <a class="explicit" title="Explicit lyrics"><span>E</span></a>
+                            </div>
+                            <div class="playlists icon-text list hidden">
+                                <a class="update button" title="Update list of playlists"><i class="fas fa-sync-alt"></i></a>
+                                <a class="new" title="Add release to new playlist"><i class="fas fa-plus-circle"></i>Create new playlist</a>
+                                <a class="add new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                                <a class="add" data-release_type="playlist" data-release_id="2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                                <a class="add" data-release_type="playlist" data-release_id="2UKqPRsvn456sQjt5EmHxpm" title="Add release to playlist 'Playlist 2'"><i class="fas fa-plus"></i>Playlist 2<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlists icon-text content list hidden">
+                        <a class="update button" title="Update list of playlists"><i class="fas fa-sync-alt"></i></a>
+                        <a class="new" title="Add release to new playlist"><i class="fas fa-plus-circle"></i>Create new playlist</a>
+                        <a class="add new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                        <a class="add" data-release_type="playlist" data-release_id="2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                        <a class="add" data-release_type="playlist" data-release_id="2UKqPRsvn456sQjt5EmHxpm" title="Add release to playlist 'Playlist 2'"><i class="fas fa-plus"></i>Playlist 2<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="settings icon-text skrejto">
+                <h2>Application</h2>
+                <div class="theme list box">
+                    <h4>Theme</h4>
+                    <p>Select your favourite theme.</p>
+                    <a class="system active" title=""><i class="fas fa-check"></i>System (Dark)</a>
+                    <a class="dark" title=""><i class="fas fa-plus"></i>Dark</a>
+                    <a class="light" title=""><i class="fas fa-plus"></i>Light</a>
+                    <a class="color" title=""><i class="fas fa-plus"></i>Color</a>
+                </div>
+                <div class="list box">
+                    <h4>Notifications</h4>
+                    <p>Enable or disable browser notifications.</p>
+                    <a class="notifications active" title=""><i class="fas fa-check"></i><span>Notifications enabled</span></a>
+                    <!--<a class="notifications disabled" title=""><i class="fas fa-times"></i><span>Notifications disabled</span></a>-->
+                </div>
+                <h2>Releases</h2>
+                <!--<div class="list box">
+                    <h4>Various artists</h4>
+                    <p>Show or hide releases from Various artists.</p>
+                    <a class="various-artists hide" title=""><i class="fas fa-check"></i><span>Releases are displayed</span></a>
+                    <!--<a class="various-artists show" title=""><i class="fas fa-times"></i><span>Releases are hidden</span></a>-->
+                <!--</div>-->
+                <div class="list box">
+                    <h4>Spotify links</h4>
+                    <p>Open the Spotify links in Spotify application or browser.</p>
+                    <a class="spotify-links app" title=""><i class="fab fa-spotify"></i><span>Spotify application</span></a>
+                    <!--<a class="spotify-links browser" title=""><i class="fas fa-external-link-alt"></i><span>Browser</span></a>-->
+                </div>
+                <h2>Playlists</h2>
+                <div class="list box">
+                    <h4>Position of added tracks to playlist</h4>
+                    <p>Set the position (first or last) of added tracks from release to the playlist.</p>
+                    <a class="playlist-position first" title=""><i class="fas fa-chevron-up"></i><span>First position</span></a>
+                    <!--<a class="playlist-position last" title=""><i class="fas fa-chevron-down"></i><span>Last position</span></a>-->
+                </div>
+                <div class="playlist-visibility list box">
+                    <h4>New playlist visibility</h4>
+                    <p>Select your new playlist visibility.</p>
+                    <a class="default" title=""><i class="fas fa-check"></i><span>Default (Public)</span></a>
+                    <a class="public" title=""><i class="fas fa-plus"></i><span>Public</span></a>
+                    <a class="private" title=""><i class="fas fa-plus"></i><span>Private</span></a>
+                </div>
+                <div class="playlist-default list box">
+                    <h4>Favourite playlist</h4>
+                    <p>Set your favourite playlist as default. It will be at the top of the playlists list for quick addition.</p>
+                    <a class="select" data-release_type="playlist" data-release_id="2UKqPRsvnx7sQjt5EmHxpm" title="Select 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1</a>
+                    <a class="select" data-release_type="playlist" data-release_id="2UKqPRsvn456sQjt5EmHxpm" title="Select 'Playlist 2'"><i class="fas fa-plus"></i>Playlist 2</a>
+                </div>
+                <h2>About</h2>
+                <div class="about list box">
+                    <h4>About application</h4>
+                    <a href="https://jakubkastner.github.io/" target="_blank" rel="noopener noreferrer"><i class="fas fa-copyright"></i>Jakub Kastner 2018-2021<span class="right"><i class="fab fa-github"></i></span></a>
+                </div>
+                <!-- TODO default playlist -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- TODO playlists -->
+        <!-- TODO tracklist -->
+        <div class="player">
+            <div class="image left">
+                <img src="images/no-cover.png" alt="No cover" />
+            </div>
+            <div class="info">
+                <div class="time width-50"></div>
+                <div class="content">
+                    <div class="actions">
+                        <div class="buttons">
+                            <a class="prev"><i class="fas fa-step-backward"></i></a>
+                            <a class="play"><i class="fas fa-play"></i></a>
+                            <a class="next"><i class="fas fa-step-forward"></i></a>
+                            <a class="library mobile-hide"><i class="far fa-heart"></i></a>
+                            <a class="playlist mobile-hide" title="Add release to playlist"><i class="fas fa-plus"></i></a>
+                        </div>
+                        <div class="time">
+                            <i class="far fa-clock"></i>
+                            <a class="actual">01:00</a>
+                            <span>/</span>
+                            <a class="full">03:50</a>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <a class="track" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">Track name</a>
+                        <a class="release" href="https://open.spotify.com/album/2qaaaIfB5TuEAh5cqI1ksz" target="_blank" rel="noopener noreferrer">Release name</a>
+                    </div>
+                    <div class="details">
+                        <p class="artists">
+                            <a class="artist">Artist 1</a> •
+                            <a class="artist">Artist 2</a> •
+                            <a class="artist">Artist 3</a>
+                        </p>
+                        <p class="date icon-text mobile-hide">
+                            <i class="fas fa-calendar-alt"></i>
+                            <a class="year">2020</a>-<a class="month">10</a>-<a class="day">01</a>
+                        </p>
+                    </div>
+                    <div class="actions buttons">
+                        <a class="volume mobile-hide"><i class="fas fa-volume-up"></i></a>
+                        <a class="devices"><i class="fas fa-laptop"></i></a>
+                        <a class="actions pc-hide"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <nav class="menu user hover items buttons icon-text pc-hide">
+                    <!--<p>User</p>
+                    <a class="settings" title="Show settings"><i class="fas fa-wrench"></i>Settings</a>
+                    <a class="logout" title="Logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                    <p>Show or hide</p>
+                    <a class="date" title="Hide date menu."><i class="fas fa-calendar-alt"></i>Date menu</a>
+                    <a class="artists" title="Hide artists menu."><i class="fas fa-users"></i>Artists menu</a>
+                    <a class="player" title="Show player."><i class="fas fa-play-circle"></i>Player</a>
+                    <p>Actions</p>
+                    <a class="playlist"><i class="fas fa-plus-circle"></i>Add to playlist</a>
+                    <a class="play"><i class="fas fa-play"></i>Play all</a>
+                    <span></span>-->
+                    <p><i class="fas fa-user-cog"></i>User</p>
+                    <a class="settings" title="Show settings">Settings</a>
+                    <a class="logout" title="Logout">Logout</a>
+                    <p><i class="fas fa-eye"></i>Show or hide</p>
+                    <a class="date" title="Hide date menu.">Date menu</a>
+                    <a class="artists" title="Hide artists menu.">Artists menu</a>
+                    <a class="player" title="Show player.">Player</a>
+                    <p><i class="fas fa-tools"></i>Actions</p>
+                    <a class="playlist">Add to playlist</a>
+                    <a class="play">Play all</a>
+                    <span></span>
+                </nav>
+                <div class="menu round buttons right">
+                    <a class="tracklist" title="Tracklist"><i class="fas fa-angle-double-up"></i></a>
+                    <a class="menu hover user button pc-hide" title="Show menu"><i class="fas fa-bars"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="pc-hide">
+            <nav class="releases menu hover items buttons icon-text">
+                <a class="albums" title="View released albums">
+                    <i class="fas fa-compact-disc"></i>
+                    <span>Albums</span>
+                </a>
+                <!--<a class="eps" title="View released EPs">
+                    <i class="fas fa-record-vinyl"></i>
+                    <span>EPs</span>
+                </a>-->
+                <a class="tracks" title="View released Tracks">
+                    <i class="fas fa-music"></i>
+                    <span>Tracks</span>
+                </a>
+                <!--<a class="remixes" title="View released Remixes">
+                    <i class="fas fa-headphones-alt"></i>
+                    <span>Remixes</span>
+                </a>-->
+                <a class="appears" title="View released appears">
+                    <i class="fas fa-user-friends"></i>
+                    <span>Appears</span>
+                </a>
+                <a class="compilations" title="View released compilations">
+                    <i class="fas fa-th-large"></i>
+                    <span>Compilations</span>
+                </a>
+                <a class="podcasts" title="View newest podcasts">
+                    <i class="fas fa-podcast"></i>
+                    <span>Podcasts</span>
+                </a>
+                <a class="more" title="Show more">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <span>More</span>
+                </a>
+            </nav>
+            <nav class="releases buttons mobile-buttons">
+                <a class="albums" title="View released albums">
+                    <i class="fas fa-compact-disc"></i>
+                    <p>Albums</p>
+                </a>
+                <!--<a class="eps" title="View released EPs">
+                    <i class="fas fa-record-vinyl"></i>
+                    <p>EPs</p>
+                </a>-->
+                <a class="tracks" title="View released Tracks">
+                    <i class="fas fa-music"></i>
+                    <p>Tracks</p>
+                </a>
+                <!--<a class="remixes" title="View released Remixes">
+                    <i class="fas fa-headphones-alt"></i>
+                    <p>Remixes</p>
+                </a>-->
+                <a class="appears" title="View released appears">
+                    <i class="fas fa-user-friends"></i>
+                    <p>Appears</p>
+                </a>
+                <a class="compilations" title="View released compilations">
+                    <i class="fas fa-th-large"></i>
+                    <p>Compilations</p>
+                </a>
+                <a class="podcasts" title="View newest podcasts">
+                    <i class="fas fa-podcast"></i>
+                    <p>Podcasts</p>
+                </a>
+                <a class="more" title="Show more">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <p>More</p>
+                </a>
+            </nav>
+        </div>
+        <!--<a class="menu hover user button" title="Show menu"><i class="fas fa-bars"></i></a>-->
+    </footer>
+    <script src="https://kit.fontawesome.com/ebe995aabe.js" crossorigin="anonymous"></script>
+    <script src="scripts_js/init/elements.js"></script>
+    <script src="scripts_js/init/variables.js"></script>
+    <script src="scripts_js/init/functions.js"></script>
+    <script src="scripts_js/init/api_spotify.js"></script>
+    <script src="scripts_js/backend/database.js"></script>
+    <script src="scripts_js/backend/user.js"></script>
+    <script src="scripts_js/frontend/style.js"></script>
+    <script src="scripts_js/frontend/functions.js"></script>
+    <script src="scripts_js/api/functions.js"></script>
+    <script src="scripts_js/frontend/functions.js"></script>
+    <script src="scripts_js/temp/testing.js"></script>
+</body>
+
+</html>
