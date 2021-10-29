@@ -46,8 +46,14 @@ $margin_right_icon: 5px;
         }
     }
 
-    @if $breakpoint==mobile {
+    @if $breakpoint==tablet {
         @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==mobile {
+        @media only screen and (max-width: 860px) {
             @content;
         }
     }

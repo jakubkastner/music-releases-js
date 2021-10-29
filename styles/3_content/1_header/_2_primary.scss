@@ -105,3 +105,75 @@
         transform: rotate(360deg);
     }
 }
+
+.footer.menu.primary {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    align-items: center;
+    justify-items: center;
+
+    // 5 icons
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    p {
+        font-size: 13px;
+    }
+
+    a {
+        text-align: center;
+        padding: 10px 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .more {
+        display: none;
+    }
+
+
+    @media screen and (max-width: 80px * 5 - 1) {
+
+        // 4 icons
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        .appears,
+        .compilations {
+            display: none;
+        }
+
+        .more {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 58px * 4 - 1) {
+
+        // 3 icons
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .podcasts {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 50px * 3 - 1) {
+
+        // 2 icons
+        grid-template-columns: 1fr 1fr;
+
+        .tracks {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 50px * 2 - 1) {
+
+        // 1 icon
+        grid-template-columns: 1fr;
+
+        .albums {
+            display: none;
+        }
+    }
+}

@@ -278,7 +278,7 @@ $color_text_button: rgb(26, 178, 107);
             }
         }
 
-        .releases {
+        &.menu.primary {
             a {
                 background-color: $color_0;
                 color: $color_text;

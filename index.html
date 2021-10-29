@@ -15,11 +15,11 @@
 
 <body class="classic">
     <div class="header loader"></div>
-    <div class="header primary">
+    <div class="header primary hide-mobile">
         <div class="page-name" title="Music Releases">
-            <p class="mobile-hide">Music</p>
+            <p class="hide-tablet">Music</p>
             <img class="favicon" src="images/favicon.png" alt="R" />
-            <p class="mobile-hide">eleases</p>
+            <p class="hide-tablet">eleases</p>
         </div>
         <nav class="releases icon-text buttons">
             <a class="albums active" title="View released albums"><i class="fas fa-compact-disc"></i>Albums</a>
@@ -57,7 +57,7 @@
             </nav>
         </div>
     </div>
-    <div class="header secondary">
+    <div class="header secondary hide-mobile">
         <div class="filter icon-text">
             <nav class="buttons">
                 <a class="tracks" title="Show released Tracks"><i class="fas fa-headphones-alt"></i>Tracks</a>
@@ -76,7 +76,7 @@
             </div>
         </div>
     </div>
-    <div class="main menu date">
+    <div class="main menu date hide-mobile">
         <a class="search date button"><i class="fas fa-calendar-alt"></i> Date <i class="fas fa-search"></i></a>
         <nav class="buttons year">
             <a class="year" data-menu_type="year" data-menu_year="2021">2021 <i class="fas fa-angle-down"></i></a>
@@ -119,9 +119,8 @@
             <a class="year" data-menu_type="year" data-menu_year="-">-</a>
             <span class="last"></span>
         </nav>
-
     </div>
-    <div class="main menu menu artists names">
+    <div class="main menu menu artists names hide-mobile">
         <a class="search artists button"><i class="fas fa-users"></i> Artists <i class="fas fa-search"></i></a>
         <nav class="buttons">
             <a class="artist active" data-menu_type="artist" data-menu_artist="all">All</a>
@@ -129,7 +128,7 @@
             <a class="artist" data-menu_type="artist" data-menu_artist="Artist 2">Artist 2</a>
         </nav>
     </div>
-    <div class="main menu playlists">
+    <div class="main menu playlists hide-mobile">
         <a class="search playlists button"><i class="fas fa-bars"></i> Playlists <i class="fas fa-search"></i></a>
         <nav class="buttons">
             <a class="playlist" data-menu_type="playlist" data-menu_artist="playlist-id-1">Playlist 1</a>
@@ -397,7 +396,45 @@
             <!-- TODO default playlist -->
         </div>
     </div>
-    <div class="footer player">
+    <div class="footer menu secondary hide-pc hide-tablet">
+        <nav class="buttons">
+            <a class="clear" title="Show all">X</a>
+            <a class="tracks" title="Show released Tracks">Tracks</a>
+            <a class="eps" title="Show released EPs">EPs</a>
+            <a class="remixes" title="Show released Remixes">Remixes</a>
+            <a class="artists active" title="Hide releases from the artist I am following">Followed artists</a>
+            <a class="various-artists" title="Show releases from Various artists">Various artists</a>
+            <a class="saved" title="Show saved releases in my library">In library</a>
+            <a class="new" title="Show only new releases">Only new</a>
+        </nav>
+    </div>
+    <nav class="footer menu primary hide-pc hide-tablet buttons mobile-buttons">
+        <a class="albums" title="View released albums">
+            <i class="fas fa-compact-disc"></i>
+            <p>Albums</p>
+        </a>
+        <a class="tracks" title="View released Tracks">
+            <i class="fas fa-music"></i>
+            <p>Tracks</p>
+        </a>
+        <a class="appears" title="View released appears">
+            <i class="fas fa-user-friends"></i>
+            <p>Appears</p>
+        </a>
+        <a class="compilations" title="View released compilations">
+            <i class="fas fa-th-large"></i>
+            <p>Compilations</p>
+        </a>
+        <a class="podcasts" title="View newest podcasts">
+            <i class="fas fa-podcast"></i>
+            <p>Podcasts</p>
+        </a>
+        <a class="more" title="Show more">
+            <i class="fas fa-ellipsis-h"></i>
+            <p>More</p>
+        </a>
+    </nav>
+    <div class="footer player hide-mobile">
         <div class="image left">
             <img src="images/no-cover.png" alt="No cover" />
         </div>
@@ -447,19 +484,6 @@
         <header>
             <div class="primary mobile-hide left"></div>
             <div class="secondary mobile-hide"></div>
-            <div class="secondary pc-hide">
-                <div class="menu">
-                    <nav class="buttons">
-                        <a class="tracks" title="Show released Tracks">Tracks</a>
-                        <a class="eps" title="Show released EPs">EPs</a>
-                        <a class="remixes" title="Show released Remixes">Remixes</a>
-                        <a class="artists active" title="Hide releases from the artist I am following">Followed artists</a>
-                        <a class="various-artists" title="Show releases from Various artists">Various artists</a>
-                        <a class="saved" title="Show saved releases in my library">In library</a>
-                        <a class="new" title="Show only new releases">Only new</a>
-                    </nav>
-                </div>
-            </div>
         </header>
         <main>
             <nav class="menu date year buttons"></nav>
@@ -577,17 +601,7 @@
         </footer>
     </div>
     <script src="https://kit.fontawesome.com/ebe995aabe.js" crossorigin="anonymous"></script>
-    <script src="scripts_js/init/elements.js"></script>
-    <script src="scripts_js/init/variables.js"></script>
-    <script src="scripts_js/init/functions.js"></script>
-    <script src="scripts_js/init/api_spotify.js"></script>
-    <script src="scripts_js/backend/database.js"></script>
-    <script src="scripts_js/backend/user.js"></script>
-    <script src="scripts_js/frontend/style.js"></script>
-    <script src="scripts_js/frontend/functions.js"></script>
-    <script src="scripts_js/api/functions.js"></script>
-    <script src="scripts_js/frontend/functions.js"></script>
-    <script src="scripts_js/temp/testing.js"></script>
+    <!-- TODO scripts-->
 </body>
 
 </html>

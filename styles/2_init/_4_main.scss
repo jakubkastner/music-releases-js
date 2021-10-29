@@ -25,17 +25,25 @@ a {
 }
 
 // responsive styles (hide / show content on pc / mobile)
-@media screen and (min-width: $width_pc) {
-    .pc-hide {
+
+@include respond(pc) {
+    .hide-pc {
         display: none !important;
     }
 }
 
-@media screen and (max-width: $width_pc - 1) {
-    .mobile-hide {
+@include respond(tablet) {
+    .hide-tablet {
         display: none !important;
     }
 }
+
+@include respond(mobile) {
+    .hide-mobile {
+        display: none !important;
+    }
+}
+
 
 .left {
     margin-left: $padding_left_right;
