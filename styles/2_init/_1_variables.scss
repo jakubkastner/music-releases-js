@@ -35,7 +35,7 @@ $margin_right_icon: 5px;
 
 @mixin respond($breakpoint) {
     @if $breakpoint==pc {
-        @media only screen and (min-width: 1025px) {
+        @media only screen and (min-width: 1040px) {
             @content;
         }
     }
@@ -47,13 +47,13 @@ $margin_right_icon: 5px;
     }
 
     @if $breakpoint==tablet {
-        @media only screen and (max-width: 1024px) {
+        @media only screen and (max-width: 1039px) {
             @content;
         }
     }
 
     @if $breakpoint==mobile {
-        @media only screen and (max-width: 860px) {
+        @media only screen and (max-width: 810px) {
             @content;
         }
     }

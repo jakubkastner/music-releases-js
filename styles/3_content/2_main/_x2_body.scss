@@ -2,12 +2,20 @@
  *  Main page content
  */
 
+body .main.content>div {
+    height: 100%;
+}
+.main.menu .buttons {
+    height: calc(100% - 44px);
+}
+
 body {
     height: 100vh;
     overflow: hidden;
 
     // responsive styles
-    @media screen and (max-width: $width_pc - 1) {
+    @include respond(mobile) {
+        height: auto;
         overflow: auto;
     }
 

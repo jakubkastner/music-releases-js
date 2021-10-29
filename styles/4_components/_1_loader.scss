@@ -1,13 +1,14 @@
 // loader
 .loader {
-    width: 100%;
-    height: $height_header_loader;
-    margin: auto;
+    //width: 100%;
+    //height: $height_header_loader;
+    //margin: auto;
     border-radius: $height_header_loader;
     background-size: 20%;
     background-repeat: repeat-y;
     background-position: -25% 0;
-    position: fixed;
+    //position: fixed;
+    display: grid;
 
     &.active {
         animation: loader 3s ease-in-out infinite;

@@ -13,30 +13,39 @@ body.classic {
     @include respond(mobile) {
         grid-template-columns: auto;
         //grid-template-rows: 4px calc(100vh - 4px - 100px) 100px;
-        grid-template-rows: 4px auto 50px 60px;
+        grid-template-rows: 4px 100% 50px 60px;
 
         .header {
             &.loader {
                 grid-area: 1 / 1 / 2 / 1;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                height: 4px;
             }
         }
 
         .main {
             &.content {
                 grid-area: 2 / 1 / 3 / 1;
+                overflow: hidden;
             }
         }
 
         .footer {
             &.menu {
+                display: grid !important;
+                position: fixed;
+                width: 100%;
                 &.secondary {
                     grid-area: 3 / 1 / 4 / 1;
                     display: grid !important;
+                    bottom: 60px;
                 }
 
                 &.primary {
                     grid-area: 4 / 1 / 5 / 1;
-                    display: grid !important;
+                    bottom: 0;
                 }
             }
         }
@@ -74,7 +83,7 @@ body.classic {
                 }
 
                 &.artists {
-                    grid-area: 3 / 4 / 6 / 5;
+                    grid-area: 3 / 4 / 5 / 4;
                 }
             }
 
