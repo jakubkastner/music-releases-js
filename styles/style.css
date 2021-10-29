@@ -480,10 +480,10 @@
   body .header .user.button.hover.items {
     background-color: #fff5f5;
   }
-  body .header .menu.hover.items {
+  body .menu.hover.items {
     background-color: #fff5f5;
   }
-  body .header .menu.hover.items a:hover {
+  body .menu.hover.items a:hover {
     background-color: #cdcdcd;
   }
   body .main {
@@ -1143,10 +1143,10 @@
   body.dark .header .user.button.hover.items {
     background-color: #242424;
   }
-  body.dark .header .menu.hover.items {
+  body.dark .menu.hover.items {
     background-color: #242424;
   }
-  body.dark .header .menu.hover.items a:hover {
+  body.dark .menu.hover.items a:hover {
     background-color: #383838;
   }
   body.dark .main {
@@ -1811,10 +1811,10 @@
   body.color .header .user.button.hover.items {
     background-color: #38a700;
   }
-  body.color .header .menu.hover.items {
+  body.color .menu.hover.items {
     background-color: #38a700;
   }
-  body.color .header .menu.hover.items a:hover {
+  body.color .menu.hover.items a:hover {
     background-color: #3eff8b;
   }
   body.color .main {
@@ -2477,10 +2477,10 @@
   body .header .user.button.hover.items {
     background-color: #242424;
   }
-  body .header .menu.hover.items {
+  body .menu.hover.items {
     background-color: #242424;
   }
-  body .header .menu.hover.items a:hover {
+  body .menu.hover.items a:hover {
     background-color: #383838;
   }
   body .main {
@@ -3148,10 +3148,10 @@
   body.light .header .user.button.hover.items {
     background-color: #fff5f5;
   }
-  body.light .header .menu.hover.items {
+  body.light .menu.hover.items {
     background-color: #fff5f5;
   }
-  body.light .header .menu.hover.items a:hover {
+  body.light .menu.hover.items a:hover {
     background-color: #cdcdcd;
   }
   body.light .main {
@@ -3816,10 +3816,10 @@
   body.color .header .user.button.hover.items {
     background-color: #38a700;
   }
-  body.color .header .menu.hover.items {
+  body.color .menu.hover.items {
     background-color: #38a700;
   }
-  body.color .header .menu.hover.items a:hover {
+  body.color .menu.hover.items a:hover {
     background-color: #3eff8b;
   }
   body.color .main {
@@ -4338,16 +4338,14 @@ body.classic {
     position: fixed;
     width: 100%;
   }
-  body.classic .footer.menu.secondary {
+  body.classic .footer.menu.filter {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
     grid-area: 3 / 1 / 4 / 1;
-    display: -ms-grid !important;
-    display: grid !important;
     bottom: 60px;
   }
-  body.classic .footer.menu.primary {
+  body.classic .footer.menu.releases {
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
@@ -4502,6 +4500,7 @@ a {
   cursor: pointer;
   font-size: 18px;
   display: inline-block;
+  padding: 10px;
 }
 
 .buttons {
@@ -4522,20 +4521,6 @@ a {
  *  Header menu
  *  Page name
  */
-.header {
-  /*div {
-        display: flex;
-        text-align: right;
-
-        &.secondary.pc-hide {
-            display: block;
-        }
-    }*/
-  /*.menu.show-hide {
-        width: calc(130px + 130px - 15px);
-    }*/
-}
-
 .header .left {
   margin-left: 15px;
   padding-left: 0;
@@ -4544,11 +4529,6 @@ a {
 .header .right {
   margin-right: 15px;
   padding-right: 0;
-}
-
-.header .button,
-.header .buttons > * {
-  padding: 10px;
 }
 
 .header.primary {
@@ -4663,10 +4643,6 @@ a {
 .main.content .box {
   padding: 30px;
   margin-bottom: 30px;
-}
-
-.main.content > div > div {
-  padding: 30px;
 }
 
 .main.content .releases .release > * {
@@ -4785,23 +4761,6 @@ footer .menu.round.buttons > * i {
 
 footer .menu.hover {
   overflow: auto;
-}
-
-footer .menu.hover.releases {
-  min-width: 160px;
-  width: 160px;
-  bottom: 60px;
-  max-height: calc(100vh - 60px);
-  position: fixed;
-  bottom: 60px;
-}
-
-@media screen and (max-width: 160px) {
-  footer .menu.hover.releases {
-    width: 100%;
-    min-width: 100%;
-    word-wrap: anywhere;
-  }
 }
 
 footer .menu.hover.items.user {
@@ -4937,22 +4896,10 @@ footer .menu.hover.buttons > * {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  /*display: flex;
-    height: 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-
-    &.active {
+  /*@media screen and (max-width: $width_pc - 1) {
         height: $height_footer_player;
+        bottom: $height_footer_menu;
     }*/
-}
-
-@media screen and (max-width: 1024px) {
-  .footer.player {
-    height: 100px;
-    bottom: 60px;
-  }
 }
 
 .footer.player .image {
@@ -5124,7 +5071,7 @@ footer .menu.hover.buttons > * {
   padding-bottom: 12px;
 }
 
-.footer.primary.menu.releases {
+.footer.menu.releases .primary {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr;
@@ -5138,62 +5085,118 @@ footer .menu.hover.buttons > * {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.footer.primary.menu.releases p {
+.footer.menu.releases .primary p {
   font-size: 13px;
 }
 
-.footer.primary.menu.releases a {
+.footer.menu.releases .primary a {
   text-align: center;
   padding: 10px 0;
   margin: 0;
   width: 100%;
 }
 
-.footer.primary.menu.releases .more {
+.footer.menu.releases .primary .more {
   display: none;
 }
 
 @media screen and (max-width: 399px) {
-  .footer.primary.menu.releases {
+  .footer.menu.releases .primary {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  .footer.primary.menu.releases .appears,
-  .footer.primary.menu.releases .compilations {
+  .footer.menu.releases .primary .appears,
+  .footer.menu.releases .primary .compilations {
     display: none;
   }
-  .footer.primary.menu.releases .more {
+  .footer.menu.releases .primary .more {
     display: block;
+  }
+  .footer.menu.releases .hover .appears,
+  .footer.menu.releases .hover .compilations {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
 @media screen and (max-width: 231px) {
-  .footer.primary.menu.releases {
+  .footer.menu.releases .primary {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
   }
-  .footer.primary.menu.releases .podcasts {
+  .footer.menu.releases .primary .podcasts {
     display: none;
+  }
+  .footer.menu.releases .hover .podcasts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
 @media screen and (max-width: 149px) {
-  .footer.primary.menu.releases {
+  .footer.menu.releases .primary {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
-  .footer.primary.menu.releases .tracks {
+  .footer.menu.releases .primary .tracks {
     display: none;
+  }
+  .footer.menu.releases .hover .tracks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
 @media screen and (max-width: 99px) {
-  .footer.primary.menu.releases {
+  .footer.menu.releases .primary {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .footer.primary.menu.releases .albums {
+  .footer.menu.releases .primary .albums {
     display: none;
+  }
+  .footer.menu.releases .hover .albums {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.footer.menu.releases .hover {
+  min-width: 160px;
+  width: 160px;
+  bottom: 60px;
+  max-height: calc(100vh - 60px);
+  position: fixed;
+  word-wrap: anywhere;
+}
+
+.footer.menu.releases .hover a {
+  display: none;
+}
+
+.footer.menu.releases .hover i {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media screen and (max-width: 160px) {
+  .footer.menu.releases .hover {
+    width: 100%;
+    min-width: 100%;
+    word-wrap: anywhere;
+  }
+}
+
+@media screen and (max-width: 100px) {
+  .footer.menu.releases .hover p {
+    display: none;
+  }
+  .footer.menu.releases .hover i {
+    margin: auto;
   }
 }
 
@@ -5204,7 +5207,7 @@ footer .menu.hover.buttons > * {
   display: flex;
   white-space: nowrap;
   overflow: auto;
-  width: calc(100vw - 20px);
+  width: calc(100% - 20px);
   padding: 10px;
 }
 

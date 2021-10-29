@@ -407,7 +407,7 @@
             <!-- TODO default playlist -->
         </div>
     </div>
-    <div class="footer menu secondary hide-pc hide-tablet">
+    <div class="footer menu secondary filter hide-pc hide-tablet buttons">
         <nav class="buttons">
             <a class="clear" title="Show all">X</a>
             <a class="tracks" title="Show released Tracks">Tracks</a>
@@ -419,32 +419,56 @@
             <a class="new" title="Show only new releases">Only new</a>
         </nav>
     </div>
-    <nav class="footer menu primary releases hide-pc hide-tablet buttons mobile-buttons">
-        <a class="albums" title="View released albums">
-            <i class="fas fa-compact-disc"></i>
-            <p>Albums</p>
-        </a>
-        <a class="tracks" title="View released Tracks">
-            <i class="fas fa-music"></i>
-            <p>Tracks</p>
-        </a>
-        <a class="appears" title="View released appears">
-            <i class="fas fa-user-friends"></i>
-            <p>Appears</p>
-        </a>
-        <a class="compilations" title="View released compilations">
-            <i class="fas fa-th-large"></i>
-            <p>Compilations</p>
-        </a>
-        <a class="podcasts" title="View newest podcasts">
-            <i class="fas fa-podcast"></i>
-            <p>Podcasts</p>
-        </a>
-        <a class="more" title="Show more">
-            <i class="fas fa-ellipsis-h"></i>
-            <p>More</p>
-        </a>
-    </nav>
+    <div class="footer menu releases hide-tablet">
+        <nav class="primary hide-pc buttons">
+            <a class="albums" title="View released albums">
+                <i class="fas fa-compact-disc"></i>
+                <p>Albums</p>
+            </a>
+            <a class="tracks" title="View released Tracks">
+                <i class="fas fa-music"></i>
+                <p>Tracks</p>
+            </a>
+            <a class="appears" title="View released appears">
+                <i class="fas fa-user-friends"></i>
+                <p>Appears</p>
+            </a>
+            <a class="compilations" title="View released compilations">
+                <i class="fas fa-th-large"></i>
+                <p>Compilations</p>
+            </a>
+            <a class="podcasts" title="View newest podcasts">
+                <i class="fas fa-podcast"></i>
+                <p>Podcasts</p>
+            </a>
+            <a class="more" title="Show more">
+                <i class="fas fa-ellipsis-h"></i>
+                <p>More</p>
+            </a>
+        </nav>
+        <nav class="menu hover items icon-text buttons">
+            <a class="albums" title="View released albums">
+                <i class="fas fa-compact-disc"></i>
+                <p>Albums</p>
+            </a>
+            <a class="tracks" title="View released Tracks">
+                <i class="fas fa-music"></i>
+                <p>Tracks</p>
+            </a>
+            <a class="appears" title="View released appears">
+                <i class="fas fa-user-friends"></i>
+                <p>Appears</p>
+            </a>
+            <a class="compilations" title="View released compilations">
+                <i class="fas fa-th-large"></i>
+                <p>Compilations</p>
+            </a>
+            <a class="podcasts" title="View newest podcasts">
+                <i class="fas fa-podcast"></i>
+                <p>Podcasts</p>
+            </a>
+        </nav>
+    </div>
     <div class="footer player hide-mobile">
         <div class="image left">
             <img src="images/no-cover.png" alt="No cover" />
@@ -492,34 +516,10 @@
     </div>
 
     <div class="skrejto">
-        <header>
-            <div class="primary mobile-hide left"></div>
-            <div class="secondary mobile-hide"></div>
-        </header>
-        <main>
-            <nav class="menu date year buttons"></nav>
-            <nav class="menu date month buttons"></nav>
-            <nav class="menu artists names buttons"></nav>
-            <nav class="menu artists first-letter buttons"></nav>
-            <div class="content"></div>
-        </main>
         <footer>
-            <!-- TODO playlists -->
-            <!-- TODO tracklist -->
             <div class="player">
                 <div class="menu">
                     <nav class="menu user hover items buttons icon-text pc-hide">
-                        <!--<p>User</p>
-                    <a class="settings" title="Show settings"><i class="fas fa-wrench"></i>Settings</a>
-                    <a class="logout" title="Logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
-                    <p>Show or hide</p>
-                    <a class="date" title="Hide date menu."><i class="fas fa-calendar-alt"></i>Date menu</a>
-                    <a class="artists" title="Hide artists menu."><i class="fas fa-users"></i>Artists menu</a>
-                    <a class="player" title="Show player."><i class="fas fa-play-circle"></i>Player</a>
-                    <p>Actions</p>
-                    <a class="playlist"><i class="fas fa-plus-circle"></i>Add to playlist</a>
-                    <a class="play"><i class="fas fa-play"></i>Play all</a>
-                    <span></span>-->
                         <p><i class="fas fa-user-cog"></i>User</p>
                         <a class="settings" title="Show settings">Settings</a>
                         <a class="logout" title="Logout">Logout</a>
@@ -530,7 +530,6 @@
                         <p><i class="fas fa-tools"></i>Actions</p>
                         <a class="playlist">Add to playlist</a>
                         <a class="play">Play all</a>
-                        <span></span>
                     </nav>
                     <div class="menu round buttons right">
                         <a class="tracklist" title="Tracklist"><i class="fas fa-angle-double-up"></i></a>
@@ -538,77 +537,6 @@
                     </div>
                 </div>
             </div>
-            <div class="pc-hide">
-                <nav class="releases menu hover items buttons icon-text">
-                    <a class="albums" title="View released albums">
-                        <i class="fas fa-compact-disc"></i>
-                        <span>Albums</span>
-                    </a>
-                    <!--<a class="eps" title="View released EPs">
-                    <i class="fas fa-record-vinyl"></i>
-                    <span>EPs</span>
-                </a>-->
-                    <a class="tracks" title="View released Tracks">
-                        <i class="fas fa-music"></i>
-                        <span>Tracks</span>
-                    </a>
-                    <!--<a class="remixes" title="View released Remixes">
-                    <i class="fas fa-headphones-alt"></i>
-                    <span>Remixes</span>
-                </a>-->
-                    <a class="appears" title="View released appears">
-                        <i class="fas fa-user-friends"></i>
-                        <span>Appears</span>
-                    </a>
-                    <a class="compilations" title="View released compilations">
-                        <i class="fas fa-th-large"></i>
-                        <span>Compilations</span>
-                    </a>
-                    <a class="podcasts" title="View newest podcasts">
-                        <i class="fas fa-podcast"></i>
-                        <span>Podcasts</span>
-                    </a>
-                    <a class="more" title="Show more">
-                        <i class="fas fa-ellipsis-h"></i>
-                        <span>More</span>
-                    </a>
-                </nav>
-                <nav class="releases buttons mobile-buttons">
-                    <a class="albums" title="View released albums">
-                        <i class="fas fa-compact-disc"></i>
-                        <p>Albums</p>
-                    </a>
-                    <!--<a class="eps" title="View released EPs">
-                    <i class="fas fa-record-vinyl"></i>
-                    <p>EPs</p>
-                </a>-->
-                    <a class="tracks" title="View released Tracks">
-                        <i class="fas fa-music"></i>
-                        <p>Tracks</p>
-                    </a>
-                    <!--<a class="remixes" title="View released Remixes">
-                    <i class="fas fa-headphones-alt"></i>
-                    <p>Remixes</p>
-                </a>-->
-                    <a class="appears" title="View released appears">
-                        <i class="fas fa-user-friends"></i>
-                        <p>Appears</p>
-                    </a>
-                    <a class="compilations" title="View released compilations">
-                        <i class="fas fa-th-large"></i>
-                        <p>Compilations</p>
-                    </a>
-                    <a class="podcasts" title="View newest podcasts">
-                        <i class="fas fa-podcast"></i>
-                        <p>Podcasts</p>
-                    </a>
-                    <a class="more" title="Show more">
-                        <i class="fas fa-ellipsis-h"></i>
-                        <p>More</p>
-                    </a>
-                </nav>
-            </div>
-            <!--<a class="menu hover user button" title="Show menu"><i class="fas fa-bars"></i></a>-->
         </footer>
     </div>
     <script src="https://kit.fontawesome.com/ebe995aabe.js" crossorigin="anonymous"></script>

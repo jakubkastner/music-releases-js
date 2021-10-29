@@ -30,19 +30,19 @@ $margin_right_icon: 5px;
         }
     }
 
-    @if $breakpoint==mobile-menu {
+    @else if $breakpoint==mobile-menu {
         @media only screen and (max-width: 1399px) {
             @content;
         }
     }
 
-    @if $breakpoint==tablet {
+    @else if $breakpoint==tablet {
         @media only screen and (max-width: 1039px) {
             @content;
         }
     }
 
-    @if $breakpoint==mobile {
+    @else if $breakpoint==mobile {
         @media only screen and (max-width: 810px) {
             @content;
         }

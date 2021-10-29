@@ -161,15 +161,15 @@ $color_text_button: rgb(26, 178, 107);
             background-color: $color_4;
         }
 
-        .menu.hover.items {
-            background-color: $color_4;
-
-            a:hover {
-                background-color: $color_6;
-            }
-        }
     }
 
+    .menu.hover.items {
+        background-color: $color_4;
+
+        a:hover {
+            background-color: $color_6;
+        }
+    }
     // main
     .main {
         background-color: $color_1;

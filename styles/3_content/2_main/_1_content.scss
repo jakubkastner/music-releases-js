@@ -1,95 +1,10 @@
 .main.content {
-    $spaces: 30px;
     height: 100%;
     overflow: auto;
 
+    // box (fe releases box)
     .box {
         padding: $spaces;
         margin-bottom: $spaces;
-    }
-
-    &>div {
-
-        &>div {
-            padding: $spaces;
-        }
-    }
-
-    .releases {
-
-        // release div
-        .release {
-
-            &>* {
-                width: 100%;
-                padding: 0;
-            }
-
-            // release information div
-            .info {
-                display: flex;
-
-                $image_width: 150px;
-
-                .image {
-                    margin-right: $spaces;
-                    width: $image_width;
-                    height: $image_width;
-
-                    img {
-                        max-width: 100%;
-                        max-height: 100%;
-                    }
-                }
-
-                .details {
-                    width: calc(100% - #{$image_width} - #{$spaces});
-
-                    .name,
-                    .artists,
-                    .date {
-                        width: 100%;
-                        display: inline-block;
-                        margin-bottom: 5px;
-                    }
-
-                    .tracklist {
-                        &.button {
-                            padding-left: 0;
-                        }
-
-                        span {
-                            font-size: 70%;
-                        }
-                    }
-
-                    .name {
-                        font-size: 24px;
-                    }
-
-                    .artists {
-                        font-size: 20px;
-                    }
-
-                    .date {
-                        font-size: 18px;
-                        margin-bottom: 8px;
-                    }
-
-                    .button {
-                        font-size: 30px;
-                        margin-right: 5px;
-                        margin-bottom: 0;
-                        padding: 6px;
-                    }
-                }
-            }
-
-            // release content
-            .content {
-                margin-top: $spaces;
-                max-height: 40vh;
-            }
-        }
     }
 }

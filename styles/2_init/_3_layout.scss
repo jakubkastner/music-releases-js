@@ -1,8 +1,13 @@
 // template width
+
 $menu_playlist_width: 250px;
 $menu_date_width: 110px;
 $menu_artists_width: 200px;
 $loader_height: 4px;
+
+$padding: 15px;
+$spaces: 30px;
+$cover_width: 150px;
 
 body.classic {
     display: grid;
@@ -41,13 +46,12 @@ body.classic {
                 display: grid !important;
                 position: fixed;
                 width: 100%;
-                &.secondary {
+                &.filter {
                     grid-area: 3 / 1 / 4 / 1;
-                    display: grid !important;
                     bottom: 60px;
                 }
 
-                &.primary {
+                &.releases {
                     grid-area: 4 / 1 / 5 / 1;
                     bottom: 0;
                 }

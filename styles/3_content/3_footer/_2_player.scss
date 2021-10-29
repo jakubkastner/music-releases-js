@@ -1,19 +1,10 @@
 .footer.player {
     display: inline-flex;
-    /*display: flex;
-    height: 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 
-    &.active {
-        height: $height_footer_player;
-    }*/
-
-    @media screen and (max-width: $width_pc - 1) {
+    /*@media screen and (max-width: $width_pc - 1) {
         height: $height_footer_player;
         bottom: $height_footer_menu;
-    }
+    }*/
 
     // cover of the current track
     .image {

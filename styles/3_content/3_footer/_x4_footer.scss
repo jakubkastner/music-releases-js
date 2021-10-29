@@ -13,8 +13,6 @@ footer {
         padding-right: 10px;
     }*/
 
-    // player
-
     .menu.round {
         //width: 80px;
         display: block;
@@ -48,21 +46,6 @@ footer {
     }
 
     .menu.hover {
-        &.releases {
-            $width: 160px;
-            min-width: $width;
-            width: $width;
-            bottom: $height_footer_menu;
-            max-height: calc(100vh - #{$height_footer_menu});
-            position: fixed;
-            bottom: $height_footer_menu;
-
-            @media screen and (max-width: $width) {
-                width: 100%;
-                min-width: 100%;
-                word-wrap: anywhere;
-            }
-        }
 
         &.items.user {
             $width: 200px;
