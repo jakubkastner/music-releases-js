@@ -63,7 +63,7 @@ body.classic {
 
     // TODO tablet
 
-    @include respond(pc) {
+    @include respond(pctab) {
         // playlist, content, artists menu, date menu
         grid-template-columns: $menu_playlist_width auto $menu_date_width $menu_artists_width;
         grid-template-rows: $loader_height 48px 44px calc(100vh - 4px - 48px - 44px - 100px) 100px;

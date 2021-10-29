@@ -281,6 +281,12 @@
 /** INIT
  *  Init sass varibles
  */
+@media only screen and (max-width: 1299px) {
+  .hide-text {
+    display: none;
+  }
+}
+
 /** COLORS
  *  Colors for themes (light, dark, color).
  */
@@ -4308,7 +4314,7 @@ body.classic {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 899px) {
   body.classic {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
@@ -4355,7 +4361,7 @@ body.classic {
   }
 }
 
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 900px) {
   body.classic {
     -ms-grid-columns: 250px auto 110px 200px;
         grid-template-columns: 250px auto 110px 200px;
@@ -4468,19 +4474,19 @@ a {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 1050px) {
   .hide-pc {
     display: none !important;
   }
 }
 
-@media only screen and (max-width: 1039px) and (min-width: 811px) {
+@media only screen and (max-width: 1049px) and (min-width: 900px) {
   .hide-tablet {
     display: none !important;
   }
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 899px) {
   .hide-mobile {
     display: none !important;
   }
@@ -4536,6 +4542,10 @@ a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  /*.show-hide {
+        margin-left: auto;
+        display: inline;
+    }*/
 }
 
 .header.primary .page-name {
@@ -4563,9 +4573,8 @@ a {
           animation: spin 2s linear infinite;
 }
 
-.header.primary .show-hide {
+.header.primary .actions {
   margin-left: auto;
-  display: inline;
 }
 
 .header.primary .user {
@@ -4592,7 +4601,7 @@ a {
   display: none;
 }
 
-@media only screen and (max-width: 1039px) and (min-width: 811px) {
+@media only screen and (max-width: 1299px) {
   .header.primary .user .menu.hover.items {
     width: 150px;
   }
@@ -4620,20 +4629,8 @@ a {
   }
 }
 
-.header.secondary {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.header.secondary .actions {
-  margin-left: auto;
-}
-
-@media only screen and (max-width: 1039px) and (min-width: 811px) {
-  .header.secondary .actions span {
-    display: none;
-  }
+.header.secondary.filter {
+  overflow: auto;
 }
 
 .main.content {
@@ -4711,186 +4708,6 @@ a {
 .main.content .releases .release .content {
   margin-top: 30px;
   max-height: 40vh;
-}
-
-/** FOOTER
- *  Page footer
- */
-footer {
-  display: block;
-  height: auto;
-  /** {
-        padding-left: 10px;
-        padding-right: 10px;
-    }*/
-}
-
-footer .menu.round {
-  display: block;
-}
-
-footer .menu.round.pc-hide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 0;
-}
-
-footer .menu.round.pc-hide a:first-of-type {
-  margin-left: auto;
-}
-
-footer .menu.round.pc-hide.buttons > * {
-  top: -65px;
-}
-
-footer .menu.round.buttons > * {
-  font-size: 24px;
-  border-radius: 100%;
-  width: 56px;
-  height: 56px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  top: -28px;
-}
-
-footer .menu.round.buttons > * i {
-  margin: auto;
-}
-
-footer .menu.hover {
-  overflow: auto;
-}
-
-footer .menu.hover.items.user {
-  min-width: 200px;
-  width: 200px;
-  bottom: 0;
-  max-height: calc(100vh - 60px);
-}
-
-footer .menu.hover.items.user p,
-footer .menu.hover.items.user span {
-  cursor: default;
-}
-
-footer .menu.hover.items.user > * {
-  display: block;
-}
-
-footer .menu.hover.items.user > *:last-child {
-  padding-bottom: 60px;
-}
-
-@media screen and (max-width: 200px) {
-  footer .menu.hover.items.user {
-    width: 100%;
-    min-width: 100%;
-    word-wrap: anywhere;
-  }
-}
-
-@media screen and (max-width: 60px) {
-  footer .menu.hover span {
-    display: none;
-  }
-}
-
-footer .menu.hover .button,
-footer .menu.hover.buttons > * {
-  padding: 10px;
-}
-
-@media screen and (max-width: 1024px) {
-  footer .releases.mobile-buttons .more {
-    display: none;
-  }
-  footer .releases.menu.hover a {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 559px) {
-  footer .releases.mobile-buttons .more {
-    display: block;
-  }
-  footer .releases.mobile-buttons .appears {
-    display: none;
-  }
-  footer .releases.mobile-buttons .compilations {
-    display: none;
-  }
-  footer .releases.mobile-buttons a {
-    width: calc(100% / 6);
-  }
-  footer .releases.menu.hover .appears {
-    display: block;
-  }
-  footer .releases.menu.hover .compilations {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  footer .releases.mobile-buttons .remixes {
-    display: none;
-  }
-  footer .releases.mobile-buttons.mobile-buttons a {
-    width: calc(100% / 5);
-  }
-  footer .releases.menu.hover .remixes {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 399px) {
-  footer .releases.mobile-buttons .podcasts {
-    display: none;
-  }
-  footer .releases.mobile-buttons.mobile-buttons a {
-    width: calc(100% / 4);
-  }
-  footer .releases.menu.hover .podcasts {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 319px) {
-  footer .releases.mobile-buttons .eps {
-    display: none;
-  }
-  footer .releases.mobile-buttons.mobile-buttons a {
-    width: calc(100% / 3);
-  }
-  footer .releases.menu.hover .eps {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 239px) {
-  footer .releases.mobile-buttons .tracks {
-    display: none;
-  }
-  footer .releases.mobile-buttons.mobile-buttons a {
-    width: calc(100% / 2);
-  }
-  footer .releases.menu.hover .tracks {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 159px) {
-  footer .releases.mobile-buttons .albums {
-    display: none;
-  }
-  footer .releases.mobile-buttons.mobile-buttons a {
-    width: 100%;
-  }
-  footer .releases.menu.hover .albums {
-    display: block;
-  }
 }
 
 .footer.player {
@@ -5201,6 +5018,11 @@ footer .menu.hover.buttons > * {
   }
 }
 
+.footer.secondary.menu.filter {
+  height: 50px;
+  width: 100%;
+}
+
 .footer.secondary.menu.filter .buttons {
   text-align: left;
   display: -webkit-box;
@@ -5208,8 +5030,13 @@ footer .menu.hover.buttons > * {
   display: flex;
   white-space: nowrap;
   overflow: auto;
-  width: calc(100% - 20px);
   padding: 10px;
+}
+
+@media only screen and (max-width: 899px) {
+  .footer.secondary.menu.filter .buttons {
+    width: calc(100% - 20px);
+  }
 }
 
 .footer.secondary.menu.filter a {
@@ -5255,6 +5082,11 @@ footer .menu.hover.buttons > * {
   min-width: 200px;
   width: 200px;
   max-height: calc(100vh - 50px - 60px);
+  display: none;
+}
+
+.footer.menu.mobile .items.active {
+  display: block;
 }
 
 .footer.menu.mobile .items p,

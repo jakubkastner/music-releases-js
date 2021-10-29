@@ -1,16 +1,5 @@
 // SECONDARY HEADER
 
-.header.secondary {
-    display: inline-flex;
-
-    // actions menu
-    .actions {
-        margin-left: auto;
-
-        @include respond(tablet) {
-            span {
-                display: none;
-            }
-        }
-    }
+.header.secondary.filter {
+    overflow: auto;
 }

@@ -17,9 +17,9 @@
     <div class="header loader"></div>
     <div class="header primary hide-mobile">
         <div class="page-name" title="Music Releases">
-            <p class="hide-tablet">Music</p>
+            <p class="hide-text">Music</p>
             <img class="favicon" src="images/favicon.png" alt="R" />
-            <p class="hide-tablet">eleases</p>
+            <p class="hide-text">eleases</p>
         </div>
         <nav class="menu releases icon-text buttons">
             <a class="albums active" title="View released albums"><i class="fas fa-compact-disc"></i>Albums</a>
@@ -34,13 +34,17 @@
             <a class="playlists" title="Go to playlists settings">Playlists</a>
             <a class="about" title="Go to about the application">About</a>
         </nav>
-        <div class="menu show-hide buttons right">
+        <div class="menu actions icon-text right buttons">
+            <a class="playlist" title="Add all filtered releases to the playlist"><i class="fas fa-plus-circle"></i><span class="hide-text">Add to playlist</span></a>
+            <a class="play" title="Play all filtered releases"><i class="fas fa-play"></i><span class="hide-text">Play all</span></a>
+        </div>
+        <div class="menu show-hide buttons">
             <a class="player" title="Show player"><i class="fas fa-play-circle"></i></a>
         </div>
         <div class="user icon-text">
             <a class="login menu hover button skrejto" title="Show login menu">
                 <i class="fas fa-user-plus"></i>
-                <p>Login<span class="hide-tablet"> via music account</span></p>
+                <p>Login<span class="hide-text"> via music account</span></p>
             </a>
             <nav class="menu login hover items buttons right skrejto">
                 <a class="spotify" title="Login via Spotify"><i class="fab fa-spotify"></i>Spotify</a>
@@ -49,27 +53,12 @@
             </nav>
             <a class="menu user hover button" title="Show user menu">
                 <i class="fas fa-user-cog"></i>
-                <p class="hide-tablet">Username</p>
+                <p class="hide-text">Username</p>
             </a>
             <nav class="menu user hover items buttons right">
                 <a class="settings" title="Show settings"><i class="fas fa-wrench"></i>Settings</a>
                 <a class="logout" title="Logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
             </nav>
-        </div>
-    </div>
-    <div class="header secondary hide-mobile">
-        <nav class="menu filter icon-text buttons">
-            <a class="tracks" title="Show released Tracks"><i class="fas fa-headphones-alt"></i>Tracks</a>
-            <a class="eps" title="Show released EPs"><i class="fas fa-music"></i>EPs</a>
-            <a class="remixes" title="Show released Remixes"><i class="fas fa-headphones-alt"></i>Remixes</a>
-            <a class="artists active" title="Show releases from the artist I am following"><i class="fas fa-users"></i>Followed artists</a>
-            <a class="various-artists" title="Hide releases from Various artists"><i class="fas fa-user-friends"></i>Various artists</a>
-            <a class="saved" title="Show saved releases in my library"><i class="fas fa-heart"></i>In library</a>
-            <a class="new" title="Show only new releases"><i class="fas fa-bolt"></i>Only new</a>
-        </nav>
-        <div class="actions icon-text right buttons">
-            <a class="playlist" title="Add all filtered releases to the playlist"><i class="fas fa-plus-circle"></i><span>Add to playlist</span></a>
-            <a class="play" title="Play all filtered releases"><i class="fas fa-play"></i><span>Play all</span></a>
         </div>
     </div>
     <div class="main menu date hide-mobile">
@@ -407,7 +396,7 @@
             <!-- TODO default playlist -->
         </div>
     </div>
-    <div class="footer menu secondary filter hide-pc hide-tablet buttons">
+    <div class="header footer menu secondary filter">
         <nav class="buttons">
             <a class="clear" title="Show all">X</a>
             <a class="tracks" title="Show released Tracks">Tracks</a>

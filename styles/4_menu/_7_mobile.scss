@@ -16,6 +16,7 @@
         z-index: 1;
         right: 10px;
         position: relative;
+
         i {
             margin: auto;
         }
@@ -25,13 +26,19 @@
     .items {
         position: absolute;
         overflow: auto;
-        bottom: -70px;
+        bottom: -70px; // TODO fix
         right: 0;
 
         $width: 200px;
         min-width: $width;
         width: $width;
         max-height: calc(100vh - 50px - 60px);
+
+        display: none;
+
+        &.active {
+            display: block;
+        }
 
         p,
         span {

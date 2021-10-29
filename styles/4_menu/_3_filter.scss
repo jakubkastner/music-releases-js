@@ -5,13 +5,20 @@
 
 // mobile menu (footer)
 .footer.secondary.menu.filter {
+    height: 50px;
+    width: 100%;
+
     .buttons {
         text-align: left;
         display: flex;
         white-space: nowrap;
         overflow: auto;
-        width: calc(100% - 20px);
+        //width: calc(100% - 250px - 110px - 200px);
         padding: 10px;
+
+        @include respond(mobile) {
+            width: calc(100% - 20px);
+        }
     }
 
     a {
