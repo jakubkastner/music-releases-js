@@ -170,6 +170,7 @@ $color_text_button: rgb(26, 178, 107);
             background-color: $color_6;
         }
     }
+
     // main
     .main {
         background-color: $color_1;
@@ -256,25 +257,24 @@ $color_text_button: rgb(26, 178, 107);
             }
         }
 
-        .user.menu {
+        &.menu.mobile .items {
             background-color: $color_1;
+
             p {
                 color: $color_text_button;
             }
         }
 
-        .round.buttons {
-            a {
-                background-color: $color_1;
+        .round.button {
+            background-color: $color_1;
 
-                &.active {
-                    background-color: $color_0;
-                    color: $color_text_button;
-                }
+            &.active {
+                background-color: $color_0;
+                color: $color_text_button;
+            }
 
-                &:hover {
-                    background-color: $color_0;
-                }
+            &:hover {
+                background-color: $color_0;
             }
         }
 

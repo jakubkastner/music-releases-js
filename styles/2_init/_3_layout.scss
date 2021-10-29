@@ -43,17 +43,19 @@ body.classic {
 
         .footer {
             &.menu {
-                display: grid !important;
-                position: fixed;
-                width: 100%;
                 &.filter {
+                    position: fixed;
                     grid-area: 3 / 1 / 4 / 1;
                     bottom: 60px;
+                    display: grid;
                 }
 
                 &.releases {
                     grid-area: 4 / 1 / 5 / 1;
                     bottom: 0;
+                    display: grid;
+                    position: fixed;
+                    width: 100%;
                 }
             }
         }

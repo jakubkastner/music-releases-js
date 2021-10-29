@@ -31,13 +31,13 @@ $margin_right_icon: 5px;
     }
 
     @else if $breakpoint==mobile-menu {
-        @media only screen and (max-width: 1399px) {
+        @media only screen and (max-width: 1399px) and (min-width: 1040px) {
             @content;
         }
     }
 
     @else if $breakpoint==tablet {
-        @media only screen and (max-width: 1039px) {
+        @media only screen and (max-width: 1039px) and (min-width: 811px) {
             @content;
         }
     }

@@ -932,20 +932,20 @@
     background: -webkit-gradient(linear, left top, right top, color-stop(100%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 100%, black 0%);
   }
-  body .footer .user.menu {
+  body .footer.menu.mobile .items {
     background-color: whitesmoke;
   }
-  body .footer .user.menu p {
+  body .footer.menu.mobile .items p {
     color: #1ab26b;
   }
-  body .footer .round.buttons a {
+  body .footer .round.button {
     background-color: whitesmoke;
   }
-  body .footer .round.buttons a.active {
+  body .footer .round.button.active {
     background-color: white;
     color: #1ab26b;
   }
-  body .footer .round.buttons a:hover {
+  body .footer .round.button:hover {
     background-color: white;
   }
   body .footer.menu.primary a {
@@ -1595,20 +1595,20 @@
     background: -webkit-gradient(linear, left top, right top, color-stop(100%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 100%, white 0%);
   }
-  body.dark .footer .user.menu {
+  body.dark .footer.menu.mobile .items {
     background-color: #0c0c0c;
   }
-  body.dark .footer .user.menu p {
+  body.dark .footer.menu.mobile .items p {
     color: #1ab26b;
   }
-  body.dark .footer .round.buttons a {
+  body.dark .footer .round.button {
     background-color: #0c0c0c;
   }
-  body.dark .footer .round.buttons a.active {
+  body.dark .footer .round.button.active {
     background-color: #060606;
     color: #1ab26b;
   }
-  body.dark .footer .round.buttons a:hover {
+  body.dark .footer .round.button:hover {
     background-color: #060606;
   }
   body.dark .footer.menu.primary a {
@@ -2263,20 +2263,20 @@
     background: -webkit-gradient(linear, left top, right top, color-stop(100%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 100%, white 0%);
   }
-  body.color .footer .user.menu {
+  body.color .footer.menu.mobile .items {
     background-color: #0c0c0c;
   }
-  body.color .footer .user.menu p {
+  body.color .footer.menu.mobile .items p {
     color: #1ab26b;
   }
-  body.color .footer .round.buttons a {
+  body.color .footer .round.button {
     background-color: #0c0c0c;
   }
-  body.color .footer .round.buttons a.active {
+  body.color .footer .round.button.active {
     background-color: #060606;
     color: #1ab26b;
   }
-  body.color .footer .round.buttons a:hover {
+  body.color .footer .round.button:hover {
     background-color: #060606;
   }
   body.color .footer.menu.primary a {
@@ -2929,20 +2929,20 @@
     background: -webkit-gradient(linear, left top, right top, color-stop(100%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 100%, white 0%);
   }
-  body .footer .user.menu {
+  body .footer.menu.mobile .items {
     background-color: #0c0c0c;
   }
-  body .footer .user.menu p {
+  body .footer.menu.mobile .items p {
     color: #1ab26b;
   }
-  body .footer .round.buttons a {
+  body .footer .round.button {
     background-color: #0c0c0c;
   }
-  body .footer .round.buttons a.active {
+  body .footer .round.button.active {
     background-color: #060606;
     color: #1ab26b;
   }
-  body .footer .round.buttons a:hover {
+  body .footer .round.button:hover {
     background-color: #060606;
   }
   body .footer.menu.primary a {
@@ -3600,20 +3600,20 @@
     background: -webkit-gradient(linear, left top, right top, color-stop(100%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 100%, black 0%);
   }
-  body.light .footer .user.menu {
+  body.light .footer.menu.mobile .items {
     background-color: whitesmoke;
   }
-  body.light .footer .user.menu p {
+  body.light .footer.menu.mobile .items p {
     color: #1ab26b;
   }
-  body.light .footer .round.buttons a {
+  body.light .footer .round.button {
     background-color: whitesmoke;
   }
-  body.light .footer .round.buttons a.active {
+  body.light .footer .round.button.active {
     background-color: white;
     color: #1ab26b;
   }
-  body.light .footer .round.buttons a:hover {
+  body.light .footer .round.button:hover {
     background-color: white;
   }
   body.light .footer.menu.primary a {
@@ -4268,20 +4268,20 @@
     background: -webkit-gradient(linear, left top, right top, color-stop(100%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 100%, white 0%);
   }
-  body.color .footer .user.menu {
+  body.color .footer.menu.mobile .items {
     background-color: #0c0c0c;
   }
-  body.color .footer .user.menu p {
+  body.color .footer.menu.mobile .items p {
     color: #1ab26b;
   }
-  body.color .footer .round.buttons a {
+  body.color .footer .round.button {
     background-color: #0c0c0c;
   }
-  body.color .footer .round.buttons a.active {
+  body.color .footer .round.button.active {
     background-color: #060606;
     color: #1ab26b;
   }
-  body.color .footer .round.buttons a:hover {
+  body.color .footer .round.button:hover {
     background-color: #060606;
   }
   body.color .footer.menu.primary a {
@@ -4332,18 +4332,15 @@ body.classic {
     grid-area: 2 / 1 / 3 / 1;
     overflow: hidden;
   }
-  body.classic .footer.menu {
-    display: -ms-grid !important;
-    display: grid !important;
-    position: fixed;
-    width: 100%;
-  }
   body.classic .footer.menu.filter {
+    position: fixed;
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
     grid-area: 3 / 1 / 4 / 1;
     bottom: 60px;
+    display: -ms-grid;
+    display: grid;
   }
   body.classic .footer.menu.releases {
     -ms-grid-row: 4;
@@ -4351,6 +4348,10 @@ body.classic {
     -ms-grid-column: 1;
     grid-area: 4 / 1 / 5 / 1;
     bottom: 0;
+    display: -ms-grid;
+    display: grid;
+    position: fixed;
+    width: 100%;
   }
 }
 
@@ -4473,7 +4474,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 1039px) {
+@media only screen and (max-width: 1039px) and (min-width: 811px) {
   .hide-tablet {
     display: none !important;
   }
@@ -4591,7 +4592,7 @@ a {
   display: none;
 }
 
-@media only screen and (max-width: 1039px) {
+@media only screen and (max-width: 1039px) and (min-width: 811px) {
   .header.primary .user .menu.hover.items {
     width: 150px;
   }
@@ -4629,7 +4630,7 @@ a {
   margin-left: auto;
 }
 
-@media only screen and (max-width: 1039px) {
+@media only screen and (max-width: 1039px) and (min-width: 811px) {
   .header.secondary .actions span {
     display: none;
   }
@@ -5218,6 +5219,65 @@ footer .menu.hover.buttons > * {
   margin: 0 3px;
   border-radius: 16px;
   background-color: black;
+}
+
+.footer.menu.mobile {
+  position: fixed;
+  bottom: calc(60px + 50px + 60px);
+  height: 0;
+  width: 100%;
+}
+
+.footer.menu.mobile .round {
+  font-size: 24px;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 5px;
+  margin-left: auto;
+  z-index: 1;
+  right: 10px;
+  position: relative;
+}
+
+.footer.menu.mobile .round i {
+  margin: auto;
+}
+
+.footer.menu.mobile .items {
+  position: absolute;
+  overflow: auto;
+  bottom: -70px;
+  right: 0;
+  min-width: 200px;
+  width: 200px;
+  max-height: calc(100vh - 50px - 60px);
+}
+
+.footer.menu.mobile .items p,
+.footer.menu.mobile .items span {
+  cursor: default;
+}
+
+.footer.menu.mobile .items a,
+.footer.menu.mobile .items p {
+  display: block;
+}
+
+.footer.menu.mobile .items a:last-child,
+.footer.menu.mobile .items p:last-child {
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 200px) {
+  .footer.menu.mobile .items {
+    width: 100%;
+    min-width: 100%;
+    word-wrap: anywhere;
+  }
 }
 
 .loader {
