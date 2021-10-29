@@ -1,27 +1,31 @@
 // template width
-$playlist_width: 250px;
-$menu_date: 110px;
-$menu_artists: 200px;
-//$content_width: calc(100vw - #{$playlist_width} - #{$menu_artists_alphabet_width} - #{$menu_artists_names_width} - #{$menu_date_year_width} - #{$menu_date_month_width});
+$menu_playlist_width: 250px;
+$menu_date_width: 110px;
+$menu_artists_width: 200px;
+$loader_height: 4px;
 
 body.classic {
     display: grid;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
 
+    height: 100vh;
+    overflow: hidden;
 
+    // responsive styles
     @include respond(mobile) {
         grid-template-columns: auto;
         //grid-template-rows: 4px calc(100vh - 4px - 100px) 100px;
-        grid-template-rows: 4px 100% 50px 60px;
+        grid-template-rows: $loader_height 100% 50px 60px;
+
+        height: auto;
+        overflow: auto;
 
         .header {
             &.loader {
                 grid-area: 1 / 1 / 2 / 1;
                 position: fixed;
-                width: 100%;
                 top: 0;
-                height: 4px;
             }
         }
 
@@ -55,8 +59,8 @@ body.classic {
 
     @include respond(pc) {
         // playlist, content, artists menu, date menu
-        grid-template-columns: $playlist_width auto $menu_date $menu_artists;
-        grid-template-rows: 4px 48px 44px calc(100vh - 4px - 48px - 44px - 100px) 100px;
+        grid-template-columns: $menu_playlist_width auto $menu_date_width $menu_artists_width;
+        grid-template-rows: $loader_height 48px 44px calc(100vh - 4px - 48px - 44px - 100px) 100px;
 
         .header {
             &.loader {

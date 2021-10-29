@@ -14,66 +14,62 @@
 </head>
 
 <body class="classic">
-    <div class="header loader active"></div>
+    <div class="header loader"></div>
     <div class="header primary hide-mobile">
         <div class="page-name" title="Music Releases">
             <p class="hide-tablet">Music</p>
             <img class="favicon" src="images/favicon.png" alt="R" />
             <p class="hide-tablet">eleases</p>
         </div>
-        <nav class="releases icon-text buttons">
+        <nav class="menu releases icon-text buttons">
             <a class="albums active" title="View released albums"><i class="fas fa-compact-disc"></i>Albums</a>
             <a class="tracks" title="View released Tracks"><i class="fas fa-music"></i>Tracks</a>
             <a class="appears" title="View released appears"><i class="fas fa-user-friends"></i>Appears</a>
             <a class="compilations" title="View released compilations"><i class="fas fa-th-large"></i>Compilations</a>
             <a class="podcasts" title="View newest podcasts"><i class="fas fa-podcast"></i>Podcasts</a>
         </nav>
-        <div class="menu show-hide buttons right">
-            <a class="player" title="Show player"><i class="fas fa-play-circle"></i></a>
-        </div>
-        <nav class="settings buttons skrejto">
+        <nav class="menu settings buttons skrejto">
             <a class="application active" title="Go to applications settings">Application</a>
             <a class="releases" title="Go to releases settings">Releases</a>
             <a class="playlists" title="Go to playlists settings">Playlists</a>
             <a class="about" title="Go to about the application">About</a>
         </nav>
+        <div class="menu show-hide buttons right">
+            <a class="player" title="Show player"><i class="fas fa-play-circle"></i></a>
+        </div>
         <div class="user icon-text">
             <a class="login menu hover button skrejto" title="Show login menu">
                 <i class="fas fa-user-plus"></i>
                 <p>Login<span class="hide-tablet"> via music account</span></p>
             </a>
-            <nav class="login menu hover items buttons right skrejto">
+            <nav class="menu login hover items buttons right skrejto">
                 <a class="spotify" title="Login via Spotify"><i class="fab fa-spotify"></i>Spotify</a>
                 <a class="deezer" title="Login via Deezer"><i class="fab fa-deezer"></i>Deezer</a>
                 <a class="apple" title="Login via Apple Music"><i class="fab fa-apple"></i>Apple Music</a>
             </nav>
-            <a class="user menu hover button" title="Show user menu">
+            <a class="menu user hover button" title="Show user menu">
                 <i class="fas fa-user-cog"></i>
                 <p class="hide-tablet">Username</p>
             </a>
-            <nav class="user menu hover items buttons right">
+            <nav class="menu user hover items buttons right">
                 <a class="settings" title="Show settings"><i class="fas fa-wrench"></i>Settings</a>
                 <a class="logout" title="Logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
             </nav>
         </div>
     </div>
     <div class="header secondary hide-mobile">
-        <div class="filter icon-text">
-            <nav class="buttons">
-                <a class="tracks" title="Show released Tracks"><i class="fas fa-headphones-alt"></i>Tracks</a>
-                <a class="eps" title="Show released EPs"><i class="fas fa-music"></i>EPs</a>
-                <a class="remixes" title="Show released Remixes"><i class="fas fa-headphones-alt"></i>Remixes</a>
-                <a class="artists active" title="Show releases from the artist I am following"><i class="fas fa-users"></i>Followed artists</a>
-                <a class="various-artists" title="Hide releases from Various artists"><i class="fas fa-user-friends"></i>Various artists</a>
-                <a class="saved" title="Show saved releases in my library"><i class="fas fa-heart"></i>In library</a>
-                <a class="new" title="Show only new releases"><i class="fas fa-bolt"></i>Only new</a>
-            </nav>
-        </div>
-        <div class="actions icon-text right">
-            <div class="buttons">
-                <a class="playlist" title="Add all filtered releases to the playlist"><i class="fas fa-plus-circle"></i><span>Add to playlist</span></a>
-                <a class="play" title="Play all filtered releases"><i class="fas fa-play"></i><span>Play all</span></a>
-            </div>
+        <nav class="menu filter icon-text buttons">
+            <a class="tracks" title="Show released Tracks"><i class="fas fa-headphones-alt"></i>Tracks</a>
+            <a class="eps" title="Show released EPs"><i class="fas fa-music"></i>EPs</a>
+            <a class="remixes" title="Show released Remixes"><i class="fas fa-headphones-alt"></i>Remixes</a>
+            <a class="artists active" title="Show releases from the artist I am following"><i class="fas fa-users"></i>Followed artists</a>
+            <a class="various-artists" title="Hide releases from Various artists"><i class="fas fa-user-friends"></i>Various artists</a>
+            <a class="saved" title="Show saved releases in my library"><i class="fas fa-heart"></i>In library</a>
+            <a class="new" title="Show only new releases"><i class="fas fa-bolt"></i>Only new</a>
+        </nav>
+        <div class="actions icon-text right buttons">
+            <a class="playlist" title="Add all filtered releases to the playlist"><i class="fas fa-plus-circle"></i><span>Add to playlist</span></a>
+            <a class="play" title="Play all filtered releases"><i class="fas fa-play"></i><span>Play all</span></a>
         </div>
     </div>
     <div class="main menu date hide-mobile">
@@ -120,7 +116,7 @@
             <span class="last"></span>
         </nav>
     </div>
-    <div class="main menu menu artists names hide-mobile">
+    <div class="main menu artists hide-mobile">
         <a class="search artists button"><i class="fas fa-users"></i> Artists <i class="fas fa-search"></i></a>
         <nav class="buttons">
             <a class="artist active" data-menu_type="artist" data-menu_artist="all">All</a>
@@ -423,7 +419,7 @@
             <a class="new" title="Show only new releases">Only new</a>
         </nav>
     </div>
-    <nav class="footer menu primary hide-pc hide-tablet buttons mobile-buttons">
+    <nav class="footer menu primary releases hide-pc hide-tablet buttons mobile-buttons">
         <a class="albums" title="View released albums">
             <i class="fas fa-compact-disc"></i>
             <p>Albums</p>

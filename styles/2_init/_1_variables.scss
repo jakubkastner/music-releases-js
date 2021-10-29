@@ -5,7 +5,7 @@
 $padding_left_right: 15px;
 
 // width for responsive styles
-$width_pc_menu_main: 1399px;
+
 $width_pc: 1025px;
 
 // left content width (date menu, title menu, menu buttons, currently playing image)
@@ -14,20 +14,10 @@ $width_right: 200px;
 $width_artists_letters: 75px;
 
 // header heights
-$height_header_loader: 4px;
 $height_header_primary: 44px;
-$height_header_secondary: 44px;
 
 $height_footer_player: 100px;
 $height_footer_menu: 60px;
-
-
-$height_body: calc(100vh - #{$height_header_loader} - #{$height_header_primary} - #{$height_header_secondary});
-$height_body_player: calc(100vh - #{$height_header_loader} - #{$height_header_primary} - #{$height_header_secondary} - #{$height_footer_player});
-//$height_body_mobile: calc(100vh - #{$height_header_loader} - #{$height_footer_player} - #{$height_footer_menu});
-$height_body_mobile: calc(100vh - #{$height_header_loader} - #{$height_footer_menu});
-$height_body_mobile_player: calc(100vh - #{$height_header_loader} - #{$height_footer_menu});
-
 
 // right margin icon
 $margin_right_icon: 5px;

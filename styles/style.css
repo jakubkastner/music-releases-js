@@ -499,8 +499,8 @@
     background-color: whitesmoke;
   }
   body .main.menu.date.month a:hover,
-  body .main.menu.date.month a.active, body .main.menu.artists.names a:hover,
-  body .main.menu.artists.names a.active {
+  body .main.menu.date.month a.active, body .main.menu.artists a:hover,
+  body .main.menu.artists a.active {
     background-color: white;
   }
   body .main.menu a.active {
@@ -1162,8 +1162,8 @@
     background-color: #101010;
   }
   body.dark .main.menu.date.month a:hover,
-  body.dark .main.menu.date.month a.active, body.dark .main.menu.artists.names a:hover,
-  body.dark .main.menu.artists.names a.active {
+  body.dark .main.menu.date.month a.active, body.dark .main.menu.artists a:hover,
+  body.dark .main.menu.artists a.active {
     background-color: #1a1a1a;
   }
   body.dark .main.menu a.active {
@@ -1830,8 +1830,8 @@
     background-color: #293f14;
   }
   body.color .main.menu.date.month a:hover,
-  body.color .main.menu.date.month a.active, body.color .main.menu.artists.names a:hover,
-  body.color .main.menu.artists.names a.active {
+  body.color .main.menu.date.month a.active, body.color .main.menu.artists a:hover,
+  body.color .main.menu.artists a.active {
     background-color: #386c0b;
   }
   body.color .main.menu a.active {
@@ -2496,8 +2496,8 @@
     background-color: #101010;
   }
   body .main.menu.date.month a:hover,
-  body .main.menu.date.month a.active, body .main.menu.artists.names a:hover,
-  body .main.menu.artists.names a.active {
+  body .main.menu.date.month a.active, body .main.menu.artists a:hover,
+  body .main.menu.artists a.active {
     background-color: #1a1a1a;
   }
   body .main.menu a.active {
@@ -3167,8 +3167,8 @@
     background-color: whitesmoke;
   }
   body.light .main.menu.date.month a:hover,
-  body.light .main.menu.date.month a.active, body.light .main.menu.artists.names a:hover,
-  body.light .main.menu.artists.names a.active {
+  body.light .main.menu.date.month a.active, body.light .main.menu.artists a:hover,
+  body.light .main.menu.artists a.active {
     background-color: white;
   }
   body.light .main.menu a.active {
@@ -3835,8 +3835,8 @@
     background-color: #293f14;
   }
   body.color .main.menu.date.month a:hover,
-  body.color .main.menu.date.month a.active, body.color .main.menu.artists.names a:hover,
-  body.color .main.menu.artists.names a.active {
+  body.color .main.menu.date.month a.active, body.color .main.menu.artists a:hover,
+  body.color .main.menu.artists a.active {
     background-color: #386c0b;
   }
   body.color .main.menu a.active {
@@ -4304,6 +4304,8 @@ body.classic {
   display: grid;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
+  height: 100vh;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 810px) {
@@ -4312,6 +4314,8 @@ body.classic {
         grid-template-columns: auto;
     -ms-grid-rows: 4px 100% 50px 60px;
         grid-template-rows: 4px 100% 50px 60px;
+    height: auto;
+    overflow: auto;
   }
   body.classic .header.loader {
     -ms-grid-row: 1;
@@ -4319,9 +4323,7 @@ body.classic {
     -ms-grid-column: 1;
     grid-area: 1 / 1 / 2 / 1;
     position: fixed;
-    width: 100%;
     top: 0;
-    height: 4px;
   }
   body.classic .main.content {
     -ms-grid-row: 2;
@@ -4553,9 +4555,6 @@ a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  /*&>* {
-        align-self: flex-end;
-    }*/
 }
 
 .header.primary .page-name {
@@ -4565,11 +4564,11 @@ a {
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-weight: 800;
-  /*@include respond(mobile) {
-            .mobile-hide {
-                display: none;
-            }
-        }*/
+}
+
+.header.primary .page-name p,
+.header.primary .page-name .favicon {
+  font-size: 28px;
 }
 
 .header.primary .page-name .favicon {
@@ -4583,21 +4582,9 @@ a {
           animation: spin 2s linear infinite;
 }
 
-.header.primary .page-name p,
-.header.primary .page-name .favicon {
-  font-size: 28px;
-}
-
 .header.primary .show-hide {
   margin-left: auto;
   display: inline;
-}
-
-.header.primary .releases .button,
-.header.primary .releases.buttons > * {
-  border-radius: 300px;
-  padding-top: 12px;
-  padding-bottom: 12px;
 }
 
 .header.primary .user {
@@ -4624,10 +4611,7 @@ a {
   display: none;
 }
 
-@media only screen and (max-width: 1399px) {
-  .header.primary .user .mobile-hide {
-    display: none;
-  }
+@media only screen and (max-width: 1039px) {
   .header.primary .user .menu.hover.items {
     width: 150px;
   }
@@ -4655,213 +4639,20 @@ a {
   }
 }
 
-.footer.menu.primary {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  gap: 0px 0px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
-.footer.menu.primary p {
-  font-size: 13px;
-}
-
-.footer.menu.primary a {
-  text-align: center;
-  padding: 10px 0;
-  margin: 0;
-  width: 100%;
-}
-
-.footer.menu.primary .more {
-  display: none;
-}
-
-@media screen and (max-width: 399px) {
-  .footer.menu.primary {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .footer.menu.primary .appears,
-  .footer.menu.primary .compilations {
-    display: none;
-  }
-  .footer.menu.primary .more {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 231px) {
-  .footer.menu.primary {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-  }
-  .footer.menu.primary .podcasts {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 149px) {
-  .footer.menu.primary {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
-  .footer.menu.primary .tracks {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 99px) {
-  .footer.menu.primary {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .footer.menu.primary .albums {
-    display: none;
-  }
-}
-
 .header.secondary {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  /*&>* {
-        align-self: flex-end;
-    }*/
 }
 
-.header.secondary > .menu {
-  display: block;
-}
-
-.header.secondary .actions.right {
+.header.secondary .actions {
   margin-left: auto;
 }
 
-@media screen and (max-width: 1120px) {
-  .header.secondary .actions.right span {
+@media only screen and (max-width: 1039px) {
+  .header.secondary .actions span {
     display: none;
   }
-}
-
-.footer.menu.secondary .buttons {
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  white-space: nowrap;
-  overflow: auto;
-  width: calc(100vw - 20px);
-  padding: 10px;
-}
-
-.footer.menu.secondary a {
-  font-size: 14px;
-  border: solid 1px white;
-  padding: 5px 10px;
-  margin: 0 3px;
-  border-radius: 16px;
-  background-color: black;
-}
-
-/** BODY
- *  Main page content
- */
-body .main.content > div {
-  height: 100%;
-}
-
-.main.menu .buttons {
-  height: calc(100% - 44px);
-}
-
-body {
-  height: 100vh;
-  overflow: hidden;
-}
-
-@media only screen and (max-width: 810px) {
-  body {
-    height: auto;
-    overflow: auto;
-  }
-}
-
-body main {
-  height: calc(100vh - 4px - 44px - 44px);
-}
-
-body main .menu.date.year {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-body main .menu.date.month {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-}
-
-body main .menu.artists.names {
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
-}
-
-body main .menu.artists.first-letter {
-  -webkit-box-ordinal-group: 6;
-      -ms-flex-order: 5;
-          order: 5;
-}
-
-body main .content {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
-}
-
-body main.player-active {
-  height: calc(100vh - 4px - 44px - 44px - 100px);
-}
-
-@media screen and (max-width: 1024px) {
-  body main {
-    height: calc(100vh - 4px - 60px);
-  }
-  body main.player-active {
-    height: auto;
-  }
-}
-
-body main > * {
-  height: 100%;
-}
-
-body main .content {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-}
-
-@media screen and (max-width: 1024px) {
-  body main {
-    height: auto;
-  }
-  body main .content {
-    margin-bottom: 100px;
-  }
-}
-
-body.classic main .settings .list h4 {
-  font-size: 22px;
-  margin-bottom: 10px;
 }
 
 .main.content {
@@ -4943,147 +4734,6 @@ body.classic main .settings .list h4 {
 .main.content .releases .release .content {
   margin-top: 30px;
   max-height: 40vh;
-}
-
-/** DATE MENU
- *  Left date menu.
- */
-.menu.hover.items {
-  display: none;
-  position: absolute;
-  width: 100%;
-  text-align: left;
-  margin: 0;
-  right: 0;
-  /*&>* {
-            display: block;
-        }*/
-}
-
-.menu.hover.items.active {
-  display: block;
-}
-
-.menu.hover.items.buttons > * {
-  margin-top: 0;
-}
-
-@media screen and (max-width: 260px) {
-  main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 260px) {
-  main .menu {
-    display: block;
-    height: 50%;
-  }
-}
-
-main .menu.date {
-  width: 130px;
-  min-width: 130px;
-}
-
-@media screen and (max-width: 1024px) {
-  main .menu.date {
-    width: 50%;
-    min-width: 50%;
-  }
-  main .menu.date.year {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-}
-
-@media screen and (max-width: 260px) {
-  main .menu.date {
-    width: 100%;
-    min-width: 100%;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  main .menu.artists {
-    width: 100%;
-  }
-}
-
-main .menu.artists.names {
-  width: 200px;
-  min-width: 200px;
-}
-
-@media screen and (max-width: 1024px) {
-  main .menu.artists.names {
-    width: 70%;
-    min-width: 70%;
-  }
-  main .menu.artists.names.active ~ main {
-    height: 100vh;
-  }
-}
-
-@media screen and (max-width: 260px) {
-  main .menu.artists.names {
-    width: 100%;
-    min-width: 100%;
-  }
-}
-
-main .menu.artists.first-letter {
-  width: 75px;
-  min-width: 75px;
-}
-
-@media screen and (max-width: 1024px) {
-  main .menu.artists.first-letter {
-    width: 30%;
-    min-width: 30%;
-  }
-}
-
-@media screen and (max-width: 260px) {
-  main .menu.artists.first-letter {
-    width: 100%;
-    min-width: 100%;
-  }
-}
-
-main .menu.artists.first-letter a {
-  margin: auto;
-}
-
-@media screen and (max-width: 1024px) {
-  main .menu.date.active ~ .content, main .menu.artists.active ~ .content {
-    display: none;
-  }
-}
-
-.main.menu a {
-  margin-top: 0px;
-  display: block;
-}
-
-.main.menu a:hover {
-  overflow: auto;
-}
-
-.main.menu nav {
-  overflow: auto;
-  /*display: inline-block;
-        height: calc(100% - 25px);
-        width: 100%;*/
-}
-
-.main.menu .button,
-.main.menu .buttons > a {
-  padding: 10px 10px 10px 15px;
 }
 
 /** FOOTER
@@ -5428,6 +5078,145 @@ footer .menu.hover.buttons > * {
   display: inline;
 }
 
+.main.menu a {
+  margin-top: 0px;
+  display: block;
+}
+
+.main.menu nav {
+  overflow: hidden;
+}
+
+.main.menu nav:hover {
+  overflow: auto;
+}
+
+.main.menu .buttons {
+  height: calc(100% - 44px);
+}
+
+.main.menu .button,
+.main.menu .buttons > a {
+  padding: 10px 10px 10px 15px;
+}
+
+.menu.hover.items {
+  display: none;
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  right: 0;
+}
+
+.menu.hover.items.active {
+  display: block;
+}
+
+.menu.hover.items.buttons > * {
+  margin-top: 0;
+}
+
+.header.primary .menu.releases .button,
+.header.primary .menu.releases.buttons > * {
+  border-radius: 300px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.footer.primary.menu.releases {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.footer.primary.menu.releases p {
+  font-size: 13px;
+}
+
+.footer.primary.menu.releases a {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  width: 100%;
+}
+
+.footer.primary.menu.releases .more {
+  display: none;
+}
+
+@media screen and (max-width: 399px) {
+  .footer.primary.menu.releases {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .footer.primary.menu.releases .appears,
+  .footer.primary.menu.releases .compilations {
+    display: none;
+  }
+  .footer.primary.menu.releases .more {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 231px) {
+  .footer.primary.menu.releases {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer.primary.menu.releases .podcasts {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 149px) {
+  .footer.primary.menu.releases {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .footer.primary.menu.releases .tracks {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 99px) {
+  .footer.primary.menu.releases {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .footer.primary.menu.releases .albums {
+    display: none;
+  }
+}
+
+.footer.secondary.menu.filter .buttons {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+  overflow: auto;
+  width: calc(100vw - 20px);
+  padding: 10px;
+}
+
+.footer.secondary.menu.filter a {
+  font-size: 14px;
+  border: solid 1px white;
+  padding: 5px 10px;
+  margin: 0 3px;
+  border-radius: 16px;
+  background-color: black;
+}
+
 .loader {
   border-radius: 4px;
   background-size: 20%;
@@ -5435,6 +5224,8 @@ footer .menu.hover.buttons > * {
   background-position: -25% 0;
   display: -ms-grid;
   display: grid;
+  width: 100%;
+  height: 4px;
 }
 
 .loader.active {

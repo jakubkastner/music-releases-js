@@ -10,23 +10,24 @@
 @import '3_content/1_header/2_primary';
 @import '3_content/1_header/3_secondary';
 
-@import '3_content/2_main/x2_body';
+//@import '3_content/2_main/x2_body';
 
 @import '3_content/2_main/1_content';
-
-@import '3_content/2_main/2_menu/x3_menu';
-@import '3_content/2_main/2_menu/1_menu';
-@import '3_content/2_main/2_menu/2_date';
-@import '3_content/2_main/2_menu/3_artists';
-@import '3_content/2_main/2_menu/4_playlists';
 
 @import '3_content/3_footer/x4_footer';
 @import '3_content/3_footer/1_footer';
 @import '3_content/3_footer/2_player';
 
+@import '4_menu/1_menu';
+@import '4_menu/2_releases';
+@import '4_menu/3_filter';
+@import '4_menu/4_playlists';
+@import '4_menu/5_date';
+@import '4_menu/6_artists';
+//@import '4_menu/x3_menu';
 
-@import '4_components/1_loader';
-@import '4_components/2_lists';
+@import '5_components/1_loader';
+@import '5_components/2_lists';
 
 @import 'x_temp/1_dev';
 //@import 'x_temp/2_testing';

@@ -1,0 +1,79 @@
+//RELEASES MENU (PRIMARY MENU)
+
+// pc/tablet menu (header)
+.header.primary .menu.releases {
+    .button,
+    &.buttons>* {
+        border-radius: 300px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+// mobile menu (footer)
+.footer.primary.menu.releases {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    align-items: center;
+    justify-items: center;
+
+    // 5 icons
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    p {
+        font-size: 13px;
+    }
+
+    a {
+        text-align: center;
+        padding: 10px 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .more {
+        display: none;
+    }
+
+    // 4 icons
+    @media screen and (max-width: 80px * 5 - 1) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        .appears,
+        .compilations {
+            display: none;
+        }
+
+        .more {
+            display: block;
+        }
+    }
+
+    // 3 icons
+    @media screen and (max-width: 58px * 4 - 1) {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .podcasts {
+            display: none;
+        }
+    }
+
+    // 2 icons
+    @media screen and (max-width: 50px * 3 - 1) {
+        grid-template-columns: 1fr 1fr;
+
+        .tracks {
+            display: none;
+        }
+    }
+
+    // 1 icon
+    @media screen and (max-width: 50px * 2 - 1) {
+        grid-template-columns: 1fr;
+
+        .albums {
+            display: none;
+        }
+    }
+}

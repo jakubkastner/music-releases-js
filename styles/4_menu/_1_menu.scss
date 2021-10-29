@@ -1,0 +1,44 @@
+.main.menu {
+    a {
+        margin-top: 0px;
+        display: block;
+    }
+
+    nav {
+        overflow: hidden;
+
+        &:hover {
+            overflow: auto;
+        }
+    }
+
+    .buttons {
+        height: calc(100% - 44px);
+    }
+
+    .button,
+    .buttons>a {
+        padding: 10px 10px 10px 15px;
+    }
+}
+
+
+// hoverable menu
+.menu.hover {
+    &.items {
+        display: none;
+        position: absolute;
+        width: 100%;
+        text-align: left;
+        margin: 0;
+        right: 0;
+
+        &.active {
+            display: block;
+        }
+
+        &.buttons>* {
+            margin-top: 0;
+        }
+    }
+}

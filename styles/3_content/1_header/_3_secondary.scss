@@ -1,47 +1,16 @@
+// SECONDARY HEADER
+
 .header.secondary {
     display: inline-flex;
-    //padding: 0 calc(10px + 0.5vw) 0 calc(10px + 0.5vw);
-    //height: $height_header_secondary;
 
-    /*&>* {
-        align-self: flex-end;
-    }*/
-
-    &>.menu {
-        display: block;
-    }
-
-    .actions.right {
+    // actions menu
+    .actions {
         margin-left: auto;
-    }
 
-
-    // responsive styles (hide / show content on pc / mobile)
-    @media screen and (max-width: 1120px) {
-        .actions.right {
+        @include respond(tablet) {
             span {
                 display: none;
             }
         }
-    }
-}
-
-.footer.menu.secondary {
-    .buttons {
-        text-align: left;
-        display: flex;
-        white-space: nowrap;
-        overflow: auto;
-        width: calc(100vw - 20px);
-        padding: 10px;
-    }
-
-    a {
-        font-size: 14px;
-        border: solid 1px white;
-        padding: 5px 10px;
-        margin: 0 3px;
-        border-radius: 16px;
-        background-color: black;
     }
 }

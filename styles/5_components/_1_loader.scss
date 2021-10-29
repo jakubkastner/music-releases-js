@@ -1,19 +1,19 @@
-// loader
+// LOADER
 .loader {
-    //width: 100%;
-    //height: $height_header_loader;
-    //margin: auto;
-    border-radius: $height_header_loader;
+    border-radius: $loader_height;
     background-size: 20%;
     background-repeat: repeat-y;
     background-position: -25% 0;
-    //position: fixed;
     display: grid;
+    width: 100%;
+    height: $loader_height;
 
+    // loader - active
     &.active {
         animation: loader 3s ease-in-out infinite;
     }
 }
+
 // animation
 @keyframes loader {
     50% {
