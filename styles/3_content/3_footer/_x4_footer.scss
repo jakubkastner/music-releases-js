@@ -106,40 +106,6 @@ footer {
         }
     }
 
-    .mobile-buttons.releases {
-        display: flex;
-        height: $height_footer_menu;
-        /*position: relative;
-        bottom: 100px;*/
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-
-        p {
-            font-size: 13px;
-        }
-
-        // total 8 icons
-        a {
-            display: block;
-            width: calc(100% / 7);
-            min-width: $mobile_buttons_width_min;
-            padding: 10px 0;
-            margin: 0;
-
-            @media screen and (max-width: $mobile_buttons_width_min) {
-                width: 100%;
-                min-width: 100%;
-                word-wrap: anywhere;
-            }
-
-            * {
-                width: 100%;
-                text-align: center;
-            }
-        }
-    }
-
 
     .releases {
         @media screen and (max-width: $width_pc - 1) {
