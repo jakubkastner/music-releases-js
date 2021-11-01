@@ -1,5 +1,9 @@
 // SECONDARY HEADER
 
-.header.secondary.filter {
-    overflow: auto;
+.header.secondary {
+    display: inline-flex;
+
+    .menu.filter {
+        overflow: auto;
+    }
 }

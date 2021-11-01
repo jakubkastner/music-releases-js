@@ -1,9 +1,15 @@
 // template width
 
 $menu_playlist_width: 250px;
-$menu_date_width: 110px;
+$menu_date_width: 120px;
 $menu_artists_width: 200px;
+
 $loader_height: 4px;
+$header_primary_height: 48px;
+$header_secondary_height: 44px;
+$player_height: 100px;
+$releases_menu_mobile_height: 60px;
+$filter_menu_mobile_height: 50px;
 
 $padding: 15px;
 $spaces: 30px;
@@ -14,123 +20,381 @@ body.classic {
     grid-auto-columns: 1fr;
     gap: 0px 0px;
 
-    height: 100vh;
-    overflow: hidden;
-
-    // responsive styles
-    @include respond(mobile) {
+    @include respond(pctab) {
+        // playlist, content, artists menu, date menu
         grid-template-columns: auto;
-        //grid-template-rows: 4px calc(100vh - 4px - 100px) 100px;
-        grid-template-rows: $loader_height 100% 50px 60px;
+        // calc(100vh - 4px - 48px - 44px - 100px)
+        grid-template-rows: $loader_height $header_primary_height $header_secondary_height calc(100vh - 4px - 48px - 44px - 100px) $player_height;
 
-        height: auto;
-        overflow: auto;
+        height: 100vh;
+        overflow: hidden;
+
+
+        &.hide-player {
+
+            .main {
+                grid-area: 4 / 1 / 6 / 1;
+            }
+
+            .footer {
+                &.player {
+                    display: none;
+                }
+            }
+        }
+
 
         .header {
             &.loader {
                 grid-area: 1 / 1 / 2 / 1;
-                position: fixed;
-                top: 0;
+            }
+
+            &.primary {
+                grid-area: 2 / 1 / 3 / 1;
+            }
+
+            &.secondary {
+                grid-area: 3 / 1 / 4 / 1;
+
+                .buttons {
+
+                    &.playlists,
+                    &.date,
+                    &.artists {
+                        display: inline-flex;
+                        a {
+                            display: block;
+                        }
+                    }
+
+                    &.playlists {
+                        width: $menu_playlist_width;
+                        min-width: $menu_playlist_width;
+                        order: 1;
+                    }
+
+                    &.date {
+                        width: $menu_date_width;
+                        min-width: $menu_date_width;
+                        order: 3;
+                    }
+
+                    &.artists {
+                        width: $menu_artists_width;
+                        min-width: $menu_artists_width;
+                        order: 4;
+                    }
+                }
+
+                .menu.filter {
+                    width: calc(100vw - #{$menu_playlist_width} - #{$menu_date_width} - #{$menu_artists_width} - 37px);
+                    order: 2;
+                }
             }
         }
 
         .main {
-            &.content {
-                grid-area: 2 / 1 / 3 / 1;
-                overflow: hidden;
+            grid-area: 4 / 1 / 5 / 1;
+
+            display: inline-flex;
+
+            .menu {
+                &.playlists {
+                    width: $menu_playlist_width;
+                    min-width: $menu_playlist_width;
+                    order: 1;
+                }
+
+                &.date {
+                    width: $menu_date_width;
+                    min-width: $menu_date_width;
+                    order: 3;
+                }
+
+                &.artists {
+                    width: $menu_artists_width;
+                    min-width: $menu_artists_width;
+                    order: 4;
+                }
+            }
+
+            .content {
+                order: 2;
             }
         }
 
         .footer {
+            &.player {
+                grid-area: 5 / 1 / 6 / 1;
+            }
+        }
+    }
+
+    @include respond(mobile) {
+        // playlist, content, artists menu, date menu
+        grid-template-columns: auto;
+        // calc(100vh - 4px - 48px - 44px - 100px)
+        grid-template-rows: $loader_height 100% $player_height $filter_menu_mobile_height $releases_menu_mobile_height;
+
+        height: auto;
+        overflow: auto;
+
+
+        &.hide-player {
+
+            .main {
+                grid-area: 2 / 1 / 4 / 1;
+            }
+
+            .footer {
+                &.player {
+                    display: none;
+                }
+            }
+        }
+
+
+        .header {
+            &.loader {
+                grid-area: 1 / 1 / 2 / 1;
+            }
+
+            &.primary {
+                display: none;
+            }
+
+            &.secondary {
+                display: none;
+            }
+        }
+
+        .main {
+            // TODO show player grid-area: 2 / 1 / 3 / 1;
+            grid-area: 2 / 1 / 4 / 1;
+
+            display: inline-flex;
+
+
+            .menu {
+                display: none;
+
+                &.playlists {
+                    width: $menu_playlist_width;
+                    min-width: $menu_playlist_width;
+                    order: 1;
+                }
+
+                &.date {
+                    width: $menu_date_width;
+                    min-width: $menu_date_width;
+                    order: 3;
+                }
+
+                &.artists {
+                    width: $menu_artists_width;
+                    min-width: $menu_artists_width;
+                    order: 4;
+                }
+            }
+
+            .content {
+                order: 2;
+            }
+        }
+
+        .footer {
+            &.player {
+                // TODO show player
+                display: none;
+                /*grid-area: 3 / 1 / 4 / 1;
+                display: grid;
+                position: fixed;
+                bottom: $filter_menu_mobile_height + $releases_menu_mobile_height;
+                height: $player_height;
+                width: 100%;*/
+            }
+
             &.menu {
                 &.filter {
-                    position: fixed;
-                    grid-area: 3 / 1 / 4 / 1;
-                    bottom: 60px;
+                    grid-area: 4 / 1 / 5 / 1;
                     display: grid;
+                    position: fixed;
+                    bottom: $releases_menu_mobile_height;
                 }
 
                 &.releases {
-                    grid-area: 4 / 1 / 5 / 1;
-                    bottom: 0;
+                    grid-area: 5 / 1 / 6 / 1;
                     display: grid;
                     position: fixed;
+                    bottom: 0;
                     width: 100%;
                 }
             }
         }
     }
 
-    // TODO tablet
+    &.old {
 
-    @include respond(pctab) {
-        // playlist, content, artists menu, date menu
-        grid-template-columns: $menu_playlist_width auto $menu_date_width $menu_artists_width;
-        grid-template-rows: $loader_height 48px 44px calc(100vh - 4px - 48px - 44px - 100px) 100px;
+        // responsive styles
+        @include respond(mobile) {
+            grid-template-columns: auto;
+            //grid-template-rows: 4px calc(100vh - 4px - 100px) 100px;
+            grid-template-rows: $loader_height 100% $filter_menu_mobile_height $releases_menu_mobile_height;
 
-        .header {
-            &.loader {
-                grid-area: 1 / 1 / 2 / 5;
-            }
+            height: auto;
+            overflow: auto;
 
-            &.primary {
-                grid-area: 2 / 1 / 3 / 5;
-            }
-
-            &.secondary {
-                grid-area: 3 / 2 / 4 / 3;
-            }
-        }
-
-        .main {
-            &.menu {
-                &.playlists {
-                    grid-area: 3 / 1 / 5 / 2;
-                }
-
-                &.date {
-                    grid-area: 3 / 3 / 5 / 4;
-                }
-
-                &.artists {
-                    grid-area: 3 / 4 / 5 / 4;
+            .header {
+                &.loader {
+                    grid-area: 1 / 1 / 2 / 1;
+                    position: fixed;
+                    top: 0;
                 }
             }
 
-            &.content {
-                grid-area: 4 / 2 / 5 / 3;
-            }
-        }
-
-        .footer {
-            &.player {
-                grid-area: 5 / 1 / 6 / 5;
-            }
-        }
-    }
-
-    // hide menu
-    &.menu-hide {
-        &-artists {
             .main {
-                &.menu.artists {
-                    visibility: hidden;
+                &.content {
+                    grid-area: 2 / 1 / 3 / 1;
+                    overflow: hidden;
+                }
+            }
+
+            .footer {
+                &.menu {
+                    &.filter {
+                        position: fixed;
+                        grid-area: 3 / 1 / 4 / 1;
+                        bottom: 60px;
+                        display: grid;
+                    }
+
+                    &.releases {
+                        grid-area: 4 / 1 / 5 / 1;
+                        bottom: 0;
+                        display: grid;
+                        position: fixed;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        // TODO tablet
+
+        @include respond(pctab) {
+            // playlist, content, artists menu, date menu
+            grid-template-columns: $menu_playlist_width auto $menu_date_width $menu_artists_width;
+            grid-template-rows: $loader_height 48px 44px calc(100vh - 4px - 48px - 44px - 100px) 100px;
+
+            height: 100vh;
+            overflow: hidden;
+
+            .header {
+                &.loader {
+                    grid-area: 1 / 1 / 2 / 5;
+                }
+
+                &.primary {
+                    grid-area: 2 / 1 / 3 / 5;
+                }
+
+                &.secondary {
+                    grid-area: 3 / 2 / 4 / 3;
+                }
+            }
+
+            .main {
+                &.menu {
+                    &.playlists {
+                        grid-area: 3 / 1 / 5 / 2;
+                    }
+
+                    &.date {
+                        grid-area: 3 / 3 / 5 / 4;
+                    }
+
+                    &.artists {
+                        grid-area: 3 / 4 / 5 / 4;
+                    }
                 }
 
                 &.content {
-                    grid-area: 4 / 2 / 5 / 5;
+                    grid-area: 4 / 2 / 5 / 3;
+                }
+            }
+
+            .footer {
+                &.player {
+                    grid-area: 5 / 1 / 6 / 5;
                 }
             }
         }
 
-        &-playlists {
-            .main {
-                &.menu.playlists {
-                    visibility: hidden;
+        // hide menu
+        &.hide-menu {
+            &-artists {
+                .main {
+                    &.menu.artists {
+                        display: none;
+                    }
+
+                    &.content {
+                        grid-area: 4 / 2 / 5 / 4;
+                    }
+
+                    &.date {
+                        grid-area: 3 / 4 / 5 / 4;
+                    }
                 }
 
-                &.content {
-                    grid-area: 4 / 1 / 6 / 3;
+                &.hide-menu {
+                    &-date {
+                        .main {
+                            &.content {
+                                grid-area: 4 / 2 / 5 / 5;
+                            }
+                        }
+                    }
+
+                    &-playlists {
+                        .main {
+                            &.content {
+                                grid-area: 4 / 1 / 5 / 4;
+                            }
+                        }
+
+                        &.hide-menu-playlists {
+                            .main {
+                                &.content {
+                                    grid-area: 4 / 1 / 5 / 5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-playlists {
+                .main {
+                    &.menu.playlists {
+                        display: none;
+                    }
+
+                    &.content {
+                        grid-area: 4 / 1 / 5 / 3;
+                    }
+                }
+            }
+
+            &-date {
+                .main {
+                    &.menu.date {
+                        display: none;
+                    }
+
+                    &.content {
+                        grid-area: 4 / 2 / 5 / 4;
+                    }
                 }
             }
         }
