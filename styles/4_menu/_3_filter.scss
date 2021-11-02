@@ -4,8 +4,8 @@
 //.header.secondary .menu.filter {}
 
 // mobile menu (footer)
-.header.secondary .menu.filter,
-.footer.secondary.menu.filter {
+.secondary.menu.filter,
+.secondary.menu.filter {
     overflow: auto;
 
     a {
@@ -15,10 +15,11 @@
         margin: 0 3px;
         border-radius: 16px;
         background-color: black;
+        height: 20px;
     }
 }
 
-.header.secondary .menu.filter.buttons,
+.secondary.menu.filter.buttons,
 .footer.secondary.menu.filter .buttons {
     text-align: left;
     display: flex;
@@ -32,8 +33,8 @@
     }
 }
 
-.header.secondary .menu.filter {
-    height: 30px;
+.header.secondary.menu.filter {
+    height: 50px;
 }
 
 .footer.secondary.menu.filter {

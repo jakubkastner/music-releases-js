@@ -4316,19 +4316,58 @@ body.classic {
   body.classic {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-    -ms-grid-rows: 4px 48px 44px calc(100vh - 4px - 48px - 44px - 100px) 100px;
-        grid-template-rows: 4px 48px 44px calc(100vh - 4px - 48px - 44px - 100px) 100px;
+    -ms-grid-rows: 4px 48px calc(100vh - 4px - 48px - 100px) 100px;
+        grid-template-rows: 4px 48px calc(100vh - 4px - 48px - 100px) 100px;
     height: 100vh;
     overflow: hidden;
   }
   body.classic.hide-player .main {
-    -ms-grid-row: 4;
+    -ms-grid-row: 3;
     -ms-grid-row-span: 2;
     -ms-grid-column: 1;
-    grid-area: 4 / 1 / 6 / 1;
+    grid-area: 3 / 1 / 5 / 1;
   }
   body.classic.hide-player .footer.player {
     display: none;
+  }
+  body.classic .header {
+    /*&.secondary {
+                grid-area: 3 / 1 / 4 / 1;
+
+                .buttons {
+
+                    &.playlists,
+                    &.date,
+                    &.artists {
+                        display: inline-flex;
+                        a {
+                            display: block;
+                        }
+                    }
+
+                    &.playlists {
+                        width: $menu_playlist_width;
+                        min-width: $menu_playlist_width;
+                        order: 1;
+                    }
+
+                    &.date {
+                        width: $menu_date_width;
+                        min-width: $menu_date_width;
+                        order: 3;
+                    }
+
+                    &.artists {
+                        width: $menu_artists_width;
+                        min-width: $menu_artists_width;
+                        order: 4;
+                    }
+                }
+
+                .menu.filter {
+                    order: 2;
+                }
+            }*/
   }
   body.classic .header.loader {
     -ms-grid-row: 1;
@@ -4342,55 +4381,28 @@ body.classic {
     -ms-grid-column: 1;
     grid-area: 2 / 1 / 3 / 1;
   }
-  body.classic .header.secondary {
+  body.classic .main {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
     grid-area: 3 / 1 / 4 / 1;
-  }
-  body.classic .header.secondary .buttons.playlists, body.classic .header.secondary .buttons.date, body.classic .header.secondary .buttons.artists {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
-  body.classic .header.secondary .buttons.playlists a, body.classic .header.secondary .buttons.date a, body.classic .header.secondary .buttons.artists a {
-    display: block;
-  }
-  body.classic .header.secondary .buttons.playlists {
-    width: 250px;
-    min-width: 250px;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  body.classic .header.secondary .buttons.date {
-    width: 120px;
-    min-width: 120px;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-  body.classic .header.secondary .buttons.artists {
-    width: 200px;
-    min-width: 200px;
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
-  }
-  body.classic .header.secondary .menu.filter {
-    width: calc(100vw - 250px - 120px - 200px - 37px);
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  body.classic .main {
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    grid-area: 4 / 1 / 5 / 1;
+  body.classic .main .header.secondary {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+  }
+  body.classic .main .menu .content {
+    overflow: hidden;
+  }
+  body.classic .main .menu .content:hover {
+    overflow: auto;
+  }
+  body.classic .main .menu.filter {
+    width: calc(100vw - 250px - 140px - 200px - 20px);
   }
   body.classic .main .menu.playlists {
     width: 250px;
@@ -4400,8 +4412,8 @@ body.classic {
             order: 1;
   }
   body.classic .main .menu.date {
-    width: 120px;
-    min-width: 120px;
+    width: 140px;
+    min-width: 140px;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
@@ -4414,15 +4426,19 @@ body.classic {
             order: 4;
   }
   body.classic .main .content {
+    height: calc(100% - 44px);
+    overflow: auto;
+  }
+  body.classic .main .page {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
   body.classic .footer.player {
-    -ms-grid-row: 5;
+    -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
-    grid-area: 5 / 1 / 6 / 1;
+    grid-area: 4 / 1 / 5 / 1;
   }
 }
 
@@ -4476,8 +4492,8 @@ body.classic {
             order: 1;
   }
   body.classic .main .menu.date {
-    width: 120px;
-    min-width: 120px;
+    width: 140px;
+    min-width: 140px;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
@@ -4575,8 +4591,8 @@ body.classic {
 
 @media only screen and (min-width: 900px) {
   body.classic.old {
-    -ms-grid-columns: 250px auto 120px 200px;
-        grid-template-columns: 250px auto 120px 200px;
+    -ms-grid-columns: 250px auto 140px 200px;
+        grid-template-columns: 250px auto 140px 200px;
     -ms-grid-rows: 4px 48px 44px calc(100vh - 4px - 48px - 44px - 100px) 100px;
         grid-template-rows: 4px 48px 44px calc(100vh - 4px - 48px - 44px - 100px) 100px;
     height: 100vh;
@@ -4715,12 +4731,6 @@ body.classic.old.hide-menu-date .main.content {
   font-family: "DM Sans", "Pontano Sans", sans-serif;
   word-wrap: everywhere;
   overflow-wrap: anywhere;
-}
-
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 p {
@@ -4886,89 +4896,82 @@ a {
   }
 }
 
+/*
 .header.secondary {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
+    display: inline-flex;
 
-.header.secondary .menu.filter {
-  overflow: auto;
-}
-
-.main .content {
-  height: 100%;
-  overflow: auto;
-}
-
-.main .content .box {
+    .menu.filter {
+        overflow: auto;
+    }
+}*/
+.main .page .content .box {
   padding: 30px;
   margin-bottom: 30px;
 }
 
-.main .content .releases .release > * {
+.main .page .content.releases .release > * {
   width: 100%;
   padding: 0;
 }
 
-.main .content .releases .release .info {
+.main .page .content.releases .release .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main .content .releases .release .info .image {
+.main .page .content.releases .release .info .image {
   margin-right: 30px;
   width: 150px;
   height: 150px;
 }
 
-.main .content .releases .release .info .image img {
+.main .page .content.releases .release .info .image img {
   max-width: 100%;
   max-height: 100%;
 }
 
-.main .content .releases .release .info .details {
+.main .page .content.releases .release .info .details {
   width: calc(100% - 150px - 30px);
 }
 
-.main .content .releases .release .info .details .name,
-.main .content .releases .release .info .details .artists,
-.main .content .releases .release .info .details .date {
+.main .page .content.releases .release .info .details .name,
+.main .page .content.releases .release .info .details .artists,
+.main .page .content.releases .release .info .details .date {
   width: 100%;
   display: inline-block;
   margin-bottom: 5px;
 }
 
-.main .content .releases .release .info .details .tracklist.button {
+.main .page .content.releases .release .info .details .tracklist.button {
   padding-left: 0;
 }
 
-.main .content .releases .release .info .details .tracklist span {
+.main .page .content.releases .release .info .details .tracklist span {
   font-size: 70%;
 }
 
-.main .content .releases .release .info .details .name {
+.main .page .content.releases .release .info .details .name {
   font-size: 24px;
 }
 
-.main .content .releases .release .info .details .artists {
+.main .page .content.releases .release .info .details .artists {
   font-size: 20px;
 }
 
-.main .content .releases .release .info .details .date {
+.main .page .content.releases .release .info .details .date {
   font-size: 18px;
   margin-bottom: 8px;
 }
 
-.main .content .releases .release .info .details .button {
+.main .page .content.releases .release .info .details .button {
   font-size: 30px;
   margin-right: 5px;
   margin-bottom: 0;
   padding: 6px;
 }
 
-.main .content .releases .release .content {
+.main .page .content.releases .release .content {
   margin-top: 30px;
   max-height: 40vh;
 }
@@ -5106,21 +5109,15 @@ a {
   display: inline;
 }
 
+.main .menu {
+  /*.buttons {
+        height: 100%;
+    }*/
+}
+
 .main .menu a {
   margin-top: 0px;
   display: block;
-}
-
-.main .menu nav {
-  overflow: hidden;
-}
-
-.main .menu nav:hover {
-  overflow: auto;
-}
-
-.main .menu .buttons {
-  height: 100%;
 }
 
 .main .menu .button,
@@ -5281,22 +5278,23 @@ a {
   }
 }
 
-.header.secondary .menu.filter,
-.footer.secondary.menu.filter {
+.secondary.menu.filter,
+.secondary.menu.filter {
   overflow: auto;
 }
 
-.header.secondary .menu.filter a,
-.footer.secondary.menu.filter a {
+.secondary.menu.filter a,
+.secondary.menu.filter a {
   font-size: 14px;
   border: solid 1px white;
   padding: 5px 10px;
   margin: 0 3px;
   border-radius: 16px;
   background-color: black;
+  height: 20px;
 }
 
-.header.secondary .menu.filter.buttons,
+.secondary.menu.filter.buttons,
 .footer.secondary.menu.filter .buttons {
   text-align: left;
   display: -webkit-box;
@@ -5308,14 +5306,14 @@ a {
 }
 
 @media only screen and (max-width: 899px) {
-  .header.secondary .menu.filter.buttons,
+  .secondary.menu.filter.buttons,
   .footer.secondary.menu.filter .buttons {
     width: calc(100% - 20px);
   }
 }
 
-.header.secondary .menu.filter {
-  height: 30px;
+.header.secondary.menu.filter {
+  height: 50px;
 }
 
 .footer.secondary.menu.filter {

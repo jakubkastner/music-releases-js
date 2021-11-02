@@ -4,17 +4,9 @@
         display: block;
     }
 
-    nav {
-        overflow: hidden;
-
-        &:hover {
-            overflow: auto;
-        }
-    }
-
-    .buttons {
+    /*.buttons {
         height: 100%;
-    }
+    }*/
 
     .button,
     .buttons>a {
