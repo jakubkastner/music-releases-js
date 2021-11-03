@@ -25,7 +25,7 @@ body.classic {
         grid-template-columns: auto;
         // calc(100vh - 4px - 48px - 44px - 100px)
         //grid-template-rows: $loader_height $header_primary_height $header_secondary_height calc(100vh - 4px - 48px - 44px - 100px) $player_height;
-        grid-template-rows: $loader_height $header_primary_height calc(100vh - 4px - 48px - 100px) $player_height;
+        grid-template-rows: $loader_height $header_primary_height $header_secondary_height calc(100vh - 4px - 48px - #{$header_secondary_height} - 100px) $player_height;
 
         height: 100vh;
         overflow: hidden;
@@ -34,7 +34,7 @@ body.classic {
         &.hide {
             &-player {
                 .main {
-                    grid-area: 3 / 1 / 5 / 1;
+                    grid-area: 4 / 1 / 6 / 1;
                 }
 
                 .footer {
@@ -50,10 +50,6 @@ body.classic {
                         &.playlists {
                             display: none;
                         }
-
-                        &.page {
-                            grid-area: 2 / 1 / 3 / 3;
-                        }
                     }
                 }
 
@@ -62,38 +58,23 @@ body.classic {
                         &.date {
                             display: none;
                         }
-
-                        &.page {
-                            grid-area: 2 / 2 / 3 / 4;
-                        }
                     }
                 }
 
                 &-artists {
-                    .main {
-                        .menu.header.secondary {
-
-                            &.date {
-                                grid-area: 1 / 4 / 2 / 5;
-                            }
-
-                            &.artists {
-                                grid-area: 1 / 3 / 2 / 4;
-                            }
+                    .header.secondary .menu {
+                        &.date {
+                            order: 4;
                         }
 
-                        .content {
-                            &.artists {
-                                display: none;
-                            }
+                        &.artists {
+                            order: 3;
+                        }
+                    }
 
-                            &.date {
-                                grid-area: 2 / 4 / 3 / 5;
-                            }
-
-                            &.page {
-                                grid-area: 2 / 2 / 3 / 4;
-                            }
+                    .main .content {
+                        &.artists {
+                            display: none;
                         }
                     }
                 }
@@ -108,19 +89,27 @@ body.classic {
             &.primary {
                 grid-area: 2 / 1 / 3 / 1;
             }
+
+            &.secondary {
+                grid-area: 3 / 1 / 4 / 1;
+            }
         }
 
         .main {
-            grid-area: 3 / 1 / 4 / 1;
+            grid-area: 4 / 1 / 5 / 1;
+        }
 
-            display: grid;
+        .header.secondary,
+        .main {
+            display: flex;
+            /*display: grid;
             grid-auto-columns: 1fr;
             gap: 0px 0px;
 
             grid-template-columns: $menu_playlist_width calc(100vw - #{$menu_playlist_width} - #{$menu_date_width} - #{$menu_artists_width}) $menu_date_width $menu_artists_width;
-            grid-template-rows: $header_secondary_height calc(100% - #{$header_secondary_height});
+            grid-template-rows: 100%;*/
 
-            .menu.header.secondary {
+            /*.menu.header.secondary {
                 display: inline-flex;
 
                 &.playlists {
@@ -138,27 +127,39 @@ body.classic {
                 &.artists {
                     grid-area: 1 / 4 / 2 / 5;
                 }
+            }*/
+
+            .content.page,
+            .menu.filter {
+                /*width: calc(100vw - #{$menu_playlist_width} - #{$menu_date_width} - #{$menu_artists_width});
+                min-width: calc(100vw - #{$menu_playlist_width} - #{$menu_date_width} - #{$menu_artists_width});*/
+                order: 2;
+            }
+
+            .menu {
+                &.playlists {
+                    width: $menu_playlist_width;
+                    min-width: $menu_playlist_width;
+                    order: 1;
+                }
+
+
+                &.date {
+                    width: $menu_date_width;
+                    min-width: $menu_date_width;
+                    order: 3;
+                }
+
+                &.artists {
+                    width: $menu_artists_width;
+                    min-width: $menu_artists_width;
+                    order: 4;
+                }
             }
 
             .content {
                 //height: calc(100% - #{$header_secondary_height});
                 overflow: auto;
-
-                &.playlists {
-                    grid-area: 2 / 1 / 3 / 2;
-                }
-
-                &.page {
-                    grid-area: 2 / 2 / 3 / 3;
-                }
-
-                &.date {
-                    grid-area: 2 / 3 / 3 / 4;
-                }
-
-                &.artists {
-                    grid-area: 2 / 4 / 3 / 5;
-                }
 
                 &.menu {
                     overflow: hidden;
@@ -172,7 +173,7 @@ body.classic {
 
         .footer {
             &.player {
-                grid-area: 4 / 1 / 5 / 1;
+                grid-area: 5 / 1 / 6 / 1;
             }
         }
     }

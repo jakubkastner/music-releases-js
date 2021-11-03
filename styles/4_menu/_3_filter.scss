@@ -4,9 +4,14 @@
 //.header.secondary .menu.filter {}
 
 // mobile menu (footer)
-.secondary.menu.filter,
-.secondary.menu.filter {
+
+.header.secondary .menu.filter.buttons,
+.footer.secondary.menu.filter .buttons {
+    text-align: left;
+    display: flex;
+    white-space: nowrap;
     overflow: auto;
+    margin: auto auto auto 0;
 
     a {
         font-size: 14px;
@@ -17,27 +22,13 @@
         background-color: black;
         height: 20px;
     }
-}
-
-.secondary.menu.filter.buttons,
-.footer.secondary.menu.filter .buttons {
-    text-align: left;
-    display: flex;
-    white-space: nowrap;
-    overflow: auto;
-    //width: calc(100% - 250px - 110px - 200px);
-    padding: 10px;
 
     @include respond(mobile) {
         width: calc(100% - 20px);
     }
 }
 
-/*.header.secondary.menu.filter {
-    height: 50px;
-}*/
-
 .footer.secondary.menu.filter {
-    height: 50px; // TODO change
     width: 100%;
+    height: 50px; // TODO change
 }
