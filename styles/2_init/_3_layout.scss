@@ -142,17 +142,20 @@ body.classic {
                     order: 4;
                 }
 
-                &.filter {
+                /*&.filter {
                     // TODO 15px = chrominium fix??
                     width: calc(100vw - #{$menu_playlist_width} - #{$menu_date_width} - #{$menu_artists_width} - 15px);
                     min-width: calc(100vw - #{$menu_playlist_width} - #{$menu_date_width} - #{$menu_artists_width} - 15px);
-                }
+                }*/
             }
 
             // content and menus
+            .menu.filter,
             .content.page {
-                width: auto;
-                min-width: auto;
+                /*width: auto;
+                min-width: auto;*/
+                width: calc(100vw - #{$menu_playlist_width} - #{$menu_date_width} - #{$menu_artists_width} - 15px);
+                min-width: calc(100vw - #{$menu_playlist_width} - #{$menu_date_width} - #{$menu_artists_width} - 15px);
             }
 
             .content.page,

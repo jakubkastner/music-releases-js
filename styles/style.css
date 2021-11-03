@@ -4426,6 +4426,14 @@ body.classic {
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
+  body.classic .header.secondary .menu,
+  body.classic .main .menu {
+    /*&.filter {
+                    // TODO 15px = chrominium fix??
+                    width: calc(100vw - 250px - 140px - 200px - 15px);
+                    min-width: calc(100vw - 250px - 140px - 200px - 15px);
+                }*/
+  }
   body.classic .header.secondary .menu.playlists,
   body.classic .main .menu.playlists {
     width: 250px;
@@ -4451,14 +4459,13 @@ body.classic {
             order: 4;
   }
   body.classic .header.secondary .menu.filter,
-  body.classic .main .menu.filter {
+  body.classic .header.secondary .content.page,
+  body.classic .main .menu.filter,
+  body.classic .main .content.page {
+    /*width: auto;
+                min-width: auto;*/
     width: calc(100vw - 250px - 140px - 200px - 15px);
     min-width: calc(100vw - 250px - 140px - 200px - 15px);
-  }
-  body.classic .header.secondary .content.page,
-  body.classic .main .content.page {
-    width: auto;
-    min-width: auto;
   }
   body.classic .header.secondary .content.page,
   body.classic .header.secondary .menu.filter,
