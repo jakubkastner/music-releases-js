@@ -13,6 +13,8 @@
 
 // mobile menu (footer)
 .footer.menu.releases {
+    z-index: 2;
+
     .primary {
         display: grid;
         grid-template-rows: 1fr;

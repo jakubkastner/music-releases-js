@@ -6,7 +6,7 @@ $menu_artists_width: 200px;
 
 $loader_height: 4px;
 $header_primary_height: 48px;
-$header_secondary_height: 44px;
+$header_secondary_height: 48px;
 $player_height: 100px;
 $releases_menu_mobile_height: 60px;
 $filter_menu_mobile_height: 50px;
@@ -20,17 +20,17 @@ body.classic {
     grid-auto-columns: 1fr;
     gap: 0px 0px;
 
+    // pc
     @include respond(pctab) {
-        // playlist, content, artists menu, date menu
         grid-template-columns: auto;
-        // calc(100vh - 4px - 48px - 44px - 100px)
-        //grid-template-rows: $loader_height $header_primary_height $header_secondary_height calc(100vh - 4px - 48px - 44px - 100px) $player_height;
-        grid-template-rows: $loader_height $header_primary_height $header_secondary_height calc(100vh - 4px - 48px - #{$header_secondary_height} - 100px) $player_height;
+        // loader, primary header, secondary header, content, player
+        grid-template-rows: $loader_height $header_primary_height $header_secondary_height calc(100vh - #{$loader_height} - #{$header_primary_height} - #{$header_secondary_height} - #{$player_height}) $player_height;
 
         height: 100vh;
-        overflow: hidden;
 
+        // TODO overflow: hidden;
 
+        // hide menus and player
         &.hide {
             &-player {
                 .main {
@@ -45,23 +45,34 @@ body.classic {
             }
 
             &-menu {
+
                 &-playlists {
-                    .main .content {
-                        &.playlists {
-                            display: none;
-                        }
+                    .main .content.playlists {
+                        display: none;
+                    }
+
+                    // content
+                    .main .content.page {
+                        width: auto;
+                        min-width: auto;
                     }
                 }
 
                 &-date {
-                    .main .content {
-                        &.date {
-                            display: none;
-                        }
+                    .main .content.date {
+                        display: none;
+                    }
+
+                    // content
+                    .main .content.page {
+                        width: auto;
+                        min-width: auto;
                     }
                 }
 
                 &-artists {
+
+                    // order secondary header icons
                     .header.secondary .menu {
                         &.date {
                             order: 4;
@@ -72,15 +83,20 @@ body.classic {
                         }
                     }
 
-                    .main .content {
-                        &.artists {
-                            display: none;
-                        }
+                    // content
+                    .main .content.page {
+                        width: auto;
+                        min-width: auto;
+                    }
+
+                    .main .content.artists {
+                        display: none;
                     }
                 }
             }
         }
 
+        // headers
         .header {
             &.loader {
                 grid-area: 1 / 1 / 2 / 1;
@@ -95,54 +111,23 @@ body.classic {
             }
         }
 
+        // main content
         .main {
             grid-area: 4 / 1 / 5 / 1;
         }
 
+        // secondary header and main content
         .header.secondary,
         .main {
-            display: flex;
-            /*display: grid;
-            grid-auto-columns: 1fr;
-            gap: 0px 0px;
+            display: inline-flex;
 
-            grid-template-columns: $menu_playlist_width calc(100vw - #{$menu_playlist_width} - #{$menu_date_width} - #{$menu_artists_width}) $menu_date_width $menu_artists_width;
-            grid-template-rows: 100%;*/
-
-            /*.menu.header.secondary {
-                display: inline-flex;
-
-                &.playlists {
-                    grid-area: 1 / 1 / 2 / 2;
-                }
-
-                &.filter {
-                    grid-area: 1 / 2 / 2 / 3;
-                }
-
-                &.date {
-                    grid-area: 1 / 3 / 2 / 4;
-                }
-
-                &.artists {
-                    grid-area: 1 / 4 / 2 / 5;
-                }
-            }*/
-
-            .content.page,
-            .menu.filter {
-                /*width: calc(100vw - #{$menu_playlist_width} - #{$menu_date_width} - #{$menu_artists_width});
-                min-width: calc(100vw - #{$menu_playlist_width} - #{$menu_date_width} - #{$menu_artists_width});*/
-                order: 2;
-            }
-
+            // menus
             .menu {
                 &.playlists {
                     width: $menu_playlist_width;
                     min-width: $menu_playlist_width;
                     order: 1;
                 }
-
 
                 &.date {
                     width: $menu_date_width;
@@ -155,10 +140,26 @@ body.classic {
                     min-width: $menu_artists_width;
                     order: 4;
                 }
+
+                &.filter {
+                    // TODO 15px = chrominium fix??
+                    width: calc(100vw - #{$menu_playlist_width} - #{$menu_date_width} - #{$menu_artists_width} - 15px);
+                    min-width: calc(100vw - #{$menu_playlist_width} - #{$menu_date_width} - #{$menu_artists_width} - 15px);
+                }
+            }
+
+            // content and menus
+            .content.page {
+                width: auto;
+                min-width: auto;
+            }
+
+            .content.page,
+            .menu.filter {
+                order: 2;
             }
 
             .content {
-                //height: calc(100% - #{$header_secondary_height});
                 overflow: auto;
 
                 &.menu {
@@ -171,6 +172,7 @@ body.classic {
             }
         }
 
+        // footer
         .footer {
             &.player {
                 grid-area: 5 / 1 / 6 / 1;
@@ -178,30 +180,29 @@ body.classic {
         }
     }
 
+
+    // mobile
     @include respond(mobile) {
-        // playlist, content, artists menu, date menu
         grid-template-columns: auto;
-        // calc(100vh - 4px - 48px - 44px - 100px)
+        // loader, content, player, mobile menu filer, mobile menu releases
+        //grid-template-rows: $loader_height calc(100vh - #{$loader_height} - #{$player_height} - #{$filter_menu_mobile_height} - #{$releases_menu_mobile_height}) $player_height $filter_menu_mobile_height $releases_menu_mobile_height;
         grid-template-rows: $loader_height 100% $player_height $filter_menu_mobile_height $releases_menu_mobile_height;
 
         height: auto;
         overflow: auto;
 
-
+        // hide player
         &.hide-player {
-
             .main {
                 grid-area: 2 / 1 / 4 / 1;
             }
 
-            .footer {
-                &.player {
-                    display: none;
-                }
+            .footer.player {
+                display: none;
             }
         }
 
-
+        // header
         .header {
             &.loader {
                 grid-area: 1 / 1 / 2 / 1;
@@ -216,40 +217,39 @@ body.classic {
             }
         }
 
+        // main content and menus
         .main {
             // TODO show player grid-area: 2 / 1 / 3 / 1;
             grid-area: 2 / 1 / 4 / 1;
-
             display: inline-flex;
 
-
+            // menus
             .menu {
                 display: none;
+                width: 100%;
+                min-width: 100%;
 
-                &.playlists {
-                    width: $menu_playlist_width;
-                    min-width: $menu_playlist_width;
-                    order: 1;
-                }
+                /*&.playlists {
+                    display: block;
+                }*/
 
                 &.date {
-                    width: $menu_date_width;
-                    min-width: $menu_date_width;
-                    order: 3;
+                    display: block;
                 }
 
-                &.artists {
-                    width: $menu_artists_width;
-                    min-width: $menu_artists_width;
-                    order: 4;
-                }
+                /*&.artists {
+                    display: block;
+                }*/
             }
 
+
             .content {
+                display: none;
                 order: 2;
             }
         }
 
+        // footer
         .footer {
             &.player {
                 // TODO show player
@@ -276,173 +276,6 @@ body.classic {
                     position: fixed;
                     bottom: 0;
                     width: 100%;
-                }
-            }
-        }
-    }
-
-    &.old {
-
-        // responsive styles
-        @include respond(mobile) {
-            grid-template-columns: auto;
-            //grid-template-rows: 4px calc(100vh - 4px - 100px) 100px;
-            grid-template-rows: $loader_height 100% $filter_menu_mobile_height $releases_menu_mobile_height;
-
-            height: auto;
-            overflow: auto;
-
-            .header {
-                &.loader {
-                    grid-area: 1 / 1 / 2 / 1;
-                    position: fixed;
-                    top: 0;
-                }
-            }
-
-            .main {
-                &.content {
-                    grid-area: 2 / 1 / 3 / 1;
-                    overflow: hidden;
-                }
-            }
-
-            .footer {
-                &.menu {
-                    &.filter {
-                        position: fixed;
-                        grid-area: 3 / 1 / 4 / 1;
-                        bottom: 60px;
-                        display: grid;
-                    }
-
-                    &.releases {
-                        grid-area: 4 / 1 / 5 / 1;
-                        bottom: 0;
-                        display: grid;
-                        position: fixed;
-                        width: 100%;
-                    }
-                }
-            }
-        }
-
-        // TODO tablet
-
-        @include respond(pctab) {
-            // playlist, content, artists menu, date menu
-            grid-template-columns: $menu_playlist_width auto $menu_date_width $menu_artists_width;
-            grid-template-rows: $loader_height 48px 44px calc(100vh - 4px - 48px - 44px - 100px) 100px;
-
-            height: 100vh;
-            overflow: hidden;
-
-            .header {
-                &.loader {
-                    grid-area: 1 / 1 / 2 / 5;
-                }
-
-                &.primary {
-                    grid-area: 2 / 1 / 3 / 5;
-                }
-
-                &.secondary {
-                    grid-area: 3 / 2 / 4 / 3;
-                }
-            }
-
-            .main {
-                &.menu {
-                    &.playlists {
-                        grid-area: 3 / 1 / 5 / 2;
-                    }
-
-                    &.date {
-                        grid-area: 3 / 3 / 5 / 4;
-                    }
-
-                    &.artists {
-                        grid-area: 3 / 4 / 5 / 4;
-                    }
-                }
-
-                &.content {
-                    grid-area: 4 / 2 / 5 / 3;
-                }
-            }
-
-            .footer {
-                &.player {
-                    grid-area: 5 / 1 / 6 / 5;
-                }
-            }
-        }
-
-        // hide menu
-        &.hide-menu {
-            &-artists {
-                .main {
-                    &.menu.artists {
-                        display: none;
-                    }
-
-                    &.content {
-                        grid-area: 4 / 2 / 5 / 4;
-                    }
-
-                    &.date {
-                        grid-area: 3 / 4 / 5 / 4;
-                    }
-                }
-
-                &.hide-menu {
-                    &-date {
-                        .main {
-                            &.content {
-                                grid-area: 4 / 2 / 5 / 5;
-                            }
-                        }
-                    }
-
-                    &-playlists {
-                        .main {
-                            &.content {
-                                grid-area: 4 / 1 / 5 / 4;
-                            }
-                        }
-
-                        &.hide-menu-playlists {
-                            .main {
-                                &.content {
-                                    grid-area: 4 / 1 / 5 / 5;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            &-playlists {
-                .main {
-                    &.menu.playlists {
-                        display: none;
-                    }
-
-                    &.content {
-                        grid-area: 4 / 1 / 5 / 3;
-                    }
-                }
-            }
-
-            &-date {
-                .main {
-                    &.menu.date {
-                        display: none;
-                    }
-
-                    &.content {
-                        grid-area: 4 / 2 / 5 / 4;
-                    }
                 }
             }
         }

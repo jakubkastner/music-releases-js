@@ -86,9 +86,9 @@
         </nav>
     </div>
     <div class="main">
-        <nav class="menu date year buttons content hide-mobile">
-            <a class="year" data-menu_type="year" data-menu_year="2021">2021 <i class="fas fa-angle-down"></i></a>
-            <a class="year active" data-menu_type="year" data-menu_year="2020">2020 <i class="fas fa-angle-up"></i></a>
+        <nav class="menu date year buttons content">
+            <a class="year icon-text-right" data-menu_type="year" data-menu_year="2021">2021<i class="fas fa-angle-down"></i></a>
+            <a class="year active icon-text-right" data-menu_type="year" data-menu_year="2020">2020<i class="fas fa-angle-up"></i></a>
             <div class="buttons month">
                 <a class="month" data-menu_type="month" data-menu_month="12">12</a>
                 <a class="month" data-menu_type="month" data-menu_month="11">11</a>
@@ -126,7 +126,7 @@
             <a class="year" data-menu_type="year" data-menu_year="2000">2000</a>
             <a class="year" data-menu_type="year" data-menu_year="-">-</a>
         </nav>
-        <nav class="menu artists hide-mobile buttons content">
+        <nav class="menu artists buttons content">
             <a class="artist active" data-menu_type="artist" data-menu_artist="all">All</a>
             <a class="artist" data-menu_type="artist" data-menu_artist="Artist 1">Artist 1</a>
             <a class="artist" data-menu_type="artist" data-menu_artist="Artist 2">Artist 2</a>
@@ -139,7 +139,7 @@
             <a class="artist" data-menu_type="artist" data-menu_artist="Artist 9">Artist 9</a>
             <a class="artist" data-menu_type="artist" data-menu_artist="Artist 10">Artist 10</a>
         </nav>
-        <nav class="menu playlists buttons content hide-mobile">
+        <nav class="menu playlists buttons content">
             <a class="playlist" data-menu_type="playlist" data-menu_artist="playlist-id-1">Playlist 1</a>
             <a class="playlist" data-menu_type="playlist" data-menu_artist="playlist-id-2">Playlist 2</a>
             <a class="playlist" data-menu_type="playlist" data-menu_artist="playlist-id-3">Playlist 3</a>
@@ -520,7 +520,9 @@
         </div>
     </div>
     <div class="footer menu mobile hide-pc hide-tablet">
-        <a class="hover button round" title="Show menu"><i class="fas fa-bars"></i></a>
+        <a class="menu show-hide button round round-text">Close menu<i class="fas fa-times"></i></a>
+        <a class="tracklist button round round-text" title="Tracklist">Tracklist<i class="fas fa-list-ol"></i></a>
+        <a class="mobile show-hide hover button round" title="Show menu"><i class="fas fa-bars"></i></a>
         <nav class="hover items buttons icon-text">
             <p><i class="fas fa-user-cog"></i>User</p>
             <a class="settings" title="Show settings">Settings</a>
@@ -534,11 +536,6 @@
             <a class="play">Play all</a>
         </nav>
     </div>
-
-    <div class="menu round buttons right skrejto">
-        <a class="tracklist" title="Tracklist"><i class="fas fa-angle-double-up"></i></a>
-    </div>
-
     <script src="https://kit.fontawesome.com/ebe995aabe.js" crossorigin="anonymous"></script>
     <!-- TODO scripts-->
 </body>

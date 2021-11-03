@@ -1,13 +1,12 @@
 .footer.menu.mobile {
     position: fixed;
-    bottom: calc(60px + 50px + 60px);
+    bottom: calc(60px + 50px + 60px + 60px + 60px);
     height: 0;
     width: 100%;
 
     // button to show/hide menu
     .round {
-        font-size: 24px;
-        border-radius: 100%;
+        border-radius: 12px;
         width: 40px;
         height: 40px;
         display: flex;
@@ -19,6 +18,22 @@
 
         i {
             margin: auto;
+            font-size: 24px;
+        }
+        &.show-hide.mobile {
+            z-index: 3;
+        }
+
+        &-text {
+            display: block;
+            width: 125px; // TODO change
+            text-align: right;
+            height: auto;
+            font-size: 18px;
+
+            i {
+                margin-left: $margin_right_icon;
+            }
         }
     }
 
@@ -26,8 +41,9 @@
     .items {
         position: absolute;
         overflow: auto;
-        bottom: -70px; // TODO fix
+        bottom: -180px; // TODO fix
         right: 0;
+        z-index: 2;
 
         $width: 200px;
         min-width: $width;

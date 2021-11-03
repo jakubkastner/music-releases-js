@@ -352,6 +352,7 @@
             }
         }
     }*/
+    background-color: whitesmoke;
     /*header {
         background-color: $color_4;
         color: $color_text_button;
@@ -1015,6 +1016,7 @@
             }
         }
     }*/
+    background-color: #0c0c0c;
     /*header {
         background-color: $color_4;
         color: $color_text_button;
@@ -1683,6 +1685,7 @@
             }
         }
     }*/
+    background-color: #0c0c0c;
     /*header {
         background-color: $color_4;
         color: $color_text_button;
@@ -2349,6 +2352,7 @@
             }
         }
     }*/
+    background-color: #0c0c0c;
     /*header {
         background-color: $color_4;
         color: $color_text_button;
@@ -3020,6 +3024,7 @@
             }
         }
     }*/
+    background-color: whitesmoke;
     /*header {
         background-color: $color_4;
         color: $color_text_button;
@@ -3688,6 +3693,7 @@
             }
         }
     }*/
+    background-color: #0c0c0c;
     /*header {
         background-color: $color_4;
         color: $color_text_button;
@@ -4316,10 +4322,9 @@ body.classic {
   body.classic {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-    -ms-grid-rows: 4px 48px 44px calc(100vh - 4px - 48px - 44px - 100px) 100px;
-        grid-template-rows: 4px 48px 44px calc(100vh - 4px - 48px - 44px - 100px) 100px;
+    -ms-grid-rows: 4px 48px 48px calc(100vh - 4px - 48px - 48px - 100px) 100px;
+        grid-template-rows: 4px 48px 48px calc(100vh - 4px - 48px - 48px - 100px) 100px;
     height: 100vh;
-    overflow: hidden;
   }
   body.classic.hide-player .main {
     -ms-grid-row: 4;
@@ -4333,8 +4338,16 @@ body.classic {
   body.classic.hide-menu-playlists .main .content.playlists {
     display: none;
   }
+  body.classic.hide-menu-playlists .main .content.page {
+    width: auto;
+    min-width: auto;
+  }
   body.classic.hide-menu-date .main .content.date {
     display: none;
+  }
+  body.classic.hide-menu-date .main .content.page {
+    width: auto;
+    min-width: auto;
   }
   body.classic.hide-menu-artists .header.secondary .menu.date {
     -webkit-box-ordinal-group: 5;
@@ -4345,6 +4358,10 @@ body.classic {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+  body.classic.hide-menu-artists .main .content.page {
+    width: auto;
+    min-width: auto;
   }
   body.classic.hide-menu-artists .main .content.artists {
     display: none;
@@ -4375,44 +4392,9 @@ body.classic {
   }
   body.classic .header.secondary,
   body.classic .main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    /*display: grid;
-            grid-auto-columns: 1fr;
-            gap: 0px 0px;
-
-            grid-template-columns: $menu_playlist_width calc(100vw - 250px - 140px - 200px) $menu_date_width $menu_artists_width;
-            grid-template-rows: 100%;*/
-    /*.menu.header.secondary {
-                display: inline-flex;
-
-                &.playlists {
-                    grid-area: 1 / 1 / 2 / 2;
-                }
-
-                &.filter {
-                    grid-area: 1 / 2 / 2 / 3;
-                }
-
-                &.date {
-                    grid-area: 1 / 3 / 2 / 4;
-                }
-
-                &.artists {
-                    grid-area: 1 / 4 / 2 / 5;
-                }
-            }*/
-  }
-  body.classic .header.secondary .content.page,
-  body.classic .header.secondary .menu.filter,
-  body.classic .main .content.page,
-  body.classic .main .menu.filter {
-    /*width: calc(100vw - 250px - 140px - 200px);
-                min-width: calc(100vw - 250px - 140px - 200px);*/
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
   body.classic .header.secondary .menu.playlists,
   body.classic .main .menu.playlists {
@@ -4437,6 +4419,24 @@ body.classic {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
+  }
+  body.classic .header.secondary .menu.filter,
+  body.classic .main .menu.filter {
+    width: calc(100vw - 250px - 140px - 200px - 15px);
+    min-width: calc(100vw - 250px - 140px - 200px - 15px);
+  }
+  body.classic .header.secondary .content.page,
+  body.classic .main .content.page {
+    width: auto;
+    min-width: auto;
+  }
+  body.classic .header.secondary .content.page,
+  body.classic .header.secondary .menu.filter,
+  body.classic .main .content.page,
+  body.classic .main .menu.filter {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   body.classic .header.secondary .content,
   body.classic .main .content {
@@ -4499,29 +4499,20 @@ body.classic {
   }
   body.classic .main .menu {
     display: none;
-  }
-  body.classic .main .menu.playlists {
-    width: 250px;
-    min-width: 250px;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    width: 100%;
+    min-width: 100%;
+    /*&.playlists {
+                    display: block;
+                }*/
+    /*&.artists {
+                    display: block;
+                }*/
   }
   body.classic .main .menu.date {
-    width: 140px;
-    min-width: 140px;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-  body.classic .main .menu.artists {
-    width: 200px;
-    min-width: 200px;
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    display: block;
   }
   body.classic .main .content {
+    display: none;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -4556,186 +4547,6 @@ body.classic {
     bottom: 0;
     width: 100%;
   }
-}
-
-@media only screen and (max-width: 899px) {
-  body.classic.old {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    -ms-grid-rows: 4px 100% 50px 60px;
-        grid-template-rows: 4px 100% 50px 60px;
-    height: auto;
-    overflow: auto;
-  }
-  body.classic.old .header.loader {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    grid-area: 1 / 1 / 2 / 1;
-    position: fixed;
-    top: 0;
-  }
-  body.classic.old .main.content {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    grid-area: 2 / 1 / 3 / 1;
-    overflow: hidden;
-  }
-  body.classic.old .footer.menu.filter {
-    position: fixed;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    grid-area: 3 / 1 / 4 / 1;
-    bottom: 60px;
-    display: -ms-grid;
-    display: grid;
-  }
-  body.classic.old .footer.menu.releases {
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    grid-area: 4 / 1 / 5 / 1;
-    bottom: 0;
-    display: -ms-grid;
-    display: grid;
-    position: fixed;
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  body.classic.old {
-    -ms-grid-columns: 250px auto 140px 200px;
-        grid-template-columns: 250px auto 140px 200px;
-    -ms-grid-rows: 4px 48px 44px calc(100vh - 4px - 48px - 44px - 100px) 100px;
-        grid-template-rows: 4px 48px 44px calc(100vh - 4px - 48px - 44px - 100px) 100px;
-    height: 100vh;
-    overflow: hidden;
-  }
-  body.classic.old .header.loader {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-area: 1 / 1 / 2 / 5;
-  }
-  body.classic.old .header.primary {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-area: 2 / 1 / 3 / 5;
-  }
-  body.classic.old .header.secondary {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-area: 3 / 2 / 4 / 3;
-  }
-  body.classic.old .main.menu.playlists {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-area: 3 / 1 / 5 / 2;
-  }
-  body.classic.old .main.menu.date {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-    grid-area: 3 / 3 / 5 / 4;
-  }
-  body.classic.old .main.menu.artists {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 4;
-    grid-area: 3 / 4 / 5 / 4;
-  }
-  body.classic.old .main.content {
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-area: 4 / 2 / 5 / 3;
-  }
-  body.classic.old .footer.player {
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-area: 5 / 1 / 6 / 5;
-  }
-}
-
-body.classic.old.hide-menu-artists .main.menu.artists {
-  display: none;
-}
-
-body.classic.old.hide-menu-artists .main.content {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: 4 / 2 / 5 / 4;
-}
-
-body.classic.old.hide-menu-artists .main.date {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 4;
-  grid-area: 3 / 4 / 5 / 4;
-}
-
-body.classic.old.hide-menu-artists.hide-menu-date .main.content {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-area: 4 / 2 / 5 / 5;
-}
-
-body.classic.old.hide-menu-artists.hide-menu-playlists .main.content {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: 4 / 1 / 5 / 4;
-}
-
-body.classic.old.hide-menu-artists.hide-menu-playlists.hide-menu-playlists .main.content {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: 4 / 1 / 5 / 5;
-}
-
-body.classic.old.hide-menu-playlists .main.menu.playlists {
-  display: none;
-}
-
-body.classic.old.hide-menu-playlists .main.content {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: 4 / 1 / 5 / 3;
-}
-
-body.classic.old.hide-menu-date .main.menu.date {
-  display: none;
-}
-
-body.classic.old.hide-menu-date .main.content {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: 4 / 2 / 5 / 4;
 }
 
 /** MAIN
@@ -4799,6 +4610,10 @@ a {
 
 .icon-text i {
   margin-right: 5px;
+}
+
+.icon-text-right i {
+  margin-left: 5px;
 }
 
 .explicit span {
@@ -5056,7 +4871,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   overflow: auto;
-  max-height: 100%;
+  max-height: calc(100% - 8px);
 }
 
 .footer.player .info .content > div {
@@ -5163,6 +4978,10 @@ a {
   border-radius: 300px;
   padding-top: 12px;
   padding-bottom: 12px;
+}
+
+.footer.menu.releases {
+  z-index: 2;
 }
 
 .footer.menu.releases .primary {
@@ -5303,6 +5122,7 @@ a {
   white-space: nowrap;
   overflow: auto;
   margin: auto auto auto 0;
+  width: 100%;
 }
 
 .header.secondary .menu.filter.buttons a,
@@ -5316,13 +5136,6 @@ a {
   height: 20px;
 }
 
-@media only screen and (max-width: 899px) {
-  .header.secondary .menu.filter.buttons,
-  .footer.secondary.menu.filter .buttons {
-    width: calc(100% - 20px);
-  }
-}
-
 .footer.secondary.menu.filter {
   width: 100%;
   height: 50px;
@@ -5330,14 +5143,13 @@ a {
 
 .footer.menu.mobile {
   position: fixed;
-  bottom: calc(60px + 50px + 60px);
+  bottom: calc(60px + 50px + 60px + 60px + 60px);
   height: 0;
   width: 100%;
 }
 
 .footer.menu.mobile .round {
-  font-size: 24px;
-  border-radius: 100%;
+  border-radius: 12px;
   width: 40px;
   height: 40px;
   display: -webkit-box;
@@ -5352,13 +5164,31 @@ a {
 
 .footer.menu.mobile .round i {
   margin: auto;
+  font-size: 24px;
+}
+
+.footer.menu.mobile .round.show-hide.mobile {
+  z-index: 3;
+}
+
+.footer.menu.mobile .round-text {
+  display: block;
+  width: 125px;
+  text-align: right;
+  height: auto;
+  font-size: 18px;
+}
+
+.footer.menu.mobile .round-text i {
+  margin-left: 5px;
 }
 
 .footer.menu.mobile .items {
   position: absolute;
   overflow: auto;
-  bottom: -70px;
+  bottom: -180px;
   right: 0;
+  z-index: 2;
   min-width: 200px;
   width: 200px;
   max-height: calc(100vh - 50px - 60px);
