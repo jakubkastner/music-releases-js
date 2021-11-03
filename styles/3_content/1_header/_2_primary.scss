@@ -49,14 +49,15 @@
             min-width: 70px;
         }
 
-        &.menu.items a {
+        &.menu.items button {
             display: block;
+            text-align: left;
         }
 
         // hover user menu
         &:hover {
             .menu.hover.items {
-                display: block;
+                display: grid;
 
                 &.hidden {
                     display: none;

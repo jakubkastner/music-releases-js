@@ -463,6 +463,9 @@
         }
     }*/
   }
+  body button {
+    color: black;
+  }
   body .header {
     background-color: whitesmoke;
     color: black;
@@ -490,30 +493,31 @@
   body .menu.hover.items {
     background-color: #fff5f5;
   }
-  body .menu.hover.items a:hover {
+  body .menu.hover.items button:hover {
     background-color: #cdcdcd;
   }
   body .main {
     background-color: whitesmoke;
     color: black;
   }
+  body .main button,
   body .main a {
     color: black;
   }
-  body .main.menu.date.year a:hover,
-  body .main.menu.date.year a.active, body .main.menu.artists.first-letter a:hover,
-  body .main.menu.artists.first-letter a.active {
+  body .main.menu.date.year button:hover,
+  body .main.menu.date.year button.active, body .main.menu.artists.first-letter button:hover,
+  body .main.menu.artists.first-letter button.active {
     background-color: whitesmoke;
   }
-  body .main.menu.date.month a:hover,
-  body .main.menu.date.month a.active, body .main.menu.artists a:hover,
-  body .main.menu.artists a.active {
+  body .main.menu.date.month button:hover,
+  body .main.menu.date.month button.active, body .main.menu.artists button:hover,
+  body .main.menu.artists button.active {
     background-color: white;
   }
-  body .main.menu a.active {
+  body .main.menu button.active {
     color: #1ab26b;
   }
-  body .main.content .releases .release a:hover {
+  body .main.content .releases .release button:hover {
     color: #1ab26b;
   }
   body .main .box {
@@ -523,13 +527,14 @@
     background-color: whitesmoke;
     color: black;
   }
+  body .footer button,
   body .footer a {
     color: black;
   }
   body .footer.player.active {
     background-color: whitesmoke;
   }
-  body .footer.player a:hover {
+  body .footer.player button:hover {
     color: #1ab26b;
   }
   body .footer.player .info > .time {
@@ -955,11 +960,11 @@
   body .footer .round.button:hover {
     background-color: white;
   }
-  body .footer.menu.primary a {
+  body .footer.menu.primary button {
     background-color: white;
     color: black;
   }
-  body .footer.menu.primary a:hover, body .footer.menu.primary a.active {
+  body .footer.menu.primary button:hover, body .footer.menu.primary button.active {
     background-color: white;
     color: #1ab26b;
   }
@@ -1127,6 +1132,9 @@
         }
     }*/
   }
+  body.dark button {
+    color: white;
+  }
   body.dark .header {
     background-color: #0c0c0c;
     color: white;
@@ -1154,30 +1162,31 @@
   body.dark .menu.hover.items {
     background-color: #242424;
   }
-  body.dark .menu.hover.items a:hover {
+  body.dark .menu.hover.items button:hover {
     background-color: #383838;
   }
   body.dark .main {
     background-color: #0c0c0c;
     color: white;
   }
+  body.dark .main button,
   body.dark .main a {
     color: white;
   }
-  body.dark .main.menu.date.year a:hover,
-  body.dark .main.menu.date.year a.active, body.dark .main.menu.artists.first-letter a:hover,
-  body.dark .main.menu.artists.first-letter a.active {
+  body.dark .main.menu.date.year button:hover,
+  body.dark .main.menu.date.year button.active, body.dark .main.menu.artists.first-letter button:hover,
+  body.dark .main.menu.artists.first-letter button.active {
     background-color: #101010;
   }
-  body.dark .main.menu.date.month a:hover,
-  body.dark .main.menu.date.month a.active, body.dark .main.menu.artists a:hover,
-  body.dark .main.menu.artists a.active {
+  body.dark .main.menu.date.month button:hover,
+  body.dark .main.menu.date.month button.active, body.dark .main.menu.artists button:hover,
+  body.dark .main.menu.artists button.active {
     background-color: #1a1a1a;
   }
-  body.dark .main.menu a.active {
+  body.dark .main.menu button.active {
     color: #1ab26b;
   }
-  body.dark .main.content .releases .release a:hover {
+  body.dark .main.content .releases .release button:hover {
     color: #1ab26b;
   }
   body.dark .main .box {
@@ -1187,13 +1196,14 @@
     background-color: #0c0c0c;
     color: white;
   }
+  body.dark .footer button,
   body.dark .footer a {
     color: white;
   }
   body.dark .footer.player.active {
     background-color: #0c0c0c;
   }
-  body.dark .footer.player a:hover {
+  body.dark .footer.player button:hover {
     color: #1ab26b;
   }
   body.dark .footer.player .info > .time {
@@ -1619,11 +1629,11 @@
   body.dark .footer .round.button:hover {
     background-color: #060606;
   }
-  body.dark .footer.menu.primary a {
+  body.dark .footer.menu.primary button {
     background-color: #060606;
     color: white;
   }
-  body.dark .footer.menu.primary a:hover, body.dark .footer.menu.primary a.active {
+  body.dark .footer.menu.primary button:hover, body.dark .footer.menu.primary button.active {
     background-color: #1a1a1a;
     color: #1ab26b;
   }
@@ -1796,6 +1806,9 @@
         }
     }*/
   }
+  body.color button {
+    color: white;
+  }
   body.color .header {
     background-color: #0c0c0c;
     color: white;
@@ -1823,30 +1836,31 @@
   body.color .menu.hover.items {
     background-color: #38a700;
   }
-  body.color .menu.hover.items a:hover {
+  body.color .menu.hover.items button:hover {
     background-color: #3eff8b;
   }
   body.color .main {
     background-color: #0c0c0c;
     color: white;
   }
+  body.color .main button,
   body.color .main a {
     color: white;
   }
-  body.color .main.menu.date.year a:hover,
-  body.color .main.menu.date.year a.active, body.color .main.menu.artists.first-letter a:hover,
-  body.color .main.menu.artists.first-letter a.active {
+  body.color .main.menu.date.year button:hover,
+  body.color .main.menu.date.year button.active, body.color .main.menu.artists.first-letter button:hover,
+  body.color .main.menu.artists.first-letter button.active {
     background-color: #293f14;
   }
-  body.color .main.menu.date.month a:hover,
-  body.color .main.menu.date.month a.active, body.color .main.menu.artists a:hover,
-  body.color .main.menu.artists a.active {
+  body.color .main.menu.date.month button:hover,
+  body.color .main.menu.date.month button.active, body.color .main.menu.artists button:hover,
+  body.color .main.menu.artists button.active {
     background-color: #386c0b;
   }
-  body.color .main.menu a.active {
+  body.color .main.menu button.active {
     color: #1ab26b;
   }
-  body.color .main.content .releases .release a:hover {
+  body.color .main.content .releases .release button:hover {
     color: #1ab26b;
   }
   body.color .main .box {
@@ -1856,13 +1870,14 @@
     background-color: #0c0c0c;
     color: white;
   }
+  body.color .footer button,
   body.color .footer a {
     color: white;
   }
   body.color .footer.player.active {
     background-color: #0c0c0c;
   }
-  body.color .footer.player a:hover {
+  body.color .footer.player button:hover {
     color: #1ab26b;
   }
   body.color .footer.player .info > .time {
@@ -2288,11 +2303,11 @@
   body.color .footer .round.button:hover {
     background-color: #060606;
   }
-  body.color .footer.menu.primary a {
+  body.color .footer.menu.primary button {
     background-color: #060606;
     color: white;
   }
-  body.color .footer.menu.primary a:hover, body.color .footer.menu.primary a.active {
+  body.color .footer.menu.primary button:hover, body.color .footer.menu.primary button.active {
     background-color: #386c0b;
     color: #1ab26b;
   }
@@ -2463,6 +2478,9 @@
         }
     }*/
   }
+  body button {
+    color: white;
+  }
   body .header {
     background-color: #0c0c0c;
     color: white;
@@ -2490,30 +2508,31 @@
   body .menu.hover.items {
     background-color: #242424;
   }
-  body .menu.hover.items a:hover {
+  body .menu.hover.items button:hover {
     background-color: #383838;
   }
   body .main {
     background-color: #0c0c0c;
     color: white;
   }
+  body .main button,
   body .main a {
     color: white;
   }
-  body .main.menu.date.year a:hover,
-  body .main.menu.date.year a.active, body .main.menu.artists.first-letter a:hover,
-  body .main.menu.artists.first-letter a.active {
+  body .main.menu.date.year button:hover,
+  body .main.menu.date.year button.active, body .main.menu.artists.first-letter button:hover,
+  body .main.menu.artists.first-letter button.active {
     background-color: #101010;
   }
-  body .main.menu.date.month a:hover,
-  body .main.menu.date.month a.active, body .main.menu.artists a:hover,
-  body .main.menu.artists a.active {
+  body .main.menu.date.month button:hover,
+  body .main.menu.date.month button.active, body .main.menu.artists button:hover,
+  body .main.menu.artists button.active {
     background-color: #1a1a1a;
   }
-  body .main.menu a.active {
+  body .main.menu button.active {
     color: #1ab26b;
   }
-  body .main.content .releases .release a:hover {
+  body .main.content .releases .release button:hover {
     color: #1ab26b;
   }
   body .main .box {
@@ -2523,13 +2542,14 @@
     background-color: #0c0c0c;
     color: white;
   }
+  body .footer button,
   body .footer a {
     color: white;
   }
   body .footer.player.active {
     background-color: #0c0c0c;
   }
-  body .footer.player a:hover {
+  body .footer.player button:hover {
     color: #1ab26b;
   }
   body .footer.player .info > .time {
@@ -2955,11 +2975,11 @@
   body .footer .round.button:hover {
     background-color: #060606;
   }
-  body .footer.menu.primary a {
+  body .footer.menu.primary button {
     background-color: #060606;
     color: white;
   }
-  body .footer.menu.primary a:hover, body .footer.menu.primary a.active {
+  body .footer.menu.primary button:hover, body .footer.menu.primary button.active {
     background-color: #1a1a1a;
     color: #1ab26b;
   }
@@ -3135,6 +3155,9 @@
         }
     }*/
   }
+  body.light button {
+    color: black;
+  }
   body.light .header {
     background-color: whitesmoke;
     color: black;
@@ -3162,30 +3185,31 @@
   body.light .menu.hover.items {
     background-color: #fff5f5;
   }
-  body.light .menu.hover.items a:hover {
+  body.light .menu.hover.items button:hover {
     background-color: #cdcdcd;
   }
   body.light .main {
     background-color: whitesmoke;
     color: black;
   }
+  body.light .main button,
   body.light .main a {
     color: black;
   }
-  body.light .main.menu.date.year a:hover,
-  body.light .main.menu.date.year a.active, body.light .main.menu.artists.first-letter a:hover,
-  body.light .main.menu.artists.first-letter a.active {
+  body.light .main.menu.date.year button:hover,
+  body.light .main.menu.date.year button.active, body.light .main.menu.artists.first-letter button:hover,
+  body.light .main.menu.artists.first-letter button.active {
     background-color: whitesmoke;
   }
-  body.light .main.menu.date.month a:hover,
-  body.light .main.menu.date.month a.active, body.light .main.menu.artists a:hover,
-  body.light .main.menu.artists a.active {
+  body.light .main.menu.date.month button:hover,
+  body.light .main.menu.date.month button.active, body.light .main.menu.artists button:hover,
+  body.light .main.menu.artists button.active {
     background-color: white;
   }
-  body.light .main.menu a.active {
+  body.light .main.menu button.active {
     color: #1ab26b;
   }
-  body.light .main.content .releases .release a:hover {
+  body.light .main.content .releases .release button:hover {
     color: #1ab26b;
   }
   body.light .main .box {
@@ -3195,13 +3219,14 @@
     background-color: whitesmoke;
     color: black;
   }
+  body.light .footer button,
   body.light .footer a {
     color: black;
   }
   body.light .footer.player.active {
     background-color: whitesmoke;
   }
-  body.light .footer.player a:hover {
+  body.light .footer.player button:hover {
     color: #1ab26b;
   }
   body.light .footer.player .info > .time {
@@ -3627,11 +3652,11 @@
   body.light .footer .round.button:hover {
     background-color: white;
   }
-  body.light .footer.menu.primary a {
+  body.light .footer.menu.primary button {
     background-color: white;
     color: black;
   }
-  body.light .footer.menu.primary a:hover, body.light .footer.menu.primary a.active {
+  body.light .footer.menu.primary button:hover, body.light .footer.menu.primary button.active {
     background-color: white;
     color: #1ab26b;
   }
@@ -3804,6 +3829,9 @@
         }
     }*/
   }
+  body.color button {
+    color: white;
+  }
   body.color .header {
     background-color: #0c0c0c;
     color: white;
@@ -3831,30 +3859,31 @@
   body.color .menu.hover.items {
     background-color: #38a700;
   }
-  body.color .menu.hover.items a:hover {
+  body.color .menu.hover.items button:hover {
     background-color: #3eff8b;
   }
   body.color .main {
     background-color: #0c0c0c;
     color: white;
   }
+  body.color .main button,
   body.color .main a {
     color: white;
   }
-  body.color .main.menu.date.year a:hover,
-  body.color .main.menu.date.year a.active, body.color .main.menu.artists.first-letter a:hover,
-  body.color .main.menu.artists.first-letter a.active {
+  body.color .main.menu.date.year button:hover,
+  body.color .main.menu.date.year button.active, body.color .main.menu.artists.first-letter button:hover,
+  body.color .main.menu.artists.first-letter button.active {
     background-color: #293f14;
   }
-  body.color .main.menu.date.month a:hover,
-  body.color .main.menu.date.month a.active, body.color .main.menu.artists a:hover,
-  body.color .main.menu.artists a.active {
+  body.color .main.menu.date.month button:hover,
+  body.color .main.menu.date.month button.active, body.color .main.menu.artists button:hover,
+  body.color .main.menu.artists button.active {
     background-color: #386c0b;
   }
-  body.color .main.menu a.active {
+  body.color .main.menu button.active {
     color: #1ab26b;
   }
-  body.color .main.content .releases .release a:hover {
+  body.color .main.content .releases .release button:hover {
     color: #1ab26b;
   }
   body.color .main .box {
@@ -3864,13 +3893,14 @@
     background-color: #0c0c0c;
     color: white;
   }
+  body.color .footer button,
   body.color .footer a {
     color: white;
   }
   body.color .footer.player.active {
     background-color: #0c0c0c;
   }
-  body.color .footer.player a:hover {
+  body.color .footer.player button:hover {
     color: #1ab26b;
   }
   body.color .footer.player .info > .time {
@@ -4296,11 +4326,11 @@
   body.color .footer .round.button:hover {
     background-color: #060606;
   }
-  body.color .footer.menu.primary a {
+  body.color .footer.menu.primary button {
     background-color: #060606;
     color: white;
   }
-  body.color .footer.menu.primary a:hover, body.color .footer.menu.primary a.active {
+  body.color .footer.menu.primary button:hover, body.color .footer.menu.primary button.active {
     background-color: #386c0b;
     color: #1ab26b;
   }
@@ -4481,6 +4511,8 @@ body.classic {
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
     grid-area: 1 / 1 / 2 / 1;
+    position: fixed;
+    top: 0;
   }
   body.classic .header.primary {
     display: none;
@@ -4564,8 +4596,12 @@ p {
   font-size: 18px;
 }
 
-a {
+button {
   cursor: pointer;
+  border: none;
+  background-color: transparent;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 @media only screen and (min-width: 1050px) {
@@ -4687,12 +4723,14 @@ a {
   min-width: 70px;
 }
 
-.header.primary .user.menu.items a {
+.header.primary .user.menu.items button {
   display: block;
+  text-align: left;
 }
 
 .header.primary .user:hover .menu.hover.items {
-  display: block;
+  display: -ms-grid;
+  display: grid;
 }
 
 .header.primary .user:hover .menu.hover.items.hidden {
@@ -4851,7 +4889,7 @@ a {
 }
 
 .footer.player .info .button,
-.footer.player .info .buttons a {
+.footer.player .info .buttons button {
   font-size: 24px;
   margin-right: 5px;
   margin-bottom: 0;
@@ -4915,7 +4953,7 @@ a {
   margin-top: 10px;
 }
 
-.footer.player .info .content .details a {
+.footer.player .info .content .details button {
   display: block;
 }
 
@@ -4936,7 +4974,7 @@ a {
   display: inline-block;
 }
 
-.footer.player .info .content .details .artists a {
+.footer.player .info .content .details .artists button {
   display: inline;
 }
 
@@ -4946,13 +4984,15 @@ a {
     }*/
 }
 
-.main .menu a {
+.main .menu button {
   margin-top: 0px;
   display: block;
+  text-align: left;
+  width: calc(100% - 20px);
 }
 
 .main .menu .button,
-.main .menu .buttons > a {
+.main .menu .buttons > button {
   padding: 10px 10px 10px 15px;
 }
 
@@ -5002,7 +5042,7 @@ a {
   font-size: 13px;
 }
 
-.footer.menu.releases .primary a {
+.footer.menu.releases .primary button {
   text-align: center;
   padding: 10px 0;
   margin: 0;
@@ -5085,9 +5125,11 @@ a {
   max-height: calc(100vh - 60px);
   position: fixed;
   word-wrap: anywhere;
+  display: -ms-grid;
+  display: grid;
 }
 
-.footer.menu.releases .hover a {
+.footer.menu.releases .hover button {
   display: none;
 }
 
@@ -5125,8 +5167,8 @@ a {
   width: 100%;
 }
 
-.header.secondary .menu.filter.buttons a,
-.footer.secondary.menu.filter .buttons a {
+.header.secondary .menu.filter.buttons button,
+.footer.secondary.menu.filter .buttons button {
   font-size: 14px;
   border: solid 1px white;
   padding: 5px 10px;
@@ -5150,7 +5192,7 @@ a {
 
 .footer.menu.mobile .round {
   border-radius: 12px;
-  width: 40px;
+  width: auto;
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5173,7 +5215,6 @@ a {
 
 .footer.menu.mobile .round-text {
   display: block;
-  width: 125px;
   text-align: right;
   height: auto;
   font-size: 18px;
@@ -5193,6 +5234,8 @@ a {
   width: 200px;
   max-height: calc(100vh - 50px - 60px);
   display: none;
+  display: -ms-grid;
+  display: grid;
 }
 
 .footer.menu.mobile .items.active {
@@ -5204,12 +5247,13 @@ a {
   cursor: default;
 }
 
-.footer.menu.mobile .items a,
+.footer.menu.mobile .items button,
 .footer.menu.mobile .items p {
   display: block;
+  text-align: left;
 }
 
-.footer.menu.mobile .items a:last-child,
+.footer.menu.mobile .items button:last-child,
 .footer.menu.mobile .items p:last-child {
   margin-bottom: 60px;
 }
@@ -5256,7 +5300,7 @@ a {
   }
 }
 
-.list a {
+.list button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

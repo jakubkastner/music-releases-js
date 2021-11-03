@@ -16,8 +16,11 @@ p {
 }
 
 // link
-a {
+button {
     cursor: pointer;
+    border: none;
+    background-color: transparent;
+    box-sizing: content-box;
 }
 
 // responsive styles (hide / show content on pc / mobile)

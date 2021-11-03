@@ -29,7 +29,7 @@
             font-size: 13px;
         }
 
-        a {
+        button {
             text-align: center;
             padding: 10px 0;
             margin: 0;
@@ -130,8 +130,9 @@
         position: fixed;
 
         word-wrap: anywhere;
+        display: grid;
 
-        a {
+        button {
             display: none;
         }
 

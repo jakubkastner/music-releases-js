@@ -1,7 +1,9 @@
 .main .menu {
-    a {
+    button {
         margin-top: 0px;
         display: block;
+        text-align: left;
+        width: calc(100% - 20px); // TODO 10 + 10 padding
     }
 
     /*.buttons {
@@ -9,7 +11,7 @@
     }*/
 
     .button,
-    .buttons>a {
+    .buttons>button {
         padding: 10px 10px 10px 15px;
     }
 }

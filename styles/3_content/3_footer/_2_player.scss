@@ -41,7 +41,7 @@
         }
 
         .button,
-        .buttons a {
+        .buttons button {
             font-size: 24px;
             margin-right: 5px;
             margin-bottom: 0;
@@ -108,7 +108,7 @@
             }
 
             .details {
-                a {
+                button {
                     display: block;
                 }
 
@@ -126,7 +126,7 @@
                 .artists {
                     display: inline-block;
 
-                    a {
+                    button {
                         display: inline;
                     }
                 }

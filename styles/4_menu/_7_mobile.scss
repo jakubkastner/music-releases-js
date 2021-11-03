@@ -7,7 +7,8 @@
     // button to show/hide menu
     .round {
         border-radius: 12px;
-        width: 40px;
+        //width: 40px;
+        width: auto;
         height: 40px;
         display: flex;
         margin-right: 5px;
@@ -26,7 +27,6 @@
 
         &-text {
             display: block;
-            width: 125px; // TODO change
             text-align: right;
             height: auto;
             font-size: 18px;
@@ -51,6 +51,7 @@
         max-height: calc(100vh - 50px - 60px);
 
         display: none;
+        display: grid;
 
         &.active {
             display: block;
@@ -61,9 +62,10 @@
             cursor: default;
         }
 
-        a,
+        button,
         p {
             display: block;
+            text-align: left;
 
             &:last-child {
                 margin-bottom: $height_footer_menu;

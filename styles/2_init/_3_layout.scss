@@ -123,6 +123,7 @@ body.classic {
 
             // menus
             .menu {
+
                 &.playlists {
                     width: $menu_playlist_width;
                     min-width: $menu_playlist_width;
@@ -206,6 +207,8 @@ body.classic {
         .header {
             &.loader {
                 grid-area: 1 / 1 / 2 / 1;
+                position: fixed;
+                top: 0;
             }
 
             &.primary {

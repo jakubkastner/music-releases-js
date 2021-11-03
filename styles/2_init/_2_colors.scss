@@ -14,7 +14,7 @@ $color_text_button: rgb(26, 178, 107);
 // 1 = light
 // 2 = dark
 // 3 = color
-@mixin theme-colors($theme: false) {
+@mixin theme-colors($theme: 2) {
     // -> init colors
     // dark colors
     $color_0: rgb(6, 6, 6);
@@ -126,6 +126,10 @@ $color_text_button: rgb(26, 178, 107);
     // body
     background-color: $color_1;
 
+    button {
+        color: $color_text;
+    }
+
     // header
     .header {
         background-color: $color_1;
@@ -169,7 +173,7 @@ $color_text_button: rgb(26, 178, 107);
     .menu.hover.items {
         background-color: $color_4;
 
-        a:hover {
+        button:hover {
             background-color: $color_6;
         }
     }
@@ -180,6 +184,7 @@ $color_text_button: rgb(26, 178, 107);
         //background-color: $color_3;
         color: $color_text;
 
+        button,
         a {
             color: $color_text;
         }
@@ -190,8 +195,8 @@ $color_text_button: rgb(26, 178, 107);
             &.artists.first-letter {
                 //background-color: $color_1;
 
-                a:hover,
-                a.active {
+                button:hover,
+                button.active {
                     background-color: $color_2;
                 }
 
@@ -201,14 +206,14 @@ $color_text_button: rgb(26, 178, 107);
             &.artists {
                 //background-color: $color_2;
 
-                a:hover,
-                a.active {
+                button:hover,
+                button.active {
                     background-color: $color_3;
                 }
 
             }
 
-            a.active {
+            button.active {
                 color: $color_text_button;
             }
         }
@@ -216,7 +221,7 @@ $color_text_button: rgb(26, 178, 107);
         &.content {
             .releases {
                 .release {
-                    a {
+                    button {
                         &:hover {
                             color: $color_text_button;
                         }
@@ -235,6 +240,7 @@ $color_text_button: rgb(26, 178, 107);
         background-color: $color_1;
         color: $color_text;
 
+        button,
         a {
             color: $color_text;
         }
@@ -244,7 +250,7 @@ $color_text_button: rgb(26, 178, 107);
                 background-color: $color_1;
             }
 
-            a:hover {
+            button:hover {
                 color: $color_text_button;
             }
 
@@ -282,7 +288,7 @@ $color_text_button: rgb(26, 178, 107);
         }
 
         &.menu.primary {
-            a {
+            button {
                 background-color: $color_0;
                 color: $color_text;
 
