@@ -2,9 +2,6 @@
  *  Main styles - fonts, margin, ...
  */
 
-$padding_button: 10px;
-$height_menu_mobile_round_button: 24px;
-$width_menu_mobile_items: 250px;
 
 * {
     margin: 0;
@@ -36,13 +33,13 @@ input {
 }
 
 .left {
-    margin-left: $padding;
-    padding-left: 0;
+    padding-left: $padding_left_right;
+    //padding-left: 0;
 }
 
 .right {
-    margin-right: $padding;
-    padding-right: 0;
+    padding-right: $padding_left_right;
+    //padding-right: 0;
 }
 
 

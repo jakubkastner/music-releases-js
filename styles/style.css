@@ -279,8 +279,11 @@
 }
 
 /** MIXINS */
-@media only screen and (max-width: 1299px) {
-  .hide-text {
+@media only screen and (max-width: 1309px) {
+  .hide-text.icon-text i {
+    margin-right: 0;
+  }
+  .hide-text span {
     display: none;
   }
 }
@@ -561,410 +564,410 @@
   body .footer.player button:hover {
     color: #1ab26b;
   }
-  body .footer.player .info > .time {
+  body .footer.player .timeline {
     background-color: #1ab26b;
   }
-  body .footer.player .info > .time.width-0 {
+  body .footer.player .timeline.width-0 {
     background: -webkit-gradient(linear, left top, right top, from(#1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 0%, black 0%);
   }
-  body .footer.player .info > .time.width-1 {
+  body .footer.player .timeline.width-1 {
     background: -webkit-gradient(linear, left top, right top, color-stop(1%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 1%, black 0%);
   }
-  body .footer.player .info > .time.width-2 {
+  body .footer.player .timeline.width-2 {
     background: -webkit-gradient(linear, left top, right top, color-stop(2%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 2%, black 0%);
   }
-  body .footer.player .info > .time.width-3 {
+  body .footer.player .timeline.width-3 {
     background: -webkit-gradient(linear, left top, right top, color-stop(3%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 3%, black 0%);
   }
-  body .footer.player .info > .time.width-4 {
+  body .footer.player .timeline.width-4 {
     background: -webkit-gradient(linear, left top, right top, color-stop(4%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 4%, black 0%);
   }
-  body .footer.player .info > .time.width-5 {
+  body .footer.player .timeline.width-5 {
     background: -webkit-gradient(linear, left top, right top, color-stop(5%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 5%, black 0%);
   }
-  body .footer.player .info > .time.width-6 {
+  body .footer.player .timeline.width-6 {
     background: -webkit-gradient(linear, left top, right top, color-stop(6%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 6%, black 0%);
   }
-  body .footer.player .info > .time.width-7 {
+  body .footer.player .timeline.width-7 {
     background: -webkit-gradient(linear, left top, right top, color-stop(7%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 7%, black 0%);
   }
-  body .footer.player .info > .time.width-8 {
+  body .footer.player .timeline.width-8 {
     background: -webkit-gradient(linear, left top, right top, color-stop(8%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 8%, black 0%);
   }
-  body .footer.player .info > .time.width-9 {
+  body .footer.player .timeline.width-9 {
     background: -webkit-gradient(linear, left top, right top, color-stop(9%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 9%, black 0%);
   }
-  body .footer.player .info > .time.width-10 {
+  body .footer.player .timeline.width-10 {
     background: -webkit-gradient(linear, left top, right top, color-stop(10%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 10%, black 0%);
   }
-  body .footer.player .info > .time.width-11 {
+  body .footer.player .timeline.width-11 {
     background: -webkit-gradient(linear, left top, right top, color-stop(11%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 11%, black 0%);
   }
-  body .footer.player .info > .time.width-12 {
+  body .footer.player .timeline.width-12 {
     background: -webkit-gradient(linear, left top, right top, color-stop(12%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 12%, black 0%);
   }
-  body .footer.player .info > .time.width-13 {
+  body .footer.player .timeline.width-13 {
     background: -webkit-gradient(linear, left top, right top, color-stop(13%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 13%, black 0%);
   }
-  body .footer.player .info > .time.width-14 {
+  body .footer.player .timeline.width-14 {
     background: -webkit-gradient(linear, left top, right top, color-stop(14%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 14%, black 0%);
   }
-  body .footer.player .info > .time.width-15 {
+  body .footer.player .timeline.width-15 {
     background: -webkit-gradient(linear, left top, right top, color-stop(15%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 15%, black 0%);
   }
-  body .footer.player .info > .time.width-16 {
+  body .footer.player .timeline.width-16 {
     background: -webkit-gradient(linear, left top, right top, color-stop(16%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 16%, black 0%);
   }
-  body .footer.player .info > .time.width-17 {
+  body .footer.player .timeline.width-17 {
     background: -webkit-gradient(linear, left top, right top, color-stop(17%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 17%, black 0%);
   }
-  body .footer.player .info > .time.width-18 {
+  body .footer.player .timeline.width-18 {
     background: -webkit-gradient(linear, left top, right top, color-stop(18%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 18%, black 0%);
   }
-  body .footer.player .info > .time.width-19 {
+  body .footer.player .timeline.width-19 {
     background: -webkit-gradient(linear, left top, right top, color-stop(19%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 19%, black 0%);
   }
-  body .footer.player .info > .time.width-20 {
+  body .footer.player .timeline.width-20 {
     background: -webkit-gradient(linear, left top, right top, color-stop(20%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 20%, black 0%);
   }
-  body .footer.player .info > .time.width-21 {
+  body .footer.player .timeline.width-21 {
     background: -webkit-gradient(linear, left top, right top, color-stop(21%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 21%, black 0%);
   }
-  body .footer.player .info > .time.width-22 {
+  body .footer.player .timeline.width-22 {
     background: -webkit-gradient(linear, left top, right top, color-stop(22%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 22%, black 0%);
   }
-  body .footer.player .info > .time.width-23 {
+  body .footer.player .timeline.width-23 {
     background: -webkit-gradient(linear, left top, right top, color-stop(23%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 23%, black 0%);
   }
-  body .footer.player .info > .time.width-24 {
+  body .footer.player .timeline.width-24 {
     background: -webkit-gradient(linear, left top, right top, color-stop(24%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 24%, black 0%);
   }
-  body .footer.player .info > .time.width-25 {
+  body .footer.player .timeline.width-25 {
     background: -webkit-gradient(linear, left top, right top, color-stop(25%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 25%, black 0%);
   }
-  body .footer.player .info > .time.width-26 {
+  body .footer.player .timeline.width-26 {
     background: -webkit-gradient(linear, left top, right top, color-stop(26%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 26%, black 0%);
   }
-  body .footer.player .info > .time.width-27 {
+  body .footer.player .timeline.width-27 {
     background: -webkit-gradient(linear, left top, right top, color-stop(27%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 27%, black 0%);
   }
-  body .footer.player .info > .time.width-28 {
+  body .footer.player .timeline.width-28 {
     background: -webkit-gradient(linear, left top, right top, color-stop(28%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 28%, black 0%);
   }
-  body .footer.player .info > .time.width-29 {
+  body .footer.player .timeline.width-29 {
     background: -webkit-gradient(linear, left top, right top, color-stop(29%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 29%, black 0%);
   }
-  body .footer.player .info > .time.width-30 {
+  body .footer.player .timeline.width-30 {
     background: -webkit-gradient(linear, left top, right top, color-stop(30%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 30%, black 0%);
   }
-  body .footer.player .info > .time.width-31 {
+  body .footer.player .timeline.width-31 {
     background: -webkit-gradient(linear, left top, right top, color-stop(31%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 31%, black 0%);
   }
-  body .footer.player .info > .time.width-32 {
+  body .footer.player .timeline.width-32 {
     background: -webkit-gradient(linear, left top, right top, color-stop(32%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 32%, black 0%);
   }
-  body .footer.player .info > .time.width-33 {
+  body .footer.player .timeline.width-33 {
     background: -webkit-gradient(linear, left top, right top, color-stop(33%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 33%, black 0%);
   }
-  body .footer.player .info > .time.width-34 {
+  body .footer.player .timeline.width-34 {
     background: -webkit-gradient(linear, left top, right top, color-stop(34%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 34%, black 0%);
   }
-  body .footer.player .info > .time.width-35 {
+  body .footer.player .timeline.width-35 {
     background: -webkit-gradient(linear, left top, right top, color-stop(35%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 35%, black 0%);
   }
-  body .footer.player .info > .time.width-36 {
+  body .footer.player .timeline.width-36 {
     background: -webkit-gradient(linear, left top, right top, color-stop(36%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 36%, black 0%);
   }
-  body .footer.player .info > .time.width-37 {
+  body .footer.player .timeline.width-37 {
     background: -webkit-gradient(linear, left top, right top, color-stop(37%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 37%, black 0%);
   }
-  body .footer.player .info > .time.width-38 {
+  body .footer.player .timeline.width-38 {
     background: -webkit-gradient(linear, left top, right top, color-stop(38%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 38%, black 0%);
   }
-  body .footer.player .info > .time.width-39 {
+  body .footer.player .timeline.width-39 {
     background: -webkit-gradient(linear, left top, right top, color-stop(39%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 39%, black 0%);
   }
-  body .footer.player .info > .time.width-40 {
+  body .footer.player .timeline.width-40 {
     background: -webkit-gradient(linear, left top, right top, color-stop(40%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 40%, black 0%);
   }
-  body .footer.player .info > .time.width-41 {
+  body .footer.player .timeline.width-41 {
     background: -webkit-gradient(linear, left top, right top, color-stop(41%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 41%, black 0%);
   }
-  body .footer.player .info > .time.width-42 {
+  body .footer.player .timeline.width-42 {
     background: -webkit-gradient(linear, left top, right top, color-stop(42%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 42%, black 0%);
   }
-  body .footer.player .info > .time.width-43 {
+  body .footer.player .timeline.width-43 {
     background: -webkit-gradient(linear, left top, right top, color-stop(43%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 43%, black 0%);
   }
-  body .footer.player .info > .time.width-44 {
+  body .footer.player .timeline.width-44 {
     background: -webkit-gradient(linear, left top, right top, color-stop(44%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 44%, black 0%);
   }
-  body .footer.player .info > .time.width-45 {
+  body .footer.player .timeline.width-45 {
     background: -webkit-gradient(linear, left top, right top, color-stop(45%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 45%, black 0%);
   }
-  body .footer.player .info > .time.width-46 {
+  body .footer.player .timeline.width-46 {
     background: -webkit-gradient(linear, left top, right top, color-stop(46%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 46%, black 0%);
   }
-  body .footer.player .info > .time.width-47 {
+  body .footer.player .timeline.width-47 {
     background: -webkit-gradient(linear, left top, right top, color-stop(47%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 47%, black 0%);
   }
-  body .footer.player .info > .time.width-48 {
+  body .footer.player .timeline.width-48 {
     background: -webkit-gradient(linear, left top, right top, color-stop(48%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 48%, black 0%);
   }
-  body .footer.player .info > .time.width-49 {
+  body .footer.player .timeline.width-49 {
     background: -webkit-gradient(linear, left top, right top, color-stop(49%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 49%, black 0%);
   }
-  body .footer.player .info > .time.width-50 {
+  body .footer.player .timeline.width-50 {
     background: -webkit-gradient(linear, left top, right top, color-stop(50%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 50%, black 0%);
   }
-  body .footer.player .info > .time.width-51 {
+  body .footer.player .timeline.width-51 {
     background: -webkit-gradient(linear, left top, right top, color-stop(51%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 51%, black 0%);
   }
-  body .footer.player .info > .time.width-52 {
+  body .footer.player .timeline.width-52 {
     background: -webkit-gradient(linear, left top, right top, color-stop(52%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 52%, black 0%);
   }
-  body .footer.player .info > .time.width-53 {
+  body .footer.player .timeline.width-53 {
     background: -webkit-gradient(linear, left top, right top, color-stop(53%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 53%, black 0%);
   }
-  body .footer.player .info > .time.width-54 {
+  body .footer.player .timeline.width-54 {
     background: -webkit-gradient(linear, left top, right top, color-stop(54%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 54%, black 0%);
   }
-  body .footer.player .info > .time.width-55 {
+  body .footer.player .timeline.width-55 {
     background: -webkit-gradient(linear, left top, right top, color-stop(55%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 55%, black 0%);
   }
-  body .footer.player .info > .time.width-56 {
+  body .footer.player .timeline.width-56 {
     background: -webkit-gradient(linear, left top, right top, color-stop(56%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 56%, black 0%);
   }
-  body .footer.player .info > .time.width-57 {
+  body .footer.player .timeline.width-57 {
     background: -webkit-gradient(linear, left top, right top, color-stop(57%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 57%, black 0%);
   }
-  body .footer.player .info > .time.width-58 {
+  body .footer.player .timeline.width-58 {
     background: -webkit-gradient(linear, left top, right top, color-stop(58%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 58%, black 0%);
   }
-  body .footer.player .info > .time.width-59 {
+  body .footer.player .timeline.width-59 {
     background: -webkit-gradient(linear, left top, right top, color-stop(59%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 59%, black 0%);
   }
-  body .footer.player .info > .time.width-60 {
+  body .footer.player .timeline.width-60 {
     background: -webkit-gradient(linear, left top, right top, color-stop(60%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 60%, black 0%);
   }
-  body .footer.player .info > .time.width-61 {
+  body .footer.player .timeline.width-61 {
     background: -webkit-gradient(linear, left top, right top, color-stop(61%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 61%, black 0%);
   }
-  body .footer.player .info > .time.width-62 {
+  body .footer.player .timeline.width-62 {
     background: -webkit-gradient(linear, left top, right top, color-stop(62%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 62%, black 0%);
   }
-  body .footer.player .info > .time.width-63 {
+  body .footer.player .timeline.width-63 {
     background: -webkit-gradient(linear, left top, right top, color-stop(63%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 63%, black 0%);
   }
-  body .footer.player .info > .time.width-64 {
+  body .footer.player .timeline.width-64 {
     background: -webkit-gradient(linear, left top, right top, color-stop(64%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 64%, black 0%);
   }
-  body .footer.player .info > .time.width-65 {
+  body .footer.player .timeline.width-65 {
     background: -webkit-gradient(linear, left top, right top, color-stop(65%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 65%, black 0%);
   }
-  body .footer.player .info > .time.width-66 {
+  body .footer.player .timeline.width-66 {
     background: -webkit-gradient(linear, left top, right top, color-stop(66%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 66%, black 0%);
   }
-  body .footer.player .info > .time.width-67 {
+  body .footer.player .timeline.width-67 {
     background: -webkit-gradient(linear, left top, right top, color-stop(67%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 67%, black 0%);
   }
-  body .footer.player .info > .time.width-68 {
+  body .footer.player .timeline.width-68 {
     background: -webkit-gradient(linear, left top, right top, color-stop(68%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 68%, black 0%);
   }
-  body .footer.player .info > .time.width-69 {
+  body .footer.player .timeline.width-69 {
     background: -webkit-gradient(linear, left top, right top, color-stop(69%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 69%, black 0%);
   }
-  body .footer.player .info > .time.width-70 {
+  body .footer.player .timeline.width-70 {
     background: -webkit-gradient(linear, left top, right top, color-stop(70%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 70%, black 0%);
   }
-  body .footer.player .info > .time.width-71 {
+  body .footer.player .timeline.width-71 {
     background: -webkit-gradient(linear, left top, right top, color-stop(71%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 71%, black 0%);
   }
-  body .footer.player .info > .time.width-72 {
+  body .footer.player .timeline.width-72 {
     background: -webkit-gradient(linear, left top, right top, color-stop(72%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 72%, black 0%);
   }
-  body .footer.player .info > .time.width-73 {
+  body .footer.player .timeline.width-73 {
     background: -webkit-gradient(linear, left top, right top, color-stop(73%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 73%, black 0%);
   }
-  body .footer.player .info > .time.width-74 {
+  body .footer.player .timeline.width-74 {
     background: -webkit-gradient(linear, left top, right top, color-stop(74%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 74%, black 0%);
   }
-  body .footer.player .info > .time.width-75 {
+  body .footer.player .timeline.width-75 {
     background: -webkit-gradient(linear, left top, right top, color-stop(75%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 75%, black 0%);
   }
-  body .footer.player .info > .time.width-76 {
+  body .footer.player .timeline.width-76 {
     background: -webkit-gradient(linear, left top, right top, color-stop(76%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 76%, black 0%);
   }
-  body .footer.player .info > .time.width-77 {
+  body .footer.player .timeline.width-77 {
     background: -webkit-gradient(linear, left top, right top, color-stop(77%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 77%, black 0%);
   }
-  body .footer.player .info > .time.width-78 {
+  body .footer.player .timeline.width-78 {
     background: -webkit-gradient(linear, left top, right top, color-stop(78%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 78%, black 0%);
   }
-  body .footer.player .info > .time.width-79 {
+  body .footer.player .timeline.width-79 {
     background: -webkit-gradient(linear, left top, right top, color-stop(79%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 79%, black 0%);
   }
-  body .footer.player .info > .time.width-80 {
+  body .footer.player .timeline.width-80 {
     background: -webkit-gradient(linear, left top, right top, color-stop(80%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 80%, black 0%);
   }
-  body .footer.player .info > .time.width-81 {
+  body .footer.player .timeline.width-81 {
     background: -webkit-gradient(linear, left top, right top, color-stop(81%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 81%, black 0%);
   }
-  body .footer.player .info > .time.width-82 {
+  body .footer.player .timeline.width-82 {
     background: -webkit-gradient(linear, left top, right top, color-stop(82%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 82%, black 0%);
   }
-  body .footer.player .info > .time.width-83 {
+  body .footer.player .timeline.width-83 {
     background: -webkit-gradient(linear, left top, right top, color-stop(83%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 83%, black 0%);
   }
-  body .footer.player .info > .time.width-84 {
+  body .footer.player .timeline.width-84 {
     background: -webkit-gradient(linear, left top, right top, color-stop(84%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 84%, black 0%);
   }
-  body .footer.player .info > .time.width-85 {
+  body .footer.player .timeline.width-85 {
     background: -webkit-gradient(linear, left top, right top, color-stop(85%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 85%, black 0%);
   }
-  body .footer.player .info > .time.width-86 {
+  body .footer.player .timeline.width-86 {
     background: -webkit-gradient(linear, left top, right top, color-stop(86%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 86%, black 0%);
   }
-  body .footer.player .info > .time.width-87 {
+  body .footer.player .timeline.width-87 {
     background: -webkit-gradient(linear, left top, right top, color-stop(87%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 87%, black 0%);
   }
-  body .footer.player .info > .time.width-88 {
+  body .footer.player .timeline.width-88 {
     background: -webkit-gradient(linear, left top, right top, color-stop(88%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 88%, black 0%);
   }
-  body .footer.player .info > .time.width-89 {
+  body .footer.player .timeline.width-89 {
     background: -webkit-gradient(linear, left top, right top, color-stop(89%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 89%, black 0%);
   }
-  body .footer.player .info > .time.width-90 {
+  body .footer.player .timeline.width-90 {
     background: -webkit-gradient(linear, left top, right top, color-stop(90%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 90%, black 0%);
   }
-  body .footer.player .info > .time.width-91 {
+  body .footer.player .timeline.width-91 {
     background: -webkit-gradient(linear, left top, right top, color-stop(91%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 91%, black 0%);
   }
-  body .footer.player .info > .time.width-92 {
+  body .footer.player .timeline.width-92 {
     background: -webkit-gradient(linear, left top, right top, color-stop(92%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 92%, black 0%);
   }
-  body .footer.player .info > .time.width-93 {
+  body .footer.player .timeline.width-93 {
     background: -webkit-gradient(linear, left top, right top, color-stop(93%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 93%, black 0%);
   }
-  body .footer.player .info > .time.width-94 {
+  body .footer.player .timeline.width-94 {
     background: -webkit-gradient(linear, left top, right top, color-stop(94%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 94%, black 0%);
   }
-  body .footer.player .info > .time.width-95 {
+  body .footer.player .timeline.width-95 {
     background: -webkit-gradient(linear, left top, right top, color-stop(95%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 95%, black 0%);
   }
-  body .footer.player .info > .time.width-96 {
+  body .footer.player .timeline.width-96 {
     background: -webkit-gradient(linear, left top, right top, color-stop(96%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 96%, black 0%);
   }
-  body .footer.player .info > .time.width-97 {
+  body .footer.player .timeline.width-97 {
     background: -webkit-gradient(linear, left top, right top, color-stop(97%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 97%, black 0%);
   }
-  body .footer.player .info > .time.width-98 {
+  body .footer.player .timeline.width-98 {
     background: -webkit-gradient(linear, left top, right top, color-stop(98%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 98%, black 0%);
   }
-  body .footer.player .info > .time.width-99 {
+  body .footer.player .timeline.width-99 {
     background: -webkit-gradient(linear, left top, right top, color-stop(99%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 99%, black 0%);
   }
-  body .footer.player .info > .time.width-100 {
+  body .footer.player .timeline.width-100 {
     background: -webkit-gradient(linear, left top, right top, color-stop(100%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 100%, black 0%);
   }
@@ -1234,410 +1237,410 @@
   body.dark .footer.player button:hover {
     color: #1ab26b;
   }
-  body.dark .footer.player .info > .time {
+  body.dark .footer.player .timeline {
     background-color: #1ab26b;
   }
-  body.dark .footer.player .info > .time.width-0 {
+  body.dark .footer.player .timeline.width-0 {
     background: -webkit-gradient(linear, left top, right top, from(#1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 0%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-1 {
+  body.dark .footer.player .timeline.width-1 {
     background: -webkit-gradient(linear, left top, right top, color-stop(1%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 1%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-2 {
+  body.dark .footer.player .timeline.width-2 {
     background: -webkit-gradient(linear, left top, right top, color-stop(2%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 2%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-3 {
+  body.dark .footer.player .timeline.width-3 {
     background: -webkit-gradient(linear, left top, right top, color-stop(3%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 3%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-4 {
+  body.dark .footer.player .timeline.width-4 {
     background: -webkit-gradient(linear, left top, right top, color-stop(4%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 4%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-5 {
+  body.dark .footer.player .timeline.width-5 {
     background: -webkit-gradient(linear, left top, right top, color-stop(5%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 5%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-6 {
+  body.dark .footer.player .timeline.width-6 {
     background: -webkit-gradient(linear, left top, right top, color-stop(6%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 6%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-7 {
+  body.dark .footer.player .timeline.width-7 {
     background: -webkit-gradient(linear, left top, right top, color-stop(7%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 7%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-8 {
+  body.dark .footer.player .timeline.width-8 {
     background: -webkit-gradient(linear, left top, right top, color-stop(8%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 8%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-9 {
+  body.dark .footer.player .timeline.width-9 {
     background: -webkit-gradient(linear, left top, right top, color-stop(9%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 9%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-10 {
+  body.dark .footer.player .timeline.width-10 {
     background: -webkit-gradient(linear, left top, right top, color-stop(10%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 10%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-11 {
+  body.dark .footer.player .timeline.width-11 {
     background: -webkit-gradient(linear, left top, right top, color-stop(11%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 11%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-12 {
+  body.dark .footer.player .timeline.width-12 {
     background: -webkit-gradient(linear, left top, right top, color-stop(12%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 12%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-13 {
+  body.dark .footer.player .timeline.width-13 {
     background: -webkit-gradient(linear, left top, right top, color-stop(13%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 13%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-14 {
+  body.dark .footer.player .timeline.width-14 {
     background: -webkit-gradient(linear, left top, right top, color-stop(14%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 14%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-15 {
+  body.dark .footer.player .timeline.width-15 {
     background: -webkit-gradient(linear, left top, right top, color-stop(15%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 15%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-16 {
+  body.dark .footer.player .timeline.width-16 {
     background: -webkit-gradient(linear, left top, right top, color-stop(16%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 16%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-17 {
+  body.dark .footer.player .timeline.width-17 {
     background: -webkit-gradient(linear, left top, right top, color-stop(17%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 17%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-18 {
+  body.dark .footer.player .timeline.width-18 {
     background: -webkit-gradient(linear, left top, right top, color-stop(18%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 18%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-19 {
+  body.dark .footer.player .timeline.width-19 {
     background: -webkit-gradient(linear, left top, right top, color-stop(19%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 19%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-20 {
+  body.dark .footer.player .timeline.width-20 {
     background: -webkit-gradient(linear, left top, right top, color-stop(20%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 20%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-21 {
+  body.dark .footer.player .timeline.width-21 {
     background: -webkit-gradient(linear, left top, right top, color-stop(21%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 21%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-22 {
+  body.dark .footer.player .timeline.width-22 {
     background: -webkit-gradient(linear, left top, right top, color-stop(22%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 22%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-23 {
+  body.dark .footer.player .timeline.width-23 {
     background: -webkit-gradient(linear, left top, right top, color-stop(23%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 23%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-24 {
+  body.dark .footer.player .timeline.width-24 {
     background: -webkit-gradient(linear, left top, right top, color-stop(24%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 24%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-25 {
+  body.dark .footer.player .timeline.width-25 {
     background: -webkit-gradient(linear, left top, right top, color-stop(25%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 25%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-26 {
+  body.dark .footer.player .timeline.width-26 {
     background: -webkit-gradient(linear, left top, right top, color-stop(26%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 26%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-27 {
+  body.dark .footer.player .timeline.width-27 {
     background: -webkit-gradient(linear, left top, right top, color-stop(27%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 27%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-28 {
+  body.dark .footer.player .timeline.width-28 {
     background: -webkit-gradient(linear, left top, right top, color-stop(28%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 28%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-29 {
+  body.dark .footer.player .timeline.width-29 {
     background: -webkit-gradient(linear, left top, right top, color-stop(29%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 29%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-30 {
+  body.dark .footer.player .timeline.width-30 {
     background: -webkit-gradient(linear, left top, right top, color-stop(30%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 30%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-31 {
+  body.dark .footer.player .timeline.width-31 {
     background: -webkit-gradient(linear, left top, right top, color-stop(31%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 31%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-32 {
+  body.dark .footer.player .timeline.width-32 {
     background: -webkit-gradient(linear, left top, right top, color-stop(32%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 32%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-33 {
+  body.dark .footer.player .timeline.width-33 {
     background: -webkit-gradient(linear, left top, right top, color-stop(33%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 33%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-34 {
+  body.dark .footer.player .timeline.width-34 {
     background: -webkit-gradient(linear, left top, right top, color-stop(34%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 34%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-35 {
+  body.dark .footer.player .timeline.width-35 {
     background: -webkit-gradient(linear, left top, right top, color-stop(35%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 35%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-36 {
+  body.dark .footer.player .timeline.width-36 {
     background: -webkit-gradient(linear, left top, right top, color-stop(36%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 36%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-37 {
+  body.dark .footer.player .timeline.width-37 {
     background: -webkit-gradient(linear, left top, right top, color-stop(37%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 37%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-38 {
+  body.dark .footer.player .timeline.width-38 {
     background: -webkit-gradient(linear, left top, right top, color-stop(38%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 38%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-39 {
+  body.dark .footer.player .timeline.width-39 {
     background: -webkit-gradient(linear, left top, right top, color-stop(39%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 39%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-40 {
+  body.dark .footer.player .timeline.width-40 {
     background: -webkit-gradient(linear, left top, right top, color-stop(40%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 40%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-41 {
+  body.dark .footer.player .timeline.width-41 {
     background: -webkit-gradient(linear, left top, right top, color-stop(41%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 41%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-42 {
+  body.dark .footer.player .timeline.width-42 {
     background: -webkit-gradient(linear, left top, right top, color-stop(42%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 42%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-43 {
+  body.dark .footer.player .timeline.width-43 {
     background: -webkit-gradient(linear, left top, right top, color-stop(43%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 43%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-44 {
+  body.dark .footer.player .timeline.width-44 {
     background: -webkit-gradient(linear, left top, right top, color-stop(44%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 44%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-45 {
+  body.dark .footer.player .timeline.width-45 {
     background: -webkit-gradient(linear, left top, right top, color-stop(45%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 45%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-46 {
+  body.dark .footer.player .timeline.width-46 {
     background: -webkit-gradient(linear, left top, right top, color-stop(46%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 46%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-47 {
+  body.dark .footer.player .timeline.width-47 {
     background: -webkit-gradient(linear, left top, right top, color-stop(47%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 47%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-48 {
+  body.dark .footer.player .timeline.width-48 {
     background: -webkit-gradient(linear, left top, right top, color-stop(48%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 48%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-49 {
+  body.dark .footer.player .timeline.width-49 {
     background: -webkit-gradient(linear, left top, right top, color-stop(49%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 49%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-50 {
+  body.dark .footer.player .timeline.width-50 {
     background: -webkit-gradient(linear, left top, right top, color-stop(50%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 50%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-51 {
+  body.dark .footer.player .timeline.width-51 {
     background: -webkit-gradient(linear, left top, right top, color-stop(51%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 51%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-52 {
+  body.dark .footer.player .timeline.width-52 {
     background: -webkit-gradient(linear, left top, right top, color-stop(52%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 52%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-53 {
+  body.dark .footer.player .timeline.width-53 {
     background: -webkit-gradient(linear, left top, right top, color-stop(53%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 53%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-54 {
+  body.dark .footer.player .timeline.width-54 {
     background: -webkit-gradient(linear, left top, right top, color-stop(54%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 54%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-55 {
+  body.dark .footer.player .timeline.width-55 {
     background: -webkit-gradient(linear, left top, right top, color-stop(55%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 55%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-56 {
+  body.dark .footer.player .timeline.width-56 {
     background: -webkit-gradient(linear, left top, right top, color-stop(56%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 56%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-57 {
+  body.dark .footer.player .timeline.width-57 {
     background: -webkit-gradient(linear, left top, right top, color-stop(57%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 57%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-58 {
+  body.dark .footer.player .timeline.width-58 {
     background: -webkit-gradient(linear, left top, right top, color-stop(58%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 58%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-59 {
+  body.dark .footer.player .timeline.width-59 {
     background: -webkit-gradient(linear, left top, right top, color-stop(59%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 59%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-60 {
+  body.dark .footer.player .timeline.width-60 {
     background: -webkit-gradient(linear, left top, right top, color-stop(60%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 60%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-61 {
+  body.dark .footer.player .timeline.width-61 {
     background: -webkit-gradient(linear, left top, right top, color-stop(61%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 61%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-62 {
+  body.dark .footer.player .timeline.width-62 {
     background: -webkit-gradient(linear, left top, right top, color-stop(62%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 62%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-63 {
+  body.dark .footer.player .timeline.width-63 {
     background: -webkit-gradient(linear, left top, right top, color-stop(63%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 63%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-64 {
+  body.dark .footer.player .timeline.width-64 {
     background: -webkit-gradient(linear, left top, right top, color-stop(64%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 64%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-65 {
+  body.dark .footer.player .timeline.width-65 {
     background: -webkit-gradient(linear, left top, right top, color-stop(65%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 65%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-66 {
+  body.dark .footer.player .timeline.width-66 {
     background: -webkit-gradient(linear, left top, right top, color-stop(66%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 66%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-67 {
+  body.dark .footer.player .timeline.width-67 {
     background: -webkit-gradient(linear, left top, right top, color-stop(67%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 67%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-68 {
+  body.dark .footer.player .timeline.width-68 {
     background: -webkit-gradient(linear, left top, right top, color-stop(68%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 68%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-69 {
+  body.dark .footer.player .timeline.width-69 {
     background: -webkit-gradient(linear, left top, right top, color-stop(69%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 69%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-70 {
+  body.dark .footer.player .timeline.width-70 {
     background: -webkit-gradient(linear, left top, right top, color-stop(70%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 70%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-71 {
+  body.dark .footer.player .timeline.width-71 {
     background: -webkit-gradient(linear, left top, right top, color-stop(71%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 71%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-72 {
+  body.dark .footer.player .timeline.width-72 {
     background: -webkit-gradient(linear, left top, right top, color-stop(72%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 72%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-73 {
+  body.dark .footer.player .timeline.width-73 {
     background: -webkit-gradient(linear, left top, right top, color-stop(73%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 73%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-74 {
+  body.dark .footer.player .timeline.width-74 {
     background: -webkit-gradient(linear, left top, right top, color-stop(74%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 74%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-75 {
+  body.dark .footer.player .timeline.width-75 {
     background: -webkit-gradient(linear, left top, right top, color-stop(75%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 75%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-76 {
+  body.dark .footer.player .timeline.width-76 {
     background: -webkit-gradient(linear, left top, right top, color-stop(76%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 76%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-77 {
+  body.dark .footer.player .timeline.width-77 {
     background: -webkit-gradient(linear, left top, right top, color-stop(77%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 77%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-78 {
+  body.dark .footer.player .timeline.width-78 {
     background: -webkit-gradient(linear, left top, right top, color-stop(78%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 78%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-79 {
+  body.dark .footer.player .timeline.width-79 {
     background: -webkit-gradient(linear, left top, right top, color-stop(79%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 79%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-80 {
+  body.dark .footer.player .timeline.width-80 {
     background: -webkit-gradient(linear, left top, right top, color-stop(80%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 80%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-81 {
+  body.dark .footer.player .timeline.width-81 {
     background: -webkit-gradient(linear, left top, right top, color-stop(81%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 81%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-82 {
+  body.dark .footer.player .timeline.width-82 {
     background: -webkit-gradient(linear, left top, right top, color-stop(82%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 82%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-83 {
+  body.dark .footer.player .timeline.width-83 {
     background: -webkit-gradient(linear, left top, right top, color-stop(83%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 83%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-84 {
+  body.dark .footer.player .timeline.width-84 {
     background: -webkit-gradient(linear, left top, right top, color-stop(84%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 84%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-85 {
+  body.dark .footer.player .timeline.width-85 {
     background: -webkit-gradient(linear, left top, right top, color-stop(85%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 85%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-86 {
+  body.dark .footer.player .timeline.width-86 {
     background: -webkit-gradient(linear, left top, right top, color-stop(86%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 86%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-87 {
+  body.dark .footer.player .timeline.width-87 {
     background: -webkit-gradient(linear, left top, right top, color-stop(87%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 87%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-88 {
+  body.dark .footer.player .timeline.width-88 {
     background: -webkit-gradient(linear, left top, right top, color-stop(88%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 88%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-89 {
+  body.dark .footer.player .timeline.width-89 {
     background: -webkit-gradient(linear, left top, right top, color-stop(89%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 89%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-90 {
+  body.dark .footer.player .timeline.width-90 {
     background: -webkit-gradient(linear, left top, right top, color-stop(90%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 90%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-91 {
+  body.dark .footer.player .timeline.width-91 {
     background: -webkit-gradient(linear, left top, right top, color-stop(91%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 91%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-92 {
+  body.dark .footer.player .timeline.width-92 {
     background: -webkit-gradient(linear, left top, right top, color-stop(92%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 92%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-93 {
+  body.dark .footer.player .timeline.width-93 {
     background: -webkit-gradient(linear, left top, right top, color-stop(93%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 93%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-94 {
+  body.dark .footer.player .timeline.width-94 {
     background: -webkit-gradient(linear, left top, right top, color-stop(94%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 94%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-95 {
+  body.dark .footer.player .timeline.width-95 {
     background: -webkit-gradient(linear, left top, right top, color-stop(95%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 95%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-96 {
+  body.dark .footer.player .timeline.width-96 {
     background: -webkit-gradient(linear, left top, right top, color-stop(96%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 96%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-97 {
+  body.dark .footer.player .timeline.width-97 {
     background: -webkit-gradient(linear, left top, right top, color-stop(97%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 97%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-98 {
+  body.dark .footer.player .timeline.width-98 {
     background: -webkit-gradient(linear, left top, right top, color-stop(98%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 98%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-99 {
+  body.dark .footer.player .timeline.width-99 {
     background: -webkit-gradient(linear, left top, right top, color-stop(99%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 99%, white 0%);
   }
-  body.dark .footer.player .info > .time.width-100 {
+  body.dark .footer.player .timeline.width-100 {
     background: -webkit-gradient(linear, left top, right top, color-stop(100%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 100%, white 0%);
   }
@@ -1912,410 +1915,410 @@
   body.color .footer.player button:hover {
     color: #1ab26b;
   }
-  body.color .footer.player .info > .time {
+  body.color .footer.player .timeline {
     background-color: #1ab26b;
   }
-  body.color .footer.player .info > .time.width-0 {
+  body.color .footer.player .timeline.width-0 {
     background: -webkit-gradient(linear, left top, right top, from(#1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 0%, white 0%);
   }
-  body.color .footer.player .info > .time.width-1 {
+  body.color .footer.player .timeline.width-1 {
     background: -webkit-gradient(linear, left top, right top, color-stop(1%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 1%, white 0%);
   }
-  body.color .footer.player .info > .time.width-2 {
+  body.color .footer.player .timeline.width-2 {
     background: -webkit-gradient(linear, left top, right top, color-stop(2%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 2%, white 0%);
   }
-  body.color .footer.player .info > .time.width-3 {
+  body.color .footer.player .timeline.width-3 {
     background: -webkit-gradient(linear, left top, right top, color-stop(3%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 3%, white 0%);
   }
-  body.color .footer.player .info > .time.width-4 {
+  body.color .footer.player .timeline.width-4 {
     background: -webkit-gradient(linear, left top, right top, color-stop(4%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 4%, white 0%);
   }
-  body.color .footer.player .info > .time.width-5 {
+  body.color .footer.player .timeline.width-5 {
     background: -webkit-gradient(linear, left top, right top, color-stop(5%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 5%, white 0%);
   }
-  body.color .footer.player .info > .time.width-6 {
+  body.color .footer.player .timeline.width-6 {
     background: -webkit-gradient(linear, left top, right top, color-stop(6%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 6%, white 0%);
   }
-  body.color .footer.player .info > .time.width-7 {
+  body.color .footer.player .timeline.width-7 {
     background: -webkit-gradient(linear, left top, right top, color-stop(7%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 7%, white 0%);
   }
-  body.color .footer.player .info > .time.width-8 {
+  body.color .footer.player .timeline.width-8 {
     background: -webkit-gradient(linear, left top, right top, color-stop(8%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 8%, white 0%);
   }
-  body.color .footer.player .info > .time.width-9 {
+  body.color .footer.player .timeline.width-9 {
     background: -webkit-gradient(linear, left top, right top, color-stop(9%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 9%, white 0%);
   }
-  body.color .footer.player .info > .time.width-10 {
+  body.color .footer.player .timeline.width-10 {
     background: -webkit-gradient(linear, left top, right top, color-stop(10%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 10%, white 0%);
   }
-  body.color .footer.player .info > .time.width-11 {
+  body.color .footer.player .timeline.width-11 {
     background: -webkit-gradient(linear, left top, right top, color-stop(11%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 11%, white 0%);
   }
-  body.color .footer.player .info > .time.width-12 {
+  body.color .footer.player .timeline.width-12 {
     background: -webkit-gradient(linear, left top, right top, color-stop(12%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 12%, white 0%);
   }
-  body.color .footer.player .info > .time.width-13 {
+  body.color .footer.player .timeline.width-13 {
     background: -webkit-gradient(linear, left top, right top, color-stop(13%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 13%, white 0%);
   }
-  body.color .footer.player .info > .time.width-14 {
+  body.color .footer.player .timeline.width-14 {
     background: -webkit-gradient(linear, left top, right top, color-stop(14%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 14%, white 0%);
   }
-  body.color .footer.player .info > .time.width-15 {
+  body.color .footer.player .timeline.width-15 {
     background: -webkit-gradient(linear, left top, right top, color-stop(15%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 15%, white 0%);
   }
-  body.color .footer.player .info > .time.width-16 {
+  body.color .footer.player .timeline.width-16 {
     background: -webkit-gradient(linear, left top, right top, color-stop(16%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 16%, white 0%);
   }
-  body.color .footer.player .info > .time.width-17 {
+  body.color .footer.player .timeline.width-17 {
     background: -webkit-gradient(linear, left top, right top, color-stop(17%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 17%, white 0%);
   }
-  body.color .footer.player .info > .time.width-18 {
+  body.color .footer.player .timeline.width-18 {
     background: -webkit-gradient(linear, left top, right top, color-stop(18%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 18%, white 0%);
   }
-  body.color .footer.player .info > .time.width-19 {
+  body.color .footer.player .timeline.width-19 {
     background: -webkit-gradient(linear, left top, right top, color-stop(19%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 19%, white 0%);
   }
-  body.color .footer.player .info > .time.width-20 {
+  body.color .footer.player .timeline.width-20 {
     background: -webkit-gradient(linear, left top, right top, color-stop(20%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 20%, white 0%);
   }
-  body.color .footer.player .info > .time.width-21 {
+  body.color .footer.player .timeline.width-21 {
     background: -webkit-gradient(linear, left top, right top, color-stop(21%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 21%, white 0%);
   }
-  body.color .footer.player .info > .time.width-22 {
+  body.color .footer.player .timeline.width-22 {
     background: -webkit-gradient(linear, left top, right top, color-stop(22%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 22%, white 0%);
   }
-  body.color .footer.player .info > .time.width-23 {
+  body.color .footer.player .timeline.width-23 {
     background: -webkit-gradient(linear, left top, right top, color-stop(23%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 23%, white 0%);
   }
-  body.color .footer.player .info > .time.width-24 {
+  body.color .footer.player .timeline.width-24 {
     background: -webkit-gradient(linear, left top, right top, color-stop(24%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 24%, white 0%);
   }
-  body.color .footer.player .info > .time.width-25 {
+  body.color .footer.player .timeline.width-25 {
     background: -webkit-gradient(linear, left top, right top, color-stop(25%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 25%, white 0%);
   }
-  body.color .footer.player .info > .time.width-26 {
+  body.color .footer.player .timeline.width-26 {
     background: -webkit-gradient(linear, left top, right top, color-stop(26%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 26%, white 0%);
   }
-  body.color .footer.player .info > .time.width-27 {
+  body.color .footer.player .timeline.width-27 {
     background: -webkit-gradient(linear, left top, right top, color-stop(27%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 27%, white 0%);
   }
-  body.color .footer.player .info > .time.width-28 {
+  body.color .footer.player .timeline.width-28 {
     background: -webkit-gradient(linear, left top, right top, color-stop(28%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 28%, white 0%);
   }
-  body.color .footer.player .info > .time.width-29 {
+  body.color .footer.player .timeline.width-29 {
     background: -webkit-gradient(linear, left top, right top, color-stop(29%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 29%, white 0%);
   }
-  body.color .footer.player .info > .time.width-30 {
+  body.color .footer.player .timeline.width-30 {
     background: -webkit-gradient(linear, left top, right top, color-stop(30%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 30%, white 0%);
   }
-  body.color .footer.player .info > .time.width-31 {
+  body.color .footer.player .timeline.width-31 {
     background: -webkit-gradient(linear, left top, right top, color-stop(31%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 31%, white 0%);
   }
-  body.color .footer.player .info > .time.width-32 {
+  body.color .footer.player .timeline.width-32 {
     background: -webkit-gradient(linear, left top, right top, color-stop(32%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 32%, white 0%);
   }
-  body.color .footer.player .info > .time.width-33 {
+  body.color .footer.player .timeline.width-33 {
     background: -webkit-gradient(linear, left top, right top, color-stop(33%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 33%, white 0%);
   }
-  body.color .footer.player .info > .time.width-34 {
+  body.color .footer.player .timeline.width-34 {
     background: -webkit-gradient(linear, left top, right top, color-stop(34%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 34%, white 0%);
   }
-  body.color .footer.player .info > .time.width-35 {
+  body.color .footer.player .timeline.width-35 {
     background: -webkit-gradient(linear, left top, right top, color-stop(35%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 35%, white 0%);
   }
-  body.color .footer.player .info > .time.width-36 {
+  body.color .footer.player .timeline.width-36 {
     background: -webkit-gradient(linear, left top, right top, color-stop(36%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 36%, white 0%);
   }
-  body.color .footer.player .info > .time.width-37 {
+  body.color .footer.player .timeline.width-37 {
     background: -webkit-gradient(linear, left top, right top, color-stop(37%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 37%, white 0%);
   }
-  body.color .footer.player .info > .time.width-38 {
+  body.color .footer.player .timeline.width-38 {
     background: -webkit-gradient(linear, left top, right top, color-stop(38%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 38%, white 0%);
   }
-  body.color .footer.player .info > .time.width-39 {
+  body.color .footer.player .timeline.width-39 {
     background: -webkit-gradient(linear, left top, right top, color-stop(39%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 39%, white 0%);
   }
-  body.color .footer.player .info > .time.width-40 {
+  body.color .footer.player .timeline.width-40 {
     background: -webkit-gradient(linear, left top, right top, color-stop(40%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 40%, white 0%);
   }
-  body.color .footer.player .info > .time.width-41 {
+  body.color .footer.player .timeline.width-41 {
     background: -webkit-gradient(linear, left top, right top, color-stop(41%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 41%, white 0%);
   }
-  body.color .footer.player .info > .time.width-42 {
+  body.color .footer.player .timeline.width-42 {
     background: -webkit-gradient(linear, left top, right top, color-stop(42%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 42%, white 0%);
   }
-  body.color .footer.player .info > .time.width-43 {
+  body.color .footer.player .timeline.width-43 {
     background: -webkit-gradient(linear, left top, right top, color-stop(43%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 43%, white 0%);
   }
-  body.color .footer.player .info > .time.width-44 {
+  body.color .footer.player .timeline.width-44 {
     background: -webkit-gradient(linear, left top, right top, color-stop(44%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 44%, white 0%);
   }
-  body.color .footer.player .info > .time.width-45 {
+  body.color .footer.player .timeline.width-45 {
     background: -webkit-gradient(linear, left top, right top, color-stop(45%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 45%, white 0%);
   }
-  body.color .footer.player .info > .time.width-46 {
+  body.color .footer.player .timeline.width-46 {
     background: -webkit-gradient(linear, left top, right top, color-stop(46%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 46%, white 0%);
   }
-  body.color .footer.player .info > .time.width-47 {
+  body.color .footer.player .timeline.width-47 {
     background: -webkit-gradient(linear, left top, right top, color-stop(47%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 47%, white 0%);
   }
-  body.color .footer.player .info > .time.width-48 {
+  body.color .footer.player .timeline.width-48 {
     background: -webkit-gradient(linear, left top, right top, color-stop(48%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 48%, white 0%);
   }
-  body.color .footer.player .info > .time.width-49 {
+  body.color .footer.player .timeline.width-49 {
     background: -webkit-gradient(linear, left top, right top, color-stop(49%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 49%, white 0%);
   }
-  body.color .footer.player .info > .time.width-50 {
+  body.color .footer.player .timeline.width-50 {
     background: -webkit-gradient(linear, left top, right top, color-stop(50%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 50%, white 0%);
   }
-  body.color .footer.player .info > .time.width-51 {
+  body.color .footer.player .timeline.width-51 {
     background: -webkit-gradient(linear, left top, right top, color-stop(51%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 51%, white 0%);
   }
-  body.color .footer.player .info > .time.width-52 {
+  body.color .footer.player .timeline.width-52 {
     background: -webkit-gradient(linear, left top, right top, color-stop(52%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 52%, white 0%);
   }
-  body.color .footer.player .info > .time.width-53 {
+  body.color .footer.player .timeline.width-53 {
     background: -webkit-gradient(linear, left top, right top, color-stop(53%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 53%, white 0%);
   }
-  body.color .footer.player .info > .time.width-54 {
+  body.color .footer.player .timeline.width-54 {
     background: -webkit-gradient(linear, left top, right top, color-stop(54%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 54%, white 0%);
   }
-  body.color .footer.player .info > .time.width-55 {
+  body.color .footer.player .timeline.width-55 {
     background: -webkit-gradient(linear, left top, right top, color-stop(55%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 55%, white 0%);
   }
-  body.color .footer.player .info > .time.width-56 {
+  body.color .footer.player .timeline.width-56 {
     background: -webkit-gradient(linear, left top, right top, color-stop(56%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 56%, white 0%);
   }
-  body.color .footer.player .info > .time.width-57 {
+  body.color .footer.player .timeline.width-57 {
     background: -webkit-gradient(linear, left top, right top, color-stop(57%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 57%, white 0%);
   }
-  body.color .footer.player .info > .time.width-58 {
+  body.color .footer.player .timeline.width-58 {
     background: -webkit-gradient(linear, left top, right top, color-stop(58%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 58%, white 0%);
   }
-  body.color .footer.player .info > .time.width-59 {
+  body.color .footer.player .timeline.width-59 {
     background: -webkit-gradient(linear, left top, right top, color-stop(59%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 59%, white 0%);
   }
-  body.color .footer.player .info > .time.width-60 {
+  body.color .footer.player .timeline.width-60 {
     background: -webkit-gradient(linear, left top, right top, color-stop(60%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 60%, white 0%);
   }
-  body.color .footer.player .info > .time.width-61 {
+  body.color .footer.player .timeline.width-61 {
     background: -webkit-gradient(linear, left top, right top, color-stop(61%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 61%, white 0%);
   }
-  body.color .footer.player .info > .time.width-62 {
+  body.color .footer.player .timeline.width-62 {
     background: -webkit-gradient(linear, left top, right top, color-stop(62%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 62%, white 0%);
   }
-  body.color .footer.player .info > .time.width-63 {
+  body.color .footer.player .timeline.width-63 {
     background: -webkit-gradient(linear, left top, right top, color-stop(63%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 63%, white 0%);
   }
-  body.color .footer.player .info > .time.width-64 {
+  body.color .footer.player .timeline.width-64 {
     background: -webkit-gradient(linear, left top, right top, color-stop(64%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 64%, white 0%);
   }
-  body.color .footer.player .info > .time.width-65 {
+  body.color .footer.player .timeline.width-65 {
     background: -webkit-gradient(linear, left top, right top, color-stop(65%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 65%, white 0%);
   }
-  body.color .footer.player .info > .time.width-66 {
+  body.color .footer.player .timeline.width-66 {
     background: -webkit-gradient(linear, left top, right top, color-stop(66%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 66%, white 0%);
   }
-  body.color .footer.player .info > .time.width-67 {
+  body.color .footer.player .timeline.width-67 {
     background: -webkit-gradient(linear, left top, right top, color-stop(67%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 67%, white 0%);
   }
-  body.color .footer.player .info > .time.width-68 {
+  body.color .footer.player .timeline.width-68 {
     background: -webkit-gradient(linear, left top, right top, color-stop(68%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 68%, white 0%);
   }
-  body.color .footer.player .info > .time.width-69 {
+  body.color .footer.player .timeline.width-69 {
     background: -webkit-gradient(linear, left top, right top, color-stop(69%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 69%, white 0%);
   }
-  body.color .footer.player .info > .time.width-70 {
+  body.color .footer.player .timeline.width-70 {
     background: -webkit-gradient(linear, left top, right top, color-stop(70%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 70%, white 0%);
   }
-  body.color .footer.player .info > .time.width-71 {
+  body.color .footer.player .timeline.width-71 {
     background: -webkit-gradient(linear, left top, right top, color-stop(71%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 71%, white 0%);
   }
-  body.color .footer.player .info > .time.width-72 {
+  body.color .footer.player .timeline.width-72 {
     background: -webkit-gradient(linear, left top, right top, color-stop(72%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 72%, white 0%);
   }
-  body.color .footer.player .info > .time.width-73 {
+  body.color .footer.player .timeline.width-73 {
     background: -webkit-gradient(linear, left top, right top, color-stop(73%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 73%, white 0%);
   }
-  body.color .footer.player .info > .time.width-74 {
+  body.color .footer.player .timeline.width-74 {
     background: -webkit-gradient(linear, left top, right top, color-stop(74%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 74%, white 0%);
   }
-  body.color .footer.player .info > .time.width-75 {
+  body.color .footer.player .timeline.width-75 {
     background: -webkit-gradient(linear, left top, right top, color-stop(75%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 75%, white 0%);
   }
-  body.color .footer.player .info > .time.width-76 {
+  body.color .footer.player .timeline.width-76 {
     background: -webkit-gradient(linear, left top, right top, color-stop(76%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 76%, white 0%);
   }
-  body.color .footer.player .info > .time.width-77 {
+  body.color .footer.player .timeline.width-77 {
     background: -webkit-gradient(linear, left top, right top, color-stop(77%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 77%, white 0%);
   }
-  body.color .footer.player .info > .time.width-78 {
+  body.color .footer.player .timeline.width-78 {
     background: -webkit-gradient(linear, left top, right top, color-stop(78%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 78%, white 0%);
   }
-  body.color .footer.player .info > .time.width-79 {
+  body.color .footer.player .timeline.width-79 {
     background: -webkit-gradient(linear, left top, right top, color-stop(79%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 79%, white 0%);
   }
-  body.color .footer.player .info > .time.width-80 {
+  body.color .footer.player .timeline.width-80 {
     background: -webkit-gradient(linear, left top, right top, color-stop(80%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 80%, white 0%);
   }
-  body.color .footer.player .info > .time.width-81 {
+  body.color .footer.player .timeline.width-81 {
     background: -webkit-gradient(linear, left top, right top, color-stop(81%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 81%, white 0%);
   }
-  body.color .footer.player .info > .time.width-82 {
+  body.color .footer.player .timeline.width-82 {
     background: -webkit-gradient(linear, left top, right top, color-stop(82%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 82%, white 0%);
   }
-  body.color .footer.player .info > .time.width-83 {
+  body.color .footer.player .timeline.width-83 {
     background: -webkit-gradient(linear, left top, right top, color-stop(83%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 83%, white 0%);
   }
-  body.color .footer.player .info > .time.width-84 {
+  body.color .footer.player .timeline.width-84 {
     background: -webkit-gradient(linear, left top, right top, color-stop(84%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 84%, white 0%);
   }
-  body.color .footer.player .info > .time.width-85 {
+  body.color .footer.player .timeline.width-85 {
     background: -webkit-gradient(linear, left top, right top, color-stop(85%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 85%, white 0%);
   }
-  body.color .footer.player .info > .time.width-86 {
+  body.color .footer.player .timeline.width-86 {
     background: -webkit-gradient(linear, left top, right top, color-stop(86%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 86%, white 0%);
   }
-  body.color .footer.player .info > .time.width-87 {
+  body.color .footer.player .timeline.width-87 {
     background: -webkit-gradient(linear, left top, right top, color-stop(87%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 87%, white 0%);
   }
-  body.color .footer.player .info > .time.width-88 {
+  body.color .footer.player .timeline.width-88 {
     background: -webkit-gradient(linear, left top, right top, color-stop(88%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 88%, white 0%);
   }
-  body.color .footer.player .info > .time.width-89 {
+  body.color .footer.player .timeline.width-89 {
     background: -webkit-gradient(linear, left top, right top, color-stop(89%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 89%, white 0%);
   }
-  body.color .footer.player .info > .time.width-90 {
+  body.color .footer.player .timeline.width-90 {
     background: -webkit-gradient(linear, left top, right top, color-stop(90%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 90%, white 0%);
   }
-  body.color .footer.player .info > .time.width-91 {
+  body.color .footer.player .timeline.width-91 {
     background: -webkit-gradient(linear, left top, right top, color-stop(91%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 91%, white 0%);
   }
-  body.color .footer.player .info > .time.width-92 {
+  body.color .footer.player .timeline.width-92 {
     background: -webkit-gradient(linear, left top, right top, color-stop(92%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 92%, white 0%);
   }
-  body.color .footer.player .info > .time.width-93 {
+  body.color .footer.player .timeline.width-93 {
     background: -webkit-gradient(linear, left top, right top, color-stop(93%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 93%, white 0%);
   }
-  body.color .footer.player .info > .time.width-94 {
+  body.color .footer.player .timeline.width-94 {
     background: -webkit-gradient(linear, left top, right top, color-stop(94%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 94%, white 0%);
   }
-  body.color .footer.player .info > .time.width-95 {
+  body.color .footer.player .timeline.width-95 {
     background: -webkit-gradient(linear, left top, right top, color-stop(95%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 95%, white 0%);
   }
-  body.color .footer.player .info > .time.width-96 {
+  body.color .footer.player .timeline.width-96 {
     background: -webkit-gradient(linear, left top, right top, color-stop(96%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 96%, white 0%);
   }
-  body.color .footer.player .info > .time.width-97 {
+  body.color .footer.player .timeline.width-97 {
     background: -webkit-gradient(linear, left top, right top, color-stop(97%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 97%, white 0%);
   }
-  body.color .footer.player .info > .time.width-98 {
+  body.color .footer.player .timeline.width-98 {
     background: -webkit-gradient(linear, left top, right top, color-stop(98%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 98%, white 0%);
   }
-  body.color .footer.player .info > .time.width-99 {
+  body.color .footer.player .timeline.width-99 {
     background: -webkit-gradient(linear, left top, right top, color-stop(99%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 99%, white 0%);
   }
-  body.color .footer.player .info > .time.width-100 {
+  body.color .footer.player .timeline.width-100 {
     background: -webkit-gradient(linear, left top, right top, color-stop(100%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 100%, white 0%);
   }
@@ -2588,410 +2591,410 @@
   body .footer.player button:hover {
     color: #1ab26b;
   }
-  body .footer.player .info > .time {
+  body .footer.player .timeline {
     background-color: #1ab26b;
   }
-  body .footer.player .info > .time.width-0 {
+  body .footer.player .timeline.width-0 {
     background: -webkit-gradient(linear, left top, right top, from(#1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 0%, white 0%);
   }
-  body .footer.player .info > .time.width-1 {
+  body .footer.player .timeline.width-1 {
     background: -webkit-gradient(linear, left top, right top, color-stop(1%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 1%, white 0%);
   }
-  body .footer.player .info > .time.width-2 {
+  body .footer.player .timeline.width-2 {
     background: -webkit-gradient(linear, left top, right top, color-stop(2%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 2%, white 0%);
   }
-  body .footer.player .info > .time.width-3 {
+  body .footer.player .timeline.width-3 {
     background: -webkit-gradient(linear, left top, right top, color-stop(3%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 3%, white 0%);
   }
-  body .footer.player .info > .time.width-4 {
+  body .footer.player .timeline.width-4 {
     background: -webkit-gradient(linear, left top, right top, color-stop(4%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 4%, white 0%);
   }
-  body .footer.player .info > .time.width-5 {
+  body .footer.player .timeline.width-5 {
     background: -webkit-gradient(linear, left top, right top, color-stop(5%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 5%, white 0%);
   }
-  body .footer.player .info > .time.width-6 {
+  body .footer.player .timeline.width-6 {
     background: -webkit-gradient(linear, left top, right top, color-stop(6%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 6%, white 0%);
   }
-  body .footer.player .info > .time.width-7 {
+  body .footer.player .timeline.width-7 {
     background: -webkit-gradient(linear, left top, right top, color-stop(7%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 7%, white 0%);
   }
-  body .footer.player .info > .time.width-8 {
+  body .footer.player .timeline.width-8 {
     background: -webkit-gradient(linear, left top, right top, color-stop(8%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 8%, white 0%);
   }
-  body .footer.player .info > .time.width-9 {
+  body .footer.player .timeline.width-9 {
     background: -webkit-gradient(linear, left top, right top, color-stop(9%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 9%, white 0%);
   }
-  body .footer.player .info > .time.width-10 {
+  body .footer.player .timeline.width-10 {
     background: -webkit-gradient(linear, left top, right top, color-stop(10%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 10%, white 0%);
   }
-  body .footer.player .info > .time.width-11 {
+  body .footer.player .timeline.width-11 {
     background: -webkit-gradient(linear, left top, right top, color-stop(11%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 11%, white 0%);
   }
-  body .footer.player .info > .time.width-12 {
+  body .footer.player .timeline.width-12 {
     background: -webkit-gradient(linear, left top, right top, color-stop(12%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 12%, white 0%);
   }
-  body .footer.player .info > .time.width-13 {
+  body .footer.player .timeline.width-13 {
     background: -webkit-gradient(linear, left top, right top, color-stop(13%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 13%, white 0%);
   }
-  body .footer.player .info > .time.width-14 {
+  body .footer.player .timeline.width-14 {
     background: -webkit-gradient(linear, left top, right top, color-stop(14%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 14%, white 0%);
   }
-  body .footer.player .info > .time.width-15 {
+  body .footer.player .timeline.width-15 {
     background: -webkit-gradient(linear, left top, right top, color-stop(15%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 15%, white 0%);
   }
-  body .footer.player .info > .time.width-16 {
+  body .footer.player .timeline.width-16 {
     background: -webkit-gradient(linear, left top, right top, color-stop(16%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 16%, white 0%);
   }
-  body .footer.player .info > .time.width-17 {
+  body .footer.player .timeline.width-17 {
     background: -webkit-gradient(linear, left top, right top, color-stop(17%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 17%, white 0%);
   }
-  body .footer.player .info > .time.width-18 {
+  body .footer.player .timeline.width-18 {
     background: -webkit-gradient(linear, left top, right top, color-stop(18%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 18%, white 0%);
   }
-  body .footer.player .info > .time.width-19 {
+  body .footer.player .timeline.width-19 {
     background: -webkit-gradient(linear, left top, right top, color-stop(19%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 19%, white 0%);
   }
-  body .footer.player .info > .time.width-20 {
+  body .footer.player .timeline.width-20 {
     background: -webkit-gradient(linear, left top, right top, color-stop(20%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 20%, white 0%);
   }
-  body .footer.player .info > .time.width-21 {
+  body .footer.player .timeline.width-21 {
     background: -webkit-gradient(linear, left top, right top, color-stop(21%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 21%, white 0%);
   }
-  body .footer.player .info > .time.width-22 {
+  body .footer.player .timeline.width-22 {
     background: -webkit-gradient(linear, left top, right top, color-stop(22%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 22%, white 0%);
   }
-  body .footer.player .info > .time.width-23 {
+  body .footer.player .timeline.width-23 {
     background: -webkit-gradient(linear, left top, right top, color-stop(23%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 23%, white 0%);
   }
-  body .footer.player .info > .time.width-24 {
+  body .footer.player .timeline.width-24 {
     background: -webkit-gradient(linear, left top, right top, color-stop(24%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 24%, white 0%);
   }
-  body .footer.player .info > .time.width-25 {
+  body .footer.player .timeline.width-25 {
     background: -webkit-gradient(linear, left top, right top, color-stop(25%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 25%, white 0%);
   }
-  body .footer.player .info > .time.width-26 {
+  body .footer.player .timeline.width-26 {
     background: -webkit-gradient(linear, left top, right top, color-stop(26%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 26%, white 0%);
   }
-  body .footer.player .info > .time.width-27 {
+  body .footer.player .timeline.width-27 {
     background: -webkit-gradient(linear, left top, right top, color-stop(27%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 27%, white 0%);
   }
-  body .footer.player .info > .time.width-28 {
+  body .footer.player .timeline.width-28 {
     background: -webkit-gradient(linear, left top, right top, color-stop(28%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 28%, white 0%);
   }
-  body .footer.player .info > .time.width-29 {
+  body .footer.player .timeline.width-29 {
     background: -webkit-gradient(linear, left top, right top, color-stop(29%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 29%, white 0%);
   }
-  body .footer.player .info > .time.width-30 {
+  body .footer.player .timeline.width-30 {
     background: -webkit-gradient(linear, left top, right top, color-stop(30%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 30%, white 0%);
   }
-  body .footer.player .info > .time.width-31 {
+  body .footer.player .timeline.width-31 {
     background: -webkit-gradient(linear, left top, right top, color-stop(31%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 31%, white 0%);
   }
-  body .footer.player .info > .time.width-32 {
+  body .footer.player .timeline.width-32 {
     background: -webkit-gradient(linear, left top, right top, color-stop(32%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 32%, white 0%);
   }
-  body .footer.player .info > .time.width-33 {
+  body .footer.player .timeline.width-33 {
     background: -webkit-gradient(linear, left top, right top, color-stop(33%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 33%, white 0%);
   }
-  body .footer.player .info > .time.width-34 {
+  body .footer.player .timeline.width-34 {
     background: -webkit-gradient(linear, left top, right top, color-stop(34%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 34%, white 0%);
   }
-  body .footer.player .info > .time.width-35 {
+  body .footer.player .timeline.width-35 {
     background: -webkit-gradient(linear, left top, right top, color-stop(35%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 35%, white 0%);
   }
-  body .footer.player .info > .time.width-36 {
+  body .footer.player .timeline.width-36 {
     background: -webkit-gradient(linear, left top, right top, color-stop(36%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 36%, white 0%);
   }
-  body .footer.player .info > .time.width-37 {
+  body .footer.player .timeline.width-37 {
     background: -webkit-gradient(linear, left top, right top, color-stop(37%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 37%, white 0%);
   }
-  body .footer.player .info > .time.width-38 {
+  body .footer.player .timeline.width-38 {
     background: -webkit-gradient(linear, left top, right top, color-stop(38%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 38%, white 0%);
   }
-  body .footer.player .info > .time.width-39 {
+  body .footer.player .timeline.width-39 {
     background: -webkit-gradient(linear, left top, right top, color-stop(39%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 39%, white 0%);
   }
-  body .footer.player .info > .time.width-40 {
+  body .footer.player .timeline.width-40 {
     background: -webkit-gradient(linear, left top, right top, color-stop(40%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 40%, white 0%);
   }
-  body .footer.player .info > .time.width-41 {
+  body .footer.player .timeline.width-41 {
     background: -webkit-gradient(linear, left top, right top, color-stop(41%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 41%, white 0%);
   }
-  body .footer.player .info > .time.width-42 {
+  body .footer.player .timeline.width-42 {
     background: -webkit-gradient(linear, left top, right top, color-stop(42%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 42%, white 0%);
   }
-  body .footer.player .info > .time.width-43 {
+  body .footer.player .timeline.width-43 {
     background: -webkit-gradient(linear, left top, right top, color-stop(43%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 43%, white 0%);
   }
-  body .footer.player .info > .time.width-44 {
+  body .footer.player .timeline.width-44 {
     background: -webkit-gradient(linear, left top, right top, color-stop(44%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 44%, white 0%);
   }
-  body .footer.player .info > .time.width-45 {
+  body .footer.player .timeline.width-45 {
     background: -webkit-gradient(linear, left top, right top, color-stop(45%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 45%, white 0%);
   }
-  body .footer.player .info > .time.width-46 {
+  body .footer.player .timeline.width-46 {
     background: -webkit-gradient(linear, left top, right top, color-stop(46%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 46%, white 0%);
   }
-  body .footer.player .info > .time.width-47 {
+  body .footer.player .timeline.width-47 {
     background: -webkit-gradient(linear, left top, right top, color-stop(47%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 47%, white 0%);
   }
-  body .footer.player .info > .time.width-48 {
+  body .footer.player .timeline.width-48 {
     background: -webkit-gradient(linear, left top, right top, color-stop(48%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 48%, white 0%);
   }
-  body .footer.player .info > .time.width-49 {
+  body .footer.player .timeline.width-49 {
     background: -webkit-gradient(linear, left top, right top, color-stop(49%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 49%, white 0%);
   }
-  body .footer.player .info > .time.width-50 {
+  body .footer.player .timeline.width-50 {
     background: -webkit-gradient(linear, left top, right top, color-stop(50%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 50%, white 0%);
   }
-  body .footer.player .info > .time.width-51 {
+  body .footer.player .timeline.width-51 {
     background: -webkit-gradient(linear, left top, right top, color-stop(51%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 51%, white 0%);
   }
-  body .footer.player .info > .time.width-52 {
+  body .footer.player .timeline.width-52 {
     background: -webkit-gradient(linear, left top, right top, color-stop(52%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 52%, white 0%);
   }
-  body .footer.player .info > .time.width-53 {
+  body .footer.player .timeline.width-53 {
     background: -webkit-gradient(linear, left top, right top, color-stop(53%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 53%, white 0%);
   }
-  body .footer.player .info > .time.width-54 {
+  body .footer.player .timeline.width-54 {
     background: -webkit-gradient(linear, left top, right top, color-stop(54%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 54%, white 0%);
   }
-  body .footer.player .info > .time.width-55 {
+  body .footer.player .timeline.width-55 {
     background: -webkit-gradient(linear, left top, right top, color-stop(55%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 55%, white 0%);
   }
-  body .footer.player .info > .time.width-56 {
+  body .footer.player .timeline.width-56 {
     background: -webkit-gradient(linear, left top, right top, color-stop(56%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 56%, white 0%);
   }
-  body .footer.player .info > .time.width-57 {
+  body .footer.player .timeline.width-57 {
     background: -webkit-gradient(linear, left top, right top, color-stop(57%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 57%, white 0%);
   }
-  body .footer.player .info > .time.width-58 {
+  body .footer.player .timeline.width-58 {
     background: -webkit-gradient(linear, left top, right top, color-stop(58%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 58%, white 0%);
   }
-  body .footer.player .info > .time.width-59 {
+  body .footer.player .timeline.width-59 {
     background: -webkit-gradient(linear, left top, right top, color-stop(59%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 59%, white 0%);
   }
-  body .footer.player .info > .time.width-60 {
+  body .footer.player .timeline.width-60 {
     background: -webkit-gradient(linear, left top, right top, color-stop(60%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 60%, white 0%);
   }
-  body .footer.player .info > .time.width-61 {
+  body .footer.player .timeline.width-61 {
     background: -webkit-gradient(linear, left top, right top, color-stop(61%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 61%, white 0%);
   }
-  body .footer.player .info > .time.width-62 {
+  body .footer.player .timeline.width-62 {
     background: -webkit-gradient(linear, left top, right top, color-stop(62%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 62%, white 0%);
   }
-  body .footer.player .info > .time.width-63 {
+  body .footer.player .timeline.width-63 {
     background: -webkit-gradient(linear, left top, right top, color-stop(63%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 63%, white 0%);
   }
-  body .footer.player .info > .time.width-64 {
+  body .footer.player .timeline.width-64 {
     background: -webkit-gradient(linear, left top, right top, color-stop(64%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 64%, white 0%);
   }
-  body .footer.player .info > .time.width-65 {
+  body .footer.player .timeline.width-65 {
     background: -webkit-gradient(linear, left top, right top, color-stop(65%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 65%, white 0%);
   }
-  body .footer.player .info > .time.width-66 {
+  body .footer.player .timeline.width-66 {
     background: -webkit-gradient(linear, left top, right top, color-stop(66%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 66%, white 0%);
   }
-  body .footer.player .info > .time.width-67 {
+  body .footer.player .timeline.width-67 {
     background: -webkit-gradient(linear, left top, right top, color-stop(67%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 67%, white 0%);
   }
-  body .footer.player .info > .time.width-68 {
+  body .footer.player .timeline.width-68 {
     background: -webkit-gradient(linear, left top, right top, color-stop(68%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 68%, white 0%);
   }
-  body .footer.player .info > .time.width-69 {
+  body .footer.player .timeline.width-69 {
     background: -webkit-gradient(linear, left top, right top, color-stop(69%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 69%, white 0%);
   }
-  body .footer.player .info > .time.width-70 {
+  body .footer.player .timeline.width-70 {
     background: -webkit-gradient(linear, left top, right top, color-stop(70%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 70%, white 0%);
   }
-  body .footer.player .info > .time.width-71 {
+  body .footer.player .timeline.width-71 {
     background: -webkit-gradient(linear, left top, right top, color-stop(71%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 71%, white 0%);
   }
-  body .footer.player .info > .time.width-72 {
+  body .footer.player .timeline.width-72 {
     background: -webkit-gradient(linear, left top, right top, color-stop(72%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 72%, white 0%);
   }
-  body .footer.player .info > .time.width-73 {
+  body .footer.player .timeline.width-73 {
     background: -webkit-gradient(linear, left top, right top, color-stop(73%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 73%, white 0%);
   }
-  body .footer.player .info > .time.width-74 {
+  body .footer.player .timeline.width-74 {
     background: -webkit-gradient(linear, left top, right top, color-stop(74%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 74%, white 0%);
   }
-  body .footer.player .info > .time.width-75 {
+  body .footer.player .timeline.width-75 {
     background: -webkit-gradient(linear, left top, right top, color-stop(75%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 75%, white 0%);
   }
-  body .footer.player .info > .time.width-76 {
+  body .footer.player .timeline.width-76 {
     background: -webkit-gradient(linear, left top, right top, color-stop(76%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 76%, white 0%);
   }
-  body .footer.player .info > .time.width-77 {
+  body .footer.player .timeline.width-77 {
     background: -webkit-gradient(linear, left top, right top, color-stop(77%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 77%, white 0%);
   }
-  body .footer.player .info > .time.width-78 {
+  body .footer.player .timeline.width-78 {
     background: -webkit-gradient(linear, left top, right top, color-stop(78%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 78%, white 0%);
   }
-  body .footer.player .info > .time.width-79 {
+  body .footer.player .timeline.width-79 {
     background: -webkit-gradient(linear, left top, right top, color-stop(79%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 79%, white 0%);
   }
-  body .footer.player .info > .time.width-80 {
+  body .footer.player .timeline.width-80 {
     background: -webkit-gradient(linear, left top, right top, color-stop(80%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 80%, white 0%);
   }
-  body .footer.player .info > .time.width-81 {
+  body .footer.player .timeline.width-81 {
     background: -webkit-gradient(linear, left top, right top, color-stop(81%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 81%, white 0%);
   }
-  body .footer.player .info > .time.width-82 {
+  body .footer.player .timeline.width-82 {
     background: -webkit-gradient(linear, left top, right top, color-stop(82%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 82%, white 0%);
   }
-  body .footer.player .info > .time.width-83 {
+  body .footer.player .timeline.width-83 {
     background: -webkit-gradient(linear, left top, right top, color-stop(83%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 83%, white 0%);
   }
-  body .footer.player .info > .time.width-84 {
+  body .footer.player .timeline.width-84 {
     background: -webkit-gradient(linear, left top, right top, color-stop(84%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 84%, white 0%);
   }
-  body .footer.player .info > .time.width-85 {
+  body .footer.player .timeline.width-85 {
     background: -webkit-gradient(linear, left top, right top, color-stop(85%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 85%, white 0%);
   }
-  body .footer.player .info > .time.width-86 {
+  body .footer.player .timeline.width-86 {
     background: -webkit-gradient(linear, left top, right top, color-stop(86%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 86%, white 0%);
   }
-  body .footer.player .info > .time.width-87 {
+  body .footer.player .timeline.width-87 {
     background: -webkit-gradient(linear, left top, right top, color-stop(87%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 87%, white 0%);
   }
-  body .footer.player .info > .time.width-88 {
+  body .footer.player .timeline.width-88 {
     background: -webkit-gradient(linear, left top, right top, color-stop(88%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 88%, white 0%);
   }
-  body .footer.player .info > .time.width-89 {
+  body .footer.player .timeline.width-89 {
     background: -webkit-gradient(linear, left top, right top, color-stop(89%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 89%, white 0%);
   }
-  body .footer.player .info > .time.width-90 {
+  body .footer.player .timeline.width-90 {
     background: -webkit-gradient(linear, left top, right top, color-stop(90%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 90%, white 0%);
   }
-  body .footer.player .info > .time.width-91 {
+  body .footer.player .timeline.width-91 {
     background: -webkit-gradient(linear, left top, right top, color-stop(91%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 91%, white 0%);
   }
-  body .footer.player .info > .time.width-92 {
+  body .footer.player .timeline.width-92 {
     background: -webkit-gradient(linear, left top, right top, color-stop(92%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 92%, white 0%);
   }
-  body .footer.player .info > .time.width-93 {
+  body .footer.player .timeline.width-93 {
     background: -webkit-gradient(linear, left top, right top, color-stop(93%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 93%, white 0%);
   }
-  body .footer.player .info > .time.width-94 {
+  body .footer.player .timeline.width-94 {
     background: -webkit-gradient(linear, left top, right top, color-stop(94%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 94%, white 0%);
   }
-  body .footer.player .info > .time.width-95 {
+  body .footer.player .timeline.width-95 {
     background: -webkit-gradient(linear, left top, right top, color-stop(95%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 95%, white 0%);
   }
-  body .footer.player .info > .time.width-96 {
+  body .footer.player .timeline.width-96 {
     background: -webkit-gradient(linear, left top, right top, color-stop(96%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 96%, white 0%);
   }
-  body .footer.player .info > .time.width-97 {
+  body .footer.player .timeline.width-97 {
     background: -webkit-gradient(linear, left top, right top, color-stop(97%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 97%, white 0%);
   }
-  body .footer.player .info > .time.width-98 {
+  body .footer.player .timeline.width-98 {
     background: -webkit-gradient(linear, left top, right top, color-stop(98%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 98%, white 0%);
   }
-  body .footer.player .info > .time.width-99 {
+  body .footer.player .timeline.width-99 {
     background: -webkit-gradient(linear, left top, right top, color-stop(99%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 99%, white 0%);
   }
-  body .footer.player .info > .time.width-100 {
+  body .footer.player .timeline.width-100 {
     background: -webkit-gradient(linear, left top, right top, color-stop(100%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 100%, white 0%);
   }
@@ -3269,410 +3272,410 @@
   body.light .footer.player button:hover {
     color: #1ab26b;
   }
-  body.light .footer.player .info > .time {
+  body.light .footer.player .timeline {
     background-color: #1ab26b;
   }
-  body.light .footer.player .info > .time.width-0 {
+  body.light .footer.player .timeline.width-0 {
     background: -webkit-gradient(linear, left top, right top, from(#1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 0%, black 0%);
   }
-  body.light .footer.player .info > .time.width-1 {
+  body.light .footer.player .timeline.width-1 {
     background: -webkit-gradient(linear, left top, right top, color-stop(1%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 1%, black 0%);
   }
-  body.light .footer.player .info > .time.width-2 {
+  body.light .footer.player .timeline.width-2 {
     background: -webkit-gradient(linear, left top, right top, color-stop(2%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 2%, black 0%);
   }
-  body.light .footer.player .info > .time.width-3 {
+  body.light .footer.player .timeline.width-3 {
     background: -webkit-gradient(linear, left top, right top, color-stop(3%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 3%, black 0%);
   }
-  body.light .footer.player .info > .time.width-4 {
+  body.light .footer.player .timeline.width-4 {
     background: -webkit-gradient(linear, left top, right top, color-stop(4%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 4%, black 0%);
   }
-  body.light .footer.player .info > .time.width-5 {
+  body.light .footer.player .timeline.width-5 {
     background: -webkit-gradient(linear, left top, right top, color-stop(5%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 5%, black 0%);
   }
-  body.light .footer.player .info > .time.width-6 {
+  body.light .footer.player .timeline.width-6 {
     background: -webkit-gradient(linear, left top, right top, color-stop(6%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 6%, black 0%);
   }
-  body.light .footer.player .info > .time.width-7 {
+  body.light .footer.player .timeline.width-7 {
     background: -webkit-gradient(linear, left top, right top, color-stop(7%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 7%, black 0%);
   }
-  body.light .footer.player .info > .time.width-8 {
+  body.light .footer.player .timeline.width-8 {
     background: -webkit-gradient(linear, left top, right top, color-stop(8%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 8%, black 0%);
   }
-  body.light .footer.player .info > .time.width-9 {
+  body.light .footer.player .timeline.width-9 {
     background: -webkit-gradient(linear, left top, right top, color-stop(9%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 9%, black 0%);
   }
-  body.light .footer.player .info > .time.width-10 {
+  body.light .footer.player .timeline.width-10 {
     background: -webkit-gradient(linear, left top, right top, color-stop(10%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 10%, black 0%);
   }
-  body.light .footer.player .info > .time.width-11 {
+  body.light .footer.player .timeline.width-11 {
     background: -webkit-gradient(linear, left top, right top, color-stop(11%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 11%, black 0%);
   }
-  body.light .footer.player .info > .time.width-12 {
+  body.light .footer.player .timeline.width-12 {
     background: -webkit-gradient(linear, left top, right top, color-stop(12%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 12%, black 0%);
   }
-  body.light .footer.player .info > .time.width-13 {
+  body.light .footer.player .timeline.width-13 {
     background: -webkit-gradient(linear, left top, right top, color-stop(13%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 13%, black 0%);
   }
-  body.light .footer.player .info > .time.width-14 {
+  body.light .footer.player .timeline.width-14 {
     background: -webkit-gradient(linear, left top, right top, color-stop(14%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 14%, black 0%);
   }
-  body.light .footer.player .info > .time.width-15 {
+  body.light .footer.player .timeline.width-15 {
     background: -webkit-gradient(linear, left top, right top, color-stop(15%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 15%, black 0%);
   }
-  body.light .footer.player .info > .time.width-16 {
+  body.light .footer.player .timeline.width-16 {
     background: -webkit-gradient(linear, left top, right top, color-stop(16%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 16%, black 0%);
   }
-  body.light .footer.player .info > .time.width-17 {
+  body.light .footer.player .timeline.width-17 {
     background: -webkit-gradient(linear, left top, right top, color-stop(17%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 17%, black 0%);
   }
-  body.light .footer.player .info > .time.width-18 {
+  body.light .footer.player .timeline.width-18 {
     background: -webkit-gradient(linear, left top, right top, color-stop(18%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 18%, black 0%);
   }
-  body.light .footer.player .info > .time.width-19 {
+  body.light .footer.player .timeline.width-19 {
     background: -webkit-gradient(linear, left top, right top, color-stop(19%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 19%, black 0%);
   }
-  body.light .footer.player .info > .time.width-20 {
+  body.light .footer.player .timeline.width-20 {
     background: -webkit-gradient(linear, left top, right top, color-stop(20%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 20%, black 0%);
   }
-  body.light .footer.player .info > .time.width-21 {
+  body.light .footer.player .timeline.width-21 {
     background: -webkit-gradient(linear, left top, right top, color-stop(21%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 21%, black 0%);
   }
-  body.light .footer.player .info > .time.width-22 {
+  body.light .footer.player .timeline.width-22 {
     background: -webkit-gradient(linear, left top, right top, color-stop(22%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 22%, black 0%);
   }
-  body.light .footer.player .info > .time.width-23 {
+  body.light .footer.player .timeline.width-23 {
     background: -webkit-gradient(linear, left top, right top, color-stop(23%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 23%, black 0%);
   }
-  body.light .footer.player .info > .time.width-24 {
+  body.light .footer.player .timeline.width-24 {
     background: -webkit-gradient(linear, left top, right top, color-stop(24%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 24%, black 0%);
   }
-  body.light .footer.player .info > .time.width-25 {
+  body.light .footer.player .timeline.width-25 {
     background: -webkit-gradient(linear, left top, right top, color-stop(25%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 25%, black 0%);
   }
-  body.light .footer.player .info > .time.width-26 {
+  body.light .footer.player .timeline.width-26 {
     background: -webkit-gradient(linear, left top, right top, color-stop(26%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 26%, black 0%);
   }
-  body.light .footer.player .info > .time.width-27 {
+  body.light .footer.player .timeline.width-27 {
     background: -webkit-gradient(linear, left top, right top, color-stop(27%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 27%, black 0%);
   }
-  body.light .footer.player .info > .time.width-28 {
+  body.light .footer.player .timeline.width-28 {
     background: -webkit-gradient(linear, left top, right top, color-stop(28%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 28%, black 0%);
   }
-  body.light .footer.player .info > .time.width-29 {
+  body.light .footer.player .timeline.width-29 {
     background: -webkit-gradient(linear, left top, right top, color-stop(29%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 29%, black 0%);
   }
-  body.light .footer.player .info > .time.width-30 {
+  body.light .footer.player .timeline.width-30 {
     background: -webkit-gradient(linear, left top, right top, color-stop(30%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 30%, black 0%);
   }
-  body.light .footer.player .info > .time.width-31 {
+  body.light .footer.player .timeline.width-31 {
     background: -webkit-gradient(linear, left top, right top, color-stop(31%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 31%, black 0%);
   }
-  body.light .footer.player .info > .time.width-32 {
+  body.light .footer.player .timeline.width-32 {
     background: -webkit-gradient(linear, left top, right top, color-stop(32%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 32%, black 0%);
   }
-  body.light .footer.player .info > .time.width-33 {
+  body.light .footer.player .timeline.width-33 {
     background: -webkit-gradient(linear, left top, right top, color-stop(33%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 33%, black 0%);
   }
-  body.light .footer.player .info > .time.width-34 {
+  body.light .footer.player .timeline.width-34 {
     background: -webkit-gradient(linear, left top, right top, color-stop(34%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 34%, black 0%);
   }
-  body.light .footer.player .info > .time.width-35 {
+  body.light .footer.player .timeline.width-35 {
     background: -webkit-gradient(linear, left top, right top, color-stop(35%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 35%, black 0%);
   }
-  body.light .footer.player .info > .time.width-36 {
+  body.light .footer.player .timeline.width-36 {
     background: -webkit-gradient(linear, left top, right top, color-stop(36%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 36%, black 0%);
   }
-  body.light .footer.player .info > .time.width-37 {
+  body.light .footer.player .timeline.width-37 {
     background: -webkit-gradient(linear, left top, right top, color-stop(37%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 37%, black 0%);
   }
-  body.light .footer.player .info > .time.width-38 {
+  body.light .footer.player .timeline.width-38 {
     background: -webkit-gradient(linear, left top, right top, color-stop(38%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 38%, black 0%);
   }
-  body.light .footer.player .info > .time.width-39 {
+  body.light .footer.player .timeline.width-39 {
     background: -webkit-gradient(linear, left top, right top, color-stop(39%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 39%, black 0%);
   }
-  body.light .footer.player .info > .time.width-40 {
+  body.light .footer.player .timeline.width-40 {
     background: -webkit-gradient(linear, left top, right top, color-stop(40%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 40%, black 0%);
   }
-  body.light .footer.player .info > .time.width-41 {
+  body.light .footer.player .timeline.width-41 {
     background: -webkit-gradient(linear, left top, right top, color-stop(41%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 41%, black 0%);
   }
-  body.light .footer.player .info > .time.width-42 {
+  body.light .footer.player .timeline.width-42 {
     background: -webkit-gradient(linear, left top, right top, color-stop(42%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 42%, black 0%);
   }
-  body.light .footer.player .info > .time.width-43 {
+  body.light .footer.player .timeline.width-43 {
     background: -webkit-gradient(linear, left top, right top, color-stop(43%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 43%, black 0%);
   }
-  body.light .footer.player .info > .time.width-44 {
+  body.light .footer.player .timeline.width-44 {
     background: -webkit-gradient(linear, left top, right top, color-stop(44%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 44%, black 0%);
   }
-  body.light .footer.player .info > .time.width-45 {
+  body.light .footer.player .timeline.width-45 {
     background: -webkit-gradient(linear, left top, right top, color-stop(45%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 45%, black 0%);
   }
-  body.light .footer.player .info > .time.width-46 {
+  body.light .footer.player .timeline.width-46 {
     background: -webkit-gradient(linear, left top, right top, color-stop(46%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 46%, black 0%);
   }
-  body.light .footer.player .info > .time.width-47 {
+  body.light .footer.player .timeline.width-47 {
     background: -webkit-gradient(linear, left top, right top, color-stop(47%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 47%, black 0%);
   }
-  body.light .footer.player .info > .time.width-48 {
+  body.light .footer.player .timeline.width-48 {
     background: -webkit-gradient(linear, left top, right top, color-stop(48%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 48%, black 0%);
   }
-  body.light .footer.player .info > .time.width-49 {
+  body.light .footer.player .timeline.width-49 {
     background: -webkit-gradient(linear, left top, right top, color-stop(49%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 49%, black 0%);
   }
-  body.light .footer.player .info > .time.width-50 {
+  body.light .footer.player .timeline.width-50 {
     background: -webkit-gradient(linear, left top, right top, color-stop(50%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 50%, black 0%);
   }
-  body.light .footer.player .info > .time.width-51 {
+  body.light .footer.player .timeline.width-51 {
     background: -webkit-gradient(linear, left top, right top, color-stop(51%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 51%, black 0%);
   }
-  body.light .footer.player .info > .time.width-52 {
+  body.light .footer.player .timeline.width-52 {
     background: -webkit-gradient(linear, left top, right top, color-stop(52%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 52%, black 0%);
   }
-  body.light .footer.player .info > .time.width-53 {
+  body.light .footer.player .timeline.width-53 {
     background: -webkit-gradient(linear, left top, right top, color-stop(53%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 53%, black 0%);
   }
-  body.light .footer.player .info > .time.width-54 {
+  body.light .footer.player .timeline.width-54 {
     background: -webkit-gradient(linear, left top, right top, color-stop(54%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 54%, black 0%);
   }
-  body.light .footer.player .info > .time.width-55 {
+  body.light .footer.player .timeline.width-55 {
     background: -webkit-gradient(linear, left top, right top, color-stop(55%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 55%, black 0%);
   }
-  body.light .footer.player .info > .time.width-56 {
+  body.light .footer.player .timeline.width-56 {
     background: -webkit-gradient(linear, left top, right top, color-stop(56%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 56%, black 0%);
   }
-  body.light .footer.player .info > .time.width-57 {
+  body.light .footer.player .timeline.width-57 {
     background: -webkit-gradient(linear, left top, right top, color-stop(57%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 57%, black 0%);
   }
-  body.light .footer.player .info > .time.width-58 {
+  body.light .footer.player .timeline.width-58 {
     background: -webkit-gradient(linear, left top, right top, color-stop(58%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 58%, black 0%);
   }
-  body.light .footer.player .info > .time.width-59 {
+  body.light .footer.player .timeline.width-59 {
     background: -webkit-gradient(linear, left top, right top, color-stop(59%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 59%, black 0%);
   }
-  body.light .footer.player .info > .time.width-60 {
+  body.light .footer.player .timeline.width-60 {
     background: -webkit-gradient(linear, left top, right top, color-stop(60%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 60%, black 0%);
   }
-  body.light .footer.player .info > .time.width-61 {
+  body.light .footer.player .timeline.width-61 {
     background: -webkit-gradient(linear, left top, right top, color-stop(61%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 61%, black 0%);
   }
-  body.light .footer.player .info > .time.width-62 {
+  body.light .footer.player .timeline.width-62 {
     background: -webkit-gradient(linear, left top, right top, color-stop(62%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 62%, black 0%);
   }
-  body.light .footer.player .info > .time.width-63 {
+  body.light .footer.player .timeline.width-63 {
     background: -webkit-gradient(linear, left top, right top, color-stop(63%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 63%, black 0%);
   }
-  body.light .footer.player .info > .time.width-64 {
+  body.light .footer.player .timeline.width-64 {
     background: -webkit-gradient(linear, left top, right top, color-stop(64%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 64%, black 0%);
   }
-  body.light .footer.player .info > .time.width-65 {
+  body.light .footer.player .timeline.width-65 {
     background: -webkit-gradient(linear, left top, right top, color-stop(65%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 65%, black 0%);
   }
-  body.light .footer.player .info > .time.width-66 {
+  body.light .footer.player .timeline.width-66 {
     background: -webkit-gradient(linear, left top, right top, color-stop(66%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 66%, black 0%);
   }
-  body.light .footer.player .info > .time.width-67 {
+  body.light .footer.player .timeline.width-67 {
     background: -webkit-gradient(linear, left top, right top, color-stop(67%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 67%, black 0%);
   }
-  body.light .footer.player .info > .time.width-68 {
+  body.light .footer.player .timeline.width-68 {
     background: -webkit-gradient(linear, left top, right top, color-stop(68%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 68%, black 0%);
   }
-  body.light .footer.player .info > .time.width-69 {
+  body.light .footer.player .timeline.width-69 {
     background: -webkit-gradient(linear, left top, right top, color-stop(69%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 69%, black 0%);
   }
-  body.light .footer.player .info > .time.width-70 {
+  body.light .footer.player .timeline.width-70 {
     background: -webkit-gradient(linear, left top, right top, color-stop(70%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 70%, black 0%);
   }
-  body.light .footer.player .info > .time.width-71 {
+  body.light .footer.player .timeline.width-71 {
     background: -webkit-gradient(linear, left top, right top, color-stop(71%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 71%, black 0%);
   }
-  body.light .footer.player .info > .time.width-72 {
+  body.light .footer.player .timeline.width-72 {
     background: -webkit-gradient(linear, left top, right top, color-stop(72%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 72%, black 0%);
   }
-  body.light .footer.player .info > .time.width-73 {
+  body.light .footer.player .timeline.width-73 {
     background: -webkit-gradient(linear, left top, right top, color-stop(73%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 73%, black 0%);
   }
-  body.light .footer.player .info > .time.width-74 {
+  body.light .footer.player .timeline.width-74 {
     background: -webkit-gradient(linear, left top, right top, color-stop(74%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 74%, black 0%);
   }
-  body.light .footer.player .info > .time.width-75 {
+  body.light .footer.player .timeline.width-75 {
     background: -webkit-gradient(linear, left top, right top, color-stop(75%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 75%, black 0%);
   }
-  body.light .footer.player .info > .time.width-76 {
+  body.light .footer.player .timeline.width-76 {
     background: -webkit-gradient(linear, left top, right top, color-stop(76%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 76%, black 0%);
   }
-  body.light .footer.player .info > .time.width-77 {
+  body.light .footer.player .timeline.width-77 {
     background: -webkit-gradient(linear, left top, right top, color-stop(77%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 77%, black 0%);
   }
-  body.light .footer.player .info > .time.width-78 {
+  body.light .footer.player .timeline.width-78 {
     background: -webkit-gradient(linear, left top, right top, color-stop(78%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 78%, black 0%);
   }
-  body.light .footer.player .info > .time.width-79 {
+  body.light .footer.player .timeline.width-79 {
     background: -webkit-gradient(linear, left top, right top, color-stop(79%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 79%, black 0%);
   }
-  body.light .footer.player .info > .time.width-80 {
+  body.light .footer.player .timeline.width-80 {
     background: -webkit-gradient(linear, left top, right top, color-stop(80%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 80%, black 0%);
   }
-  body.light .footer.player .info > .time.width-81 {
+  body.light .footer.player .timeline.width-81 {
     background: -webkit-gradient(linear, left top, right top, color-stop(81%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 81%, black 0%);
   }
-  body.light .footer.player .info > .time.width-82 {
+  body.light .footer.player .timeline.width-82 {
     background: -webkit-gradient(linear, left top, right top, color-stop(82%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 82%, black 0%);
   }
-  body.light .footer.player .info > .time.width-83 {
+  body.light .footer.player .timeline.width-83 {
     background: -webkit-gradient(linear, left top, right top, color-stop(83%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 83%, black 0%);
   }
-  body.light .footer.player .info > .time.width-84 {
+  body.light .footer.player .timeline.width-84 {
     background: -webkit-gradient(linear, left top, right top, color-stop(84%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 84%, black 0%);
   }
-  body.light .footer.player .info > .time.width-85 {
+  body.light .footer.player .timeline.width-85 {
     background: -webkit-gradient(linear, left top, right top, color-stop(85%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 85%, black 0%);
   }
-  body.light .footer.player .info > .time.width-86 {
+  body.light .footer.player .timeline.width-86 {
     background: -webkit-gradient(linear, left top, right top, color-stop(86%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 86%, black 0%);
   }
-  body.light .footer.player .info > .time.width-87 {
+  body.light .footer.player .timeline.width-87 {
     background: -webkit-gradient(linear, left top, right top, color-stop(87%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 87%, black 0%);
   }
-  body.light .footer.player .info > .time.width-88 {
+  body.light .footer.player .timeline.width-88 {
     background: -webkit-gradient(linear, left top, right top, color-stop(88%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 88%, black 0%);
   }
-  body.light .footer.player .info > .time.width-89 {
+  body.light .footer.player .timeline.width-89 {
     background: -webkit-gradient(linear, left top, right top, color-stop(89%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 89%, black 0%);
   }
-  body.light .footer.player .info > .time.width-90 {
+  body.light .footer.player .timeline.width-90 {
     background: -webkit-gradient(linear, left top, right top, color-stop(90%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 90%, black 0%);
   }
-  body.light .footer.player .info > .time.width-91 {
+  body.light .footer.player .timeline.width-91 {
     background: -webkit-gradient(linear, left top, right top, color-stop(91%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 91%, black 0%);
   }
-  body.light .footer.player .info > .time.width-92 {
+  body.light .footer.player .timeline.width-92 {
     background: -webkit-gradient(linear, left top, right top, color-stop(92%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 92%, black 0%);
   }
-  body.light .footer.player .info > .time.width-93 {
+  body.light .footer.player .timeline.width-93 {
     background: -webkit-gradient(linear, left top, right top, color-stop(93%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 93%, black 0%);
   }
-  body.light .footer.player .info > .time.width-94 {
+  body.light .footer.player .timeline.width-94 {
     background: -webkit-gradient(linear, left top, right top, color-stop(94%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 94%, black 0%);
   }
-  body.light .footer.player .info > .time.width-95 {
+  body.light .footer.player .timeline.width-95 {
     background: -webkit-gradient(linear, left top, right top, color-stop(95%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 95%, black 0%);
   }
-  body.light .footer.player .info > .time.width-96 {
+  body.light .footer.player .timeline.width-96 {
     background: -webkit-gradient(linear, left top, right top, color-stop(96%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 96%, black 0%);
   }
-  body.light .footer.player .info > .time.width-97 {
+  body.light .footer.player .timeline.width-97 {
     background: -webkit-gradient(linear, left top, right top, color-stop(97%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 97%, black 0%);
   }
-  body.light .footer.player .info > .time.width-98 {
+  body.light .footer.player .timeline.width-98 {
     background: -webkit-gradient(linear, left top, right top, color-stop(98%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 98%, black 0%);
   }
-  body.light .footer.player .info > .time.width-99 {
+  body.light .footer.player .timeline.width-99 {
     background: -webkit-gradient(linear, left top, right top, color-stop(99%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 99%, black 0%);
   }
-  body.light .footer.player .info > .time.width-100 {
+  body.light .footer.player .timeline.width-100 {
     background: -webkit-gradient(linear, left top, right top, color-stop(100%, #1ab26b), color-stop(0%, black));
     background: linear-gradient(to right, #1ab26b 100%, black 0%);
   }
@@ -3947,410 +3950,410 @@
   body.color .footer.player button:hover {
     color: #1ab26b;
   }
-  body.color .footer.player .info > .time {
+  body.color .footer.player .timeline {
     background-color: #1ab26b;
   }
-  body.color .footer.player .info > .time.width-0 {
+  body.color .footer.player .timeline.width-0 {
     background: -webkit-gradient(linear, left top, right top, from(#1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 0%, white 0%);
   }
-  body.color .footer.player .info > .time.width-1 {
+  body.color .footer.player .timeline.width-1 {
     background: -webkit-gradient(linear, left top, right top, color-stop(1%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 1%, white 0%);
   }
-  body.color .footer.player .info > .time.width-2 {
+  body.color .footer.player .timeline.width-2 {
     background: -webkit-gradient(linear, left top, right top, color-stop(2%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 2%, white 0%);
   }
-  body.color .footer.player .info > .time.width-3 {
+  body.color .footer.player .timeline.width-3 {
     background: -webkit-gradient(linear, left top, right top, color-stop(3%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 3%, white 0%);
   }
-  body.color .footer.player .info > .time.width-4 {
+  body.color .footer.player .timeline.width-4 {
     background: -webkit-gradient(linear, left top, right top, color-stop(4%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 4%, white 0%);
   }
-  body.color .footer.player .info > .time.width-5 {
+  body.color .footer.player .timeline.width-5 {
     background: -webkit-gradient(linear, left top, right top, color-stop(5%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 5%, white 0%);
   }
-  body.color .footer.player .info > .time.width-6 {
+  body.color .footer.player .timeline.width-6 {
     background: -webkit-gradient(linear, left top, right top, color-stop(6%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 6%, white 0%);
   }
-  body.color .footer.player .info > .time.width-7 {
+  body.color .footer.player .timeline.width-7 {
     background: -webkit-gradient(linear, left top, right top, color-stop(7%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 7%, white 0%);
   }
-  body.color .footer.player .info > .time.width-8 {
+  body.color .footer.player .timeline.width-8 {
     background: -webkit-gradient(linear, left top, right top, color-stop(8%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 8%, white 0%);
   }
-  body.color .footer.player .info > .time.width-9 {
+  body.color .footer.player .timeline.width-9 {
     background: -webkit-gradient(linear, left top, right top, color-stop(9%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 9%, white 0%);
   }
-  body.color .footer.player .info > .time.width-10 {
+  body.color .footer.player .timeline.width-10 {
     background: -webkit-gradient(linear, left top, right top, color-stop(10%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 10%, white 0%);
   }
-  body.color .footer.player .info > .time.width-11 {
+  body.color .footer.player .timeline.width-11 {
     background: -webkit-gradient(linear, left top, right top, color-stop(11%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 11%, white 0%);
   }
-  body.color .footer.player .info > .time.width-12 {
+  body.color .footer.player .timeline.width-12 {
     background: -webkit-gradient(linear, left top, right top, color-stop(12%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 12%, white 0%);
   }
-  body.color .footer.player .info > .time.width-13 {
+  body.color .footer.player .timeline.width-13 {
     background: -webkit-gradient(linear, left top, right top, color-stop(13%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 13%, white 0%);
   }
-  body.color .footer.player .info > .time.width-14 {
+  body.color .footer.player .timeline.width-14 {
     background: -webkit-gradient(linear, left top, right top, color-stop(14%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 14%, white 0%);
   }
-  body.color .footer.player .info > .time.width-15 {
+  body.color .footer.player .timeline.width-15 {
     background: -webkit-gradient(linear, left top, right top, color-stop(15%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 15%, white 0%);
   }
-  body.color .footer.player .info > .time.width-16 {
+  body.color .footer.player .timeline.width-16 {
     background: -webkit-gradient(linear, left top, right top, color-stop(16%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 16%, white 0%);
   }
-  body.color .footer.player .info > .time.width-17 {
+  body.color .footer.player .timeline.width-17 {
     background: -webkit-gradient(linear, left top, right top, color-stop(17%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 17%, white 0%);
   }
-  body.color .footer.player .info > .time.width-18 {
+  body.color .footer.player .timeline.width-18 {
     background: -webkit-gradient(linear, left top, right top, color-stop(18%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 18%, white 0%);
   }
-  body.color .footer.player .info > .time.width-19 {
+  body.color .footer.player .timeline.width-19 {
     background: -webkit-gradient(linear, left top, right top, color-stop(19%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 19%, white 0%);
   }
-  body.color .footer.player .info > .time.width-20 {
+  body.color .footer.player .timeline.width-20 {
     background: -webkit-gradient(linear, left top, right top, color-stop(20%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 20%, white 0%);
   }
-  body.color .footer.player .info > .time.width-21 {
+  body.color .footer.player .timeline.width-21 {
     background: -webkit-gradient(linear, left top, right top, color-stop(21%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 21%, white 0%);
   }
-  body.color .footer.player .info > .time.width-22 {
+  body.color .footer.player .timeline.width-22 {
     background: -webkit-gradient(linear, left top, right top, color-stop(22%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 22%, white 0%);
   }
-  body.color .footer.player .info > .time.width-23 {
+  body.color .footer.player .timeline.width-23 {
     background: -webkit-gradient(linear, left top, right top, color-stop(23%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 23%, white 0%);
   }
-  body.color .footer.player .info > .time.width-24 {
+  body.color .footer.player .timeline.width-24 {
     background: -webkit-gradient(linear, left top, right top, color-stop(24%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 24%, white 0%);
   }
-  body.color .footer.player .info > .time.width-25 {
+  body.color .footer.player .timeline.width-25 {
     background: -webkit-gradient(linear, left top, right top, color-stop(25%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 25%, white 0%);
   }
-  body.color .footer.player .info > .time.width-26 {
+  body.color .footer.player .timeline.width-26 {
     background: -webkit-gradient(linear, left top, right top, color-stop(26%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 26%, white 0%);
   }
-  body.color .footer.player .info > .time.width-27 {
+  body.color .footer.player .timeline.width-27 {
     background: -webkit-gradient(linear, left top, right top, color-stop(27%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 27%, white 0%);
   }
-  body.color .footer.player .info > .time.width-28 {
+  body.color .footer.player .timeline.width-28 {
     background: -webkit-gradient(linear, left top, right top, color-stop(28%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 28%, white 0%);
   }
-  body.color .footer.player .info > .time.width-29 {
+  body.color .footer.player .timeline.width-29 {
     background: -webkit-gradient(linear, left top, right top, color-stop(29%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 29%, white 0%);
   }
-  body.color .footer.player .info > .time.width-30 {
+  body.color .footer.player .timeline.width-30 {
     background: -webkit-gradient(linear, left top, right top, color-stop(30%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 30%, white 0%);
   }
-  body.color .footer.player .info > .time.width-31 {
+  body.color .footer.player .timeline.width-31 {
     background: -webkit-gradient(linear, left top, right top, color-stop(31%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 31%, white 0%);
   }
-  body.color .footer.player .info > .time.width-32 {
+  body.color .footer.player .timeline.width-32 {
     background: -webkit-gradient(linear, left top, right top, color-stop(32%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 32%, white 0%);
   }
-  body.color .footer.player .info > .time.width-33 {
+  body.color .footer.player .timeline.width-33 {
     background: -webkit-gradient(linear, left top, right top, color-stop(33%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 33%, white 0%);
   }
-  body.color .footer.player .info > .time.width-34 {
+  body.color .footer.player .timeline.width-34 {
     background: -webkit-gradient(linear, left top, right top, color-stop(34%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 34%, white 0%);
   }
-  body.color .footer.player .info > .time.width-35 {
+  body.color .footer.player .timeline.width-35 {
     background: -webkit-gradient(linear, left top, right top, color-stop(35%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 35%, white 0%);
   }
-  body.color .footer.player .info > .time.width-36 {
+  body.color .footer.player .timeline.width-36 {
     background: -webkit-gradient(linear, left top, right top, color-stop(36%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 36%, white 0%);
   }
-  body.color .footer.player .info > .time.width-37 {
+  body.color .footer.player .timeline.width-37 {
     background: -webkit-gradient(linear, left top, right top, color-stop(37%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 37%, white 0%);
   }
-  body.color .footer.player .info > .time.width-38 {
+  body.color .footer.player .timeline.width-38 {
     background: -webkit-gradient(linear, left top, right top, color-stop(38%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 38%, white 0%);
   }
-  body.color .footer.player .info > .time.width-39 {
+  body.color .footer.player .timeline.width-39 {
     background: -webkit-gradient(linear, left top, right top, color-stop(39%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 39%, white 0%);
   }
-  body.color .footer.player .info > .time.width-40 {
+  body.color .footer.player .timeline.width-40 {
     background: -webkit-gradient(linear, left top, right top, color-stop(40%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 40%, white 0%);
   }
-  body.color .footer.player .info > .time.width-41 {
+  body.color .footer.player .timeline.width-41 {
     background: -webkit-gradient(linear, left top, right top, color-stop(41%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 41%, white 0%);
   }
-  body.color .footer.player .info > .time.width-42 {
+  body.color .footer.player .timeline.width-42 {
     background: -webkit-gradient(linear, left top, right top, color-stop(42%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 42%, white 0%);
   }
-  body.color .footer.player .info > .time.width-43 {
+  body.color .footer.player .timeline.width-43 {
     background: -webkit-gradient(linear, left top, right top, color-stop(43%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 43%, white 0%);
   }
-  body.color .footer.player .info > .time.width-44 {
+  body.color .footer.player .timeline.width-44 {
     background: -webkit-gradient(linear, left top, right top, color-stop(44%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 44%, white 0%);
   }
-  body.color .footer.player .info > .time.width-45 {
+  body.color .footer.player .timeline.width-45 {
     background: -webkit-gradient(linear, left top, right top, color-stop(45%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 45%, white 0%);
   }
-  body.color .footer.player .info > .time.width-46 {
+  body.color .footer.player .timeline.width-46 {
     background: -webkit-gradient(linear, left top, right top, color-stop(46%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 46%, white 0%);
   }
-  body.color .footer.player .info > .time.width-47 {
+  body.color .footer.player .timeline.width-47 {
     background: -webkit-gradient(linear, left top, right top, color-stop(47%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 47%, white 0%);
   }
-  body.color .footer.player .info > .time.width-48 {
+  body.color .footer.player .timeline.width-48 {
     background: -webkit-gradient(linear, left top, right top, color-stop(48%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 48%, white 0%);
   }
-  body.color .footer.player .info > .time.width-49 {
+  body.color .footer.player .timeline.width-49 {
     background: -webkit-gradient(linear, left top, right top, color-stop(49%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 49%, white 0%);
   }
-  body.color .footer.player .info > .time.width-50 {
+  body.color .footer.player .timeline.width-50 {
     background: -webkit-gradient(linear, left top, right top, color-stop(50%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 50%, white 0%);
   }
-  body.color .footer.player .info > .time.width-51 {
+  body.color .footer.player .timeline.width-51 {
     background: -webkit-gradient(linear, left top, right top, color-stop(51%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 51%, white 0%);
   }
-  body.color .footer.player .info > .time.width-52 {
+  body.color .footer.player .timeline.width-52 {
     background: -webkit-gradient(linear, left top, right top, color-stop(52%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 52%, white 0%);
   }
-  body.color .footer.player .info > .time.width-53 {
+  body.color .footer.player .timeline.width-53 {
     background: -webkit-gradient(linear, left top, right top, color-stop(53%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 53%, white 0%);
   }
-  body.color .footer.player .info > .time.width-54 {
+  body.color .footer.player .timeline.width-54 {
     background: -webkit-gradient(linear, left top, right top, color-stop(54%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 54%, white 0%);
   }
-  body.color .footer.player .info > .time.width-55 {
+  body.color .footer.player .timeline.width-55 {
     background: -webkit-gradient(linear, left top, right top, color-stop(55%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 55%, white 0%);
   }
-  body.color .footer.player .info > .time.width-56 {
+  body.color .footer.player .timeline.width-56 {
     background: -webkit-gradient(linear, left top, right top, color-stop(56%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 56%, white 0%);
   }
-  body.color .footer.player .info > .time.width-57 {
+  body.color .footer.player .timeline.width-57 {
     background: -webkit-gradient(linear, left top, right top, color-stop(57%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 57%, white 0%);
   }
-  body.color .footer.player .info > .time.width-58 {
+  body.color .footer.player .timeline.width-58 {
     background: -webkit-gradient(linear, left top, right top, color-stop(58%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 58%, white 0%);
   }
-  body.color .footer.player .info > .time.width-59 {
+  body.color .footer.player .timeline.width-59 {
     background: -webkit-gradient(linear, left top, right top, color-stop(59%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 59%, white 0%);
   }
-  body.color .footer.player .info > .time.width-60 {
+  body.color .footer.player .timeline.width-60 {
     background: -webkit-gradient(linear, left top, right top, color-stop(60%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 60%, white 0%);
   }
-  body.color .footer.player .info > .time.width-61 {
+  body.color .footer.player .timeline.width-61 {
     background: -webkit-gradient(linear, left top, right top, color-stop(61%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 61%, white 0%);
   }
-  body.color .footer.player .info > .time.width-62 {
+  body.color .footer.player .timeline.width-62 {
     background: -webkit-gradient(linear, left top, right top, color-stop(62%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 62%, white 0%);
   }
-  body.color .footer.player .info > .time.width-63 {
+  body.color .footer.player .timeline.width-63 {
     background: -webkit-gradient(linear, left top, right top, color-stop(63%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 63%, white 0%);
   }
-  body.color .footer.player .info > .time.width-64 {
+  body.color .footer.player .timeline.width-64 {
     background: -webkit-gradient(linear, left top, right top, color-stop(64%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 64%, white 0%);
   }
-  body.color .footer.player .info > .time.width-65 {
+  body.color .footer.player .timeline.width-65 {
     background: -webkit-gradient(linear, left top, right top, color-stop(65%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 65%, white 0%);
   }
-  body.color .footer.player .info > .time.width-66 {
+  body.color .footer.player .timeline.width-66 {
     background: -webkit-gradient(linear, left top, right top, color-stop(66%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 66%, white 0%);
   }
-  body.color .footer.player .info > .time.width-67 {
+  body.color .footer.player .timeline.width-67 {
     background: -webkit-gradient(linear, left top, right top, color-stop(67%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 67%, white 0%);
   }
-  body.color .footer.player .info > .time.width-68 {
+  body.color .footer.player .timeline.width-68 {
     background: -webkit-gradient(linear, left top, right top, color-stop(68%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 68%, white 0%);
   }
-  body.color .footer.player .info > .time.width-69 {
+  body.color .footer.player .timeline.width-69 {
     background: -webkit-gradient(linear, left top, right top, color-stop(69%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 69%, white 0%);
   }
-  body.color .footer.player .info > .time.width-70 {
+  body.color .footer.player .timeline.width-70 {
     background: -webkit-gradient(linear, left top, right top, color-stop(70%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 70%, white 0%);
   }
-  body.color .footer.player .info > .time.width-71 {
+  body.color .footer.player .timeline.width-71 {
     background: -webkit-gradient(linear, left top, right top, color-stop(71%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 71%, white 0%);
   }
-  body.color .footer.player .info > .time.width-72 {
+  body.color .footer.player .timeline.width-72 {
     background: -webkit-gradient(linear, left top, right top, color-stop(72%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 72%, white 0%);
   }
-  body.color .footer.player .info > .time.width-73 {
+  body.color .footer.player .timeline.width-73 {
     background: -webkit-gradient(linear, left top, right top, color-stop(73%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 73%, white 0%);
   }
-  body.color .footer.player .info > .time.width-74 {
+  body.color .footer.player .timeline.width-74 {
     background: -webkit-gradient(linear, left top, right top, color-stop(74%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 74%, white 0%);
   }
-  body.color .footer.player .info > .time.width-75 {
+  body.color .footer.player .timeline.width-75 {
     background: -webkit-gradient(linear, left top, right top, color-stop(75%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 75%, white 0%);
   }
-  body.color .footer.player .info > .time.width-76 {
+  body.color .footer.player .timeline.width-76 {
     background: -webkit-gradient(linear, left top, right top, color-stop(76%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 76%, white 0%);
   }
-  body.color .footer.player .info > .time.width-77 {
+  body.color .footer.player .timeline.width-77 {
     background: -webkit-gradient(linear, left top, right top, color-stop(77%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 77%, white 0%);
   }
-  body.color .footer.player .info > .time.width-78 {
+  body.color .footer.player .timeline.width-78 {
     background: -webkit-gradient(linear, left top, right top, color-stop(78%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 78%, white 0%);
   }
-  body.color .footer.player .info > .time.width-79 {
+  body.color .footer.player .timeline.width-79 {
     background: -webkit-gradient(linear, left top, right top, color-stop(79%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 79%, white 0%);
   }
-  body.color .footer.player .info > .time.width-80 {
+  body.color .footer.player .timeline.width-80 {
     background: -webkit-gradient(linear, left top, right top, color-stop(80%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 80%, white 0%);
   }
-  body.color .footer.player .info > .time.width-81 {
+  body.color .footer.player .timeline.width-81 {
     background: -webkit-gradient(linear, left top, right top, color-stop(81%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 81%, white 0%);
   }
-  body.color .footer.player .info > .time.width-82 {
+  body.color .footer.player .timeline.width-82 {
     background: -webkit-gradient(linear, left top, right top, color-stop(82%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 82%, white 0%);
   }
-  body.color .footer.player .info > .time.width-83 {
+  body.color .footer.player .timeline.width-83 {
     background: -webkit-gradient(linear, left top, right top, color-stop(83%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 83%, white 0%);
   }
-  body.color .footer.player .info > .time.width-84 {
+  body.color .footer.player .timeline.width-84 {
     background: -webkit-gradient(linear, left top, right top, color-stop(84%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 84%, white 0%);
   }
-  body.color .footer.player .info > .time.width-85 {
+  body.color .footer.player .timeline.width-85 {
     background: -webkit-gradient(linear, left top, right top, color-stop(85%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 85%, white 0%);
   }
-  body.color .footer.player .info > .time.width-86 {
+  body.color .footer.player .timeline.width-86 {
     background: -webkit-gradient(linear, left top, right top, color-stop(86%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 86%, white 0%);
   }
-  body.color .footer.player .info > .time.width-87 {
+  body.color .footer.player .timeline.width-87 {
     background: -webkit-gradient(linear, left top, right top, color-stop(87%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 87%, white 0%);
   }
-  body.color .footer.player .info > .time.width-88 {
+  body.color .footer.player .timeline.width-88 {
     background: -webkit-gradient(linear, left top, right top, color-stop(88%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 88%, white 0%);
   }
-  body.color .footer.player .info > .time.width-89 {
+  body.color .footer.player .timeline.width-89 {
     background: -webkit-gradient(linear, left top, right top, color-stop(89%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 89%, white 0%);
   }
-  body.color .footer.player .info > .time.width-90 {
+  body.color .footer.player .timeline.width-90 {
     background: -webkit-gradient(linear, left top, right top, color-stop(90%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 90%, white 0%);
   }
-  body.color .footer.player .info > .time.width-91 {
+  body.color .footer.player .timeline.width-91 {
     background: -webkit-gradient(linear, left top, right top, color-stop(91%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 91%, white 0%);
   }
-  body.color .footer.player .info > .time.width-92 {
+  body.color .footer.player .timeline.width-92 {
     background: -webkit-gradient(linear, left top, right top, color-stop(92%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 92%, white 0%);
   }
-  body.color .footer.player .info > .time.width-93 {
+  body.color .footer.player .timeline.width-93 {
     background: -webkit-gradient(linear, left top, right top, color-stop(93%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 93%, white 0%);
   }
-  body.color .footer.player .info > .time.width-94 {
+  body.color .footer.player .timeline.width-94 {
     background: -webkit-gradient(linear, left top, right top, color-stop(94%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 94%, white 0%);
   }
-  body.color .footer.player .info > .time.width-95 {
+  body.color .footer.player .timeline.width-95 {
     background: -webkit-gradient(linear, left top, right top, color-stop(95%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 95%, white 0%);
   }
-  body.color .footer.player .info > .time.width-96 {
+  body.color .footer.player .timeline.width-96 {
     background: -webkit-gradient(linear, left top, right top, color-stop(96%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 96%, white 0%);
   }
-  body.color .footer.player .info > .time.width-97 {
+  body.color .footer.player .timeline.width-97 {
     background: -webkit-gradient(linear, left top, right top, color-stop(97%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 97%, white 0%);
   }
-  body.color .footer.player .info > .time.width-98 {
+  body.color .footer.player .timeline.width-98 {
     background: -webkit-gradient(linear, left top, right top, color-stop(98%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 98%, white 0%);
   }
-  body.color .footer.player .info > .time.width-99 {
+  body.color .footer.player .timeline.width-99 {
     background: -webkit-gradient(linear, left top, right top, color-stop(99%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 99%, white 0%);
   }
-  body.color .footer.player .info > .time.width-100 {
+  body.color .footer.player .timeline.width-100 {
     background: -webkit-gradient(linear, left top, right top, color-stop(100%, #1ab26b), color-stop(0%, white));
     background: linear-gradient(to right, #1ab26b 100%, white 0%);
   }
@@ -4392,7 +4395,7 @@ body.classic {
   gap: 0px 0px;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 860px) {
   body.classic {
     height: 100vh;
     overflow: hidden;
@@ -4429,6 +4432,9 @@ body.classic {
         -ms-flex-order: 4;
             order: 4;
   }
+  body.classic.hide-menu-artists .header.secondary .menu.date button.search {
+    padding-right: 20px;
+  }
   body.classic.hide-menu-artists .header.secondary .menu.artists {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -4437,6 +4443,10 @@ body.classic {
   body.classic.hide-menu-artists .main .content.page {
     width: auto;
     min-width: auto;
+  }
+  body.classic.hide-menu-artists .main .menu.items.date button {
+    padding-right: 20px;
+    width: calc(100% - 2 * 10px - 20px);
   }
   body.classic.hide-menu-artists .main .menu.items.artists {
     display: none;
@@ -4479,6 +4489,10 @@ body.classic {
         -ms-flex-order: 1;
             order: 1;
   }
+  body.classic .header.secondary .menu.playlists button:last-child,
+  body.classic .main .menu.playlists button:last-child {
+    margin-bottom: 60px;
+  }
   body.classic .header.secondary .menu.date,
   body.classic .main .menu.date {
     width: 140px;
@@ -4495,17 +4509,16 @@ body.classic {
         -ms-flex-order: 4;
             order: 4;
   }
+  body.classic .header.secondary .menu.artists button.search,
+  body.classic .main .menu.artists button.search {
+    padding-right: 20px;
+  }
   body.classic .header.secondary .menu.filter,
   body.classic .header.secondary .content.page,
   body.classic .main .menu.filter,
   body.classic .main .content.page {
     width: calc(100vw - 250px - 140px - 200px);
     min-width: calc(100vw - 250px - 140px - 200px);
-  }
-  body.classic .header.secondary .content.page,
-  body.classic .header.secondary .menu.filter,
-  body.classic .main .content.page,
-  body.classic .main .menu.filter {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -4522,26 +4535,91 @@ body.classic {
   body.classic .main .menu.items.menu {
     overflow: hidden;
   }
+  body.classic .header.secondary .content.menu.artists button,
+  body.classic .header.secondary .menu.items.menu.artists button,
+  body.classic .main .content.menu.artists button,
+  body.classic .main .menu.items.menu.artists button {
+    padding-right: 20px;
+    width: calc(100% - 2 * 10px - 20px);
+  }
+  body.classic .header.secondary .content.menu.playlists button,
+  body.classic .header.secondary .menu.items.menu.playlists button,
+  body.classic .main .content.menu.playlists button,
+  body.classic .main .menu.items.menu.playlists button {
+    padding-left: 20px;
+    width: calc(100% - 2 * 10px - 20px);
+  }
   body.classic .header.secondary .content.menu:hover,
   body.classic .header.secondary .menu.items.menu:hover,
   body.classic .main .content.menu:hover,
   body.classic .main .menu.items.menu:hover {
     overflow: auto;
   }
+  body.classic .header.secondary .content > div,
+  body.classic .main .content > div {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
   body.classic .footer.player {
     -ms-grid-row: 5;
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
     grid-area: 5 / 1 / 6 / 1;
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    -ms-grid-rows: 4px auto;
+        grid-template-rows: 4px auto;
+    -ms-grid-columns: calc(calc(100px + 40px) + 2 * 20px) 220px auto 220px;
+        grid-template-columns: calc(calc(100px + 40px) + 2 * 20px) 220px auto 220px;
+  }
+  body.classic .footer.player .timeline {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: 1 / 1 / 2 / 5;
+    margin-left: calc(calc(100px + 40px) + 2 * 20px);
+    margin-right: 20px;
+    width: calc(100% - calc(100px + 40px) - 3 * 20px);
+  }
+  body.classic .footer.player .image {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  body.classic .footer.player .actions.primary {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  body.classic .footer.player .actions.secondary {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-area: 2 / 4 / 3 / 5;
+  }
+  body.classic .footer.player .info {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 2 / 3 / 3 / 4;
   }
 }
 
-@media only screen and (max-width: 899px) {
+@media only screen and (max-width: 859px) {
   body.classic {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-    -ms-grid-rows: 4px 100% 100px 50px 60px;
-        grid-template-rows: 4px 100% 100px 50px 60px;
+    -ms-grid-rows: 4px 100% 40px 50px 60px;
+        grid-template-rows: 4px 100% 40px 50px 60px;
     height: auto;
     overflow: auto;
   }
@@ -4570,9 +4648,9 @@ body.classic {
   }
   body.classic .main {
     -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
+    -ms-grid-row-span: 1;
     -ms-grid-column: 1;
-    grid-area: 2 / 1 / 4 / 1;
+    grid-area: 2 / 1 / 3 / 1;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -4598,13 +4676,31 @@ body.classic {
             order: 2;
   }
   body.classic .footer.player {
-    display: none;
+    position: fixed;
+    bottom: calc(60px + 50px);
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    white-space: nowrap;
+    overflow: auto;
+    margin: auto 0;
+    width: 100%;
     /*grid-area: 3 / 1 / 4 / 1;
                 display: grid;
                 position: fixed;
                 bottom: $filter_menu_mobile_height + $releases_menu_mobile_height;
                 height: $player_height;
                 width: 100%;*/
+  }
+  body.classic .footer.player .image,
+  body.classic .footer.player .timeline,
+  body.classic .footer.player .actions.secondary,
+  body.classic .footer.player .time {
+    display: none;
+  }
+  body.classic .footer.player .actions.primary .prev {
+    padding-left: 20px;
   }
   body.classic .footer.menu.filter {
     -ms-grid-row: 4;
@@ -4661,13 +4757,11 @@ input {
 }
 
 .left {
-  margin-left: 15px;
-  padding-left: 0;
+  padding-left: 20px;
 }
 
 .right {
-  margin-right: 15px;
-  padding-right: 0;
+  padding-right: 20px;
 }
 
 .icon-text i {
@@ -4690,13 +4784,13 @@ input {
   }
 }
 
-@media only screen and (max-width: 1049px) and (min-width: 900px) {
+@media only screen and (max-width: 1049px) and (min-width: 860px) {
   .hide-tablet {
     display: none !important;
   }
 }
 
-@media only screen and (max-width: 899px) {
+@media only screen and (max-width: 859px) {
   .hide-mobile {
     display: none !important;
   }
@@ -4706,16 +4800,17 @@ input {
  *  Header menu
  *  Page name
  */
-.header .left {
-  margin-left: 15px;
-  padding-left: 0;
-}
+/*.header {
+    .left {
+        margin-left: $padding;
+        padding-left: 0;
+    }
 
-.header .right {
-  margin-right: 15px;
-  padding-right: 0;
-}
-
+    .right {
+        margin-right: $padding;
+        padding-right: 0;
+    }
+}*/
 .header.primary {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -4724,14 +4819,14 @@ input {
 
 .header.primary .page-name {
   cursor: context-menu;
-  padding: 4px 10px 16px 10px;
+  padding: 4px 10px 16px 0;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-weight: 800;
 }
 
-.header.primary .page-name p,
+.header.primary .page-name span,
 .header.primary .page-name .favicon {
   font-size: 28px;
 }
@@ -4759,7 +4854,6 @@ input {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 70px;
 }
 
 .header.primary .user.menu.items button {
@@ -4776,7 +4870,7 @@ input {
   display: none;
 }
 
-@media only screen and (max-width: 1299px) {
+@media only screen and (max-width: 1309px) {
   .header.primary .user .menu.hover.items {
     width: 150px;
   }
@@ -4855,52 +4949,23 @@ input {
 }
 
 .footer.player {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  padding-bottom: 20px;
 }
 
-.footer.player .image {
-  width: 130px;
-  margin-right: 15px;
-}
-
-@media screen and (max-width: 770px) {
-  .footer.player .image {
-    display: none;
+@media only screen and (max-width: 859px) {
+  .footer.player {
+    padding-bottom: 0;
+  }
+  .footer.player button {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .footer.player > div {
+    margin: auto 0;
   }
 }
 
-.footer.player .image img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-  /*position: relative;
-                top: -20px;*/
-}
-
-.footer.player .info {
-  width: calc(100% - 160px - 56px - 15px - 100px);
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-@media screen and (max-width: 770px) {
-  .footer.player .info {
-    width: calc(100% - 56px - 40px - 15px);
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-
-.footer.player .info button {
-  font-size: 24px;
-  margin-right: 5px;
-  margin-bottom: 0;
-  padding: 6px;
-}
-
-.footer.player .info > .time {
+.footer.player .timeline {
   width: 100%;
   height: 8px;
   border-radius: 8px;
@@ -4908,77 +4973,70 @@ input {
   top: -4px;
 }
 
-.footer.player .info .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: auto;
-  max-height: calc(100% - 8px);
+.footer.player .image {
+  max-height: 100px;
+  max-width: calc(100px + 40px);
+  width: calc(100px + 40px);
+  padding-right: 20px;
 }
 
-.footer.player .info .content > div {
-  margin-right: 30px;
-  /*width: 25%;*/
-  /*&.actions.buttons {
-                    margin-right: 0;
-                    margin-left: auto;
-                    width: 96px;
-                }*/
+.footer.player .image img {
+  position: relative;
+  bottom: 60px;
+  max-height: calc(100px + 40px);
+  max-width: calc(100px + 40px);
 }
 
-.footer.player .info .content > div.actions {
-  width: 210px;
+.footer.player .actions.primary .time button {
+  padding: 0;
 }
 
-.footer.player .info .content > div.details {
-  width: calc((100% - 210px - 96px - 30px - 30px - 30px)/2);
-}
-
-@media screen and (max-width: 770px) {
-  .footer.player .info .content > div {
-    margin-right: 5px;
-  }
-  .footer.player .info .content > div.details {
-    width: calc((100% - 210px - 5px - 5px - 5px)/2);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .footer.player .info .content > div.details {
-    width: calc((100% - 5px - 5px)/2);
-  }
-}
-
-.footer.player .info .content .time,
-.footer.player .info .content .release,
-.footer.player .info .content .date {
-  font-size: 19x;
-  margin-top: 10px;
-}
-
-.footer.player .info .content .details button {
-  display: block;
-}
-
-.footer.player .info .content .details .track,
-.footer.player .info .content .details .artists {
+.footer.player .info {
   font-size: 20px;
-  padding: 6px 0;
 }
 
-.footer.player .info .content .details .artists,
-.footer.player .info .content .details .date {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.footer.player .info button {
+  font-size: 20px;
 }
 
-.footer.player .info .content .details .artists {
-  display: inline-block;
+@media only screen and (max-width: 859px) {
+  .footer.player .info {
+    font-size: 18px;
+  }
+  .footer.player .info button {
+    font-size: 18px;
+  }
 }
 
-.footer.player .info .content .details .artists button {
-  display: inline;
+.footer.player .info .details {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 859px) {
+  .footer.player .info .details {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 859px) {
+  .footer.player .info {
+    padding-bottom: 0;
+  }
+  .footer.player .info .info .details,
+  .footer.player .info button {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.footer.player .info button {
+  padding: 0;
+}
+
+.footer.player .actions.secondary .date button {
+  padding: 0;
 }
 
 .main .menu button {
@@ -5205,9 +5263,13 @@ input {
   height: 20px;
 }
 
+body.hide-player .footer.menu.mobile {
+  bottom: calc(60px + 50px);
+}
+
 .footer.menu.mobile {
   position: fixed;
-  bottom: calc(60px + 50px);
+  bottom: calc(40px + 60px + 50px);
   height: 0;
   width: 100%;
   display: -webkit-box;

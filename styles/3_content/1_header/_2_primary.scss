@@ -5,12 +5,12 @@
     // 1.) page name
     .page-name {
         cursor: context-menu;
-        padding: 4px 10px 16px 10px;
+        padding: 4px 10px 16px 0;
         display: inline-flex;
         font-weight: 800;
 
         // text size
-        p,
+        span,
         .favicon {
             font-size: 28px;
         }
@@ -42,7 +42,6 @@
         // button to show menu
         button.menu.hover {
             display: inline-flex;
-            min-width: 70px;
         }
 
         // buttons in menu

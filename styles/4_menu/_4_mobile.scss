@@ -1,6 +1,10 @@
+body.hide-player .footer.menu.mobile {
+    bottom: calc(#{$height_menu_mobile_releases} + #{$height_menu_mobile_filter});
+}
+
 .footer.menu.mobile {
     position: fixed;
-    bottom: calc(#{$height_menu_mobile_releases} + #{$height_menu_mobile_filter});
+    bottom: calc(#{$height_player_mobile} + #{$height_menu_mobile_releases} + #{$height_menu_mobile_filter});
     height: 0;
     width: 100%;
     display: flex;
