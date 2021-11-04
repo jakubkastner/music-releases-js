@@ -149,7 +149,7 @@
             word-wrap: anywhere;
         }
 
-        @media screen and (max-width: 100px) {
+        @include respond(watches) {
             span {
                 display: none;
             }

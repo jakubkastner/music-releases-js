@@ -1,16 +1,18 @@
 .footer.menu.mobile {
     position: fixed;
-    bottom: calc(60px + 50px + 60px + 60px + 60px); // TODO hodnoty
+    bottom: calc(#{$height_menu_mobile_releases} + #{$height_menu_mobile_filter});
     height: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
     // button to show/hide menu
     .round {
         border-radius: 12px;
-        //width: 40px;
-        width: auto;
-        height: 40px;
-        display: flex;
+        height: $height_menu_mobile_round_button;
+        width: 40px;
+        display: inline-flex;
         margin-right: 5px;
         margin-left: auto;
         z-index: 1;
@@ -19,7 +21,7 @@
 
         i {
             margin: auto;
-            font-size: 24px;
+            font-size: $height_menu_mobile_round_button;
         }
 
         &.show-hide.mobile {
@@ -27,29 +29,39 @@
         }
 
         &-text {
-            display: block;
             text-align: right;
             height: auto;
+            width: auto;
             font-size: 18px;
 
             i {
                 margin-left: $margin_right_icon;
             }
         }
+
+        @include respond(watches) {
+            width: 40px;
+
+            span {
+                display: none;
+            }
+
+            i {
+                margin: auto;
+            }
+        }
     }
 
-    // TODO proměnné přesunout
     .items {
         position: absolute;
         overflow: auto;
-        bottom: -180px; // TODO fix
+        bottom: 0;
         right: 0;
         z-index: 2;
 
-        $width: 200px;
-        min-width: $width;
-        width: $width;
-        max-height: calc(100vh - 50px - 60px);
+        min-width: $width_menu_mobile_items;
+        width: $width_menu_mobile_items;
+        max-height: calc(100vh - #{$height_menu_mobile_releases} - #{$height_menu_mobile_filter});
 
         display: none;
         display: grid;
@@ -58,9 +70,18 @@
             display: block;
         }
 
-        p,
-        span {
+        p {
             cursor: default;
+            padding: 10px 10px 0 10px;
+        }
+
+        button {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            i {
+                display: none;
+            }
         }
 
         button,
@@ -68,15 +89,38 @@
             display: block;
             text-align: left;
 
+            &:first-child {
+                margin-top: $height_menu_mobile_round_button;
+            }
+
             &:last-child {
-                margin-bottom: $height_footer_menu;
+                margin-bottom: $height_menu_mobile_round_button;
             }
         }
 
-        @media screen and (max-width: $width) {
+        @media screen and (max-width: $width_menu_mobile_items) {
             width: 100%;
             min-width: 100%;
             word-wrap: anywhere;
+        }
+
+        @include respond(watches) {
+            bottom: 20px;
+
+            p,
+            button span {
+                display: none;
+            }
+
+            button {
+                display: flex;
+                padding: 10px;
+
+                i {
+                    display: block;
+                    margin: auto;
+                }
+            }
         }
     }
 }
