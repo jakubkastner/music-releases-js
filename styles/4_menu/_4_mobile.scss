@@ -1,5 +1,9 @@
 body.hide-player .footer.menu.mobile {
     bottom: calc(#{$height_menu_mobile_releases} + #{$height_menu_mobile_filter});
+
+    .items {
+        max-height: calc(100vh - #{$height_menu_mobile_releases} - #{$height_menu_mobile_filter});
+    }
 }
 
 .footer.menu.mobile {
@@ -65,7 +69,7 @@ body.hide-player .footer.menu.mobile {
 
         min-width: $width_menu_mobile_items;
         width: $width_menu_mobile_items;
-        max-height: calc(100vh - #{$height_menu_mobile_releases} - #{$height_menu_mobile_filter});
+        max-height: calc(100vh - #{$height_player_mobile} - #{$height_menu_mobile_releases} - #{$height_menu_mobile_filter});
 
         display: none;
         //display: grid;
