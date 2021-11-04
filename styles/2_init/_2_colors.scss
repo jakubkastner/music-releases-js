@@ -123,6 +123,16 @@ $color_text_button: rgb(26, 178, 107);
         }
     }*/
 
+    // input
+    input {
+        background-color: $color_1;
+        color: $color_text;
+
+        &:focus {
+            outline: none !important;
+        }
+    }
+
     // body
     background-color: $color_1;
 

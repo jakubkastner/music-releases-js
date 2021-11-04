@@ -483,6 +483,13 @@
         }
     }*/
   }
+  body input {
+    background-color: whitesmoke;
+    color: black;
+  }
+  body input:focus {
+    outline: none !important;
+  }
   body button {
     color: black;
   }
@@ -1148,6 +1155,13 @@
             background-color: $color_2;
         }
     }*/
+  }
+  body.dark input {
+    background-color: #0c0c0c;
+    color: white;
+  }
+  body.dark input:focus {
+    outline: none !important;
   }
   body.dark button {
     color: white;
@@ -1820,6 +1834,13 @@
         }
     }*/
   }
+  body.color input {
+    background-color: #0c0c0c;
+    color: white;
+  }
+  body.color input:focus {
+    outline: none !important;
+  }
   body.color button {
     color: white;
   }
@@ -2488,6 +2509,13 @@
             background-color: $color_2;
         }
     }*/
+  }
+  body input {
+    background-color: #0c0c0c;
+    color: white;
+  }
+  body input:focus {
+    outline: none !important;
   }
   body button {
     color: white;
@@ -3163,6 +3191,13 @@
         }
     }*/
   }
+  body.light input {
+    background-color: whitesmoke;
+    color: black;
+  }
+  body.light input:focus {
+    outline: none !important;
+  }
   body.light button {
     color: black;
   }
@@ -3833,6 +3868,13 @@
             background-color: $color_2;
         }
     }*/
+  }
+  body.color input {
+    background-color: #0c0c0c;
+    color: white;
+  }
+  body.color input:focus {
+    outline: none !important;
   }
   body.color button {
     color: white;
@@ -4613,6 +4655,11 @@ button {
   display: inline-block;
 }
 
+input {
+  border: none;
+  padding: 0;
+}
+
 .left {
   margin-left: 15px;
   padding-left: 0;
@@ -4958,14 +5005,34 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /*button.search {
+        display: none;
+    }*/
 }
 
-.header.secondary .menu .show-hide {
-  width: calc(100% - 24px);
+.header.secondary .menu input.search {
+  display: none;
+}
+
+.header.secondary .menu button.close {
+  display: none;
+}
+
+.header.secondary .menu input.search {
+  padding: 10px;
+}
+
+.header.secondary .menu input.search:focus + button.search {
+  display: block;
+}
+
+.header.secondary .menu .show-hide,
+.header.secondary .menu input.search {
+  width: 100%;
   text-align: left;
 }
 
-.header.secondary .menu .search {
+.header.secondary .menu button.search {
   width: 24px;
 }
 
@@ -5211,8 +5278,6 @@ button {
   width: 250px;
   max-height: calc(100vh - 60px - 50px);
   display: none;
-  display: -ms-grid;
-  display: grid;
 }
 
 .footer.menu.mobile .items.active {

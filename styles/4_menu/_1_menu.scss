@@ -28,14 +28,36 @@
 .header.secondary .menu {
     display: flex;
 
+    /*button.search {
+        display: none;
+    }*/
+
+    input.search {
+        display: none;
+    }
+
+    button.close {
+        display: none;
+    }
+
+    input.search {
+        padding: 10px;
+
+        &:focus+button.search {
+            display: block;
+        }
+    }
+
     // show / hide button
-    .show-hide {
-        width: calc(100% - 24px);
+    .show-hide,
+    input.search {
+        //width: calc(100% - 24px);
+        width: 100%;
         text-align: left;
     }
 
     // search button
-    .search {
+    button.search {
         width: 24px;
     }
 }

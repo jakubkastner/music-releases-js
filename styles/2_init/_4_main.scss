@@ -30,6 +30,11 @@ button {
     display: inline-block;
 }
 
+input {
+    border: none;
+    padding: 0;
+}
+
 .left {
     margin-left: $padding;
     padding-left: 0;
