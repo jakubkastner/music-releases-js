@@ -37,7 +37,7 @@ footer>.player {
             display: none;
         }
 
-        .user.button {
+        button.user {
             top: 28px;
         }
     }
@@ -54,7 +54,7 @@ footer>.player {
                 display: flex;
             }
 
-            .user.button {
+            button.user {
                 top: -28px;
             }
         }

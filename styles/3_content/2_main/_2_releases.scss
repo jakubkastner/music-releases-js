@@ -31,11 +31,10 @@
                 margin-bottom: 5px;
             }
 
+            button.tracklist  {
+                padding-left: 0;
+            }
             .tracklist {
-                &.button {
-                    padding-left: 0;
-                }
-
                 span {
                     font-size: 70%;
                 }
@@ -54,7 +53,7 @@
                 margin-bottom: 8px;
             }
 
-            .button {
+            button {
                 font-size: 30px;
                 margin-right: 5px;
                 margin-bottom: 0;

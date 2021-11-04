@@ -474,20 +474,17 @@
   body .header .title {
     color: #1ab26b;
   }
-  body .header .button.active,
-  body .header .buttons > *.active {
+  body .header button.active {
     color: #1ab26b;
   }
-  body .header .button:hover,
-  body .header .buttons > *:hover {
+  body .header button:hover {
     background-color: white;
   }
-  body .header.primary .button.active,
-  body .header.primary .buttons > *.active {
+  body .header.primary button.active {
     background-color: white;
   }
-  body .header .login.button.hover.items,
-  body .header .user.button.hover.items {
+  body .header button.login.hover.items,
+  body .header button.user.hover.items {
     background-color: #fff5f5;
   }
   body .menu.hover.items {
@@ -950,14 +947,14 @@
   body .footer.menu.mobile .items p {
     color: #1ab26b;
   }
-  body .footer .round.button {
+  body .footer button.round {
     background-color: whitesmoke;
   }
-  body .footer .round.button.active {
+  body .footer button.round.active {
     background-color: white;
     color: #1ab26b;
   }
-  body .footer .round.button:hover {
+  body .footer button.round:hover {
     background-color: white;
   }
   body .footer.menu.primary button {
@@ -1143,20 +1140,17 @@
   body.dark .header .title {
     color: #1ab26b;
   }
-  body.dark .header .button.active,
-  body.dark .header .buttons > *.active {
+  body.dark .header button.active {
     color: #1ab26b;
   }
-  body.dark .header .button:hover,
-  body.dark .header .buttons > *:hover {
+  body.dark .header button:hover {
     background-color: #1a1a1a;
   }
-  body.dark .header.primary .button.active,
-  body.dark .header.primary .buttons > *.active {
+  body.dark .header.primary button.active {
     background-color: #1a1a1a;
   }
-  body.dark .header .login.button.hover.items,
-  body.dark .header .user.button.hover.items {
+  body.dark .header button.login.hover.items,
+  body.dark .header button.user.hover.items {
     background-color: #242424;
   }
   body.dark .menu.hover.items {
@@ -1619,14 +1613,14 @@
   body.dark .footer.menu.mobile .items p {
     color: #1ab26b;
   }
-  body.dark .footer .round.button {
+  body.dark .footer button.round {
     background-color: #0c0c0c;
   }
-  body.dark .footer .round.button.active {
+  body.dark .footer button.round.active {
     background-color: #060606;
     color: #1ab26b;
   }
-  body.dark .footer .round.button:hover {
+  body.dark .footer button.round:hover {
     background-color: #060606;
   }
   body.dark .footer.menu.primary button {
@@ -1817,20 +1811,17 @@
   body.color .header .title {
     color: #1ab26b;
   }
-  body.color .header .button.active,
-  body.color .header .buttons > *.active {
+  body.color .header button.active {
     color: #1ab26b;
   }
-  body.color .header .button:hover,
-  body.color .header .buttons > *:hover {
+  body.color .header button:hover {
     background-color: #386c0b;
   }
-  body.color .header.primary .button.active,
-  body.color .header.primary .buttons > *.active {
+  body.color .header.primary button.active {
     background-color: #386c0b;
   }
-  body.color .header .login.button.hover.items,
-  body.color .header .user.button.hover.items {
+  body.color .header button.login.hover.items,
+  body.color .header button.user.hover.items {
     background-color: #38a700;
   }
   body.color .menu.hover.items {
@@ -2293,14 +2284,14 @@
   body.color .footer.menu.mobile .items p {
     color: #1ab26b;
   }
-  body.color .footer .round.button {
+  body.color .footer button.round {
     background-color: #0c0c0c;
   }
-  body.color .footer .round.button.active {
+  body.color .footer button.round.active {
     background-color: #060606;
     color: #1ab26b;
   }
-  body.color .footer .round.button:hover {
+  body.color .footer button.round:hover {
     background-color: #060606;
   }
   body.color .footer.menu.primary button {
@@ -2489,20 +2480,17 @@
   body .header .title {
     color: #1ab26b;
   }
-  body .header .button.active,
-  body .header .buttons > *.active {
+  body .header button.active {
     color: #1ab26b;
   }
-  body .header .button:hover,
-  body .header .buttons > *:hover {
+  body .header button:hover {
     background-color: #1a1a1a;
   }
-  body .header.primary .button.active,
-  body .header.primary .buttons > *.active {
+  body .header.primary button.active {
     background-color: #1a1a1a;
   }
-  body .header .login.button.hover.items,
-  body .header .user.button.hover.items {
+  body .header button.login.hover.items,
+  body .header button.user.hover.items {
     background-color: #242424;
   }
   body .menu.hover.items {
@@ -2965,14 +2953,14 @@
   body .footer.menu.mobile .items p {
     color: #1ab26b;
   }
-  body .footer .round.button {
+  body .footer button.round {
     background-color: #0c0c0c;
   }
-  body .footer .round.button.active {
+  body .footer button.round.active {
     background-color: #060606;
     color: #1ab26b;
   }
-  body .footer .round.button:hover {
+  body .footer button.round:hover {
     background-color: #060606;
   }
   body .footer.menu.primary button {
@@ -3166,20 +3154,17 @@
   body.light .header .title {
     color: #1ab26b;
   }
-  body.light .header .button.active,
-  body.light .header .buttons > *.active {
+  body.light .header button.active {
     color: #1ab26b;
   }
-  body.light .header .button:hover,
-  body.light .header .buttons > *:hover {
+  body.light .header button:hover {
     background-color: white;
   }
-  body.light .header.primary .button.active,
-  body.light .header.primary .buttons > *.active {
+  body.light .header.primary button.active {
     background-color: white;
   }
-  body.light .header .login.button.hover.items,
-  body.light .header .user.button.hover.items {
+  body.light .header button.login.hover.items,
+  body.light .header button.user.hover.items {
     background-color: #fff5f5;
   }
   body.light .menu.hover.items {
@@ -3642,14 +3627,14 @@
   body.light .footer.menu.mobile .items p {
     color: #1ab26b;
   }
-  body.light .footer .round.button {
+  body.light .footer button.round {
     background-color: whitesmoke;
   }
-  body.light .footer .round.button.active {
+  body.light .footer button.round.active {
     background-color: white;
     color: #1ab26b;
   }
-  body.light .footer .round.button:hover {
+  body.light .footer button.round:hover {
     background-color: white;
   }
   body.light .footer.menu.primary button {
@@ -3840,20 +3825,17 @@
   body.color .header .title {
     color: #1ab26b;
   }
-  body.color .header .button.active,
-  body.color .header .buttons > *.active {
+  body.color .header button.active {
     color: #1ab26b;
   }
-  body.color .header .button:hover,
-  body.color .header .buttons > *:hover {
+  body.color .header button:hover {
     background-color: #386c0b;
   }
-  body.color .header.primary .button.active,
-  body.color .header.primary .buttons > *.active {
+  body.color .header.primary button.active {
     background-color: #386c0b;
   }
-  body.color .header .login.button.hover.items,
-  body.color .header .user.button.hover.items {
+  body.color .header button.login.hover.items,
+  body.color .header button.user.hover.items {
     background-color: #38a700;
   }
   body.color .menu.hover.items {
@@ -4316,14 +4298,14 @@
   body.color .footer.menu.mobile .items p {
     color: #1ab26b;
   }
-  body.color .footer .round.button {
+  body.color .footer button.round {
     background-color: #0c0c0c;
   }
-  body.color .footer .round.button.active {
+  body.color .footer button.round.active {
     background-color: #060606;
     color: #1ab26b;
   }
-  body.color .footer .round.button:hover {
+  body.color .footer button.round:hover {
     background-color: #060606;
   }
   body.color .footer.menu.primary button {
@@ -4350,11 +4332,12 @@ body.classic {
 
 @media only screen and (min-width: 900px) {
   body.classic {
+    height: 100vh;
+    overflow: hidden;
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     -ms-grid-rows: 4px 48px 48px calc(100vh - 4px - 48px - 48px - 100px) 100px;
         grid-template-rows: 4px 48px 48px calc(100vh - 4px - 48px - 48px - 100px) 100px;
-    height: 100vh;
   }
   body.classic.hide-player .main {
     -ms-grid-row: 4;
@@ -4426,14 +4409,6 @@ body.classic {
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
-  body.classic .header.secondary .menu,
-  body.classic .main .menu {
-    /*&.filter {
-                    // TODO 15px = chrominium fix??
-                    width: calc(100vw - 250px - 140px - 200px - 15px);
-                    min-width: calc(100vw - 250px - 140px - 200px - 15px);
-                }*/
-  }
   body.classic .header.secondary .menu.playlists,
   body.classic .main .menu.playlists {
     width: 250px;
@@ -4462,10 +4437,8 @@ body.classic {
   body.classic .header.secondary .content.page,
   body.classic .main .menu.filter,
   body.classic .main .content.page {
-    /*width: auto;
-                min-width: auto;*/
-    width: calc(100vw - 250px - 140px - 200px - 15px);
-    min-width: calc(100vw - 250px - 140px - 200px - 15px);
+    width: calc(100vw - 250px - 140px - 200px);
+    min-width: calc(100vw - 250px - 140px - 200px);
   }
   body.classic .header.secondary .content.page,
   body.classic .header.secondary .menu.filter,
@@ -4609,6 +4582,33 @@ button {
   background-color: transparent;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  font-size: 18px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.left {
+  margin-left: 15px;
+  padding-left: 0;
+}
+
+.right {
+  margin-right: 15px;
+  padding-right: 0;
+}
+
+.icon-text i {
+  margin-right: 5px;
+}
+
+.icon-text-right i {
+  margin-left: 5px;
+}
+
+.explicit span {
+  font-size: 13px;
+  padding-left: 2.5px;
+  font-style: italic;
 }
 
 @media only screen and (min-width: 1050px) {
@@ -4627,42 +4627,6 @@ button {
   .hide-mobile {
     display: none !important;
   }
-}
-
-.left {
-  margin-left: 15px;
-  padding-left: 0;
-}
-
-.right {
-  margin-right: 15px;
-  padding-right: 0;
-}
-
-.button,
-.buttons > * {
-  cursor: pointer;
-  font-size: 18px;
-  display: inline-block;
-  padding: 10px;
-}
-
-.buttons {
-  padding-bottom: 0;
-}
-
-.icon-text i {
-  margin-right: 5px;
-}
-
-.icon-text-right i {
-  margin-left: 5px;
-}
-
-.explicit span {
-  font-size: 13px;
-  padding-left: 2.5px;
-  font-style: italic;
 }
 
 /** HEADER
@@ -4705,13 +4669,13 @@ button {
 
 .header.primary .page-name .favicon {
   background: transparent;
-  height: 34px;
+  height: 38px;
   margin-left: 5px;
 }
 
 .header.primary .page-name:hover > .favicon {
-  -webkit-animation: spin 2s linear infinite;
-          animation: spin 2s linear infinite;
+  -webkit-animation: favicon_spin 2s linear infinite;
+          animation: favicon_spin 2s linear infinite;
 }
 
 .header.primary .actions {
@@ -4722,8 +4686,8 @@ button {
   position: relative;
 }
 
-.header.primary .user .login.button,
-.header.primary .user .user.button {
+.header.primary .user button.login,
+.header.primary .user button.user {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -4750,7 +4714,7 @@ button {
   }
 }
 
-@-webkit-keyframes spin {
+@-webkit-keyframes favicon_spin {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -4761,7 +4725,7 @@ button {
   }
 }
 
-@keyframes spin {
+@keyframes favicon_spin {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -4772,14 +4736,6 @@ button {
   }
 }
 
-/*
-.header.secondary {
-    display: inline-flex;
-
-    .menu.filter {
-        overflow: auto;
-    }
-}*/
 .main .content.page .box {
   padding: 30px;
   margin-bottom: 30px;
@@ -4819,7 +4775,7 @@ button {
   margin-bottom: 5px;
 }
 
-.main .content.page .releases .release .info .details .tracklist.button {
+.main .content.page .releases .release .info .details button.tracklist {
   padding-left: 0;
 }
 
@@ -4840,7 +4796,7 @@ button {
   margin-bottom: 8px;
 }
 
-.main .content.page .releases .release .info .details .button {
+.main .content.page .releases .release .info .details button {
   font-size: 30px;
   margin-right: 5px;
   margin-bottom: 0;
@@ -4856,10 +4812,6 @@ button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  /*@media screen and (max-width: $width_pc - 1) {
-        height: $height_footer_player;
-        bottom: $height_footer_menu;
-    }*/
 }
 
 .footer.player .image {
@@ -4895,8 +4847,7 @@ button {
   }
 }
 
-.footer.player .info .button,
-.footer.player .info .buttons button {
+.footer.player .info button {
   font-size: 24px;
   margin-right: 5px;
   margin-bottom: 0;
@@ -4922,12 +4873,11 @@ button {
 .footer.player .info .content > div {
   margin-right: 30px;
   /*width: 25%;*/
-}
-
-.footer.player .info .content > div.actions.buttons {
-  margin-right: 0;
-  margin-left: auto;
-  width: 96px;
+  /*&.actions.buttons {
+                    margin-right: 0;
+                    margin-left: auto;
+                    width: 96px;
+                }*/
 }
 
 .footer.player .info .content > div.actions {
@@ -4985,22 +4935,11 @@ button {
   display: inline;
 }
 
-.main .menu {
-  /*.buttons {
-        height: 100%;
-    }*/
-}
-
 .main .menu button {
   margin-top: 0px;
   display: block;
   text-align: left;
   width: calc(100% - 20px);
-}
-
-.main .menu .button,
-.main .menu .buttons > button {
-  padding: 10px 10px 10px 15px;
 }
 
 .menu.hover.items {
@@ -5016,12 +4955,7 @@ button {
   display: block;
 }
 
-.menu.hover.items.buttons > * {
-  margin-top: 0;
-}
-
-.header.primary .menu.releases .button,
-.header.primary .menu.releases.buttons > * {
+.header.primary .menu.releases button {
   border-radius: 300px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -5162,8 +5096,8 @@ button {
   }
 }
 
-.header.secondary .menu.filter.buttons,
-.footer.secondary.menu.filter .buttons {
+.header.secondary .menu.filter,
+.footer.secondary.menu.filter div {
   text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5174,8 +5108,8 @@ button {
   width: 100%;
 }
 
-.header.secondary .menu.filter.buttons button,
-.footer.secondary.menu.filter .buttons button {
+.header.secondary .menu.filter button,
+.footer.secondary.menu.filter div button {
   font-size: 14px;
   border: solid 1px white;
   padding: 5px 10px;

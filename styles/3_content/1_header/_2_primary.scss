@@ -23,7 +23,7 @@
         }
 
         &:hover>.favicon {
-            animation: spin 2s linear infinite;
+            animation: favicon_spin 2s linear infinite;
         }
     }
 
@@ -43,8 +43,8 @@
         position: relative;
 
         // login button
-        .login.button,
-        .user.button {
+        button.login,
+        button.user {
             display: inline-flex;
             min-width: 70px;
         }
@@ -75,7 +75,7 @@
 }
 
 // favicon spin
-@keyframes spin {
+@keyframes favicon_spin {
     0% {
         transform: rotate(0deg);
     }

@@ -2,18 +2,14 @@
  *  Init sass varibles
  */
 
-$padding_left_right: 15px;
 
 // width for responsive styles
 
-$width_pc: 1025px;
 
 // left content width (date menu, title menu, menu buttons, currently playing image)
 $width_left: 130px;
-$width_right: 200px;
-$width_artists_letters: 75px;
 
-// header heights
+// heights
 $height_header_primary: 44px;
 
 $height_footer_player: 100px;
@@ -23,6 +19,7 @@ $height_footer_menu: 60px;
 $margin_right_icon: 5px;
 
 
+// mixins for responsive styles
 @mixin respond($breakpoint) {
     @if $breakpoint==pc {
         @media only screen and (min-width: 1050px) {

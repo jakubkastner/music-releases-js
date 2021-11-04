@@ -21,60 +21,60 @@
             <img class="favicon" src="images/favicon.png" alt="R" />
             <p class="hide-text">eleases</p>
         </div>
-        <nav class="menu releases icon-text buttons">
+        <div class="menu releases icon-text">
             <button class="albums active" title="View released albums"><i class="fas fa-compact-disc"></i>Albums</button>
             <button class="tracks" title="View released Tracks"><i class="fas fa-music"></i>Tracks</button>
             <button class="appears" title="View released appears"><i class="fas fa-user-friends"></i>Appears</button>
             <button class="compilations" title="View released compilations"><i class="fas fa-th-large"></i>Compilations</button>
             <button class="podcasts" title="View newest podcasts"><i class="fas fa-podcast"></i>Podcasts</button>
-        </nav>
-        <nav class="menu settings buttons skrejto">
+        </div>
+        <div class="menu settings skrejto">
             <button class="application active" title="Go to applications settings">Application</button>
             <button class="releases" title="Go to releases settings">Releases</button>
             <button class="playlists" title="Go to playlists settings">Playlists</button>
             <button class="about" title="Go to about the application">About</button>
-        </nav>
-        <div class="menu actions icon-text right buttons">
+        </div>
+        <div class="menu actions icon-text right">
             <button class="playlist" title="Add all filtered releases to the playlist"><i class="fas fa-plus-circle"></i><span class="hide-text">Add to playlist</span></button>
             <button class="play" title="Play all filtered releases"><i class="fas fa-play"></i><span class="hide-text">Play all</span></button>
         </div>
-        <div class="menu show-hide buttons">
+        <div class="menu show-hide">
             <button class="player" title="Show player"><i class="fas fa-play-circle"></i></button>
         </div>
         <div class="user icon-text">
-            <button class="login menu hover button skrejto" title="Show login menu">
+            <button class="login menu hover skrejto" title="Show login menu">
                 <i class="fas fa-user-plus"></i>
                 <p>Login<span class="hide-text"> via music account</span></p>
             </button>
-            <nav class="menu login hover items buttons right skrejto">
+            <div class="menu login hover items right skrejto">
                 <button class="spotify" title="Login via Spotify"><i class="fab fa-spotify"></i>Spotify</button>
                 <button class="deezer" title="Login via Deezer"><i class="fab fa-deezer"></i>Deezer</button>
                 <button class="apple" title="Login via Apple Music"><i class="fab fa-apple"></i>Apple Music</button>
-            </nav>
-            <button class="menu user hover button" title="Show user menu">
+            </div>
+            <button class="menu user hover" title="Show user menu">
                 <i class="fas fa-user-cog"></i>
                 <p class="hide-text">Username</p>
             </button>
-            <nav class="menu user hover items buttons right">
+            <div class="menu user hover items right">
                 <button class="settings" title="Show settings"><i class="fas fa-wrench"></i>Settings</button>
                 <button class="logout" title="Logout"><i class="fas fa-sign-out-alt"></i>Logout</button>
-            </nav>
+            </div>
         </div>
     </div>
     <div class="header secondary hide-mobile">
-        <div class="menu date buttons">
+        <div class="menu date">
             <button class="show-hide icon-text"><i class="fas fa-calendar-alt"></i>Date</button>
             <button class="search"><i class="fas fa-search"></i></button>
         </div>
-        <div class="menu artists buttons">
+        <div class="menu artists">
             <button class="show-hide icon-text"><i class="fas fa-users"></i>Artists</button>
             <button class="search"><i class="fas fa-search"></i></button>
         </div>
-        <div class="menu playlists buttons">
+        <div class="menu playlists">
             <button class="show-hide icon-text"><i class="fas fa-bars"></i>Playlists</button>
             <button class="search"><i class="fas fa-search"></i></button>
         </div>
-        <nav class="menu filter buttons">
+        <div class="menu filter">
             <button class="clear" title="Show all">X</button>
             <button class="tracks" title="Show released Tracks">Tracks</button>
             <button class="eps" title="Show released EPs">EPs</button>
@@ -83,13 +83,13 @@
             <button class="various-artists" title="Show releases from Various artists">Various artists</button>
             <button class="saved" title="Show saved releases in my library">In library</button>
             <button class="new" title="Show only new releases">Only new</button>
-        </nav>
+        </div>
     </div>
     <div class="main">
-        <nav class="menu date year buttons content">
+        <div class="menu date year content">
             <button class="year icon-text-right" data-menu_type="year" data-menu_year="2021">2021<i class="fas fa-angle-down"></i></button>
             <button class="year active icon-text-right" data-menu_type="year" data-menu_year="2020">2020<i class="fas fa-angle-up"></i></button>
-            <div class="buttons month">
+            <div class="month">
                 <button class="month" data-menu_type="month" data-menu_month="12">12</button>
                 <button class="month" data-menu_type="month" data-menu_month="11">11</button>
                 <button class="month" data-menu_type="month" data-menu_month="10">10</button>
@@ -125,8 +125,8 @@
             <button class="year" data-menu_type="year" data-menu_year="2001">2001</button>
             <button class="year" data-menu_type="year" data-menu_year="2000">2000</button>
             <button class="year" data-menu_type="year" data-menu_year="-">-</button>
-        </nav>
-        <nav class="menu artists buttons content">
+        </div>
+        <div class="menu artists content">
             <button class="artist active" data-menu_type="artist" data-menu_artist="all">All</button>
             <button class="artist" data-menu_type="artist" data-menu_artist="Artist 1">Artist 1</button>
             <button class="artist" data-menu_type="artist" data-menu_artist="Artist 2">Artist 2</button>
@@ -138,8 +138,8 @@
             <button class="artist" data-menu_type="artist" data-menu_artist="Artist 8">Artist 8</button>
             <button class="artist" data-menu_type="artist" data-menu_artist="Artist 9">Artist 9</button>
             <button class="artist" data-menu_type="artist" data-menu_artist="Artist 10">Artist 10</button>
-        </nav>
-        <nav class="menu playlists buttons content">
+        </div>
+        <div class="menu playlists content">
             <button class="playlist" data-menu_type="playlist" data-menu_artist="playlist-id-1">Playlist 1</button>
             <button class="playlist" data-menu_type="playlist" data-menu_artist="playlist-id-2">Playlist 2</button>
             <button class="playlist" data-menu_type="playlist" data-menu_artist="playlist-id-3">Playlist 3</button>
@@ -150,10 +150,10 @@
             <button class="playlist" data-menu_type="playlist" data-menu_artist="playlist-id-8">Playlist 8</button>
             <button class="playlist" data-menu_type="playlist" data-menu_artist="playlist-id-9">Playlist 9</button>
             <button class="playlist" data-menu_type="playlist" data-menu_artist="playlist-id-10">Playlist 10</button>
-        </nav>
+        </div>
         <div class="content page">
             <div class="login skrejto">
-                <div class="login buttons">
+                <div class="login">
                     <button class="spotify"><i class="fab fa-spotify"></i>Login via Spotify</button>
                     <button class="deezer"><i class="fab fa-deezer"></i>Login via Deezer</button>
                     <button class="apple"><i class="fab fa-apple"></i>Login via Apple Music</button>
@@ -181,21 +181,21 @@
                                 <i class="fas fa-bolt" title="New release"></i>
                                 <i class="far fa-clock"></i>00:02:03
                             </p>
-                            <button class="tracklist button icon-text" title="View tracklist"><i class="fas fa-bars"></i><span>10</span></button>
-                            <button class="play button" title="Play release"><i class="fas fa-play"></i></button>
-                            <button class="queue button" title="Add release to queue"><i class="fas fa-arrow-right"></i></button>
-                            <button class="save button" title="Add release to library"><i class="far fa-heart"></i></button>
-                            <button class="playlist button" title="Add release to playlist"><i class="fas fa-plus"></i></button>
+                            <button class="tracklist icon-text" title="View tracklist"><i class="fas fa-bars"></i><span>10</span></button>
+                            <button class="play" title="Play release"><i class="fas fa-play"></i></button>
+                            <button class="queue" title="Add release to queue"><i class="fas fa-arrow-right"></i></button>
+                            <button class="save" title="Add release to library"><i class="far fa-heart"></i></button>
+                            <button class="playlist" title="Add release to playlist"><i class="fas fa-plus"></i></button>
                         </div>
                     </div>
                     <div class="tracklist list">
                         <div class="track" data-release_type="track" data-release_id="2qaaa6554456EAh5cqI1ksz">
                             <div class="info">
                                 <button class="number">1</button>
-                                <button class="play button" title="Play track"><i class="fas fa-play"></i></button>
-                                <button class="queue button" title="Add release to queue"><i class="fas fa-arrow-right"></i></button>
-                                <button class="library button" title="Add track to library"><i class="far fa-heart"></i></button>
-                                <button class="playlist button" title="Add track to playlist"><i class="fas fa-plus"></i></button>
+                                <button class="play" title="Play track"><i class="fas fa-play"></i></button>
+                                <button class="queue" title="Add release to queue"><i class="fas fa-arrow-right"></i></button>
+                                <button class="library" title="Add track to library"><i class="far fa-heart"></i></button>
+                                <button class="playlist" title="Add track to playlist"><i class="fas fa-plus"></i></button>
                                 <button class="name">Track 1 name</button>
                                 <p class="artists">
                                     <button class="artist">Artist 1</button>,
@@ -206,7 +206,7 @@
                                 <button class="explicit" title="Explicit lyrics"><span>E</span></button>
                             </div>
                             <div class="playlists icon-text list hidden">
-                                <button class="update button" title="Update list of playlists"><i class="fas fa-sync-alt"></i></button>
+                                <button class="update" title="Update list of playlists"><i class="fas fa-sync-alt"></i></button>
                                 <button class="new" title="Add release to new playlist"><i class="fas fa-plus-circle"></i>Create new playlist</button>
                                 <button class="add new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></button>
                                 <button class="add" data-release_type="playlist" data-release_id="2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></button>
@@ -215,7 +215,7 @@
                         </div>
                     </div>
                     <div class="playlists icon-text list hidden">
-                        <button class="update button" title="Update list of playlists"><i class="fas fa-sync-alt"></i></button>
+                        <button class="update" title="Update list of playlists"><i class="fas fa-sync-alt"></i></button>
                         <button class="new" title="Add release to new playlist"><i class="fas fa-plus-circle"></i>Create new playlist</button>
                         <button class="add new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></button>
                         <button class="add" data-release_type="playlist" data-release_id="2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></button>
@@ -251,21 +251,21 @@
                                 <i class="fas fa-bolt" title="New release"></i>
                                 <i class="far fa-clock"></i>00:02:03
                             </p>
-                            <button class="tracklist button icon-text" title="View tracklist"><i class="fas fa-bars"></i><span>10</span></button>
-                            <button class="play button" title="Play release"><i class="fas fa-play"></i></button>
-                            <button class="queue button" title="Add release to queue"><i class="fas fa-arrow-right"></i></button>
-                            <button class="save button" title="Add release to library"><i class="far fa-heart"></i></button>
-                            <button class="playlist button" title="Add release to playlist"><i class="fas fa-plus"></i></button>
+                            <button class="tracklist icon-text" title="View tracklist"><i class="fas fa-bars"></i><span>10</span></button>
+                            <button class="play" title="Play release"><i class="fas fa-play"></i></button>
+                            <button class="queue" title="Add release to queue"><i class="fas fa-arrow-right"></i></button>
+                            <button class="save" title="Add release to library"><i class="far fa-heart"></i></button>
+                            <button class="playlist" title="Add release to playlist"><i class="fas fa-plus"></i></button>
                         </div>
                     </div>
                     <div class="tracklist list hidden">
                         <div class="track" data-release_type="track" data-release_id="2qaaa6554456EAh5cqI1ksz">
                             <div class="info">
                                 <button class="number">1</button>
-                                <button class="play button" title="Play track"><i class="fas fa-play"></i></button>
-                                <button class="queue button" title="Add release to queue"><i class="fas fa-arrow-right"></i></button>
-                                <button class="library button" title="Add track to library"><i class="far fa-heart"></i></button>
-                                <button class="playlist button" title="Add track to playlist"><i class="fas fa-plus"></i></button>
+                                <button class="play" title="Play track"><i class="fas fa-play"></i></button>
+                                <button class="queue" title="Add release to queue"><i class="fas fa-arrow-right"></i></button>
+                                <button class="library" title="Add track to library"><i class="far fa-heart"></i></button>
+                                <button class="playlist" title="Add track to playlist"><i class="fas fa-plus"></i></button>
                                 <button class="name">Track 1 name</button>
                                 <p class="artists">
                                     <button class="artist">Artist 1</button>,
@@ -276,7 +276,7 @@
                                 <button class="explicit" title="Explicit lyrics"><span>E</span></button>
                             </div>
                             <div class="playlists icon-text list hidden">
-                                <button class="update button" title="Update list of playlists"><i class="fas fa-sync-alt"></i></button>
+                                <button class="update" title="Update list of playlists"><i class="fas fa-sync-alt"></i></button>
                                 <button class="new" title="Add release to new playlist"><i class="fas fa-plus-circle"></i>Create new playlist</button>
                                 <button class="add new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></button>
                                 <button class="add" data-release_type="playlist" data-release_id="2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></button>
@@ -285,7 +285,7 @@
                         </div>
                     </div>
                     <div class="playlists icon-text list">
-                        <button class="update button" title="Update list of playlists"><i class="fas fa-sync-alt"></i></button>
+                        <button class="update" title="Update list of playlists"><i class="fas fa-sync-alt"></i></button>
                         <button class="new" title="Add release to new playlist"><i class="fas fa-plus-circle"></i>Create new playlist</button>
                         <button class="add new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></button>
                         <button class="add" data-release_type="playlist" data-release_id="2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></button>
@@ -313,21 +313,21 @@
                                 <i class="fas fa-bolt" title="New release"></i>
                                 <i class="far fa-clock"></i>00:02:03
                             </p>
-                            <button class="tracklist button icon-text" title="View tracklist"><i class="fas fa-bars"></i><span>10</span></button>
-                            <button class="play button" title="Play release"><i class="fas fa-play"></i></button>
-                            <button class="queue button" title="Add release to queue"><i class="fas fa-arrow-right"></i></button>
-                            <button class="save button" title="Add release to library"><i class="far fa-heart"></i></button>
-                            <button class="playlist button" title="Add release to playlist"><i class="fas fa-plus"></i></button>
+                            <button class="tracklist icon-text" title="View tracklist"><i class="fas fa-bars"></i><span>10</span></button>
+                            <button class="play" title="Play release"><i class="fas fa-play"></i></button>
+                            <button class="queue" title="Add release to queue"><i class="fas fa-arrow-right"></i></button>
+                            <button class="save" title="Add release to library"><i class="far fa-heart"></i></button>
+                            <button class="playlist" title="Add release to playlist"><i class="fas fa-plus"></i></button>
                         </div>
                     </div>
                     <div class="tracklist list hidden">
                         <div class="track" data-release_type="track" data-release_id="2qaaa6554456EAh5cqI1ksz">
                             <div class="info">
                                 <button class="number">1</button>
-                                <button class="play button" title="Play track"><i class="fas fa-play"></i></button>
-                                <button class="queue button" title="Add release to queue"><i class="fas fa-arrow-right"></i></button>
-                                <button class="library button" title="Add track to library"><i class="far fa-heart"></i></button>
-                                <button class="playlist button" title="Add track to playlist"><i class="fas fa-plus"></i></button>
+                                <button class="play" title="Play track"><i class="fas fa-play"></i></button>
+                                <button class="queue" title="Add release to queue"><i class="fas fa-arrow-right"></i></button>
+                                <button class="library" title="Add track to library"><i class="far fa-heart"></i></button>
+                                <button class="playlist" title="Add track to playlist"><i class="fas fa-plus"></i></button>
                                 <button class="name">Track 1 name</button>
                                 <p class="artists">
                                     <button class="artist">Artist 1</button>,
@@ -338,7 +338,7 @@
                                 <button class="explicit" title="Explicit lyrics"><span>E</span></button>
                             </div>
                             <div class="playlists icon-text list hidden">
-                                <button class="update button" title="Update list of playlists"><i class="fas fa-sync-alt"></i></button>
+                                <button class="update" title="Update list of playlists"><i class="fas fa-sync-alt"></i></button>
                                 <button class="new" title="Add release to new playlist"><i class="fas fa-plus-circle"></i>Create new playlist</button>
                                 <button class="add new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></button>
                                 <button class="add" data-release_type="playlist" data-release_id="2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></button>
@@ -347,7 +347,7 @@
                         </div>
                     </div>
                     <div class="playlists icon-text list hidden">
-                        <button class="update button" title="Update list of playlists"><i class="fas fa-sync-alt"></i></button>
+                        <button class="update" title="Update list of playlists"><i class="fas fa-sync-alt"></i></button>
                         <button class="new" title="Add release to new playlist"><i class="fas fa-plus-circle"></i>Create new playlist</button>
                         <button class="add new-auto" title="Add release to new playlist 'Artist name - Album name'"><i class="fas fa-plus-square"></i>Artist name - Album name<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></button>
                         <button class="add" data-release_type="playlist" data-release_id="2UKqPRsvnx7sQjt5EmHxpm" title="Add release to playlist 'Playlist 1'"><i class="fas fa-plus"></i>Playlist 1<span class="right"><i class="fas fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span></button>
@@ -414,7 +414,7 @@
         </div>
     </div>
     <div class="footer menu secondary filter hide-pc hide-tablet">
-        <nav class="buttons">
+        <div>
             <button class="clear" title="Show all">X</button>
             <button class="tracks" title="Show released Tracks">Tracks</button>
             <button class="eps" title="Show released EPs">EPs</button>
@@ -423,10 +423,10 @@
             <button class="various-artists" title="Show releases from Various artists">Various artists</button>
             <button class="saved" title="Show saved releases in my library">In library</button>
             <button class="new" title="Show only new releases">Only new</button>
-        </nav>
+        </div>
     </div>
     <div class="footer menu releases hide-tablet hide-pc">
-        <nav class="primary buttons">
+        <div class="primary">
             <button class="albums" title="View released albums">
                 <i class="fas fa-compact-disc"></i>
                 <p>Albums</p>
@@ -451,8 +451,8 @@
                 <i class="fas fa-ellipsis-h"></i>
                 <p>More</p>
             </button>
-        </nav>
-        <nav class="menu hover items icon-text buttons">
+        </div>
+        <div class="menu hover items icon-text">
             <button class="albums" title="View released albums">
                 <i class="fas fa-compact-disc"></i>
                 <p>Albums</p>
@@ -473,7 +473,7 @@
                 <i class="fas fa-podcast"></i>
                 <p>Podcasts</p>
             </button>
-        </nav>
+        </div>
     </div>
     <div class="footer player">
         <div class="image left">
@@ -483,7 +483,7 @@
             <div class="time width-50"></div>
             <div class="content">
                 <div class="actions">
-                    <div class="buttons">
+                    <div>
                         <button class="prev"><i class="fas fa-step-backward"></i></button>
                         <button class="play"><i class="fas fa-play"></i></button>
                         <button class="next"><i class="fas fa-step-forward"></i></button>
@@ -512,7 +512,7 @@
                         <button class="year">2020</button>-<button class="month">10</button>-<button class="day">01</button>
                     </p>
                 </div>
-                <div class="actions buttons">
+                <div class="actions">
                     <button class="volume mobile-hide"><i class="fas fa-volume-up"></i></button>
                     <button class="devices"><i class="fas fa-laptop"></i></button>
                     <button class="actions pc-hide"><i class="fas fa-ellipsis-v"></i></button>
@@ -521,10 +521,10 @@
         </div>
     </div>
     <div class="footer menu mobile hide-pc hide-tablet">
-        <button class="menu show-hide button round round-text">Close menu<i class="fas fa-times"></i></button>
-        <button class="tracklist button round round-text" title="Tracklist">Tracklist<i class="fas fa-list-ol"></i></button>
-        <button class="mobile show-hide hover button round" title="Show menu"><i class="fas fa-bars"></i></button>
-        <nav class="hover items buttons icon-text">
+        <button class="menu show-hide round round-text">Close menu<i class="fas fa-times"></i></button>
+        <button class="tracklist round round-text" title="Tracklist">Tracklist<i class="fas fa-list-ol"></i></button>
+        <button class="mobile show-hide hover round" title="Show menu"><i class="fas fa-bars"></i></button>
+        <div class="hover items icon-text">
             <p><i class="fas fa-user-cog"></i>User</p>
             <button class="settings" title="Show settings">Settings</button>
             <button class="logout" title="Logout">Logout</button>
@@ -535,7 +535,7 @@
             <p><i class="fas fa-tools"></i>Actions</p>
             <button class="playlist">Add to playlist</button>
             <button class="play">Play all</button>
-        </nav>
+        </div>
     </div>
     <script src="https://kit.fontawesome.com/ebe995aabe.js" crossorigin="anonymous"></script>
     <!-- TODO scripts-->

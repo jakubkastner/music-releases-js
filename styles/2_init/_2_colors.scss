@@ -141,8 +141,7 @@ $color_text_button: rgb(26, 178, 107);
         }
 
         // buttons
-        .button,
-        .buttons>* {
+        button {
             &.active {
                 color: $color_text_button;
             }
@@ -155,16 +154,15 @@ $color_text_button: rgb(26, 178, 107);
         &.primary {
 
             // buttons
-            .button,
-            .buttons>* {
+            button {
                 &.active {
                     background-color: $color_3;
                 }
             }
         }
 
-        .login.button.hover.items,
-        .user.button.hover.items {
+        button.login.hover.items,
+        button.user.hover.items {
             background-color: $color_4;
         }
 
@@ -274,7 +272,7 @@ $color_text_button: rgb(26, 178, 107);
             }
         }
 
-        .round.button {
+        button.round {
             background-color: $color_1;
 
             &.active {

@@ -1,19 +1,25 @@
 // template width
 
-$menu_playlist_width: 250px;
-$menu_date_width: 140px;
-$menu_artists_width: 200px;
 
-$loader_height: 4px;
-$header_primary_height: 48px;
-$header_secondary_height: 48px;
-$player_height: 100px;
-$releases_menu_mobile_height: 60px;
-$filter_menu_mobile_height: 50px;
 
 $padding: 15px;
 $spaces: 30px;
 $cover_width: 150px;
+
+// page width
+$width_menu_playlist: 250px; // 1
+$width_menu_date: 140px; // 3
+$width_menu_artists: 200px; // 4
+$width_main: calc(100vw - #{$width_menu_playlist} - #{$width_menu_date} - #{$width_menu_artists}); // 2
+
+// page height
+$height_loader: 4px; // 1
+$height_header_primary: 48px; // pc 2
+$height_header_secondary: 48px; // pc 3
+$height_player: 100px; // mobile 3, pc 5
+$height_menu_mobile_filter: 50px; // mobile 4
+$height_menu_mobile_releases: 60px; // mobile 5
+$height_main: calc(100vh - #{$height_loader} - #{$height_header_primary} - #{$height_header_secondary} - #{$height_player}); // mobile 2, pc 4
 
 body.classic {
     display: grid;
@@ -22,13 +28,12 @@ body.classic {
 
     // pc
     @include respond(pctab) {
+        height: 100vh;
+        overflow: hidden;
+
         grid-template-columns: auto;
         // loader, primary header, secondary header, content, player
-        grid-template-rows: $loader_height $header_primary_height $header_secondary_height calc(100vh - #{$loader_height} - #{$header_primary_height} - #{$header_secondary_height} - #{$player_height}) $player_height;
-
-        height: 100vh;
-
-        // TODO overflow: hidden;
+        grid-template-rows: $height_loader $height_header_primary $height_header_secondary $height_main $height_player;
 
         // hide menus and player
         &.hide {
@@ -45,7 +50,6 @@ body.classic {
             }
 
             &-menu {
-
                 &-playlists {
                     .main .content.playlists {
                         display: none;
@@ -125,37 +129,29 @@ body.classic {
             .menu {
 
                 &.playlists {
-                    width: $menu_playlist_width;
-                    min-width: $menu_playlist_width;
+                    width: $width_menu_playlist;
+                    min-width: $width_menu_playlist;
                     order: 1;
                 }
 
                 &.date {
-                    width: $menu_date_width;
-                    min-width: $menu_date_width;
+                    width: $width_menu_date;
+                    min-width: $width_menu_date;
                     order: 3;
                 }
 
                 &.artists {
-                    width: $menu_artists_width;
-                    min-width: $menu_artists_width;
+                    width: $width_menu_artists;
+                    min-width: $width_menu_artists;
                     order: 4;
                 }
-
-                /*&.filter {
-                    // TODO 15px = chrominium fix??
-                    width: calc(100vw - #{$menu_playlist_width} - #{$menu_date_width} - #{$menu_artists_width} - 15px);
-                    min-width: calc(100vw - #{$menu_playlist_width} - #{$menu_date_width} - #{$menu_artists_width} - 15px);
-                }*/
             }
 
             // content and menus
             .menu.filter,
             .content.page {
-                /*width: auto;
-                min-width: auto;*/
-                width: calc(100vw - #{$menu_playlist_width} - #{$menu_date_width} - #{$menu_artists_width} - 15px);
-                min-width: calc(100vw - #{$menu_playlist_width} - #{$menu_date_width} - #{$menu_artists_width} - 15px);
+                width: $width_main;
+                min-width: $width_main;
             }
 
             .content.page,
@@ -189,8 +185,8 @@ body.classic {
     @include respond(mobile) {
         grid-template-columns: auto;
         // loader, content, player, mobile menu filer, mobile menu releases
-        //grid-template-rows: $loader_height calc(100vh - #{$loader_height} - #{$player_height} - #{$filter_menu_mobile_height} - #{$releases_menu_mobile_height}) $player_height $filter_menu_mobile_height $releases_menu_mobile_height;
-        grid-template-rows: $loader_height 100% $player_height $filter_menu_mobile_height $releases_menu_mobile_height;
+        // TODO player
+        grid-template-rows: $height_loader 100% $height_player $height_menu_mobile_filter $height_menu_mobile_releases;
 
         height: auto;
         overflow: auto;
@@ -273,7 +269,7 @@ body.classic {
                     grid-area: 4 / 1 / 5 / 1;
                     display: grid;
                     position: fixed;
-                    bottom: $releases_menu_mobile_height;
+                    bottom: $height_menu_mobile_releases;
                 }
 
                 &.releases {

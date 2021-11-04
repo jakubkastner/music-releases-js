@@ -1,12 +1,12 @@
 // LOADER
 .loader {
-    border-radius: $loader_height;
+    border-radius: $height_loader;
     background-size: 20%;
     background-repeat: repeat-y;
     background-position: -25% 0;
     display: grid;
     width: 100%;
-    height: $loader_height;
+    height: $height_loader;
 
     // loader - active
     &.active {

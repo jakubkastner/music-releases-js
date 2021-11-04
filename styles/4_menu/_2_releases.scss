@@ -3,8 +3,7 @@
 // pc/tablet menu (header)
 .header.primary .menu.releases {
 
-    .button,
-    &.buttons>* {
+    button {
         border-radius: 300px;
         padding-top: 12px;
         padding-bottom: 12px;
