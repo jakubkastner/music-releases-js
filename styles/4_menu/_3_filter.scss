@@ -25,3 +25,15 @@
         height: 20px;
     }
 }
+
+.footer.secondary.menu.filter {
+    button {
+        &:first-child {
+            margin-left: $padding_left_right;
+        }
+
+        &:last-child {
+            margin-right: $padding_left_right;
+        }
+    }
+}

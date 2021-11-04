@@ -5263,6 +5263,14 @@ input {
   height: 20px;
 }
 
+.footer.secondary.menu.filter button:first-child {
+  margin-left: 20px;
+}
+
+.footer.secondary.menu.filter button:last-child {
+  margin-right: 20px;
+}
+
 body.hide-player .footer.menu.mobile {
   bottom: calc(60px + 50px);
 }
@@ -5482,5 +5490,33 @@ body.hide-player .footer.menu.mobile {
 
 .skrejto {
   display: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 5px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track:horizontal {
+  background-color: #0c0c0c;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background-color: #6a6a6a;
+}
+
+body {
+  scrollbar-color: black #0c0c0c;
+  scrollbar-width: thin;
 }
 /*# sourceMappingURL=style.css.map */
