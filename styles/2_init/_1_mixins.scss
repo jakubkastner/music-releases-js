@@ -1,23 +1,4 @@
-/** INIT
- *  Init sass varibles
- */
-
-
-// width for responsive styles
-
-
-// left content width (date menu, title menu, menu buttons, currently playing image)
-$width_left: 130px;
-
-// heights
-$height_header_primary: 44px;
-
-$height_footer_player: 100px;
-$height_footer_menu: 60px;
-
-// right margin icon
-$margin_right_icon: 5px;
-
+/** MIXINS */
 
 // mixins for responsive styles
 @mixin respond($breakpoint) {
