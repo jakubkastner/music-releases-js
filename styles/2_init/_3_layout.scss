@@ -52,7 +52,7 @@ body.classic {
 
             &-menu {
                 &-playlists {
-                    .main .content.playlists {
+                    .main .menu.items.playlists {
                         display: none;
                     }
 
@@ -64,7 +64,7 @@ body.classic {
                 }
 
                 &-date {
-                    .main .content.date {
+                    .main .menu.items.date {
                         display: none;
                     }
 
@@ -94,7 +94,7 @@ body.classic {
                         min-width: auto;
                     }
 
-                    .main .content.artists {
+                    .main .menu.items.artists {
                         display: none;
                     }
                 }
@@ -160,7 +160,8 @@ body.classic {
                 order: 2;
             }
 
-            .content {
+            .content,
+            .menu.items {
                 overflow: auto;
 
                 &.menu {
@@ -246,7 +247,7 @@ body.classic {
             }
 
 
-            .content {
+            .page.content {
                 display: none;
                 order: 2;
             }
@@ -268,9 +269,9 @@ body.classic {
             &.menu {
                 &.filter {
                     grid-area: 4 / 1 / 5 / 1;
-                    display: grid;
                     position: fixed;
                     bottom: $height_menu_mobile_releases;
+                    height: $height_menu_mobile_filter;
                 }
 
                 &.releases {
@@ -279,6 +280,7 @@ body.classic {
                     position: fixed;
                     bottom: 0;
                     width: 100%;
+                    height: $height_menu_mobile_releases;
                 }
             }
         }

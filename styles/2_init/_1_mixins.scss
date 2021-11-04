@@ -8,6 +8,7 @@
         }
     }
 
+    // TODO delete
     @else if $breakpoint==pctab {
         @media only screen and (min-width: 900px) {
             @content;
@@ -37,5 +38,17 @@
 @include respond(text) {
     .hide-text {
         display: none;
+    }
+}
+
+
+// favicon spin
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }

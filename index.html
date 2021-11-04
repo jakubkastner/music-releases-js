@@ -21,20 +21,20 @@
             <img class="favicon" src="images/favicon.png" alt="R" />
             <p class="hide-text">eleases</p>
         </div>
-        <div class="menu releases icon-text">
-            <button class="albums active" title="View released albums"><i class="fas fa-compact-disc"></i>Albums</button>
-            <button class="tracks" title="View released Tracks"><i class="fas fa-music"></i>Tracks</button>
-            <button class="appears" title="View released appears"><i class="fas fa-user-friends"></i>Appears</button>
-            <button class="compilations" title="View released compilations"><i class="fas fa-th-large"></i>Compilations</button>
-            <button class="podcasts" title="View newest podcasts"><i class="fas fa-podcast"></i>Podcasts</button>
+        <div class="menu releases primary icon-text">
+            <button class="albums active" title="View released albums"><i class="fas fa-compact-disc"></i><span>Albums</span></button>
+            <button class="tracks" title="View released Tracks"><i class="fas fa-music"></i><span>Tracks</span></button>
+            <button class="appears" title="View released appears"><i class="fas fa-user-friends"></i><span>Appears</span></button>
+            <button class="compilations" title="View released compilations"><i class="fas fa-th-large"></i><span>Compilations</span></button>
+            <button class="podcasts" title="View newest podcasts"><i class="fas fa-podcast"></i><span>Podcasts</span></button>
         </div>
-        <div class="menu settings skrejto">
+        <div class="menu settings primary skrejto">
             <button class="application active" title="Go to applications settings">Application</button>
             <button class="releases" title="Go to releases settings">Releases</button>
             <button class="playlists" title="Go to playlists settings">Playlists</button>
             <button class="about" title="Go to about the application">About</button>
         </div>
-        <div class="menu actions icon-text right">
+        <div class="menu actions icon-text">
             <button class="playlist" title="Add all filtered releases to the playlist"><i class="fas fa-plus-circle"></i><span class="hide-text">Add to playlist</span></button>
             <button class="play" title="Play all filtered releases"><i class="fas fa-play"></i><span class="hide-text">Play all</span></button>
         </div>
@@ -42,19 +42,13 @@
             <button class="player" title="Show player"><i class="fas fa-play-circle"></i></button>
         </div>
         <div class="user icon-text">
-            <button class="login menu hover skrejto" title="Show login menu">
-                <i class="fas fa-user-plus"></i>
-                <p>Login<span class="hide-text"> via music account</span></p>
-            </button>
+            <button class="login menu hover skrejto" title="Show login menu"><i class="fas fa-user-plus"></i>Login<span class="hide-text"> via music account</span></button>
             <div class="menu login hover items right skrejto">
                 <button class="spotify" title="Login via Spotify"><i class="fab fa-spotify"></i>Spotify</button>
                 <button class="deezer" title="Login via Deezer"><i class="fab fa-deezer"></i>Deezer</button>
                 <button class="apple" title="Login via Apple Music"><i class="fab fa-apple"></i>Apple Music</button>
             </div>
-            <button class="menu user hover" title="Show user menu">
-                <i class="fas fa-user-cog"></i>
-                <p class="hide-text">Username</p>
-            </button>
+            <button class="menu user hover" title="Show user menu"><i class="fas fa-user-cog"></i><span class="hide-text">Username</span></button>
             <div class="menu user hover items right">
                 <button class="settings" title="Show settings"><i class="fas fa-wrench"></i>Settings</button>
                 <button class="logout" title="Logout"><i class="fas fa-sign-out-alt"></i>Logout</button>
@@ -86,7 +80,7 @@
         </div>
     </div>
     <div class="main">
-        <div class="menu date year content">
+        <div class="menu date year items">
             <button class="year icon-text-right" data-menu_type="year" data-menu_year="2021">2021<i class="fas fa-angle-down"></i></button>
             <button class="year active icon-text-right" data-menu_type="year" data-menu_year="2020">2020<i class="fas fa-angle-up"></i></button>
             <div class="month">
@@ -126,7 +120,7 @@
             <button class="year" data-menu_type="year" data-menu_year="2000">2000</button>
             <button class="year" data-menu_type="year" data-menu_year="-">-</button>
         </div>
-        <div class="menu artists content">
+        <div class="menu artists items">
             <button class="artist active" data-menu_type="artist" data-menu_artist="all">All</button>
             <button class="artist" data-menu_type="artist" data-menu_artist="Artist 1">Artist 1</button>
             <button class="artist" data-menu_type="artist" data-menu_artist="Artist 2">Artist 2</button>
@@ -139,7 +133,7 @@
             <button class="artist" data-menu_type="artist" data-menu_artist="Artist 9">Artist 9</button>
             <button class="artist" data-menu_type="artist" data-menu_artist="Artist 10">Artist 10</button>
         </div>
-        <div class="menu playlists content">
+        <div class="menu playlists items">
             <button class="playlist" data-menu_type="playlist" data-menu_artist="playlist-id-1">Playlist 1</button>
             <button class="playlist" data-menu_type="playlist" data-menu_artist="playlist-id-2">Playlist 2</button>
             <button class="playlist" data-menu_type="playlist" data-menu_artist="playlist-id-3">Playlist 3</button>
@@ -414,65 +408,30 @@
         </div>
     </div>
     <div class="footer menu secondary filter hide-pc hide-tablet">
-        <div>
-            <button class="clear" title="Show all">X</button>
-            <button class="tracks" title="Show released Tracks">Tracks</button>
-            <button class="eps" title="Show released EPs">EPs</button>
-            <button class="remixes" title="Show released Remixes">Remixes</button>
-            <button class="artists active" title="Hide releases from the artist I am following">Followed artists</button>
-            <button class="various-artists" title="Show releases from Various artists">Various artists</button>
-            <button class="saved" title="Show saved releases in my library">In library</button>
-            <button class="new" title="Show only new releases">Only new</button>
-        </div>
+        <button class="clear" title="Show all">X</button>
+        <button class="tracks" title="Show released Tracks">Tracks</button>
+        <button class="eps" title="Show released EPs">EPs</button>
+        <button class="remixes" title="Show released Remixes">Remixes</button>
+        <button class="artists active" title="Hide releases from the artist I am following">Followed artists</button>
+        <button class="various-artists" title="Show releases from Various artists">Various artists</button>
+        <button class="saved" title="Show saved releases in my library">In library</button>
+        <button class="new" title="Show only new releases">Only new</button>
     </div>
     <div class="footer menu releases hide-tablet hide-pc">
         <div class="primary">
-            <button class="albums" title="View released albums">
-                <i class="fas fa-compact-disc"></i>
-                <p>Albums</p>
-            </button>
-            <button class="tracks" title="View released Tracks">
-                <i class="fas fa-music"></i>
-                <p>Tracks</p>
-            </button>
-            <button class="appears" title="View released appears">
-                <i class="fas fa-user-friends"></i>
-                <p>Appears</p>
-            </button>
-            <button class="compilations" title="View released compilations">
-                <i class="fas fa-th-large"></i>
-                <p>Compilations</p>
-            </button>
-            <button class="podcasts" title="View newest podcasts">
-                <i class="fas fa-podcast"></i>
-                <p>Podcasts</p>
-            </button>
-            <button class="more" title="Show more">
-                <i class="fas fa-ellipsis-h"></i>
-                <p>More</p>
-            </button>
+            <button class="albums active" title="View released albums"><i class="fas fa-compact-disc"></i><span>Albums</span></button>
+            <button class="tracks" title="View released Tracks"><i class="fas fa-music"></i><span>Tracks</span></button>
+            <button class="appears" title="View released appears"><i class="fas fa-user-friends"></i><span>Appears</span></button>
+            <button class="compilations" title="View released compilations"><i class="fas fa-th-large"></i><span>Compilations</span></button>
+            <button class="podcasts" title="View newest podcasts"><i class="fas fa-podcast"></i><span>Podcasts</span></button>
+            <button class="more" title="Show more"><i class="fas fa-ellipsis-h"></i><span>More</span></button>
         </div>
         <div class="menu hover items icon-text">
-            <button class="albums" title="View released albums">
-                <i class="fas fa-compact-disc"></i>
-                <p>Albums</p>
-            </button>
-            <button class="tracks" title="View released Tracks">
-                <i class="fas fa-music"></i>
-                <p>Tracks</p>
-            </button>
-            <button class="appears" title="View released appears">
-                <i class="fas fa-user-friends"></i>
-                <p>Appears</p>
-            </button>
-            <button class="compilations" title="View released compilations">
-                <i class="fas fa-th-large"></i>
-                <p>Compilations</p>
-            </button>
-            <button class="podcasts" title="View newest podcasts">
-                <i class="fas fa-podcast"></i>
-                <p>Podcasts</p>
-            </button>
+            <button class="albums active" title="View released albums"><i class="fas fa-compact-disc"></i><span>Albums</span></button>
+            <button class="tracks" title="View released Tracks"><i class="fas fa-music"></i><span>Tracks</span></button>
+            <button class="appears" title="View released appears"><i class="fas fa-user-friends"></i><span>Appears</span></button>
+            <button class="compilations" title="View released compilations"><i class="fas fa-th-large"></i><span>Compilations</span></button>
+            <button class="podcasts" title="View newest podcasts"><i class="fas fa-podcast"></i><span>Podcasts</span></button>
         </div>
     </div>
     <div class="footer player">
@@ -537,8 +496,8 @@
             <button class="play">Play all</button>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/ebe995aabe.js" crossorigin="anonymous"></script>
     <!-- TODO scripts-->
+    <script src="https://kit.fontawesome.com/ebe995aabe.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

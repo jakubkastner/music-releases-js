@@ -2,7 +2,7 @@
 .header.primary {
     display: inline-flex;
 
-    // page name
+    // 1.) page name
     .page-name {
         cursor: context-menu;
         padding: 4px 10px 16px 10px;
@@ -23,26 +23,29 @@
         }
 
         &:hover>.favicon {
-            animation: favicon_spin 2s linear infinite;
+            animation: spin 2s linear infinite;
         }
     }
 
-    // actions menu
-    .actions {
+    // 2.) releases menu
+    // -> 4_menu/_2_releases
+
+    // 3.) actions menu
+    .menu.actions {
         margin-left: auto;
     }
 
-    // user menu
+    // 4.) user menu
     .user {
         position: relative;
 
-        // login button
-        button.login,
-        button.user {
+        // button to show menu
+        button.menu.hover {
             display: inline-flex;
             min-width: 70px;
         }
 
+        // buttons in menu
         &.menu.items button {
             display: block;
             text-align: left;
@@ -65,16 +68,5 @@
                 width: 150px;
             }
         }
-    }
-}
-
-// favicon spin
-@keyframes favicon_spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
     }
 }

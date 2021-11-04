@@ -285,6 +285,28 @@
   }
 }
 
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 /** COLORS
  *  Colors for themes (light, dark, color).
  */
@@ -4346,14 +4368,14 @@ body.classic {
   body.classic.hide-player .footer.player {
     display: none;
   }
-  body.classic.hide-menu-playlists .main .content.playlists {
+  body.classic.hide-menu-playlists .main .menu.items.playlists {
     display: none;
   }
   body.classic.hide-menu-playlists .main .content.page {
     width: auto;
     min-width: auto;
   }
-  body.classic.hide-menu-date .main .content.date {
+  body.classic.hide-menu-date .main .menu.items.date {
     display: none;
   }
   body.classic.hide-menu-date .main .content.page {
@@ -4374,7 +4396,7 @@ body.classic {
     width: auto;
     min-width: auto;
   }
-  body.classic.hide-menu-artists .main .content.artists {
+  body.classic.hide-menu-artists .main .menu.items.artists {
     display: none;
   }
   body.classic .header.loader {
@@ -4447,15 +4469,21 @@ body.classic {
             order: 2;
   }
   body.classic .header.secondary .content,
-  body.classic .main .content {
+  body.classic .header.secondary .menu.items,
+  body.classic .main .content,
+  body.classic .main .menu.items {
     overflow: auto;
   }
   body.classic .header.secondary .content.menu,
-  body.classic .main .content.menu {
+  body.classic .header.secondary .menu.items.menu,
+  body.classic .main .content.menu,
+  body.classic .main .menu.items.menu {
     overflow: hidden;
   }
   body.classic .header.secondary .content.menu:hover,
-  body.classic .main .content.menu:hover {
+  body.classic .header.secondary .menu.items.menu:hover,
+  body.classic .main .content.menu:hover,
+  body.classic .main .menu.items.menu:hover {
     overflow: auto;
   }
   body.classic .footer.player {
@@ -4521,7 +4549,7 @@ body.classic {
   body.classic .main .menu.date {
     display: block;
   }
-  body.classic .main .content {
+  body.classic .main .page.content {
     display: none;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -4541,10 +4569,9 @@ body.classic {
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
     grid-area: 4 / 1 / 5 / 1;
-    display: -ms-grid;
-    display: grid;
     position: fixed;
     bottom: 60px;
+    height: 50px;
   }
   body.classic .footer.menu.releases {
     -ms-grid-row: 5;
@@ -4556,6 +4583,7 @@ body.classic {
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 60px;
   }
 }
 
@@ -4668,11 +4696,11 @@ button {
 }
 
 .header.primary .page-name:hover > .favicon {
-  -webkit-animation: favicon_spin 2s linear infinite;
-          animation: favicon_spin 2s linear infinite;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
 }
 
-.header.primary .actions {
+.header.primary .menu.actions {
   margin-left: auto;
 }
 
@@ -4680,8 +4708,7 @@ button {
   position: relative;
 }
 
-.header.primary .user button.login,
-.header.primary .user button.user {
+.header.primary .user button.menu.hover {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -4705,28 +4732,6 @@ button {
 @media only screen and (max-width: 1299px) {
   .header.primary .user .menu.hover.items {
     width: 150px;
-  }
-}
-
-@-webkit-keyframes favicon_spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes favicon_spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
   }
 }
 
@@ -4933,7 +4938,7 @@ button {
   margin-top: 0px;
   display: block;
   text-align: left;
-  width: calc(100% - 20px);
+  width: calc(100% - 2 * 10px);
 }
 
 .menu.hover.items {
@@ -4949,7 +4954,22 @@ button {
   display: block;
 }
 
-.header.primary .menu.releases button {
+.header.secondary .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header.secondary .menu .show-hide {
+  width: calc(100% - 24px);
+  text-align: left;
+}
+
+.header.secondary .menu .search {
+  width: 24px;
+}
+
+.header.primary .menu.primary button {
   border-radius: 300px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -4973,15 +4993,19 @@ button {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.footer.menu.releases .primary p {
-  font-size: 13px;
-}
-
 .footer.menu.releases .primary button {
   text-align: center;
   padding: 10px 0;
   margin: 0;
   width: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 4px;
+  font-size: 13px;
+}
+
+.footer.menu.releases .primary button i {
+  font-size: 18px;
 }
 
 .footer.menu.releases .primary .more {
@@ -4998,7 +5022,8 @@ button {
     display: none;
   }
   .footer.menu.releases .primary .more {
-    display: block;
+    display: -ms-grid;
+    display: grid;
   }
   .footer.menu.releases .hover .appears,
   .footer.menu.releases .hover .compilations {
@@ -5082,7 +5107,7 @@ button {
 }
 
 @media screen and (max-width: 100px) {
-  .footer.menu.releases .hover p {
+  .footer.menu.releases .hover span {
     display: none;
   }
   .footer.menu.releases .hover i {
@@ -5091,31 +5116,26 @@ button {
 }
 
 .header.secondary .menu.filter,
-.footer.secondary.menu.filter div {
+.footer.secondary.menu.filter {
   text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   white-space: nowrap;
   overflow: auto;
-  margin: auto auto auto 0;
+  margin: auto 0;
   width: 100%;
 }
 
 .header.secondary .menu.filter button,
-.footer.secondary.menu.filter div button {
+.footer.secondary.menu.filter button {
   font-size: 14px;
   border: solid 1px white;
   padding: 5px 10px;
-  margin: 0 3px;
+  margin: auto 3px;
   border-radius: 16px;
   background-color: black;
   height: 20px;
-}
-
-.footer.secondary.menu.filter {
-  width: 100%;
-  height: 50px;
 }
 
 .footer.menu.mobile {
