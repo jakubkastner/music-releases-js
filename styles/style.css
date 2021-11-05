@@ -5491,6 +5491,11 @@ body.hide-player .footer.menu.mobile .items {
   }
 }
 
+.list {
+  /*max-height: 400px;
+    overflow: auto;*/
+}
+
 .list button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5503,6 +5508,17 @@ body.hide-player .footer.menu.mobile .items {
   margin-left: auto;
 }
 
+.list i {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.list .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .list.tracklist .track .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5513,8 +5529,6 @@ body.hide-player .footer.menu.mobile .items {
 
 .list.tracklist .track .info > * {
   margin-right: 5px;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .list.tracklist .track .info .artists {
@@ -5532,9 +5546,8 @@ body.hide-player .footer.menu.mobile .items {
   margin-left: auto;
 }
 
-.list.playlists .update {
-  width: 20px;
-  margin-left: auto;
+.list.playlists .update i {
+  margin: 0;
 }
 
 .hidden {
