@@ -267,7 +267,6 @@ body.classic {
     @include respond(mobile) {
         grid-template-columns: auto;
         // loader, content, player, mobile menu filer, mobile menu releases
-        // TODO player
         grid-template-rows: $height_loader 100% $height_player_mobile $height_menu_mobile_filter $height_menu_mobile_releases;
 
         height: auto;
@@ -303,9 +302,7 @@ body.classic {
 
         // main content and menus
         .main {
-            // TODO show player
             grid-area: 2 / 1 / 3 / 1;
-            //grid-area: 2 / 1 / 4 / 1;
             display: inline-flex;
 
             // menus
@@ -318,9 +315,9 @@ body.classic {
                     display: block;
                 }*/
 
-                &.date {
+                /*&.date {
                     display: block;
-                }
+                }*/
 
                 /*&.artists {
                     display: block;
@@ -329,7 +326,7 @@ body.classic {
 
 
             .page.content {
-                display: none;
+                //display: none;
                 order: 2;
             }
         }

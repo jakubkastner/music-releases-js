@@ -32,3 +32,12 @@ body {
 }
 
 // SCROLLBARS - END //
+
+
+// HIDE LONG TEXT
+/*
+white-space: nowrap;
+max-width: 100%;
+overflow: hidden;
+text-overflow: ellipsis;
+*/
