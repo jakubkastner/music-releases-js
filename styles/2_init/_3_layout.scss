@@ -217,7 +217,7 @@ body.classic {
             }
 
             .content>div {
-                margin-top: $bottom_player_image;
+                margin-top: 20px;
                 margin-bottom: $bottom_player_image;
             }
         }
@@ -304,6 +304,11 @@ body.classic {
         .main {
             grid-area: 2 / 1 / 3 / 1;
             display: inline-flex;
+
+            .content>div {
+                margin-top: 20px;
+                margin-bottom: 160px;
+            }
 
             // menus
             .menu {

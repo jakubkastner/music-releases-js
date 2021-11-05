@@ -4557,7 +4557,7 @@ body.classic {
   }
   body.classic .header.secondary .content > div,
   body.classic .main .content > div {
-    margin-top: 60px;
+    margin-top: 20px;
     margin-bottom: 60px;
   }
   body.classic .footer.player {
@@ -4654,6 +4654,10 @@ body.classic {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+  }
+  body.classic .main .content > div {
+    margin-top: 20px;
+    margin-bottom: 160px;
   }
   body.classic .main .menu {
     display: none;
