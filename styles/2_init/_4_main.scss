@@ -20,11 +20,26 @@ p {
 button {
     cursor: pointer;
     border: none;
-    background-color: transparent;
+    //background-color: transparent;
     box-sizing: content-box;
     font-size: 18px;
     padding: $padding_button;
     display: inline-block;
+
+    // add to library button
+    &.active {
+        .fa-heart {
+            font-weight: 900;
+        }
+
+        &:hover .fa-heart {
+            font-weight: 400;
+        }
+    }
+
+    &:hover .fa-heart {
+        font-weight: 900;
+    }
 }
 
 input {

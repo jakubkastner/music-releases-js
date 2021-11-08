@@ -3,7 +3,8 @@
     /*max-height: 400px;
     overflow: auto;*/
 
-    button {
+    button,
+    input {
         //cursor: pointer;
         display: flex;
         font-size: 18px;
@@ -58,6 +59,11 @@
             i {
                 margin: 0;
             }
+        }
+
+        .new,
+        .row .add:first-child {
+            width: 100%;
         }
     }
 }
