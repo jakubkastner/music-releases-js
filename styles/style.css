@@ -360,6 +360,7 @@
   }
   body input:focus {
     outline: none !important;
+    background-color: #101010;
   }
   body .header.primary {
     background-color: #060606;
@@ -950,6 +951,7 @@
   }
   body.light input:focus {
     outline: none !important;
+    background-color: whitesmoke;
   }
   body.light .header.primary {
     background-color: white;
@@ -1540,6 +1542,7 @@
   }
   body.color input:focus {
     outline: none !important;
+    background-color: #388a06;
   }
   body.color .header.primary {
     background-color: #293f14;
@@ -2237,7 +2240,9 @@ body.classic {
   body.classic .header.secondary .menu.items.menu,
   body.classic .main .content.menu,
   body.classic .main .menu.items.menu {
-    overflow: hidden;
+    /*&:hover {
+                        overflow: auto;
+                    }*/
   }
   body.classic .header.secondary .content.menu.artists button,
   body.classic .header.secondary .menu.items.menu.artists button,
@@ -2252,12 +2257,6 @@ body.classic {
   body.classic .main .menu.items.menu.playlists button {
     padding-left: 20px;
     width: calc(100% - 10px - 20px);
-  }
-  body.classic .header.secondary .content.menu:hover,
-  body.classic .header.secondary .menu.items.menu:hover,
-  body.classic .main .content.menu:hover,
-  body.classic .main .menu.items.menu:hover {
-    overflow: auto;
   }
   body.classic .header.secondary .content > div,
   body.classic .main .content > div {
@@ -2595,6 +2594,12 @@ input {
 
 .header.primary .user {
   position: relative;
+}
+
+.header.primary .user button i,
+.header.primary .user button span {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .header.primary .user button.menu.hover {

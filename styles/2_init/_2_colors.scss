@@ -85,21 +85,21 @@ $color_0: rgb(0, 0, 0);
 
     // scrollbars
 
+    // firefox
     .scroll {
         scrollbar-color: $color_6 transparent;
     }
 
+    // chrome
     ::-webkit-scrollbar-track,
     ::-webkit-scrollbar-track:horizontal {
         background-color: transparent;
     }
 
-    // Handle
     ::-webkit-scrollbar-thumb,
     ::-webkit-scrollbar-thumb:horizontal {
         background-color: $color_6;
 
-        // Handle on hover
         &:hover {
             background-color: rgb(106, 106, 106);
         }
@@ -112,6 +112,7 @@ $color_0: rgb(0, 0, 0);
 
         &:focus {
             outline: none !important;
+            background-color: $color_2;
         }
     }
 

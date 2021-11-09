@@ -198,7 +198,7 @@ body.classic {
                 overflow: auto;
 
                 &.menu {
-                    overflow: hidden;
+                    //overflow: hidden;
 
                     &.artists button {
                         padding-right: $padding_left_right;
@@ -210,9 +210,9 @@ body.classic {
                         width: calc(100% - #{$padding_button} - #{$padding_left_right});
                     }
 
-                    &:hover {
+                    /*&:hover {
                         overflow: auto;
-                    }
+                    }*/
                 }
             }
 

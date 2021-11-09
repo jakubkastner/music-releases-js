@@ -47,6 +47,15 @@
     .user {
         position: relative;
 
+        button {
+
+            i,
+            span {
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+        }
+
         // button to show menu
         button.menu.hover {
             display: inline-flex;
