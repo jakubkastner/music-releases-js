@@ -1,5 +1,5 @@
 .footer.player {
-    padding-bottom: $padding_left_right;
+    //padding-bottom: $padding_left_right;
 
     @include respond(mobile) {
         padding-bottom: 0;

@@ -339,6 +339,21 @@
   body a {
     color: white;
   }
+  body .scroll {
+    scrollbar-color: #383838 transparent;
+  }
+  body ::-webkit-scrollbar-track,
+  body ::-webkit-scrollbar-track:horizontal {
+    background-color: transparent;
+  }
+  body ::-webkit-scrollbar-thumb,
+  body ::-webkit-scrollbar-thumb:horizontal {
+    background-color: #383838;
+  }
+  body ::-webkit-scrollbar-thumb:hover,
+  body ::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #6a6a6a;
+  }
   body input {
     background-color: #060606;
     color: white;
@@ -914,6 +929,21 @@
   body.light a {
     color: black;
   }
+  body.light .scroll {
+    scrollbar-color: #cdcdcd transparent;
+  }
+  body.light ::-webkit-scrollbar-track,
+  body.light ::-webkit-scrollbar-track:horizontal {
+    background-color: transparent;
+  }
+  body.light ::-webkit-scrollbar-thumb,
+  body.light ::-webkit-scrollbar-thumb:horizontal {
+    background-color: #cdcdcd;
+  }
+  body.light ::-webkit-scrollbar-thumb:hover,
+  body.light ::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #6a6a6a;
+  }
   body.light input {
     background-color: white;
     color: black;
@@ -1488,6 +1518,21 @@
   }
   body.color a {
     color: white;
+  }
+  body.color .scroll {
+    scrollbar-color: #3eff8b transparent;
+  }
+  body.color ::-webkit-scrollbar-track,
+  body.color ::-webkit-scrollbar-track:horizontal {
+    background-color: transparent;
+  }
+  body.color ::-webkit-scrollbar-thumb,
+  body.color ::-webkit-scrollbar-thumb:horizontal {
+    background-color: #3eff8b;
+  }
+  body.color ::-webkit-scrollbar-thumb:hover,
+  body.color ::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #6a6a6a;
   }
   body.color input {
     background-color: #293f14;
@@ -2451,6 +2496,30 @@ input {
   font-style: italic;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 5px;
+}
+
+.scroll {
+  scrollbar-width: thin;
+}
+
+.main .content::-webkit-scrollbar {
+  width: initial;
+}
+
+.main .content::-webkit-scrollbar:horizontal {
+  height: initial;
+}
+
+.main .content.scroll {
+  scrollbar-width: auto;
+}
+
 @media only screen and (min-width: 1050px) {
   .hide-pc {
     display: none !important;
@@ -2516,6 +2585,12 @@ input {
 
 .header.primary .menu.actions {
   margin-left: auto;
+}
+
+.header.primary .menu.actions button,
+.header.primary .menu.show-hide button,
+.header.primary .user button {
+  height: calc(100% - 2 * 10px);
 }
 
 .header.primary .user {
@@ -2638,10 +2713,6 @@ input {
   font-size: 25px;
   margin: 0;
   padding: 6px;
-}
-
-.footer.player {
-  padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 859px) {
@@ -3220,34 +3291,6 @@ body.hide-player .footer.menu.mobile .items {
 
 .skrejto {
   display: none !important;
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar:horizontal {
-  height: 5px;
-}
-
-::-webkit-scrollbar-track,
-::-webkit-scrollbar-track:horizontal {
-  background-color: #0c0c0c;
-}
-
-::-webkit-scrollbar-thumb,
-::-webkit-scrollbar-thumb:horizontal {
-  background-color: black;
-}
-
-::-webkit-scrollbar-thumb:hover,
-::-webkit-scrollbar-thumb:horizontal:hover {
-  background-color: #6a6a6a;
-}
-
-body {
-  scrollbar-color: black #0c0c0c;
-  scrollbar-width: thin;
 }
 
 /*

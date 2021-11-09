@@ -80,6 +80,35 @@ input {
     }
 }
 
+// scrollbars
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+.scroll {
+    scrollbar-width: thin;
+}
+
+.main .content {
+
+    &::-webkit-scrollbar {
+        width: initial;
+    }
+
+    &::-webkit-scrollbar:horizontal {
+        height: initial;
+    }
+
+    &.scroll {
+        scrollbar-width: auto;
+    }
+}
+
 // responsive styles (hide / show content on pc / mobile)
 @include respond(pc) {
     .hide-pc {

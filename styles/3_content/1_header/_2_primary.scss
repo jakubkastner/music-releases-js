@@ -35,6 +35,14 @@
         margin-left: auto;
     }
 
+    .menu.actions,
+    .menu.show-hide,
+    .user {
+        button {
+            height: calc(100% - 2 * #{$padding_button});
+        }
+    }
+
     // 4.) user menu
     .user {
         position: relative;

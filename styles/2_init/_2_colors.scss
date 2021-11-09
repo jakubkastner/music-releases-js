@@ -26,6 +26,7 @@ $color_0: rgb(0, 0, 0);
     $color_4: rgb(36, 36, 36);
     $color_5: rgb(46, 46, 46);
     $color_6: rgb(56, 56, 56);
+    $color_7: rgb(66, 66, 66);
 
     $color_text: rgb(255, 255, 255);
 
@@ -37,19 +38,21 @@ $color_0: rgb(0, 0, 0);
         $color_4: rgb(225, 225, 225);
         $color_5: rgb(215, 215, 215);
         $color_6: rgb(205, 205, 205);
+        $color_7: rgb(195, 195, 195);
 
         $color_text: rgb(0, 0, 0);
     }
 
     // color theme$
     @if $theme==3 {
-        // https://coolors.co/293f14-386c0b-388a06-38a700-31d843-3eff8b
+        // https://coolors.co/293f14-386c0b-388a06-38a700-31d843-3eff8b-50ff96
         $color_1: rgb(41, 63, 20);
         $color_2: rgb(56, 138, 6);
         $color_3: rgb(56, 108, 11);
         $color_4: rgb(56, 167, 0);
         $color_5: rgb(49, 216, 67);
         $color_6: rgb(62, 255, 139);
+        $color_7: rgb(80, 255, 150);
     }
 
 
@@ -78,6 +81,28 @@ $color_0: rgb(0, 0, 0);
     // links
     a {
         color: $color_text;
+    }
+
+    // scrollbars
+
+    .scroll {
+        scrollbar-color: $color_6 transparent;
+    }
+
+    ::-webkit-scrollbar-track,
+    ::-webkit-scrollbar-track:horizontal {
+        background-color: transparent;
+    }
+
+    // Handle
+    ::-webkit-scrollbar-thumb,
+    ::-webkit-scrollbar-thumb:horizontal {
+        background-color: $color_6;
+
+        // Handle on hover
+        &:hover {
+            background-color: rgb(106, 106, 106);
+        }
     }
 
     // text input
