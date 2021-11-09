@@ -318,6 +318,18 @@
     color: black;
     background-color: white;
   }
+}
+
+@media only screen and (prefers-color-scheme: light) and (max-width: 859px) {
+  body {
+    background-color: whitesmoke;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body h2 {
+    color: #1ab26b;
+  }
   body button {
     color: black;
   }
@@ -333,6 +345,9 @@
   }
   body input:focus {
     outline: none !important;
+  }
+  body .header.primary {
+    background-color: white;
   }
   body .header.primary .page-name {
     color: #1ab26b;
@@ -379,7 +394,7 @@
   body .main button {
     background-color: transparent;
   }
-  body .main .releases .release {
+  body .main .box {
     background-color: white;
   }
   body .main .releases .release .info button:hover,
@@ -387,8 +402,15 @@
     background-color: transparent;
     color: #1ab26b;
   }
-  body .list.playlists button.active, body .list.playlists button:hover {
+  body .list.tracklist .list.playlists button.active, body .list.tracklist .list.playlists button:hover,
+  body .list button.active,
+  body .list button:hover,
+  body .list a.active,
+  body .list a:hover {
     background-color: white;
+  }
+  body .list.tracklist button.active, body .list.tracklist button:hover {
+    background-color: transparent;
   }
   body .footer.player {
     background-color: white;
@@ -1362,6 +1384,18 @@
     color: white;
     background-color: #060606;
   }
+}
+
+@media only screen and (prefers-color-scheme: light) and (max-width: 859px) {
+  body.dark {
+    background-color: #101010;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body.dark h2 {
+    color: #1ab26b;
+  }
   body.dark button {
     color: white;
   }
@@ -1377,6 +1411,9 @@
   }
   body.dark input:focus {
     outline: none !important;
+  }
+  body.dark .header.primary {
+    background-color: #060606;
   }
   body.dark .header.primary .page-name {
     color: #1ab26b;
@@ -1423,7 +1460,7 @@
   body.dark .main button {
     background-color: transparent;
   }
-  body.dark .main .releases .release {
+  body.dark .main .box {
     background-color: #060606;
   }
   body.dark .main .releases .release .info button:hover,
@@ -1431,8 +1468,15 @@
     background-color: transparent;
     color: #1ab26b;
   }
-  body.dark .list.playlists button.active, body.dark .list.playlists button:hover {
+  body.dark .list.tracklist .list.playlists button.active, body.dark .list.tracklist .list.playlists button:hover,
+  body.dark .list button.active,
+  body.dark .list button:hover,
+  body.dark .list a.active,
+  body.dark .list a:hover {
     background-color: #1a1a1a;
+  }
+  body.dark .list.tracklist button.active, body.dark .list.tracklist button:hover {
+    background-color: transparent;
   }
   body.dark .footer.player {
     background-color: #060606;
@@ -2406,6 +2450,18 @@
     color: white;
     background-color: whitesmoke;
   }
+}
+
+@media only screen and (prefers-color-scheme: light) and (max-width: 859px) {
+  body.color {
+    background-color: #293f14;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body.color h2 {
+    color: #1ab26b;
+  }
   body.color button {
     color: white;
   }
@@ -2421,6 +2477,9 @@
   }
   body.color input:focus {
     outline: none !important;
+  }
+  body.color .header.primary {
+    background-color: whitesmoke;
   }
   body.color .header.primary .page-name {
     color: #1ab26b;
@@ -2467,7 +2526,7 @@
   body.color .main button {
     background-color: transparent;
   }
-  body.color .main .releases .release {
+  body.color .main .box {
     background-color: whitesmoke;
   }
   body.color .main .releases .release .info button:hover,
@@ -2475,8 +2534,15 @@
     background-color: transparent;
     color: #1ab26b;
   }
-  body.color .list.playlists button.active, body.color .list.playlists button:hover {
+  body.color .list.tracklist .list.playlists button.active, body.color .list.tracklist .list.playlists button:hover,
+  body.color .list button.active,
+  body.color .list button:hover,
+  body.color .list a.active,
+  body.color .list a:hover {
     background-color: #386c0b;
+  }
+  body.color .list.tracklist button.active, body.color .list.tracklist button:hover {
+    background-color: transparent;
   }
   body.color .footer.player {
     background-color: whitesmoke;
@@ -3453,6 +3519,18 @@
     color: white;
     background-color: #060606;
   }
+}
+
+@media only screen and (prefers-color-scheme: dark) and (max-width: 859px) {
+  body {
+    background-color: #101010;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body h2 {
+    color: #1ab26b;
+  }
   body button {
     color: white;
   }
@@ -3468,6 +3546,9 @@
   }
   body input:focus {
     outline: none !important;
+  }
+  body .header.primary {
+    background-color: #060606;
   }
   body .header.primary .page-name {
     color: #1ab26b;
@@ -3514,7 +3595,7 @@
   body .main button {
     background-color: transparent;
   }
-  body .main .releases .release {
+  body .main .box {
     background-color: #060606;
   }
   body .main .releases .release .info button:hover,
@@ -3522,8 +3603,15 @@
     background-color: transparent;
     color: #1ab26b;
   }
-  body .list.playlists button.active, body .list.playlists button:hover {
+  body .list.tracklist .list.playlists button.active, body .list.tracklist .list.playlists button:hover,
+  body .list button.active,
+  body .list button:hover,
+  body .list a.active,
+  body .list a:hover {
     background-color: #1a1a1a;
+  }
+  body .list.tracklist button.active, body .list.tracklist button:hover {
+    background-color: transparent;
   }
   body .footer.player {
     background-color: #060606;
@@ -4497,6 +4585,18 @@
     color: black;
     background-color: white;
   }
+}
+
+@media only screen and (prefers-color-scheme: dark) and (max-width: 859px) {
+  body.light {
+    background-color: whitesmoke;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.light h2 {
+    color: #1ab26b;
+  }
   body.light button {
     color: black;
   }
@@ -4512,6 +4612,9 @@
   }
   body.light input:focus {
     outline: none !important;
+  }
+  body.light .header.primary {
+    background-color: white;
   }
   body.light .header.primary .page-name {
     color: #1ab26b;
@@ -4558,7 +4661,7 @@
   body.light .main button {
     background-color: transparent;
   }
-  body.light .main .releases .release {
+  body.light .main .box {
     background-color: white;
   }
   body.light .main .releases .release .info button:hover,
@@ -4566,8 +4669,15 @@
     background-color: transparent;
     color: #1ab26b;
   }
-  body.light .list.playlists button.active, body.light .list.playlists button:hover {
+  body.light .list.tracklist .list.playlists button.active, body.light .list.tracklist .list.playlists button:hover,
+  body.light .list button.active,
+  body.light .list button:hover,
+  body.light .list a.active,
+  body.light .list a:hover {
     background-color: white;
+  }
+  body.light .list.tracklist button.active, body.light .list.tracklist button:hover {
+    background-color: transparent;
   }
   body.light .footer.player {
     background-color: white;
@@ -5541,6 +5651,18 @@
     color: white;
     background-color: whitesmoke;
   }
+}
+
+@media only screen and (prefers-color-scheme: dark) and (max-width: 859px) {
+  body.color {
+    background-color: #293f14;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.color h2 {
+    color: #1ab26b;
+  }
   body.color button {
     color: white;
   }
@@ -5556,6 +5678,9 @@
   }
   body.color input:focus {
     outline: none !important;
+  }
+  body.color .header.primary {
+    background-color: whitesmoke;
   }
   body.color .header.primary .page-name {
     color: #1ab26b;
@@ -5602,7 +5727,7 @@
   body.color .main button {
     background-color: transparent;
   }
-  body.color .main .releases .release {
+  body.color .main .box {
     background-color: whitesmoke;
   }
   body.color .main .releases .release .info button:hover,
@@ -5610,8 +5735,15 @@
     background-color: transparent;
     color: #1ab26b;
   }
-  body.color .list.playlists button.active, body.color .list.playlists button:hover {
+  body.color .list.tracklist .list.playlists button.active, body.color .list.tracklist .list.playlists button:hover,
+  body.color .list button.active,
+  body.color .list button:hover,
+  body.color .list a.active,
+  body.color .list a:hover {
     background-color: #386c0b;
+  }
+  body.color .list.tracklist button.active, body.color .list.tracklist button:hover {
+    background-color: transparent;
   }
   body.color .footer.player {
     background-color: whitesmoke;
@@ -6584,6 +6716,7 @@
 }
 
 .loader {
+  background-color: transparent;
   background: -webkit-gradient(linear, left top, right top, from(#1ab26b), to(#1ab26b));
   background: linear-gradient(to right, #1ab26b, #1ab26b);
 }
@@ -6646,7 +6779,7 @@ body.classic {
   }
   body.classic.hide-menu-artists .main .menu.items.date button {
     padding-right: 20px;
-    width: calc(100% - 2 * 10px - 20px);
+    width: calc(100% - 10px - 20px);
   }
   body.classic.hide-menu-artists .main .menu.items.artists {
     display: none;
@@ -6740,14 +6873,14 @@ body.classic {
   body.classic .main .content.menu.artists button,
   body.classic .main .menu.items.menu.artists button {
     padding-right: 20px;
-    width: calc(100% - 2 * 10px - 20px);
+    width: calc(100% - 10px - 20px);
   }
   body.classic .header.secondary .content.menu.playlists button,
   body.classic .header.secondary .menu.items.menu.playlists button,
   body.classic .main .content.menu.playlists button,
   body.classic .main .menu.items.menu.playlists button {
     padding-left: 20px;
-    width: calc(100% - 2 * 10px - 20px);
+    width: calc(100% - 10px - 20px);
   }
   body.classic .header.secondary .content.menu:hover,
   body.classic .header.secondary .menu.items.menu:hover,
@@ -7098,11 +7231,18 @@ input {
   margin-bottom: 30px;
 }
 
-.main .content.page .boxes.releases .release {
-  /*.content {
-            margin-top: $spaces;
-            max-height: 40vh;
-        }*/
+.main .content h2 {
+  margin: 20px;
+  text-transform: uppercase;
+}
+
+.main .content h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.main .content p {
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 69px) {
@@ -7172,43 +7312,6 @@ input {
   font-size: 25px;
   margin: 0;
   padding: 6px;
-}
-
-.main .content.page .boxes.releases .release.old .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main .content.page .boxes.releases .release.old .info .cover {
-  margin-right: 30px;
-  width: 150px;
-  height: 150px;
-}
-
-.main .content.page .boxes.releases .release.old .info .cover img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.main .content.page .boxes.releases .release.old .info .details {
-  width: calc(100% - 150px - 30px);
-}
-
-.main .content.page .boxes.releases .release.old .info .details .name,
-.main .content.page .boxes.releases .release.old .info .details .artists,
-.main .content.page .boxes.releases .release.old .info .details .date {
-  width: 100%;
-  display: inline-block;
-  margin-bottom: 5px;
-}
-
-.main .content.page .boxes.releases .release.old .info .details button.tracklist {
-  padding-left: 0;
-}
-
-.main .content.page .boxes.releases .release.old .info .details .tracklist span {
-  font-size: 70%;
 }
 
 .footer.player {
@@ -7718,7 +7821,8 @@ body.hide-player .footer.menu.mobile .items {
 }
 
 .list button,
-.list input {
+.list input,
+.list a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7774,7 +7878,14 @@ body.hide-player .footer.menu.mobile .items {
 
 .list.playlists .new,
 .list.playlists .row .add:first-child {
-  width: 100%;
+  width: calc(100% - 20px);
+}
+
+.settings .list button,
+.settings .list a:first-child,
+.login .list button,
+.login .list a:first-child {
+  width: calc(100% - 20px);
 }
 
 .hidden {

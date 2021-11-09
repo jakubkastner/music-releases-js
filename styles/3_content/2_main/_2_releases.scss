@@ -66,57 +66,6 @@
                 margin: 0;
                 padding: 6px;
             }
-
-        }
-
-        // release content
-        /*.content {
-            margin-top: $spaces;
-            max-height: 40vh;
-        }*/
-
-
-        &.old {
-
-            // release information div
-            .info {
-                display: flex;
-
-                .cover {
-                    margin-right: $spaces;
-                    width: $cover_width;
-                    height: $cover_width;
-
-                    img {
-                        max-width: 100%;
-                        max-height: 100%;
-                    }
-                }
-
-                .details {
-                    width: calc(100% - #{$cover_width} - #{$spaces});
-
-                    .name,
-                    .artists,
-                    .date {
-                        width: 100%;
-                        display: inline-block;
-                        margin-bottom: 5px;
-                    }
-
-                    button.tracklist {
-                        padding-left: 0;
-                    }
-
-                    .tracklist {
-                        span {
-                            font-size: 70%;
-                        }
-                    }
-
-
-                }
-            }
         }
     }
 }

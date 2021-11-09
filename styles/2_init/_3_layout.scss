@@ -119,7 +119,7 @@ body.classic {
 
                         .menu.items.date button {
                             padding-right: $padding_left_right;
-                            width: calc(100% - 2 * #{$padding_button} - #{$padding_left_right});
+                            width: calc(100% - #{$padding_button} - #{$padding_left_right});
                         }
 
                         .menu.items.artists {
@@ -202,12 +202,12 @@ body.classic {
 
                     &.artists button {
                         padding-right: $padding_left_right;
-                        width: calc(100% - 2 * #{$padding_button} - #{$padding_left_right});
+                        width: calc(100% - #{$padding_button} - #{$padding_left_right});
                     }
 
                     &.playlists button {
                         padding-left: $padding_left_right;
-                        width: calc(100% - 2 * #{$padding_button} - #{$padding_left_right});
+                        width: calc(100% - #{$padding_button} - #{$padding_left_right});
                     }
 
                     &:hover {

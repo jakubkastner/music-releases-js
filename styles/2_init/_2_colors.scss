@@ -58,6 +58,15 @@ $color_0: rgb(0, 0, 0);
     color: $color_text;
     background-color: $color_1;
 
+    @include respond(mobile) {
+        background-color: $color_2;
+    }
+
+    // header
+    h2 {
+        color: $color_text_button;
+    }
+
     // buttons
     button {
         color: $color_text;
@@ -84,6 +93,8 @@ $color_0: rgb(0, 0, 0);
 
     // primarary header
     .header.primary {
+        background-color: $color_1;
+
         .page-name {
             color: $color_text_button;
         }
@@ -154,11 +165,12 @@ $color_0: rgb(0, 0, 0);
         }
     }
 
+    .main .box {
+        background-color: $color_1;
+    }
+
     // releases
     .main .releases .release {
-
-        background-color: $color_1;
-
         .info {
 
             button,
@@ -172,12 +184,25 @@ $color_0: rgb(0, 0, 0);
     }
 
     // lists
-    .list.playlists {
-        button {
+    .list {
+
+        &.tracklist .list.playlists button,
+        button,
+        a {
 
             &.active,
             &:hover {
                 background-color: $color_3;
+            }
+        }
+
+        &.tracklist {
+            button {
+
+                &.active,
+                &:hover {
+                    background-color: transparent;
+                }
             }
         }
     }
@@ -489,5 +514,6 @@ $color_0: rgb(0, 0, 0);
 }
 
 .loader {
+    background-color: transparent;
     background: linear-gradient(to right, $color_text_button, $color_text_button);
 }
