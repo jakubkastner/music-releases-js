@@ -422,7 +422,7 @@
   body .list button:hover,
   body .list a.active,
   body .list a:hover {
-    background-color: #1a1a1a;
+    background-color: #101010;
   }
   body .list.tracklist button.active, body .list.tracklist button:hover {
     background-color: transparent;
@@ -1012,7 +1012,7 @@
   body.light .list button:hover,
   body.light .list a.active,
   body.light .list a:hover {
-    background-color: #ebebeb;
+    background-color: whitesmoke;
   }
   body.light .list.tracklist button.active, body.light .list.tracklist button:hover {
     background-color: transparent;
@@ -1602,7 +1602,7 @@
   body.color .list button:hover,
   body.color .list a.active,
   body.color .list a:hover {
-    background-color: #386c0b;
+    background-color: #388a06;
   }
   body.color .list.tracklist button.active, body.color .list.tracklist button:hover {
     background-color: transparent;
