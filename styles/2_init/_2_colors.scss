@@ -33,20 +33,19 @@ $color_0: rgb(0, 0, 0);
     @if $theme==1 {
         $color_1: rgb(255, 255, 255);
         $color_2: rgb(245, 245, 245);
-        $color_3: rgb(255, 255, 255);
-        $color_4: rgb(255, 245, 245);
+        $color_3: rgb(235, 235, 235);
+        $color_4: rgb(225, 225, 225);
         $color_5: rgb(215, 215, 215);
         $color_6: rgb(205, 205, 205);
 
         $color_text: rgb(0, 0, 0);
-        $color_text_button: rgb(160, 93, 93);
     }
 
     // color theme$
     @if $theme==3 {
-        // https://coolors.co/293f14-386c0b-38a700-31d843-3eff8b
-        $color_1: rgb(245, 245, 245);
-        $color_2: rgb(41, 63, 20);
+        // https://coolors.co/293f14-386c0b-388a06-38a700-31d843-3eff8b
+        $color_1: rgb(41, 63, 20);
+        $color_2: rgb(56, 138, 6);
         $color_3: rgb(56, 108, 11);
         $color_4: rgb(56, 167, 0);
         $color_5: rgb(49, 216, 67);
@@ -210,7 +209,33 @@ $color_0: rgb(0, 0, 0);
 
     // footer player
     .footer.player {
-        background-color: $color_1;
+        @include respond(pctab) {
+            background-color: $color_1;
+
+            button,
+            a {
+                background-color: $color_1;
+
+                &:hover {
+                    background-color: transparent;
+                    color: $color_text_button;
+                }
+            }
+        }
+
+        @include respond(mobile) {
+            background-color: $color_2;
+
+            button,
+            a {
+                background-color: $color_2;
+
+                &:hover {
+                    background-color: transparent;
+                    color: $color_text_button;
+                }
+            }
+        }
 
         .timeline {
             background-color: $color_text_button;
@@ -220,16 +245,6 @@ $color_0: rgb(0, 0, 0);
                     $width: $i + '%';
                     background: linear-gradient(to right, $color_text_button #{$width}, $color_6 0%);
                 }
-            }
-        }
-
-        button,
-        a {
-            background-color: $color_1;
-
-            &:hover {
-                background-color: transparent;
-                color: $color_text_button;
             }
         }
     }
@@ -288,212 +303,6 @@ $color_0: rgb(0, 0, 0);
             &:hover {
                 background-color: $color_3;
             }
-        }
-    }
-
-    &.old {
-
-        // input
-        input {
-            background-color: $color_1;
-            color: $color_text;
-
-            &:focus {
-                outline: none !important;
-            }
-        }
-
-        // body
-        background-color: $color_1;
-
-        button {
-            color: $color_text;
-        }
-
-        // header
-        .header {
-            background-color: $color_1;
-            color: $color_text;
-
-            .page-name,
-            .title {
-                color: $color_text_button;
-            }
-
-            // buttons
-            button {
-                &.active {
-                    color: $color_text_button;
-                }
-
-                &:hover {
-                    background-color: $color_3;
-                }
-            }
-
-            &.primary {
-
-                // buttons
-                button {
-                    &.active {
-                        background-color: $color_3;
-                    }
-                }
-            }
-
-            button.login.hover.items,
-            button.user.hover.items {
-                background-color: $color_4;
-            }
-
-        }
-
-        .menu.hover.items {
-            background-color: $color_4;
-
-            button:hover {
-                background-color: $color_6;
-            }
-        }
-
-        // main
-        .main {
-            background-color: $color_1;
-            //background-color: $color_3;
-            color: $color_text;
-
-            button,
-            a {
-                color: $color_text;
-            }
-
-            &.menu {
-
-                &.date.year,
-                &.artists.first-letter {
-                    //background-color: $color_1;
-
-                    button:hover,
-                    button.active {
-                        background-color: $color_2;
-                    }
-
-                }
-
-                &.date.month,
-                &.artists {
-                    //background-color: $color_2;
-
-                    button:hover,
-                    button.active {
-                        background-color: $color_3;
-                    }
-
-                }
-
-                button.active {
-                    color: $color_text_button;
-                }
-            }
-
-            &.content {
-                .releases {
-                    .release {
-                        button {
-                            &:hover {
-                                color: $color_text_button;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .box {
-                background-color: $color_2;
-            }
-        }
-
-        // footer
-        .footer {
-            background-color: $color_1;
-            color: $color_text;
-
-            button,
-            a {
-                color: $color_text;
-            }
-
-            &.player {
-                &.active {
-                    background-color: $color_1;
-                }
-
-                button:hover {
-                    color: $color_text_button;
-                }
-
-                .timeline {
-                    background-color: $color_text_button;
-
-                    @for $i from 0 through 100 {
-                        &.width-#{$i} {
-                            $sirka: $i + '%';
-                            background: linear-gradient(to right, $color_text_button #{$sirka}, $color_text 0%);
-                        }
-                    }
-                }
-            }
-
-            &.menu.mobile .items {
-                background-color: $color_1;
-
-                p {
-                    color: $color_text_button;
-                }
-            }
-
-            button.round {
-                background-color: $color_1;
-
-                &.active {
-                    background-color: $color_0;
-                    color: $color_text_button;
-                }
-
-                &:hover {
-                    background-color: $color_0;
-                }
-            }
-
-            &.menu.primary {
-                button {
-                    background-color: $color_0;
-                    color: $color_text;
-
-                    &:hover,
-                    &.active {
-                        background-color: $color_3;
-                        color: $color_text_button;
-                    }
-                }
-            }
-        }
-    }
-}
-
-// DARK/LIGHT MODE
-
-// light mode
-@media (prefers-color-scheme: light) {
-    body {
-        @include theme-colors($theme: 1);
-
-        &.dark {
-            @include theme-colors($theme: 2);
-        }
-
-        &.color {
-            @include theme-colors($theme: 3);
         }
     }
 }
