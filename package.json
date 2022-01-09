@@ -15,17 +15,18 @@
     "url": "https://github.com/jakubkastner/music-releases/issues"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm dist/bundle.js",
+    "build-dev": "webpack --mode development",
+    "build-prod": "webpack --mode production"
   },
-  "dependencies": {
-    "autoprefixer": "^10.2.5",
-    "concat": "^1.0.3",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^8.3.1",
-    "sass": "^1.32.12"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "webpack": "^5.37.1",
-    "webpack-cli": "^4.7.0"
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0",
+    "css-loader": "^6.3.0",
+    "sass-loader": "^12.1.0",
+    "node-sass": "^6.0.1",
+    "style-loader": "^3.2.1",
+    "mini-css-extract-plugin": "^2.3.0"
   }
 }
