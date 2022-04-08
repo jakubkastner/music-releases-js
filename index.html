@@ -56,14 +56,23 @@
         </div>
     </div>
     <div class="header secondary hide-mobile">
+        <div class="menu releases">
+            <button class="show-hide icon-text left">
+                <i class="fas fa-bars"></i>
+                <img class="favicon" src="images/favicon.png" alt="R" />
+                <span>eleases</span>
+            </button>
+        </div>
         <div class="menu date">
             <button class="show-hide icon-text"><i class="fas fa-calendar-alt"></i>Date</button>
+            <button class="clear" title="Clear filter"><i class="fas fa-times"></i></button>
             <input type="text" class="search" placeholder="Search date">
             <button class="search"><i class="fas fa-search"></i></button>
             <button class="close"><i class="fas fa-times"></i></button>
         </div>
         <div class="menu artists">
             <button class="show-hide icon-text"><i class="fas fa-users"></i>Artists</button>
+            <button class="clear" title="Clear filter"><i class="fas fa-times"></i></button>
             <input type="text" class="search" placeholder="Search artists">
             <button class="search"><i class="fas fa-search"></i></button>
             <button class="close"><i class="fas fa-times"></i></button>
@@ -72,10 +81,11 @@
             <button class="show-hide icon-text left"><i class="fas fa-bars"></i>Playlists</button>
             <input type="text" class="search" placeholder="Search playlist">
             <button class="search"><i class="fas fa-search"></i></button>
+            <button class="new"><i class="fas fa-plus"></i></button>
             <button class="close"><i class="fas fa-times"></i></button>
         </div>
         <div class="menu filter scroll">
-            <button class="clear" title="Show all">X</button>
+            <button class="clear" title="Clear filter"><i class="fas fa-times"></i></button>
             <button class="tracks" title="Show released Tracks">Tracks</button>
             <button class="eps" title="Show released EPs">EPs</button>
             <button class="remixes" title="Show released Remixes">Remixes</button>
@@ -83,9 +93,27 @@
             <button class="various-artists" title="Show releases from Various artists">Various artists</button>
             <button class="saved" title="Show saved releases in my library">In library</button>
             <button class="new" title="Show only new releases">Only new</button>
+            <div class="menu actions icon-text hide-text">
+                <button class="playlist" title="Add all filtered releases to the playlist"><i class="fas fa-plus-circle"></i><span>Add to playlist</span></button>
+                <button class="play" title="Play all filtered releases"><i class="fas fa-play"></i><span>Play all</span></button>
+                <input type="text" class="search" placeholder="Search releases">
+                <button class="search" title="Search releases"><i class="fas fa-search"></i></button>
+            </div>
         </div>
     </div>
     <div class="main">
+        <div class="menu releases icon-text items scroll">
+            <button class="albums active" title="View released albums"><i class="fas fa-compact-disc"></i><span>Albums</span></button>
+            <button class="tracks" title="View released Tracks"><i class="fas fa-music"></i><span>Tracks</span></button>
+            <button class="appears" title="View released appears"><i class="fas fa-user-friends"></i><span>Appears</span></button>
+            <button class="compilations" title="View released compilations"><i class="fas fa-th-large"></i><span>Compilations</span></button>
+            <button class="podcasts" title="View newest podcasts"><i class="fas fa-podcast"></i><span>Podcasts</span></button>
+            <div class="user icon-text">
+                <button class="player" title="Show player"><i class="fas fa-play-circle"></i></button>
+                <button class="settings" title="Show settings"><i class="fas fa-wrench"></i>Settings</button>
+                <button class="logout" title="Logout"><i class="fas fa-sign-out-alt"></i>Logout</button>
+            </div>
+        </div>
         <div class="menu date year items scroll">
             <button class="year icon-text-right" data-menu_type="year" data-menu_year="2021">2021<i class="fas fa-angle-down"></i></button>
             <button class="year active icon-text-right" data-menu_type="year" data-menu_year="2020">2020<i class="fas fa-angle-up"></i></button>
@@ -127,7 +155,6 @@
             <button class="year" data-menu_type="year" data-menu_year="-">-</button>
         </div>
         <div class="menu artists items scroll">
-            <button class="artist active" data-menu_type="artist" data-menu_artist="all">All</button>
             <button class="artist" data-menu_type="artist" data-menu_artist="Artist 1">Artist 1</button>
             <button class="artist" data-menu_type="artist" data-menu_artist="Artist 2">Artist 2</button>
             <button class="artist" data-menu_type="artist" data-menu_artist="Artist 3">Artist 3</button>
@@ -135,7 +162,7 @@
             <button class="artist" data-menu_type="artist" data-menu_artist="Artist 5">Artist 5</button>
             <button class="artist" data-menu_type="artist" data-menu_artist="Artist 6">Artist 6</button>
             <button class="artist" data-menu_type="artist" data-menu_artist="Artist 7">Artist 7</button>
-            <button class="artist" data-menu_type="artist" data-menu_artist="Artist 8">Artist 8</button>
+            <button class="artist active" data-menu_type="artist" data-menu_artist="Artist 8">Artist 8</button>
             <button class="artist" data-menu_type="artist" data-menu_artist="Artist 9">Artist 9</button>
             <button class="artist" data-menu_type="artist" data-menu_artist="Artist 10">Artist 10</button>
         </div>

@@ -1,4 +1,31 @@
 // PRIMARY HEADER
+
+.header.secondary .menu.releases {
+
+    // text size
+
+
+    // icon
+    .favicon {
+        //background: transparent;
+        height: 100%;
+        margin-left: 10px;
+    }
+
+    &:hover>.favicon {
+        animation: spin 2s linear infinite;
+    }
+}
+
+.main .menu.releases {
+    display: flex;
+    flex-direction: column;
+
+    .user {
+        margin-top: auto;
+    }
+}
+
 .header.primary {
     display: inline-flex;
 

@@ -8,10 +8,11 @@ $margin_right_icon: 5px;
 
 
 // page width
+$width_menu_releases: 160px;
 $width_menu_playlist: 250px; // 1
 $width_menu_date: 140px; // 3
 $width_menu_artists: 200px; // 4
-$width_main: calc(100vw - #{$width_menu_playlist} - #{$width_menu_date} - #{$width_menu_artists}); // 2
+$width_main: calc(100vw - #{$width_menu_releases} - #{$width_menu_playlist} - #{$width_menu_date} - #{$width_menu_artists}); // 2
 
 // page height
 $height_loader: 4px; // 1
@@ -141,13 +142,19 @@ body.classic {
             }
 
             &.secondary {
-                grid-area: 3 / 1 / 4 / 1;
+                grid-area: 2 / 1 / 3 / 1;
+                //grid-area: 3 / 1 / 4 / 1;
             }
         }
 
         // main content
         .main {
-            grid-area: 4 / 1 / 5 / 1;
+            grid-area: 3 / 1 / 5 / 1;
+            //grid-area: 4 / 1 / 5 / 1;
+        }
+
+        .main .menu.releases button:last-child {
+            margin-bottom: $bottom_player_image;
         }
 
         // secondary header and main content
@@ -157,27 +164,32 @@ body.classic {
 
             // menus
             .menu {
+                &.releases {
+                    width: $width_menu_releases;
+                    min-width: $width_menu_releases;
+                    order: 0;
+
+                }
 
                 &.playlists {
                     width: $width_menu_playlist;
                     min-width: $width_menu_playlist;
-                    order: 1;
-
-                    button:last-child {
-                        margin-bottom: $bottom_player_image;
-                    }
+                    //order: 1;
+                    order: 4;
                 }
 
                 &.date {
                     width: $width_menu_date;
                     min-width: $width_menu_date;
-                    order: 3;
+                    //order: 1;
+                    order: 2;
                 }
 
                 &.artists {
                     width: $width_menu_artists;
                     min-width: $width_menu_artists;
-                    order: 4;
+                    order: 1;
+                    //order: 4;
 
                     button.search {
                         padding-right: $padding_left_right;
@@ -190,7 +202,8 @@ body.classic {
             .content.page {
                 width: $width_main;
                 min-width: $width_main;
-                order: 2;
+                //order: 1;
+                order: 3;
             }
 
             .content,
